@@ -1,18 +1,20 @@
-<!doctype html><html><head><meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<!doctype html><html><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Pinyon+Script&display=swap" rel="stylesheet">
 <style>@page{size:letter portrait;margin:0}*{box-sizing:border-box;margin:0;padding:0}
 body{-webkit-print-color-adjust:exact}
-.page{width:8.5in;height:11in;position:relative;padding:0.9in;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#FBF8F2}
-.frame{position:absolute;inset:0.6in;border:1.4px solid #7A9E7E;border-radius:2px}
-.sprig{width:1.5in;margin:0 auto 0.35in;opacity:0.85}
-.small{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22pt;color:#7A9E7E;margin-bottom:6px}
-.big{font-family:'Playfair Display',serif;font-weight:700;font-size:60pt;line-height:0.98;color:#2D2D2D;letter-spacing:1px}
-.amp{font-style:italic;font-weight:400;color:#C4826E}
-.rule{width:1.4in;height:1px;background:#C4B5A5;margin:0.3in auto}
-.tag{font-family:'Cormorant Garamond',serif;font-size:12pt;letter-spacing:5px;text-transform:uppercase;color:#8A7A6A}</style></head><body>
-<div class="page"><div class="frame"></div><svg class="sprig" viewBox="0 0 120 60" fill="none" stroke="#7A9E7E" stroke-width="1.6" stroke-linecap="round">
-<path d="M10 30 H110"/><path d="M30 30 C34 18 46 14 52 12 M30 30 C34 42 46 46 52 48"/>
-<path d="M50 30 C54 18 66 14 72 12 M50 30 C54 42 66 46 72 48"/><path d="M70 30 C74 20 84 17 90 15 M70 30 C74 40 84 43 90 45"/>
-<circle cx="110" cy="30" r="3" fill="#C4826E" stroke="none"/></svg>
-<div class="small">have yourself a</div><div class="big">Merry <span class="amp">&amp;</span><br>Bright</div><div class="rule"></div><div class="tag">Christmas</div></div></body></html>
+.page{width:8.5in;height:11in;position:relative;overflow:hidden;background:#FBF8F2;
+ display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+svg{display:block}
+.script{font-family:'Pinyon Script',cursive}
+.serif{font-family:'Playfair Display',serif}
+.cormo{font-family:'Cormorant Garamond',serif}
+.foot{position:absolute;bottom:0.28in;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;
+ font-size:9pt;letter-spacing:3px;text-transform:uppercase;color:#B0A090}
+</style></head><body><div class="page"><div style="display:flex;flex-direction:column;align-items:center;gap:0.18in">
+      <svg width="3.2in" height="4.6in" viewBox="-170 -235 340 470"><g fill="none" stroke="#5C7A60" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M 0 -182.5 L -18.0 -146.2 Q 0 -154.2 18.0 -146.2 Z"/><path d="M 0 -115.5 L -23.2 -79.1 Q 0 -87.1 23.2 -79.1 Z"/><path d="M 0 -48.4 L -38.8 -12.0 Q 0 -20.0 38.8 -12.0 Z"/><path d="M 0 18.7 L -64.8 55.0 Q 0 47.0 64.8 55.0 Z"/><path d="M 0 85.8 L -101.2 122.1 Q 0 114.1 101.2 122.1 Z"/><path d="M 0 152.9 L -148.0 189.2 Q 0 181.2 148.0 189.2 Z"/><path d="M 0 154.8 L 0 206.4"/></g><g transform="translate(0 -215.0)"><path d="M 0.0 -15.0 L 4.2 -4.2 L 15.0 0.0 L 4.2 4.2 L 0.0 15.0 L -4.2 4.2 L -15.0 0.0 L -4.2 -4.2 Z" fill="#5B34E0" stroke="none"/></g></svg>
+      <div style="display:flex;flex-direction:column;align-items:center;line-height:0.98">
+        <span class="serif" style="font-weight:900;font-size:52pt;color:#2D2D2D">Merry</span>
+        <span class="script" style="font-size:64pt;color:#C4826E;margin:-6px 0 -8px">&amp; Bright</span>
+      </div>
+      <div class="cormo" style="font-size:11pt;letter-spacing:6px;text-transform:uppercase;color:#7A9E7E">Season's Greetings</div>
+    </div><div class="foot">Paper Posy · Free Printable</div></div></body></html>
