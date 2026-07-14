@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>30-Day Declutter Challenge — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* How-it-works step strip */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.14in; margin-top: 9px; }
+  .step { border: 1px solid #DDD5C8; border-radius: 7px; background: #fff; padding: 6px 10px;
+    display: grid; grid-template-columns: 20px 1fr; gap: 8px; align-items: center; }
+  .step-num { width: 19px; height: 19px; border-radius: 50%; background: #C4826E; color: #fff;
+    font-size: 8pt; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .step-text { font-size: 7pt; color: #3D3530; line-height: 1.25; }
+  .step-text b { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; font-size: 7.5pt; color: #4A6B4E; }
+
+  /* Calendar grid */
+  .cal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 9px; }
+  .section { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.6pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Day rows */
+  .day-row { display: grid; grid-template-columns: 21px 14px 1fr; gap: 7px; align-items: center;
+    padding: 6.5px 11px; }
+  .day-row.odd  { background: #FAF7F2; }
+  .day-row.even { background: #F5F0EA; }
+  .day-badge { width: 20px; height: 20px; border-radius: 5px; background: rgba(74,107,78,0.12);
+    font-size: 7.2pt; font-weight: 700; color: #4A6B4E;
+    display: flex; align-items: center; justify-content: center; }
+  .box { width: 13px; height: 13px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .day-label { font-family: 'Lato', sans-serif; font-size: 7.9pt; color: #3D3530; }
+
+  /* Reward / milestone tips box (fills last grid cell) */
+  .reward { border: 1px solid #E0C4B8; border-radius: 7px; background: #F2DDD5; overflow: hidden; }
+  .reward-head { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; background: #C4826E; padding: 5px 11px; }
+  .reward-row { display: grid; grid-template-columns: 21px 1fr; gap: 7px; align-items: flex-end;
+    padding: 7px 11px 5px; }
+  .reward-badge { width: 20px; height: 20px; border-radius: 50%; background: #C4826E; color: #fff;
+    font-size: 6.6pt; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .reward-field { display: flex; flex-direction: column; }
+  .reward-cap { font-size: 6.4pt; text-transform: uppercase; letter-spacing: 0.4px; color: #A06B58; }
+  .reward-line { border-bottom: 1.2px solid #D4B4A8; height: 14px; }
+
+  /* Affirmation strip */
+  .affirmation { margin-top: 9px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; text-align: center; }
+
+  /* Four-box method */
+  .four-box { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .fb { padding: 7px 10px 9px; border-right: 1px solid rgba(0,0,0,0.05); }
+  .fb:last-child { border-right: none; }
+  .fb.c1 { background: #FAF7F2; } .fb.c2 { background: #F5F0EA; }
+  .fb.c3 { background: #FAF7F2; } .fb.c4 { background: #F5F0EA; }
+  .fb-name { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 700; }
+  .fb-name.keep   { color: #4A6B4E; }
+  .fb-name.donate { color: #6B8FAE; }
+  .fb-name.sell   { color: #8B7BA0; }
+  .fb-name.trash  { color: #C4826E; }
+  .fb-desc { font-size: 6.7pt; color: #6A5E52; line-height: 1.3; margin-top: 3px; }
+
+  /* Progress tracker rows */
+  .track-row { display: grid; grid-template-columns: 1.3in 1fr 1fr 44px; gap: 0;
+    padding: 6px 11px; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .track-row:last-child { border-bottom: none; }
+  .track-row.odd  { background: #FAF7F2; }
+  .track-row.even { background: #F5F0EA; }
+  .track-row.head { background: rgba(0,0,0,0.04); border-bottom: 1px solid #DDD5C8; }
+  .th { font-size: 6.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #6A5E52; }
+  .th.c { text-align: center; }
+  .track-week { font-family: 'Lato', sans-serif; font-size: 7.6pt; font-weight: 700; color: #3D3530; }
+  .track-week span { display: block; font-weight: 400; font-style: italic; font-size: 6.6pt; color: #8A7A6A; }
+  .track-field { display: flex; align-items: flex-end; padding: 0 8px; }
+  .track-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+  .track-box { justify-self: center; width: 14px; height: 14px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+
+  /* Donation log */
+  .log-row { display: grid; grid-template-columns: 1fr 1.5in 0.9in; gap: 0;
+    padding: 6px 11px; align-items: flex-end; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .log-row:last-child { border-bottom: none; }
+  .log-row.odd  { background: #FAF7F2; }
+  .log-row.even { background: #F5F0EA; }
+  .log-row.head { background: rgba(0,0,0,0.04); border-bottom: 1px solid #DDD5C8; }
+  .log-cell { display: flex; align-items: flex-end; padding-right: 10px; }
+  .log-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+
+  /* Notes */
+  .notes { margin-top: 9px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 17px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 9px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  .block-title { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; }
+  .mt9 { margin-top: 9px; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
+  .footer-leaf { width: 9px; height: 9px; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 — THE 30-DAY CALENDAR ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">30-Day Declutter Challenge</div>
+      <div class="header-sub">One small area a day — a lighter, calmer home in a month.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Start date</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Home</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Tackle just one small spot each day. Check it off when it's clutter-free — no whole-room overwhelm.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <!-- How it works -->
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text"><b>Find today's spot</b><br>Do the areas in order, or pick whichever fits your day.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text"><b>Set a 15-min timer</b><br>Empty it, wipe it, and put back only what you love and use.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text"><b>Sort as you go</b><br>Keep, Donate, Sell, or Toss — bag it and move on.</div>
+    </div>
+  </div>
+
+  <!-- 30-day calendar -->
+  <div class="cal-grid">
+    <!-- Week 1 -->
+    <div class="section">
+      <div class="section-header sh-sage">Week 1 <span class="focus">Kitchen &amp; entryway</span></div>
+      <div class="day-row odd"><span class="day-badge">1</span><span class="box"></span><span class="day-label">The junk drawer</span></div>
+      <div class="day-row even"><span class="day-badge">2</span><span class="box"></span><span class="day-label">Kitchen countertops</span></div>
+      <div class="day-row odd"><span class="day-badge">3</span><span class="box"></span><span class="day-label">Under the kitchen sink</span></div>
+      <div class="day-row even"><span class="day-badge">4</span><span class="box"></span><span class="day-label">Fridge — toss expired food</span></div>
+      <div class="day-row odd"><span class="day-badge">5</span><span class="box"></span><span class="day-label">One pantry shelf</span></div>
+      <div class="day-row even"><span class="day-badge">6</span><span class="box"></span><span class="day-label">Entryway &amp; coat hooks</span></div>
+    </div>
+
+    <!-- Week 2 -->
+    <div class="section">
+      <div class="section-header sh-steel">Week 2 <span class="focus">Bathroom &amp; linens</span></div>
+      <div class="day-row odd"><span class="day-badge">7</span><span class="box"></span><span class="day-label">Bathroom drawers</span></div>
+      <div class="day-row even"><span class="day-badge">8</span><span class="box"></span><span class="day-label">Medicine cabinet</span></div>
+      <div class="day-row odd"><span class="day-badge">9</span><span class="box"></span><span class="day-label">Makeup &amp; toiletries</span></div>
+      <div class="day-row even"><span class="day-badge">10</span><span class="box"></span><span class="day-label">Towels &amp; washcloths</span></div>
+      <div class="day-row odd"><span class="day-badge">11</span><span class="box"></span><span class="day-label">One linen closet shelf</span></div>
+      <div class="day-row even"><span class="day-badge">12</span><span class="box"></span><span class="day-label">Under the bathroom sink</span></div>
+    </div>
+
+    <!-- Week 3 -->
+    <div class="section">
+      <div class="section-header sh-taupe">Week 3 <span class="focus">Bedroom &amp; closet</span></div>
+      <div class="day-row odd"><span class="day-badge">13</span><span class="box"></span><span class="day-label">Nightstand &amp; drawer</span></div>
+      <div class="day-row even"><span class="day-badge">14</span><span class="box"></span><span class="day-label">One dresser drawer</span></div>
+      <div class="day-row odd"><span class="day-badge">15</span><span class="box"></span><span class="day-label">Hanging clothes — pull 10</span></div>
+      <div class="day-row even"><span class="day-badge">16</span><span class="box"></span><span class="day-label">Shoes</span></div>
+      <div class="day-row odd"><span class="day-badge">17</span><span class="box"></span><span class="day-label">Under the bed</span></div>
+      <div class="day-row even"><span class="day-badge">18</span><span class="box"></span><span class="day-label">Jewelry &amp; accessories</span></div>
+    </div>
+
+    <!-- Week 4 -->
+    <div class="section">
+      <div class="section-header sh-purple">Week 4 <span class="focus">Living &amp; paper</span></div>
+      <div class="day-row odd"><span class="day-badge">19</span><span class="box"></span><span class="day-label">Coffee table &amp; surfaces</span></div>
+      <div class="day-row even"><span class="day-badge">20</span><span class="box"></span><span class="day-label">Cords, remotes &amp; media</span></div>
+      <div class="day-row odd"><span class="day-badge">21</span><span class="box"></span><span class="day-label">One bookshelf</span></div>
+      <div class="day-row even"><span class="day-badge">22</span><span class="box"></span><span class="day-label">The mail &amp; paper pile</span></div>
+      <div class="day-row odd"><span class="day-badge">23</span><span class="box"></span><span class="day-label">The catch-all basket</span></div>
+      <div class="day-row even"><span class="day-badge">24</span><span class="box"></span><span class="day-label">One bin of kids' toys</span></div>
+    </div>
+
+    <!-- Week 5 -->
+    <div class="section">
+      <div class="section-header sh-rose">Week 5 <span class="focus">Digital &amp; finish line</span></div>
+      <div class="day-row odd"><span class="day-badge">25</span><span class="box"></span><span class="day-label">Phone photos &amp; apps</span></div>
+      <div class="day-row even"><span class="day-badge">26</span><span class="box"></span><span class="day-label">Email inbox &amp; downloads</span></div>
+      <div class="day-row odd"><span class="day-badge">27</span><span class="box"></span><span class="day-label">Purse, bag &amp; wallet</span></div>
+      <div class="day-row even"><span class="day-badge">28</span><span class="box"></span><span class="day-label">Car interior</span></div>
+      <div class="day-row odd"><span class="day-badge">29</span><span class="box"></span><span class="day-label">Gift wrap &amp; craft bin</span></div>
+      <div class="day-row even"><span class="day-badge">30</span><span class="box"></span><span class="day-label">Drop off the donate box</span></div>
+    </div>
+
+    <!-- Reward milestones (fills last cell) -->
+    <div class="reward">
+      <div class="reward-head">Reward Yourself</div>
+      <div class="reward-row">
+        <span class="reward-badge">10</span>
+        <span class="reward-field"><span class="reward-cap">Day 10 treat</span><span class="reward-line"></span></span>
+      </div>
+      <div class="reward-row">
+        <span class="reward-badge">20</span>
+        <span class="reward-field"><span class="reward-cap">Day 20 treat</span><span class="reward-line"></span></span>
+      </div>
+      <div class="reward-row">
+        <span class="reward-badge">30</span>
+        <span class="reward-field"><span class="reward-cap">Finish-line treat</span><span class="reward-line"></span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="affirmation">Progress, not perfection. Fifteen honest minutes a day adds up to a whole home you can breathe in.</div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need
+      <svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 21 4 C21 13 13 20 4 20Z" fill="#7A9E7E"/><path d="M7 17 L17 8" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 — PROGRESS TRACKER ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Declutter Progress Tracker</div>
+      <div class="header-sub">Watch it add up — every bag out the door is a small win.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Days done</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Finish date</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Log what leaves each week and where it goes. Seeing the total keeps the momentum going.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <!-- Four-box method -->
+  <div class="section mt9">
+    <div class="section-header sh-dark">The Four-Box Method <span class="focus">grab four boxes or bags before you start each area</span></div>
+    <div class="four-box">
+      <div class="fb c1"><div class="fb-name keep">Keep</div><div class="fb-desc">You use it or love it. Give it a proper home right away.</div></div>
+      <div class="fb c2"><div class="fb-name donate">Donate</div><div class="fb-desc">Good condition, no longer needed. Bag it and set by the door.</div></div>
+      <div class="fb c3"><div class="fb-name sell">Sell</div><div class="fb-desc">Worth listing. Photograph it now so it doesn't linger.</div></div>
+      <div class="fb c4"><div class="fb-name trash">Toss</div><div class="fb-desc">Broken, expired, or truly done. Recycle what you can.</div></div>
+    </div>
+  </div>
+
+  <!-- Weekly progress tracker -->
+  <div class="section mt9">
+    <div class="section-header sh-sage">Weekly Progress</div>
+    <div class="track-row head">
+      <span class="th">Week &amp; focus</span>
+      <span class="th c">Bags donated</span>
+      <span class="th c">Items to sell</span>
+      <span class="th c">Done</span>
+    </div>
+    <div class="track-row odd">
+      <span class="track-week">Week 1<span>Kitchen &amp; entryway</span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-box"></span>
+    </div>
+    <div class="track-row even">
+      <span class="track-week">Week 2<span>Bathroom &amp; linens</span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-box"></span>
+    </div>
+    <div class="track-row odd">
+      <span class="track-week">Week 3<span>Bedroom &amp; closet</span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-box"></span>
+    </div>
+    <div class="track-row even">
+      <span class="track-week">Week 4<span>Living &amp; paper</span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-box"></span>
+    </div>
+    <div class="track-row odd">
+      <span class="track-week">Week 5<span>Digital &amp; finish line</span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-field"><span class="track-line"></span></span>
+      <span class="track-box"></span>
+    </div>
+  </div>
+
+  <!-- Donation drop-off log -->
+  <div class="section mt9">
+    <div class="section-header sh-steel">Donation &amp; Drop-Off Log</div>
+    <div class="log-row head">
+      <span class="th">What left the house</span>
+      <span class="th">Where it went</span>
+      <span class="th">Date</span>
+    </div>
+    <div class="log-row odd"><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span></div>
+    <div class="log-row even"><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span></div>
+    <div class="log-row odd"><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span></div>
+    <div class="log-row even"><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span><span class="log-cell"><span class="log-line"></span></span></div>
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="notes-title">Wins, hard spots &amp; what to keep out for good</div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Days completed</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Bags donated</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Items sold</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Areas cleared</span><div class="sum-value">/ 30</div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need
+      <svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 21 4 C21 13 13 20 4 20Z" fill="#7A9E7E"/><path d="M7 17 L17 8" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

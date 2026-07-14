@@ -318,5 +318,93 @@
     "thumbnail_url": "/printables/new-chapter-wall-art-preview.png",
     "orientation": "portrait",
     "category": "printable-wall-art"
+  },
+  "christmas-gift-tags": {
+    "title": "Printable Christmas Gift Tags — Free Printable",
+    "description": "A free sheet of printable Christmas gift tags with fill-in To and From lines in a warm sage-and-rose palette. Just print, cut along the dashed lines, punch a hole, and tie onto any gift.",
+    "file_url": "/printables/christmas-gift-tags.pdf",
+    "thumbnail_url": "/printables/christmas-gift-tags-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "advent-activity-calendar": {
+    "title": "Printable Advent Activity Calendar — Free Printable",
+    "description": "A free printable advent activity calendar with 25 festive December activity ideas plus a blank fill-in version so your family can build your own countdown to Christmas.",
+    "file_url": "/printables/advent-activity-calendar.pdf",
+    "thumbnail_url": "/printables/advent-activity-calendar-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "christmas-planning-checklist": {
+    "title": "Christmas Planning Checklist — Free Printable",
+    "description": "A free printable Christmas planning checklist that organizes your whole holiday season in one place — gifts, cards, decor, food, and cleaning, plus a week-by-week countdown so nothing gets left to the last minute.",
+    "file_url": "/printables/christmas-planning-checklist.pdf",
+    "thumbnail_url": "/printables/christmas-planning-checklist-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "christmas-dinner-meal-plan": {
+    "title": "Christmas Dinner Meal Plan — Free Printable",
+    "description": "A free printable Christmas dinner meal plan to organize your holiday menu by course, track your guest count, build a by-section shopping list, and follow a make-ahead cooking timeline so nothing is left to the last minute.",
+    "file_url": "/printables/christmas-dinner-meal-plan.pdf",
+    "thumbnail_url": "/printables/christmas-dinner-meal-plan-preview.png",
+    "orientation": "landscape",
+    "category": "meal-planning"
+  },
+  "christmas-gift-planner": {
+    "title": "Christmas Gift Planner & Tracker — Free Printable",
+    "description": "A free printable Christmas gift planner and tracker to organize everyone on your list — jot each gift idea, set a budget, and check off bought, wrapped, and given, plus stocking stuffers and a gifts-to-mail tracker.",
+    "file_url": "/printables/christmas-gift-planner.pdf",
+    "thumbnail_url": "/printables/christmas-gift-planner-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "halloween-party-games": {
+    "title": "Halloween Party Games & Bingo — Free Printable",
+    "description": "A free printable Halloween party games pack with a 5x5 Halloween bingo card, a group party games list, a would-you-rather sheet, and a costume contest ballot. Print one per guest for an easy, spook-tacular kids' Halloween party.",
+    "file_url": "/printables/halloween-party-games.pdf",
+    "thumbnail_url": "/printables/halloween-party-games-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "new-year-goals-planner": {
+    "title": "New Year Goals Planner — Free Printable",
+    "description": "A two-page New Year goals planner to set goals by life area, map quarterly milestones and a monthly focus, and track your habits all year. Print it free and start the year with a clear plan.",
+    "file_url": "/printables/new-year-goals-planner.pdf",
+    "thumbnail_url": "/printables/new-year-goals-planner-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "declutter-challenge": {
+    "title": "30-Day Declutter Challenge — Free Printable",
+    "description": "A free printable 30-day declutter challenge that gives you one small area to clear each day, plus a weekly progress tracker to log every bag donated and item sold. Print it, tackle 15 minutes a day, and watch your home get lighter in a month.",
+    "file_url": "/printables/declutter-challenge.pdf",
+    "thumbnail_url": "/printables/declutter-challenge-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "new-year-reset-checklist": {
+    "title": "New Year Home Reset Checklist — Free Printable",
+    "description": "A free printable New Year home reset checklist that walks you room by room through clearing out last year, plus a digital and paperwork reset section to start the year fresh.",
+    "file_url": "/printables/new-year-reset-checklist.pdf",
+    "thumbnail_url": "/printables/new-year-reset-checklist-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "word-of-the-year": {
+    "title": "Word of the Year — Free Printable",
+    "description": "A free printable Word of the Year sheet with an elegant, framable frame for your chosen word plus a reflection worksheet to help you pick the right word and live it out all year. Print it, frame it, and keep your word of the year in sight every day.",
+    "file_url": "/printables/word-of-the-year.pdf",
+    "thumbnail_url": "/printables/word-of-the-year-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "vision-board-kit": {
+    "title": "Vision Board Kit — Free Printable",
+    "description": "A free printable vision board kit with labeled goal frames across six life areas, guided reflection prompts, and cut-out vision cards to arrange your goals and design the year you want.",
+    "file_url": "/printables/vision-board-kit.pdf",
+    "thumbnail_url": "/printables/vision-board-kit-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
   }
 }

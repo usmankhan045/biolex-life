@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Christmas Planning Checklist — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section blocks */
+  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Checkbox rows */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+    padding: 3.5px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .check-label { font-family: 'Lato', sans-serif; font-size: 7.9pt; color: #3D3530; }
+
+  /* Two-column checkbox grid inside a section */
+  .col2 { display: grid; grid-template-columns: 1fr 1fr; }
+  .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
+
+  /* Grid of section cards: 2 columns */
+  .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+  .card-grid .section { margin-top: 0; }
+
+  /* Fill-in rows (people / gift ideas) */
+  .fill-row { display: grid; grid-template-columns: 13px 1fr 1fr; gap: 8px; align-items: end;
+    padding: 4px 11px; }
+  .fill-row.odd  { background: #FAF7F2; }
+  .fill-row.even { background: #F5F0EA; }
+  .fill-line { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+  .fill-head { display: grid; grid-template-columns: 13px 1fr 1fr; gap: 8px;
+    padding: 3px 11px; background: rgba(0,0,0,0.03); }
+  .fill-head span { font-size: 6.3pt; text-transform: uppercase; letter-spacing: 0.4px; color: #8A7A6A; font-weight: 700; }
+
+  /* Callout / affirmation strip */
+  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Notes */
+  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
+  .footer-leaf { width: 8px; height: 8px; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Christmas Planning Checklist</div>
+      <div class="header-sub">Everything the holidays need — sorted, so nothing sneaks up on you.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Budget</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Work through each category once, then use the week-by-week countdown on page 2 to pace it all.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <!-- Gifts & Wrapping (full width fill-in tracker) -->
+  <div class="section">
+    <div class="section-header sh-rose">Gifts &amp; Wrapping <span class="focus">who's on your list · buy · wrap</span></div>
+    <div class="fill-head"><span></span><span>Person</span><span>Gift idea</span></div>
+    <div class="fill-row odd"><span class="box"></span><span class="fill-line"></span><span class="fill-line"></span></div>
+    <div class="fill-row even"><span class="box"></span><span class="fill-line"></span><span class="fill-line"></span></div>
+    <div class="fill-row odd"><span class="box"></span><span class="fill-line"></span><span class="fill-line"></span></div>
+    <div class="fill-row even"><span class="box"></span><span class="fill-line"></span><span class="fill-line"></span></div>
+    <div class="fill-row odd"><span class="box"></span><span class="fill-line"></span><span class="fill-line"></span></div>
+    <div class="fill-row even"><span class="box"></span><span class="fill-line"></span><span class="fill-line"></span></div>
+  </div>
+
+  <div class="card-grid">
+    <!-- Cards & Mail -->
+    <div class="section">
+      <div class="section-header sh-steel">Cards &amp; Mail <span class="focus">send early</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Update your address list</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Order or make cards</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Buy stamps &amp; return labels</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Write &amp; sign each card</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Mail before the postal cutoff</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Ship far-away gifts early</span></div>
+    </div>
+
+    <!-- Wrapping Supplies -->
+    <div class="section">
+      <div class="section-header sh-purple">Wrapping Station <span class="focus">stock up once</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wrapping paper &amp; gift bags</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Tape, scissors &amp; ribbon</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Gift tags &amp; a good pen</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Tissue paper &amp; boxes</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Batteries for toys &amp; gadgets</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Stocking stuffers set aside</span></div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <!-- Decor & Home -->
+    <div class="section">
+      <div class="section-header sh-sage">Decor &amp; Home <span class="focus">deck the halls</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Put up the tree &amp; lights</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Test light strands, replace bulbs</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Hang wreath &amp; stockings</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Set out candles &amp; centerpiece</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Outdoor lights &amp; timers</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Holiday linens &amp; hand towels</span></div>
+    </div>
+
+    <!-- Food & Baking -->
+    <div class="section">
+      <div class="section-header sh-taupe">Food &amp; Baking <span class="focus">plan the table</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Plan the holiday menu</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Order turkey, ham or roast</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Write the grocery list</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Cookie &amp; baking ingredients</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Drinks, coffee &amp; nibbles</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Serving dishes &amp; foil / containers</span></div>
+    </div>
+  </div>
+
+  <!-- Guests & Home Prep (full width, two-column checks) -->
+  <div class="section">
+    <div class="section-header sh-dark">Guests &amp; Getting the House Ready <span class="focus">before anyone arrives</span></div>
+    <div class="col2">
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Confirm the guest list &amp; RSVPs</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Deep clean guest bath &amp; bedroom</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Fresh sheets &amp; towels for guests</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Plan overnight sleeping spaces</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Tidy &amp; declutter main rooms</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Extra chairs, plates &amp; glasses</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Stock coffee, tea &amp; snacks</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Plan travel &amp; parking details</span></div>
+    </div>
+  </div>
+
+  <div class="affirmation">The holidays don't have to be perfect to be merry. Start with your people and the food, and let the rest be a bonus.</div>
+
+  <div class="footer">
+    <span class="footer-left">
+      <svg class="footer-leaf" viewBox="0 0 20 20" fill="none"><path d="M4 16 C4 8 10 3 17 3 C17 11 11 16 4 16Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="1.2"/><line x1="4" y1="16" x2="13" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>
+      Free Printable — Print as many copies as you need
+    </span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Holiday Countdown</div>
+      <div class="header-sub">Spread the work across the weeks so December stays calm.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Start date</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Host date</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Tackle a few tasks each week. Behind? Just carry unchecked boxes forward to the next week.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <div class="card-grid">
+    <!-- 4+ weeks out -->
+    <div class="section">
+      <div class="section-header sh-purple">Four Weeks Out <span class="focus">get ahead</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Set your holiday budget</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Finish the gift list</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Order cards &amp; personalized gifts</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Book travel &amp; confirm plans</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Ship long-distance packages</span></div>
+    </div>
+
+    <!-- 3 weeks out -->
+    <div class="section">
+      <div class="section-header sh-steel">Three Weeks Out <span class="focus">shop &amp; decorate</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Buy most of the gifts</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Put up tree &amp; decorations</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Write &amp; mail holiday cards</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Plan the holiday menu</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Stock wrapping supplies</span></div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <!-- 2 weeks out -->
+    <div class="section">
+      <div class="section-header sh-taupe">Two Weeks Out <span class="focus">wrap &amp; prep</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wrap gifts as they arrive</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Order turkey / ham / roast</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Bake &amp; freeze cookies ahead</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Confirm guests &amp; sleeping spots</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Buy non-perishable groceries</span></div>
+    </div>
+
+    <!-- 1 week out -->
+    <div class="section">
+      <div class="section-header sh-sage">One Week Out <span class="focus">clean &amp; stock</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Deep clean the house</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Prep guest room &amp; bath</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Grocery run for fresh items</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Finish last-minute gifts</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Chill drinks, set the table plan</span></div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <!-- Christmas Eve -->
+    <div class="section">
+      <div class="section-header sh-rose">Christmas Eve <span class="focus">the day before</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Prep make-ahead dishes</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Set the table &amp; serving dishes</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wrap any last gifts</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Fill the stockings</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Charge cameras &amp; devices</span></div>
+    </div>
+
+    <!-- Christmas Day -->
+    <div class="section">
+      <div class="section-header sh-dark">Christmas Day <span class="focus">enjoy it</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Start the roast on schedule</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Put on music &amp; light candles</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Take photos with everyone</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Relax &amp; savor the meal</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Note thank-you cards to send</span></div>
+    </div>
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="notes-title">Don't forget / carry-over tasks</div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Gifts bought</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Gifts wrapped</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Cards mailed</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Days to go</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">
+      <svg class="footer-leaf" viewBox="0 0 20 20" fill="none"><path d="M4 16 C4 8 10 3 17 3 C17 11 11 16 4 16Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="1.2"/><line x1="4" y1="16" x2="13" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>
+      Free Printable — Print as many copies as you need
+    </span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

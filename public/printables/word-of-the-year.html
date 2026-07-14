@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Word of the Year — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.0in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* ---------- PAGE 1 : framable decor piece ---------- */
+  .frame-outer { margin-top: 0.30in; height: 8.15in; border: 2px solid #7A9E7E;
+    border-radius: 12px; padding: 10px; }
+  .frame-inner { height: 100%; border: 1px solid #C4B5A5; border-radius: 8px;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    padding: 0.42in 0.55in; text-align: center; }
+
+  .flourish { display: flex; align-items: center; justify-content: center; gap: 9px; }
+  .flourish-line { width: 1.15in; height: 1px; background: #C4826E; opacity: 0.6; }
+  .flourish-dot { width: 6px; height: 6px; border-radius: 50%; background: #C4826E; }
+  .flourish-diamond { width: 7px; height: 7px; background: #7A9E7E; transform: rotate(45deg); }
+
+  .fp-eyebrow { font-family: 'Lato', sans-serif; font-size: 9pt; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 3px; color: #7A9E7E; margin-top: 6px; }
+  .fp-year { display: flex; align-items: baseline; justify-content: center; gap: 8px; margin-top: 10px; }
+  .fp-year-label { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 12pt; color: #A89080; }
+  .fp-year-line { width: 1.6in; border-bottom: 1.4px solid #C4B5A5; height: 20px; }
+
+  .fp-word-zone { width: 100%; }
+  .fp-word-caption { font-family: 'Playfair Display', Georgia, serif; font-style: italic;
+    font-size: 11pt; color: #C4826E; margin-bottom: 6px; }
+  .fp-word-line { margin: 0 auto; width: 4.6in; border-bottom: 2px solid #7A9E7E; height: 0.95in; }
+  .fp-word-hint { font-family: 'Lato', sans-serif; font-size: 7.5pt; font-style: italic;
+    color: #B0A090; margin-top: 8px; letter-spacing: 0.5px; }
+
+  .fp-meaning { width: 100%; }
+  .fp-meaning-title { font-family: 'Lato', sans-serif; font-size: 8pt; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1.5px; color: #8B7BA0; margin-bottom: 12px; }
+  .fp-meaning-line { width: 100%; border-bottom: 1px solid #D4B4A8; height: 20px; margin-bottom: 11px; }
+
+  .fp-mantra { background: #B5C9B7; border-radius: 6px; padding: 8px 18px; width: 100%;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 10pt; font-style: italic; color: #3D5C40; }
+
+  /* ---------- PAGE 2 : reflection worksheet ---------- */
+  .body2 { margin-top: 8px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+  .section { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; margin-bottom: 8px; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage   { background: #7A9E7E; }
+  .sh-steel  { background: #6B8FAE; }
+  .sh-taupe  { background: #A89080; }
+  .sh-purple { background: #8B7BA0; }
+  .sh-rose   { background: #C4826E; }
+  .sh-dark   { background: #4A6B4E; }
+
+  .sec-body { padding: 7px 11px 9px; background: #FAF7F2; }
+  .prompt { font-family: 'Lato', sans-serif; font-size: 7.6pt; color: #6B5F52; font-style: italic; margin-bottom: 4px; }
+  .write-line { border-bottom: 1px solid #D4B4A8; height: 17px; margin-bottom: 7px; }
+  .write-line.tight { margin-bottom: 4px; }
+
+  /* checkbox lines */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center; padding: 4px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .check-strong { font-family: 'Lato', sans-serif; font-size: 7.8pt; font-weight: 700; color: #3D3530; }
+  .check-fill { flex: 1; border-bottom: 1px solid #D4B4A8; height: 14px; }
+  .check-row .check-body { display: flex; align-items: flex-end; gap: 5px; }
+
+  /* words-considered pill grid */
+  .word-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; padding: 8px 11px 10px; background: #FAF7F2; }
+  .word-slot { display: flex; align-items: flex-end; gap: 5px; }
+  .word-num { font-family: 'Lato', sans-serif; font-size: 7.5pt; font-weight: 700; color: #A89080; }
+  .word-slot-line { flex: 1; border-bottom: 1px solid #C4B5A5; height: 16px; }
+
+  /* monthly check-in grid */
+  .month-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 8px 11px 10px; background: #FAF7F2; }
+  .month-cell { border: 1px solid #DDD5C8; border-radius: 5px; background: #fff; padding: 5px 6px 7px; text-align: center; }
+  .month-name { font-family: 'Lato', sans-serif; font-size: 6.6pt; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; color: #6B8FAE; margin-bottom: 5px; }
+  .month-line { border-bottom: 1px solid #D4B4A8; height: 13px; }
+
+  .affirmation { background: #B5C9B7; border-radius: 5px; padding: 6px 11px; margin-bottom: 8px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Summary bar */
+  .summary-bar { background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 5px; }
+  .footer-leaf { width: 8px; height: 9px; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 · FRAMABLE DECOR ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Word of the Year</div>
+      <div class="header-sub">One word to anchor your whole year.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Name</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Write your word in the frame below, then print, trim, and hang it where you'll see it every day.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <div class="frame-outer">
+    <div class="frame-inner">
+
+      <div>
+        <div class="flourish">
+          <span class="flourish-line"></span>
+          <span class="flourish-diamond"></span>
+          <span class="flourish-line"></span>
+        </div>
+        <div class="fp-eyebrow">My Word For</div>
+        <div class="fp-year">
+          <span class="fp-year-label">the year</span>
+          <span class="fp-year-line"></span>
+        </div>
+      </div>
+
+      <div class="fp-word-zone">
+        <div class="fp-word-caption">is&hellip;</div>
+        <div class="fp-word-line"></div>
+        <div class="fp-word-hint">Write it large — let it fill the space.</div>
+      </div>
+
+      <div class="fp-meaning">
+        <div class="fp-meaning-title">To me, this word means</div>
+        <div class="fp-meaning-line"></div>
+        <div class="fp-meaning-line"></div>
+      </div>
+
+      <div class="fp-mantra">This year, I choose to lead with intention — one word, guiding every small choice.</div>
+
+      <div class="flourish">
+        <span class="flourish-line"></span>
+        <span class="flourish-dot"></span>
+        <span class="flourish-line"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">
+      <svg class="footer-leaf" viewBox="0 0 12 14" fill="none"><path d="M6 13 C6 8 2 6 1 2 C5 3 8 6 8 10 C10 7 11 5 11 3 C11 8 9 12 6 13Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="0.7"/></svg>
+      Free Printable — Print as many copies as you need
+    </span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 · REFLECTION & INTENTION ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Choose &amp; Live Your Word</div>
+      <div class="header-sub">The reflection behind the word makes it stick.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Chosen on</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Review on</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Work through the prompts to land on the right word, then use the monthly check-in to keep it alive all year.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <div class="body2">
+    <div class="two-col">
+      <!-- LEFT COLUMN -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-rose">Why This Word <span class="focus">start here</span></div>
+          <div class="sec-body">
+            <div class="prompt">What do I want more of this year?</div>
+            <div class="write-line"></div>
+            <div class="prompt">What am I ready to leave behind?</div>
+            <div class="write-line"></div>
+            <div class="prompt">How do I want to feel by December?</div>
+            <div class="write-line"></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-taupe">Words I Considered <span class="focus">shortlist</span></div>
+          <div class="word-grid">
+            <div class="word-slot"><span class="word-num">1</span><span class="word-slot-line"></span></div>
+            <div class="word-slot"><span class="word-num">2</span><span class="word-slot-line"></span></div>
+            <div class="word-slot"><span class="word-num">3</span><span class="word-slot-line"></span></div>
+            <div class="word-slot"><span class="word-num">4</span><span class="word-slot-line"></span></div>
+            <div class="word-slot"><span class="word-num">5</span><span class="word-slot-line"></span></div>
+            <div class="word-slot"><span class="word-num">6</span><span class="word-slot-line"></span></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-purple">My Mantra <span class="focus">one sentence</span></div>
+          <div class="sec-body">
+            <div class="prompt">Finish this: "This year, my word reminds me to&hellip;"</div>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-sage">What It Looks Like In Practice <span class="focus">make it real</span></div>
+          <div class="check-row odd"><span class="box"></span><span class="check-body"><span class="check-strong">In my mornings</span><span class="check-fill"></span></span></div>
+          <div class="check-row even"><span class="box"></span><span class="check-body"><span class="check-strong">In my work</span><span class="check-fill"></span></span></div>
+          <div class="check-row odd"><span class="box"></span><span class="check-body"><span class="check-strong">In my relationships</span><span class="check-fill"></span></span></div>
+          <div class="check-row even"><span class="box"></span><span class="check-body"><span class="check-strong">In my rest</span><span class="check-fill"></span></span></div>
+          <div class="check-row odd"><span class="box"></span><span class="check-body"><span class="check-strong">In my home</span><span class="check-fill"></span></span></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-steel">One Small Habit To Anchor It <span class="focus">daily cue</span></div>
+          <div class="sec-body">
+            <div class="prompt">A tiny action I'll repeat that lives out my word:</div>
+            <div class="write-line"></div>
+            <div class="write-line"></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-rose">A Verse or Quote To Carry <span class="focus">optional</span></div>
+          <div class="sec-body">
+            <div class="write-line"></div>
+            <div class="write-line tight"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Monthly check-in full width -->
+    <div class="section">
+      <div class="section-header sh-dark">Monthly Check-In <span class="focus">note one way your word showed up each month</span></div>
+      <div class="month-grid">
+        <div class="month-cell"><div class="month-name">Jan</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Feb</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Mar</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Apr</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">May</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Jun</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Jul</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Aug</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Sep</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Oct</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Nov</div><div class="month-line"></div></div>
+        <div class="month-cell"><div class="month-name">Dec</div><div class="month-line"></div></div>
+      </div>
+    </div>
+
+    <div class="affirmation">A word of the year isn't a resolution to perfect — it's a gentle compass. When you drift, it points you home again.</div>
+
+    <div class="summary-bar">
+      <div class="sum-cell highlight"><span class="sum-label">My word</span><div class="sum-value"></div></div>
+      <div class="sum-cell"><span class="sum-label">In one feeling</span><div class="sum-value"></div></div>
+      <div class="sum-cell"><span class="sum-label">Daily anchor</span><div class="sum-value"></div></div>
+      <div class="sum-cell"><span class="sum-label">Review date</span><div class="sum-value"></div></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">
+      <svg class="footer-leaf" viewBox="0 0 12 14" fill="none"><path d="M6 13 C6 8 2 6 1 2 C5 3 8 6 8 10 C10 7 11 5 11 3 C11 8 9 12 6 13Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="0.7"/></svg>
+      Free Printable — Print as many copies as you need
+    </span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

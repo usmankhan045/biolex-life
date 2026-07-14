@@ -151,7 +151,12 @@ async function main() {
       published_at: when,
     };
 
-    if (DRY_RUN) { console.log(`would publish ${slug} (${when})`); await ensurePrintable(a.printable); published++; continue; }
+    if (DRY_RUN) {
+      console.log(`would publish ${slug} (${when})`);
+      await ensurePrintable(a.printable);
+      for (const px of (a.printable_extra || [])) await ensurePrintable(px);
+      published++; continue;
+    }
 
     const res = await fetch(`${BASE}/rest/v1/posts?on_conflict=site_id,slug`, {
       method: "POST",
@@ -166,6 +171,7 @@ async function main() {
     if (!res.ok) { errors.push([slug, `${res.status} ${(await res.text()).slice(0, 200)}`]); continue; }
     console.log(`published ${slug} (${when})`);
     await ensurePrintable(a.printable);
+    for (const px of (a.printable_extra || [])) await ensurePrintable(px);
     published++;
   }
 

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Halloween Party Games &amp; Bingo — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section blocks */
+  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Bingo grid */
+  .bingo { display: grid; grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 0.86in); }
+  .bcell { border-right: 1px solid #E4DCCF; border-bottom: 1px solid #E4DCCF;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    padding: 3px 4px; font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; line-height: 1.15; }
+  .bcell:nth-child(5n) { border-right: none; }
+  .bingo .bcell:nth-child(n+21) { border-bottom: none; }
+  .bcell.odd  { background: #FAF7F2; }
+  .bcell.even { background: #F5F0EA; }
+  .bcell.free { background: #C4826E; color: #fff; }
+  .bcell .free-top { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 10pt; letter-spacing: 0.5px; display: block; }
+  .bcell .free-sub { font-size: 6pt; font-style: italic; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-top: 2px; }
+
+  /* Games list */
+  .game-row { display: grid; grid-template-columns: 14px 1fr; gap: 8px; align-items: start;
+    padding: 5px 11px; }
+  .game-row.odd  { background: #FAF7F2; }
+  .game-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; margin-top: 1px; }
+  .game-name { font-family: 'Lato', sans-serif; font-size: 8pt; font-weight: 700; color: #3D3530; }
+  .game-desc { font-family: 'Lato', sans-serif; font-size: 7.2pt; color: #6B5F52; line-height: 1.25; }
+
+  /* Two-column games */
+  .col2 { display: grid; grid-template-columns: 1fr 1fr; }
+  .col2 .game-row { border-right: 1px solid rgba(0,0,0,0.04); }
+
+  /* Would You Rather rows */
+  .wyr-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center;
+    padding: 6px 11px; }
+  .wyr-row.odd  { background: #FAF7F2; }
+  .wyr-row.even { background: #F5F0EA; }
+  .wyr-opt { display: flex; align-items: center; gap: 6px; font-size: 7.6pt; color: #3D3530; line-height: 1.2; }
+  .wyr-opt.right { justify-content: flex-end; text-align: right; }
+  .wyr-opt.right .obox { order: 2; }
+  .obox { width: 13px; height: 13px; border: 1.5px solid #8B7BA0; border-radius: 50%; background: #fff; flex: none; }
+  .wyr-or { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 7.5pt; color: #C4826E; padding: 0 2px; }
+
+  /* Ballot rows */
+  .ballot-row { display: grid; grid-template-columns: 1.5in 1fr; align-items: center; padding: 5px 11px; }
+  .ballot-row.odd  { background: #FAF7F2; }
+  .ballot-row.even { background: #F5F0EA; }
+  .ballot-label { font-size: 7.8pt; font-weight: 700; color: #3D3530; }
+  .ballot-line { border-bottom: 1.2px solid #C4B5A5; height: 14px; margin-left: 4px; }
+
+  /* Callout strip */
+  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Notes */
+  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 17px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
+  .footer-leaf { width: 8px; height: 8px; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Halloween Party Games</div>
+      <div class="header-sub">Bingo, group games &amp; a costume contest — everything for a spook-tacular party.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Party date</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Host</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Print one bingo card per guest. Mark a square each time you spot it — first to five in a row shouts &ldquo;Boo!&rdquo;</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <!-- Halloween Bingo -->
+  <div class="section">
+    <div class="section-header sh-rose">Halloween Bingo <span class="focus">spot it at the party — five in a row to win</span></div>
+    <div class="bingo">
+      <div class="bcell odd">Black Cat</div>
+      <div class="bcell even">Friendly Ghost</div>
+      <div class="bcell odd">Witch&rsquo;s Hat</div>
+      <div class="bcell even">Spooky Spider</div>
+      <div class="bcell odd">Full Moon</div>
+
+      <div class="bcell even">Jack-o-Lantern</div>
+      <div class="bcell odd">Little Bat</div>
+      <div class="bcell even">Candy Corn</div>
+      <div class="bcell odd">Cobweb</div>
+      <div class="bcell even">Skeleton</div>
+
+      <div class="bcell odd">Broomstick</div>
+      <div class="bcell even">Vampire Cape</div>
+      <div class="bcell free"><span><span class="free-top">FREE</span><span class="free-sub">Grab a Treat</span></span></div>
+      <div class="bcell even">Bubbling Cauldron</div>
+      <div class="bcell odd">Wise Owl</div>
+
+      <div class="bcell even">Tombstone</div>
+      <div class="bcell odd">Wrapped Mummy</div>
+      <div class="bcell even">Haunted House</div>
+      <div class="bcell odd">Howling Wolf</div>
+      <div class="bcell even">Green Potion</div>
+
+      <div class="bcell odd">Cackling Witch</div>
+      <div class="bcell even">Trick-or-Treat Bag</div>
+      <div class="bcell odd">Glowing Eyes</div>
+      <div class="bcell even">Costume Cape</div>
+      <div class="bcell odd">A Real Scream</div>
+    </div>
+  </div>
+
+  <!-- Party Games -->
+  <div class="section">
+    <div class="section-header sh-sage">Party Games to Play <span class="focus">check off each one as you go</span></div>
+    <div class="col2">
+      <div class="game-row odd"><span class="box"></span><div><div class="game-name">Mummy Wrap Race</div><div class="game-desc">Teams of two race to wrap one player head-to-toe in toilet paper. Fastest tidy mummy wins.</div></div></div>
+      <div class="game-row odd"><span class="box"></span><div><div class="game-name">Pumpkin Bowling</div><div class="game-desc">Stack empty bottles as pins and roll a small pumpkin to knock them down.</div></div></div>
+      <div class="game-row even"><span class="box"></span><div><div class="game-name">Doughnut on a String</div><div class="game-desc">Hang doughnuts from a line and eat them hands-free — no fingers allowed.</div></div></div>
+      <div class="game-row even"><span class="box"></span><div><div class="game-name">Pin the Spider on the Web</div><div class="game-desc">Blindfolded players stick a paper spider closest to the center of a drawn web.</div></div></div>
+      <div class="game-row odd"><span class="box"></span><div><div class="game-name">Guess the Candy Count</div><div class="game-desc">Fill a jar with candy corn. Closest guess takes the whole jar home.</div></div></div>
+      <div class="game-row odd"><span class="box"></span><div><div class="game-name">Monster Freeze Dance</div><div class="game-desc">Dance while the music plays; freeze like a statue the moment it stops.</div></div></div>
+      <div class="game-row even"><span class="box"></span><div><div class="game-name">Spooky Scavenger Hunt</div><div class="game-desc">Hide small toys around the room and send guests off with a picture list.</div></div></div>
+      <div class="game-row even"><span class="box"></span><div><div class="game-name">Eyeball Spoon Race</div><div class="game-desc">Balance a ping-pong &ldquo;eyeball&rdquo; on a spoon and race to the finish line.</div></div></div>
+    </div>
+  </div>
+
+  <div class="affirmation">Host tip: set out a small prize table and let winners pick a treat. Keep games short and silly — five to ten minutes each keeps the whole party laughing.</div>
+
+  <div class="footer">
+    <span class="footer-left"><svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.4"/><line x1="7" y1="17" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>Free Printable — Print as many copies as you need</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Would You Rather?</div>
+      <div class="header-sub">A giggly Halloween icebreaker, plus a costume contest ballot.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Player</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Team</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Read each pair aloud and have everyone circle their choice — then ask a few brave guests to explain why.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <!-- Would You Rather -->
+  <div class="section">
+    <div class="section-header sh-purple">Halloween Would You Rather <span class="focus">circle one in each spooky pair</span></div>
+    <div class="wyr-row odd">
+      <span class="wyr-opt"><span class="obox"></span>Spend the night in a haunted house</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Camp out in a spooky graveyard<span class="obox"></span></span>
+    </div>
+    <div class="wyr-row even">
+      <span class="wyr-opt"><span class="obox"></span>Have a pet bat that follows you</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Have a friendly pet spider<span class="obox"></span></span>
+    </div>
+    <div class="wyr-row odd">
+      <span class="wyr-opt"><span class="obox"></span>Trick-or-treat in the pouring rain</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Trick-or-treat in the snow<span class="obox"></span></span>
+    </div>
+    <div class="wyr-row even">
+      <span class="wyr-opt"><span class="obox"></span>Wear a costume that glows in the dark</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Wear one that makes spooky sounds<span class="obox"></span></span>
+    </div>
+    <div class="wyr-row odd">
+      <span class="wyr-opt"><span class="obox"></span>Eat a chocolate-covered spider</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Eat a sour gummy worm<span class="obox"></span></span>
+    </div>
+    <div class="wyr-row even">
+      <span class="wyr-opt"><span class="obox"></span>Ride a witch&rsquo;s flying broom</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Ride a magic flying carpet<span class="obox"></span></span>
+    </div>
+    <div class="wyr-row odd">
+      <span class="wyr-opt"><span class="obox"></span>Have candy that never runs out</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Have a costume that changes hourly<span class="obox"></span></span>
+    </div>
+    <div class="wyr-row even">
+      <span class="wyr-opt"><span class="obox"></span>Meet a giggling friendly witch</span>
+      <span class="wyr-or">or</span>
+      <span class="wyr-opt right">Meet a dancing skeleton<span class="obox"></span></span>
+    </div>
+  </div>
+
+  <!-- Costume Contest Ballot -->
+  <div class="section">
+    <div class="section-header sh-steel">Costume Contest Ballot <span class="focus">write in your winner for each award</span></div>
+    <div class="ballot-row odd"><span class="ballot-label">Spookiest Costume</span><span class="ballot-line"></span></div>
+    <div class="ballot-row even"><span class="ballot-label">Funniest Costume</span><span class="ballot-line"></span></div>
+    <div class="ballot-row odd"><span class="ballot-label">Most Creative</span><span class="ballot-line"></span></div>
+    <div class="ballot-row even"><span class="ballot-label">Best Group Costume</span><span class="ballot-line"></span></div>
+    <div class="ballot-row odd"><span class="ballot-label">Cutest Costume</span><span class="ballot-line"></span></div>
+    <div class="ballot-row even"><span class="ballot-label">Crowd Favorite</span><span class="ballot-line"></span></div>
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="notes-title">Prize ideas &amp; party notes</div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- Summary / scoreboard -->
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Bingo winner</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Games champ</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Candy jar guess</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Best costume</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left"><svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.4"/><line x1="7" y1="17" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>Free Printable — Print as many copies as you need</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>
