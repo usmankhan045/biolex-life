@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 
 export const revalidate = 3600;
 
-// Single-author site — only the configured author slug is valid.
+// Single-author site, only the configured author slug is valid.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -33,7 +33,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   if (slug !== siteConfig.author.slug) return {};
-  const title = `${siteConfig.author.name} — ${siteConfig.author.role}`;
+  const title = `${siteConfig.author.name}, ${siteConfig.author.role}`;
   const description = siteConfig.author.shortBio;
   return {
     title,

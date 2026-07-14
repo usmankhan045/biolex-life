@@ -1,1 +1,40 @@
-{"title":"The Family Grocery List on a Budget (Free Printable)","excerpt":"A simple four-step system for building a family grocery list on a budget: set a ceiling, plan meals first, shop your pantry, and stop overspending. Free printable inside.","quick_answer":"To build a grocery list on a budget for family meals, set a weekly spending ceiling, plan five or six dinners first, then write down only what those meals and your staples require. Shop your own pantry before the store, group the list by aisle, and star optional items so you know what to cut if you hit your limit.","seo_title":"Family Grocery List on a Budget (Free Printable)","seo_description":"Build a family grocery list on a budget that holds: set a weekly ceiling, plan meals first, shop smart. Download the free printable, no sign-up.","audience_tags":["meal-planning","budgeting","busy-families"],"category":"meal-planning","printable":"grocery-list-template","cover":{"eyebrow":"Meal Planning","badge":"Free Printable Inside"},"faq_items":[{"question":"How much should a family of four spend on groceries per week?","answer":"A family of four typically spends about $200 to $300 a week, but a planned, budget-conscious approach can bring that closer to $150 to $200. Set your own target by trimming ten to fifteen percent off what you actually spent last month, then hold that ceiling."},{"question":"How can I lower my family's grocery bill without coupons?","answer":"Plan your meals before you shop, build the list around cheap staples like beans, rice, eggs, and frozen vegetables, and shop your pantry first to avoid duplicates. Planning cuts impulse buys and waste, which saves more than most coupons on a whole week of family groceries."},{"question":"What is the cheapest way to feed a family of four?","answer":"Anchor meals to versatile, filling staples — dried beans, rice, pasta, oats, eggs, whole chickens, and frozen produce — that repeat across several dinners. Buy freezer-friendly proteins on sale, portion them at home, and reserve a small slice of the budget for flavor extras that make the staples feel like real meals."},{"question":"How do I stop overspending on groceries with kids?","answer":"Give kids' favorites a fixed allowance within your weekly ceiling and let kids choose within it, so treats become one calm decision at home instead of endless in-aisle negotiations. Shop from a list organized by aisle, keep a running total, and star optional items to drop first."},{"question":"Do I need a meal plan and a grocery list, or just one?","answer":"Use both. A meal plan decides what you will eat and the grocery list turns that plan into exactly what you buy. A plan without a list means guessing at the store; a list without a plan means buying ingredients that never become dinners. Together they close the loop and save the most money."}]}
+{
+  "title": "The Family Grocery List on a Budget (Free Printable)",
+  "excerpt": "A simple four-step system for building a family grocery list on a budget: set a ceiling, plan meals first, shop your pantry, and stop overspending. Free printable inside.",
+  "quick_answer": "To build a grocery list on a budget for family meals, set a weekly spending ceiling, plan five or six dinners first, then write down only what those meals and your staples require. Shop your own pantry before the store, group the list by aisle, and star optional items so you know what to cut if you hit your limit.",
+  "seo_title": "Family Grocery List on a Budget (Free Printable)",
+  "seo_description": "Build a family grocery list on a budget that holds: set a weekly ceiling, plan meals first, shop smart. Download the free printable, no sign-up.",
+  "audience_tags": [
+    "meal-planning",
+    "budgeting",
+    "busy-families"
+  ],
+  "category": "meal-planning",
+  "printable": "grocery-list-template",
+  "cover": {
+    "eyebrow": "Meal Planning",
+    "badge": "Free Printable Inside"
+  },
+  "faq_items": [
+    {
+      "question": "How much should a family of four spend on groceries per week?",
+      "answer": "A family of four typically spends about $200 to $300 a week, but a planned, budget-conscious approach can bring that closer to $150 to $200. Set your own target by trimming ten to fifteen percent off what you actually spent last month, then hold that ceiling."
+    },
+    {
+      "question": "How can I lower my family's grocery bill without coupons?",
+      "answer": "Plan your meals before you shop, build the list around cheap staples like beans, rice, eggs, and frozen vegetables, and shop your pantry first to avoid duplicates. Planning cuts impulse buys and waste, which saves more than most coupons on a whole week of family groceries."
+    },
+    {
+      "question": "What is the cheapest way to feed a family of four?",
+      "answer": "Anchor meals to versatile, filling staples, dried beans, rice, pasta, oats, eggs, whole chickens, and frozen produce, that repeat across several dinners. Buy freezer-friendly proteins on sale, portion them at home, and reserve a small slice of the budget for flavor extras that make the staples feel like real meals."
+    },
+    {
+      "question": "How do I stop overspending on groceries with kids?",
+      "answer": "Give kids' favorites a fixed allowance within your weekly ceiling and let kids choose within it, so treats become one calm decision at home instead of endless in-aisle negotiations. Shop from a list organized by aisle, keep a running total, and star optional items to drop first."
+    },
+    {
+      "question": "Do I need a meal plan and a grocery list, or just one?",
+      "answer": "Use both. A meal plan decides what you will eat and the grocery list turns that plan into exactly what you buy. A plan without a list means guessing at the store; a list without a plan means buying ingredients that never become dinners. Together they close the loop and save the most money."
+    }
+  ]
+}

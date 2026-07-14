@@ -16,6 +16,7 @@
 import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { cleanValue } from "./lib-dedash.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DRAFTS = join(ROOT, "content-queue", "drafts");
@@ -49,7 +50,8 @@ async function buildOne(slug) {
     faq_items: meta.faq_items.map((f) => ({ question: f.question, answer: f.answer })),
   };
   await mkdir(ARTICLES, { recursive: true });
-  await writeFile(join(ARTICLES, `${slug}.json`), JSON.stringify(article, null, 2) + "\n");
+  // House rule: never ship em/en dashes (an AI-writing tell). Auto-strip on build.
+  await writeFile(join(ARTICLES, `${slug}.json`), JSON.stringify(cleanValue(article), null, 2) + "\n");
   return { slug, words: wc, faqs: article.faq_items.length };
 }
 

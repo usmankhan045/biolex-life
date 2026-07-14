@@ -27,14 +27,14 @@ const variantClasses: Record<ButtonVariant, string> = {
     "hover:bg-primary/10 " +
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
 
-  // Lime accent carries INK text — white is invisible on the bright lime.
+  // Lime accent carries INK text, white is invisible on the bright lime.
   accent:
     "bg-accent text-text border-2 border-text " +
     "hover:opacity-90 active:opacity-80 " +
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text",
 };
 
-// Pill buttons — the "bold daylight" nav/CTA shape from the brand mockup.
+// Pill buttons, the "bold daylight" nav/CTA shape from the brand mockup.
 const sizeClasses: Record<ButtonSize, string> = {
   sm: "px-4 py-1.5 text-sm rounded-full",
   md: "px-6 py-2.5 text-base rounded-full",

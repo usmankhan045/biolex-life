@@ -12,7 +12,7 @@ import { breadcrumbSchema, collectionPageSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 
-// Only the slugs in siteConfig are valid — anything else returns 404.
+// Only the slugs in siteConfig are valid, anything else returns 404.
 export const dynamicParams = false;
 
 // ISR: regenerate at runtime so the hub's audience-tagged posts render even when
@@ -185,7 +185,7 @@ export default async function SegmentHubPage({
         </section>
       )}
 
-      {/* ── Where to start — 3 quick links ──────────────────────────────── */}
+      {/* ── Where to start, 3 quick links ──────────────────────────────── */}
       <section
         className="py-14 sm:py-16 bg-primary/[0.03]"
         aria-labelledby="quick-links-heading"

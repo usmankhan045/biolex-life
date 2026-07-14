@@ -9,7 +9,7 @@ import { Container } from "@/components/ui";
 
 type CategoryLink = { slug: string; name: string };
 
-// Icons as tiny SVGs — no package dependency needed for two shapes.
+// Icons as tiny SVGs, no package dependency needed for two shapes.
 function MenuIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -115,7 +115,7 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
             className="flex items-center gap-2.5 shrink-0 hover:opacity-80 transition-opacity"
             aria-label={`${siteConfig.name} home`}
           >
-            {/* Brand mark — grape rounded square with a lime dot at its centre */}
+            {/* Brand mark, grape rounded square with a lime dot at its centre */}
             <span
               aria-hidden
               className="relative w-7 h-7 rounded-[9px] bg-primary shrink-0 after:content-[''] after:absolute after:inset-[7px] after:rounded-full after:bg-accent"

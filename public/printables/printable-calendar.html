@@ -2,362 +2,362 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Undated Monthly Calendar — Free Printable</title>
+<title>Undated Monthly Calendar, Free Printable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  @page { size: letter landscape; margin: 0; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
-    -webkit-print-color-adjust: exact; }
+ @page { size: letter landscape; margin: 0; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+ -webkit-print-color-adjust: exact; }
 
-  .page { width: 11in; height: 8.5in; background: #FAF7F2; position: relative;
-    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
-  .page:last-child { page-break-after: avoid; }
+ .page { width: 11in; height: 8.5in; background: #FAF7F2; position: relative;
+ page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+ .page:last-child { page-break-after: avoid; }
 
-  /* Botanical motif */
-  .leaf { position: absolute; top: 0.22in; right: 0.28in; width: 0.7in; opacity: 0.22; z-index: 2; }
+ /* Botanical motif */
+ .leaf { position: absolute; top: 0.22in; right: 0.28in; width: 0.7in; opacity: 0.22; z-index: 2; }
 
-  /* Header */
-  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
-    display: flex; justify-content: space-between; align-items: flex-end; }
-  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
-    color: #fff; letter-spacing: 0.5px; line-height: 1; }
-  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
-  .header-fields { display: flex; gap: 16px; }
-  .hf { text-align: left; }
-  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
-  .hf-line { width: 1.2in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+ /* Header */
+ .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+ display: flex; justify-content: space-between; align-items: flex-end; }
+ .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+ color: #fff; letter-spacing: 0.5px; line-height: 1; }
+ .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+ .header-fields { display: flex; gap: 16px; }
+ .hf { text-align: left; }
+ .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+ .hf-line { width: 1.2in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
 
-  /* Subheader strip */
-  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
-    justify-content: space-between; align-items: center; }
-  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
-  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+ /* Subheader strip */
+ .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+ justify-content: space-between; align-items: center; }
+ .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+ .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
 
-  /* Page 1 body: calendar + sidebar */
-  .layout { display: grid; grid-template-columns: 1fr 2.7in; gap: 0.16in; margin-top: 8px; }
+ /* Page 1 body: calendar + sidebar */
+ .layout { display: grid; grid-template-columns: 1fr 2.7in; gap: 0.16in; margin-top: 8px; }
 
-  /* Calendar */
-  .cal-weekhead { display: grid; grid-template-columns: repeat(7, 1fr); }
-  .wh { background: #7A9E7E; color: #fff; font-family: 'Playfair Display', Georgia, serif;
-    font-size: 8pt; font-weight: 600; text-align: center; padding: 4px 0; letter-spacing: 0.4px;
-    border-right: 1px solid rgba(255,255,255,0.25); }
-  .wh:first-child { border-radius: 6px 0 0 0; }
-  .wh:last-child { border-right: none; border-radius: 0 6px 0 0; }
-  .wh.we { background: #6B8FAE; }
+ /* Calendar */
+ .cal-weekhead { display: grid; grid-template-columns: repeat(7, 1fr); }
+ .wh { background: #7A9E7E; color: #fff; font-family: 'Playfair Display', Georgia, serif;
+ font-size: 8pt; font-weight: 600; text-align: center; padding: 4px 0; letter-spacing: 0.4px;
+ border-right: 1px solid rgba(255,255,255,0.25); }
+ .wh:first-child { border-radius: 6px 0 0 0; }
+ .wh:last-child { border-right: none; border-radius: 0 6px 0 0; }
+ .wh.we { background: #6B8FAE; }
 
-  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1.02in);
-    border-left: 1px solid #DDD5C8; border-top: 1px solid #DDD5C8; }
-  .day { border-right: 1px solid #DDD5C8; border-bottom: 1px solid #DDD5C8;
-    background: #FAF7F2; position: relative; padding: 4px; }
-  .day:nth-child(7n+1), .day:nth-child(7n) { background: #F5F0EA; }
-  .dnum { display: block; width: 0.28in; height: 0.17in; border: 1px solid #D8CDBC;
-    border-radius: 3px; background: #fff; }
+ .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr);
+ grid-template-rows: repeat(6, 1.02in);
+ border-left: 1px solid #DDD5C8; border-top: 1px solid #DDD5C8; }
+ .day { border-right: 1px solid #DDD5C8; border-bottom: 1px solid #DDD5C8;
+ background: #FAF7F2; position: relative; padding: 4px; }
+ .day:nth-child(7n+1).day:nth-child(7n) { background: #F5F0EA; }
+ .dnum { display: block; width: 0.28in; height: 0.17in; border: 1px solid #D8CDBC;
+ border-radius: 3px; background: #fff; }
 
-  /* Sidebar */
-  .side-box { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; margin-bottom: 7px; }
-  .side-head { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 4px 10px; }
-  .sh-rose  { background: #C4826E; }
-  .sh-sage  { background: #7A9E7E; }
-  .sh-steel { background: #6B8FAE; }
-  .sh-taupe { background: #A89080; }
-  .sh-purple{ background: #8B7BA0; }
-  .sh-dark  { background: #4A6B4E; }
-  .side-body { padding: 6px 10px 7px; }
-  .write-line { border-bottom: 1px solid #D4C7B6; height: 17px; }
-  .num-line { display: grid; grid-template-columns: 15px 1fr; align-items: end; gap: 6px; margin-bottom: 3px; }
-  .num-line .n { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 700; color: #7A9E7E; }
-  .num-line .l { border-bottom: 1px solid #D4C7B6; height: 16px; }
+ /* Sidebar */
+ .side-box { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; margin-bottom: 7px; }
+ .side-head { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 4px 10px; }
+ .sh-rose { background: #C4826E; }
+ .sh-sage { background: #7A9E7E; }
+ .sh-steel { background: #6B8FAE; }
+ .sh-taupe { background: #A89080; }
+ .sh-purple{ background: #8B7BA0; }
+ .sh-dark { background: #4A6B4E; }
+ .side-body { padding: 6px 10px 7px; }
+ .write-line { border-bottom: 1px solid #D4C7B6; height: 17px; }
+ .num-line { display: grid; grid-template-columns: 15px 1fr; align-items: end; gap: 6px; margin-bottom: 3px; }
+ .num-line .n { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 700; color: #7A9E7E; }
+ .num-line .l { border-bottom: 1px solid #D4C7B6; height: 16px; }
 
-  /* Checkbox rows */
-  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center; padding: 3.5px 0; }
-  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
-  .check-label { font-size: 8pt; color: #3D3530; }
+ /* Checkbox rows */
+ .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center; padding: 3.5px 0; }
+ .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+ .check-label { font-size: 8pt; color: #3D3530; }
 
-  /* Affirmation strip */
-  .affirmation { margin-top: 7px; background: #B5C9B7; border-radius: 5px; padding: 6px 12px;
-    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+ /* Affirmation strip */
+ .affirmation { margin-top: 7px; background: #B5C9B7; border-radius: 5px; padding: 6px 12px;
+ font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
 
-  /* Page 2 */
-  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
-  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
-  .section-header .hint { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; }
-  .sec-body { padding: 7px 11px 9px; }
+ /* Page 2 */
+ .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+ .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+ .section-header .hint { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; }
+ .sec-body { padding: 7px 11px 9px; }
 
-  /* Habit tracker grid */
-  .habit-grid { display: grid; grid-template-columns: 1.5in repeat(31, 1fr); border-top: 1px solid #DDD5C8; border-left: 1px solid #DDD5C8; }
-  .hg-cell { border-right: 1px solid #DDD5C8; border-bottom: 1px solid #DDD5C8; height: 0.235in; }
-  .hg-daynum { background: #B5C9B7; color: #3D5C40; font-size: 5.3pt; font-weight: 700;
-    text-align: center; line-height: 0.235in; }
-  .hg-habithead { background: #8B7BA0; color: #fff; font-family: 'Playfair Display', Georgia, serif;
-    font-size: 7pt; font-weight: 600; line-height: 0.235in; padding-left: 8px; }
-  .hg-label { font-size: 7.3pt; color: #3D3530; line-height: 0.235in; padding-left: 8px;
-    white-space: nowrap; overflow: hidden; }
-  .hg-label.blank { }
-  .hg-box { background: #fff; }
-  .hg-box.alt { background: #FAF7F2; }
-  .hg-label-blankline { display: inline-block; width: 84%; border-bottom: 1px solid #D4C7B6; height: 11px; margin-top: 5px; }
+ /* Habit tracker grid */
+ .habit-grid { display: grid; grid-template-columns: 1.5in repeat(31, 1fr); border-top: 1px solid #DDD5C8; border-left: 1px solid #DDD5C8; }
+ .hg-cell { border-right: 1px solid #DDD5C8; border-bottom: 1px solid #DDD5C8; height: 0.235in; }
+ .hg-daynum { background: #B5C9B7; color: #3D5C40; font-size: 5.3pt; font-weight: 700;
+ text-align: center; line-height: 0.235in; }
+ .hg-habithead { background: #8B7BA0; color: #fff; font-family: 'Playfair Display', Georgia, serif;
+ font-size: 7pt; font-weight: 600; line-height: 0.235in; padding-left: 8px; }
+ .hg-label { font-size: 7.3pt; color: #3D3530; line-height: 0.235in; padding-left: 8px;
+ white-space: nowrap; overflow: hidden; }
+ .hg-label.blank { }
+ .hg-box { background: #fff; }
+ .hg-box.alt { background: #FAF7F2; }
+ .hg-label-blankline { display: inline-block; width: 84%; border-bottom: 1px solid #D4C7B6; height: 11px; margin-top: 5px; }
 
-  /* Two-column for page 2 lower */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.16in; }
+ /* Two-column for page 2 lower */
+ .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.16in; }
 
-  /* Notes */
-  .notes-line { border-bottom: 1px solid #D4B4A8; height: 18px; }
-  .notes-soft { background: #F2DDD5; }
+ /* Notes */
+ .notes-line { border-bottom: 1px solid #D4B4A8; height: 18px; }
+ .notes-soft { background: #F2DDD5; }
 
-  /* Footer */
-  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
-    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
-  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+ /* Footer */
+ .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+ border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+ .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+ .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
 </style>
 </head>
 <body>
 
 <!-- ─────────────── PAGE 1 · CALENDAR ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Monthly Calendar</div>
-      <div class="header-sub">Undated &amp; reusable — fill in any month, any year, start again next month.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Month</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Monthly Calendar</div>
+ <div class="header-sub">Undated &amp; reusable, fill in any month, any year, start again next month.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Month</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Write the number of the first day in its weekday box, then count across. Note plans, appointments and reminders in each square.</span>
-    <span class="subheader-tag">Page 1 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Write the number of the first day in its weekday box, then count across. Note plans, appointments and reminders in each square.</span>
+ <span class="subheader-tag">Page 1 of 2</span>
+ </div>
 
-  <div class="layout">
-    <!-- Calendar -->
-    <div>
-      <div class="cal-weekhead">
-        <div class="wh we">Sunday</div>
-        <div class="wh">Monday</div>
-        <div class="wh">Tuesday</div>
-        <div class="wh">Wednesday</div>
-        <div class="wh">Thursday</div>
-        <div class="wh">Friday</div>
-        <div class="wh we">Saturday</div>
-      </div>
-      <div class="cal-grid">
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-        <div class="day"><span class="dnum"></span></div>
-      </div>
-    </div>
+ <div class="layout">
+ <!-- Calendar -->
+ <div>
+ <div class="cal-weekhead">
+ <div class="wh we">Sunday</div>
+ <div class="wh">Monday</div>
+ <div class="wh">Tuesday</div>
+ <div class="wh">Wednesday</div>
+ <div class="wh">Thursday</div>
+ <div class="wh">Friday</div>
+ <div class="wh we">Saturday</div>
+ </div>
+ <div class="cal-grid">
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ <div class="day"><span class="dnum"></span></div>
+ </div>
+ </div>
 
-    <!-- Sidebar -->
-    <div>
-      <div class="side-box">
-        <div class="side-head sh-rose">This Month's Focus</div>
-        <div class="side-body">
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-        </div>
-      </div>
+ <!-- Sidebar -->
+ <div>
+ <div class="side-box">
+ <div class="side-head sh-rose">This Month's Focus</div>
+ <div class="side-body">
+ <div class="write-line"></div>
+ <div class="write-line"></div>
+ </div>
+ </div>
 
-      <div class="side-box">
-        <div class="side-head sh-sage">Top 3 Priorities</div>
-        <div class="side-body">
-          <div class="num-line"><span class="n">1</span><span class="l"></span></div>
-          <div class="num-line"><span class="n">2</span><span class="l"></span></div>
-          <div class="num-line"><span class="n">3</span><span class="l"></span></div>
-        </div>
-      </div>
+ <div class="side-box">
+ <div class="side-head sh-sage">Top 3 Priorities</div>
+ <div class="side-body">
+ <div class="num-line"><span class="n">1</span><span class="l"></span></div>
+ <div class="num-line"><span class="n">2</span><span class="l"></span></div>
+ <div class="num-line"><span class="n">3</span><span class="l"></span></div>
+ </div>
+ </div>
 
-      <div class="side-box">
-        <div class="side-head sh-steel">Important Dates</div>
-        <div class="side-body">
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-        </div>
-      </div>
+ <div class="side-box">
+ <div class="side-head sh-steel">Important Dates</div>
+ <div class="side-body">
+ <div class="write-line"></div>
+ <div class="write-line"></div>
+ <div class="write-line"></div>
+ </div>
+ </div>
 
-      <div class="side-box">
-        <div class="side-head sh-taupe">Notes &amp; Reminders</div>
-        <div class="side-body">
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-          <div class="write-line"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div class="side-box">
+ <div class="side-head sh-taupe">Notes &amp; Reminders</div>
+ <div class="side-body">
+ <div class="write-line"></div>
+ <div class="write-line"></div>
+ <div class="write-line"></div>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <div class="affirmation">Plan the month you can actually live — a few important things done well beats a page full of things half-done.</div>
+ <div class="affirmation">Plan the month you can actually live, a few important things done well beats a page full of things half-done.</div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need 🌿</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 <!-- ─────────────── PAGE 2 · GOALS + HABITS ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Month at a Glance</div>
-      <div class="header-sub">Set your goals, track your habits, and capture what matters this month.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Month</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Word of the month</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Month at a Glance</div>
+ <div class="header-sub">Set your goals, track your habits, and capture what matters this month.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Month</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Word of the month</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Fill in a habit on each row, then color or check a box for every day you keep it up. Add your own habits on the blank lines.</span>
-    <span class="subheader-tag">Page 2 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Fill in a habit on each row, then color or check a box for every day you keep it up. Add your own habits on the blank lines.</span>
+ <span class="subheader-tag">Page 2 of 2</span>
+ </div>
 
-  <!-- Habit tracker -->
-  <div class="section">
-    <div class="section-header sh-purple">Monthly Habit Tracker <span class="hint">check a box for each day you do it</span></div>
-    <div class="habit-grid">
-      <!-- Header row -->
-      <div class="hg-cell hg-habithead">Habit</div>
-      <div class="hg-cell hg-daynum">1</div><div class="hg-cell hg-daynum">2</div><div class="hg-cell hg-daynum">3</div><div class="hg-cell hg-daynum">4</div><div class="hg-cell hg-daynum">5</div><div class="hg-cell hg-daynum">6</div><div class="hg-cell hg-daynum">7</div><div class="hg-cell hg-daynum">8</div><div class="hg-cell hg-daynum">9</div><div class="hg-cell hg-daynum">10</div><div class="hg-cell hg-daynum">11</div><div class="hg-cell hg-daynum">12</div><div class="hg-cell hg-daynum">13</div><div class="hg-cell hg-daynum">14</div><div class="hg-cell hg-daynum">15</div><div class="hg-cell hg-daynum">16</div><div class="hg-cell hg-daynum">17</div><div class="hg-cell hg-daynum">18</div><div class="hg-cell hg-daynum">19</div><div class="hg-cell hg-daynum">20</div><div class="hg-cell hg-daynum">21</div><div class="hg-cell hg-daynum">22</div><div class="hg-cell hg-daynum">23</div><div class="hg-cell hg-daynum">24</div><div class="hg-cell hg-daynum">25</div><div class="hg-cell hg-daynum">26</div><div class="hg-cell hg-daynum">27</div><div class="hg-cell hg-daynum">28</div><div class="hg-cell hg-daynum">29</div><div class="hg-cell hg-daynum">30</div><div class="hg-cell hg-daynum">31</div>
+ <!-- Habit tracker -->
+ <div class="section">
+ <div class="section-header sh-purple">Monthly Habit Tracker <span class="hint">check a box for each day you do it</span></div>
+ <div class="habit-grid">
+ <!-- Header row -->
+ <div class="hg-cell hg-habithead">Habit</div>
+ <div class="hg-cell hg-daynum">1</div><div class="hg-cell hg-daynum">2</div><div class="hg-cell hg-daynum">3</div><div class="hg-cell hg-daynum">4</div><div class="hg-cell hg-daynum">5</div><div class="hg-cell hg-daynum">6</div><div class="hg-cell hg-daynum">7</div><div class="hg-cell hg-daynum">8</div><div class="hg-cell hg-daynum">9</div><div class="hg-cell hg-daynum">10</div><div class="hg-cell hg-daynum">11</div><div class="hg-cell hg-daynum">12</div><div class="hg-cell hg-daynum">13</div><div class="hg-cell hg-daynum">14</div><div class="hg-cell hg-daynum">15</div><div class="hg-cell hg-daynum">16</div><div class="hg-cell hg-daynum">17</div><div class="hg-cell hg-daynum">18</div><div class="hg-cell hg-daynum">19</div><div class="hg-cell hg-daynum">20</div><div class="hg-cell hg-daynum">21</div><div class="hg-cell hg-daynum">22</div><div class="hg-cell hg-daynum">23</div><div class="hg-cell hg-daynum">24</div><div class="hg-cell hg-daynum">25</div><div class="hg-cell hg-daynum">26</div><div class="hg-cell hg-daynum">27</div><div class="hg-cell hg-daynum">28</div><div class="hg-cell hg-daynum">29</div><div class="hg-cell hg-daynum">30</div><div class="hg-cell hg-daynum">31</div>
 
-      <!-- Row 1 -->
-      <div class="hg-cell hg-label">Drink water</div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ <!-- Row 1 -->
+ <div class="hg-cell hg-label">Drink water</div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
 
-      <!-- Row 2 -->
-      <div class="hg-cell hg-label">Move / exercise</div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ <!-- Row 2 -->
+ <div class="hg-cell hg-label">Move / exercise</div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
 
-      <!-- Row 3 -->
-      <div class="hg-cell hg-label">Read 10 minutes</div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ <!-- Row 3 -->
+ <div class="hg-cell hg-label">Read 10 minutes</div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
 
-      <!-- Row 4 -->
-      <div class="hg-cell hg-label">Tidy 10 minutes</div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ <!-- Row 4 -->
+ <div class="hg-cell hg-label">Tidy 10 minutes</div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
 
-      <!-- Row 5 -->
-      <div class="hg-cell hg-label">Gratitude / journal</div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ <!-- Row 5 -->
+ <div class="hg-cell hg-label">Gratitude / journal</div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
 
-      <!-- Row 6 -->
-      <div class="hg-cell hg-label">Screen-free evening</div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ <!-- Row 6 -->
+ <div class="hg-cell hg-label">Screen-free evening</div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
 
-      <!-- Row 7 · blank -->
-      <div class="hg-cell hg-label blank"><span class="hg-label-blankline"></span></div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ <!-- Row 7 · blank -->
+ <div class="hg-cell hg-label blank"><span class="hg-label-blankline"></span></div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
 
-      <!-- Row 8 · blank -->
-      <div class="hg-cell hg-label blank"><span class="hg-label-blankline"></span></div>
-      <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
-    </div>
-  </div>
+ <!-- Row 8 · blank -->
+ <div class="hg-cell hg-label blank"><span class="hg-label-blankline"></span></div>
+ <div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div><div class="hg-cell hg-box alt"></div><div class="hg-cell hg-box"></div>
+ </div>
+ </div>
 
-  <!-- Lower two columns -->
-  <div class="two-col">
-    <div class="section" style="margin-top: 8px;">
-      <div class="section-header sh-sage">This Month's Goals <span class="hint">what would make this a good month?</span></div>
-      <div class="sec-body">
-        <div class="num-line"><span class="n">1</span><span class="l"></span></div>
-        <div class="num-line"><span class="n">2</span><span class="l"></span></div>
-        <div class="num-line"><span class="n">3</span><span class="l"></span></div>
-        <div class="num-line"><span class="n">4</span><span class="l"></span></div>
-        <div class="num-line"><span class="n">5</span><span class="l"></span></div>
-      </div>
-    </div>
+ <!-- Lower two columns -->
+ <div class="two-col">
+ <div class="section" style="margin-top: 8px;">
+ <div class="section-header sh-sage">This Month's Goals <span class="hint">what would make this a good month?</span></div>
+ <div class="sec-body">
+ <div class="num-line"><span class="n">1</span><span class="l"></span></div>
+ <div class="num-line"><span class="n">2</span><span class="l"></span></div>
+ <div class="num-line"><span class="n">3</span><span class="l"></span></div>
+ <div class="num-line"><span class="n">4</span><span class="l"></span></div>
+ <div class="num-line"><span class="n">5</span><span class="l"></span></div>
+ </div>
+ </div>
 
-    <div>
-      <div class="section" style="margin-top: 8px;">
-        <div class="section-header sh-rose">To-Do This Month</div>
-        <div class="sec-body">
-          <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
-          <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
-          <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
-          <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
-        </div>
-      </div>
-      <div class="section notes-soft" style="margin-top: 8px; border-color: #E0C4B8;">
-        <div class="section-header sh-taupe">Notes &amp; Wins</div>
-        <div class="sec-body" style="background: #F2DDD5;">
-          <div class="notes-line"></div>
-          <div class="notes-line"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <div>
+ <div class="section" style="margin-top: 8px;">
+ <div class="section-header sh-rose">To-Do This Month</div>
+ <div class="sec-body">
+ <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
+ <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
+ <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
+ <div class="check-row"><span class="box"></span><span class="check-label">&nbsp;</span></div>
+ </div>
+ </div>
+ <div class="section notes-soft" style="margin-top: 8px; border-color: #E0C4B8;">
+ <div class="section-header sh-taupe">Notes &amp; Wins</div>
+ <div class="sec-body" style="background: #F2DDD5;">
+ <div class="notes-line"></div>
+ <div class="notes-line"></div>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need 🌿</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 </body>

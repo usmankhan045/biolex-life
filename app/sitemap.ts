@@ -37,7 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })
   );
 
-  // Dynamic: posts, categories, printables — fall back to empty if DB not configured
+  // Dynamic: posts, categories, printables, fall back to empty if DB not configured
   let postRoutes: MetadataRoute.Sitemap = [];
   let categoryRoutes: MetadataRoute.Sitemap = [];
   let printableRoutes: MetadataRoute.Sitemap = [];
@@ -51,7 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     }));
   } catch (err) {
-    // Never silently swallow — a failure here drops every post from the sitemap.
+    // Never silently swallow, a failure here drops every post from the sitemap.
     console.error("[sitemap] failed to load posts:", err);
   }
 

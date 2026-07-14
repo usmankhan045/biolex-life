@@ -2,7 +2,7 @@ import { siteConfig } from "./site.config";
 
 /**
  * Open Graph / Twitter image helpers. Next.js does NOT deep-merge `openGraph`
- * across segments — any route that defines its own `openGraph` REPLACES the
+ * across segments, any route that defines its own `openGraph` REPLACES the
  * layout default, dropping the inherited image. So every route that sets
  * openGraph must supply images explicitly. These helpers keep that consistent.
  * Relative URLs resolve against `metadataBase` (set in app/layout.tsx).

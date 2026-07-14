@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-// ── Thumbnail placeholder — lines motif matching the PrintableCallout icon ────
+// ── Thumbnail placeholder, lines motif matching the PrintableCallout icon ────
 
 function PrintableThumbnailPlaceholder() {
   return (
@@ -146,7 +146,7 @@ export default async function FreePrintablesPage() {
         collectionPageSchema({
           name: "Free Printables",
           description:
-            "Free worksheets, checklists, and templates — download and print instantly.",
+            "Free worksheets, checklists, and templates, download and print instantly.",
           slug: "free-printables",
         }),
         breadcrumbSchema([

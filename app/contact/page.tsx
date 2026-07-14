@@ -54,7 +54,7 @@ export default function ContactPage() {
                   <p className="font-medium text-text mb-1.5">Response time</p>
                   <p className="text-sm">
                     I personally read and reply to every message. Typical response time
-                    is 1–3 business days.
+                    is 1-3 business days.
                   </p>
                 </div>
 

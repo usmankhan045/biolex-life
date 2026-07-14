@@ -2,323 +2,323 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Home Organization Binder Set — Free Printable</title>
+<title>Home Organization Binder Set, Free Printable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  @page { size: letter portrait; margin: 0; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
-    -webkit-print-color-adjust: exact; }
+ @page { size: letter portrait; margin: 0; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+ -webkit-print-color-adjust: exact; }
 
-  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
-    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
-  .page:last-child { page-break-after: avoid; }
+ .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+ page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+ .page:last-child { page-break-after: avoid; }
 
-  /* Botanical motif */
-  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+ /* Botanical motif */
+ .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
 
-  /* Header */
-  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
-    display: flex; justify-content: space-between; align-items: flex-end; }
-  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
-    color: #fff; letter-spacing: 0.5px; line-height: 1; }
-  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
-  .header-fields { display: flex; gap: 14px; }
-  .hf { text-align: left; }
-  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
-  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+ /* Header */
+ .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+ display: flex; justify-content: space-between; align-items: flex-end; }
+ .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+ color: #fff; letter-spacing: 0.5px; line-height: 1; }
+ .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+ .header-fields { display: flex; gap: 14px; }
+ .hf { text-align: left; }
+ .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+ .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
 
-  /* Subheader strip */
-  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
-    justify-content: space-between; align-items: center; }
-  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
-  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+ /* Subheader strip */
+ .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+ justify-content: space-between; align-items: center; }
+ .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+ .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
 
-  /* Two-column layout */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; align-items: start; }
-  .two-col .section { margin-top: 0; }
+ /* Two-column layout */
+ .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; align-items: start; }
+ .two-col .section { margin-top: 0; }
 
-  /* Section blocks */
-  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
-  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
-  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
-  .sh-sage    { background: #7A9E7E; }
-  .sh-steel   { background: #6B8FAE; }
-  .sh-taupe   { background: #A89080; }
-  .sh-purple  { background: #8B7BA0; }
-  .sh-rose    { background: #C4826E; }
-  .sh-dark    { background: #4A6B4E; }
+ /* Section blocks */
+ .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+ .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+ .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+ .sh-sage { background: #7A9E7E; }
+ .sh-steel { background: #6B8FAE; }
+ .sh-taupe { background: #A89080; }
+ .sh-purple { background: #8B7BA0; }
+ .sh-rose { background: #C4826E; }
+ .sh-dark { background: #4A6B4E; }
 
-  /* Fill-in rows (label + underline) */
-  .fill-row { display: grid; grid-template-columns: 0.95in 1fr; gap: 8px; align-items: end;
-    padding: 4.5px 11px; }
-  .fill-row.wide { grid-template-columns: 1.3in 1fr; }
-  .fill-row.odd  { background: #FAF7F2; }
-  .fill-row.even { background: #F5F0EA; }
-  .fill-label { font-family: 'Lato', sans-serif; font-size: 7.6pt; color: #3D3530; padding-bottom: 1px; }
-  .fill-line { border-bottom: 1.2px solid #C4B5A5; height: 14px; }
-  .fill-line.prefilled { border-bottom: none; height: auto; font-size: 7.6pt; color: #8A7A6A;
-    font-style: italic; padding-bottom: 1px; }
+ /* Fill-in rows (label + underline) */
+ .fill-row { display: grid; grid-template-columns: 0.95in 1fr; gap: 8px; align-items: end;
+ padding: 4.5px 11px; }
+ .fill-row.wide { grid-template-columns: 1.3in 1fr; }
+ .fill-row.odd { background: #FAF7F2; }
+ .fill-row.even { background: #F5F0EA; }
+ .fill-label { font-family: 'Lato', sans-serif; font-size: 7.6pt; color: #3D3530; padding-bottom: 1px; }
+ .fill-line { border-bottom: 1.2px solid #C4B5A5; height: 14px; }
+ .fill-line.prefilled { border-bottom: none; height: auto; font-size: 7.6pt; color: #8A7A6A;
+ font-style: italic; padding-bottom: 1px; }
 
-  /* Checkbox rows */
-  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
-    padding: 4px 11px; }
-  .check-row.odd  { background: #FAF7F2; }
-  .check-row.even { background: #F5F0EA; }
-  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
-  .check-label { font-family: 'Lato', sans-serif; font-size: 7.8pt; color: #3D3530; }
+ /* Checkbox rows */
+ .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+ padding: 4px 11px; }
+ .check-row.odd { background: #FAF7F2; }
+ .check-row.even { background: #F5F0EA; }
+ .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+ .check-label { font-family: 'Lato', sans-serif; font-size: 7.8pt; color: #3D3530; }
 
-  /* Two-column checkbox grid inside one section */
-  .col2 { display: grid; grid-template-columns: 1fr 1fr; }
-  .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
+ /* Two-column checkbox grid inside one section */
+ .col2 { display: grid; grid-template-columns: 1fr 1fr; }
+ .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
 
-  /* Chore assignment grid */
-  .chore-head { display: grid; grid-template-columns: 1fr 0.9in 0.85in; gap: 8px;
-    padding: 4px 11px; background: rgba(0,0,0,0.04); }
-  .chore-head span { font-size: 6.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #6B7680; }
-  .chore-row { display: grid; grid-template-columns: 1fr 0.9in 0.85in; gap: 8px;
-    padding: 4.5px 11px; align-items: end; }
-  .chore-row.odd  { background: #FAF7F2; }
-  .chore-row.even { background: #F5F0EA; }
-  .chore-task { font-size: 7.6pt; color: #3D3530; padding-bottom: 1px; }
-  .chore-line { border-bottom: 1.2px solid #C4B5A5; height: 14px; }
+ /* Chore assignment grid */
+ .chore-head { display: grid; grid-template-columns: 1fr 0.9in 0.85in; gap: 8px;
+ padding: 4px 11px; background: rgba(0,0,0,0.04); }
+ .chore-head span { font-size: 6.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #6B7680; }
+ .chore-row { display: grid; grid-template-columns: 1fr 0.9in 0.85in; gap: 8px;
+ padding: 4.5px 11px; align-items: end; }
+ .chore-row.odd { background: #FAF7F2; }
+ .chore-row.even { background: #F5F0EA; }
+ .chore-task { font-size: 7.6pt; color: #3D3530; padding-bottom: 1px; }
+ .chore-line { border-bottom: 1.2px solid #C4B5A5; height: 14px; }
 
-  /* Callout / affirmation strip */
-  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
-    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+ /* Callout / affirmation strip */
+ .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+ font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
 
-  /* Notes */
-  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
-  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
-  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+ /* Notes */
+ .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+ .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+ .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
 
-  /* Summary bar */
-  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-  .sum-cell { text-align: center; }
-  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
-  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
-    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
-  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+ /* Summary bar */
+ .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+ display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+ .sum-cell { text-align: center; }
+ .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+ .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+ display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+ .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
 
-  /* Footer */
-  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
-    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
-  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+ /* Footer */
+ .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+ border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+ .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+ .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
 </style>
 </head>
 <body>
 
 <!-- ─────────────── PAGE 1 · Household Command Center ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Home Organization Binder</div>
-      <div class="header-sub">One tidy place for everything that keeps your home running.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Household</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Updated</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Home Organization Binder</div>
+ <div class="header-sub">One tidy place for everything that keeps your home running.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Household</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Updated</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Fill this in once, then slip it in the front pocket. Build the rest of your binder with the tabs on the right.</span>
-    <span class="subheader-tag">Page 1 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Fill this in once, then slip it in the front pocket. Build the rest of your binder with the tabs on the right.</span>
+ <span class="subheader-tag">Page 1 of 2</span>
+ </div>
 
-  <div class="two-col">
-    <!-- LEFT COLUMN -->
-    <div>
-      <!-- Household Information -->
-      <div class="section">
-        <div class="section-header sh-sage">Household Information <span class="focus">the basics</span></div>
-        <div class="fill-row odd"><span class="fill-label">Home address</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">City / State / ZIP</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">Wi-Fi network</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Wi-Fi password</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">Trash day</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Recycling day</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">Alarm code hint</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Water shut-off</span><span class="fill-line"></span></div>
-      </div>
+ <div class="two-col">
+ <!-- LEFT COLUMN -->
+ <div>
+ <!-- Household Information -->
+ <div class="section">
+ <div class="section-header sh-sage">Household Information <span class="focus">the basics</span></div>
+ <div class="fill-row odd"><span class="fill-label">Home address</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">City / State / ZIP</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">Wi-Fi network</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Wi-Fi password</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">Trash day</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Recycling day</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">Alarm code hint</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Water shut-off</span><span class="fill-line"></span></div>
+ </div>
 
-      <!-- Utilities & Services -->
-      <div class="section">
-        <div class="section-header sh-steel">Utilities &amp; Services <span class="focus">provider &amp; account #</span></div>
-        <div class="fill-row wide odd"><span class="fill-label">Electric</span><span class="fill-line"></span></div>
-        <div class="fill-row wide even"><span class="fill-label">Gas / heating</span><span class="fill-line"></span></div>
-        <div class="fill-row wide odd"><span class="fill-label">Water / sewer</span><span class="fill-line"></span></div>
-        <div class="fill-row wide even"><span class="fill-label">Internet / cable</span><span class="fill-line"></span></div>
-        <div class="fill-row wide odd"><span class="fill-label">Trash / recycling</span><span class="fill-line"></span></div>
-        <div class="fill-row wide even"><span class="fill-label">Pest control</span><span class="fill-line"></span></div>
-        <div class="fill-row wide odd"><span class="fill-label">Lawn / snow</span><span class="fill-line"></span></div>
-      </div>
-    </div>
+ <!-- Utilities & Services -->
+ <div class="section">
+ <div class="section-header sh-steel">Utilities &amp; Services <span class="focus">provider &amp; account #</span></div>
+ <div class="fill-row wide odd"><span class="fill-label">Electric</span><span class="fill-line"></span></div>
+ <div class="fill-row wide even"><span class="fill-label">Gas / heating</span><span class="fill-line"></span></div>
+ <div class="fill-row wide odd"><span class="fill-label">Water / sewer</span><span class="fill-line"></span></div>
+ <div class="fill-row wide even"><span class="fill-label">Internet / cable</span><span class="fill-line"></span></div>
+ <div class="fill-row wide odd"><span class="fill-label">Trash / recycling</span><span class="fill-line"></span></div>
+ <div class="fill-row wide even"><span class="fill-label">Pest control</span><span class="fill-line"></span></div>
+ <div class="fill-row wide odd"><span class="fill-label">Lawn / snow</span><span class="fill-line"></span></div>
+ </div>
+ </div>
 
-    <!-- RIGHT COLUMN -->
-    <div>
-      <!-- Emergency Contacts -->
-      <div class="section">
-        <div class="section-header sh-rose">Emergency Contacts <span class="focus">post on the fridge too</span></div>
-        <div class="fill-row odd"><span class="fill-label">Emergency</span><span class="fill-line prefilled">911</span></div>
-        <div class="fill-row even"><span class="fill-label">Poison control</span><span class="fill-line prefilled">1-800-222-1222</span></div>
-        <div class="fill-row odd"><span class="fill-label">Family doctor</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Pediatrician</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">Dentist</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Veterinarian</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">Nearest hospital</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Trusted neighbor</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">Out-of-town</span><span class="fill-line"></span></div>
-      </div>
+ <!-- RIGHT COLUMN -->
+ <div>
+ <!-- Emergency Contacts -->
+ <div class="section">
+ <div class="section-header sh-rose">Emergency Contacts <span class="focus">post on the fridge too</span></div>
+ <div class="fill-row odd"><span class="fill-label">Emergency</span><span class="fill-line prefilled">911</span></div>
+ <div class="fill-row even"><span class="fill-label">Poison control</span><span class="fill-line prefilled">1-800-222-1222</span></div>
+ <div class="fill-row odd"><span class="fill-label">Family doctor</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Pediatrician</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">Dentist</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Veterinarian</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">Nearest hospital</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Trusted neighbor</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">Out-of-town</span><span class="fill-line"></span></div>
+ </div>
 
-      <!-- Binder Tabs Checklist -->
-      <div class="section">
-        <div class="section-header sh-purple">Build Your Binder <span class="focus">tabs to set up</span></div>
-        <div class="col2">
-          <div class="check-row odd"><span class="box"></span><span class="check-label">Household info</span></div>
-          <div class="check-row odd"><span class="box"></span><span class="check-label">Calendar &amp; dates</span></div>
-          <div class="check-row even"><span class="box"></span><span class="check-label">Cleaning &amp; chores</span></div>
-          <div class="check-row even"><span class="box"></span><span class="check-label">Meal planning</span></div>
-          <div class="check-row odd"><span class="box"></span><span class="check-label">Budget &amp; bills</span></div>
-          <div class="check-row odd"><span class="box"></span><span class="check-label">Medical &amp; health</span></div>
-          <div class="check-row even"><span class="box"></span><span class="check-label">Important papers</span></div>
-          <div class="check-row even"><span class="box"></span><span class="check-label">Passwords</span></div>
-          <div class="check-row odd"><span class="box"></span><span class="check-label">Kids &amp; school</span></div>
-          <div class="check-row odd"><span class="box"></span><span class="check-label">Home maintenance</span></div>
-          <div class="check-row even"><span class="box"></span><span class="check-label">Contacts</span></div>
-          <div class="check-row even"><span class="box"></span><span class="check-label">Emergency plan</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <!-- Binder Tabs Checklist -->
+ <div class="section">
+ <div class="section-header sh-purple">Build Your Binder <span class="focus">tabs to set up</span></div>
+ <div class="col2">
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Household info</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Calendar &amp; dates</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Cleaning &amp; chores</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Meal planning</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Budget &amp; bills</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Medical &amp; health</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Important papers</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Passwords</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Kids &amp; school</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Home maintenance</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Contacts</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Emergency plan</span></div>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <div class="affirmation">A home binder isn't about being perfect — it's about never again hunting for the plumber's number or the Wi-Fi password. Start with one tab and add the rest as you go.</div>
+ <div class="affirmation">A home binder isn't about being perfect, it's about never again hunting for the plumber's number or the Wi-Fi password. Start with one tab and add the rest as you go.</div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need 🌿</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 <!-- ─────────────── PAGE 2 · Dates, Zones & Chores ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Dates &amp; Zone Planner</div>
-      <div class="header-sub">The recurring dates and routines that run the household.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Month</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Dates &amp; Zone Planner</div>
+ <div class="header-sub">The recurring dates and routines that run the household.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Month</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Jot birthdays once and never forget them. Assign a cleaning zone to each week and share the chores.</span>
-    <span class="subheader-tag">Page 2 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Jot birthdays once and never forget them. Assign a cleaning zone to each week and share the chores.</span>
+ <span class="subheader-tag">Page 2 of 2</span>
+ </div>
 
-  <div class="two-col">
-    <!-- LEFT COLUMN: Birthdays & Anniversaries -->
-    <div>
-      <div class="section">
-        <div class="section-header sh-taupe">Birthdays &amp; Anniversaries <span class="focus">by month</span></div>
-        <div class="fill-row odd"><span class="fill-label">January</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">February</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">March</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">April</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">May</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">June</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">July</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">August</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">September</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">October</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">November</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">December</span><span class="fill-line"></span></div>
-      </div>
-    </div>
+ <div class="two-col">
+ <!-- LEFT COLUMN: Birthdays & Anniversaries -->
+ <div>
+ <div class="section">
+ <div class="section-header sh-taupe">Birthdays &amp; Anniversaries <span class="focus">by month</span></div>
+ <div class="fill-row odd"><span class="fill-label">January</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">February</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">March</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">April</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">May</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">June</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">July</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">August</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">September</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">October</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">November</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">December</span><span class="fill-line"></span></div>
+ </div>
+ </div>
 
-    <!-- RIGHT COLUMN: Monthly Zone Plan -->
-    <div>
-      <div class="section">
-        <div class="section-header sh-sage">Monthly Zone Plan <span class="focus">one zone per week</span></div>
-        <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 1 —</strong> Kitchen &amp; entryway</span></div>
-        <div class="check-row even"><span class="box"></span><span class="check-label">Wipe cabinets, appliances, sort mail drop</span></div>
-        <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 2 —</strong> Bathrooms &amp; laundry</span></div>
-        <div class="check-row even"><span class="box"></span><span class="check-label">Scrub tile, restock, clean washer &amp; dryer</span></div>
-        <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 3 —</strong> Bedrooms &amp; closets</span></div>
-        <div class="check-row even"><span class="box"></span><span class="check-label">Rotate linens, edit closet, dust surfaces</span></div>
-        <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 4 —</strong> Living &amp; whole-home</span></div>
-        <div class="check-row even"><span class="box"></span><span class="check-label">Vacuum, windows, catch-up &amp; reset</span></div>
-      </div>
+ <!-- RIGHT COLUMN: Monthly Zone Plan -->
+ <div>
+ <div class="section">
+ <div class="section-header sh-sage">Monthly Zone Plan <span class="focus">one zone per week</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 1, </strong> Kitchen &amp; entryway</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Wipe cabinets, appliances, sort mail drop</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 2, </strong> Bathrooms &amp; laundry</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Scrub tile, restock, clean washer &amp; dryer</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 3, </strong> Bedrooms &amp; closets</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Rotate linens, edit closet, dust surfaces</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><strong>Week 4, </strong> Living &amp; whole-home</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Vacuum, windows, catch-up &amp; reset</span></div>
+ </div>
 
-      <!-- Renewals & Reminders -->
-      <div class="section">
-        <div class="section-header sh-rose">Renewals &amp; Reminders <span class="focus">don't let these lapse</span></div>
-        <div class="fill-row odd"><span class="fill-label">Car registration</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Insurance renewal</span><span class="fill-line"></span></div>
-        <div class="fill-row odd"><span class="fill-label">HVAC filter</span><span class="fill-line"></span></div>
-        <div class="fill-row even"><span class="fill-label">Subscriptions</span><span class="fill-line"></span></div>
-      </div>
-    </div>
-  </div>
+ <!-- Renewals & Reminders -->
+ <div class="section">
+ <div class="section-header sh-rose">Renewals &amp; Reminders <span class="focus">don't let these lapse</span></div>
+ <div class="fill-row odd"><span class="fill-label">Car registration</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Insurance renewal</span><span class="fill-line"></span></div>
+ <div class="fill-row odd"><span class="fill-label">HVAC filter</span><span class="fill-line"></span></div>
+ <div class="fill-row even"><span class="fill-label">Subscriptions</span><span class="fill-line"></span></div>
+ </div>
+ </div>
+ </div>
 
-  <!-- Household Chore Assignments (full width) -->
-  <div class="section">
-    <div class="section-header sh-steel">Household Chore Assignments <span class="focus">who does what, and when</span></div>
-    <div class="chore-head"><span>Chore</span><span>Assigned to</span><span>Day / freq.</span></div>
-    <div class="chore-row odd"><span class="chore-task">Dishes &amp; kitchen reset</span><span class="chore-line"></span><span class="chore-line"></span></div>
-    <div class="chore-row even"><span class="chore-task">Trash &amp; recycling out</span><span class="chore-line"></span><span class="chore-line"></span></div>
-    <div class="chore-row odd"><span class="chore-task">Laundry (wash / fold)</span><span class="chore-line"></span><span class="chore-line"></span></div>
-    <div class="chore-row even"><span class="chore-task">Bathrooms</span><span class="chore-line"></span><span class="chore-line"></span></div>
-    <div class="chore-row odd"><span class="chore-task">Floors (vacuum / mop)</span><span class="chore-line"></span><span class="chore-line"></span></div>
-    <div class="chore-row even"><span class="chore-task">Pet care / feeding</span><span class="chore-line"></span><span class="chore-line"></span></div>
-    <div class="chore-row odd"><span class="chore-task">Meal prep &amp; groceries</span><span class="chore-line"></span><span class="chore-line"></span></div>
-  </div>
+ <!-- Household Chore Assignments (full width) -->
+ <div class="section">
+ <div class="section-header sh-steel">Household Chore Assignments <span class="focus">who does what, and when</span></div>
+ <div class="chore-head"><span>Chore</span><span>Assigned to</span><span>Day / freq.</span></div>
+ <div class="chore-row odd"><span class="chore-task">Dishes &amp; kitchen reset</span><span class="chore-line"></span><span class="chore-line"></span></div>
+ <div class="chore-row even"><span class="chore-task">Trash &amp; recycling out</span><span class="chore-line"></span><span class="chore-line"></span></div>
+ <div class="chore-row odd"><span class="chore-task">Laundry (wash / fold)</span><span class="chore-line"></span><span class="chore-line"></span></div>
+ <div class="chore-row even"><span class="chore-task">Bathrooms</span><span class="chore-line"></span><span class="chore-line"></span></div>
+ <div class="chore-row odd"><span class="chore-task">Floors (vacuum / mop)</span><span class="chore-line"></span><span class="chore-line"></span></div>
+ <div class="chore-row even"><span class="chore-task">Pet care / feeding</span><span class="chore-line"></span><span class="chore-line"></span></div>
+ <div class="chore-row odd"><span class="chore-task">Meal prep &amp; groceries</span><span class="chore-line"></span><span class="chore-line"></span></div>
+ </div>
 
-  <!-- Notes -->
-  <div class="notes">
-    <div class="notes-title">This month's reminders &amp; to-dos</div>
-    <div class="notes-line"></div>
-    <div class="notes-line"></div>
-  </div>
+ <!-- Notes -->
+ <div class="notes">
+ <div class="notes-title">This month's reminders &amp; to-dos</div>
+ <div class="notes-line"></div>
+ <div class="notes-line"></div>
+ </div>
 
-  <!-- Summary -->
-  <div class="summary-bar">
-    <div class="sum-cell"><span class="sum-label">Tabs set up</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">Zones assigned</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">Chores assigned</span><div class="sum-value"></div></div>
-    <div class="sum-cell highlight"><span class="sum-label">Review date</span><div class="sum-value"></div></div>
-  </div>
+ <!-- Summary -->
+ <div class="summary-bar">
+ <div class="sum-cell"><span class="sum-label">Tabs set up</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">Zones assigned</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">Chores assigned</span><div class="sum-value"></div></div>
+ <div class="sum-cell highlight"><span class="sum-label">Review date</span><div class="sum-value"></div></div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need 🌿</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 </body>

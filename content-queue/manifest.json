@@ -5,357 +5,357 @@
   "printables": [
     {
       "slug": "weekly-cleaning-schedule",
-      "title": "Weekly Cleaning Schedule — Free Printable",
+      "title": "Weekly Cleaning Schedule, Free Printable",
       "category": "home-organization",
       "status": "done",
-      "spec": "2-page daily-essentials + one focus zone per day, Mon–Sun, weekly reset, summary bar"
+      "spec": "2-page daily-essentials + one focus zone per day, Mon, Sun, weekly reset, summary bar"
     },
     {
       "slug": "deep-cleaning-checklist",
-      "title": "Deep Cleaning Checklist — Free Printable",
+      "title": "Deep Cleaning Checklist, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "room-by-room whole-house deep clean checklist; sections per room with checkboxes; 2 pages"
     },
     {
       "slug": "decluttering-checklist",
-      "title": "Declutter Your Home Checklist — Free Printable",
+      "title": "Declutter Your Home Checklist, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "room-by-room declutter checklist + keep/donate/toss columns; 20-minute declutter zones"
     },
     {
       "slug": "home-organization-binder",
-      "title": "Home Organization Binder Set — Free Printable",
+      "title": "Home Organization Binder Set, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "cover + household info + important dates + chore/zone planner pages; multi-page binder"
     },
     {
       "slug": "bathroom-organization-labels",
-      "title": "Bathroom Organization Labels + Zone Plan — Free Printable",
+      "title": "Bathroom Organization Labels + Zone Plan, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "printable labels sheet (toiletries, first aid, etc.) + a small-bathroom zone map"
     },
     {
       "slug": "laundry-room-labels",
-      "title": "Laundry Room Labels + Routine — Free Printable",
+      "title": "Laundry Room Labels + Routine, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "labels for detergent/softener/stain/delicates + a weekly laundry routine card"
     },
     {
       "slug": "garage-zone-plan",
-      "title": "Garage Organization Zone Plan — Free Printable",
+      "title": "Garage Organization Zone Plan, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "garage zone map + bin/label sheet + declutter-before-you-store checklist; landscape"
     },
     {
       "slug": "bedroom-organization-plan",
-      "title": "Bedroom Organization Plan — Free Printable",
+      "title": "Bedroom Organization Plan, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "bedroom zone checklist (surfaces, closet, nightstand, under-bed) + reset routine"
     },
     {
       "slug": "closet-organization-plan",
-      "title": "Closet Organization Plan + Labels — Free Printable",
+      "title": "Closet Organization Plan + Labels, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "closet zone plan + shelf/bin labels + capsule declutter checklist"
     },
     {
       "slug": "pantry-and-kitchen-labels",
-      "title": "Pantry & Kitchen Labels — Free Printable",
+      "title": "Pantry & Kitchen Labels, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "printable pantry/kitchen container labels sheet + cabinet zone map"
     },
     {
       "slug": "fridge-organization-labels",
-      "title": "Fridge Organization Labels + Map — Free Printable",
+      "title": "Fridge Organization Labels + Map, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "fridge zone map + bin labels (dairy, produce, leftovers, meal-prep)"
     },
     {
       "slug": "small-space-storage-plan",
-      "title": "Small-Space Storage Plan — Free Printable",
+      "title": "Small-Space Storage Plan, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "room-by-room small-space storage checklist + linen closet zone map"
     },
     {
       "slug": "weekly-meal-planner",
-      "title": "Weekly Meal Planner — Free Printable",
+      "title": "Weekly Meal Planner, Free Printable",
       "category": "meal-planning",
       "status": "new",
-      "spec": "Mon–Sun breakfast/lunch/dinner/snack grid + notes; landscape"
+      "spec": "Mon, Sun breakfast/lunch/dinner/snack grid + notes; landscape"
     },
     {
       "slug": "grocery-list-template",
-      "title": "Grocery List Template (By Aisle) — Free Printable",
+      "title": "Grocery List Template (By Aisle), Free Printable",
       "category": "meal-planning",
       "status": "new",
       "spec": "categorized grocery list by store section + budget/total column"
     },
     {
       "slug": "freezer-meal-plan",
-      "title": "Freezer Meal Plan + Inventory — Free Printable",
+      "title": "Freezer Meal Plan + Inventory, Free Printable",
       "category": "meal-planning",
       "status": "new",
       "spec": "freezer inventory tracker + meal-prep plan + label sheet"
     },
     {
       "slug": "pantry-staples-list",
-      "title": "Pantry Staples Checklist — Free Printable",
+      "title": "Pantry Staples Checklist, Free Printable",
       "category": "meal-planning",
       "status": "new",
       "spec": "master pantry staples checklist by category + restock column"
     },
     {
       "slug": "chore-chart",
-      "title": "Kids Chore Chart — Free Printable",
+      "title": "Kids Chore Chart, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "weekly chore chart grid, blank + by-age suggestions, reward stars column"
     },
     {
       "slug": "preschool-activities-planner",
-      "title": "Preschool Activities Planner — Free Printable",
+      "title": "Preschool Activities Planner, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "weekly at-home preschool activity planner by skill area + idea bank checklist"
     },
     {
       "slug": "preschool-crafts-planner",
-      "title": "Preschool Crafts Idea Planner — Free Printable",
+      "title": "Preschool Crafts Idea Planner, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "seasonal craft idea list + supplies checklist + weekly craft planner (no craft artwork)"
     },
     {
       "slug": "fine-motor-activities-checklist",
-      "title": "Fine Motor Activities Checklist — Free Printable",
+      "title": "Fine Motor Activities Checklist, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "fine-motor activity idea checklist by age + weekly practice tracker"
     },
     {
       "slug": "handwriting-worksheet",
-      "title": "Preschool Handwriting & Numbers Worksheet — Free Printable",
+      "title": "Preschool Handwriting & Numbers Worksheet, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "letter + number tracing/writing lines worksheet (dotted guide lines, no images)"
     },
     {
       "slug": "classroom-labels",
-      "title": "Classroom Labels & Signs — Free Printable",
+      "title": "Classroom Labels & Signs, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "printable classroom labels, bin tags, and job chart signs"
     },
     {
       "slug": "printable-calendar",
-      "title": "Undated Monthly Calendar — Free Printable",
+      "title": "Undated Monthly Calendar, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "blank undated monthly calendar grid + notes/goals sidebar"
     },
     {
       "slug": "printable-labels",
-      "title": "Printable Labels (Blank + Home) — Free Printable",
+      "title": "Printable Labels (Blank + Home), Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "versatile blank + preset home/organization label sheet"
     },
     {
       "slug": "party-invitations-template",
-      "title": "Fill-in Party Invitation Template — Free Printable",
+      "title": "Fill-in Party Invitation Template, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "fill-in-the-blank party/baby-shower invitation cards (typography only, no illustration)"
     },
     {
       "slug": "kids-scavenger-hunt",
-      "title": "Kids Scavenger Hunt & Bingo — Free Printable",
+      "title": "Kids Scavenger Hunt & Bingo, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "indoor/outdoor scavenger hunt list + activity bingo card (text/emoji only)"
     },
     {
       "slug": "bible-study-printable",
-      "title": "Simple Bible Study Worksheet — Free Printable",
+      "title": "Simple Bible Study Worksheet, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "SOAP-style read/reflect/pray study worksheet lines (original wording)"
     },
     {
       "slug": "christmas-mandala-coloring-page",
-      "title": "Christmas Mandala Coloring Page — Free Printable",
+      "title": "Christmas Mandala Coloring Page, Free Printable",
       "category": "coloring-pages",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "christmas-ornament-mandala-coloring-page",
-      "title": "Ornament Mandala Coloring Page — Free Printable",
+      "title": "Ornament Mandala Coloring Page, Free Printable",
       "category": "coloring-pages",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "snowflake-mandala-coloring-page",
-      "title": "Snowflake Mandala Coloring Page — Free Printable",
+      "title": "Snowflake Mandala Coloring Page, Free Printable",
       "category": "coloring-pages",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "star-mandala-coloring-page",
-      "title": "Star Mandala Coloring Page — Free Printable",
+      "title": "Star Mandala Coloring Page, Free Printable",
       "category": "coloring-pages",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "halloween-mandala-coloring-page",
-      "title": "Halloween Mandala Coloring Page — Free Printable",
+      "title": "Halloween Mandala Coloring Page, Free Printable",
       "category": "coloring-pages",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "spiderweb-mandala-coloring-page",
-      "title": "Spiderweb Coloring Page — Free Printable",
+      "title": "Spiderweb Coloring Page, Free Printable",
       "category": "coloring-pages",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "new-year-mandala-coloring-page",
-      "title": "New Year Mandala Coloring Page — Free Printable",
+      "title": "New Year Mandala Coloring Page, Free Printable",
       "category": "coloring-pages",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "merry-and-bright-wall-art",
-      "title": "Merry & Bright Christmas Wall Art — Free Printable",
+      "title": "Merry & Bright Christmas Wall Art, Free Printable",
       "category": "printable-wall-art",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "joy-wall-art",
-      "title": "Joy Christmas Wall Art — Free Printable",
+      "title": "Joy Christmas Wall Art, Free Printable",
       "category": "printable-wall-art",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "let-it-snow-wall-art",
-      "title": "Let It Snow Winter Wall Art — Free Printable",
+      "title": "Let It Snow Winter Wall Art, Free Printable",
       "category": "printable-wall-art",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "gather-wall-art",
-      "title": "Gather Wall Art — Free Printable",
+      "title": "Gather Wall Art, Free Printable",
       "category": "printable-wall-art",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "believe-wall-art",
-      "title": "Believe Christmas Wall Art — Free Printable",
+      "title": "Believe Christmas Wall Art, Free Printable",
       "category": "printable-wall-art",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "new-chapter-wall-art",
-      "title": "New Chapter New Year Wall Art — Free Printable",
+      "title": "New Chapter New Year Wall Art, Free Printable",
       "category": "printable-wall-art",
       "status": "art",
       "spec": ""
     },
     {
       "slug": "christmas-gift-tags",
-      "title": "Printable Christmas Gift Tags — Free Printable",
+      "title": "Printable Christmas Gift Tags, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "sheet of cut-out fill-in gift tags (To/From) in the Paper Posy palette, typography only, no illustration"
     },
     {
       "slug": "advent-activity-calendar",
-      "title": "Printable Advent Activity Calendar — Free Printable",
+      "title": "Printable Advent Activity Calendar, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "25-day December advent calendar grid with a fill-in activity per day + blank version; festive but no artwork"
     },
     {
       "slug": "christmas-planning-checklist",
-      "title": "Christmas Planning Checklist — Free Printable",
+      "title": "Christmas Planning Checklist, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "master holiday prep checklist: gifts, cards, decor, food, cleaning, by-week countdown sections"
     },
     {
       "slug": "christmas-dinner-meal-plan",
-      "title": "Christmas Dinner Meal Plan — Free Printable",
+      "title": "Christmas Dinner Meal Plan, Free Printable",
       "category": "meal-planning",
       "status": "new",
       "spec": "holiday menu planner: courses, guest count, shopping list, make-ahead timeline; landscape"
     },
     {
       "slug": "christmas-gift-planner",
-      "title": "Christmas Gift Planner & Tracker — Free Printable",
+      "title": "Christmas Gift Planner & Tracker, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "gift tracker: person, idea, budget, bought/wrapped checkboxes (gift planning, not personal finance)"
     },
     {
       "slug": "halloween-party-games",
-      "title": "Halloween Party Games & Bingo — Free Printable",
+      "title": "Halloween Party Games & Bingo, Free Printable",
       "category": "kids-printables",
       "status": "new",
       "spec": "Halloween bingo card + party games list + would-you-rather sheet, text/CSS shapes only, no emoji"
     },
     {
       "slug": "new-year-goals-planner",
-      "title": "New Year Goals Planner — Free Printable",
+      "title": "New Year Goals Planner, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "yearly goals by life area, quarterly milestones, monthly focus, habit tracker; goal-setting not budgeting"
     },
     {
       "slug": "declutter-challenge",
-      "title": "30-Day Declutter Challenge — Free Printable",
+      "title": "30-Day Declutter Challenge, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "30-day declutter calendar with one small area per day + progress tracker"
     },
     {
       "slug": "new-year-reset-checklist",
-      "title": "New Year Home Reset Checklist — Free Printable",
+      "title": "New Year Home Reset Checklist, Free Printable",
       "category": "home-organization",
       "status": "new",
       "spec": "whole-home fresh-start reset checklist by room + digital/paperwork reset section"
     },
     {
       "slug": "word-of-the-year",
-      "title": "Word of the Year — Free Printable",
+      "title": "Word of the Year, Free Printable",
       "category": "printable-wall-art",
       "status": "new",
       "spec": "fill-in Word of the Year decor sheet: large frame for the word + reflection prompts; elegant, framable"
     },
     {
       "slug": "vision-board-kit",
-      "title": "Vision Board Kit — Free Printable",
+      "title": "Vision Board Kit, Free Printable",
       "category": "printable-wall-art",
       "status": "new",
       "spec": "printable vision-board template: goal frames, prompts, and cut-out label cards; typography only"

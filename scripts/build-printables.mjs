@@ -17,6 +17,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { spawnSync } from "node:child_process";
 import sharp from "sharp";
+import { deDash, hasDash } from "./lib-dedash.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PDIR = join(ROOT, "public", "printables");
@@ -53,6 +54,9 @@ async function main(){
     try{
       const html = join(PDIR, `${p.slug}.html`);
       if (!(await exists(html))) { err.push([p.slug,"no HTML yet"]); continue; }
+      // House rule: strip em/en dashes from printable text before rendering.
+      const rawHtml = await readFile(html, "utf8");
+      if (hasDash(rawHtml)) await writeFile(html, deDash(rawHtml));
       if (!(await newer(join(PDIR,`${p.slug}.pdf`), html))) render(p.slug);
       if (!(await exists(join(PDIR,`${p.slug}-preview.png`))) || !(await newer(join(PDIR,`${p.slug}-preview.png`), join(PDIR,`${p.slug}.pdf`)))) await thumb(p.slug);
 
@@ -63,8 +67,8 @@ async function main(){
       if (await exists(metaPath)) { try { description = JSON.parse(await readFile(metaPath,"utf8")).description || description; } catch {} }
 
       printables[p.slug] = {
-        title: p.title,
-        description,
+        title: deDash(p.title),
+        description: deDash(description),
         file_url: `/printables/${p.slug}.pdf`,
         thumbnail_url: `/printables/${p.slug}-preview.png`,
         orientation,

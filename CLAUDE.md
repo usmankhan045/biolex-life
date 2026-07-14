@@ -10,7 +10,7 @@ shares one codebase, one Supabase database, and one admin API; only the
 **content** (posts/printables/categories rows keyed by `site_id`) and the
 **identity + theme** (`lib/site.config.ts`) differ per site.
 
-This checkout is a **blank starter** — the site it was cloned from has been
+This checkout is a **blank starter**, the site it was cloned from has been
 stripped out. Fill in `lib/site.config.ts`, seed the DB, and write content to
 make it your own. See `docs/NEW_SITE_GUIDE.md` (or run `/new-site`).
 
@@ -29,11 +29,11 @@ All content tables have a `site_id` column. Always filter by the current site's
 `site_id` (resolved at runtime from `siteConfig.slug`; never hardcode another
 tenant's id).
 
-**posts** — title, slug, content (markdown), excerpt, quick_answer, category_id, audience_tags[], status, seo_title, seo_description, faq_items (jsonb), published_at, featured_image_url
+**posts**, title, slug, content (markdown), excerpt, quick_answer, category_id, audience_tags[], status, seo_title, seo_description, faq_items (jsonb), published_at, featured_image_url
 
-**printables** — title, slug, description, file_url, thumbnail_url, category_id
+**printables**, title, slug, description, file_url, thumbnail_url, category_id
 
-**categories** — per-site topic categories (seed your own; get their IDs from the DB after seeding)
+**categories**, per-site topic categories (seed your own; get their IDs from the DB after seeding)
 
 **Status values:** `draft` | `published`
 
@@ -77,7 +77,7 @@ your brand:
 | success | #3F9D6C | positive states |
 
 ### Printable Color Palette (reusable printable aesthetic)
-A warm, paper-inspired palette for the printable PDFs. Niche-neutral — adapt as
+A warm, paper-inspired palette for the printable PDFs. Niche-neutral, adapt as
 needed for your content.
 
 | Name | HEX | Use For |
@@ -100,12 +100,12 @@ needed for your content.
 ### Printable Typography (Master Design System)
 | Element | Font | Size / Style |
 |---|---|---|
-| Page Title | Playfair Display (serif) | 22pt, Bold 700, white — in header bar |
+| Page Title | Playfair Display (serif) | 22pt, Bold 700, white, in header bar |
 | Section Headers | Playfair Display (serif) | 8.5pt, SemiBold 600, white |
 | Callout / Notes title | Playfair Display (serif) | 7.5pt, Italic, #3D5C40 or #C4826E |
 | Row Labels | Lato (sans-serif) | 7.8pt, Regular, #3D3530 |
 | Total Row Labels | Lato (sans-serif) | 7.5pt, Bold uppercase, letter-spacing 0.4px |
-| Subheader / Footer | Lato (sans-serif) | 6.5–7.5pt, varies |
+| Subheader / Footer | Lato (sans-serif) | 6.5-7.5pt, varies |
 | Field Prefix | Lato (sans-serif) | 7.5pt, #8A7A6A |
 
 **Font import (include in every printable `<head>`):**
@@ -120,7 +120,7 @@ Fallbacks: `'Playfair Display', Georgia, serif` · `'Lato', Arial, sans-serif`
 
 **Page setup:**
 - Size: 8.5in × 11in, portrait (landscape for wide trackers)
-- `@page { size: letter portrait; margin: 0; }` — margins handled by `.page` padding
+- `@page { size: letter portrait; margin: 0; }`, margins handled by `.page` padding
 - `.page` padding: 0.38in top · 0.42in sides · 0.30in bottom
 - `.page` height: 11in, position: relative, overflow: hidden
 - `page-break-after: always` on all `.page` divs except the last
@@ -133,14 +133,14 @@ Fallbacks: `'Playfair Display', Georgia, serif` · `'Lato', Arial, sans-serif`
 
 **Subheader strip (directly below header):**
 - Background: #B5C9B7 · margin: 0 0.42in · padding: 5px 10px
-- Left: Lato 7pt italic #2D2D2D — descriptive text or fill-in fields
+- Left: Lato 7pt italic #2D2D2D, descriptive text or fill-in fields
 - Right tag: Lato 7.5pt bold uppercase #4A6B4E (e.g. "PAGE 1 OF 3")
 
 **Section blocks:**
 - border-radius: 7px · border: 1px solid #DDD5C8 · overflow: hidden · margin-bottom: 6px
-- Section header colors by type (examples — adapt to your content):
-  #C4826E (deep rose), #7A9E7E (deep sage), #A89080 (warm taupe),
-  #8B7BA0 (muted purple), #6B8FAE (steel blue), #4A6B4E (dark sage / summary)
+- Section header colors by type (examples, adapt to your content):
+ #C4826E (deep rose), #7A9E7E (deep sage), #A89080 (warm taupe),
+ #8B7BA0 (muted purple), #6B8FAE (steel blue), #4A6B4E (dark sage / summary)
 
 **Table rows (inside sections):**
 - Layout: `display: grid; grid-template-columns: 1fr 0.75in; padding: 4px 10px;`
@@ -167,7 +167,7 @@ Fallbacks: `'Playfair Display', Georgia, serif` · `'Lato', Arial, sans-serif`
 **Decorative SVG (top-right of every page, inline):**
 - `position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2;`
 - A light botanical/leaf motif works well: `stroke="#7A9E7E"`, leaf fills
-  `fill="#B5C9B7" fill-opacity="0.3"`, accent dot at tip `fill="#C4826E"`.
+ `fill="#B5C9B7" fill-opacity="0.3"`, accent dot at tip `fill="#C4826E"`.
 
 **Callout strip:**
 - Background: #B5C9B7 · border-radius: 5px · padding: 5px 10px · margin-bottom: 6px
@@ -181,8 +181,8 @@ Fallbacks: `'Playfair Display', Georgia, serif` · `'Lato', Arial, sans-serif`
 **Footer (absolute positioned):**
 - `position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;`
 - `border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between;`
-- Left: Lato 6.5pt italic #B0A090 — e.g. "Free Printable — Print as many copies as you need"
-- Right: Lato 7pt bold #7A9E7E — your site name
+- Left: Lato 6.5pt italic #B0A090, e.g. "Free Printable, Print as many copies as you need"
+- Right: Lato 7pt bold #7A9E7E, your site name
 
 > This printable design system is a reference aesthetic. Build your first
 > printable from these rules and reuse it as your canonical example.
@@ -194,17 +194,18 @@ Fallbacks: `'Playfair Display', Georgia, serif` · `'Lato', Arial, sans-serif`
 Every blog post should follow this structure:
 
 1. **Intro (~150 words):** Validate the reader's problem. No solution yet.
-2. **H2 sections:** 4–6 question-based H2s.
+2. **H2 sections:** 4-6 question-based H2s.
 3. **GEO rule:** Each H2 section body should be a **self-contained answer block of
-   ~134–167 words** — Google AI Overviews and Perplexity can extract and cite
-   these directly.
+ ~134-167 words**, Google AI Overviews and Perplexity can extract and cite
+ these directly.
 4. **Printable CTA:** Use `{{printable:<slug>}}` shortcode where the printable
-   download should appear (rendered by the app).
-5. **Internal links:** Link to at least 2 other posts — relative paths like `/blog/<slug>`.
+ download should appear (rendered by the app).
+5. **Internal links:** Link to at least 2 other posts, relative paths like `/blog/<slug>`.
 6. **FAQ section:** 5+ questions, stored as JSON in `faq_items` (not the markdown body).
 7. **Schema:** BlogPosting + FAQPage (handled automatically by the app via faq_items).
 
 ### Tone Rules
+- **Never use em dashes () or en dashes () anywhere** in posts, printables, pins, titles, or meta. They are a well-known AI-writing tell. Use commas, periods, or parentheses instead, and write numeric ranges with a plain hyphen (2-3, 15-20). This is enforced automatically by `scripts/lib-dedash.mjs` in the build steps.
 - Set a clear voice for your niche and keep it consistent (see `blog-persona` / `blog-brand`).
 - Be specific and concrete; specifics beat generic advice.
 - Write for a defined target reader.
@@ -245,8 +246,8 @@ your niche.
 ## Affiliate Mentions (Natural In-Post)
 
 - Mention affiliate products/tools relevant to YOUR niche naturally within
-  "tools" or "tips" sections — one natural mention per post, never a dedicated
-  "review" section.
+ "tools" or "tips" sections, one natural mention per post, never a dedicated
+ "review" section.
 - Disclose affiliate relationships per `app/affiliate-disclosure/page.tsx`.
 
 ---
@@ -254,9 +255,9 @@ your niche.
 ## dev Commands
 
 ```bash
-npm run dev        # start dev server on localhost:3000
-npm run build      # production build
-npm run lint       # ESLint check
+npm run dev # start dev server on localhost:3000
+npm run build # production build
+npm run lint # ESLint check
 ```
 
 WeasyPrint: `weasyprint <input.html> <output.pdf>`

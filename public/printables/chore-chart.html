@@ -2,416 +2,416 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Kids Chore Chart — Free Printable</title>
+<title>Kids Chore Chart, Free Printable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  @page { size: letter portrait; margin: 0; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
-    -webkit-print-color-adjust: exact; }
+ @page { size: letter portrait; margin: 0; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+ -webkit-print-color-adjust: exact; }
 
-  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
-    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
-  .page:last-child { page-break-after: avoid; }
+ .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+ page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+ .page:last-child { page-break-after: avoid; }
 
-  /* Botanical motif */
-  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+ /* Botanical motif */
+ .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
 
-  /* Header */
-  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
-    display: flex; justify-content: space-between; align-items: flex-end; }
-  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
-    color: #fff; letter-spacing: 0.5px; line-height: 1; }
-  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
-  .header-fields { display: flex; gap: 14px; }
-  .hf { text-align: left; }
-  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
-  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+ /* Header */
+ .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+ display: flex; justify-content: space-between; align-items: flex-end; }
+ .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+ color: #fff; letter-spacing: 0.5px; line-height: 1; }
+ .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+ .header-fields { display: flex; gap: 14px; }
+ .hf { text-align: left; }
+ .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+ .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
 
-  /* Subheader strip */
-  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
-    justify-content: space-between; align-items: center; }
-  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
-  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+ /* Subheader strip */
+ .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+ justify-content: space-between; align-items: center; }
+ .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+ .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
 
-  /* Section blocks */
-  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
-  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
-  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
-  .sh-sage    { background: #7A9E7E; }
-  .sh-steel   { background: #6B8FAE; }
-  .sh-taupe   { background: #A89080; }
-  .sh-purple  { background: #8B7BA0; }
-  .sh-rose    { background: #C4826E; }
-  .sh-dark    { background: #4A6B4E; }
+ /* Section blocks */
+ .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+ .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+ .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+ .sh-sage { background: #7A9E7E; }
+ .sh-steel { background: #6B8FAE; }
+ .sh-taupe { background: #A89080; }
+ .sh-purple { background: #8B7BA0; }
+ .sh-rose { background: #C4826E; }
+ .sh-dark { background: #4A6B4E; }
 
-  /* ── Weekly chart grid ── */
-  .chart-head { display: grid; grid-template-columns: 2.05in repeat(7, 1fr) 0.62in;
-    background: #4A6B4E; }
-  .ch-cell { font-family: 'Lato', sans-serif; font-size: 7pt; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.4px; color: #fff; text-align: center; padding: 5px 0; }
-  .ch-cell.chore-col { text-align: left; padding-left: 11px; }
-  .ch-cell.star-col { color: #FBE7C6; }
+ /* ── Weekly chart grid ── */
+ .chart-head { display: grid; grid-template-columns: 2.05in repeat(7, 1fr) 0.62in;
+ background: #4A6B4E; }
+ .ch-cell { font-family: 'Lato', sans-serif; font-size: 7pt; font-weight: 700; text-transform: uppercase;
+ letter-spacing: 0.4px; color: #fff; text-align: center; padding: 5px 0; }
+ .ch-cell.chore-col { text-align: left; padding-left: 11px; }
+ .ch-cell.star-col { color: #FBE7C6; }
 
-  .chart-row { display: grid; grid-template-columns: 2.05in repeat(7, 1fr) 0.62in;
-    align-items: stretch; border-bottom: 1px solid #E4DCCF; }
-  .chart-row:last-child { border-bottom: none; }
-  .chart-row.odd  { background: #FAF7F2; }
-  .chart-row.even { background: #F5F0EA; }
-  .cr-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530;
-    padding: 6px 11px; display: flex; align-items: center; border-right: 1px solid #E4DCCF; }
-  .cr-label.blank { color: #B0A090; font-style: italic; }
-  .cr-day { display: flex; align-items: center; justify-content: center; padding: 6px 0;
-    border-right: 1px solid #E4DCCF; }
-  .tick { width: 15px; height: 15px; border: 1.4px solid #7A9E7E; border-radius: 50%; background: #fff; }
-  .cr-star { display: flex; align-items: center; justify-content: center; padding: 6px 0; }
-  .star-line { width: 0.42in; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+ .chart-row { display: grid; grid-template-columns: 2.05in repeat(7, 1fr) 0.62in;
+ align-items: stretch; border-bottom: 1px solid #E4DCCF; }
+ .chart-row:last-child { border-bottom: none; }
+ .chart-row.odd { background: #FAF7F2; }
+ .chart-row.even { background: #F5F0EA; }
+ .cr-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530;
+ padding: 6px 11px; display: flex; align-items: center; border-right: 1px solid #E4DCCF; }
+ .cr-label.blank { color: #B0A090; font-style: italic; }
+ .cr-day { display: flex; align-items: center; justify-content: center; padding: 6px 0;
+ border-right: 1px solid #E4DCCF; }
+ .tick { width: 15px; height: 15px; border: 1.4px solid #7A9E7E; border-radius: 50%; background: #fff; }
+ .cr-star { display: flex; align-items: center; justify-content: center; padding: 6px 0; }
+ .star-line { width: 0.42in; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
 
-  /* Star bank (color-in circles) */
-  .starbank { display: grid; grid-template-columns: repeat(20, 1fr); gap: 5px; padding: 9px 11px; }
-  .star { width: 15px; height: 15px; }
+ /* Star bank (color-in circles) */
+ .starbank { display: grid; grid-template-columns: repeat(20, 1fr); gap: 5px; padding: 9px 11px; }
+ .star { width: 15px; height: 15px; }
 
-  /* Reward goal rows */
-  .goal-row { display: flex; align-items: flex-end; gap: 6px; padding: 6px 11px; }
-  .goal-row.odd  { background: #FAF7F2; }
-  .goal-row.even { background: #F5F0EA; }
-  .goal-text { font-size: 8pt; color: #3D3530; white-space: nowrap; }
-  .goal-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+ /* Reward goal rows */
+ .goal-row { display: flex; align-items: flex-end; gap: 6px; padding: 6px 11px; }
+ .goal-row.odd { background: #FAF7F2; }
+ .goal-row.even { background: #F5F0EA; }
+ .goal-text { font-size: 8pt; color: #3D3530; white-space: nowrap; }
+ .goal-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
 
-  /* Checklist rows (page 2) */
-  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
-    padding: 4px 11px; }
-  .check-row.odd  { background: #FAF7F2; }
-  .check-row.even { background: #F5F0EA; }
-  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
-  .check-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; }
+ /* Checklist rows (page 2) */
+ .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+ padding: 4px 11px; }
+ .check-row.odd { background: #FAF7F2; }
+ .check-row.even { background: #F5F0EA; }
+ .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+ .check-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; }
 
-  .age-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
-  .age-grid .section { margin-top: 0; }
+ .age-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+ .age-grid .section { margin-top: 0; }
 
-  /* Callout / affirmation strip */
-  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
-    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+ /* Callout / affirmation strip */
+ .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+ font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
 
-  /* Reward idea chips */
-  .reward-wrap { padding: 8px 11px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px 14px; }
-  .reward-item { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center; }
+ /* Reward idea chips */
+ .reward-wrap { padding: 8px 11px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px 14px; }
+ .reward-item { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center; }
 
-  /* How-it-works numbered steps */
-  .steps { padding: 7px 11px 8px; }
-  .step { display: grid; grid-template-columns: 16px 1fr; gap: 8px; align-items: baseline; margin-bottom: 5px; }
-  .step:last-child { margin-bottom: 0; }
-  .step-num { width: 16px; height: 16px; border-radius: 50%; background: #C4826E; color: #fff;
-    font-size: 7pt; font-weight: 700; text-align: center; line-height: 16px; }
-  .step-text { font-size: 7.8pt; color: #3D3530; line-height: 1.35; }
-  .step-text b { color: #4A6B4E; }
+ /* How-it-works numbered steps */
+ .steps { padding: 7px 11px 8px; }
+ .step { display: grid; grid-template-columns: 16px 1fr; gap: 8px; align-items: baseline; margin-bottom: 5px; }
+ .step:last-child { margin-bottom: 0; }
+ .step-num { width: 16px; height: 16px; border-radius: 50%; background: #C4826E; color: #fff;
+ font-size: 7pt; font-weight: 700; text-align: center; line-height: 16px; }
+ .step-text { font-size: 7.8pt; color: #3D3530; line-height: 1.35; }
+ .step-text b { color: #4A6B4E; }
 
-  /* Notes */
-  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
-  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
-  .notes-line { border-bottom: 1px solid #D4B4A8; height: 17px; }
+ /* Notes */
+ .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+ .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+ .notes-line { border-bottom: 1px solid #D4B4A8; height: 17px; }
 
-  /* Summary bar */
-  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-  .sum-cell { text-align: center; }
-  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
-  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
-    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
-  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+ /* Summary bar */
+ .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+ display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+ .sum-cell { text-align: center; }
+ .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+ .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+ display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+ .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
 
-  /* Footer */
-  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
-    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
-  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+ /* Footer */
+ .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+ border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+ .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+ .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
 </style>
 </head>
 <body>
 
 <!-- ─────────────── PAGE 1 ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">My Chore Chart</div>
-      <div class="header-sub">Check off each job, earn a star — you've got this!</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Name</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Week of</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">My Chore Chart</div>
+ <div class="header-sub">Check off each job, earn a star, you've got this!</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Name</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Week of</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Color a circle for every chore you finish, then count your stars at the end of the week.</span>
-    <span class="subheader-tag">Page 1 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Color a circle for every chore you finish, then count your stars at the end of the week.</span>
+ <span class="subheader-tag">Page 1 of 2</span>
+ </div>
 
-  <!-- Weekly chore grid -->
-  <div class="section">
-    <div class="section-header sh-sage">This Week's Chores <span class="focus">one circle per day · a star for each job done</span></div>
-    <div class="chart-head">
-      <div class="ch-cell chore-col">My Job</div>
-      <div class="ch-cell">Mon</div>
-      <div class="ch-cell">Tue</div>
-      <div class="ch-cell">Wed</div>
-      <div class="ch-cell">Thu</div>
-      <div class="ch-cell">Fri</div>
-      <div class="ch-cell">Sat</div>
-      <div class="ch-cell">Sun</div>
-      <div class="ch-cell star-col">★</div>
-    </div>
+ <!-- Weekly chore grid -->
+ <div class="section">
+ <div class="section-header sh-sage">This Week's Chores <span class="focus">one circle per day · a star for each job done</span></div>
+ <div class="chart-head">
+ <div class="ch-cell chore-col">My Job</div>
+ <div class="ch-cell">Mon</div>
+ <div class="ch-cell">Tue</div>
+ <div class="ch-cell">Wed</div>
+ <div class="ch-cell">Thu</div>
+ <div class="ch-cell">Fri</div>
+ <div class="ch-cell">Sat</div>
+ <div class="ch-cell">Sun</div>
+ <div class="ch-cell star-col">★</div>
+ </div>
 
-    <div class="chart-row odd">
-      <div class="cr-label">Make my bed</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row even">
-      <div class="cr-label">Brush teeth (morning &amp; night)</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row odd">
-      <div class="cr-label">Get dressed &amp; tidy pajamas</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row even">
-      <div class="cr-label">Put my toys &amp; books away</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row odd">
-      <div class="cr-label">Clear my plate / help set table</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row even">
-      <div class="cr-label">Feed / water the pet</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row odd">
-      <div class="cr-label">Dirty clothes in the hamper</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row even">
-      <div class="cr-label">Homework / reading time</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row odd">
-      <div class="cr-label blank">Write your own ______________</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row even">
-      <div class="cr-label blank">Write your own ______________</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-    <div class="chart-row odd">
-      <div class="cr-label blank">Write your own ______________</div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
-      <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
-    </div>
-  </div>
+ <div class="chart-row odd">
+ <div class="cr-label">Make my bed</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row even">
+ <div class="cr-label">Brush teeth (morning &amp; night)</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row odd">
+ <div class="cr-label">Get dressed &amp; tidy pajamas</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row even">
+ <div class="cr-label">Put my toys &amp; books away</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row odd">
+ <div class="cr-label">Clear my plate / help set table</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row even">
+ <div class="cr-label">Feed / water the pet</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row odd">
+ <div class="cr-label">Dirty clothes in the hamper</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row even">
+ <div class="cr-label">Homework / reading time</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row odd">
+ <div class="cr-label blank">Write your own ______________</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row even">
+ <div class="cr-label blank">Write your own ______________</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ <div class="chart-row odd">
+ <div class="cr-label blank">Write your own ______________</div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-day"><span class="tick"></span></div>
+ <div class="cr-day"><span class="tick"></span></div><div class="cr-star"><span class="star-line"></span></div>
+ </div>
+ </div>
 
-  <!-- Star bank -->
-  <div class="section">
-    <div class="section-header sh-rose">My Star Bank <span class="focus">color one star for every job you finish</span></div>
-    <div class="starbank">
-      <!-- 20 stars -->
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-      <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
-    </div>
-  </div>
+ <!-- Star bank -->
+ <div class="section">
+ <div class="section-header sh-rose">My Star Bank <span class="focus">color one star for every job you finish</span></div>
+ <div class="starbank">
+ <!-- 20 stars -->
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ <svg class="star" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.9 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8L12 2z" fill="#fff" stroke="#C4826E" stroke-width="1.3" stroke-linejoin="round"/></svg>
+ </div>
+ </div>
 
-  <!-- Reward goal -->
-  <div class="section">
-    <div class="section-header sh-purple">My Reward Goal <span class="focus">set it together with a grown-up</span></div>
-    <div class="goal-row odd"><span class="goal-text">When I earn</span><span class="goal-line"></span><span class="goal-text">stars, my reward is</span><span class="goal-line"></span></div>
-    <div class="goal-row even"><span class="goal-text">A stretch goal I'm saving my stars for:</span><span class="goal-line"></span></div>
-  </div>
+ <!-- Reward goal -->
+ <div class="section">
+ <div class="section-header sh-purple">My Reward Goal <span class="focus">set it together with a grown-up</span></div>
+ <div class="goal-row odd"><span class="goal-text">When I earn</span><span class="goal-line"></span><span class="goal-text">stars, my reward is</span><span class="goal-line"></span></div>
+ <div class="goal-row even"><span class="goal-text">A stretch goal I'm saving my stars for:</span><span class="goal-line"></span></div>
+ </div>
 
-  <div class="affirmation">Helping out is how a family takes care of each other. Every little job counts — and so do you!</div>
+ <div class="affirmation">Helping out is how a family takes care of each other. Every little job counts, and so do you!</div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need 🌿</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 <!-- ─────────────── PAGE 2 ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Chores by Age</div>
-      <div class="header-sub">Pick a few that fit your child — build the chart on page 1.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Child</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Age</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Chores by Age</div>
+ <div class="header-sub">Pick a few that fit your child, build the chart on page 1.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Child</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Age</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Age-appropriate ideas to choose from. Start small — one or two new jobs at a time works best.</span>
-    <span class="subheader-tag">Page 2 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Age-appropriate ideas to choose from. Start small, one or two new jobs at a time works best.</span>
+ <span class="subheader-tag">Page 2 of 2</span>
+ </div>
 
-  <!-- Age grid: 2 x 2 -->
-  <div class="age-grid">
-    <div class="section">
-      <div class="section-header sh-sage">Ages 2–3 <span class="focus">little helpers</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Put toys in the bin</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Fill the pet's food bowl</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Dust with a clean sock mitt</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Put clothes in the hamper</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Stack books on the shelf</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Wipe up small spills</span></div>
-    </div>
+ <!-- Age grid: 2 x 2 -->
+ <div class="age-grid">
+ <div class="section">
+ <div class="section-header sh-sage">Ages 2-3 <span class="focus">little helpers</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Put toys in the bin</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Fill the pet's food bowl</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Dust with a clean sock mitt</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Put clothes in the hamper</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Stack books on the shelf</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Wipe up small spills</span></div>
+ </div>
 
-    <div class="section">
-      <div class="section-header sh-steel">Ages 4–5 <span class="focus">big kid jobs</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Make the bed (a little help is fine)</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Set napkins &amp; forks on the table</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Water the plants</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Match clean socks</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Feed pets with a scoop</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Clear their plate to the sink</span></div>
-    </div>
+ <div class="section">
+ <div class="section-header sh-steel">Ages 4-5 <span class="focus">big kid jobs</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Make the bed (a little help is fine)</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Set napkins &amp; forks on the table</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Water the plants</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Match clean socks</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Feed pets with a scoop</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Clear their plate to the sink</span></div>
+ </div>
 
-    <div class="section">
-      <div class="section-header sh-taupe">Ages 6–8 <span class="focus">on my own</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Pack backpack &amp; lunchbox</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Sweep the kitchen floor</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Fold &amp; put away laundry</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Take out the recycling</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Wipe the bathroom sink</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Make a simple snack</span></div>
-    </div>
+ <div class="section">
+ <div class="section-header sh-taupe">Ages 6-8 <span class="focus">on my own</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Pack backpack &amp; lunchbox</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Sweep the kitchen floor</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Fold &amp; put away laundry</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Take out the recycling</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Wipe the bathroom sink</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Make a simple snack</span></div>
+ </div>
 
-    <div class="section">
-      <div class="section-header sh-purple">Ages 9–12 <span class="focus">team player</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Load &amp; unload the dishwasher</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Vacuum a whole room</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Take out the trash</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Help cook or prep dinner</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label">Clean &amp; organize their room</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label">Bring in the mail &amp; sort it</span></div>
-    </div>
-  </div>
+ <div class="section">
+ <div class="section-header sh-purple">Ages 9-12 <span class="focus">team player</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Load &amp; unload the dishwasher</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Vacuum a whole room</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Take out the trash</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Help cook or prep dinner</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label">Clean &amp; organize their room</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label">Bring in the mail &amp; sort it</span></div>
+ </div>
+ </div>
 
-  <!-- Reward ideas -->
-  <div class="section">
-    <div class="section-header sh-rose">Reward Ideas <span class="focus">screen-free wins kids actually love</span></div>
-    <div class="reward-wrap">
-      <div class="reward-item"><span class="box"></span><span class="check-label">Pick the family movie</span></div>
-      <div class="reward-item"><span class="box"></span><span class="check-label">Stay up 20 minutes later</span></div>
-      <div class="reward-item"><span class="box"></span><span class="check-label">Choose what's for dinner</span></div>
-      <div class="reward-item"><span class="box"></span><span class="check-label">One-on-one time with a parent</span></div>
-      <div class="reward-item"><span class="box"></span><span class="check-label">A trip to the park or library</span></div>
-      <div class="reward-item"><span class="box"></span><span class="check-label">Extra story at bedtime</span></div>
-      <div class="reward-item"><span class="box"></span><span class="check-label">A "skip one chore" free pass</span></div>
-      <div class="reward-item"><span class="box"></span><span class="check-label">Invite a friend to play</span></div>
-    </div>
-  </div>
+ <!-- Reward ideas -->
+ <div class="section">
+ <div class="section-header sh-rose">Reward Ideas <span class="focus">screen-free wins kids actually love</span></div>
+ <div class="reward-wrap">
+ <div class="reward-item"><span class="box"></span><span class="check-label">Pick the family movie</span></div>
+ <div class="reward-item"><span class="box"></span><span class="check-label">Stay up 20 minutes later</span></div>
+ <div class="reward-item"><span class="box"></span><span class="check-label">Choose what's for dinner</span></div>
+ <div class="reward-item"><span class="box"></span><span class="check-label">One-on-one time with a parent</span></div>
+ <div class="reward-item"><span class="box"></span><span class="check-label">A trip to the park or library</span></div>
+ <div class="reward-item"><span class="box"></span><span class="check-label">Extra story at bedtime</span></div>
+ <div class="reward-item"><span class="box"></span><span class="check-label">A "skip one chore" free pass</span></div>
+ <div class="reward-item"><span class="box"></span><span class="check-label">Invite a friend to play</span></div>
+ </div>
+ </div>
 
-  <!-- How it works -->
-  <div class="section">
-    <div class="section-header sh-dark">How Our Chart Works</div>
-    <div class="steps">
-      <div class="step"><span class="step-num">1</span><span class="step-text"><b>Choose the jobs.</b> Pick 3–6 chores from the lists above and write them on page 1 together.</span></div>
-      <div class="step"><span class="step-num">2</span><span class="step-text"><b>Do &amp; check.</b> Each day, color a circle for every job finished — no reminders needed once it's a habit.</span></div>
-      <div class="step"><span class="step-num">3</span><span class="step-text"><b>Earn stars.</b> A finished job earns a star. Color one in the Star Bank and watch them add up.</span></div>
-      <div class="step"><span class="step-num">4</span><span class="step-text"><b>Celebrate.</b> Hit the star goal and unlock the reward — then start a fresh chart next week.</span></div>
-    </div>
-  </div>
+ <!-- How it works -->
+ <div class="section">
+ <div class="section-header sh-dark">How Our Chart Works</div>
+ <div class="steps">
+ <div class="step"><span class="step-num">1</span><span class="step-text"><b>Choose the jobs.</b> Pick 3-6 chores from the lists above and write them on page 1 together.</span></div>
+ <div class="step"><span class="step-num">2</span><span class="step-text"><b>Do &amp; check.</b> Each day, color a circle for every job finished, no reminders needed once it's a habit.</span></div>
+ <div class="step"><span class="step-num">3</span><span class="step-text"><b>Earn stars.</b> A finished job earns a star. Color one in the Star Bank and watch them add up.</span></div>
+ <div class="step"><span class="step-num">4</span><span class="step-text"><b>Celebrate.</b> Hit the star goal and unlock the reward, then start a fresh chart next week.</span></div>
+ </div>
+ </div>
 
-  <!-- Notes -->
-  <div class="notes">
-    <div class="notes-title">Notes &amp; reminders</div>
-    <div class="notes-line"></div>
-    <div class="notes-line"></div>
-  </div>
+ <!-- Notes -->
+ <div class="notes">
+ <div class="notes-title">Notes &amp; reminders</div>
+ <div class="notes-line"></div>
+ <div class="notes-line"></div>
+ </div>
 
-  <!-- Summary -->
-  <div class="summary-bar">
-    <div class="sum-cell"><span class="sum-label">Chores chosen</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">Stars this week</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">Star goal</span><div class="sum-value"></div></div>
-    <div class="sum-cell highlight"><span class="sum-label">Reward earned?</span><div class="sum-value"></div></div>
-  </div>
+ <!-- Summary -->
+ <div class="summary-bar">
+ <div class="sum-cell"><span class="sum-label">Chores chosen</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">Stars this week</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">Star goal</span><div class="sum-value"></div></div>
+ <div class="sum-cell highlight"><span class="sum-label">Reward earned?</span><div class="sum-value"></div></div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need 🌿</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 </body>

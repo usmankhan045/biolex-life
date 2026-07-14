@@ -2,7 +2,7 @@ import { Tag } from "./Tag";
 import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
 
-// The dashed border references the "cut here" line on physical printable sheets —
+// The dashed border references the "cut here" line on physical printable sheets, 
 // the dotted perforation that separates the document from the margin.
 
 interface PrintableCalloutProps extends HTMLAttributes<HTMLDivElement> {
@@ -23,7 +23,7 @@ export function PrintableCallout({
   return (
     <div
       className={cn(
-        // Dashed grape border — the "cut here" perforation motif
+        // Dashed grape border, the "cut here" perforation motif
         "border-2 border-dashed border-primary/60",
         "rounded-2xl p-6 bg-white hard-sm",
         "flex flex-col sm:flex-row items-start sm:items-center gap-5",
@@ -31,7 +31,7 @@ export function PrintableCallout({
       )}
       {...props}
     >
-      {/* Printable icon — a ruled-paper glyph */}
+      {/* Printable icon, a ruled-paper glyph */}
       <div
         className="shrink-0 w-14 h-16 rounded-lg bg-background border-2 border-text/15 flex flex-col justify-center items-center gap-1.5 px-2"
         aria-hidden
@@ -56,7 +56,7 @@ export function PrintableCallout({
         <p className="text-muted text-sm leading-relaxed">{description}</p>
       </div>
 
-      {/* CTA — plain anchor with button styling; no onClick needed */}
+      {/* CTA, plain anchor with button styling; no onClick needed */}
       <a
         href={href}
         className={cn(

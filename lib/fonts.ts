@@ -1,7 +1,7 @@
 import { Bricolage_Grotesque, Hanken_Grotesk, Geist_Mono } from "next/font/google";
 import { siteConfig } from "./site.config";
 
-// next/font requires static imports — dynamic font loading is not supported.
+// next/font requires static imports, dynamic font loading is not supported.
 // When adapting for a new site:
 //   1. Add the new Google Font import above.
 //   2. Instantiate it below with the correct options.

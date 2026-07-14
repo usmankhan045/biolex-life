@@ -16,17 +16,17 @@ identity, and content.
 
 ## What's in the box
 
-- **Blog engine** — posts, categories, audience-segment hub pages, FAQ schema,
-  and answer-first content fields (`quick_answer`, `faq_items`).
-- **Optional printables** — WeasyPrint-generated PDF worksheets, gated behind a
-  per-site `features.printables` flag.
-- **Admin API** — bearer-token CRUD for posts, pages, categories, printables,
-  media uploads, and subscribers across every site. See
-  [docs/admin-api.md](docs/admin-api.md).
-- **Per-site config** — brand, theme, nav, and audience segments all live in
-  `lib/site.config.ts`; nothing site-specific is hardcoded in components.
-- **SEO / AEO / GEO** — metadata, JSON-LD, sitemap, robots, and `llms.txt`
-  wired up out of the box. See [docs/seo-aeo-geo-checklist.md](docs/seo-aeo-geo-checklist.md).
+- **Blog engine**, posts, categories, audience-segment hub pages, FAQ schema,
+ and answer-first content fields (`quick_answer`, `faq_items`).
+- **Optional printables**, WeasyPrint-generated PDF worksheets, gated behind a
+ per-site `features.printables` flag.
+- **Admin API**, bearer-token CRUD for posts, pages, categories, printables,
+ media uploads, and subscribers across every site. See
+ [docs/admin-api.md](docs/admin-api.md).
+- **Per-site config**, brand, theme, nav, and audience segments all live in
+ `lib/site.config.ts`; nothing site-specific is hardcoded in components.
+- **SEO / AEO / GEO**, metadata, JSON-LD, sitemap, robots, and `llms.txt`
+ wired up out of the box. See [docs/seo-aeo-geo-checklist.md](docs/seo-aeo-geo-checklist.md).
 
 ## Getting Started
 
@@ -49,10 +49,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ## Key docs
 
-- [docs/NEW_SITE_GUIDE.md](docs/NEW_SITE_GUIDE.md) — spin up a new site from this template.
-- [docs/admin-api.md](docs/admin-api.md) — admin API reference.
-- [docs/content-guidelines.md](docs/content-guidelines.md) — content and writing standards.
-- [docs/seo-aeo-geo-checklist.md](docs/seo-aeo-geo-checklist.md) — SEO/AEO/GEO checklist.
+- [docs/NEW_SITE_GUIDE.md](docs/NEW_SITE_GUIDE.md), spin up a new site from this template.
+- [docs/admin-api.md](docs/admin-api.md), admin API reference.
+- [docs/content-guidelines.md](docs/content-guidelines.md), content and writing standards.
+- [docs/seo-aeo-geo-checklist.md](docs/seo-aeo-geo-checklist.md), SEO/AEO/GEO checklist.
 
 ## Learn More
 

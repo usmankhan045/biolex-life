@@ -1,1 +1,40 @@
-{"title":"The Master Grocery Shopping List (Free Printable)","excerpt":"Build a master grocery shopping list organized by store aisle, tied to your meal plan, and easy to keep on budget. Download the free printable, stick it on the fridge, and shop in one calm loop.","quick_answer":"A master grocery shopping list is organized by store section — produce, dairy, meat, pantry, frozen, and household — so you shop in one loop without backtracking. Build the categories once, check what you're low on, add the week's meal-plan ingredients, and stick to it to skip impulse buys and stay on budget.","seo_title":"Grocery Shopping List (Free Printable) — By-Aisle Template","seo_description":"Build a master grocery shopping list by aisle, tie it to your meal plan, and stay on budget. Download the free printable PDF — no sign-up needed.","audience_tags":["meal-planning","grocery-budget","busy-families"],"category":"meal-planning","printable":"grocery-list-template","cover":{"eyebrow":"Meal Planning","badge":"Free Printable Inside"},"faq_items":[{"question":"How do I organize a grocery shopping list?","answer":"Organize it by store section in the order you walk the store: produce, dairy and eggs, meat, pantry and dry goods, frozen, bakery, and household. Matching the list to the store's layout lets you shop in one clean loop instead of crisscrossing back and forth for forgotten items."},{"question":"What should always be on a grocery list?","answer":"Keep core staples permanently listed: onions, garlic, rice or pasta, canned beans and tomatoes, eggs, cooking oil, broth, and your go-to spices. These rebuild a week of meals, so each trip you just check what's running low instead of remembering every essential from scratch."},{"question":"How do I make a grocery list from a meal plan?","answer":"Go recipe by recipe, list every ingredient with its quantity, then merge duplicates and cross off what you already have. Sort the remaining items into your list's store sections. Planning meals first means the grocery list practically writes itself in about ten minutes."},{"question":"How does a grocery list save money?","answer":"A written list is a pre-made decision that keeps you from impulse buys, endcap snacks, and duplicates you already own. Add a budget or running-total column, plan around sales and your pantry, and shop once a week to cut the extra trips where overspending happens."},{"question":"Should I print a new grocery list every week?","answer":"You can, and many people like starting fresh each week. But it isn't required — slip one printed copy into a sheet protector and check items off with a dry-erase marker, then wipe it clean for the next trip. Either way the by-aisle structure stays the same."}]}
+{
+  "title": "The Master Grocery Shopping List (Free Printable)",
+  "excerpt": "Build a master grocery shopping list organized by store aisle, tied to your meal plan, and easy to keep on budget. Download the free printable, stick it on the fridge, and shop in one calm loop.",
+  "quick_answer": "A master grocery shopping list is organized by store section, produce, dairy, meat, pantry, frozen, and household, so you shop in one loop without backtracking. Build the categories once, check what you're low on, add the week's meal-plan ingredients, and stick to it to skip impulse buys and stay on budget.",
+  "seo_title": "Grocery Shopping List (Free Printable), By-Aisle Template",
+  "seo_description": "Build a master grocery shopping list by aisle, tie it to your meal plan, and stay on budget. Download the free printable PDF, no sign-up needed.",
+  "audience_tags": [
+    "meal-planning",
+    "grocery-budget",
+    "busy-families"
+  ],
+  "category": "meal-planning",
+  "printable": "grocery-list-template",
+  "cover": {
+    "eyebrow": "Meal Planning",
+    "badge": "Free Printable Inside"
+  },
+  "faq_items": [
+    {
+      "question": "How do I organize a grocery shopping list?",
+      "answer": "Organize it by store section in the order you walk the store: produce, dairy and eggs, meat, pantry and dry goods, frozen, bakery, and household. Matching the list to the store's layout lets you shop in one clean loop instead of crisscrossing back and forth for forgotten items."
+    },
+    {
+      "question": "What should always be on a grocery list?",
+      "answer": "Keep core staples permanently listed: onions, garlic, rice or pasta, canned beans and tomatoes, eggs, cooking oil, broth, and your go-to spices. These rebuild a week of meals, so each trip you just check what's running low instead of remembering every essential from scratch."
+    },
+    {
+      "question": "How do I make a grocery list from a meal plan?",
+      "answer": "Go recipe by recipe, list every ingredient with its quantity, then merge duplicates and cross off what you already have. Sort the remaining items into your list's store sections. Planning meals first means the grocery list practically writes itself in about ten minutes."
+    },
+    {
+      "question": "How does a grocery list save money?",
+      "answer": "A written list is a pre-made decision that keeps you from impulse buys, endcap snacks, and duplicates you already own. Add a budget or running-total column, plan around sales and your pantry, and shop once a week to cut the extra trips where overspending happens."
+    },
+    {
+      "question": "Should I print a new grocery list every week?",
+      "answer": "You can, and many people like starting fresh each week. But it isn't required, slip one printed copy into a sheet protector and check items off with a dry-erase marker, then wipe it clean for the next trip. Either way the by-aisle structure stays the same."
+    }
+  ]
+}

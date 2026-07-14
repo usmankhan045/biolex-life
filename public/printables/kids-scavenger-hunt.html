@@ -2,312 +2,312 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Kids Scavenger Hunt &amp; Bingo — Free Printable</title>
+<title>Kids Scavenger Hunt &amp; Bingo, Free Printable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  @page { size: letter portrait; margin: 0; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
-    -webkit-print-color-adjust: exact; }
+ @page { size: letter portrait; margin: 0; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+ -webkit-print-color-adjust: exact; }
 
-  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
-    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
-  .page:last-child { page-break-after: avoid; }
+ .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+ page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+ .page:last-child { page-break-after: avoid; }
 
-  /* Botanical motif */
-  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+ /* Botanical motif */
+ .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
 
-  /* Header */
-  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
-    display: flex; justify-content: space-between; align-items: flex-end; }
-  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
-    color: #fff; letter-spacing: 0.5px; line-height: 1; }
-  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
-  .header-fields { display: flex; gap: 14px; }
-  .hf { text-align: left; }
-  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
-  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+ /* Header */
+ .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+ display: flex; justify-content: space-between; align-items: flex-end; }
+ .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+ color: #fff; letter-spacing: 0.5px; line-height: 1; }
+ .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+ .header-fields { display: flex; gap: 14px; }
+ .hf { text-align: left; }
+ .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+ .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
 
-  /* Subheader strip */
-  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
-    justify-content: space-between; align-items: center; }
-  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
-  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+ /* Subheader strip */
+ .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+ justify-content: space-between; align-items: center; }
+ .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+ .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
 
-  /* Section blocks */
-  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
-  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
-  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
-  .sh-sage    { background: #7A9E7E; }
-  .sh-steel   { background: #6B8FAE; }
-  .sh-taupe   { background: #A89080; }
-  .sh-purple  { background: #8B7BA0; }
-  .sh-rose    { background: #C4826E; }
-  .sh-dark    { background: #4A6B4E; }
+ /* Section blocks */
+ .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+ .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+ .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+ .sh-sage { background: #7A9E7E; }
+ .sh-steel { background: #6B8FAE; }
+ .sh-taupe { background: #A89080; }
+ .sh-purple { background: #8B7BA0; }
+ .sh-rose { background: #C4826E; }
+ .sh-dark { background: #4A6B4E; }
 
-  /* Checkbox rows */
-  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
-    padding: 4px 11px; }
-  .check-row.odd  { background: #FAF7F2; }
-  .check-row.even { background: #F5F0EA; }
-  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
-  .check-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; }
-  /* Small neutral leading marker (replaces decorative emoji) */
-  .dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%;
-    background: #7A9E7E; vertical-align: middle; margin: 0 4px 1px 0; }
+ /* Checkbox rows */
+ .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+ padding: 4px 11px; }
+ .check-row.odd { background: #FAF7F2; }
+ .check-row.even { background: #F5F0EA; }
+ .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+ .check-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; }
+ /* Small neutral leading marker (replaces decorative emoji) */
+ .dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%;
+ background: #7A9E7E; vertical-align: middle; margin: 0 4px 1px 0; }
 
-  /* Two-column checkbox grid inside a section */
-  .col2 { display: grid; grid-template-columns: 1fr 1fr; }
-  .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
+ /* Two-column checkbox grid inside a section */
+ .col2 { display: grid; grid-template-columns: 1fr 1fr; }
+ .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
 
-  /* Two sections side by side */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
-  .two-col .section { margin-top: 0; }
+ /* Two sections side by side */
+ .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+ .two-col .section { margin-top: 0; }
 
-  /* Color hunt row */
-  .color-hunt { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 7px 11px; }
-  .ch-cell { text-align: center; }
-  .ch-dot { width: 15px; height: 15px; border-radius: 50%; margin: 0 auto 3px; border: 1px solid rgba(0,0,0,0.12); }
-  .ch-label { font-size: 6.6pt; color: #3D3530; display: block; }
-  .ch-line { border-bottom: 1px solid #C4B5A5; height: 12px; margin: 3px 6px 0; }
+ /* Color hunt row */
+ .color-hunt { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 7px 11px; }
+ .ch-cell { text-align: center; }
+ .ch-dot { width: 15px; height: 15px; border-radius: 50%; margin: 0 auto 3px; border: 1px solid rgba(0,0,0,0.12); }
+ .ch-label { font-size: 6.6pt; color: #3D3530; display: block; }
+ .ch-line { border-bottom: 1px solid #C4B5A5; height: 12px; margin: 3px 6px 0; }
 
-  /* Callout / affirmation strip */
-  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
-    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+ /* Callout / affirmation strip */
+ .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+ font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
 
-  /* Bingo grid */
-  .bingo { margin-top: 8px; display: grid; grid-template-columns: repeat(5, 1.42in);
-    grid-template-rows: repeat(5, 1.28in); gap: 6px; justify-content: center; }
-  .bingo-cell { width: 1.42in; height: 1.28in; border: 1.4px solid #C4B5A5; border-radius: 7px;
-    background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
-    text-align: center; padding: 5px; }
-  .bingo-cell.alt { background: #F5F0EA; }
-  .bingo-text { font-size: 8pt; color: #3D3530; line-height: 1.2; }
-  .bingo-cell.free { background: #7A9E7E; border-color: #4A6B4E; }
-  .bingo-cell.free .bingo-text { color: #fff; font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 700; font-size: 9pt; }
+ /* Bingo grid */
+ .bingo { margin-top: 8px; display: grid; grid-template-columns: repeat(5, 1.42in);
+ grid-template-rows: repeat(5, 1.28in); gap: 6px; justify-content: center; }
+ .bingo-cell { width: 1.42in; height: 1.28in; border: 1.4px solid #C4B5A5; border-radius: 7px;
+ background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center;
+ text-align: center; padding: 5px; }
+ .bingo-cell.alt { background: #F5F0EA; }
+ .bingo-text { font-size: 8pt; color: #3D3530; line-height: 1.2; }
+ .bingo-cell.free { background: #7A9E7E; border-color: #4A6B4E; }
+ .bingo-cell.free .bingo-text { color: #fff; font-family: 'Playfair Display', Georgia, serif;
+ font-weight: 700; font-size: 9pt; }
 
-  /* Notes */
-  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
-  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
-  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+ /* Notes */
+ .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+ .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+ .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
 
-  /* Summary bar */
-  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-  .sum-cell { text-align: center; }
-  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
-  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
-    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
-  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+ /* Summary bar */
+ .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+ display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+ .sum-cell { text-align: center; }
+ .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+ .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+ display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+ .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
 
-  /* How-to-play mini list */
-  .howto { padding: 6px 11px 7px; }
-  .howto-item { display: grid; grid-template-columns: 15px 1fr; gap: 7px; align-items: baseline;
-    font-size: 7.6pt; color: #3D3530; padding: 2px 0; }
-  .howto-num { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 8pt; color: #C4826E; }
+ /* How-to-play mini list */
+ .howto { padding: 6px 11px 7px; }
+ .howto-item { display: grid; grid-template-columns: 15px 1fr; gap: 7px; align-items: baseline;
+ font-size: 7.6pt; color: #3D3530; padding: 2px 0; }
+ .howto-num { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 8pt; color: #C4826E; }
 
-  /* Footer */
-  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
-    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
-  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+ /* Footer */
+ .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+ border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+ .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+ .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
 </style>
 </head>
 <body>
 
 <!-- ─────────────── PAGE 1 · SCAVENGER HUNT ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Scavenger Hunt</div>
-      <div class="header-sub">Rainy day or sunny day — grab a pencil and go exploring!</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Explorer</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Scavenger Hunt</div>
+ <div class="header-sub">Rainy day or sunny day, grab a pencil and go exploring!</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Explorer</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Check off each thing when you find it. Pick a list for indoors, outside, or a nature walk — no screens needed!</span>
-    <span class="subheader-tag">Page 1 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Check off each thing when you find it. Pick a list for indoors, outside, or a nature walk, no screens needed!</span>
+ <span class="subheader-tag">Page 1 of 2</span>
+ </div>
 
-  <!-- Indoor + Outdoor side by side -->
-  <div class="two-col">
-    <div class="section">
-      <div class="section-header sh-sage">Indoor Hunt <span class="focus">find it inside</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something you eat with</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A book with an animal in it</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A pair of matching socks</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Something that tells time</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something round</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Your favorite toy</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something you can see yourself in</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A plant or a flower</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something made of metal</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Something that smells nice</span></div>
-    </div>
+ <!-- Indoor + Outdoor side by side -->
+ <div class="two-col">
+ <div class="section">
+ <div class="section-header sh-sage">Indoor Hunt <span class="focus">find it inside</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something you eat with</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A book with an animal in it</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A pair of matching socks</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Something that tells time</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something round</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Your favorite toy</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something you can see yourself in</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A plant or a flower</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something made of metal</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Something that smells nice</span></div>
+ </div>
 
-    <div class="section">
-      <div class="section-header sh-steel">Outdoor Hunt <span class="focus">find it outside</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A leaf bigger than your hand</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A smooth rock</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A bird singing</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A yellow flower</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A busy bug or ant</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A funny-shaped cloud</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something taller than you</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A stick shaped like a Y</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A hole or animal home</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A footprint or track</span></div>
-    </div>
-  </div>
+ <div class="section">
+ <div class="section-header sh-steel">Outdoor Hunt <span class="focus">find it outside</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A leaf bigger than your hand</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A smooth rock</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A bird singing</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A yellow flower</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A busy bug or ant</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A funny-shaped cloud</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something taller than you</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A stick shaped like a Y</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A hole or animal home</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A footprint or track</span></div>
+ </div>
+ </div>
 
-  <!-- Nature walk full width, two columns -->
-  <div class="section">
-    <div class="section-header sh-taupe">Nature Walk Hunt <span class="focus">use your eyes, ears &amp; nose</span></div>
-    <div class="col2">
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>An acorn, seed or pine cone</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something with wings</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A spider web</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Something wet</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A mushroom or moss</span></div>
-      <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A squirrel or small critter</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Three different colors of flowers</span></div>
-      <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A feather on the ground</span></div>
-    </div>
-  </div>
+ <!-- Nature walk full width, two columns -->
+ <div class="section">
+ <div class="section-header sh-taupe">Nature Walk Hunt <span class="focus">use your eyes, ears &amp; nose</span></div>
+ <div class="col2">
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>An acorn, seed or pine cone</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>Something with wings</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A spider web</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Something wet</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A mushroom or moss</span></div>
+ <div class="check-row odd"><span class="box"></span><span class="check-label"><span class="dot"></span>A squirrel or small critter</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>Three different colors of flowers</span></div>
+ <div class="check-row even"><span class="box"></span><span class="check-label"><span class="dot"></span>A feather on the ground</span></div>
+ </div>
+ </div>
 
-  <!-- Color hunt -->
-  <div class="section">
-    <div class="section-header sh-rose">Color Challenge <span class="focus">find one thing for each color</span></div>
-    <div class="color-hunt">
-      <div class="ch-cell"><div class="ch-dot" style="background:#C4826E;"></div><span class="ch-label">Red / Rose</span><div class="ch-line"></div></div>
-      <div class="ch-cell"><div class="ch-dot" style="background:#E3B23C;"></div><span class="ch-label">Yellow</span><div class="ch-line"></div></div>
-      <div class="ch-cell"><div class="ch-dot" style="background:#7A9E7E;"></div><span class="ch-label">Green</span><div class="ch-line"></div></div>
-      <div class="ch-cell"><div class="ch-dot" style="background:#6B8FAE;"></div><span class="ch-label">Blue</span><div class="ch-line"></div></div>
-      <div class="ch-cell"><div class="ch-dot" style="background:#8B7BA0;"></div><span class="ch-label">Purple</span><div class="ch-line"></div></div>
-      <div class="ch-cell"><div class="ch-dot" style="background:#A89080;"></div><span class="ch-label">Brown</span><div class="ch-line"></div></div>
-      <div class="ch-cell"><div class="ch-dot" style="background:#2D2D2D;"></div><span class="ch-label">Black</span><div class="ch-line"></div></div>
-      <div class="ch-cell"><div class="ch-dot" style="background:#F5F0EA;"></div><span class="ch-label">White</span><div class="ch-line"></div></div>
-    </div>
-  </div>
+ <!-- Color hunt -->
+ <div class="section">
+ <div class="section-header sh-rose">Color Challenge <span class="focus">find one thing for each color</span></div>
+ <div class="color-hunt">
+ <div class="ch-cell"><div class="ch-dot" style="background:#C4826E;"></div><span class="ch-label">Red / Rose</span><div class="ch-line"></div></div>
+ <div class="ch-cell"><div class="ch-dot" style="background:#E3B23C;"></div><span class="ch-label">Yellow</span><div class="ch-line"></div></div>
+ <div class="ch-cell"><div class="ch-dot" style="background:#7A9E7E;"></div><span class="ch-label">Green</span><div class="ch-line"></div></div>
+ <div class="ch-cell"><div class="ch-dot" style="background:#6B8FAE;"></div><span class="ch-label">Blue</span><div class="ch-line"></div></div>
+ <div class="ch-cell"><div class="ch-dot" style="background:#8B7BA0;"></div><span class="ch-label">Purple</span><div class="ch-line"></div></div>
+ <div class="ch-cell"><div class="ch-dot" style="background:#A89080;"></div><span class="ch-label">Brown</span><div class="ch-line"></div></div>
+ <div class="ch-cell"><div class="ch-dot" style="background:#2D2D2D;"></div><span class="ch-label">Black</span><div class="ch-line"></div></div>
+ <div class="ch-cell"><div class="ch-dot" style="background:#F5F0EA;"></div><span class="ch-label">White</span><div class="ch-line"></div></div>
+ </div>
+ </div>
 
-  <div class="affirmation">Good exploring! Slow down, look closely, and be gentle with what you find — put nature back where it belongs.</div>
+ <div class="affirmation">Good exploring! Slow down, look closely, and be gentle with what you find, put nature back where it belongs.</div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 <!-- ─────────────── PAGE 2 · ACTIVITY BINGO ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Activity Bingo</div>
-      <div class="header-sub">Do the activity, mark the square — get five in a row to win!</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Player</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Activity Bingo</div>
+ <div class="header-sub">Do the activity, mark the square, get five in a row to win!</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Player</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Complete an activity, then color in its square. Go for a row, a column, a diagonal — or fill the whole board!</span>
-    <span class="subheader-tag">Page 2 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Complete an activity, then color in its square. Go for a row, a column, a diagonal, or fill the whole board!</span>
+ <span class="subheader-tag">Page 2 of 2</span>
+ </div>
 
-  <!-- 5x5 Bingo grid -->
-  <div class="bingo">
-    <div class="bingo-cell"><span class="bingo-text">Do 10 jumping jacks</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Read for 10 minutes</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Draw a picture</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Finish a puzzle</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Walk like a dinosaur</span></div>
+ <!-- 5x5 Bingo grid -->
+ <div class="bingo">
+ <div class="bingo-cell"><span class="bingo-text">Do 10 jumping jacks</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Read for 10 minutes</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Draw a picture</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Finish a puzzle</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Walk like a dinosaur</span></div>
 
-    <div class="bingo-cell alt"><span class="bingo-text">Sing a silly song</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Do a good deed</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Build a tall tower</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Move in slow motion</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Give a big hug</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Sing a silly song</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Do a good deed</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Build a tall tower</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Move in slow motion</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Give a big hug</span></div>
 
-    <div class="bingo-cell"><span class="bingo-text">Dance to one song</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Name 5 colors you see</span></div>
-    <div class="bingo-cell free"><span class="bingo-text">FREE SPACE</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Balance on one foot</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Tell a joke</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Dance to one song</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Name 5 colors you see</span></div>
+ <div class="bingo-cell free"><span class="bingo-text">FREE SPACE</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Balance on one foot</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Tell a joke</span></div>
 
-    <div class="bingo-cell alt"><span class="bingo-text">Tidy up 5 toys</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Hop like a frog</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Drink a glass of water</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Write your name</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Look out the window</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Tidy up 5 toys</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Hop like a frog</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Drink a glass of water</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Write your name</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Look out the window</span></div>
 
-    <div class="bingo-cell"><span class="bingo-text">Stretch up high &amp; low</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Count to 20</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Act like an animal</span></div>
-    <div class="bingo-cell alt"><span class="bingo-text">Say a kind word</span></div>
-    <div class="bingo-cell"><span class="bingo-text">Take 5 deep breaths</span></div>
-  </div>
+ <div class="bingo-cell"><span class="bingo-text">Stretch up high &amp; low</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Count to 20</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Act like an animal</span></div>
+ <div class="bingo-cell alt"><span class="bingo-text">Say a kind word</span></div>
+ <div class="bingo-cell"><span class="bingo-text">Take 5 deep breaths</span></div>
+ </div>
 
-  <!-- How to play + tracker -->
-  <div class="two-col">
-    <div class="section">
-      <div class="section-header sh-purple">How to Play</div>
-      <div class="howto">
-        <div class="howto-item"><span class="howto-num">1</span><span>Do any activity on the board.</span></div>
-        <div class="howto-item"><span class="howto-num">2</span><span>Color or cross out that square.</span></div>
-        <div class="howto-item"><span class="howto-num">3</span><span>Get 5 in a row — across, down, or corner-to-corner.</span></div>
-        <div class="howto-item"><span class="howto-num">4</span><span>Shout <strong>BINGO!</strong> Then try for a full blackout.</span></div>
-      </div>
-    </div>
+ <!-- How to play + tracker -->
+ <div class="two-col">
+ <div class="section">
+ <div class="section-header sh-purple">How to Play</div>
+ <div class="howto">
+ <div class="howto-item"><span class="howto-num">1</span><span>Do any activity on the board.</span></div>
+ <div class="howto-item"><span class="howto-num">2</span><span>Color or cross out that square.</span></div>
+ <div class="howto-item"><span class="howto-num">3</span><span>Get 5 in a row, across, down, or corner-to-corner.</span></div>
+ <div class="howto-item"><span class="howto-num">4</span><span>Shout <strong>BINGO!</strong> Then try for a full blackout.</span></div>
+ </div>
+ </div>
 
-    <div class="notes">
-      <div class="notes-title">My own bingo ideas</div>
-      <div class="notes-line"></div>
-      <div class="notes-line"></div>
-      <div class="notes-line"></div>
-    </div>
-  </div>
+ <div class="notes">
+ <div class="notes-title">My own bingo ideas</div>
+ <div class="notes-line"></div>
+ <div class="notes-line"></div>
+ <div class="notes-line"></div>
+ </div>
+ </div>
 
-  <!-- Summary -->
-  <div class="summary-bar">
-    <div class="sum-cell"><span class="sum-label">Squares done</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">Rows so far</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">Full blackout?</span><div class="sum-value"></div></div>
-    <div class="sum-cell highlight"><span class="sum-label">My prize</span><div class="sum-value"></div></div>
-  </div>
+ <!-- Summary -->
+ <div class="summary-bar">
+ <div class="sum-cell"><span class="sum-label">Squares done</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">Rows so far</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">Full blackout?</span><div class="sum-value"></div></div>
+ <div class="sum-cell highlight"><span class="sum-label">My prize</span><div class="sum-value"></div></div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left">Free Printable — Print as many copies as you need</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">Free Printable, Print as many copies as you need</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 </body>

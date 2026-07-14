@@ -54,7 +54,7 @@ code, pre, kbd, samp {
 /* ─── Signature element: Stamp ────────────────────────────────────────────────
    The stamp utility is the site's single signature design element.
    The 1.5px offset box-shadow references a rubber stamp that landed slightly
-   off-register — the visible impression of a repeated, deliberate act.
+   off-register, the visible impression of a repeated, deliberate act.
    Uses currentColor so it adapts to any text color variant without extra vars.
    @utility is valid here because "stamp" is a plain alphanumeric class name.
    ─────────────────────────────────────────────────────────────────────────── */
@@ -67,7 +67,7 @@ code, pre, kbd, samp {
 }
 
 /* ─── Signature element: Hard offset shadow ("bold daylight") ─────────────────
-   The brand's defining move — a thick 2px ink border with a hard, un-blurred
+   The brand's defining move, a thick 2px ink border with a hard, un-blurred
    drop shadow offset down-right. References screen-printed poster stock and
    sticker sheets: the printed thing sitting proud of the page. Applied to hero
    artifacts, callouts, and cards on hover.
@@ -83,7 +83,7 @@ code, pre, kbd, samp {
 }
 
 /* ─── Signature element: Lime highlight mark ──────────────────────────────────
-   A rotated block of accent lime sitting behind a run of heading text — the
+   A rotated block of accent lime sitting behind a run of heading text, the
    marker-pen highlight over the word that matters. Dark ink stays on top for
    legibility (never white on lime). Mirrors the <span class="u"> in the brand
    mockup.

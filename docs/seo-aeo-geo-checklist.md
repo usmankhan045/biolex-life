@@ -20,37 +20,37 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 
 ### JSON-LD Structured Data
 
-- [x] **WebSite** schema on every page (via RootLayout) — includes `SearchAction` potential action
-- [x] **Organization** schema on every page (via RootLayout) — `sameAs` Pinterest
-- [x] **Article** schema on every post page — headline, description, image, datePublished, dateModified, author, publisher
-- [x] **FAQPage** schema on posts with `faq_items` — targets featured snippets and AI Overview FAQ extraction
+- [x] **WebSite** schema on every page (via RootLayout), includes `SearchAction` potential action
+- [x] **Organization** schema on every page (via RootLayout), `sameAs` Pinterest
+- [x] **Article** schema on every post page, headline, description, image, datePublished, dateModified, author, publisher
+- [x] **FAQPage** schema on posts with `faq_items`, targets featured snippets and AI Overview FAQ extraction
 - [x] **BreadcrumbList** schema on post pages and category pages
 
-### AEO — Answer-First Content Architecture
+### AEO, Answer-First Content Architecture
 
 - [x] **Quick Answer box** rendered at top of every post when `post.quick_answer` is non-null (green callout, role="note", aria-label="Quick answer")
 - [x] **FAQ section** rendered at bottom of every post when `post.faq_items.length > 0` (structured with H3 per question)
-- [x] FAQ items also emit `FAQPage` JSON-LD — dual targeting (featured snippets + AI Overviews)
+- [x] FAQ items also emit `FAQPage` JSON-LD, dual targeting (featured snippets + AI Overviews)
 - [x] Content guidelines documented in `/docs/content-guidelines.md`
 
-### GEO — AI Discovery
+### GEO, AI Discovery
 
-- [x] **`/public/llms.txt`** — Markdown-formatted site description with links to all major sections; follows llmstxt.org spec; includes key facts for AI citation
-- [x] **`robots.ts`** — explicitly permits GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended, cohere-ai (all on `/`, blocked from `/api/` and `/admin/`)
+- [x] **`/public/llms.txt`**, Markdown-formatted site description with links to all major sections; follows llmstxt.org spec; includes key facts for AI citation
+- [x] **`robots.ts`**, explicitly permits GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Applebot-Extended, cohere-ai (all on `/`, blocked from `/api/` and `/admin/`)
 - [x] Answer-first writing format targets AI passage extraction (best signal for Perplexity/ChatGPT citations)
 
 ### Crawlability & Indexability
 
-- [x] **`app/sitemap.ts`** — dynamic sitemap covering: homepage, blog index, start-here, free-printables, about, contact, all audience hub pages (from `siteConfig`), all published posts (from Supabase), all category pages (from Supabase); `revalidate = 3600`
-- [x] **`app/robots.ts`** — `Sitemap:` directive included; `/api/` and `/admin/` disallowed
+- [x] **`app/sitemap.ts`**, dynamic sitemap covering: homepage, blog index, start-here, free-printables, about, contact, all audience hub pages (from `siteConfig`), all published posts (from Supabase), all category pages (from Supabase); `revalidate = 3600`
+- [x] **`app/robots.ts`**, `Sitemap:` directive included; `/api/` and `/admin/` disallowed
 - [x] `generateStaticParams` on all dynamic routes (posts, categories, hub pages) for pre-rendering
 
 ### Performance
 
-- [x] `next/font` — Fraunces, Public Sans, IBM Plex Mono loaded via `lib/fonts.ts` with `display: "swap"`; font variables injected as CSS custom properties
-- [x] `next/image` on all blog post featured images — `fill` layout, `sizes="100vw"`, `priority` on hero (above-fold image)
-- [x] `next.config.ts` — Supabase Storage remote pattern configured (`**.supabase.co`)
-- [x] ISR (`revalidate = 3600`) on all dynamic pages — 1-hour cache with on-demand revalidation via admin API writes
+- [x] `next/font`, Fraunces, Public Sans, IBM Plex Mono loaded via `lib/fonts.ts` with `display: "swap"`; font variables injected as CSS custom properties
+- [x] `next/image` on all blog post featured images, `fill` layout, `sizes="100vw"`, `priority` on hero (above-fold image)
+- [x] `next.config.ts`, Supabase Storage remote pattern configured (`**.supabase.co`)
+- [x] ISR (`revalidate = 3600`) on all dynamic pages, 1-hour cache with on-demand revalidation via admin API writes
 
 ---
 
@@ -59,28 +59,28 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 ### Search Console & Bing Webmaster
 
 1. **Google Search Console**
-   - Add property for `www.example.com`
-   - Verify via DNS TXT record or HTML file in `/public/`
-   - Submit `https://www.example.com/sitemap.xml`
-   - Monitor Core Web Vitals report after launch
+ - Add property for `www.example.com`
+ - Verify via DNS TXT record or HTML file in `/public/`
+ - Submit `https://www.example.com/sitemap.xml`
+ - Monitor Core Web Vitals report after launch
 
 2. **Bing Webmaster Tools**
-   - Add site and verify
-   - Submit sitemap URL
-   - Import from Google Search Console for faster setup
+ - Add site and verify
+ - Submit sitemap URL
+ - Import from Google Search Console for faster setup
 
 3. **Pinterest domain verification**
-   - In Pinterest Business account → Claim website → get meta tag
-   - Add the `name="p:domain_verify"` meta tag to layout.tsx:
-     ```ts
-     other: { "p:domain_verify": "YOUR_CODE_HERE" }
-     ```
-   - Pinterest is in `siteConfig.social.pinterest` — this signals brand authority to Google
+ - In Pinterest Business account → Claim website → get meta tag
+ - Add the `name="p:domain_verify"` meta tag to layout.tsx:
+ ```ts
+ other: { "p:domain_verify": "YOUR_CODE_HERE" }
+ ```
+ - Pinterest is in `siteConfig.social.pinterest`, this signals brand authority to Google
 
 ### OG Default Image
 
 - Create `/public/og-default.jpg` at **1200×630px**
-- Design: site name, tagline, brand colors (use your `siteConfig.theme.colors` — primary, accent, background)
+- Design: site name, tagline, brand colors (use your `siteConfig.theme.colors`, primary, accent, background)
 - Use the display font for the title, the body font for the tagline (from `siteConfig.theme.fonts`)
 - This image appears in social shares for any page without a post-specific featured image
 
@@ -93,9 +93,9 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 
 - Create your site's account on X (if not already done)
 - Add to `siteConfig.social` and update the Twitter card metadata:
-  ```ts
-  twitter: { card: "summary_large_image", creator: "@your_handle" }
-  ```
+ ```ts
+ twitter: { card: "summary_large_image", creator: "@your_handle" }
+ ```
 
 ### Core Web Vitals
 
@@ -111,7 +111,7 @@ lighthouse https://www.example.com --output=html --output-path=lighthouse-report
 Target scores: **Performance ≥ 90, Accessibility ≥ 95, Best Practices = 100, SEO = 100**
 
 Key things to watch:
-- **LCP** (Largest Contentful Paint): ensure hero image uses `priority` on `<Image>` — already done
+- **LCP** (Largest Contentful Paint): ensure hero image uses `priority` on `<Image>`, already done
 - **CLS** (Cumulative Layout Shift): set explicit `width`/`height` on any fixed-size images
 - **INP** (Interaction to Next Paint): minimal JS on these pages; EmailSignup is the main interactive element
 

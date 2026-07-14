@@ -7,14 +7,14 @@ priority posts.
 
 ```
 /publish-all-posts
-/publish-all-posts 02        # publish specific post number
-/publish-all-posts 02 03 05  # publish specific posts
+/publish-all-posts 02 # publish specific post number
+/publish-all-posts 02 03 05 # publish specific posts
 ```
 
 ## Where the content plan lives
 
 The list of planned posts (numbers, slugs, target keywords, categories, and the
-printable each post links) lives in **`CLAUDE.md`** — the per-site project guide.
+printable each post links) lives in **`CLAUDE.md`**, the per-site project guide.
 Maintain a content priority table there, and mark each post's status
 (pending / published) as you go. For example:
 
@@ -40,5 +40,5 @@ paths. Aim for at least two internal links per post to related published posts.
 
 Document the spec for each printable in `CLAUDE.md` (or the per-post brief).
 The canonical printable reference implementation lives in
-`public/printables/` — see the Master Design System in
+`public/printables/`, see the Master Design System in
 `.claude/commands/create-printable.md`.

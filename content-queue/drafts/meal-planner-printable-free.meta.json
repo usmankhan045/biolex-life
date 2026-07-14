@@ -1,1 +1,40 @@
-{"title":"A Free Printable Meal Planner You'll Actually Use","excerpt":"A free printable meal planner that fills in five minutes and survives a real week: a Monday-through-Sunday grid, themed dinner nights, and a list that flows straight to your grocery run.","quick_answer":"A free printable meal planner works when it's simple and visible: a Monday-through-Sunday grid with breakfast, lunch, dinner, and snack lines plus a notes column. Fill it in five minutes by shopping your pantry first, anchoring each day to a theme, then carrying missing ingredients onto your grocery list.","seo_title":"Free Printable Meal Planner You'll Actually Use","seo_description":"Get a free printable meal planner that takes five minutes to fill in — a weekly grid, themed dinner nights, and a grocery list that writes itself.","audience_tags":["meal-planning","busy-families","budget-meals"],"category":"meal-planning","printable":"weekly-meal-planner","cover":{"eyebrow":"Meal Planning","badge":"Free Printable Inside"},"faq_items":[{"question":"How do I start meal planning for beginners?","answer":"Start small: plan only dinners for one week. Shop your fridge and pantry first, pick five or six meals you already know how to make, anchor each to a loose theme, and write missing ingredients onto a grocery list. Once dinners feel easy, add lunches and breakfasts."},{"question":"What is the best way to organize a weekly meal planner?","answer":"Use a Monday-through-Sunday grid with rows for breakfast, lunch, dinner, and snacks, plus a notes column for busy nights. Assign a theme to each day, put quick meals on your busiest evenings, and keep the planner on the fridge so it's visible when you decide."},{"question":"Should I print a new meal planner every week?","answer":"You can, but you don't have to. Slip one printed copy into a dry-erase pocket sleeve and wipe it clean each week, or reprint weekly if you like a fresh page and want to keep past plans. Both work — pick whichever you'll actually keep up with."},{"question":"How does meal planning save money?","answer":"Meal planning saves money by making you buy only for meals you'll actually cook, which cuts impulse purchases and spoiled produce. It also removes the mid-week takeout excuse, since there's always a plan for dinner. Planning around sales and pantry stock adds even more savings."},{"question":"How far ahead should I plan meals?","answer":"One week is the sweet spot for most families. It's long enough to shop once and short enough that plans don't go stale or ignore what's already in your fridge. If a week feels like a lot, start by planning just three or four dinners and build from there."}]}
+{
+  "title": "A Free Printable Meal Planner You'll Actually Use",
+  "excerpt": "A free printable meal planner that fills in five minutes and survives a real week: a Monday-through-Sunday grid, themed dinner nights, and a list that flows straight to your grocery run.",
+  "quick_answer": "A free printable meal planner works when it's simple and visible: a Monday-through-Sunday grid with breakfast, lunch, dinner, and snack lines plus a notes column. Fill it in five minutes by shopping your pantry first, anchoring each day to a theme, then carrying missing ingredients onto your grocery list.",
+  "seo_title": "Free Printable Meal Planner You'll Actually Use",
+  "seo_description": "Get a free printable meal planner that takes five minutes to fill in, a weekly grid, themed dinner nights, and a grocery list that writes itself.",
+  "audience_tags": [
+    "meal-planning",
+    "busy-families",
+    "budget-meals"
+  ],
+  "category": "meal-planning",
+  "printable": "weekly-meal-planner",
+  "cover": {
+    "eyebrow": "Meal Planning",
+    "badge": "Free Printable Inside"
+  },
+  "faq_items": [
+    {
+      "question": "How do I start meal planning for beginners?",
+      "answer": "Start small: plan only dinners for one week. Shop your fridge and pantry first, pick five or six meals you already know how to make, anchor each to a loose theme, and write missing ingredients onto a grocery list. Once dinners feel easy, add lunches and breakfasts."
+    },
+    {
+      "question": "What is the best way to organize a weekly meal planner?",
+      "answer": "Use a Monday-through-Sunday grid with rows for breakfast, lunch, dinner, and snacks, plus a notes column for busy nights. Assign a theme to each day, put quick meals on your busiest evenings, and keep the planner on the fridge so it's visible when you decide."
+    },
+    {
+      "question": "Should I print a new meal planner every week?",
+      "answer": "You can, but you don't have to. Slip one printed copy into a dry-erase pocket sleeve and wipe it clean each week, or reprint weekly if you like a fresh page and want to keep past plans. Both work, pick whichever you'll actually keep up with."
+    },
+    {
+      "question": "How does meal planning save money?",
+      "answer": "Meal planning saves money by making you buy only for meals you'll actually cook, which cuts impulse purchases and spoiled produce. It also removes the mid-week takeout excuse, since there's always a plan for dinner. Planning around sales and pantry stock adds even more savings."
+    },
+    {
+      "question": "How far ahead should I plan meals?",
+      "answer": "One week is the sweet spot for most families. It's long enough to shop once and short enough that plans don't go stale or ignore what's already in your fridge. If a week feels like a lot, start by planning just three or four dinners and build from there."
+    }
+  ]
+}

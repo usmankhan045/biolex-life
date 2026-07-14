@@ -84,7 +84,7 @@ export async function generateMetadata({
   }
 }
 
-// ── Thumbnail placeholder — matches grid page motif ───────────────────────────
+// ── Thumbnail placeholder, matches grid page motif ───────────────────────────
 
 function PrintableThumbnailPlaceholder({ className }: { className?: string }) {
   return (
@@ -183,7 +183,7 @@ export default async function PrintableDetailPage({
     // non-critical
   }
 
-  // Companion article — cross-link the printable back into the blog content
+  // Companion article, cross-link the printable back into the blog content
   // pillar. Printables live in the post-less "printables" category, so match by
   // slug keyword first (e.g. "starter-template" → the "getting started" guide),
   // then fall back to the most recent guide so the cross-link always renders.
@@ -357,7 +357,7 @@ export default async function PrintableDetailPage({
                 )}
               </div>
 
-              {/* Companion guide — cross-link into the blog content pillar */}
+              {/* Companion guide, cross-link into the blog content pillar */}
               {companion && (
                 <Link
                   href={`/blog/${companion.slug}`}

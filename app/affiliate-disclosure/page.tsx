@@ -26,13 +26,13 @@ export default function AffiliateDisclosurePage() {
             id="affiliate-heading"
             className="font-display text-4xl sm:text-5xl font-bold text-text leading-tight mb-5"
           >
-            How we make money &mdash; and how we don&rsquo;t.
+            How we make money, and how we don&rsquo;t.
           </h1>
           <p className="text-lg text-muted leading-relaxed">
             {siteConfig.name} is free to read, and we keep it that way partly
             through affiliate partnerships. Here&rsquo;s exactly what that means,
             in plain language. This page is a boilerplate starting point, not
-            legal advice &mdash; adapt it for your own site.
+            legal advice, adapt it for your own site.
           </p>
         </Container>
       </section>
@@ -44,7 +44,7 @@ export default function AffiliateDisclosurePage() {
             <p>
               Some of our guides contain <span className="font-medium text-text">affiliate links</span>.
               If you click one and sign up for or buy a product, we may earn a small
-              commission &mdash; <span className="font-medium text-text">at no extra cost to you</span>.
+              commission, <span className="font-medium text-text">at no extra cost to you</span>.
               You never pay more for using our link.
             </p>
             <p>
@@ -60,7 +60,7 @@ export default function AffiliateDisclosurePage() {
             <p>
               We do not accept payment to feature a product, and we don&rsquo;t
               recommend anything we wouldn&rsquo;t suggest to a friend. If a free
-              option works just as well, we&rsquo;ll tell you &mdash; our free
+              option works just as well, we&rsquo;ll tell you, our free
               resources exist precisely so you never <em>have</em> to buy anything
               to get value from this site.
             </p>

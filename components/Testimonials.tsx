@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site.config";
 
 /**
  * Reader testimonials. Renders ONLY when siteConfig.testimonials has real
- * entries — never ships an empty/placeholder block, and never fabricated
+ * entries, never ships an empty/placeholder block, and never fabricated
  * reviews (see the note in site.config.ts). Drop genuine quotes into that array
  * and this section appears automatically on the homepage.
  */

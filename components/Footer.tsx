@@ -2,7 +2,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/site.config";
 import { Container } from "@/components/ui";
 
-// Pinterest SVG — inlined to avoid package dependency.
+// Pinterest SVG, inlined to avoid package dependency.
 function PinterestIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -40,7 +40,7 @@ export function Footer() {
               {siteConfig.tagline}
             </p>
 
-            {/* Authorship credit — E-E-A-T + links the author archive */}
+            {/* Authorship credit, E-E-A-T + links the author archive */}
             <p className="text-white/50 text-xs mb-4">
               Written &amp; edited by{" "}
               <Link
@@ -86,7 +86,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Explore — situation hubs for quick navigation */}
+          {/* Column 3: Explore, situation hubs for quick navigation */}
           <div>
             <p className="font-mono text-[0.65rem] font-medium tracking-[0.12em] uppercase text-white/40 mb-3">
               Explore

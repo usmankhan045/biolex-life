@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow,
       },
-      // AI training and inference crawlers — explicitly permitted
+      // AI training and inference crawlers, explicitly permitted
       {
         userAgent: "GPTBot",
         allow: "/",
@@ -50,7 +50,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow,
       },
-      // ChatGPT's search crawler — declared explicitly to remove ambiguity.
+      // ChatGPT's search crawler, declared explicitly to remove ambiguity.
       {
         userAgent: "OAI-SearchBot",
         allow: "/",
@@ -58,7 +58,7 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
-    // Bare hostname (no scheme) — the Host directive expects a hostname only.
+    // Bare hostname (no scheme), the Host directive expects a hostname only.
     host: siteConfig.domain,
   };
 }

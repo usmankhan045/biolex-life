@@ -15,7 +15,7 @@ export const siteConfig = {
   niche: "Free printables for the home",
 
   // ── AUTHORSHIP / E-E-A-T ─────────────────────────────────────────────────
-  // A named, real person behind the content — required for trust and
+  // A named, real person behind the content, required for trust and
   // AI-citation entity resolution. Surfaced as a byline on posts, an author bio
   // on the About page, and Person schema (author/publisher) in JSON-LD.
   author: {
@@ -25,15 +25,15 @@ export const siteConfig = {
     // Author headshot (public/author.svg is a neutral placeholder). Replace with
     // a real photo (e.g. public/author.jpg) before launch and update this path.
     photo: "/author.svg",
-    // Real external profiles for the author — drives Person `sameAs` (a strong
+    // Real external profiles for the author, drives Person `sameAs` (a strong
     // AI-citation / entity-resolution signal). Add real profiles here.
     sameAs: [] as readonly string[],
     // Relative URL to the author's on-site profile page (author archive).
     url: "/author/marlowe-hart",
     shortBio:
-      "Marlowe designs and tests every printable in the Paper Posy library — from wall art to weekly meal planners — so each one prints clean on a home printer.",
+      "Marlowe designs and tests every printable in the Paper Posy library, from wall art to weekly meal planners, so each one prints clean on a home printer.",
     longBio:
-      "Marlowe Hart started Paper Posy after years of hunting for printables that actually looked good on the wall and lined up correctly on the page. Everything here is designed in-house, print-tested on plain letter paper, and paired with a short guide on how to frame it, style it, or fill it in. No stock photos, no filler — just files you can download and print today.",
+      "Marlowe Hart started Paper Posy after years of hunting for printables that actually looked good on the wall and lined up correctly on the page. Everything here is designed in-house, print-tested on plain letter paper, and paired with a short guide on how to frame it, style it, or fill it in. No stock photos, no filler, just files you can download and print today.",
   },
 
   // ── FEATURE FLAGS ────────────────────────────────────────────────────────
@@ -64,12 +64,12 @@ export const siteConfig = {
 
   theme: {
     colors: {
-      primary:    "#5B34E0", // grape violet — nav, buttons, primary accents
-      accent:     "#C9F24E", // electric lime — highlights (dark text on top)
-      background: "#FCFBF7", // warm paper cream — page background
-      text:       "#191720", // near-black ink — body text
-      muted:      "#5A5763", // dim slate — secondary text, rules
-      success:    "#3F9D6C", // green — positive states
+      primary:    "#5B34E0", // grape violet, nav, buttons, primary accents
+      accent:     "#C9F24E", // electric lime, highlights (dark text on top)
+      background: "#FCFBF7", // warm paper cream, page background
+      text:       "#191720", // near-black ink, body text
+      muted:      "#5A5763", // dim slate, secondary text, rules
+      success:    "#3F9D6C", // green, positive states
     },
     fonts: {
       // Any font swapped here must also be wired up in lib/fonts.ts (FONT_MAP).
@@ -97,18 +97,18 @@ export const siteConfig = {
     { label: "Terms of Use", href: "/terms-of-use" },
   ],
 
-  // Social profile URLs — add the ones this site actually has, e.g.
+  // Social profile URLs, add the ones this site actually has, e.g.
   // { pinterest: "https://pinterest.com/yourhandle" }.
   social: {} as Record<string, string>,
 
-  // Reader testimonials — shown on the homepage when non-empty. IMPORTANT: only
+  // Reader testimonials, shown on the homepage when non-empty. IMPORTANT: only
   // add REAL quotes here. Fabricated reviews mislead visitors and violate
   // Google's guidelines. Format: { quote, name, context }.
   testimonials: [
     // { quote: "…", name: "Jess", context: "…" },
   ] as ReadonlyArray<{ quote: string; name: string; context: string }>,
 
-  // AUDIENCE SEGMENTS — drives hub pages via a single dynamic route.
+  // AUDIENCE SEGMENTS, drives hub pages via a single dynamic route.
   // Adding an entry here adds a `/<segment-slug>` hub page automatically; the
   // copy for each lives in content/segment-intros.ts. Leave empty to remove the
   // hub pages entirely.
@@ -128,7 +128,7 @@ export type AudienceSegment = SiteConfig["audienceSegments"][number];
 /**
  * Nav links with feature-flagged items removed. When `features.printables` is
  * false, the "/free-printables" entry is dropped so the flag is the single
- * source of truth — components should render from this, not `siteConfig.nav`.
+ * source of truth, components should render from this, not `siteConfig.nav`.
  */
 export const navLinks: ReadonlyArray<{ label: string; href: string }> =
   siteConfig.features.printables

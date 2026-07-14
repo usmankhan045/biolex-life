@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     absolute: `${siteConfig.name}: Free Printables for Your Home`,
   },
   description:
-    "Free printable wall art, coloring pages, and home organisation printables. Instant downloads, no sign-up required — print it, frame it, done.",
+    "Free printable wall art, coloring pages, and home organisation printables. Instant downloads, no sign-up required, print it, frame it, done.",
   alternates: { canonical: "/" },
   openGraph: {
     url: "/",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Placeholder posts — shown when the DB is not yet configured or has no content.
+// Placeholder posts, shown when the DB is not yet configured or has no content.
 // Every title carries the word "printable" (the master-plan rule: printable is
 // the business, not a modifier). Replace with real content via Supabase.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -64,7 +64,7 @@ const PLACEHOLDER_POSTS: Post[] = [
     slug: "printable-animal-coloring-pages",
     title: "Free Animal Coloring Pages: 30 Printable Sheets for Kids & Adults",
     excerpt:
-      "Thirty original animal coloring pages to download and print — from simple shapes for toddlers to detailed line art for grown-ups.",
+      "Thirty original animal coloring pages to download and print, from simple shapes for toddlers to detailed line art for grown-ups.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
@@ -79,7 +79,7 @@ const PLACEHOLDER_POSTS: Post[] = [
     slug: "bathroom-organization-printables",
     title: "Bathroom Organization Printables: Labels, Zone Map & Checklist",
     excerpt:
-      "A printable label set, a zone map, and a restock checklist to sort every drawer and cabinet — with a step-by-step on where each zone goes.",
+      "A printable label set, a zone map, and a restock checklist to sort every drawer and cabinet, with a step-by-step on where each zone goes.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
@@ -94,7 +94,7 @@ const PLACEHOLDER_POSTS: Post[] = [
     slug: "preschool-activities-printable",
     title: "Preschool Activities Printable: A Week of At-Home Worksheets",
     excerpt:
-      "Five days of printable preschool worksheets — letters, counting, and fine-motor practice — with a simple daily plan any parent can follow.",
+      "Five days of printable preschool worksheets, letters, counting, and fine-motor practice, with a simple daily plan any parent can follow.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
@@ -107,16 +107,16 @@ const PLACEHOLDER_POSTS: Post[] = [
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
-// § Hero artifact — the signature "bold daylight" panel.
+// § Hero artifact, the signature "bold daylight" panel.
 //
 // A grape panel with a lime blob and a stack of check chips, one per pillar of
 // the library. It answers the first-time visitor's question at a glance: what
 // is on the shelves, and that it's all free.
 // ─────────────────────────────────────────────────────────────────────────────
 const PILLAR_CHIPS: string[] = [
-  "Wall art — by room & style",
-  "Coloring pages — animals & mandalas",
-  "Home organization — labels & schedules",
+  "Wall art, by room & style",
+  "Coloring pages, animals & mandalas",
+  "Home organization, labels & schedules",
   "Kids & preschool worksheets",
   "Meal planning & grocery lists",
 ];
@@ -160,14 +160,14 @@ function LibraryPanel() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// § "What you get" — three plain-language promises, with simple line icons.
+// § "What you get", three plain-language promises, with simple line icons.
 //   This is the first-sight clarity layer, directly under the hero.
 // ─────────────────────────────────────────────────────────────────────────────
 const VALUE_PROPS: { icon: "guide" | "printable" | "note"; title: string; body: string }[] = [
   {
     icon: "printable",
     title: "Instant download, no sign-up",
-    body: "Every file is free. Open the post, download the PDF, and print at home — no account, no email wall, no catch.",
+    body: "Every file is free. Open the post, download the PDF, and print at home, no account, no email wall, no catch.",
   },
   {
     icon: "note",
@@ -325,7 +325,7 @@ export default async function HomePage() {
     <main className="flex-1">
 
       {/* ══════════════════════════════════════════════════════════════════
-          § HERO — the page's thesis.
+          § HERO, the page's thesis.
           A first-time visitor learns three things instantly: what this is
           (a free printables library), what's on it (five pillars), and what
           to do next (browse printables / read the guides).
@@ -353,7 +353,7 @@ export default async function HomePage() {
               </h1>
 
               <p className="mt-6 text-lg sm:text-xl text-muted leading-relaxed max-w-lg">
-                {siteConfig.name} is a free library of printables for the home —
+                {siteConfig.name} is a free library of printables for the home, 
                 download the PDF, print it at home, frame it or fill it in. No
                 sign-up, no paywall, no catch.
               </p>
@@ -391,7 +391,7 @@ export default async function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════
-          § WHAT YOU GET — first-sight clarity, three plain promises.
+          § WHAT YOU GET, first-sight clarity, three plain promises.
       ══════════════════════════════════════════════════════════════════ */}
       <section className="py-14 sm:py-16 border-y-2 border-black/[0.08]" aria-label="What you get here">
         <Container>
@@ -415,7 +415,7 @@ export default async function HomePage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════
-          § BROWSE BY CATEGORY — driven from the published categories.
+          § BROWSE BY CATEGORY, driven from the published categories.
           Each card links to its /category/[slug] archive; empty categories
           are hidden. Renders nothing if the DB is unconfigured.
       ══════════════════════════════════════════════════════════════════ */}
@@ -511,7 +511,7 @@ export default async function HomePage() {
       )}
 
       {/* ══════════════════════════════════════════════════════════════════
-          § TESTIMONIALS — renders only when real reader quotes are configured.
+          § TESTIMONIALS, renders only when real reader quotes are configured.
       ══════════════════════════════════════════════════════════════════ */}
       <Testimonials />
 

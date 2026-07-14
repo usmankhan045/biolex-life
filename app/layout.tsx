@@ -55,13 +55,13 @@ export default async function RootLayout({
       name,
     }));
   } catch {
-    // DB not yet configured — render nav without the Categories dropdown
+    // DB not yet configured, render nav without the Categories dropdown
   }
 
   return (
     <html lang="en" className={`${fonts.variables} h-full`}>
       <head>
-        {/* Inject theme CSS vars — change siteConfig.theme.colors to restyle the whole site */}
+        {/* Inject theme CSS vars, change siteConfig.theme.colors to restyle the whole site */}
         <style dangerouslySetInnerHTML={{ __html: `:root { ${generateThemeCSS()} }` }} />
         {/* Machine-readable content license (RSL 1.0) for AI/LLM crawlers */}
         <link rel="license" href="/rsl.xml" type="application/rsl+xml" />

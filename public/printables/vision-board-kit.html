@@ -2,287 +2,287 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Vision Board Kit — Free Printable</title>
+<title>Vision Board Kit, Free Printable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  @page { size: letter portrait; margin: 0; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
-    -webkit-print-color-adjust: exact; }
+ @page { size: letter portrait; margin: 0; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+ -webkit-print-color-adjust: exact; }
 
-  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
-    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
-  .page:last-child { page-break-after: avoid; }
+ .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+ page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+ .page:last-child { page-break-after: avoid; }
 
-  /* Botanical motif */
-  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+ /* Botanical motif */
+ .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
 
-  /* Header */
-  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
-    display: flex; justify-content: space-between; align-items: flex-end; }
-  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
-    color: #fff; letter-spacing: 0.5px; line-height: 1; }
-  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
-  .header-fields { display: flex; gap: 14px; }
-  .hf { text-align: left; }
-  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
-  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+ /* Header */
+ .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+ display: flex; justify-content: space-between; align-items: flex-end; }
+ .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+ color: #fff; letter-spacing: 0.5px; line-height: 1; }
+ .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+ .header-fields { display: flex; gap: 14px; }
+ .hf { text-align: left; }
+ .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+ .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
 
-  /* Subheader strip */
-  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
-    justify-content: space-between; align-items: center; }
-  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
-  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+ /* Subheader strip */
+ .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+ justify-content: space-between; align-items: center; }
+ .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+ .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
 
-  /* Section blocks */
-  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
-  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
-  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
-  .sh-sage    { background: #7A9E7E; }
-  .sh-steel   { background: #6B8FAE; }
-  .sh-taupe   { background: #A89080; }
-  .sh-purple  { background: #8B7BA0; }
-  .sh-rose    { background: #C4826E; }
-  .sh-dark    { background: #4A6B4E; }
+ /* Section blocks */
+ .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+ .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+ .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+ .sh-sage { background: #7A9E7E; }
+ .sh-steel { background: #6B8FAE; }
+ .sh-taupe { background: #A89080; }
+ .sh-purple { background: #8B7BA0; }
+ .sh-rose { background: #C4826E; }
+ .sh-dark { background: #4A6B4E; }
 
-  /* Intention strip (top of page 1) */
-  .intention { padding: 9px 12px; background: #F5F0EA; }
-  .intent-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .intent-field { display: flex; flex-direction: column; }
-  .intent-label { font-size: 6.8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #7A9E7E; margin-bottom: 3px; }
-  .intent-line { border-bottom: 1.4px solid #C4B5A5; height: 16px; }
-  .intent-hint { font-size: 6.2pt; font-style: italic; color: #8A7A6A; margin-top: 3px; }
+ /* Intention strip (top of page 1) */
+ .intention { padding: 9px 12px; background: #F5F0EA; }
+ .intent-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+ .intent-field { display: flex; flex-direction: column; }
+ .intent-label { font-size: 6.8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #7A9E7E; margin-bottom: 3px; }
+ .intent-line { border-bottom: 1.4px solid #C4B5A5; height: 16px; }
+ .intent-hint { font-size: 6.2pt; font-style: italic; color: #8A7A6A; margin-top: 3px; }
 
-  /* Vision frame grid */
-  .frame-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 2.62in);
-    gap: 0.14in; margin-top: 8px; }
-  .frame { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; display: flex; flex-direction: column; background: #fff; }
-  .frame-label { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 4px 10px; display: flex; justify-content: space-between; align-items: baseline; }
-  .frame-label .fl-hint { font-family: 'Lato', sans-serif; font-size: 6.4pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); }
-  .frame-canvas { flex: 1; border: 1.4px dashed #D9CFBE; margin: 6px; border-radius: 5px;
-    display: flex; align-items: center; justify-content: center; position: relative; }
-  .frame-prompt { font-size: 6.6pt; font-style: italic; color: #B8AC9A; text-align: center; padding: 0 14px; }
-  .frame-caption { border-top: 1px solid #EDE6D9; padding: 3px 10px 5px; }
-  .caption-label { font-size: 5.8pt; text-transform: uppercase; letter-spacing: 0.4px; color: #A89080; }
-  .caption-line { border-bottom: 1px solid #D4C7B4; height: 11px; margin-top: 2px; }
+ /* Vision frame grid */
+ .frame-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 2.62in);
+ gap: 0.14in; margin-top: 8px; }
+ .frame { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; display: flex; flex-direction: column; background: #fff; }
+ .frame-label { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 4px 10px; display: flex; justify-content: space-between; align-items: baseline; }
+ .frame-label .fl-hint { font-family: 'Lato', sans-serif; font-size: 6.4pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); }
+ .frame-canvas { flex: 1; border: 1.4px dashed #D9CFBE; margin: 6px; border-radius: 5px;
+ display: flex; align-items: center; justify-content: center; position: relative; }
+ .frame-prompt { font-size: 6.6pt; font-style: italic; color: #B8AC9A; text-align: center; padding: 0 14px; }
+ .frame-caption { border-top: 1px solid #EDE6D9; padding: 3px 10px 5px; }
+ .caption-label { font-size: 5.8pt; text-transform: uppercase; letter-spacing: 0.4px; color: #A89080; }
+ .caption-line { border-bottom: 1px solid #D4C7B4; height: 11px; margin-top: 2px; }
 
-  /* Reflection prompts (page 2) */
-  .prompt-body { padding: 7px 11px 9px; background: #FAF7F2; }
-  .prompt-item { margin-bottom: 7px; }
-  .prompt-item:last-child { margin-bottom: 2px; }
-  .prompt-q { font-size: 7.5pt; font-weight: 700; color: #4A6B4E; margin-bottom: 3px; }
-  .prompt-line { border-bottom: 1px solid #D4C7B4; height: 15px; }
-  .prompt-two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+ /* Reflection prompts (page 2) */
+ .prompt-body { padding: 7px 11px 9px; background: #FAF7F2; }
+ .prompt-item { margin-bottom: 7px; }
+ .prompt-item:last-child { margin-bottom: 2px; }
+ .prompt-q { font-size: 7.5pt; font-weight: 700; color: #4A6B4E; margin-bottom: 3px; }
+ .prompt-line { border-bottom: 1px solid #D4C7B4; height: 15px; }
+ .prompt-two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
-  /* Affirmation strip */
-  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
-    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+ /* Affirmation strip */
+ .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+ font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
 
-  /* Cut-out cards */
-  .cards-note { font-size: 6.6pt; font-style: italic; color: #8A7A6A; padding: 6px 11px 2px; background: #FAF7F2; }
-  .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.12in; padding: 8px 11px 11px; background: #FAF7F2; }
-  .card { border: 1.4px dashed #A89080; border-radius: 6px; height: 0.92in;
-    display: flex; align-items: center; justify-content: center; text-align: center; padding: 4px 6px; }
-  .card.word { background: #F2DDD5; }
-  .card.word-sage { background: #E6EEE6; }
-  .card.word-blush { background: #F5F0EA; }
-  .card-word { font-family: 'Playfair Display', Georgia, serif; font-size: 11pt; font-weight: 700; color: #4A6B4E; }
-  .card.word .card-word { color: #C4826E; }
-  .card-blank { display: flex; flex-direction: column; align-items: center; width: 100%; }
-  .card-blank .card-line { width: 78%; border-bottom: 1px solid #C4B5A5; height: 12px; margin-top: 5px; }
-  .card-blank .card-tag { font-size: 5.6pt; text-transform: uppercase; letter-spacing: 0.4px; color: #A89080; }
+ /* Cut-out cards */
+ .cards-note { font-size: 6.6pt; font-style: italic; color: #8A7A6A; padding: 6px 11px 2px; background: #FAF7F2; }
+ .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.12in; padding: 8px 11px 11px; background: #FAF7F2; }
+ .card { border: 1.4px dashed #A89080; border-radius: 6px; height: 0.92in;
+ display: flex; align-items: center; justify-content: center; text-align: center; padding: 4px 6px; }
+ .card.word { background: #F2DDD5; }
+ .card.word-sage { background: #E6EEE6; }
+ .card.word-blush { background: #F5F0EA; }
+ .card-word { font-family: 'Playfair Display', Georgia, serif; font-size: 11pt; font-weight: 700; color: #4A6B4E; }
+ .card.word .card-word { color: #C4826E; }
+ .card-blank { display: flex; flex-direction: column; align-items: center; width: 100%; }
+ .card-blank .card-line { width: 78%; border-bottom: 1px solid #C4B5A5; height: 12px; margin-top: 5px; }
+ .card-blank .card-tag { font-size: 5.6pt; text-transform: uppercase; letter-spacing: 0.4px; color: #A89080; }
 
-  /* Footer */
-  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
-    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
-  .foot-leaf { width: 9px; height: 9px; }
-  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+ /* Footer */
+ .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+ border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+ .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
+ .foot-leaf { width: 9px; height: 9px; }
+ .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
 </style>
 </head>
 <body>
 
 <!-- ─────────────── PAGE 1 ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Vision Board</div>
-      <div class="header-sub">Picture the year you want — then build it, one square at a time.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Name</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Vision Board</div>
+ <div class="header-sub">Picture the year you want, then build it, one square at a time.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Name</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Fill each frame with a photo, magazine cut-out, sketch, or a few words. Label what it means to you.</span>
-    <span class="subheader-tag">Page 1 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Fill each frame with a photo, magazine cut-out, sketch, or a few words. Label what it means to you.</span>
+ <span class="subheader-tag">Page 1 of 2</span>
+ </div>
 
-  <!-- Intention -->
-  <div class="section">
-    <div class="section-header sh-rose">My Word &amp; Big Vision <span class="focus">set the tone for everything below</span></div>
-    <div class="intention">
-      <div class="intent-row">
-        <div class="intent-field">
-          <span class="intent-label">My word of the year</span>
-          <div class="intent-line"></div>
-          <span class="intent-hint">One word to guide your choices — e.g. Calm, Bold, Enough.</span>
-        </div>
-        <div class="intent-field">
-          <span class="intent-label">By this time next year, I feel…</span>
-          <div class="intent-line"></div>
-          <span class="intent-hint">Name the feeling you are building toward.</span>
-        </div>
-      </div>
-    </div>
-  </div>
+ <!-- Intention -->
+ <div class="section">
+ <div class="section-header sh-rose">My Word &amp; Big Vision <span class="focus">set the tone for everything below</span></div>
+ <div class="intention">
+ <div class="intent-row">
+ <div class="intent-field">
+ <span class="intent-label">My word of the year</span>
+ <div class="intent-line"></div>
+ <span class="intent-hint">One word to guide your choices, e.g. Calm, Bold, Enough.</span>
+ </div>
+ <div class="intent-field">
+ <span class="intent-label">By this time next year, I feel…</span>
+ <div class="intent-line"></div>
+ <span class="intent-hint">Name the feeling you are building toward.</span>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- Vision frame grid -->
-  <div class="frame-grid">
-    <div class="frame">
-      <div class="frame-label sh-sage">Health &amp; Body <span class="fl-hint">energy, movement, rest</span></div>
-      <div class="frame-canvas"><span class="frame-prompt">Paste or draw what feeling strong and rested looks like.</span></div>
-      <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
-    </div>
+ <!-- Vision frame grid -->
+ <div class="frame-grid">
+ <div class="frame">
+ <div class="frame-label sh-sage">Health &amp; Body <span class="fl-hint">energy, movement, rest</span></div>
+ <div class="frame-canvas"><span class="frame-prompt">Paste or draw what feeling strong and rested looks like.</span></div>
+ <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
+ </div>
 
-    <div class="frame">
-      <div class="frame-label sh-steel">Work &amp; Money <span class="fl-hint">career, income, growth</span></div>
-      <div class="frame-canvas"><span class="frame-prompt">Show the role, project, or milestone you are moving toward.</span></div>
-      <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
-    </div>
+ <div class="frame">
+ <div class="frame-label sh-steel">Work &amp; Money <span class="fl-hint">career, income, growth</span></div>
+ <div class="frame-canvas"><span class="frame-prompt">Show the role, project, or milestone you are moving toward.</span></div>
+ <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
+ </div>
 
-    <div class="frame">
-      <div class="frame-label sh-purple">Relationships <span class="fl-hint">people who matter</span></div>
-      <div class="frame-canvas"><span class="frame-prompt">Picture the connections you want to nurture this year.</span></div>
-      <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
-    </div>
+ <div class="frame">
+ <div class="frame-label sh-purple">Relationships <span class="fl-hint">people who matter</span></div>
+ <div class="frame-canvas"><span class="frame-prompt">Picture the connections you want to nurture this year.</span></div>
+ <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
+ </div>
 
-    <div class="frame">
-      <div class="frame-label sh-taupe">Home &amp; Space <span class="fl-hint">the place you live</span></div>
-      <div class="frame-canvas"><span class="frame-prompt">Add the calm, organized space you want to come home to.</span></div>
-      <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
-    </div>
+ <div class="frame">
+ <div class="frame-label sh-taupe">Home &amp; Space <span class="fl-hint">the place you live</span></div>
+ <div class="frame-canvas"><span class="frame-prompt">Add the calm, organized space you want to come home to.</span></div>
+ <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
+ </div>
 
-    <div class="frame">
-      <div class="frame-label sh-rose">Growth &amp; Learning <span class="fl-hint">skills, habits, mindset</span></div>
-      <div class="frame-canvas"><span class="frame-prompt">Show a skill, book, or habit you want to make your own.</span></div>
-      <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
-    </div>
+ <div class="frame">
+ <div class="frame-label sh-rose">Growth &amp; Learning <span class="fl-hint">skills, habits, mindset</span></div>
+ <div class="frame-canvas"><span class="frame-prompt">Show a skill, book, or habit you want to make your own.</span></div>
+ <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
+ </div>
 
-    <div class="frame">
-      <div class="frame-label sh-dark">Fun &amp; Adventure <span class="fl-hint">joy, travel, play</span></div>
-      <div class="frame-canvas"><span class="frame-prompt">Picture the trips, hobbies, and small joys you crave.</span></div>
-      <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
-    </div>
-  </div>
+ <div class="frame">
+ <div class="frame-label sh-dark">Fun &amp; Adventure <span class="fl-hint">joy, travel, play</span></div>
+ <div class="frame-canvas"><span class="frame-prompt">Picture the trips, hobbies, and small joys you crave.</span></div>
+ <div class="frame-caption"><span class="caption-label">This means</span><div class="caption-line"></div></div>
+ </div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left"><svg class="foot-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.2"/><line x1="6" y1="18" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1"/></svg>Free Printable — Print as many copies as you need</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left"><svg class="foot-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.2"/><line x1="6" y1="18" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1"/></svg>Free Printable, Print as many copies as you need</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 <!-- ─────────────── PAGE 2 ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Vision Board Kit</div>
-      <div class="header-sub">Reflect first, then cut out the cards and arrange them on your board.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Review on</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Top goal</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Vision Board Kit</div>
+ <div class="header-sub">Reflect first, then cut out the cards and arrange them on your board.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Review on</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Top goal</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Answer the prompts to sharpen your vision, then snip the cards along the dashed lines and place them where they inspire you.</span>
-    <span class="subheader-tag">Page 2 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Answer the prompts to sharpen your vision, then snip the cards along the dashed lines and place them where they inspire you.</span>
+ <span class="subheader-tag">Page 2 of 2</span>
+ </div>
 
-  <!-- Reflection prompts -->
-  <div class="section">
-    <div class="section-header sh-purple">Reflection Prompts <span class="focus">clarity before the collage</span></div>
-    <div class="prompt-body">
-      <div class="prompt-two">
-        <div>
-          <div class="prompt-item">
-            <div class="prompt-q">The three goals that matter most this year are…</div>
-            <div class="prompt-line"></div>
-            <div class="prompt-line"></div>
-          </div>
-          <div class="prompt-item">
-            <div class="prompt-q">One habit that would change everything…</div>
-            <div class="prompt-line"></div>
-          </div>
-        </div>
-        <div>
-          <div class="prompt-item">
-            <div class="prompt-q">What I want to let go of…</div>
-            <div class="prompt-line"></div>
-            <div class="prompt-line"></div>
-          </div>
-          <div class="prompt-item">
-            <div class="prompt-q">The first small step I can take this week…</div>
-            <div class="prompt-line"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <!-- Reflection prompts -->
+ <div class="section">
+ <div class="section-header sh-purple">Reflection Prompts <span class="focus">clarity before the collage</span></div>
+ <div class="prompt-body">
+ <div class="prompt-two">
+ <div>
+ <div class="prompt-item">
+ <div class="prompt-q">The three goals that matter most this year are…</div>
+ <div class="prompt-line"></div>
+ <div class="prompt-line"></div>
+ </div>
+ <div class="prompt-item">
+ <div class="prompt-q">One habit that would change everything…</div>
+ <div class="prompt-line"></div>
+ </div>
+ </div>
+ <div>
+ <div class="prompt-item">
+ <div class="prompt-q">What I want to let go of…</div>
+ <div class="prompt-line"></div>
+ <div class="prompt-line"></div>
+ </div>
+ <div class="prompt-item">
+ <div class="prompt-q">The first small step I can take this week…</div>
+ <div class="prompt-line"></div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <div class="affirmation">Read your board out loud each morning. What you look at every day is what you slowly grow toward.</div>
+ <div class="affirmation">Read your board out loud each morning. What you look at every day is what you slowly grow toward.</div>
 
-  <!-- Cut-out cards -->
-  <div class="section">
-    <div class="section-header sh-sage">Cut-Out Vision Cards <span class="focus">snip along the dashes &amp; arrange</span></div>
-    <div class="cards-note">Six ready-made word cards to inspire your board, plus blank cards to add your own goals, places, and people.</div>
-    <div class="card-grid">
-      <div class="card word"><span class="card-word">Grow</span></div>
-      <div class="card word-sage"><span class="card-word">Calm</span></div>
-      <div class="card word-blush"><span class="card-word">Brave</span></div>
-      <div class="card word"><span class="card-word">Balance</span></div>
-      <div class="card word-sage"><span class="card-word">Adventure</span></div>
-      <div class="card word-blush"><span class="card-word">Gratitude</span></div>
-      <div class="card"><span class="card-blank"><span class="card-tag">My word</span><span class="card-line"></span></span></div>
-      <div class="card"><span class="card-blank"><span class="card-tag">My word</span><span class="card-line"></span></span></div>
-      <div class="card"><span class="card-blank"><span class="card-tag">A goal</span><span class="card-line"></span></span></div>
-      <div class="card"><span class="card-blank"><span class="card-tag">A goal</span><span class="card-line"></span></span></div>
-      <div class="card"><span class="card-blank"><span class="card-tag">A place</span><span class="card-line"></span></span></div>
-      <div class="card"><span class="card-blank"><span class="card-tag">A person</span><span class="card-line"></span></span></div>
-    </div>
-  </div>
+ <!-- Cut-out cards -->
+ <div class="section">
+ <div class="section-header sh-sage">Cut-Out Vision Cards <span class="focus">snip along the dashes &amp; arrange</span></div>
+ <div class="cards-note">Six ready-made word cards to inspire your board, plus blank cards to add your own goals, places, and people.</div>
+ <div class="card-grid">
+ <div class="card word"><span class="card-word">Grow</span></div>
+ <div class="card word-sage"><span class="card-word">Calm</span></div>
+ <div class="card word-blush"><span class="card-word">Brave</span></div>
+ <div class="card word"><span class="card-word">Balance</span></div>
+ <div class="card word-sage"><span class="card-word">Adventure</span></div>
+ <div class="card word-blush"><span class="card-word">Gratitude</span></div>
+ <div class="card"><span class="card-blank"><span class="card-tag">My word</span><span class="card-line"></span></span></div>
+ <div class="card"><span class="card-blank"><span class="card-tag">My word</span><span class="card-line"></span></span></div>
+ <div class="card"><span class="card-blank"><span class="card-tag">A goal</span><span class="card-line"></span></span></div>
+ <div class="card"><span class="card-blank"><span class="card-tag">A goal</span><span class="card-line"></span></span></div>
+ <div class="card"><span class="card-blank"><span class="card-tag">A place</span><span class="card-line"></span></span></div>
+ <div class="card"><span class="card-blank"><span class="card-tag">A person</span><span class="card-line"></span></span></div>
+ </div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left"><svg class="foot-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.2"/><line x1="6" y1="18" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1"/></svg>Free Printable — Print as many copies as you need</span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left"><svg class="foot-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.2"/><line x1="6" y1="18" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1"/></svg>Free Printable, Print as many copies as you need</span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 </body>

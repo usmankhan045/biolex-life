@@ -36,18 +36,18 @@ curl -H "Authorization: Bearer $TOKEN" http://localhost:3000/api/admin/sites
 **Response**
 ```json
 {
-  "sites": [
-    {
-      "id": "uuid",
-      "slug": "my-site",
-      "domain": "www.example.com",
-      "name": "My Site",
-      "niche": "Your niche or topic",
-      "deploy_url": "https://my-site.vercel.app",
-      "theme_config": null,
-      "created_at": "2024-01-01T00:00:00Z"
-    }
-  ]
+ "sites": [
+ {
+ "id": "uuid",
+ "slug": "my-site",
+ "domain": "www.example.com",
+ "name": "My Site",
+ "niche": "Your niche or topic",
+ "deploy_url": "https://my-site.vercel.app",
+ "theme_config": null,
+ "created_at": "2024-01-01T00:00:00Z"
+ }
+ ]
 }
 ```
 
@@ -58,26 +58,26 @@ Register a new site. Use when launching site #2+.
 **Body**
 ```json
 {
-  "slug": "second-site",
-  "domain": "second-site.com",
-  "name": "Second Site",
-  "niche": "Your niche or topic",
-  "deploy_url": "https://second-site.vercel.app",
-  "theme_config": {}
+ "slug": "second-site",
+ "domain": "second-site.com",
+ "name": "Second Site",
+ "niche": "Your niche or topic",
+ "deploy_url": "https://second-site.vercel.app",
+ "theme_config": {}
 }
 ```
 
 ```bash
 curl -X POST \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"slug":"second-site","domain":"second-site.com","name":"Second Site","deploy_url":"https://second-site.vercel.app"}' \
-  http://localhost:3000/api/admin/sites
+ -H "Authorization: Bearer $TOKEN" \
+ -H "Content-Type: application/json" \
+ -d '{"slug":"second-site","domain":"second-site.com","name":"Second Site","deploy_url":"https://second-site.vercel.app"}' \
+ http://localhost:3000/api/admin/sites
 ```
 
 **Response** `201`
 ```json
-{ "site": { "id": "uuid", ... } }
+{ "site": { "id": "uuid"... } }
 ```
 
 ### PUT /api/admin/sites/:id
@@ -87,17 +87,17 @@ Update a site's `deploy_url`, `theme_config`, `name`, or `niche`.
 **Body** (all fields optional)
 ```json
 {
-  "deploy_url": "https://second-site-v2.vercel.app",
-  "theme_config": { "colors": { "primary": "#123456" } }
+ "deploy_url": "https://second-site-v2.vercel.app",
+ "theme_config": { "colors": { "primary": "#123456" } }
 }
 ```
 
 ```bash
 curl -X PUT \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"deploy_url":"https://second-site-v2.vercel.app"}' \
-  http://localhost:3000/api/admin/sites/SITE_ID
+ -H "Authorization: Bearer $TOKEN" \
+ -H "Content-Type: application/json" \
+ -d '{"deploy_url":"https://second-site-v2.vercel.app"}' \
+ http://localhost:3000/api/admin/sites/SITE_ID
 ```
 
 ---
@@ -120,7 +120,7 @@ List posts with optional filters.
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
-  "http://localhost:3000/api/admin/posts?status=published&audience_tag=segment-one"
+ "http://localhost:3000/api/admin/posts?status=published&audience_tag=segment-one"
 ```
 
 ### GET /api/admin/posts/:id
@@ -138,22 +138,22 @@ Create a post.
 **Body**
 ```json
 {
-  "site_id": "uuid (optional, defaults to current site)",
-  "title": "Your Post Title Here",
-  "slug": "your-post-slug",
-  "content": "## Introduction\n...",
-  "excerpt": "Short teaser text",
-  "quick_answer": "A 1–3 sentence plain-English answer to the article's core question.",
-  "category_id": "uuid | null",
-  "audience_tags": ["segment-one", "segment-two"],
-  "status": "draft",
-  "seo_title": "Your Post Title | My Site",
-  "seo_description": "Short meta description of what the reader gets...",
-  "faq_items": [
-    { "question": "A question a reader might type?", "answer": "It depends on..." }
-  ],
-  "featured_image_url": "https://example.com/image.jpg",
-  "published_at": null
+ "site_id": "uuid (optional, defaults to current site)",
+ "title": "Your Post Title Here",
+ "slug": "your-post-slug",
+ "content": "## Introduction\n...",
+ "excerpt": "Short teaser text",
+ "quick_answer": "A 1-3 sentence plain-English answer to the article's core question.",
+ "category_id": "uuid | null",
+ "audience_tags": ["segment-one", "segment-two"],
+ "status": "draft",
+ "seo_title": "Your Post Title | My Site",
+ "seo_description": "Short meta description of what the reader gets...",
+ "faq_items": [
+ { "question": "A question a reader might type?", "answer": "It depends on..." }
+ ],
+ "featured_image_url": "https://example.com/image.jpg",
+ "published_at": null
 }
 ```
 
@@ -161,15 +161,15 @@ Create a post.
 
 ```bash
 curl -X POST \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"title":"Test Post","slug":"test-post","status":"published"}' \
-  http://localhost:3000/api/admin/posts
+ -H "Authorization: Bearer $TOKEN" \
+ -H "Content-Type: application/json" \
+ -d '{"title":"Test Post","slug":"test-post","status":"published"}' \
+ http://localhost:3000/api/admin/posts
 ```
 
 **Response** `201`
 ```json
-{ "post": { "id": "uuid", ... } }
+{ "post": { "id": "uuid"... } }
 ```
 
 ### PUT /api/admin/posts/:id
@@ -178,10 +178,10 @@ Update a post. All fields are optional.
 
 ```bash
 curl -X PUT \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"status":"published","seo_title":"Updated SEO Title"}' \
-  http://localhost:3000/api/admin/posts/POST_ID
+ -H "Authorization: Bearer $TOKEN" \
+ -H "Content-Type: application/json" \
+ -d '{"status":"published","seo_title":"Updated SEO Title"}' \
+ http://localhost:3000/api/admin/posts/POST_ID
 ```
 
 ### DELETE /api/admin/posts/:id
@@ -190,8 +190,8 @@ Delete a post and revalidate affected pages.
 
 ```bash
 curl -X DELETE \
-  -H "Authorization: Bearer $TOKEN" \
-  http://localhost:3000/api/admin/posts/POST_ID
+ -H "Authorization: Bearer $TOKEN" \
+ http://localhost:3000/api/admin/posts/POST_ID
 ```
 
 **Response**
@@ -207,7 +207,7 @@ curl -X DELETE \
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
-  "http://localhost:3000/api/admin/pages?site_id=UUID"
+ "http://localhost:3000/api/admin/pages?site_id=UUID"
 ```
 
 ### GET /api/admin/pages/:id
@@ -217,12 +217,12 @@ curl -H "Authorization: Bearer $TOKEN" \
 **Body**
 ```json
 {
-  "site_id": "uuid (optional)",
-  "slug": "start-here",
-  "title": "Start Here",
-  "content": "## Welcome\n...",
-  "seo_title": "Start Here | My Site",
-  "seo_description": "New to the site? Begin here."
+ "site_id": "uuid (optional)",
+ "slug": "start-here",
+ "title": "Start Here",
+ "content": "## Welcome\n...",
+ "seo_title": "Start Here | My Site",
+ "seo_description": "New to the site? Begin here."
 }
 ```
 
@@ -240,7 +240,7 @@ All fields optional.
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
-  "http://localhost:3000/api/admin/categories?site_id=UUID"
+ "http://localhost:3000/api/admin/categories?site_id=UUID"
 ```
 
 ### GET /api/admin/categories/:id
@@ -250,10 +250,10 @@ curl -H "Authorization: Bearer $TOKEN" \
 **Body**
 ```json
 {
-  "site_id": "uuid (optional)",
-  "slug": "category-one",
-  "name": "Category One",
-  "description": "Short description of this category"
+ "site_id": "uuid (optional)",
+ "slug": "category-one",
+ "name": "Category One",
+ "description": "Short description of this category"
 }
 ```
 
@@ -274,13 +274,13 @@ curl -H "Authorization: Bearer $TOKEN" \
 **Body**
 ```json
 {
-  "site_id": "uuid (optional)",
-  "slug": "printable-worksheet",
-  "title": "Printable Worksheet",
-  "description": "Short description of this printable sheet",
-  "file_url": "https://example.com/worksheet.pdf",
-  "thumbnail_url": "https://example.com/worksheet-thumb.jpg",
-  "category_id": "uuid | null"
+ "site_id": "uuid (optional)",
+ "slug": "printable-worksheet",
+ "title": "Printable Worksheet",
+ "description": "Short description of this printable sheet",
+ "file_url": "https://example.com/worksheet.pdf",
+ "thumbnail_url": "https://example.com/worksheet-thumb.jpg",
+ "category_id": "uuid | null"
 }
 ```
 
@@ -303,30 +303,30 @@ Upload a file to Supabase Storage. Files are organized under `{site_slug}/{times
 **Body**
 ```json
 {
-  "site_id": "uuid (optional)",
-  "filename": "hero-image.jpg",
-  "data": "data:image/jpeg;base64,/9j/4AAQ...",
-  "content_type": "image/jpeg"
+ "site_id": "uuid (optional)",
+ "filename": "hero-image.jpg",
+ "data": "data:image/jpeg;base64,/9j/4AAQ...",
+ "content_type": "image/jpeg"
 }
 ```
 
 - `data`: Full data URI or raw base64 string. The `data:image/...;base64,` prefix is stripped automatically.
-- `content_type`: Optional — inferred from the filename extension if omitted (jpg, png, gif, webp, svg, pdf supported).
+- `content_type`: Optional, inferred from the filename extension if omitted (jpg, png, gif, webp, svg, pdf supported).
 
 ```bash
 B64=$(base64 -i image.jpg)
 curl -X POST \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d "{\"filename\":\"image.jpg\",\"data\":\"$B64\",\"content_type\":\"image/jpeg\"}" \
-  http://localhost:3000/api/admin/media
+ -H "Authorization: Bearer $TOKEN" \
+ -H "Content-Type: application/json" \
+ -d "{\"filename\":\"image.jpg\",\"data\":\"$B64\",\"content_type\":\"image/jpeg\"}" \
+ http://localhost:3000/api/admin/media
 ```
 
 **Response** `201`
 ```json
 {
-  "url": "https://xxxx.supabase.co/storage/v1/object/public/media/my-site/1700000000-image.jpg",
-  "path": "my-site/1700000000-image.jpg"
+ "url": "https://xxxx.supabase.co/storage/v1/object/public/media/my-site/1700000000-image.jpg",
+ "path": "my-site/1700000000-image.jpg"
 }
 ```
 
@@ -345,16 +345,16 @@ Export subscriber list for a site.
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
-  "http://localhost:3000/api/admin/subscribers?site_id=UUID"
+ "http://localhost:3000/api/admin/subscribers?site_id=UUID"
 ```
 
 **Response**
 ```json
 {
-  "subscribers": [
-    { "id": "uuid", "email": "user@example.com", "source": "homepage-mid", "created_at": "..." }
-  ],
-  "total": 42
+ "subscribers": [
+ { "id": "uuid", "email": "user@example.com", "source": "homepage-mid", "created_at": "..." }
+ ],
+ "total": 42
 }
 ```
 
@@ -377,43 +377,43 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:3000/api/admin/audit?si
 **Response**
 ```json
 {
-  "sites": [
-    {
-      "id": "uuid",
-      "slug": "my-site",
-      "name": "My Site",
-      "domain": "www.example.com",
-      "deploy_url": "https://my-site.vercel.app",
-      "summary": {
-        "post_count": 25,
-        "published_post_count": 20,
-        "posts_with_seo_title": 18,
-        "posts_with_seo_description": 15,
-        "posts_with_faq": 10,
-        "avg_word_count": 1240,
-        "page_count": 6,
-        "printable_count": 4
-      },
-      "posts": [
-        {
-          "id": "uuid",
-          "slug": "your-post-slug",
-          "title": "Your Post Title Here",
-          "status": "published",
-          "word_count": 1845,
-          "has_faq": true,
-          "has_seo_title": true,
-          "has_seo_description": true,
-          "seo_title": "...",
-          "seo_description": "...",
-          "audience_tags": ["segment-one"],
-          "category_slug": "category-one"
-        }
-      ],
-      "pages": [ { "id": "uuid", "slug": "start-here", "title": "Start Here", "word_count": 600, "has_seo_title": true, "has_seo_description": true } ],
-      "printables": [ { "id": "uuid", "slug": "printable-worksheet", "title": "Printable Worksheet", "has_description": true } ]
-    }
-  ]
+ "sites": [
+ {
+ "id": "uuid",
+ "slug": "my-site",
+ "name": "My Site",
+ "domain": "www.example.com",
+ "deploy_url": "https://my-site.vercel.app",
+ "summary": {
+ "post_count": 25,
+ "published_post_count": 20,
+ "posts_with_seo_title": 18,
+ "posts_with_seo_description": 15,
+ "posts_with_faq": 10,
+ "avg_word_count": 1240,
+ "page_count": 6,
+ "printable_count": 4
+ },
+ "posts": [
+ {
+ "id": "uuid",
+ "slug": "your-post-slug",
+ "title": "Your Post Title Here",
+ "status": "published",
+ "word_count": 1845,
+ "has_faq": true,
+ "has_seo_title": true,
+ "has_seo_description": true,
+ "seo_title": "...",
+ "seo_description": "...",
+ "audience_tags": ["segment-one"],
+ "category_slug": "category-one"
+ }
+ ],
+ "pages": [ { "id": "uuid", "slug": "start-here", "title": "Start Here", "word_count": 600, "has_seo_title": true, "has_seo_description": true } ],
+ "printables": [ { "id": "uuid", "slug": "printable-worksheet", "title": "Printable Worksheet", "has_description": true } ]
+ }
+ ]
 }
 ```
 
@@ -428,8 +428,8 @@ Every site must expose this endpoint to receive cross-site cache purge signals.
 **Body**
 ```json
 {
-  "secret": "REVALIDATION_SECRET value",
-  "paths": ["/blog", "/blog/some-post-slug", "/category/category-one"]
+ "secret": "REVALIDATION_SECRET value",
+ "paths": ["/blog", "/blog/some-post-slug", "/category/category-one"]
 }
 ```
 
@@ -462,16 +462,16 @@ BASE=http://localhost:3000
 
 # 1. Create a test post
 POST_RESPONSE=$(curl -s -X POST \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "title": "Test Post — Admin API Smoke Test",
-    "slug": "test-post-smoke",
-    "content": "## Hello\nThis is a test post created via the admin API.",
-    "status": "published",
-    "audience_tags": ["segment-one"]
-  }' \
-  $BASE/api/admin/posts)
+ -H "Authorization: Bearer $TOKEN" \
+ -H "Content-Type: application/json" \
+ -d '{
+ "title": "Test Post, Admin API Smoke Test",
+ "slug": "test-post-smoke",
+ "content": "## Hello\nThis is a test post created via the admin API.",
+ "status": "published",
+ "audience_tags": ["segment-one"]
+ }' \
+ $BASE/api/admin/posts)
 
 echo $POST_RESPONSE
 POST_ID=$(echo $POST_RESPONSE | python3 -c "import sys,json; print(json.load(sys.stdin)['post']['id'])")
@@ -481,15 +481,15 @@ curl -s -H "Authorization: Bearer $TOKEN" "$BASE/api/admin/posts?status=publishe
 
 # 3. Update it
 curl -s -X PUT \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"seo_title":"Updated SEO Title"}' \
-  $BASE/api/admin/posts/$POST_ID | python3 -m json.tool
+ -H "Authorization: Bearer $TOKEN" \
+ -H "Content-Type: application/json" \
+ -d '{"seo_title":"Updated SEO Title"}' \
+ $BASE/api/admin/posts/$POST_ID | python3 -m json.tool
 
 # 4. Delete it
 curl -s -X DELETE \
-  -H "Authorization: Bearer $TOKEN" \
-  $BASE/api/admin/posts/$POST_ID | python3 -m json.tool
+ -H "Authorization: Bearer $TOKEN" \
+ $BASE/api/admin/posts/$POST_ID | python3 -m json.tool
 
 # 5. Confirm removal
 curl -s -H "Authorization: Bearer $TOKEN" $BASE/api/admin/posts/$POST_ID

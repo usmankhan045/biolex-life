@@ -53,7 +53,7 @@ export function organizationSchema() {
   };
 }
 
-/** The named human behind the site — E-E-A-T authority anchor. */
+/** The named human behind the site, E-E-A-T authority anchor. */
 export function personSchema() {
   return {
     "@context": "https://schema.org",
@@ -81,7 +81,7 @@ export function articleSchema(post: Post) {
     headline: post.seo_title ?? post.title,
     description: post.seo_description ?? post.excerpt ?? undefined,
     url,
-    // Always emit an ABSOLUTE image URL — fall back to the branded OG default
+    // Always emit an ABSOLUTE image URL, fall back to the branded OG default
     // when a post has no featured image (Discover/rich-result eligibility).
     image: post.featured_image_url
       ? post.featured_image_url.startsWith("http")
@@ -204,14 +204,14 @@ export function contactPageSchema() {
   };
 }
 
-/** ProfilePage entity for the author archive page — E-E-A-T authority signal. */
+/** ProfilePage entity for the author archive page, E-E-A-T authority signal. */
 export function profilePageSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "@id": `${BASE_URL}${siteConfig.author.url}#profilepage`,
     url: `${BASE_URL}${siteConfig.author.url}`,
-    name: `${siteConfig.author.name} — ${siteConfig.author.role}, ${siteConfig.name}`,
+    name: `${siteConfig.author.name}, ${siteConfig.author.role}, ${siteConfig.name}`,
     description: siteConfig.author.shortBio,
     mainEntity: { "@id": PERSON_ID },
     isPartOf: { "@id": `${BASE_URL}/#website` },

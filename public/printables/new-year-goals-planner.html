@@ -2,409 +2,409 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>New Year Goals Planner — Free Printable</title>
+<title>New Year Goals Planner, Free Printable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  @page { size: letter portrait; margin: 0; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
-    -webkit-print-color-adjust: exact; }
+ @page { size: letter portrait; margin: 0; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+ -webkit-print-color-adjust: exact; }
 
-  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
-    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
-  .page:last-child { page-break-after: avoid; }
+ .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+ page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+ .page:last-child { page-break-after: avoid; }
 
-  /* Botanical motif */
-  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+ /* Botanical motif */
+ .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
 
-  /* Header */
-  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
-    display: flex; justify-content: space-between; align-items: flex-end; }
-  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
-    color: #fff; letter-spacing: 0.5px; line-height: 1; }
-  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
-  .header-fields { display: flex; gap: 14px; }
-  .hf { text-align: left; }
-  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
-  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+ /* Header */
+ .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+ display: flex; justify-content: space-between; align-items: flex-end; }
+ .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+ color: #fff; letter-spacing: 0.5px; line-height: 1; }
+ .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+ .header-fields { display: flex; gap: 14px; }
+ .hf { text-align: left; }
+ .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+ .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
 
-  /* Subheader strip */
-  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
-    justify-content: space-between; align-items: center; }
-  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
-  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+ /* Subheader strip */
+ .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+ justify-content: space-between; align-items: center; }
+ .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+ .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
 
-  /* Section blocks */
-  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
-  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
-  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
-  .sh-sage    { background: #7A9E7E; }
-  .sh-steel   { background: #6B8FAE; }
-  .sh-taupe   { background: #A89080; }
-  .sh-purple  { background: #8B7BA0; }
-  .sh-rose    { background: #C4826E; }
-  .sh-dark    { background: #4A6B4E; }
+ /* Section blocks */
+ .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+ .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+ .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+ .sh-sage { background: #7A9E7E; }
+ .sh-steel { background: #6B8FAE; }
+ .sh-taupe { background: #A89080; }
+ .sh-purple { background: #8B7BA0; }
+ .sh-rose { background: #C4826E; }
+ .sh-dark { background: #4A6B4E; }
 
-  /* Prompt rows (labelled fill-in lines) */
-  .prompt-row { padding: 6px 11px; }
-  .prompt-row.odd  { background: #FAF7F2; }
-  .prompt-row.even { background: #F5F0EA; }
-  .prompt-q { font-size: 7.6pt; color: #3D3530; margin-bottom: 3px; }
-  .prompt-q b { color: #4A6B4E; }
-  .prompt-line { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+ /* Prompt rows (labelled fill-in lines) */
+ .prompt-row { padding: 6px 11px; }
+ .prompt-row.odd { background: #FAF7F2; }
+ .prompt-row.even { background: #F5F0EA; }
+ .prompt-q { font-size: 7.6pt; color: #3D3530; margin-bottom: 3px; }
+ .prompt-q b { color: #4A6B4E; }
+ .prompt-line { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
 
-  /* Numbered top-goal rows */
-  .goal-num-row { display: grid; grid-template-columns: 22px 1fr; gap: 9px; align-items: flex-end;
-    padding: 7px 11px 6px; }
-  .goal-num-row.odd  { background: #FAF7F2; }
-  .goal-num-row.even { background: #F5F0EA; }
-  .goal-num { width: 22px; height: 22px; border-radius: 50%; background: #4A6B4E; color: #fff;
-    font-size: 9pt; font-weight: 700; display: flex; align-items: center; justify-content: center; }
-  .goal-num-line { border-bottom: 1.2px solid #C4B5A5; height: 18px; }
+ /* Numbered top-goal rows */
+ .goal-num-row { display: grid; grid-template-columns: 22px 1fr; gap: 9px; align-items: flex-end;
+ padding: 7px 11px 6px; }
+ .goal-num-row.odd { background: #FAF7F2; }
+ .goal-num-row.even { background: #F5F0EA; }
+ .goal-num { width: 22px; height: 22px; border-radius: 50%; background: #4A6B4E; color: #fff;
+ font-size: 9pt; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+ .goal-num-line { border-bottom: 1.2px solid #C4B5A5; height: 18px; }
 
-  /* Life-area goal grid */
-  .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
-  .area-grid .section { margin-top: 0; }
-  .area-row { display: grid; grid-template-columns: 0.62in 1fr; gap: 6px; align-items: flex-end;
-    padding: 5px 11px; }
-  .area-row.odd  { background: #FAF7F2; }
-  .area-row.even { background: #F5F0EA; }
-  .area-tag { font-size: 6.8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #8A7A6A; }
-  .area-line { border-bottom: 1.2px solid #C4B5A5; height: 16px; }
+ /* Life-area goal grid */
+ .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+ .area-grid .section { margin-top: 0; }
+ .area-row { display: grid; grid-template-columns: 0.62in 1fr; gap: 6px; align-items: flex-end;
+ padding: 5px 11px; }
+ .area-row.odd { background: #FAF7F2; }
+ .area-row.even { background: #F5F0EA; }
+ .area-tag { font-size: 6.8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #8A7A6A; }
+ .area-line { border-bottom: 1.2px solid #C4B5A5; height: 16px; }
 
-  /* Quarter grid */
-  .quarter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
-  .quarter-grid .section { margin-top: 0; }
-  .q-line-row { padding: 6px 11px 5px; }
-  .q-line-row.odd  { background: #FAF7F2; }
-  .q-line-row.even { background: #F5F0EA; }
-  .q-line { border-bottom: 1.2px solid #C4B5A5; height: 16px; }
+ /* Quarter grid */
+ .quarter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+ .quarter-grid .section { margin-top: 0; }
+ .q-line-row { padding: 6px 11px 5px; }
+ .q-line-row.odd { background: #FAF7F2; }
+ .q-line-row.even { background: #F5F0EA; }
+ .q-line { border-bottom: 1.2px solid #C4B5A5; height: 16px; }
 
-  /* Monthly focus grid */
-  .month-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
-  .month-cell { padding: 6px 10px 7px; border-right: 1px solid rgba(0,0,0,0.05);
-    border-bottom: 1px solid rgba(0,0,0,0.05); }
-  .month-cell:nth-child(3n) { border-right: none; }
-  .month-cell.odd  { background: #FAF7F2; }
-  .month-cell.even { background: #F5F0EA; }
-  .month-name { font-size: 7.4pt; font-weight: 700; color: #4A6B4E; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
-  .month-line { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+ /* Monthly focus grid */
+ .month-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+ .month-cell { padding: 6px 10px 7px; border-right: 1px solid rgba(0,0,0,0.05);
+ border-bottom: 1px solid rgba(0,0,0,0.05); }
+ .month-cell:nth-child(3n) { border-right: none; }
+ .month-cell.odd { background: #FAF7F2; }
+ .month-cell.even { background: #F5F0EA; }
+ .month-name { font-size: 7.4pt; font-weight: 700; color: #4A6B4E; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
+ .month-line { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
 
-  /* Habit tracker grid */
-  .ht-grid { display: grid; grid-template-columns: 1.55in repeat(12, 1fr); }
-  .ht-head { background: #4A6B4E; color: #fff; font-size: 6.4pt; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.3px; padding: 5px 9px; display: flex; align-items: center; }
-  .ht-head-cell { background: #4A6B4E; color: rgba(255,255,255,0.92); font-size: 6.4pt; font-weight: 700;
-    display: flex; align-items: center; justify-content: center; padding: 5px 0; }
-  .ht-label { font-size: 7.4pt; color: #3D3530; padding: 5px 9px; display: flex; align-items: center; }
-  .ht-label-blank { border-bottom: 1.2px solid #C4B5A5; height: 12px; align-self: center; margin: 0 8px; flex: 1; }
-  .ht-cell { display: flex; align-items: center; justify-content: center; padding: 5px 0;
-    border-left: 1px solid rgba(0,0,0,0.05); }
-  .ht-row-odd  .ht-label, .ht-row-odd  .ht-cell { background: #FAF7F2; }
-  .ht-row-even .ht-label, .ht-row-even .ht-cell { background: #F5F0EA; }
-  .ht-box { width: 11px; height: 11px; border: 1.3px solid #7A9E7E; border-radius: 3px; background: #fff; }
+ /* Habit tracker grid */
+ .ht-grid { display: grid; grid-template-columns: 1.55in repeat(12, 1fr); }
+ .ht-head { background: #4A6B4E; color: #fff; font-size: 6.4pt; font-weight: 700; text-transform: uppercase;
+ letter-spacing: 0.3px; padding: 5px 9px; display: flex; align-items: center; }
+ .ht-head-cell { background: #4A6B4E; color: rgba(255,255,255,0.92); font-size: 6.4pt; font-weight: 700;
+ display: flex; align-items: center; justify-content: center; padding: 5px 0; }
+ .ht-label { font-size: 7.4pt; color: #3D3530; padding: 5px 9px; display: flex; align-items: center; }
+ .ht-label-blank { border-bottom: 1.2px solid #C4B5A5; height: 12px; align-self: center; margin: 0 8px; flex: 1; }
+ .ht-cell { display: flex; align-items: center; justify-content: center; padding: 5px 0;
+ border-left: 1px solid rgba(0,0,0,0.05); }
+ .ht-row-odd .ht-label.ht-row-odd .ht-cell { background: #FAF7F2; }
+ .ht-row-even .ht-label.ht-row-even .ht-cell { background: #F5F0EA; }
+ .ht-box { width: 11px; height: 11px; border: 1.3px solid #7A9E7E; border-radius: 3px; background: #fff; }
 
-  /* Callout / affirmation strip */
-  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
-    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+ /* Callout / affirmation strip */
+ .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+ font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
 
-  /* Notes */
-  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
-  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
-  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+ /* Notes */
+ .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+ .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+ .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
 
-  /* Summary bar */
-  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-  .sum-cell { text-align: center; }
-  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
-  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
-    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
-  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+ /* Summary bar */
+ .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+ display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+ .sum-cell { text-align: center; }
+ .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+ .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+ display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+ .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
 
-  /* Footer */
-  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
-    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
-  .footer-leaf { width: 8px; height: 8px; }
-  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+ /* Footer */
+ .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+ border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+ .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
+ .footer-leaf { width: 8px; height: 8px; }
+ .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
 </style>
 </head>
 <body>
 
 <!-- ─────────────── PAGE 1 ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">New Year Goals Planner</div>
-      <div class="header-sub">Dream it, name it, then break it into one small step at a time.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Word of the year</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">New Year Goals Planner</div>
+ <div class="header-sub">Dream it, name it, then break it into one small step at a time.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Word of the year</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Start big-picture: name how you want this year to feel, choose three real goals, then set one goal per life area.</span>
-    <span class="subheader-tag">Page 1 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Start big-picture: name how you want this year to feel, choose three real goals, then set one goal per life area.</span>
+ <span class="subheader-tag">Page 1 of 2</span>
+ </div>
 
-  <!-- This year at a glance -->
-  <div class="section">
-    <div class="section-header sh-rose">This Year at a Glance <span class="focus">set the tone before the to-do list</span></div>
-    <div class="prompt-row odd">
-      <div class="prompt-q"><b>Three words</b> for how I want this year to feel</div>
-      <div class="prompt-line"></div>
-    </div>
-    <div class="prompt-row even">
-      <div class="prompt-q"><b>The one change</b> that would make this year a win</div>
-      <div class="prompt-line"></div>
-    </div>
-    <div class="prompt-row odd">
-      <div class="prompt-q"><b>What I'm letting go of</b> from last year</div>
-      <div class="prompt-line"></div>
-    </div>
-  </div>
+ <!-- This year at a glance -->
+ <div class="section">
+ <div class="section-header sh-rose">This Year at a Glance <span class="focus">set the tone before the to-do list</span></div>
+ <div class="prompt-row odd">
+ <div class="prompt-q"><b>Three words</b> for how I want this year to feel</div>
+ <div class="prompt-line"></div>
+ </div>
+ <div class="prompt-row even">
+ <div class="prompt-q"><b>The one change</b> that would make this year a win</div>
+ <div class="prompt-line"></div>
+ </div>
+ <div class="prompt-row odd">
+ <div class="prompt-q"><b>What I'm letting go of</b> from last year</div>
+ <div class="prompt-line"></div>
+ </div>
+ </div>
 
-  <!-- Top 3 goals -->
-  <div class="section">
-    <div class="section-header sh-dark">My Top 3 Goals <span class="focus">if nothing else, these get done</span></div>
-    <div class="goal-num-row odd"><div class="goal-num">1</div><div class="goal-num-line"></div></div>
-    <div class="goal-num-row even"><div class="goal-num">2</div><div class="goal-num-line"></div></div>
-    <div class="goal-num-row odd"><div class="goal-num">3</div><div class="goal-num-line"></div></div>
-  </div>
+ <!-- Top 3 goals -->
+ <div class="section">
+ <div class="section-header sh-dark">My Top 3 Goals <span class="focus">if nothing else, these get done</span></div>
+ <div class="goal-num-row odd"><div class="goal-num">1</div><div class="goal-num-line"></div></div>
+ <div class="goal-num-row even"><div class="goal-num">2</div><div class="goal-num-line"></div></div>
+ <div class="goal-num-row odd"><div class="goal-num">3</div><div class="goal-num-line"></div></div>
+ </div>
 
-  <!-- Life-area goals -->
-  <div class="area-grid">
-    <div class="section">
-      <div class="section-header sh-sage">Health &amp; Wellness <span class="focus">body &amp; mind</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-steel">Home &amp; Organization <span class="focus">your space</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-taupe">Relationships &amp; Family <span class="focus">your people</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-purple">Career &amp; Work <span class="focus">your craft</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-rose">Money &amp; Security <span class="focus">peace of mind</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-dark">Personal Growth <span class="focus">learning</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-sage">Rest, Fun &amp; Adventure <span class="focus">joy on purpose</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-steel">Giving &amp; Community <span class="focus">beyond yourself</span></div>
-      <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
-      <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
-    </div>
-  </div>
+ <!-- Life-area goals -->
+ <div class="area-grid">
+ <div class="section">
+ <div class="section-header sh-sage">Health &amp; Wellness <span class="focus">body &amp; mind</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-steel">Home &amp; Organization <span class="focus">your space</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-taupe">Relationships &amp; Family <span class="focus">your people</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-purple">Career &amp; Work <span class="focus">your craft</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-rose">Money &amp; Security <span class="focus">peace of mind</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-dark">Personal Growth <span class="focus">learning</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-sage">Rest, Fun &amp; Adventure <span class="focus">joy on purpose</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-steel">Giving &amp; Community <span class="focus">beyond yourself</span></div>
+ <div class="area-row odd"><span class="area-tag">Goal</span><span class="area-line"></span></div>
+ <div class="area-row even"><span class="area-tag">1st step</span><span class="area-line"></span></div>
+ </div>
+ </div>
 
-  <div class="affirmation">A goal without a first step is just a wish. Pick the smallest next action for each area — the momentum is what carries the year.</div>
+ <div class="affirmation">A goal without a first step is just a wish. Pick the smallest next action for each area, the momentum is what carries the year.</div>
 
-  <div class="footer">
-    <span class="footer-left">
-      <svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.4"/><line x1="7" y1="17" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>
-      Free Printable — Print as many copies as you need
-    </span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">
+ <svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.4"/><line x1="7" y1="17" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>
+ Free Printable, Print as many copies as you need
+ </span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 <!-- ─────────────── PAGE 2 ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Make It Happen</div>
-      <div class="header-sub">Break the year into quarters, a focus each month, and habits you can track.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Reviewed on</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">On track?</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Make It Happen</div>
+ <div class="header-sub">Break the year into quarters, a focus each month, and habits you can track.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Reviewed on</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">On track?</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">A big goal feels lighter in pieces. Assign each goal a quarter, give every month a focus, then check off your habits.</span>
-    <span class="subheader-tag">Page 2 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">A big goal feels lighter in pieces. Assign each goal a quarter, give every month a focus, then check off your habits.</span>
+ <span class="subheader-tag">Page 2 of 2</span>
+ </div>
 
-  <!-- Quarterly milestones -->
-  <div class="quarter-grid">
-    <div class="section">
-      <div class="section-header sh-sage">Q1 Milestones <span class="focus">Jan · Feb · Mar</span></div>
-      <div class="q-line-row odd"><div class="q-line"></div></div>
-      <div class="q-line-row even"><div class="q-line"></div></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-steel">Q2 Milestones <span class="focus">Apr · May · Jun</span></div>
-      <div class="q-line-row odd"><div class="q-line"></div></div>
-      <div class="q-line-row even"><div class="q-line"></div></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-taupe">Q3 Milestones <span class="focus">Jul · Aug · Sep</span></div>
-      <div class="q-line-row odd"><div class="q-line"></div></div>
-      <div class="q-line-row even"><div class="q-line"></div></div>
-    </div>
-    <div class="section">
-      <div class="section-header sh-rose">Q4 Milestones <span class="focus">Oct · Nov · Dec</span></div>
-      <div class="q-line-row odd"><div class="q-line"></div></div>
-      <div class="q-line-row even"><div class="q-line"></div></div>
-    </div>
-  </div>
+ <!-- Quarterly milestones -->
+ <div class="quarter-grid">
+ <div class="section">
+ <div class="section-header sh-sage">Q1 Milestones <span class="focus">Jan · Feb · Mar</span></div>
+ <div class="q-line-row odd"><div class="q-line"></div></div>
+ <div class="q-line-row even"><div class="q-line"></div></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-steel">Q2 Milestones <span class="focus">Apr · May · Jun</span></div>
+ <div class="q-line-row odd"><div class="q-line"></div></div>
+ <div class="q-line-row even"><div class="q-line"></div></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-taupe">Q3 Milestones <span class="focus">Jul · Aug · Sep</span></div>
+ <div class="q-line-row odd"><div class="q-line"></div></div>
+ <div class="q-line-row even"><div class="q-line"></div></div>
+ </div>
+ <div class="section">
+ <div class="section-header sh-rose">Q4 Milestones <span class="focus">Oct · Nov · Dec</span></div>
+ <div class="q-line-row odd"><div class="q-line"></div></div>
+ <div class="q-line-row even"><div class="q-line"></div></div>
+ </div>
+ </div>
 
-  <!-- Monthly focus -->
-  <div class="section">
-    <div class="section-header sh-purple">One Focus per Month <span class="focus">the single thing that matters most</span></div>
-    <div class="month-grid">
-      <div class="month-cell odd"><div class="month-name">January</div><div class="month-line"></div></div>
-      <div class="month-cell odd"><div class="month-name">February</div><div class="month-line"></div></div>
-      <div class="month-cell odd"><div class="month-name">March</div><div class="month-line"></div></div>
-      <div class="month-cell even"><div class="month-name">April</div><div class="month-line"></div></div>
-      <div class="month-cell even"><div class="month-name">May</div><div class="month-line"></div></div>
-      <div class="month-cell even"><div class="month-name">June</div><div class="month-line"></div></div>
-      <div class="month-cell odd"><div class="month-name">July</div><div class="month-line"></div></div>
-      <div class="month-cell odd"><div class="month-name">August</div><div class="month-line"></div></div>
-      <div class="month-cell odd"><div class="month-name">September</div><div class="month-line"></div></div>
-      <div class="month-cell even"><div class="month-name">October</div><div class="month-line"></div></div>
-      <div class="month-cell even"><div class="month-name">November</div><div class="month-line"></div></div>
-      <div class="month-cell even"><div class="month-name">December</div><div class="month-line"></div></div>
-    </div>
-  </div>
+ <!-- Monthly focus -->
+ <div class="section">
+ <div class="section-header sh-purple">One Focus per Month <span class="focus">the single thing that matters most</span></div>
+ <div class="month-grid">
+ <div class="month-cell odd"><div class="month-name">January</div><div class="month-line"></div></div>
+ <div class="month-cell odd"><div class="month-name">February</div><div class="month-line"></div></div>
+ <div class="month-cell odd"><div class="month-name">March</div><div class="month-line"></div></div>
+ <div class="month-cell even"><div class="month-name">April</div><div class="month-line"></div></div>
+ <div class="month-cell even"><div class="month-name">May</div><div class="month-line"></div></div>
+ <div class="month-cell even"><div class="month-name">June</div><div class="month-line"></div></div>
+ <div class="month-cell odd"><div class="month-name">July</div><div class="month-line"></div></div>
+ <div class="month-cell odd"><div class="month-name">August</div><div class="month-line"></div></div>
+ <div class="month-cell odd"><div class="month-name">September</div><div class="month-line"></div></div>
+ <div class="month-cell even"><div class="month-name">October</div><div class="month-line"></div></div>
+ <div class="month-cell even"><div class="month-name">November</div><div class="month-line"></div></div>
+ <div class="month-cell even"><div class="month-name">December</div><div class="month-line"></div></div>
+ </div>
+ </div>
 
-  <!-- Habit tracker -->
-  <div class="section">
-    <div class="section-header sh-dark">Habit Tracker <span class="focus">shade a box each month you stay consistent</span></div>
-    <div class="ht-grid">
-      <!-- header row -->
-      <div class="ht-head">Habit</div>
-      <div class="ht-head-cell">J</div><div class="ht-head-cell">F</div><div class="ht-head-cell">M</div>
-      <div class="ht-head-cell">A</div><div class="ht-head-cell">M</div><div class="ht-head-cell">J</div>
-      <div class="ht-head-cell">J</div><div class="ht-head-cell">A</div><div class="ht-head-cell">S</div>
-      <div class="ht-head-cell">O</div><div class="ht-head-cell">N</div><div class="ht-head-cell">D</div>
+ <!-- Habit tracker -->
+ <div class="section">
+ <div class="section-header sh-dark">Habit Tracker <span class="focus">shade a box each month you stay consistent</span></div>
+ <div class="ht-grid">
+ <!-- header row -->
+ <div class="ht-head">Habit</div>
+ <div class="ht-head-cell">J</div><div class="ht-head-cell">F</div><div class="ht-head-cell">M</div>
+ <div class="ht-head-cell">A</div><div class="ht-head-cell">M</div><div class="ht-head-cell">J</div>
+ <div class="ht-head-cell">J</div><div class="ht-head-cell">A</div><div class="ht-head-cell">S</div>
+ <div class="ht-head-cell">O</div><div class="ht-head-cell">N</div><div class="ht-head-cell">D</div>
 
-      <!-- Row 1 -->
-      <div class="ht-row-odd" style="display:contents">
-        <div class="ht-label">Move my body</div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-      </div>
-      <!-- Row 2 -->
-      <div class="ht-row-even" style="display:contents">
-        <div class="ht-label">Drink enough water</div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-      </div>
-      <!-- Row 3 -->
-      <div class="ht-row-odd" style="display:contents">
-        <div class="ht-label">Read or learn daily</div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-      </div>
-      <!-- Row 4 -->
-      <div class="ht-row-even" style="display:contents">
-        <div class="ht-label">10-minute tidy</div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-      </div>
-      <!-- Row 5 -->
-      <div class="ht-row-odd" style="display:contents">
-        <div class="ht-label">Sleep by set time</div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-      </div>
-      <!-- Row 6 (custom) -->
-      <div class="ht-row-even" style="display:contents">
-        <div class="ht-label"><span class="ht-label-blank"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-      </div>
-      <!-- Row 7 (custom) -->
-      <div class="ht-row-odd" style="display:contents">
-        <div class="ht-label"><span class="ht-label-blank"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-        <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
-      </div>
-    </div>
-  </div>
+ <!-- Row 1 -->
+ <div class="ht-row-odd" style="display:contents">
+ <div class="ht-label">Move my body</div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ </div>
+ <!-- Row 2 -->
+ <div class="ht-row-even" style="display:contents">
+ <div class="ht-label">Drink enough water</div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ </div>
+ <!-- Row 3 -->
+ <div class="ht-row-odd" style="display:contents">
+ <div class="ht-label">Read or learn daily</div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ </div>
+ <!-- Row 4 -->
+ <div class="ht-row-even" style="display:contents">
+ <div class="ht-label">10-minute tidy</div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ </div>
+ <!-- Row 5 -->
+ <div class="ht-row-odd" style="display:contents">
+ <div class="ht-label">Sleep by set time</div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ </div>
+ <!-- Row 6 (custom) -->
+ <div class="ht-row-even" style="display:contents">
+ <div class="ht-label"><span class="ht-label-blank"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ </div>
+ <!-- Row 7 (custom) -->
+ <div class="ht-row-odd" style="display:contents">
+ <div class="ht-label"><span class="ht-label-blank"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ <div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div><div class="ht-cell"><span class="ht-box"></span></div>
+ </div>
+ </div>
+ </div>
 
-  <!-- Reflection notes -->
-  <div class="notes">
-    <div class="notes-title">Mid-year check-in — what's working, what to adjust</div>
-    <div class="notes-line"></div>
-    <div class="notes-line"></div>
-  </div>
+ <!-- Reflection notes -->
+ <div class="notes">
+ <div class="notes-title">Mid-year check-in, what's working, what to adjust</div>
+ <div class="notes-line"></div>
+ <div class="notes-line"></div>
+ </div>
 
-  <!-- Summary -->
-  <div class="summary-bar">
-    <div class="sum-cell"><span class="sum-label">Goals set</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">Habits tracking</span><div class="sum-value"></div></div>
-    <div class="sum-cell"><span class="sum-label">This month's focus</span><div class="sum-value"></div></div>
-    <div class="sum-cell highlight"><span class="sum-label">Year on track</span><div class="sum-value"></div></div>
-  </div>
+ <!-- Summary -->
+ <div class="summary-bar">
+ <div class="sum-cell"><span class="sum-label">Goals set</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">Habits tracking</span><div class="sum-value"></div></div>
+ <div class="sum-cell"><span class="sum-label">This month's focus</span><div class="sum-value"></div></div>
+ <div class="sum-cell highlight"><span class="sum-label">Year on track</span><div class="sum-value"></div></div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left">
-      <svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.4"/><line x1="7" y1="17" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>
-      Free Printable — Print as many copies as you need
-    </span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">
+ <svg class="footer-leaf" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 10 12 4 20 4 C20 14 12 20 4 20Z" fill="#B5C9B7" fill-opacity="0.5" stroke="#7A9E7E" stroke-width="1.4"/><line x1="7" y1="17" x2="17" y2="7" stroke="#7A9E7E" stroke-width="1.2"/></svg>
+ Free Printable, Print as many copies as you need
+ </span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 </body>

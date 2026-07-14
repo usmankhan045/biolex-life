@@ -2,267 +2,267 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Printable Advent Activity Calendar — Free Printable</title>
+<title>Printable Advent Activity Calendar, Free Printable</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  @page { size: letter portrait; margin: 0; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
-    -webkit-print-color-adjust: exact; }
+ @page { size: letter portrait; margin: 0; }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+ -webkit-print-color-adjust: exact; }
 
-  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
-    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
-  .page:last-child { page-break-after: avoid; }
+ .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+ page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+ .page:last-child { page-break-after: avoid; }
 
-  /* Botanical motif */
-  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+ /* Botanical motif */
+ .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
 
-  /* Header */
-  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
-    display: flex; justify-content: space-between; align-items: flex-end; }
-  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
-    color: #fff; letter-spacing: 0.5px; line-height: 1; }
-  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
-  .header-fields { display: flex; gap: 14px; }
-  .hf { text-align: left; }
-  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
-  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+ /* Header */
+ .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+ display: flex; justify-content: space-between; align-items: flex-end; }
+ .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+ color: #fff; letter-spacing: 0.5px; line-height: 1; }
+ .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+ .header-fields { display: flex; gap: 14px; }
+ .hf { text-align: left; }
+ .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+ .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
 
-  /* Subheader strip */
-  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
-    justify-content: space-between; align-items: center; }
-  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
-  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+ /* Subheader strip */
+ .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+ justify-content: space-between; align-items: center; }
+ .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+ .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
 
-  /* Calendar grid */
-  .cal-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.07in; margin-top: 8px; }
-  .day-cell { height: 1.48in; border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden;
-    background: #FAF7F2; display: flex; flex-direction: column; }
+ /* Calendar grid */
+ .cal-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.07in; margin-top: 8px; }
+ .day-cell { height: 1.48in; border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden;
+ background: #FAF7F2; display: flex; flex-direction: column; }
 
-  .day-badge { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 700;
-    color: #fff; padding: 3px 7px; display: flex; justify-content: space-between; align-items: center; }
-  .day-num { letter-spacing: 0.3px; }
-  .day-tick { width: 11px; height: 11px; border: 1.4px solid rgba(255,255,255,0.9); border-radius: 3px; background: rgba(255,255,255,0.12); }
+ .day-badge { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 700;
+ color: #fff; padding: 3px 7px; display: flex; justify-content: space-between; align-items: center; }
+ .day-num { letter-spacing: 0.3px; }
+ .day-tick { width: 11px; height: 11px; border: 1.4px solid rgba(255,255,255,0.9); border-radius: 3px; background: rgba(255,255,255,0.12); }
 
-  .day-body { flex: 1; display: flex; align-items: center; justify-content: center;
-    padding: 5px 8px; text-align: center; }
-  .day-activity { font-family: 'Lato', sans-serif; font-size: 7.6pt; line-height: 1.28; color: #3D3530; }
+ .day-body { flex: 1; display: flex; align-items: center; justify-content: center;
+ padding: 5px 8px; text-align: center; }
+ .day-activity { font-family: 'Lato', sans-serif; font-size: 7.6pt; line-height: 1.28; color: #3D3530; }
 
-  /* Blank write-in cell */
-  .day-body.blank { flex-direction: column; justify-content: center; gap: 9px; padding: 8px 8px; }
-  .blank-line { width: 100%; border-bottom: 1px solid #C4B5A5; height: 2px; }
-  .day-body.odd { background: #FAF7F2; }
-  .day-body.even { background: #F5F0EA; }
+ /* Blank write-in cell */
+ .day-body.blank { flex-direction: column; justify-content: center; gap: 9px; padding: 8px 8px; }
+ .blank-line { width: 100%; border-bottom: 1px solid #C4B5A5; height: 2px; }
+ .day-body.odd { background: #FAF7F2; }
+ .day-body.even { background: #F5F0EA; }
 
-  /* Badge colors (rotate palette) */
-  .b-rose   { background: #C4826E; }
-  .b-sage   { background: #7A9E7E; }
-  .b-steel  { background: #6B8FAE; }
-  .b-taupe  { background: #A89080; }
-  .b-purple { background: #8B7BA0; }
-  .b-dark   { background: #4A6B4E; }
+ /* Badge colors (rotate palette) */
+ .b-rose { background: #C4826E; }
+ .b-sage { background: #7A9E7E; }
+ .b-steel { background: #6B8FAE; }
+ .b-taupe { background: #A89080; }
+ .b-purple { background: #8B7BA0; }
+ .b-dark { background: #4A6B4E; }
 
-  /* Section blocks (idea bank) */
-  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
-  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
-    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
-  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
-    font-weight: 400; color: rgba(255,255,255,0.82); }
-  .sh-taupe { background: #A89080; }
-  .sh-purple { background: #8B7BA0; }
+ /* Section blocks (idea bank) */
+ .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+ .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+ color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+ .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+ font-weight: 400; color: rgba(255,255,255,0.82); }
+ .sh-taupe { background: #A89080; }
+ .sh-purple { background: #8B7BA0; }
 
-  .idea-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
-  .idea-row { display: grid; grid-template-columns: 13px 1fr; gap: 7px; align-items: center; padding: 4px 11px; }
-  .idea-row.odd { background: #FAF7F2; }
-  .idea-row.even { background: #F5F0EA; }
-  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
-  .idea-label { font-family: 'Lato', sans-serif; font-size: 7.5pt; color: #3D3530; }
+ .idea-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+ .idea-row { display: grid; grid-template-columns: 13px 1fr; gap: 7px; align-items: center; padding: 4px 11px; }
+ .idea-row.odd { background: #FAF7F2; }
+ .idea-row.even { background: #F5F0EA; }
+ .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+ .idea-label { font-family: 'Lato', sans-serif; font-size: 7.5pt; color: #3D3530; }
 
-  /* Callout / affirmation strip */
-  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
-    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+ /* Callout / affirmation strip */
+ .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+ font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
 
-  /* Notes */
-  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
-  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
-  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+ /* Notes */
+ .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+ .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+ .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
 
-  /* Footer */
-  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
-    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
-  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
-  .footer-leaf { width: 9px; height: 9px; }
-  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+ /* Footer */
+ .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+ border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+ .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; display: flex; align-items: center; gap: 4px; }
+ .footer-leaf { width: 9px; height: 9px; }
+ .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
 </style>
 </head>
 <body>
 
 <!-- ─────────────── PAGE 1 : SUGGESTED CALENDAR ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Advent Activity Calendar</div>
-      <div class="header-sub">Twenty-five little ways to slow down and enjoy December together.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Family</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Advent Activity Calendar</div>
+ <div class="header-sub">Twenty-five little ways to slow down and enjoy December together.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Family</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">One simple activity for each day from December 1 to 25 — check the box as you go, or swap in your own.</span>
-    <span class="subheader-tag">Page 1 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">One simple activity for each day from December 1 to 25, check the box as you go, or swap in your own.</span>
+ <span class="subheader-tag">Page 1 of 2</span>
+ </div>
 
-  <div class="cal-grid">
-    <!-- Row 1 -->
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 1</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Hang the stockings together</span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 2</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Write your letters to Santa</span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 3</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Read a Christmas story aloud</span></div></div>
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 4</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Cut out paper snowflakes</span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 5</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Bake cookies for someone</span></div></div>
-    <!-- Row 2 -->
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 6</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Watch a favorite holiday movie</span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 7</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Drive around to see the lights</span></div></div>
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 8</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Make hot cocoa with marshmallows</span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 9</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Donate toys or canned goods</span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 10</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Build a cozy blanket fort</span></div></div>
-    <!-- Row 3 -->
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 11</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Write thank-you notes</span></div></div>
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 12</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Make a homemade ornament</span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 13</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Have a pajamas-all-day day</span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 14</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Sing carols together</span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 15</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Wrap gifts as a family</span></div></div>
-    <!-- Row 4 -->
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 16</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Play a board game night</span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 17</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Write a gratitude list</span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 18</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Deliver cookies to a neighbor</span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 19</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Have breakfast for dinner</span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 20</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Work a puzzle together</span></div></div>
-    <!-- Row 5 -->
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 21</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Make a simple bird feeder</span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 22</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Popcorn &amp; movie by the tree</span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 23</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Call or video a loved one</span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 24</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Set out cookies for Santa</span></div></div>
-    <div class="day-cell"><div class="day-badge b-dark"><span class="day-num">Dec 25</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Open a gift &amp; savor the day</span></div></div>
-  </div>
+ <div class="cal-grid">
+ <!-- Row 1 -->
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 1</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Hang the stockings together</span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 2</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Write your letters to Santa</span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 3</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Read a Christmas story aloud</span></div></div>
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 4</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Cut out paper snowflakes</span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 5</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Bake cookies for someone</span></div></div>
+ <!-- Row 2 -->
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 6</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Watch a favorite holiday movie</span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 7</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Drive around to see the lights</span></div></div>
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 8</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Make hot cocoa with marshmallows</span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 9</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Donate toys or canned goods</span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 10</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Build a cozy blanket fort</span></div></div>
+ <!-- Row 3 -->
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 11</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Write thank-you notes</span></div></div>
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 12</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Make a homemade ornament</span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 13</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Have a pajamas-all-day day</span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 14</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Sing carols together</span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 15</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Wrap gifts as a family</span></div></div>
+ <!-- Row 4 -->
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 16</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Play a board game night</span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 17</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Write a gratitude list</span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 18</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Deliver cookies to a neighbor</span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 19</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Have breakfast for dinner</span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 20</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Work a puzzle together</span></div></div>
+ <!-- Row 5 -->
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 21</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Make a simple bird feeder</span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 22</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Popcorn &amp; movie by the tree</span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 23</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Call or video a loved one</span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 24</span><span class="day-tick"></span></div><div class="day-body even"><span class="day-activity">Set out cookies for Santa</span></div></div>
+ <div class="day-cell"><div class="day-badge b-dark"><span class="day-num">Dec 25</span><span class="day-tick"></span></div><div class="day-body odd"><span class="day-activity">Open a gift &amp; savor the day</span></div></div>
+ </div>
 
-  <div class="affirmation">The best part of the season is the small moments — a story, a batch of cookies, a walk to see the lights. Keep it simple and enjoy each day.</div>
+ <div class="affirmation">The best part of the season is the small moments, a story, a batch of cookies, a walk to see the lights. Keep it simple and enjoy each day.</div>
 
-  <div class="footer">
-    <span class="footer-left">
-      <svg class="footer-leaf" viewBox="0 0 12 12" fill="none"><path d="M2 10 C2 5 5 2 10 2 C10 7 7 10 2 10Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="0.8"/><line x1="2" y1="10" x2="7" y2="5" stroke="#7A9E7E" stroke-width="0.6"/></svg>
-      Free Printable — Print as many copies as you need
-    </span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">
+ <svg class="footer-leaf" viewBox="0 0 12 12" fill="none"><path d="M2 10 C2 5 5 2 10 2 C10 7 7 10 2 10Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="0.8"/><line x1="2" y1="10" x2="7" y2="5" stroke="#7A9E7E" stroke-width="0.6"/></svg>
+ Free Printable, Print as many copies as you need
+ </span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 <!-- ─────────────── PAGE 2 : BLANK FILL-IN CALENDAR ─────────────── -->
 <div class="page">
-  <svg class="leaf" viewBox="0 0 54 90" fill="none">
-    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
-    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
-    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
-  </svg>
+ <svg class="leaf" viewBox="0 0 54 90" fill="none">
+ <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+ <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+ <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+ </svg>
 
-  <div class="header">
-    <div>
-      <div class="header-title">Build Your Own Advent</div>
-      <div class="header-sub">Fill each day with your family's own traditions — big or small.</div>
-    </div>
-    <div class="header-fields">
-      <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
-      <div class="hf"><div class="hf-label">Theme</div><div class="hf-line"></div></div>
-    </div>
-  </div>
+ <div class="header">
+ <div>
+ <div class="header-title">Build Your Own Advent</div>
+ <div class="header-sub">Fill each day with your family's own traditions, big or small.</div>
+ </div>
+ <div class="header-fields">
+ <div class="hf"><div class="hf-label">Year</div><div class="hf-line"></div></div>
+ <div class="hf"><div class="hf-label">Theme</div><div class="hf-line"></div></div>
+ </div>
+ </div>
 
-  <div class="subheader">
-    <span class="subheader-text">Write one activity on each day, then check it off. Borrow from the idea bank below whenever you need inspiration.</span>
-    <span class="subheader-tag">Page 2 of 2</span>
-  </div>
+ <div class="subheader">
+ <span class="subheader-text">Write one activity on each day, then check it off. Borrow from the idea bank below whenever you need inspiration.</span>
+ <span class="subheader-tag">Page 2 of 2</span>
+ </div>
 
-  <div class="cal-grid">
-    <!-- Row 1 -->
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 1</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 2</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 3</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 4</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 5</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <!-- Row 2 -->
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 6</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 7</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 8</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 9</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 10</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <!-- Row 3 -->
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 11</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 12</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 13</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 14</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 15</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <!-- Row 4 -->
-    <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 16</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 17</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 18</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 19</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 20</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <!-- Row 5 -->
-    <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 21</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 22</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 23</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 24</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-    <div class="day-cell"><div class="day-badge b-dark"><span class="day-num">Dec 25</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
-  </div>
+ <div class="cal-grid">
+ <!-- Row 1 -->
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 1</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 2</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 3</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 4</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 5</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <!-- Row 2 -->
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 6</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 7</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 8</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 9</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 10</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <!-- Row 3 -->
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 11</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 12</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 13</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 14</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 15</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <!-- Row 4 -->
+ <div class="day-cell"><div class="day-badge b-taupe"><span class="day-num">Dec 16</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 17</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 18</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 19</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 20</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <!-- Row 5 -->
+ <div class="day-cell"><div class="day-badge b-purple"><span class="day-num">Dec 21</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-rose"><span class="day-num">Dec 22</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-sage"><span class="day-num">Dec 23</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-steel"><span class="day-num">Dec 24</span><span class="day-tick"></span></div><div class="day-body blank even"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ <div class="day-cell"><div class="day-badge b-dark"><span class="day-num">Dec 25</span><span class="day-tick"></span></div><div class="day-body blank odd"><span class="blank-line"></span><span class="blank-line"></span></div></div>
+ </div>
 
-  <!-- Idea bank -->
-  <div class="section">
-    <div class="section-header sh-purple">Activity Idea Bank <span class="focus">check a few to plan ahead</span></div>
-    <div class="idea-grid">
-      <div class="idea-row odd"><span class="box"></span><span class="idea-label">Make gingerbread houses</span></div>
-      <div class="idea-row even"><span class="box"></span><span class="idea-label">Learn a new carol</span></div>
-      <div class="idea-row odd"><span class="box"></span><span class="idea-label">Start a puzzle by the tree</span></div>
-      <div class="idea-row even"><span class="box"></span><span class="idea-label">Write a note to a teacher</span></div>
-      <div class="idea-row odd"><span class="box"></span><span class="idea-label">Have a hot cocoa taste test</span></div>
-      <div class="idea-row even"><span class="box"></span><span class="idea-label">String popcorn garlands</span></div>
-      <div class="idea-row odd"><span class="box"></span><span class="idea-label">Read by the tree lights only</span></div>
-      <div class="idea-row even"><span class="box"></span><span class="idea-label">Make a family kindness list</span></div>
-      <div class="idea-row odd"><span class="box"></span><span class="idea-label">Bake &amp; share a new treat</span></div>
-      <div class="idea-row even"><span class="box"></span><span class="idea-label">Have a family game tournament</span></div>
-      <div class="idea-row odd"><span class="box"></span><span class="idea-label">Take a winter nature walk</span></div>
-      <div class="idea-row even"><span class="box"></span><span class="idea-label">Plan next year's traditions</span></div>
-    </div>
-  </div>
+ <!-- Idea bank -->
+ <div class="section">
+ <div class="section-header sh-purple">Activity Idea Bank <span class="focus">check a few to plan ahead</span></div>
+ <div class="idea-grid">
+ <div class="idea-row odd"><span class="box"></span><span class="idea-label">Make gingerbread houses</span></div>
+ <div class="idea-row even"><span class="box"></span><span class="idea-label">Learn a new carol</span></div>
+ <div class="idea-row odd"><span class="box"></span><span class="idea-label">Start a puzzle by the tree</span></div>
+ <div class="idea-row even"><span class="box"></span><span class="idea-label">Write a note to a teacher</span></div>
+ <div class="idea-row odd"><span class="box"></span><span class="idea-label">Have a hot cocoa taste test</span></div>
+ <div class="idea-row even"><span class="box"></span><span class="idea-label">String popcorn garlands</span></div>
+ <div class="idea-row odd"><span class="box"></span><span class="idea-label">Read by the tree lights only</span></div>
+ <div class="idea-row even"><span class="box"></span><span class="idea-label">Make a family kindness list</span></div>
+ <div class="idea-row odd"><span class="box"></span><span class="idea-label">Bake &amp; share a new treat</span></div>
+ <div class="idea-row even"><span class="box"></span><span class="idea-label">Have a family game tournament</span></div>
+ <div class="idea-row odd"><span class="box"></span><span class="idea-label">Take a winter nature walk</span></div>
+ <div class="idea-row even"><span class="box"></span><span class="idea-label">Plan next year's traditions</span></div>
+ </div>
+ </div>
 
-  <!-- Notes -->
-  <div class="notes">
-    <div class="notes-title">Traditions we want to remember</div>
-    <div class="notes-line"></div>
-    <div class="notes-line"></div>
-  </div>
+ <!-- Notes -->
+ <div class="notes">
+ <div class="notes-title">Traditions we want to remember</div>
+ <div class="notes-line"></div>
+ <div class="notes-line"></div>
+ </div>
 
-  <div class="footer">
-    <span class="footer-left">
-      <svg class="footer-leaf" viewBox="0 0 12 12" fill="none"><path d="M2 10 C2 5 5 2 10 2 C10 7 7 10 2 10Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="0.8"/><line x1="2" y1="10" x2="7" y2="5" stroke="#7A9E7E" stroke-width="0.6"/></svg>
-      Free Printable — Print as many copies as you need
-    </span>
-    <span class="footer-right">paperposy.com</span>
-  </div>
+ <div class="footer">
+ <span class="footer-left">
+ <svg class="footer-leaf" viewBox="0 0 12 12" fill="none"><path d="M2 10 C2 5 5 2 10 2 C10 7 7 10 2 10Z" fill="#B5C9B7" stroke="#7A9E7E" stroke-width="0.8"/><line x1="2" y1="10" x2="7" y2="5" stroke="#7A9E7E" stroke-width="0.6"/></svg>
+ Free Printable, Print as many copies as you need
+ </span>
+ <span class="footer-right">paperposy.com</span>
+ </div>
 </div>
 
 </body>

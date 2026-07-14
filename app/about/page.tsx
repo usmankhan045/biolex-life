@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 const DEFAULT_INTRO =
-  `${siteConfig.name} is a free library of printables for the home — wall art, coloring pages, and organising systems you can download and print today. Every file is designed in-house, print-tested on plain letter paper, and free to use.`;
+  `${siteConfig.name} is a free library of printables for the home, wall art, coloring pages, and organising systems you can download and print today. Every file is designed in-house, print-tested on plain letter paper, and free to use.`;
 
 export default async function AboutPage() {
   let intro = DEFAULT_INTRO;
@@ -72,7 +72,7 @@ export default async function AboutPage() {
                 id="founder-heading"
                 className="font-display text-xl font-semibold text-text"
               >
-                Hi, I&rsquo;m {siteConfig.author.name} &mdash; founder of {siteConfig.name}.
+                Hi, I&rsquo;m {siteConfig.author.name}, founder of {siteConfig.name}.
               </p>
 
               <p className="text-sm sm:text-base">
@@ -85,8 +85,8 @@ export default async function AboutPage() {
 
               <p className="text-sm sm:text-base">
                 So I built the library I wished existed. Every printable here is
-                designed in-house &mdash; original wall art, coloring pages,
-                planners, labels, and worksheets &mdash; then print-tested on plain
+                designed in-house, original wall art, coloring pages,
+                planners, labels, and worksheets, then print-tested on plain
                 US Letter paper before it goes up. No stock photos, no AI art, no
                 branded characters.
               </p>
@@ -95,7 +95,7 @@ export default async function AboutPage() {
                 And nothing is a bare download page. Each printable sits inside a
                 real guide: how to print it sharp, what frame to buy, how to style
                 it, or how to actually use the system. That&rsquo;s the part the AI
-                slop flooding this space skips &mdash; and the reason people come
+                slop flooding this space skips, and the reason people come
                 back.
               </p>
 
@@ -174,7 +174,7 @@ export default async function AboutPage() {
             {([
               {
                 title: "Printable wall art",
-                body: "Original art for every room and style — bedroom, nursery, kitchen, boho, minimalist — sized for standard frames, with a guide on printing and hanging it.",
+                body: "Original art for every room and style, bedroom, nursery, kitchen, boho, minimalist, sized for standard frames, with a guide on printing and hanging it.",
               },
               {
                 title: "Coloring pages",
@@ -182,7 +182,7 @@ export default async function AboutPage() {
               },
               {
                 title: "Home organization printables",
-                body: "Labels, cleaning schedules, zone maps, and checklists to sort every room — never a bare listicle, always a real system you can print.",
+                body: "Labels, cleaning schedules, zone maps, and checklists to sort every room, never a bare listicle, always a real system you can print.",
               },
               {
                 title: "Kids & preschool worksheets",
@@ -190,7 +190,7 @@ export default async function AboutPage() {
               },
               {
                 title: "Meal planning & grocery printables",
-                body: "Weekly meal planners, grocery lists, and freezer templates. Planning tools you fill in — no recipes, no food photos, just structure.",
+                body: "Weekly meal planners, grocery lists, and freezer templates. Planning tools you fill in, no recipes, no food photos, just structure.",
               },
             ] as const).map((item) => (
               <li key={item.title} className="flex gap-4">

@@ -6,7 +6,7 @@ import { ogImages, twitterImages } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Editorial Policy",
-  description: `How ${siteConfig.name} researches, sources, fact-checks, and updates its guides — and the limits of what we publish.`,
+  description: `How ${siteConfig.name} researches, sources, fact-checks, and updates its guides, and the limits of what we publish.`,
   alternates: { canonical: "/editorial-policy" },
   openGraph: { url: "/editorial-policy", type: "website", images: ogImages() },
   twitter: twitterImages(),
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
 const PRINCIPLES: { title: string; body: string }[] = [
   {
     title: "We test advice against real-world conditions",
-    body: "Every guide is written and edited against practical, real-world situations — not idealized scenarios. If a strategy only works under specific conditions, we say so.",
+    body: "Every guide is written and edited against practical, real-world situations, not idealized scenarios. If a strategy only works under specific conditions, we say so.",
   },
   {
     title: "We cite primary sources for data",
-    body: "Statistics and figures are sourced from primary references where possible — official reports, reputable studies, and authoritative organizations — and linked inline so you can verify them yourself.",
+    body: "Statistics and figures are sourced from primary references where possible, official reports, reputable studies, and authoritative organizations, and linked inline so you can verify them yourself.",
   },
   {
     title: "We separate fact from experience and opinion",
@@ -27,7 +27,7 @@ const PRINCIPLES: { title: string; body: string }[] = [
   },
   {
     title: "We keep guides current",
-    body: "Information changes over time — prices, figures, and best practices. We review evergreen guides on a recurring basis and update them when things change. Substantive updates are reflected in each article's “Updated” date.",
+    body: "Information changes over time, prices, figures, and best practices. We review evergreen guides on a recurring basis and update them when things change. Substantive updates are reflected in each article's “Updated” date.",
   },
   {
     title: "We correct mistakes openly",
@@ -93,7 +93,7 @@ export default function EditorialPolicyPage() {
             , {siteConfig.author.role.toLowerCase()} of {siteConfig.name}. We are
             not licensed professionals, and nothing here is a substitute for
             personalized advice. The content is educational. For guidance specific
-            to your situation, please consult a qualified professional — see our{" "}
+            to your situation, please consult a qualified professional, see our{" "}
             <Link href="/disclaimer" className="text-primary font-medium hover:underline underline-offset-4">
               full disclaimer
             </Link>

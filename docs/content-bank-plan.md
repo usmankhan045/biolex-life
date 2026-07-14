@@ -1,11 +1,11 @@
-# Paper Posy — Phase 1 Content Bank Plan
+# Paper Posy, Phase 1 Content Bank Plan
 
 **95 posts** across the 3 no-artwork pillars, served by **27 printables** (26 new to build + 1 done).
 Pins: 3 per post in `docs/pinterest-pins.md`. Publishing: 6/day @ 30-min via the drip-publisher.
 
 Machine-readable source of truth: `content-queue/manifest.json`.
 
-## home-organization — 51 posts
+## home-organization, 51 posts
 
 | # | Title | Keyword | Printable | New? |
 |---|---|---|---|---|
@@ -61,7 +61,7 @@ Machine-readable source of truth: `content-queue/manifest.json`.
 | 50 | Small-Space Storage Ideas + Free Printable Plan | storage ideas for small space | small-space-storage-plan | 🆕 |
 | 51 | How to Organize a Linen Closet (Free Printable Plan) | linen closet organization | small-space-storage-plan | ↺ |
 
-## meal-planning — 14 posts
+## meal-planning, 14 posts
 
 | # | Title | Keyword | Printable | New? |
 |---|---|---|---|---|
@@ -80,7 +80,7 @@ Machine-readable source of truth: `content-queue/manifest.json`.
 | 13 | The Pantry Staples List Every Kitchen Needs (Free Printable) | pantry staples list | pantry-staples-list | 🆕 |
 | 14 | A Free Printable Meal Planner You'll Actually Use | meal planner printable free | weekly-meal-planner | ↺ |
 
-## kids-printables — 30 posts
+## kids-printables, 30 posts
 
 | # | Title | Keyword | Printable | New? |
 |---|---|---|---|---|
@@ -119,30 +119,30 @@ Machine-readable source of truth: `content-queue/manifest.json`.
 
 | Slug | Title | Pillar | Status |
 |---|---|---|---|
-| weekly-cleaning-schedule | Weekly Cleaning Schedule — Free Printable | home-organization | ✅ done |
-| deep-cleaning-checklist | Deep Cleaning Checklist — Free Printable | home-organization | 🆕 new |
-| decluttering-checklist | Declutter Your Home Checklist — Free Printable | home-organization | 🆕 new |
-| home-organization-binder | Home Organization Binder Set — Free Printable | home-organization | 🆕 new |
-| bathroom-organization-labels | Bathroom Organization Labels + Zone Plan — Free Printable | home-organization | 🆕 new |
-| laundry-room-labels | Laundry Room Labels + Routine — Free Printable | home-organization | 🆕 new |
-| garage-zone-plan | Garage Organization Zone Plan — Free Printable | home-organization | 🆕 new |
-| bedroom-organization-plan | Bedroom Organization Plan — Free Printable | home-organization | 🆕 new |
-| closet-organization-plan | Closet Organization Plan + Labels — Free Printable | home-organization | 🆕 new |
-| pantry-and-kitchen-labels | Pantry & Kitchen Labels — Free Printable | home-organization | 🆕 new |
-| fridge-organization-labels | Fridge Organization Labels + Map — Free Printable | home-organization | 🆕 new |
-| small-space-storage-plan | Small-Space Storage Plan — Free Printable | home-organization | 🆕 new |
-| weekly-meal-planner | Weekly Meal Planner — Free Printable | meal-planning | 🆕 new |
-| grocery-list-template | Grocery List Template (By Aisle) — Free Printable | meal-planning | 🆕 new |
-| freezer-meal-plan | Freezer Meal Plan + Inventory — Free Printable | meal-planning | 🆕 new |
-| pantry-staples-list | Pantry Staples Checklist — Free Printable | meal-planning | 🆕 new |
-| chore-chart | Kids Chore Chart — Free Printable | kids-printables | 🆕 new |
-| preschool-activities-planner | Preschool Activities Planner — Free Printable | kids-printables | 🆕 new |
-| preschool-crafts-planner | Preschool Crafts Idea Planner — Free Printable | kids-printables | 🆕 new |
-| fine-motor-activities-checklist | Fine Motor Activities Checklist — Free Printable | kids-printables | 🆕 new |
-| handwriting-worksheet | Preschool Handwriting & Numbers Worksheet — Free Printable | kids-printables | 🆕 new |
-| classroom-labels | Classroom Labels & Signs — Free Printable | kids-printables | 🆕 new |
-| printable-calendar | Undated Monthly Calendar — Free Printable | kids-printables | 🆕 new |
-| printable-labels | Printable Labels (Blank + Home) — Free Printable | kids-printables | 🆕 new |
-| party-invitations-template | Fill-in Party Invitation Template — Free Printable | kids-printables | 🆕 new |
-| kids-scavenger-hunt | Kids Scavenger Hunt & Bingo — Free Printable | kids-printables | 🆕 new |
-| bible-study-printable | Simple Bible Study Worksheet — Free Printable | kids-printables | 🆕 new |
+| weekly-cleaning-schedule | Weekly Cleaning Schedule, Free Printable | home-organization | ✅ done |
+| deep-cleaning-checklist | Deep Cleaning Checklist, Free Printable | home-organization | 🆕 new |
+| decluttering-checklist | Declutter Your Home Checklist, Free Printable | home-organization | 🆕 new |
+| home-organization-binder | Home Organization Binder Set, Free Printable | home-organization | 🆕 new |
+| bathroom-organization-labels | Bathroom Organization Labels + Zone Plan, Free Printable | home-organization | 🆕 new |
+| laundry-room-labels | Laundry Room Labels + Routine, Free Printable | home-organization | 🆕 new |
+| garage-zone-plan | Garage Organization Zone Plan, Free Printable | home-organization | 🆕 new |
+| bedroom-organization-plan | Bedroom Organization Plan, Free Printable | home-organization | 🆕 new |
+| closet-organization-plan | Closet Organization Plan + Labels, Free Printable | home-organization | 🆕 new |
+| pantry-and-kitchen-labels | Pantry & Kitchen Labels, Free Printable | home-organization | 🆕 new |
+| fridge-organization-labels | Fridge Organization Labels + Map, Free Printable | home-organization | 🆕 new |
+| small-space-storage-plan | Small-Space Storage Plan, Free Printable | home-organization | 🆕 new |
+| weekly-meal-planner | Weekly Meal Planner, Free Printable | meal-planning | 🆕 new |
+| grocery-list-template | Grocery List Template (By Aisle), Free Printable | meal-planning | 🆕 new |
+| freezer-meal-plan | Freezer Meal Plan + Inventory, Free Printable | meal-planning | 🆕 new |
+| pantry-staples-list | Pantry Staples Checklist, Free Printable | meal-planning | 🆕 new |
+| chore-chart | Kids Chore Chart, Free Printable | kids-printables | 🆕 new |
+| preschool-activities-planner | Preschool Activities Planner, Free Printable | kids-printables | 🆕 new |
+| preschool-crafts-planner | Preschool Crafts Idea Planner, Free Printable | kids-printables | 🆕 new |
+| fine-motor-activities-checklist | Fine Motor Activities Checklist, Free Printable | kids-printables | 🆕 new |
+| handwriting-worksheet | Preschool Handwriting & Numbers Worksheet, Free Printable | kids-printables | 🆕 new |
+| classroom-labels | Classroom Labels & Signs, Free Printable | kids-printables | 🆕 new |
+| printable-calendar | Undated Monthly Calendar, Free Printable | kids-printables | 🆕 new |
+| printable-labels | Printable Labels (Blank + Home), Free Printable | kids-printables | 🆕 new |
+| party-invitations-template | Fill-in Party Invitation Template, Free Printable | kids-printables | 🆕 new |
+| kids-scavenger-hunt | Kids Scavenger Hunt & Bingo, Free Printable | kids-printables | 🆕 new |
+| bible-study-printable | Simple Bible Study Worksheet, Free Printable | kids-printables | 🆕 new |

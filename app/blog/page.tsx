@@ -61,7 +61,7 @@ export default async function BlogIndexPage({ searchParams }: Props) {
       ]);
     }
   } catch {
-    // DB not yet configured — show empty state
+    // DB not yet configured, show empty state
   }
 
   const totalPages = Math.max(1, Math.ceil(total / POSTS_PER_PAGE));
@@ -99,7 +99,7 @@ export default async function BlogIndexPage({ searchParams }: Props) {
             for real life, not ideal scenarios.
           </p>
 
-          {/* Search — makes the WebSite SearchAction schema functional */}
+          {/* Search, makes the WebSite SearchAction schema functional */}
           <form action="/blog" method="get" role="search" className="flex gap-2 max-w-md">
             <label htmlFor="blog-search" className="sr-only">Search guides</label>
             <input
