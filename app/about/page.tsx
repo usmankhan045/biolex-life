@@ -216,7 +216,7 @@ export default async function AboutPage() {
           <div className="border-2 border-black/[0.08] rounded-xl bg-white p-5">
             <p className="text-xs text-muted leading-relaxed">
               <span className="font-medium text-text">Disclaimer: </span>
-              {siteConfig.name} printables are free for personal, non-commercial use
+              {siteConfig.name}{" "}printables are free for personal, non-commercial use
               only. Please don&rsquo;t resell or redistribute the files. Any product
               or tool we mention may be an affiliate link.{" "}
               <Link

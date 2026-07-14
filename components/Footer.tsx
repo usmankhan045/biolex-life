@@ -26,22 +26,22 @@ export function Footer() {
       <Container>
 
         {/* ── Main grid ──────────────────────────────────────────────────── */}
-        <div className="pt-10 pb-9 grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 lg:gap-x-12">
+        <div className="pt-8 pb-6 grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 lg:gap-x-12">
 
           {/* Column 1: Brand */}
           <div className="col-span-2 lg:col-span-1">
             <Link
               href="/"
-              className="font-display text-2xl font-bold text-white hover:opacity-80 transition-opacity inline-block mb-2"
+              className="font-display text-lg font-extrabold text-white hover:opacity-80 transition-opacity inline-block mb-1.5"
             >
               {siteConfig.name}
             </Link>
-            <p className="text-white/65 text-sm leading-relaxed mb-3">
+            <p className="text-white/65 text-sm leading-relaxed mb-2">
               {siteConfig.tagline}
             </p>
 
             {/* Authorship credit — E-E-A-T + links the author archive */}
-            <p className="text-white/50 text-xs mb-5">
+            <p className="text-white/50 text-xs mb-4">
               Written &amp; edited by{" "}
               <Link
                 href={siteConfig.author.url}
@@ -72,7 +72,7 @@ export function Footer() {
             <p className="font-mono text-[0.65rem] font-medium tracking-[0.12em] uppercase text-white/40 mb-3">
               Navigation
             </p>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 leading-tight">
               {siteConfig.footerLinks.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -91,7 +91,7 @@ export function Footer() {
             <p className="font-mono text-[0.65rem] font-medium tracking-[0.12em] uppercase text-white/40 mb-3">
               Explore
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5 leading-tight">
               <li>
                 <Link href="/blog" className="text-sm text-white/65 hover:text-white transition-colors">
                   Blog
@@ -120,7 +120,7 @@ export function Footer() {
         </div>
 
         {/* ── Bottom bar ─────────────────────────────────────────────────── */}
-        <div className="border-t border-white/10 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/35">
+        <div className="border-t border-white/10 py-3 flex flex-col sm:flex-row items-center justify-between gap-1.5 text-xs text-white/35">
           <p>© {year} {siteConfig.name}. All rights reserved.</p>
           <p>{siteConfig.legal.disclaimer}</p>
         </div>
