@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Preschool Crafts Idea Planner — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section blocks */
+  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Checkbox rows */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+    padding: 4px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .check-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; }
+
+  /* Two-column checkbox grid inside a section */
+  .col2 { display: grid; grid-template-columns: 1fr 1fr; }
+  .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
+
+  /* Seasonal grid: 2 × 2 sections */
+  .quad-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+  .quad-grid .section { margin-top: 0; }
+
+  /* Two-column page layout */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+  .two-col .section { margin-top: 0; }
+
+  /* Weekly planner rows */
+  .plan-row { display: grid; grid-template-columns: 0.72in 1fr 1fr; gap: 12px;
+    padding: 7px 11px; align-items: end; }
+  .plan-row.odd  { background: #FAF7F2; }
+  .plan-row.even { background: #F5F0EA; }
+  .plan-day { font-family: 'Playfair Display', Georgia, serif; font-size: 8.8pt; font-weight: 600;
+    color: #4A6B4E; align-self: center; }
+  .plan-field { display: flex; flex-direction: column; }
+  .plan-prefix { font-size: 6pt; text-transform: uppercase; letter-spacing: 0.4px; color: #8A7A6A; margin-bottom: 3px; }
+  .plan-line { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+
+  /* Callout / affirmation strip */
+  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Notes */
+  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 17px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Preschool Craft Planner</div>
+      <div class="header-sub">Simple, seasonal craft ideas — no special skills or fancy supplies needed.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Child</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Age</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Circle a season, pick a few crafts to try, then check off the supplies you need to gather.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <!-- Seasonal craft ideas: 2×2 -->
+  <div class="quad-grid">
+    <div class="section">
+      <div class="section-header sh-sage">Spring Crafts <span class="focus">flowers · bugs · rain</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Paper-plate flower with petals</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Cotton-ball fluffy lamb</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Handprint butterfly</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Coffee-filter rainbow</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Egg-carton caterpillar</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Tissue-paper blossom tree</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-steel">Summer Crafts <span class="focus">sun · sea · fruit</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Paper-plate smiling sun</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Sponge-print rainbow fish</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Popsicle-stick sailboat</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Paper-fan watermelon slice</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Seashell &amp; sand collage</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Bubble-wrap ice-cream cone</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-taupe">Fall Crafts <span class="focus">leaves · apples · pumpkins</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Handprint autumn tree</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Paper-bag scarecrow</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Crayon leaf rubbings</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Apple-stamp printing</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Pinecone hedgehog</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Torn-paper pumpkin</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-purple">Winter Crafts <span class="focus">snow · stars · cozy</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Cotton-ball snowman</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Paper-plate penguin</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Salt-painting snowflake</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Handprint reindeer</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Popsicle-stick star</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Q-tip dot snowflakes</span></div>
+    </div>
+  </div>
+
+  <!-- Supply checklist -->
+  <div class="section">
+    <div class="section-header sh-rose">Craft Supply Checklist <span class="focus">keep these stocked in a bin</span></div>
+    <div class="col2">
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Construction paper (assorted)</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Child-safe scissors</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Washable glue sticks</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">White school glue</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Washable paint &amp; brushes</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Crayons &amp; washable markers</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Cotton balls &amp; pom-poms</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Popsicle / craft sticks</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Googly eyes &amp; pipe cleaners</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Tissue paper &amp; paper plates</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Paper bags &amp; egg cartons</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Stickers &amp; stamps</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Yarn, string &amp; ribbon</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Old newspaper (mess mat)</span></div>
+    </div>
+  </div>
+
+  <div class="affirmation">There is no wrong way to make a craft. Let little hands lead — the wobbly, glue-everywhere version is the one they'll be proudest of.</div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">This Week's Craft Plan</div>
+      <div class="header-sub">One little craft a day is plenty — pick, prep, and enjoy the mess together.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Week of</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Theme</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Write in a craft for each day and the skill it builds. Prep supplies the night before to keep mornings calm.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <!-- Weekly planner -->
+  <div class="section">
+    <div class="section-header sh-rose">Craft of the Day <span class="focus">Monday–Friday</span></div>
+    <div class="plan-row odd">
+      <span class="plan-day">Mon</span>
+      <div class="plan-field"><span class="plan-prefix">Craft to make</span><div class="plan-line"></div></div>
+      <div class="plan-field"><span class="plan-prefix">Skill it builds</span><div class="plan-line"></div></div>
+    </div>
+    <div class="plan-row even">
+      <span class="plan-day">Tue</span>
+      <div class="plan-field"><span class="plan-prefix">Craft to make</span><div class="plan-line"></div></div>
+      <div class="plan-field"><span class="plan-prefix">Skill it builds</span><div class="plan-line"></div></div>
+    </div>
+    <div class="plan-row odd">
+      <span class="plan-day">Wed</span>
+      <div class="plan-field"><span class="plan-prefix">Craft to make</span><div class="plan-line"></div></div>
+      <div class="plan-field"><span class="plan-prefix">Skill it builds</span><div class="plan-line"></div></div>
+    </div>
+    <div class="plan-row even">
+      <span class="plan-day">Thu</span>
+      <div class="plan-field"><span class="plan-prefix">Craft to make</span><div class="plan-line"></div></div>
+      <div class="plan-field"><span class="plan-prefix">Skill it builds</span><div class="plan-line"></div></div>
+    </div>
+    <div class="plan-row odd">
+      <span class="plan-day">Fri</span>
+      <div class="plan-field"><span class="plan-prefix">Craft to make</span><div class="plan-line"></div></div>
+      <div class="plan-field"><span class="plan-prefix">Skill it builds</span><div class="plan-line"></div></div>
+    </div>
+  </div>
+
+  <!-- Two-column: skills + no-prep bank -->
+  <div class="two-col">
+    <div class="section">
+      <div class="section-header sh-sage">Skills Every Craft Builds <span class="focus">check as you go</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Scissor snipping &amp; cutting</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Gluing &amp; pasting</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Pincer grasp (small pieces)</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Painting &amp; brush control</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Threading &amp; lacing</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Color &amp; shape recognition</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Following 2–3 step directions</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Tearing &amp; crumpling paper</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-purple">5-Minute No-Prep Ideas <span class="focus">for busy days</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Free draw with crayons</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Sticker scene on paper</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Play-dough sculpting</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Collage from scrap paper</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Pom-pom color sorting art</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Chalk on dark paper</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Tape-resist painting</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Cotton-swab dot painting</span></div>
+    </div>
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="notes-title">Supplies to buy &amp; crafts to try next week</div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Crafts made</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">New skills tried</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Favorite craft</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Mess level</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

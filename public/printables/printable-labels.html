@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Printable Labels (Blank + Home) — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section / area band */
+  .band { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 12px; border-radius: 6px; margin: 11px 0 8px;
+    display: flex; justify-content: space-between; align-items: baseline; }
+  .band .hint { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); }
+  .sh-sage   { background: #7A9E7E; }
+  .sh-steel  { background: #6B8FAE; }
+  .sh-taupe  { background: #A89080; }
+  .sh-purple { background: #8B7BA0; }
+  .sh-rose   { background: #C4826E; }
+  .sh-dark   { background: #4A6B4E; }
+
+  .strip-sage   { background: #7A9E7E; }
+  .strip-steel  { background: #6B8FAE; }
+  .strip-taupe  { background: #A89080; }
+  .strip-purple { background: #8B7BA0; }
+  .strip-rose   { background: #C4826E; }
+  .strip-dark   { background: #4A6B4E; }
+
+  /* Reusable label sprig (white, sits in colored strip) */
+  .sprig { width: 0.52in; height: 0.14in; }
+
+  /* Grid of write-on / preset labels */
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.13in; }
+
+  /* Blank write-on label */
+  .label { border: 1.3px dashed #C4B5A5; border-radius: 9px; height: 1.12in; background: #fff;
+    overflow: hidden; display: flex; flex-direction: column; }
+  .label-strip { height: 0.26in; display: flex; align-items: center; justify-content: center; }
+  .label-body { flex: 1; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 9px; padding: 8px 14px; }
+  .label-line { width: 92%; border-bottom: 1.3px solid #C4B5A5; height: 14px; }
+  .label-line.short { width: 60%; }
+
+  /* Preset home label */
+  .plabel { border: 1.3px dashed #C4B5A5; border-radius: 9px; height: 0.9in; background: #fff;
+    overflow: hidden; display: flex; flex-direction: column; }
+  .plabel-strip { height: 0.2in; display: flex; align-items: center; justify-content: center; }
+  .plabel-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 4px 8px; }
+  .plabel-name { font-family: 'Playfair Display', Georgia, serif; font-size: 11pt; font-weight: 700;
+    color: #3D3530; letter-spacing: 0.5px; text-align: center; line-height: 1.05; }
+
+  /* Round jar tags */
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.13in; }
+  .tag { justify-self: center; width: 1.18in; height: 1.18in; border: 1.3px dashed #C4B5A5;
+    border-radius: 50%; background: #fff; position: relative;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+  .tag-hole { width: 9px; height: 9px; border: 1.2px solid #C4B5A5; border-radius: 50%;
+    position: absolute; top: 9px; left: 50%; margin-left: -4.5px; }
+  .tag .sprig { width: 0.42in; height: 0.13in; margin-top: 6px; }
+  .tag-line { width: 64%; border-bottom: 1.2px solid #C4B5A5; height: 12px; }
+
+  /* Spine / basket labels (long, thin) */
+  .spine-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.13in; }
+  .spine { height: 0.52in; border: 1.3px dashed #C4B5A5; border-radius: 6px; background: #fff;
+    display: flex; align-items: center; gap: 9px; padding: 0 11px; }
+  .spine-swatch { width: 0.16in; height: 0.30in; border-radius: 3px; flex-shrink: 0; }
+  .spine-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 14px; }
+
+  /* Callout strip */
+  .callout { margin-top: 9px; background: #B5C9B7; border-radius: 5px; padding: 6px 12px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Notes */
+  .notes { margin-top: 9px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 12px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 — BLANK / VERSATILE ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Printable Labels</div>
+      <div class="header-sub">One tidy set for jars, bins, baskets &amp; binders — write your own or use the ready-made ones.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Room</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Print on plain paper or sticker sheets, cut along the dashed lines, and fill in the blanks with a fine marker.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <!-- Blank rectangular labels -->
+  <div class="band sh-sage">Blank Labels <span class="hint">write your own · 12 labels</span></div>
+  <div class="grid3">
+    <div class="label"><div class="label-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-purple"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-rose"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-dark"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-purple"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-rose"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+    <div class="label"><div class="label-strip strip-dark"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="label-body"><div class="label-line"></div><div class="label-line short"></div></div></div>
+  </div>
+
+  <!-- Round jar tags -->
+  <div class="band sh-taupe">Round Jar &amp; Gift Tags <span class="hint">punch a hole &amp; tie on · 4 tags</span></div>
+  <div class="grid4">
+    <div class="tag"><span class="tag-hole"></span><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#7A9E7E" stroke-width="1"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#B5C9B7"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#B5C9B7"/><circle cx="22" cy="6" r="1.5" fill="#C4826E"/></svg><div class="tag-line"></div><div class="tag-line"></div></div>
+    <div class="tag"><span class="tag-hole"></span><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#7A9E7E" stroke-width="1"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#B5C9B7"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#B5C9B7"/><circle cx="22" cy="6" r="1.5" fill="#C4826E"/></svg><div class="tag-line"></div><div class="tag-line"></div></div>
+    <div class="tag"><span class="tag-hole"></span><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#7A9E7E" stroke-width="1"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#B5C9B7"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#B5C9B7"/><circle cx="22" cy="6" r="1.5" fill="#C4826E"/></svg><div class="tag-line"></div><div class="tag-line"></div></div>
+    <div class="tag"><span class="tag-hole"></span><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#7A9E7E" stroke-width="1"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#B5C9B7"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#B5C9B7"/><circle cx="22" cy="6" r="1.5" fill="#C4826E"/></svg><div class="tag-line"></div><div class="tag-line"></div></div>
+  </div>
+
+  <!-- Spine / basket labels -->
+  <div class="band sh-steel">Basket &amp; Binder Spine Labels <span class="hint">color-code by room · 3 labels</span></div>
+  <div class="spine-row">
+    <div class="spine"><span class="spine-swatch strip-sage"></span><div class="spine-line"></div></div>
+    <div class="spine"><span class="spine-swatch strip-rose"></span><div class="spine-line"></div></div>
+    <div class="spine"><span class="spine-swatch strip-purple"></span><div class="spine-line"></div></div>
+  </div>
+
+  <div class="callout">Tip: match each swatch color to a room — sage for the kitchen, rose for the bath, purple for the office — so everyone knows where a basket belongs at a glance.</div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 — HOME & ORGANIZATION PRESETS ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Home &amp; Pantry Labels</div>
+      <div class="header-sub">Ready-made labels for the spots that need them most — just print, cut, and stick.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Room</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Preset labels for the pantry, bathroom, and laundry — pair them with the blank sheet for anything else.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <!-- Pantry & Kitchen -->
+  <div class="band sh-sage">Pantry &amp; Kitchen <span class="hint">jars, canisters &amp; bins</span></div>
+  <div class="grid3">
+    <div class="plabel"><div class="plabel-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Pasta</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Rice &amp; Grains</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Flour</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Sugar</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Coffee &amp; Tea</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-sage"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Snacks</span></div></div>
+  </div>
+
+  <!-- Bathroom -->
+  <div class="band sh-steel">Bathroom <span class="hint">baskets, drawers &amp; caddies</span></div>
+  <div class="grid3">
+    <div class="plabel"><div class="plabel-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">First Aid</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Cotton &amp; Swabs</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Hair Care</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Skincare</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Dental</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-steel"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Extra Toiletries</span></div></div>
+  </div>
+
+  <!-- Laundry & Utility -->
+  <div class="band sh-taupe">Laundry &amp; Utility <span class="hint">shelves, cabinets &amp; caddies</span></div>
+  <div class="grid3">
+    <div class="plabel"><div class="plabel-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Detergent</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Fabric Softener</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Stain Remover</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Dryer Sheets</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Cleaning Cloths</span></div></div>
+    <div class="plabel"><div class="plabel-strip strip-taupe"><svg class="sprig" viewBox="0 0 44 12" fill="none"><line x1="4" y1="6" x2="40" y2="6" stroke="#fff" stroke-width="1" opacity="0.85"/><path d="M20 6 C18 2.5 14.5 1.5 12.5 1 C13.5 3.5 16.5 5 20 6Z" fill="#fff" fill-opacity="0.6"/><path d="M24 6 C26 2.5 29.5 1.5 31.5 1 C30.5 3.5 27.5 5 24 6Z" fill="#fff" fill-opacity="0.6"/><circle cx="22" cy="6" r="1.5" fill="#fff"/></svg></div><div class="plabel-body"><span class="plabel-name">Batteries &amp; Bulbs</span></div></div>
+  </div>
+
+  <div class="notes">
+    <div class="notes-title">Labels still to make</div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

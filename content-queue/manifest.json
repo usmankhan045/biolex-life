@@ -1,0 +1,1055 @@
+{
+  "site": "paper-posy",
+  "phase": 1,
+  "generated_note": "Phase 1 = no-artwork pillars (Home Org, Meal Planning, Kids). Each post embeds its printable via {{printable:<slug>}} twice and links to 2 same-category posts. Pins live in docs/pinterest-pins.md.",
+  "printables": [
+    {
+      "slug": "weekly-cleaning-schedule",
+      "title": "Weekly Cleaning Schedule — Free Printable",
+      "category": "home-organization",
+      "status": "done",
+      "spec": "2-page daily-essentials + one focus zone per day, Mon–Sun, weekly reset, summary bar"
+    },
+    {
+      "slug": "deep-cleaning-checklist",
+      "title": "Deep Cleaning Checklist — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "room-by-room whole-house deep clean checklist; sections per room with checkboxes; 2 pages"
+    },
+    {
+      "slug": "decluttering-checklist",
+      "title": "Declutter Your Home Checklist — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "room-by-room declutter checklist + keep/donate/toss columns; 20-minute declutter zones"
+    },
+    {
+      "slug": "home-organization-binder",
+      "title": "Home Organization Binder Set — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "cover + household info + important dates + chore/zone planner pages; multi-page binder"
+    },
+    {
+      "slug": "bathroom-organization-labels",
+      "title": "Bathroom Organization Labels + Zone Plan — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "printable labels sheet (toiletries, first aid, etc.) + a small-bathroom zone map"
+    },
+    {
+      "slug": "laundry-room-labels",
+      "title": "Laundry Room Labels + Routine — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "labels for detergent/softener/stain/delicates + a weekly laundry routine card"
+    },
+    {
+      "slug": "garage-zone-plan",
+      "title": "Garage Organization Zone Plan — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "garage zone map + bin/label sheet + declutter-before-you-store checklist; landscape"
+    },
+    {
+      "slug": "bedroom-organization-plan",
+      "title": "Bedroom Organization Plan — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "bedroom zone checklist (surfaces, closet, nightstand, under-bed) + reset routine"
+    },
+    {
+      "slug": "closet-organization-plan",
+      "title": "Closet Organization Plan + Labels — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "closet zone plan + shelf/bin labels + capsule declutter checklist"
+    },
+    {
+      "slug": "pantry-and-kitchen-labels",
+      "title": "Pantry & Kitchen Labels — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "printable pantry/kitchen container labels sheet + cabinet zone map"
+    },
+    {
+      "slug": "fridge-organization-labels",
+      "title": "Fridge Organization Labels + Map — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "fridge zone map + bin labels (dairy, produce, leftovers, meal-prep)"
+    },
+    {
+      "slug": "small-space-storage-plan",
+      "title": "Small-Space Storage Plan — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "room-by-room small-space storage checklist + linen closet zone map"
+    },
+    {
+      "slug": "weekly-meal-planner",
+      "title": "Weekly Meal Planner — Free Printable",
+      "category": "meal-planning",
+      "status": "new",
+      "spec": "Mon–Sun breakfast/lunch/dinner/snack grid + notes; landscape"
+    },
+    {
+      "slug": "grocery-list-template",
+      "title": "Grocery List Template (By Aisle) — Free Printable",
+      "category": "meal-planning",
+      "status": "new",
+      "spec": "categorized grocery list by store section + budget/total column"
+    },
+    {
+      "slug": "freezer-meal-plan",
+      "title": "Freezer Meal Plan + Inventory — Free Printable",
+      "category": "meal-planning",
+      "status": "new",
+      "spec": "freezer inventory tracker + meal-prep plan + label sheet"
+    },
+    {
+      "slug": "pantry-staples-list",
+      "title": "Pantry Staples Checklist — Free Printable",
+      "category": "meal-planning",
+      "status": "new",
+      "spec": "master pantry staples checklist by category + restock column"
+    },
+    {
+      "slug": "chore-chart",
+      "title": "Kids Chore Chart — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "weekly chore chart grid, blank + by-age suggestions, reward stars column"
+    },
+    {
+      "slug": "preschool-activities-planner",
+      "title": "Preschool Activities Planner — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "weekly at-home preschool activity planner by skill area + idea bank checklist"
+    },
+    {
+      "slug": "preschool-crafts-planner",
+      "title": "Preschool Crafts Idea Planner — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "seasonal craft idea list + supplies checklist + weekly craft planner (no craft artwork)"
+    },
+    {
+      "slug": "fine-motor-activities-checklist",
+      "title": "Fine Motor Activities Checklist — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "fine-motor activity idea checklist by age + weekly practice tracker"
+    },
+    {
+      "slug": "handwriting-worksheet",
+      "title": "Preschool Handwriting & Numbers Worksheet — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "letter + number tracing/writing lines worksheet (dotted guide lines, no images)"
+    },
+    {
+      "slug": "classroom-labels",
+      "title": "Classroom Labels & Signs — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "printable classroom labels, bin tags, and job chart signs"
+    },
+    {
+      "slug": "printable-calendar",
+      "title": "Undated Monthly Calendar — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "blank undated monthly calendar grid + notes/goals sidebar"
+    },
+    {
+      "slug": "printable-labels",
+      "title": "Printable Labels (Blank + Home) — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "versatile blank + preset home/organization label sheet"
+    },
+    {
+      "slug": "party-invitations-template",
+      "title": "Fill-in Party Invitation Template — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "fill-in-the-blank party/baby-shower invitation cards (typography only, no illustration)"
+    },
+    {
+      "slug": "kids-scavenger-hunt",
+      "title": "Kids Scavenger Hunt & Bingo — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "indoor/outdoor scavenger hunt list + activity bingo card (text/emoji only)"
+    },
+    {
+      "slug": "bible-study-printable",
+      "title": "Simple Bible Study Worksheet — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "SOAP-style read/reflect/pray study worksheet lines (original wording)"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "weekly-cleaning-schedule-printable",
+      "title": "The Weekly Cleaning Schedule That Actually Works (Free Printable)",
+      "keyword": "cleaning schedule printable",
+      "category": "home-organization",
+      "printable": "weekly-cleaning-schedule",
+      "printable_status": "done"
+    },
+    {
+      "slug": "cleaning-schedule-for-working-moms-printable",
+      "title": "The Cleaning Schedule for Working Moms That Actually Sticks (Free Printable)",
+      "keyword": "cleaning schedule for working moms",
+      "category": "home-organization",
+      "printable": "weekly-cleaning-schedule",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "daily-cleaning-routine-checklist-printable",
+      "title": "The 15-Minute Daily Cleaning Routine (Free Printable Checklist)",
+      "keyword": "home cleaning routine",
+      "category": "home-organization",
+      "printable": "weekly-cleaning-schedule",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "cleaning-tips-and-tricks-printable",
+      "title": "27 Cleaning Tips and Tricks That Actually Work (Free Printable)",
+      "keyword": "cleaning tips and tricks",
+      "category": "home-organization",
+      "printable": "weekly-cleaning-schedule",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "deep-cleaning-checklist-printable",
+      "title": "The Room-by-Room Deep Cleaning Checklist (Free Printable)",
+      "keyword": "deep cleaning house checklist",
+      "category": "home-organization",
+      "printable": "deep-cleaning-checklist",
+      "printable_status": "new"
+    },
+    {
+      "slug": "deep-cleaning-schedule-printable",
+      "title": "How to Build a Deep Cleaning Schedule (Free Printable)",
+      "keyword": "deep cleaning schedule",
+      "category": "home-organization",
+      "printable": "deep-cleaning-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "house-deep-cleaning-hacks-printable",
+      "title": "19 Deep Cleaning Hacks for a Faster Clean (Free Printable Checklist)",
+      "keyword": "deep cleaning hacks",
+      "category": "home-organization",
+      "printable": "deep-cleaning-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "spring-cleaning-checklist-printable",
+      "title": "The Whole-House Spring Cleaning Checklist (Free Printable)",
+      "keyword": "spring cleaning checklist",
+      "category": "home-organization",
+      "printable": "deep-cleaning-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "bathroom-deep-cleaning-checklist-printable",
+      "title": "How to Deep Clean a Bathroom, Step by Step (Free Printable Checklist)",
+      "keyword": "deep cleaning bathrooms",
+      "category": "home-organization",
+      "printable": "deep-cleaning-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "decluttering-checklist-printable",
+      "title": "The Room-by-Room Decluttering Checklist (Free Printable)",
+      "keyword": "decluttering ideas",
+      "category": "home-organization",
+      "printable": "decluttering-checklist",
+      "printable_status": "new"
+    },
+    {
+      "slug": "declutter-and-organize-your-home-printable",
+      "title": "How to Declutter and Organize Your Whole Home (Free Printable)",
+      "keyword": "declutter and organize",
+      "category": "home-organization",
+      "printable": "decluttering-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "declutter-your-home-in-a-weekend-printable",
+      "title": "How to Declutter Your Home in a Weekend (Free Printable Plan)",
+      "keyword": "decluttering hacks",
+      "category": "home-organization",
+      "printable": "decluttering-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "kitchen-decluttering-checklist-printable",
+      "title": "The Kitchen Decluttering Checklist (Free Printable)",
+      "keyword": "decluttering ideas kitchen",
+      "category": "home-organization",
+      "printable": "decluttering-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "closet-decluttering-checklist-printable",
+      "title": "How to Declutter Your Closet in One Afternoon (Free Printable)",
+      "keyword": "declutter closet",
+      "category": "home-organization",
+      "printable": "decluttering-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "home-organization-binder-printable",
+      "title": "How to Make a Home Organization Binder (Free Printable Set)",
+      "keyword": "home organization binder",
+      "category": "home-organization",
+      "printable": "home-organization-binder",
+      "printable_status": "new"
+    },
+    {
+      "slug": "home-organization-hacks-by-room-printable",
+      "title": "32 Home Organization Hacks, Room by Room (Free Printable)",
+      "keyword": "home organization hacks by room",
+      "category": "home-organization",
+      "printable": "home-organization-binder",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "organizing-a-big-household-printable",
+      "title": "Home Organization Tips for a Big Household (Free Printable)",
+      "keyword": "home organization tips for a big household",
+      "category": "home-organization",
+      "printable": "home-organization-binder",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "home-organization-bins-and-baskets-printable",
+      "title": "The Best Bins and Baskets for Organizing (Free Printable Plan)",
+      "keyword": "home organization bins",
+      "category": "home-organization",
+      "printable": "home-organization-binder",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "bathroom-organization-ideas-printable",
+      "title": "Bathroom Organization Ideas + Free Printable Labels",
+      "keyword": "bathroom organizer ideas",
+      "category": "home-organization",
+      "printable": "bathroom-organization-labels",
+      "printable_status": "new"
+    },
+    {
+      "slug": "small-bathroom-organization-printable",
+      "title": "Small Bathroom Organization: The 6-Zone System (Free Printable Labels)",
+      "keyword": "bathroom organization ideas for small spaces",
+      "category": "home-organization",
+      "printable": "bathroom-organization-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "bathroom-organization-hacks-printable",
+      "title": "15 Bathroom Organization Hacks (Free Printable Labels)",
+      "keyword": "bathroom organization hacks",
+      "category": "home-organization",
+      "printable": "bathroom-organization-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "bathroom-countertop-organization-printable",
+      "title": "How to Organize a Bathroom Countertop (Free Printable)",
+      "keyword": "bathroom organization countertop",
+      "category": "home-organization",
+      "printable": "bathroom-organization-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "bathroom-cabinet-organization-printable",
+      "title": "How to Organize Bathroom Cabinets (Free Printable Labels)",
+      "keyword": "bathroom organization cabinets",
+      "category": "home-organization",
+      "printable": "bathroom-organization-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "under-sink-organization-printable",
+      "title": "How to Organize Under the Sink (Free Printable Labels)",
+      "keyword": "under sink organization",
+      "category": "home-organization",
+      "printable": "bathroom-organization-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "laundry-room-organization-printable",
+      "title": "Laundry Room Organization Ideas (Free Printable Labels)",
+      "keyword": "laundry room organizer",
+      "category": "home-organization",
+      "printable": "laundry-room-labels",
+      "printable_status": "new"
+    },
+    {
+      "slug": "small-laundry-room-organization-printable",
+      "title": "Small Laundry Room Organization Ideas (Free Printable)",
+      "keyword": "laundry room organization small",
+      "category": "home-organization",
+      "printable": "laundry-room-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "laundry-room-storage-ideas-printable",
+      "title": "Laundry Room Storage Ideas That Fit Anywhere (Free Printable)",
+      "keyword": "laundry room organization storage",
+      "category": "home-organization",
+      "printable": "laundry-room-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "laundry-detergent-station-printable",
+      "title": "How to Set Up a Laundry Detergent Station (Free Printable Labels)",
+      "keyword": "laundry room organization detergent",
+      "category": "home-organization",
+      "printable": "laundry-room-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "garage-organization-ideas-printable",
+      "title": "Garage Organization Ideas + Free Printable Zone Plan",
+      "keyword": "garage organizer ideas",
+      "category": "home-organization",
+      "printable": "garage-zone-plan",
+      "printable_status": "new"
+    },
+    {
+      "slug": "garage-storage-system-printable",
+      "title": "How to Build a Garage Storage System (Free Printable Plan)",
+      "keyword": "garage organization storage",
+      "category": "home-organization",
+      "printable": "garage-zone-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "garage-organization-on-a-budget-printable",
+      "title": "Garage Organization on a Budget (Free Printable)",
+      "keyword": "garage organization ideas cheap",
+      "category": "home-organization",
+      "printable": "garage-zone-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "garage-organization-before-and-after-printable",
+      "title": "Garage Organization Before and After: The Plan (Free Printable)",
+      "keyword": "garage organization before and after",
+      "category": "home-organization",
+      "printable": "garage-zone-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "bedroom-organization-ideas-printable",
+      "title": "Bedroom Organization Ideas (Free Printable Plan)",
+      "keyword": "bedroom organizing ideas",
+      "category": "home-organization",
+      "printable": "bedroom-organization-plan",
+      "printable_status": "new"
+    },
+    {
+      "slug": "bedroom-organization-hacks-printable",
+      "title": "18 Bedroom Organization Hacks (Free Printable)",
+      "keyword": "bedroom organization hacks",
+      "category": "home-organization",
+      "printable": "bedroom-organization-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "small-bedroom-organization-printable",
+      "title": "Small Bedroom Organization Ideas (Free Printable)",
+      "keyword": "bedroom organization ideas for small spaces",
+      "category": "home-organization",
+      "printable": "bedroom-organization-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "nightstand-and-surface-organization-printable",
+      "title": "How to Keep Bedroom Surfaces Clutter-Free (Free Printable)",
+      "keyword": "bedroom organization tips",
+      "category": "home-organization",
+      "printable": "bedroom-organization-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "closet-organization-printable",
+      "title": "Closet Organization Ideas + Free Printable Labels",
+      "keyword": "closet organization hacks",
+      "category": "home-organization",
+      "printable": "closet-organization-plan",
+      "printable_status": "new"
+    },
+    {
+      "slug": "small-closet-organization-printable",
+      "title": "Small Closet Organization Ideas That Work (Free Printable)",
+      "keyword": "closet organization ideas small",
+      "category": "home-organization",
+      "printable": "closet-organization-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "walk-in-closet-organization-printable",
+      "title": "How to Organize a Walk-In Closet (Free Printable Plan)",
+      "keyword": "closet organization ideas walk in",
+      "category": "home-organization",
+      "printable": "closet-organization-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "shoe-organization-ideas-printable",
+      "title": "Shoe Organization Ideas for Any Closet (Free Printable)",
+      "keyword": "closet organization shoes",
+      "category": "home-organization",
+      "printable": "closet-organization-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "closet-organization-with-drawers-printable",
+      "title": "How to Organize a Closet With Drawers (Free Printable)",
+      "keyword": "closet organizers with drawers",
+      "category": "home-organization",
+      "printable": "closet-organization-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "kitchen-cabinet-organization-printable",
+      "title": "Kitchen Cabinet Organization + Free Printable Labels",
+      "keyword": "kitchen organizer cabinets",
+      "category": "home-organization",
+      "printable": "pantry-and-kitchen-labels",
+      "printable_status": "new"
+    },
+    {
+      "slug": "small-kitchen-organization-printable",
+      "title": "Small Kitchen Organization Ideas (Free Printable)",
+      "keyword": "kitchen organization ideas small",
+      "category": "home-organization",
+      "printable": "pantry-and-kitchen-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "kitchen-organizing-hacks-printable",
+      "title": "21 Kitchen Organizing Hacks (Free Printable Labels)",
+      "keyword": "kitchen organizing hacks",
+      "category": "home-organization",
+      "printable": "pantry-and-kitchen-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "apartment-kitchen-organization-printable",
+      "title": "Apartment Kitchen Organization Ideas (Free Printable)",
+      "keyword": "kitchen organization apartments",
+      "category": "home-organization",
+      "printable": "pantry-and-kitchen-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "pantry-organization-labels-printable",
+      "title": "How to Organize a Pantry + Free Printable Labels",
+      "keyword": "pantry organization",
+      "category": "home-organization",
+      "printable": "pantry-and-kitchen-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "fridge-organization-ideas-printable",
+      "title": "Fridge Organization Ideas + Free Printable Labels",
+      "keyword": "fridge organizer ideas",
+      "category": "home-organization",
+      "printable": "fridge-organization-labels",
+      "printable_status": "new"
+    },
+    {
+      "slug": "fridge-organization-on-a-budget-printable",
+      "title": "Fridge Organization on a Dollar-Store Budget (Free Printable)",
+      "keyword": "fridge organization dollar store",
+      "category": "home-organization",
+      "printable": "fridge-organization-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "small-fridge-organization-printable",
+      "title": "Small Fridge Organization With Bins (Free Printable Labels)",
+      "keyword": "fridge organization bins",
+      "category": "home-organization",
+      "printable": "fridge-organization-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "small-space-storage-ideas-printable",
+      "title": "Small-Space Storage Ideas + Free Printable Plan",
+      "keyword": "storage ideas for small space",
+      "category": "home-organization",
+      "printable": "small-space-storage-plan",
+      "printable_status": "new"
+    },
+    {
+      "slug": "linen-closet-organization-printable",
+      "title": "How to Organize a Linen Closet (Free Printable Plan)",
+      "keyword": "linen closet organization",
+      "category": "home-organization",
+      "printable": "small-space-storage-plan",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "weekly-meal-plan-printable",
+      "title": "How to Meal Plan for the Week (Free Printable Meal Planner)",
+      "keyword": "meal plan for the week",
+      "category": "meal-planning",
+      "printable": "weekly-meal-planner",
+      "printable_status": "new"
+    },
+    {
+      "slug": "meal-planning-on-a-budget-printable",
+      "title": "Meal Planning on a Budget: A Simple System (Free Printable)",
+      "keyword": "meal planning on a budget",
+      "category": "meal-planning",
+      "printable": "weekly-meal-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "healthy-meal-planning-printable",
+      "title": "Healthy Meal Planning Made Simple (Free Printable)",
+      "keyword": "meal planning healthy",
+      "category": "meal-planning",
+      "printable": "weekly-meal-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "lunch-meal-planning-printable",
+      "title": "Lunch Meal Planning for the Week (Free Printable)",
+      "keyword": "meal planning lunch",
+      "category": "meal-planning",
+      "printable": "weekly-meal-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "grocery-list-template-printable",
+      "title": "The Grocery List Template That Saves Money (Free Printable)",
+      "keyword": "grocery list printable",
+      "category": "meal-planning",
+      "printable": "grocery-list-template",
+      "printable_status": "new"
+    },
+    {
+      "slug": "grocery-list-on-a-budget-printable",
+      "title": "How to Make a Grocery List on a Budget (Free Printable)",
+      "keyword": "grocery list on a budget",
+      "category": "meal-planning",
+      "printable": "grocery-list-template",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "grocery-list-organizer-printable",
+      "title": "The By-Aisle Grocery List Organizer (Free Printable)",
+      "keyword": "grocery list organizer",
+      "category": "meal-planning",
+      "printable": "grocery-list-template",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "grocery-list-for-two-printable",
+      "title": "A Grocery List for Two That Cuts Waste (Free Printable)",
+      "keyword": "grocery list for two",
+      "category": "meal-planning",
+      "printable": "grocery-list-template",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "grocery-shopping-list-printable",
+      "title": "The Master Grocery Shopping List (Free Printable)",
+      "keyword": "grocery shopping list",
+      "category": "meal-planning",
+      "printable": "grocery-list-template",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "grocery-list-meal-planning-printable",
+      "title": "How to Pair a Grocery List With Meal Planning (Free Printable)",
+      "keyword": "grocery list meal planning",
+      "category": "meal-planning",
+      "printable": "grocery-list-template",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "family-grocery-list-on-a-budget-printable",
+      "title": "The Family Grocery List on a Budget (Free Printable)",
+      "keyword": "grocery list on a budget for family",
+      "category": "meal-planning",
+      "printable": "grocery-list-template",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "freezer-meal-plan-printable",
+      "title": "How to Build a Freezer Meal Plan (Free Printable + Inventory)",
+      "keyword": "freezer meal plan",
+      "category": "meal-planning",
+      "printable": "freezer-meal-plan",
+      "printable_status": "new"
+    },
+    {
+      "slug": "pantry-staples-list-printable",
+      "title": "The Pantry Staples List Every Kitchen Needs (Free Printable)",
+      "keyword": "pantry staples list",
+      "category": "meal-planning",
+      "printable": "pantry-staples-list",
+      "printable_status": "new"
+    },
+    {
+      "slug": "meal-planner-printable-free",
+      "title": "A Free Printable Meal Planner You'll Actually Use",
+      "keyword": "meal planner printable free",
+      "category": "meal-planning",
+      "printable": "weekly-meal-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "chore-chart-printable",
+      "title": "The Kids Chore Chart That Ends the Nagging (Free Printable)",
+      "keyword": "chore chart",
+      "category": "kids-printables",
+      "printable": "chore-chart",
+      "printable_status": "new"
+    },
+    {
+      "slug": "chore-chart-by-age-printable",
+      "title": "Age-Appropriate Chores for Kids (Free Printable Chore Chart)",
+      "keyword": "chore chart by age",
+      "category": "kids-printables",
+      "printable": "chore-chart",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "weekly-chore-chart-for-families-printable",
+      "title": "The Weekly Family Chore Chart (Free Printable)",
+      "keyword": "chore chart weekly family",
+      "category": "kids-printables",
+      "printable": "chore-chart",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "kids-daily-routine-chart-printable",
+      "title": "A Kids Daily Routine Chart for Calmer Mornings (Free Printable)",
+      "keyword": "daily routine schedule kids",
+      "category": "kids-printables",
+      "printable": "chore-chart",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "preschool-activities-printable",
+      "title": "Preschool Activities at Home (Free Printable Planner)",
+      "keyword": "preschool activities printable",
+      "category": "kids-printables",
+      "printable": "preschool-activities-planner",
+      "printable_status": "new"
+    },
+    {
+      "slug": "preschool-activities-at-home-printable",
+      "title": "20 Preschool Activities to Do at Home (Free Printable)",
+      "keyword": "preschool activities at home",
+      "category": "kids-printables",
+      "printable": "preschool-activities-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "preschool-activities-for-3-year-olds-printable",
+      "title": "Preschool Activities for 3-Year-Olds (Free Printable)",
+      "keyword": "preschool activities for 3 year olds",
+      "category": "kids-printables",
+      "printable": "preschool-activities-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "preschool-activity-books-printable",
+      "title": "How to Make a Preschool Activity Book (Free Printable Planner)",
+      "keyword": "preschool activity printables",
+      "category": "kids-printables",
+      "printable": "preschool-activities-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "preschool-crafts-ideas-printable",
+      "title": "Easy Preschool Craft Ideas + Free Printable Planner",
+      "keyword": "preschool crafts for kids",
+      "category": "kids-printables",
+      "printable": "preschool-crafts-planner",
+      "printable_status": "new"
+    },
+    {
+      "slug": "summer-preschool-crafts-printable",
+      "title": "Summer Preschool Craft Ideas (Free Printable Planner)",
+      "keyword": "preschool crafts for summer",
+      "category": "kids-printables",
+      "printable": "preschool-crafts-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "fall-preschool-crafts-printable",
+      "title": "Fall & Spring Preschool Craft Ideas (Free Printable)",
+      "keyword": "preschool crafts for fall",
+      "category": "kids-printables",
+      "printable": "preschool-crafts-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "fine-motor-activities-printable",
+      "title": "Fine Motor Activities for Little Hands (Free Printable Checklist)",
+      "keyword": "fine motor activities",
+      "category": "kids-printables",
+      "printable": "fine-motor-activities-checklist",
+      "printable_status": "new"
+    },
+    {
+      "slug": "fine-motor-activities-for-toddlers-printable",
+      "title": "Fine Motor Activities for Toddlers (Free Printable)",
+      "keyword": "fine motor activities for toddlers",
+      "category": "kids-printables",
+      "printable": "fine-motor-activities-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "fine-motor-activities-for-preschoolers-printable",
+      "title": "Fine Motor Activities for Preschoolers (Free Printable)",
+      "keyword": "fine motor activities for preschoolers",
+      "category": "kids-printables",
+      "printable": "fine-motor-activities-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "free-preschool-worksheets-printable",
+      "title": "Free Preschool Worksheets to Print at Home",
+      "keyword": "free preschool worksheets",
+      "category": "kids-printables",
+      "printable": "handwriting-worksheet",
+      "printable_status": "new"
+    },
+    {
+      "slug": "kindergarten-worksheets-free-printable",
+      "title": "Free Printable Kindergarten Worksheets",
+      "keyword": "kindergarten worksheets free printable",
+      "category": "kids-printables",
+      "printable": "handwriting-worksheet",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "free-printable-worksheets-for-kids",
+      "title": "Free Printable Worksheets for Kids (Letters & Numbers)",
+      "keyword": "free printable worksheets for kids",
+      "category": "kids-printables",
+      "printable": "handwriting-worksheet",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "free-printable-math-worksheets",
+      "title": "Free Printable Math Worksheets for Early Learners",
+      "keyword": "free printable math worksheets",
+      "category": "kids-printables",
+      "printable": "handwriting-worksheet",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "classroom-decor-printable",
+      "title": "Classroom Decor on a Budget (Free Printable Labels & Signs)",
+      "keyword": "classroom decor",
+      "category": "kids-printables",
+      "printable": "classroom-labels",
+      "printable_status": "new"
+    },
+    {
+      "slug": "bulletin-board-ideas-printable",
+      "title": "Back-to-School Bulletin Board Ideas (Free Printable)",
+      "keyword": "bulletin board ideas",
+      "category": "kids-printables",
+      "printable": "classroom-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "classroom-theme-and-rules-printable",
+      "title": "Classroom Theme, Rules & Signs (Free Printable)",
+      "keyword": "classroom rules printable",
+      "category": "kids-printables",
+      "printable": "classroom-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "preschool-classroom-decor-printable",
+      "title": "Preschool Classroom Decor Ideas (Free Printable Labels)",
+      "keyword": "preschool classroom decor",
+      "category": "kids-printables",
+      "printable": "classroom-labels",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "free-printable-calendar",
+      "title": "The Free Printable Undated Monthly Calendar",
+      "keyword": "free printable calendar",
+      "category": "kids-printables",
+      "printable": "printable-calendar",
+      "printable_status": "new"
+    },
+    {
+      "slug": "free-printable-labels",
+      "title": "Free Printable Labels for Home & Organizing",
+      "keyword": "free printable labels",
+      "category": "kids-printables",
+      "printable": "printable-labels",
+      "printable_status": "new"
+    },
+    {
+      "slug": "printable-invitation-designs",
+      "title": "Fill-in Party Invitations You Can Print at Home (Free Printable)",
+      "keyword": "printable invitation designs",
+      "category": "kids-printables",
+      "printable": "party-invitations-template",
+      "printable_status": "new"
+    },
+    {
+      "slug": "baby-shower-invitations-printable",
+      "title": "Free Printable Baby Shower Invitations (Fill-in)",
+      "keyword": "baby shower invitations printable",
+      "category": "kids-printables",
+      "printable": "party-invitations-template",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "printable-scavenger-hunt-for-kids",
+      "title": "The Kids Scavenger Hunt That Buys You an Hour (Free Printable)",
+      "keyword": "printable scavenger hunt",
+      "category": "kids-printables",
+      "printable": "kids-scavenger-hunt",
+      "printable_status": "new"
+    },
+    {
+      "slug": "printable-bingo-for-kids",
+      "title": "Free Printable Activity Bingo for Kids",
+      "keyword": "printable bingo for kids",
+      "category": "kids-printables",
+      "printable": "kids-scavenger-hunt",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "free-printable-bible-study",
+      "title": "A Simple Free Printable Bible Study Worksheet",
+      "keyword": "free printable bible study",
+      "category": "kids-printables",
+      "printable": "bible-study-printable",
+      "printable_status": "new"
+    },
+    {
+      "slug": "free-printable-crafts-list",
+      "title": "Free Printable Craft Ideas List for Kids",
+      "keyword": "free printable crafts",
+      "category": "kids-printables",
+      "printable": "preschool-crafts-planner",
+      "printable_status": "existing"
+    }
+  ],
+  "publish_order": [
+    "weekly-cleaning-schedule-printable",
+    "weekly-meal-plan-printable",
+    "chore-chart-printable",
+    "cleaning-schedule-for-working-moms-printable",
+    "meal-planning-on-a-budget-printable",
+    "chore-chart-by-age-printable",
+    "daily-cleaning-routine-checklist-printable",
+    "healthy-meal-planning-printable",
+    "weekly-chore-chart-for-families-printable",
+    "cleaning-tips-and-tricks-printable",
+    "lunch-meal-planning-printable",
+    "kids-daily-routine-chart-printable",
+    "deep-cleaning-checklist-printable",
+    "grocery-list-template-printable",
+    "preschool-activities-printable",
+    "deep-cleaning-schedule-printable",
+    "grocery-list-on-a-budget-printable",
+    "preschool-activities-at-home-printable",
+    "house-deep-cleaning-hacks-printable",
+    "grocery-list-organizer-printable",
+    "preschool-activities-for-3-year-olds-printable",
+    "spring-cleaning-checklist-printable",
+    "grocery-list-for-two-printable",
+    "preschool-activity-books-printable",
+    "bathroom-deep-cleaning-checklist-printable",
+    "grocery-shopping-list-printable",
+    "preschool-crafts-ideas-printable",
+    "decluttering-checklist-printable",
+    "grocery-list-meal-planning-printable",
+    "summer-preschool-crafts-printable",
+    "declutter-and-organize-your-home-printable",
+    "family-grocery-list-on-a-budget-printable",
+    "fall-preschool-crafts-printable",
+    "declutter-your-home-in-a-weekend-printable",
+    "freezer-meal-plan-printable",
+    "fine-motor-activities-printable",
+    "kitchen-decluttering-checklist-printable",
+    "pantry-staples-list-printable",
+    "fine-motor-activities-for-toddlers-printable",
+    "closet-decluttering-checklist-printable",
+    "meal-planner-printable-free",
+    "fine-motor-activities-for-preschoolers-printable",
+    "home-organization-binder-printable",
+    "free-preschool-worksheets-printable",
+    "home-organization-hacks-by-room-printable",
+    "kindergarten-worksheets-free-printable",
+    "organizing-a-big-household-printable",
+    "free-printable-worksheets-for-kids",
+    "home-organization-bins-and-baskets-printable",
+    "free-printable-math-worksheets",
+    "bathroom-organization-ideas-printable",
+    "classroom-decor-printable",
+    "small-bathroom-organization-printable",
+    "bulletin-board-ideas-printable",
+    "bathroom-organization-hacks-printable",
+    "classroom-theme-and-rules-printable",
+    "bathroom-countertop-organization-printable",
+    "preschool-classroom-decor-printable",
+    "bathroom-cabinet-organization-printable",
+    "free-printable-calendar",
+    "under-sink-organization-printable",
+    "free-printable-labels",
+    "laundry-room-organization-printable",
+    "printable-invitation-designs",
+    "small-laundry-room-organization-printable",
+    "baby-shower-invitations-printable",
+    "laundry-room-storage-ideas-printable",
+    "printable-scavenger-hunt-for-kids",
+    "laundry-detergent-station-printable",
+    "printable-bingo-for-kids",
+    "garage-organization-ideas-printable",
+    "free-printable-bible-study",
+    "garage-storage-system-printable",
+    "free-printable-crafts-list",
+    "garage-organization-on-a-budget-printable",
+    "garage-organization-before-and-after-printable",
+    "bedroom-organization-ideas-printable",
+    "bedroom-organization-hacks-printable",
+    "small-bedroom-organization-printable",
+    "nightstand-and-surface-organization-printable",
+    "closet-organization-printable",
+    "small-closet-organization-printable",
+    "walk-in-closet-organization-printable",
+    "shoe-organization-ideas-printable",
+    "closet-organization-with-drawers-printable",
+    "kitchen-cabinet-organization-printable",
+    "small-kitchen-organization-printable",
+    "kitchen-organizing-hacks-printable",
+    "apartment-kitchen-organization-printable",
+    "pantry-organization-labels-printable",
+    "fridge-organization-ideas-printable",
+    "fridge-organization-on-a-budget-printable",
+    "small-fridge-organization-printable",
+    "small-space-storage-ideas-printable",
+    "linen-closet-organization-printable"
+  ]
+}

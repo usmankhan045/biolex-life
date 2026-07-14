@@ -1,9 +1,11 @@
 name: Publish scheduled posts
 
-# Drip-publishes queued blog posts on their scheduled time (8/day, 30 min apart —
+# Drip-publishes queued blog posts on their scheduled time (6/day, 30 min apart —
 # see content-queue/schedule.json). The publisher is idempotent: it only inserts
 # posts whose scheduled time has passed and that are not already in the database,
-# so re-runs and delayed/overlapping runs are safe.
+# so re-runs and delayed/overlapping runs are safe. site_id + category IDs are
+# baked into scripts/publish-due-posts.mjs (Paper Posy), so only the two Supabase
+# secrets below are required to activate.
 #
 # Required repository secrets (Settings → Secrets and variables → Actions):
 #   SUPABASE_URL

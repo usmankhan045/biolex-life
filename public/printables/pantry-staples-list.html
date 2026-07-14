@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pantry Staples Checklist — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Two-column layout */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.16in; margin-top: 8px; }
+  .col { display: flex; flex-direction: column; gap: 8px; }
+
+  /* Section blocks */
+  .section { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { display: grid; grid-template-columns: 1fr 0.30in 0.30in; align-items: baseline;
+    color: #fff; padding: 5px 11px; }
+  .section-header .sh-title { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; }
+  .sh-key { font-size: 5.2pt; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase;
+    text-align: center; color: rgba(255,255,255,0.85); }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Item rows */
+  .row { display: grid; grid-template-columns: 1fr 0.30in 0.30in; align-items: center; padding: 3px 11px; }
+  .row.odd  { background: #FAF7F2; }
+  .row.even { background: #F5F0EA; }
+  .row-label { font-family: 'Lato', sans-serif; font-size: 7.8pt; color: #3D3530; }
+  .box-cell { display: flex; justify-content: center; align-items: center; }
+  .box { width: 11px; height: 11px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .box.low { border-color: #C4826E; border-radius: 50%; }
+
+  /* Callout strip */
+  .callout { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Notes */
+  .notes { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 8px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Pantry Staples Checklist</div>
+      <div class="header-sub">The everyday basics that turn "nothing to eat" into a real meal.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Stocked on</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Household</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Check the sage box for what you have, then circle the rose dot for anything running low — that's your grocery list.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <div class="two-col">
+    <!-- LEFT COLUMN -->
+    <div class="col">
+      <!-- Baking & Flours -->
+      <div class="section">
+        <div class="section-header sh-sage">
+          <span class="sh-title">Baking &amp; Flours</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">All-purpose flour</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Granulated sugar</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Brown sugar</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Powdered sugar</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Baking soda</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Baking powder</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Cornstarch</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Active dry yeast</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Vanilla extract</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Cocoa powder</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+
+      <!-- Grains, Rice & Pasta -->
+      <div class="section">
+        <div class="section-header sh-steel">
+          <span class="sh-title">Grains, Rice &amp; Pasta</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">White &amp; brown rice</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Spaghetti / long pasta</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Penne / short pasta</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Rolled oats</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Quinoa or couscous</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Egg noodles</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Breadcrumbs</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Dried lentils / beans</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col">
+      <!-- Canned & Jarred -->
+      <div class="section">
+        <div class="section-header sh-taupe">
+          <span class="sh-title">Canned &amp; Jarred</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">Diced tomatoes</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Tomato paste &amp; sauce</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Pasta / marinara sauce</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Black &amp; kidney beans</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Chickpeas</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Corn &amp; green beans</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Tuna or chicken</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Chicken / veg broth</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Coconut milk</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Salsa</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+
+      <!-- Oils, Vinegars & Condiments -->
+      <div class="section">
+        <div class="section-header sh-purple">
+          <span class="sh-title">Oils, Vinegars &amp; Condiments</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">Olive oil</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Vegetable / canola oil</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Cooking spray</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Balsamic &amp; white vinegar</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Soy sauce</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Ketchup &amp; mustard</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Mayonnaise</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Honey &amp; maple syrup</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout">Keep this taped inside a cabinet door. A quick glance before you shop means fewer forgotten basics and fewer duplicate jars.</div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Pantry Staples Checklist</div>
+      <div class="header-sub">Seasonings, snacks and the fridge &amp; freezer basics worth always having on hand.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Items low</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Shop by</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Spices last longer than you think, but check dates twice a year. Anything faded or clumpy goes on the list.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <div class="two-col">
+    <!-- LEFT COLUMN -->
+    <div class="col">
+      <!-- Spices & Seasonings -->
+      <div class="section">
+        <div class="section-header sh-rose">
+          <span class="sh-title">Spices &amp; Seasonings</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">Salt &amp; black pepper</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Garlic powder</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Onion powder</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Paprika</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Ground cumin</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Chili powder</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Cinnamon</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Italian seasoning</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Oregano &amp; basil</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Red pepper flakes</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Bay leaves</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+
+      <!-- Refrigerator Staples -->
+      <div class="section">
+        <div class="section-header sh-steel">
+          <span class="sh-title">Refrigerator Staples</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">Milk</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Butter</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Eggs</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Cheese</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Yogurt</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Minced garlic</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Lemon / lime juice</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Tortillas</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col">
+      <!-- Breakfast & Snacks -->
+      <div class="section">
+        <div class="section-header sh-sage">
+          <span class="sh-title">Breakfast &amp; Snacks</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">Cereal &amp; oatmeal</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Peanut / nut butter</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Jam &amp; jelly</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Crackers</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Granola bars</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Nuts &amp; dried fruit</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Popcorn &amp; pretzels</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Coffee</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Tea</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Chocolate chips</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+
+      <!-- Freezer Staples -->
+      <div class="section">
+        <div class="section-header sh-taupe">
+          <span class="sh-title">Freezer Staples</span><span class="sh-key">Have</span><span class="sh-key">Low</span>
+        </div>
+        <div class="row odd"><span class="row-label">Frozen mixed vegetables</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Frozen berries &amp; fruit</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Chicken breast / thighs</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Ground beef or turkey</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Sliced bread</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row even"><span class="row-label">Butter / puff pastry</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+        <div class="row odd"><span class="row-label">Backup freezer meal</span><span class="box-cell"><span class="box"></span></span><span class="box-cell"><span class="box low"></span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notes: running low -->
+  <div class="notes">
+    <div class="notes-title">Running low — add to this week's grocery list</div>
+    <div class="notes-grid">
+      <div class="notes-line"></div><div class="notes-line"></div>
+      <div class="notes-line"></div><div class="notes-line"></div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Categories checked</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Items well stocked</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Items running low</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Shopping trip on</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

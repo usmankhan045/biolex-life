@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Laundry Room Labels + Routine — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section blocks */
+  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* ---- Cut-out label grid (page 1) ---- */
+  .label-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.16in; margin-top: 10px; }
+  .label { border: 1.4px dashed #C4B5A5; border-radius: 8px; overflow: hidden; height: 1.66in;
+    background: #fff; display: flex; flex-direction: column; }
+  .label-strip { font-family: 'Playfair Display', Georgia, serif; font-size: 11.5pt; font-weight: 700;
+    color: #fff; text-align: center; padding: 9px 6px 8px; letter-spacing: 0.3px; line-height: 1.05; }
+  .lb-sage { background: #7A9E7E; } .lb-steel { background: #6B8FAE; }
+  .lb-taupe { background: #A89080; } .lb-purple { background: #8B7BA0; }
+  .lb-rose { background: #C4826E; } .lb-dark { background: #4A6B4E; }
+  .label-body { flex: 1; position: relative; padding: 8px 12px 9px;
+    display: flex; flex-direction: column; justify-content: space-between; }
+  .label-sub { font-size: 6.8pt; font-style: italic; color: #7A6A5A; text-align: center; line-height: 1.3; }
+  .label-sprig { display: block; margin: 0 auto; width: 0.42in; opacity: 0.5; }
+  .label-note { font-size: 6.2pt; text-transform: uppercase; letter-spacing: 0.4px; color: #8A7A6A;
+    display: flex; align-items: flex-end; gap: 4px; }
+  .label-note .nl { flex: 1; border-bottom: 1px solid #C4B5A5; height: 11px; }
+
+  /* ---- Page 2 layout ---- */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.16in; margin-top: 8px; }
+
+  /* day / info rows */
+  .row { display: grid; grid-template-columns: 1fr 0.62in; align-items: center; padding: 4px 11px;
+    border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .row:last-child { border-bottom: none; }
+  .row.odd  { background: #FAF7F2; }
+  .row.even { background: #F5F0EA; }
+  .row-day { font-size: 7.8pt; color: #3D3530; }
+  .row-day b { font-family: 'Lato', sans-serif; font-weight: 700; color: #2D2D2D; }
+  .row-day span { font-style: italic; color: #7A6A5A; }
+  .field-cell { display: flex; align-items: flex-end; gap: 2px; }
+  .field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 13px; }
+
+  /* checkbox rows */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center; padding: 4px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .check-label { font-size: 7.8pt; color: #3D3530; }
+  .check-label b { font-weight: 700; }
+
+  /* stain guide rows */
+  .guide-row { display: grid; grid-template-columns: 0.92in 1fr; padding: 4px 11px;
+    border-bottom: 1px solid rgba(0,0,0,0.05); align-items: baseline; }
+  .guide-row:last-child { border-bottom: none; }
+  .guide-row.odd  { background: #FAF7F2; }
+  .guide-row.even { background: #F5F0EA; }
+  .g-stain { font-size: 7.4pt; font-weight: 700; color: #C4826E; }
+  .g-fix { font-size: 7.2pt; color: #3D3530; line-height: 1.25; }
+
+  /* temp cheat rows */
+  .temp-row { display: grid; grid-template-columns: 0.72in 1fr; padding: 4px 11px;
+    border-bottom: 1px solid rgba(0,0,0,0.05); align-items: baseline; }
+  .temp-row:last-child { border-bottom: none; }
+  .temp-row.odd { background: #FAF7F2; } .temp-row.even { background: #F5F0EA; }
+  .t-temp { font-size: 7.4pt; font-weight: 700; color: #6B8FAE; }
+  .t-use { font-size: 7.2pt; color: #3D3530; line-height: 1.25; }
+
+  /* Callout / affirmation strip */
+  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Notes */
+  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 · LABELS ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Laundry Room Labels</div>
+      <div class="header-sub">Print, cut on the dashed line, and stick one on every jar, bin &amp; basket.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Room</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Best on sticker paper or taped to decanted bottles. Add the scent or brand you use on the note line.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <div class="label-grid">
+    <!-- Row 1 -->
+    <div class="label">
+      <div class="label-strip lb-sage">Laundry<br>Detergent</div>
+      <div class="label-body">
+        <div class="label-sub">Regular &middot; HE &middot; liquid / powder / pods</div>
+        <div class="label-note">Scent <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-rose">Fabric<br>Softener</div>
+      <div class="label-body">
+        <div class="label-sub">Rinse cycle &middot; skip for towels</div>
+        <div class="label-note">Scent <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-steel">Stain<br>Remover</div>
+      <div class="label-body">
+        <div class="label-sub">Pre-treat &middot; let sit 5–10 min</div>
+        <div class="label-note">Type <span class="nl"></span></div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="label">
+      <div class="label-strip lb-purple">Oxygen<br>Bleach</div>
+      <div class="label-body">
+        <div class="label-sub">Whites &amp; brights &middot; color-safe soak</div>
+        <div class="label-note">Ratio <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-taupe">Wool &amp;<br>Delicates</div>
+      <div class="label-body">
+        <div class="label-sub">Cold water &middot; gentle / hand wash</div>
+        <div class="label-note">Scent <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-dark">Scent<br>Booster</div>
+      <div class="label-body">
+        <div class="label-sub">Add to drum before the load</div>
+        <div class="label-note">Scent <span class="nl"></span></div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="label">
+      <div class="label-strip lb-rose">Dryer<br>Sheets</div>
+      <div class="label-body">
+        <div class="label-sub">One per load &middot; not for towels</div>
+        <div class="label-note">Brand <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-sage">Wool Dryer<br>Balls</div>
+      <div class="label-body">
+        <div class="label-sub">Reusable &middot; add essential oil</div>
+        <div class="label-note">Oil <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-steel">Mesh Wash<br>Bags</div>
+      <div class="label-body">
+        <div class="label-sub">Bras, socks &amp; small delicates</div>
+        <div class="label-note">Count <span class="nl"></span></div>
+      </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="label">
+      <div class="label-strip lb-taupe">Clothespins<br>&amp; Clips</div>
+      <div class="label-body">
+        <div class="label-sub">For the line &amp; drying rack</div>
+        <div class="label-note">Notes <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-purple">Lint Rollers<br>&amp; Brush</div>
+      <div class="label-body">
+        <div class="label-sub">Empty the dryer trap too</div>
+        <div class="label-note">Notes <span class="nl"></span></div>
+      </div>
+    </div>
+    <div class="label">
+      <div class="label-strip lb-dark">Distilled<br>Vinegar</div>
+      <div class="label-body">
+        <div class="label-sub">Softens &amp; freshens naturally</div>
+        <div class="label-note">Ratio <span class="nl"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="affirmation">Tip: decant detergent and softener into matching bottles, add these labels, and your laundry shelf instantly looks (and works) like a boutique.</div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 · ROUTINE + GUIDES ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Weekly Laundry Routine</div>
+      <div class="header-sub">A load a day keeps the mountain away — pin this card by the machine.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Week of</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Household</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Give each day a job so laundry never piles up. Jot the number of loads you run in the box.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <div class="two-col">
+    <!-- LEFT COLUMN -->
+    <div>
+      <div class="section">
+        <div class="section-header sh-sage">Load-a-Day Routine <span class="focus">loads</span></div>
+        <div class="row odd"><span class="row-day"><b>Mon</b> · <span>Sheets &amp; bedding</span></span><div class="field-cell"><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-day"><b>Tue</b> · <span>Everyday darks</span></span><div class="field-cell"><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-day"><b>Wed</b> · <span>Whites &amp; lights</span></span><div class="field-cell"><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-day"><b>Thu</b> · <span>Towels &amp; linens</span></span><div class="field-cell"><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-day"><b>Fri</b> · <span>Delicates &amp; hand-wash</span></span><div class="field-cell"><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-day"><b>Sat</b> · <span>Kids &amp; sports gear</span></span><div class="field-cell"><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-day"><b>Sun</b> · <span>Catch-up &amp; ironing</span></span><div class="field-cell"><div class="field-line"></div></div></div>
+      </div>
+
+      <div class="section">
+        <div class="section-header sh-taupe">Sort-As-You-Go Baskets <span class="focus">label your hampers</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label"><b>Whites</b> — tees, socks, underclothes</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label"><b>Lights</b> — pastels &amp; neutrals</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label"><b>Darks</b> — jeans, black, navy</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label"><b>Delicates</b> — bras, knits, silk</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label"><b>Towels &amp; bedding</b> — wash hot</span></div>
+      </div>
+
+      <div class="section">
+        <div class="section-header sh-purple">Wash-Day Steps <span class="focus">every load</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label">Check pockets &amp; close zippers</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label">Pre-treat any stains</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label">Turn dark &amp; printed items inside out</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label">Move to dryer / line promptly</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label">Fold or hang while warm</span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <div class="section">
+        <div class="section-header sh-rose">Stain Quick Guide <span class="focus">treat before washing</span></div>
+        <div class="guide-row odd"><span class="g-stain">Grease / oil</span><span class="g-fix">Dish soap, work in, wash warm</span></div>
+        <div class="guide-row even"><span class="g-stain">Blood</span><span class="g-fix">Rinse cold, soak, never hot</span></div>
+        <div class="guide-row odd"><span class="g-stain">Wine / juice</span><span class="g-fix">Blot, oxygen soak, cold wash</span></div>
+        <div class="guide-row even"><span class="g-stain">Coffee / tea</span><span class="g-fix">Rinse back of stain, then soak</span></div>
+        <div class="guide-row odd"><span class="g-stain">Sweat / pit</span><span class="g-fix">Vinegar spray, then oxygen soak</span></div>
+        <div class="guide-row even"><span class="g-stain">Grass</span><span class="g-fix">Pre-treat, brush gently, warm wash</span></div>
+        <div class="guide-row odd"><span class="g-stain">Ink</span><span class="g-fix">Dab alcohol, blot, then launder</span></div>
+      </div>
+
+      <div class="section">
+        <div class="section-header sh-steel">Water Temperature <span class="focus">cheat sheet</span></div>
+        <div class="temp-row odd"><span class="t-temp">Hot</span><span class="t-use">Towels, sheets, whites, sickness</span></div>
+        <div class="temp-row even"><span class="t-temp">Warm</span><span class="t-use">Everyday cottons &amp; sturdy colors</span></div>
+        <div class="temp-row odd"><span class="t-temp">Cold</span><span class="t-use">Darks, brights, delicates, stains</span></div>
+        <div class="temp-row even"><span class="t-temp">Air-dry</span><span class="t-use">Knits, activewear, bras, wool</span></div>
+      </div>
+
+      <div class="notes">
+        <div class="notes-title">Notes &amp; reminders</div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+        <div class="notes-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Loads this week</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Line-dried</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Ironed</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Caught up?</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

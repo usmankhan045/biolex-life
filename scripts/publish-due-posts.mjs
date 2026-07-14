@@ -21,15 +21,23 @@ import { dirname, join } from "node:path";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE = join(ROOT, "content-queue");
 
-// The tenant this publisher writes to. Set SITE_ID via env, or replace the
-// placeholder default below with this site's real UUID (from the `sites` table).
-const SITE_ID = (process.env.SITE_ID || "00000000-0000-0000-0000-000000000000").trim();
+// The tenant this publisher writes to (Paper Posy). Env SITE_ID overrides.
+const SITE_ID = (process.env.SITE_ID || "5a5babff-6213-4f05-b8cb-986aaa2d0b80").trim();
 
-// Map each category slug used in the content queue to this site's category
-// UUID (from the `categories` table). Provide it as a JSON object in the
-// CATEGORY_ID env var, or hardcode your site's mapping here.
-//   e.g. CATEGORY_ID='{"category-one":"<uuid>","category-two":"<uuid>"}'
-const CATEGORY_ID = JSON.parse(process.env.CATEGORY_ID || "{}");
+// Map each content-queue category slug → this site's category UUID (from the
+// `categories` table). Env CATEGORY_ID (a JSON object) overrides/extends this.
+// The `printables` key is used when auto-creating a post's linked printable.
+const CATEGORY_ID = {
+  "printable-wall-art": "c0e54091-081b-4926-bde8-afdf699b54b6",
+  "coloring-pages":     "d23442e1-d88d-4a4a-8a72-2327d68d0f1b",
+  "home-organization":  "f4db9438-91e6-40c7-8e71-44d54c18950d",
+  "kids-printables":    "41d043b4-a2c5-448b-af8a-3700b8f457ea",
+  "meal-planning":      "3f7ec84c-c166-4c8a-9f77-7f9c92758092",
+  // Printables live in their pillar category too — default new printables to
+  // Home Organization unless the manifest sets category_id explicitly.
+  "printables":         "f4db9438-91e6-40c7-8e71-44d54c18950d",
+  ...JSON.parse(process.env.CATEGORY_ID || "{}"),
+};
 
 // Normalize the URL defensively: trim whitespace/newlines, add https:// if the
 // scheme was omitted, and strip any trailing slash. A malformed SUPABASE_URL
@@ -85,7 +93,8 @@ async function main() {
     const prow = {
       site_id: SITE_ID, slug: pslug, title: p.title, description: p.description,
       file_url: p.file_url, thumbnail_url: p.thumbnail_url ?? null,
-      category_id: CATEGORY_ID.printables, orientation: p.orientation || "portrait",
+      category_id: CATEGORY_ID[p.category] || CATEGORY_ID.printables,
+      orientation: p.orientation || "portrait",
     };
     if (DRY_RUN) { console.log(`  would create printable ${pslug}`); existingPrintables.add(pslug); return; }
     const r = await fetch(`${BASE}/rest/v1/printables?on_conflict=site_id,slug`, {

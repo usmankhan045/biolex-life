@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Closet Organization Plan + Labels — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section blocks */
+  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Zone-plan rows */
+  .zone-row { display: grid; grid-template-columns: 13px 1.25in 1fr; gap: 8px; align-items: center;
+    padding: 4.5px 11px; }
+  .zone-row.odd  { background: #FAF7F2; }
+  .zone-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .zone-name { font-family: 'Lato', sans-serif; font-size: 7.8pt; font-weight: 700; color: #3D3530; }
+  .zone-items { font-family: 'Lato', sans-serif; font-size: 7.5pt; font-style: italic; color: #6B5F55; }
+
+  /* Sort / declutter grid (Keep / Donate / Toss) */
+  .sort-head { display: grid; grid-template-columns: 1fr 0.62in 0.62in 0.62in; padding: 4px 11px;
+    background: rgba(0,0,0,0.04); border-bottom: 1px solid #DDD5C8; }
+  .sort-head span { font-size: 6.3pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #6B5F55; }
+  .sort-head .sh-cat { text-align: left; }
+  .sort-head .sh-col { text-align: center; }
+  .sort-row { display: grid; grid-template-columns: 1fr 0.62in 0.62in 0.62in; align-items: center;
+    padding: 4px 11px; }
+  .sort-row.odd  { background: #FAF7F2; }
+  .sort-row.even { background: #F5F0EA; }
+  .sort-label { font-family: 'Lato', sans-serif; font-size: 7.8pt; color: #3D3530; }
+  .sort-cell { display: flex; justify-content: center; }
+  .cbox { width: 11px; height: 11px; border: 1.3px solid #C4B5A5; border-radius: 3px; background: #fff; }
+
+  /* Callout / affirmation strip */
+  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Checkbox rows (routine) */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center; padding: 4px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .check-label { font-family: 'Lato', sans-serif; font-size: 7.8pt; color: #3D3530; }
+  .col2 { display: grid; grid-template-columns: 1fr 1fr; }
+  .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
+
+  /* Cut-out label grid */
+  .label-note { font-size: 6.8pt; font-style: italic; color: #8A7A6A; margin: 6px 0 2px; }
+  .label-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.12in; margin-top: 4px; }
+  .label { border: 1.4px dashed #C4B5A5; border-radius: 8px; height: 0.86in; background: #fff;
+    display: flex; flex-direction: column; overflow: hidden; }
+  .label-bar { height: 0.11in; width: 100%; }
+  .lb-sage { background: #7A9E7E; } .lb-rose { background: #C4826E; } .lb-steel { background: #6B8FAE; }
+  .lb-taupe { background: #A89080; } .lb-purple { background: #8B7BA0; } .lb-dark { background: #4A6B4E; }
+  .label-body { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2px 6px; }
+  .label-name { font-family: 'Playfair Display', Georgia, serif; font-size: 10pt; font-weight: 700; color: #3D3530; text-align: center; letter-spacing: 0.3px; }
+  .label-sub { font-size: 6pt; text-transform: uppercase; letter-spacing: 1px; color: #A89080; margin-top: 2px; }
+  .label-blank { border-bottom: 1px solid #DDD5C8; width: 70%; height: 12px; margin-top: 4px; }
+
+  /* Notes */
+  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 16px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Closet Organization Plan</div>
+      <div class="header-sub">Give every item a zone — then keep only what you love and wear.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Closet</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Date</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Empty the closet, sort every piece into three piles, then assign each zone below before you put anything back.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <!-- Zone Map -->
+  <div class="section">
+    <div class="section-header sh-sage">Map Your Closet Zones <span class="focus">check each zone once it's cleared &amp; assigned</span></div>
+    <div class="zone-row odd"><span class="box"></span><span class="zone-name">Top / High Shelf</span><span class="zone-items">Out-of-season clothes, luggage, spare bedding, rarely-used bins</span></div>
+    <div class="zone-row even"><span class="box"></span><span class="zone-name">Upper Rod</span><span class="zone-items">Shirts, blouses, jackets — short items you reach for daily</span></div>
+    <div class="zone-row odd"><span class="box"></span><span class="zone-name">Lower Rod</span><span class="zone-items">Pants, skirts, everyday hanging basics (double-hang zone)</span></div>
+    <div class="zone-row even"><span class="box"></span><span class="zone-name">Long-Hang Rod</span><span class="zone-items">Dresses, coats, robes, jumpsuits — full-length pieces</span></div>
+    <div class="zone-row odd"><span class="box"></span><span class="zone-name">Shelves / Cubbies</span><span class="zone-items">Folded knits &amp; jeans, handbags, hats — stack in bins</span></div>
+    <div class="zone-row even"><span class="box"></span><span class="zone-name">Drawers</span><span class="zone-items">Underwear, socks, loungewear, small folded accessories</span></div>
+    <div class="zone-row odd"><span class="box"></span><span class="zone-name">Floor / Shoe Zone</span><span class="zone-items">Shoes on a rack, boots upright, laundry basket, vacuum bags</span></div>
+    <div class="zone-row even"><span class="box"></span><span class="zone-name">Door &amp; Walls</span><span class="zone-items">Hooks for belts &amp; bags, jewelry board, mirror, scarf hanger</span></div>
+  </div>
+
+  <!-- Capsule Declutter Sort -->
+  <div class="section">
+    <div class="section-header sh-rose">Sort Every Category <span class="focus">work one category at a time — decide, don't linger</span></div>
+    <div class="sort-head"><span class="sh-cat">Category</span><span class="sh-col">KEEP</span><span class="sh-col">DONATE</span><span class="sh-col">TOSS</span></div>
+    <div class="sort-row odd"><span class="sort-label">Tops &amp; t-shirts</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row even"><span class="sort-label">Sweaters &amp; knitwear</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row odd"><span class="sort-label">Pants, jeans &amp; skirts</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row even"><span class="sort-label">Dresses &amp; jumpsuits</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row odd"><span class="sort-label">Outerwear &amp; jackets</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row even"><span class="sort-label">Activewear &amp; loungewear</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row odd"><span class="sort-label">Shoes &amp; boots</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row even"><span class="sort-label">Bags &amp; purses</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row odd"><span class="sort-label">Belts, scarves &amp; accessories</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+    <div class="sort-row even"><span class="sort-label">Formalwear &amp; special occasion</span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span><span class="sort-cell"><span class="cbox"></span></span></div>
+  </div>
+
+  <div class="affirmation">Ask of every piece: Have I worn it in the last 12 months? Does it fit me today? Would I buy it again right now? If it's three no's, let it go.</div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Shelf &amp; Bin Labels</div>
+      <div class="header-sub">Cut along the dashed lines — a labeled bin is a bin that stays tidy.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Bags out</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Rating</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Stick these on baskets, drawers and shelves so everything has a home. Two blanks are yours to fill in.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <div class="label-grid">
+    <div class="label"><div class="label-bar lb-sage"></div><div class="label-body"><div class="label-name">Tops</div><div class="label-sub">Folded</div></div></div>
+    <div class="label"><div class="label-bar lb-steel"></div><div class="label-body"><div class="label-name">Sweaters</div><div class="label-sub">Knitwear</div></div></div>
+    <div class="label"><div class="label-bar lb-taupe"></div><div class="label-body"><div class="label-name">Jeans</div><div class="label-sub">Denim</div></div></div>
+    <div class="label"><div class="label-bar lb-rose"></div><div class="label-body"><div class="label-name">Activewear</div><div class="label-sub">Gym</div></div></div>
+    <div class="label"><div class="label-bar lb-purple"></div><div class="label-body"><div class="label-name">Loungewear</div><div class="label-sub">Home</div></div></div>
+    <div class="label"><div class="label-bar lb-dark"></div><div class="label-body"><div class="label-name">Bags</div><div class="label-sub">Purses</div></div></div>
+    <div class="label"><div class="label-bar lb-rose"></div><div class="label-body"><div class="label-name">Belts &amp; Scarves</div><div class="label-sub">Accessories</div></div></div>
+    <div class="label"><div class="label-bar lb-sage"></div><div class="label-body"><div class="label-name">Hats &amp; Gloves</div><div class="label-sub">Cold weather</div></div></div>
+    <div class="label"><div class="label-bar lb-steel"></div><div class="label-body"><div class="label-name">Socks</div><div class="label-sub">Pairs</div></div></div>
+    <div class="label"><div class="label-bar lb-taupe"></div><div class="label-body"><div class="label-name">Underwear</div><div class="label-sub">Basics</div></div></div>
+    <div class="label"><div class="label-bar lb-purple"></div><div class="label-body"><div class="label-name">Shoes</div><div class="label-sub">Everyday</div></div></div>
+    <div class="label"><div class="label-bar lb-dark"></div><div class="label-body"><div class="label-name">Out of Season</div><div class="label-sub">Store away</div></div></div>
+    <div class="label"><div class="label-bar lb-rose"></div><div class="label-body"><div class="label-name">Donate</div><div class="label-sub">Give away</div></div></div>
+    <div class="label"><div class="label-bar lb-sage"></div><div class="label-body"><div class="label-name"></div><div class="label-blank"></div></div></div>
+    <div class="label"><div class="label-bar lb-steel"></div><div class="label-body"><div class="label-name"></div><div class="label-blank"></div></div></div>
+  </div>
+
+  <!-- Weekly Reset Routine -->
+  <div class="section">
+    <div class="section-header sh-dark">Keep-It-Tidy Reset <span class="focus">a few minutes each week keeps the closet working</span></div>
+    <div class="col2">
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Re-hang anything left on the chair</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Return stray shoes to the shoe zone</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Face all hangers the same direction</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Refold the knitwear &amp; jeans stacks</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Empty the donate bin when it's full</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Set aside anything needing repair</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Wipe shelves &amp; vacuum the floor</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Flip backward hanger = "not worn yet"</span></div>
+    </div>
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="notes-title">Wishlist &amp; gaps to fill</div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Items kept</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Bags donated</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Zones labeled</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Closet rating</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fill-in Party Invitation Template — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Invitation card grid: 2 × 2, cut apart */
+  .invite-grid { margin-top: 9px; height: 8.62in;
+    display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 0.16in; }
+
+  .invite { border: 1.4px dashed #C4B5A5; border-radius: 11px; overflow: hidden;
+    background: #fff; display: flex; flex-direction: column; }
+
+  .invite-band { padding: 9px 12px 8px; text-align: center; }
+  .invite-eyebrow { font-size: 6.2pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.4px;
+    color: rgba(255,255,255,0.82); }
+  .invite-title { font-family: 'Playfair Display', Georgia, serif; font-size: 16.5pt; font-weight: 700;
+    color: #fff; line-height: 1.02; margin-top: 2px; letter-spacing: 0.3px; }
+  .invite-flourish { font-size: 7pt; font-style: italic; color: rgba(255,255,255,0.85); margin-top: 3px;
+    font-family: 'Playfair Display', Georgia, serif; }
+
+  .bg-sage   { background: #7A9E7E; }
+  .bg-steel  { background: #6B8FAE; }
+  .bg-taupe  { background: #A89080; }
+  .bg-purple { background: #8B7BA0; }
+  .bg-rose   { background: #C4826E; }
+  .bg-dark   { background: #4A6B4E; }
+
+  .invite-body { flex: 1; padding: 10px 15px 8px; background: #FAF7F2;
+    display: flex; flex-direction: column; justify-content: space-between; }
+
+  .field { display: flex; align-items: flex-end; gap: 5px; }
+  .field-label { font-size: 6.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px;
+    color: #8A7A6A; white-space: nowrap; padding-bottom: 1px; min-width: 0.52in; }
+  .field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+
+  /* two fields side by side (date / time) */
+  .field-pair { display: grid; grid-template-columns: 1fr 0.78in; gap: 9px; }
+
+  .invite-note { text-align: center; font-size: 6.8pt; font-style: italic; color: #A89080;
+    font-family: 'Playfair Display', Georgia, serif; border-top: 1px solid #E4DCCE; padding-top: 5px; }
+  .invite-note .note-line { display: inline-block; border-bottom: 1px solid #C4B5A5; width: 1.3in; height: 11px;
+    vertical-align: bottom; margin-left: 3px; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 · PARTY INVITATIONS ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Party Invitations</div>
+      <div class="header-sub">Fill in the blanks, cut along the dashed lines, and hand-deliver the fun.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Hosted by</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label"># to print</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Four ready-to-fill party invites per sheet — birthdays, playdates, and any reason to gather. Write neatly in dark ink.</span>
+    <span class="subheader-tag">Page 1 of 2 · Parties</span>
+  </div>
+
+  <div class="invite-grid">
+    <!-- Card 1 -->
+    <div class="invite">
+      <div class="invite-band bg-rose">
+        <div class="invite-eyebrow">Please Join Us</div>
+        <div class="invite-title">You're Invited!</div>
+        <div class="invite-flourish">Let's make some memories</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">For</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Occasion</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+        <div class="invite-note">Can't wait to celebrate with you<span class="note-line"></span></div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="invite">
+      <div class="invite-band bg-sage">
+        <div class="invite-eyebrow">Come Celebrate</div>
+        <div class="invite-title">Let's Party!</div>
+        <div class="invite-flourish">Games, cake &amp; good company</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">For</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Occasion</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+        <div class="invite-note">Please bring<span class="note-line"></span></div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="invite">
+      <div class="invite-band bg-steel">
+        <div class="invite-eyebrow">Save the Date</div>
+        <div class="invite-title">Join the Fun</div>
+        <div class="invite-flourish">You won't want to miss it</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">For</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Occasion</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+        <div class="invite-note">Theme &amp; dress<span class="note-line"></span></div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="invite">
+      <div class="invite-band bg-purple">
+        <div class="invite-eyebrow">A Little Celebration</div>
+        <div class="invite-title">Come On Over</div>
+        <div class="invite-flourish">Good times, this way</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">For</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Occasion</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+        <div class="invite-note">A note from the host<span class="note-line"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 · BABY SHOWER INVITATIONS ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Baby Shower Invites</div>
+      <div class="header-sub">Sweet fill-in cards to welcome the newest little one on the way.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Hosted by</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label"># to print</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Four baby-shower invites per sheet — add the registry line so guests know just where to shop.</span>
+    <span class="subheader-tag">Page 2 of 2 · Baby Shower</span>
+  </div>
+
+  <div class="invite-grid">
+    <!-- Card 1 -->
+    <div class="invite">
+      <div class="invite-band bg-sage">
+        <div class="invite-eyebrow">A Baby is on the Way</div>
+        <div class="invite-title">Baby Shower</div>
+        <div class="invite-flourish">Shower them with love</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">Honoring</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Registry</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="invite">
+      <div class="invite-band bg-rose">
+        <div class="invite-eyebrow">Welcome Baby</div>
+        <div class="invite-title">Sprinkle of Love</div>
+        <div class="invite-flourish">Little feet are on the way</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">Honoring</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Registry</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="invite">
+      <div class="invite-band bg-taupe">
+        <div class="invite-eyebrow">Please Join Us</div>
+        <div class="invite-title">Oh Baby!</div>
+        <div class="invite-flourish">A celebration for two</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">Honoring</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Registry</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="invite">
+      <div class="invite-band bg-purple">
+        <div class="invite-eyebrow">A Sweet Surprise</div>
+        <div class="invite-title">Welcome Little One</div>
+        <div class="invite-flourish">Join us to celebrate</div>
+      </div>
+      <div class="invite-body">
+        <div class="field"><span class="field-label">Honoring</span><span class="field-line"></span></div>
+        <div class="field-pair">
+          <div class="field"><span class="field-label">Date</span><span class="field-line"></span></div>
+          <div class="field"><span class="field-label">Time</span><span class="field-line"></span></div>
+        </div>
+        <div class="field"><span class="field-label">Place</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">Registry</span><span class="field-line"></span></div>
+        <div class="field"><span class="field-label">RSVP to</span><span class="field-line"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

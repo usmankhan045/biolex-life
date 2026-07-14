@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weekly Cleaning Schedule — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section blocks */
+  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Checkbox rows */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+    padding: 4px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .check-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; }
+
+  /* Two-column checkbox grid inside a section (Daily Essentials) */
+  .col2 { display: grid; grid-template-columns: 1fr 1fr; }
+  .col2 .check-row { border-right: 1px solid rgba(0,0,0,0.04); }
+
+  /* Day grid: 2 × 2 sections */
+  .day-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+  .day-grid .section { margin-top: 0; }
+
+  /* Callout / affirmation strip */
+  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Notes */
+  .notes { margin-top: 8px; background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 6px 11px 9px; }
+  .notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+  .notes-line { border-bottom: 1px solid #D4B4A8; height: 17px; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Weekly Cleaning Schedule</div>
+      <div class="header-sub">A little each day — so the weekend stays yours.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Week of</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Home</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Do the daily essentials every day, then one focus zone per day. Fifteen minutes is enough.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <!-- Daily Essentials -->
+  <div class="section">
+    <div class="section-header sh-sage">Daily Essentials <span class="focus">every day · about 15 minutes</span></div>
+    <div class="col2">
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Make the beds</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wipe kitchen counters</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Wash / load the dishes</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Quick bathroom wipe-down</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">10-minute tidy &amp; reset</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Sort the day's mail &amp; papers</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Take out trash / recycling if full</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">One load of laundry (if needed)</span></div>
+    </div>
+  </div>
+
+  <!-- Day grid: Mon–Thu -->
+  <div class="day-grid">
+    <div class="section">
+      <div class="section-header sh-sage">Monday <span class="focus">Floors</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Vacuum high-traffic rooms</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Sweep kitchen &amp; entry</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Mop hard floors</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Shake out / vacuum mats</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-steel">Tuesday <span class="focus">Bathrooms</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Scrub toilet, tub &amp; sink</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Wipe mirrors &amp; fixtures</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Swap in fresh towels</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Empty bins, refill supplies</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-taupe">Wednesday <span class="focus">Dusting &amp; Surfaces</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Dust shelves &amp; sills</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Wipe screens &amp; electronics</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Clear &amp; wipe flat surfaces</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Fluff &amp; straighten cushions</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-purple">Thursday <span class="focus">Kitchen Deep-Clean</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wipe cabinet fronts &amp; handles</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Clean microwave &amp; stovetop</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wipe fridge shelves, toss old food</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Scrub sink &amp; run disposal</span></div>
+    </div>
+  </div>
+
+  <div class="affirmation">A clean home is built on small habits, not heroic weekends. Check off what you can — imperfect and done beats perfect and never.</div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Weekly Cleaning Schedule</div>
+      <div class="header-sub">Finish the week strong, then reset for the next one.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Loads done</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Week rating</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Friday through Sunday plus your weekly reset. Skip a day? Just pick up where you left off.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <!-- Day grid: Fri–Sun + Weekly Reset -->
+  <div class="day-grid">
+    <div class="section">
+      <div class="section-header sh-rose">Friday <span class="focus">Laundry &amp; Catch-Up</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wash, dry &amp; fold laundry</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Change bed sheets</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Catch up on any missed zone</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Wipe washer &amp; dryer</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-sage">Saturday <span class="focus">Bedrooms &amp; Living</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Tidy &amp; declutter surfaces</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Vacuum bedrooms</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Put away stray items</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Empty all wastebaskets</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-steel">Sunday <span class="focus">Reset &amp; Plan</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Meal plan &amp; grocery list</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Lay out the week ahead</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wipe down entryway</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">10-minute whole-home reset</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-dark">Weekly Reset <span class="focus">once a week</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wash bath mats &amp; kitchen towels</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Water the plants</span></div>
+      <div class="check-row odd"><span class="box"></span><span class="check-label">Wipe door handles &amp; light switches</span></div>
+      <div class="check-row even"><span class="box"></span><span class="check-label">Restock paper goods &amp; soap</span></div>
+    </div>
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="notes-title">This week's extra tasks</div>
+    <div class="notes-line"></div>
+    <div class="notes-line"></div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Loads of laundry</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Zones cleaned</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">15-min resets</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Week rating</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

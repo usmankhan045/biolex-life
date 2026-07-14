@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Garage Organization Zone Plan — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter landscape; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 11in; height: 8.5in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.24in; right: 0.30in; width: 0.72in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 18px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 16px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.2in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 14px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Body layout */
+  .body { margin-top: 9px; display: grid; grid-template-columns: 1.55fr 1fr; gap: 0.20in;
+    height: 6.72in; }
+
+  /* Section blocks */
+  .section { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; margin-bottom: 8px; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Checkbox rows */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+    padding: 4px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .check-label { font-family: 'Lato', sans-serif; font-size: 7.8pt; color: #3D3530; }
+  .check-label b { font-weight: 700; color: #2D2D2D; }
+
+  /* ── Garage floor-plan map ── */
+  .map-wrap { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; height: 100%;
+    display: flex; flex-direction: column; }
+  .map-head { background: #4A6B4E; color: #fff; font-family: 'Playfair Display', Georgia, serif;
+    font-size: 8.5pt; font-weight: 600; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .map-head .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic; font-weight: 400; color: rgba(255,255,255,0.82); }
+  .map { flex: 1; background: #F5F0EA; padding: 9px; display: grid;
+    grid-template-columns: 1fr 1.28fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.34fr; gap: 7px; }
+
+  .zone { background: #FAF7F2; border: 1px solid #DDD5C8; border-radius: 5px;
+    border-top: 3px solid #7A9E7E; padding: 5px 7px; position: relative; display: flex; flex-direction: column; }
+  .zone .zn { display: flex; align-items: center; gap: 5px; margin-bottom: 2px; }
+  .zone .znum { width: 15px; height: 15px; border-radius: 50%; background: #7A9E7E; color: #fff;
+    font-size: 7pt; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .zone .zname { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 700; color: #2D2D2D; line-height: 1.05; }
+  .zone .zex { font-size: 6.6pt; font-style: italic; color: #6B7680; line-height: 1.25; margin-top: 1px; }
+
+  .z1 { border-top-color: #7A9E7E; } .z1 .znum { background: #7A9E7E; }
+  .z2 { border-top-color: #A89080; } .z2 .znum { background: #A89080; }
+  .z3 { border-top-color: #8B7BA0; } .z3 .znum { background: #8B7BA0; }
+  .z4 { border-top-color: #6B8FAE; } .z4 .znum { background: #6B8FAE; }
+  .z5 { border-top-color: #C4826E; } .z5 .znum { background: #C4826E; }
+  .z6 { border-top-color: #4A6B4E; } .z6 .znum { background: #4A6B4E; }
+
+  .bay { grid-column: 2; grid-row: 1 / span 3; background: #EDE7DD;
+    border: 1.5px dashed #A89080; border-radius: 6px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; padding: 8px; }
+  .bay .car { width: 74%; margin-bottom: 6px; }
+  .bay .bay-label { font-family: 'Playfair Display', Georgia, serif; font-size: 9pt; font-weight: 700;
+    color: #7A6A55; letter-spacing: 0.5px; }
+  .bay .bay-sub { font-size: 6.6pt; font-style: italic; color: #9A8A78; margin-top: 2px; }
+
+  .door { grid-column: 1 / span 3; grid-row: 4; background: repeating-linear-gradient(90deg, #B5C9B7 0 18px, #A6BDA8 18px 36px);
+    border-radius: 5px; display: flex; align-items: center; justify-content: center;
+    font-size: 6.8pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #35513A; }
+
+  /* Four-box sort */
+  .sort-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .sort-cell { padding: 6px 9px 7px; border-right: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .sort-cell:nth-child(2n) { border-right: none; }
+  .sort-cell:nth-child(odd) { background: #FAF7F2; } .sort-cell:nth-child(even) { background: #F5F0EA; }
+  .sort-name { font-family: 'Playfair Display', Georgia, serif; font-size: 7.6pt; font-weight: 700; margin-bottom: 1px; }
+  .sort-desc { font-size: 6.6pt; color: #6B7680; line-height: 1.25; }
+  .sort-count { display: flex; align-items: flex-end; gap: 4px; margin-top: 4px; }
+  .sort-count .cl { font-size: 6.2pt; text-transform: uppercase; letter-spacing: 0.4px; color: #8A7A6A; }
+  .sort-count .cline { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 11px; }
+  .s-keep .sort-name { color: #4A6B4E; } .s-donate .sort-name { color: #6B8FAE; }
+  .s-toss .sort-name { color: #C4826E; } .s-relo .sort-name { color: #8B7BA0; }
+
+  /* Callout / affirmation strip */
+  .affirmation { background: #B5C9B7; border-radius: 5px; padding: 6px 11px; margin-bottom: 8px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.4pt; font-style: italic; color: #3D5C40; }
+
+  /* ── Page 2: label cards ── */
+  .labels-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 0.92in; gap: 0.13in;
+    margin-top: 9px; }
+  .label-card { border: 1.4px dashed #C4B5A5; border-radius: 8px; background: #FAF7F2;
+    padding: 8px 10px; position: relative; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+  .label-card .lc-strip { position: absolute; top: 0; left: 0; width: 6px; height: 100%; background: #7A9E7E; }
+  .label-card .lc-name { font-family: 'Playfair Display', Georgia, serif; font-size: 11pt; font-weight: 700;
+    color: #2D2D2D; letter-spacing: 0.4px; line-height: 1.02; }
+  .label-card .lc-sub { font-size: 6.4pt; font-style: italic; color: #8A7A6A; margin-top: 3px; }
+  .label-card .lc-line { border-bottom: 1.2px solid #C4B5A5; height: 15px; margin-top: 4px; }
+  .label-card .lc-mini-leaf { position: absolute; top: 7px; right: 9px; width: 0.28in; opacity: 0.5; }
+  .lc-a .lc-strip { background: #7A9E7E; } .lc-b .lc-strip { background: #A89080; }
+  .lc-c .lc-strip { background: #8B7BA0; } .lc-d .lc-strip { background: #6B8FAE; }
+  .lc-e .lc-strip { background: #C4826E; } .lc-f .lc-strip { background: #4A6B4E; }
+
+  /* Zone inventory table */
+  .inv { border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .inv-row { display: grid; grid-template-columns: 1.4in 1fr 0.95in; align-items: center; }
+  .inv-row.head { background: #A89080; }
+  .inv-row.head span { font-size: 6.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    color: #fff; padding: 4px 10px; }
+  .inv-row.odd { background: #FAF7F2; } .inv-row.even { background: #F5F0EA; }
+  .inv-cell { padding: 5px 10px; border-right: 1px solid rgba(0,0,0,0.05); }
+  .inv-cell:last-child { border-right: none; }
+  .inv-zone { font-size: 7.6pt; font-weight: 700; color: #3D3530; display: flex; align-items: center; gap: 5px; }
+  .inv-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+  .inv-fill { border-bottom: 1px solid #C4B5A5; height: 14px; }
+
+  /* Summary bar */
+  .summary-bar { background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.16in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 : ZONE MAP + DECLUTTER ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Garage Organization Zone Plan</div>
+      <div class="header-sub">Give every tool, bin, and box a home — so you can park the car again.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Date started</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Garage size</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Map your garage into six zones, then declutter before anything goes back on a shelf. Keep the center clear for the car.</span>
+    <span class="subheader-tag">Page 1 of 2</span>
+  </div>
+
+  <div class="body">
+    <!-- LEFT: floor-plan map -->
+    <div class="map-wrap">
+      <div class="map-head">Your Garage, Zoned <span class="focus">walls = storage · center = vehicle bay</span></div>
+      <div class="map">
+        <!-- Left wall zones -->
+        <div class="zone z1">
+          <div class="zn"><span class="znum">1</span><span class="zname">Tools &amp; Workbench</span></div>
+          <div class="zex">Power &amp; hand tools, pegboard, hardware, workbench &amp; task light.</div>
+        </div>
+        <div class="zone z2">
+          <div class="zn"><span class="znum">2</span><span class="zname">Lawn &amp; Garden</span></div>
+          <div class="zex">Long-handled tools on hooks, pots, soil, hose, mower.</div>
+        </div>
+        <div class="zone z3">
+          <div class="zn"><span class="znum">3</span><span class="zname">Cleaning &amp; Utility</span></div>
+          <div class="zex">Brooms, mop, shop vac, trash &amp; recycling, paper goods.</div>
+        </div>
+
+        <!-- Center vehicle bay -->
+        <div class="bay">
+          <svg class="car" viewBox="0 0 140 60" fill="none">
+            <path d="M8 44 L18 44 L28 26 L96 26 L114 42 L132 44 L132 50 L8 50 Z" fill="#D9C7B4" stroke="#A89080" stroke-width="2"/>
+            <path d="M34 28 L54 28 L54 40 L28 40 Z" fill="#EDE7DD" stroke="#A89080" stroke-width="1.5"/>
+            <path d="M60 28 L90 28 L100 40 L60 40 Z" fill="#EDE7DD" stroke="#A89080" stroke-width="1.5"/>
+            <circle cx="40" cy="50" r="9" fill="#7A6A55" stroke="#4A6B4E" stroke-width="2"/>
+            <circle cx="106" cy="50" r="9" fill="#7A6A55" stroke="#4A6B4E" stroke-width="2"/>
+          </svg>
+          <div class="bay-label">VEHICLE BAY</div>
+          <div class="bay-sub">Keep clear — nothing stored on the floor here</div>
+        </div>
+
+        <!-- Right wall zones -->
+        <div class="zone z4">
+          <div class="zn"><span class="znum">4</span><span class="zname">Sports &amp; Recreation</span></div>
+          <div class="zex">Bikes overhead, balls in a bin, rackets, helmets, gear.</div>
+        </div>
+        <div class="zone z5">
+          <div class="zn"><span class="znum">5</span><span class="zname">Seasonal &amp; Holiday</span></div>
+          <div class="zex">Labeled tubs up high — decor, coolers, off-season items.</div>
+        </div>
+        <div class="zone z6">
+          <div class="zn"><span class="znum">6</span><span class="zname">Bulk &amp; Overflow</span></div>
+          <div class="zex">Paper towels, pet food, water, automotive fluids &amp; care.</div>
+        </div>
+
+        <!-- Garage door -->
+        <div class="door">Garage Door · Grab-and-Go Drop Zone by the entry</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: declutter + sort -->
+    <div>
+      <div class="section">
+        <div class="section-header sh-sage">Declutter Before You Store <span class="focus">one zone at a time</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label">Pull <b>everything</b> out of one zone before you sort</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label">Toss what's broken, rusted, dried-up, or expired</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label">Group like with like — all paint, all garden, all sports</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label">Donate duplicate tools and gear you never reach for</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label">Return borrowed items; relocate indoor stuff that drifted in</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label">Drop old paint &amp; chemicals at a hazardous-waste site</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label">Measure walls &amp; ceiling — go vertical to free the floor</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label">Assign each keeper to <b>one</b> zone, then label its bin</span></div>
+      </div>
+
+      <div class="section">
+        <div class="section-header sh-steel">The Four-Box Sort <span class="focus">tally as you go</span></div>
+        <div class="sort-grid">
+          <div class="sort-cell s-keep">
+            <div class="sort-name">Keep</div>
+            <div class="sort-desc">Used in the last year &amp; has a zone.</div>
+            <div class="sort-count"><span class="cl">Bins</span><span class="cline"></span></div>
+          </div>
+          <div class="sort-cell s-donate">
+            <div class="sort-name">Donate</div>
+            <div class="sort-desc">Good shape, someone else needs it.</div>
+            <div class="sort-count"><span class="cl">Bags</span><span class="cline"></span></div>
+          </div>
+          <div class="sort-cell s-toss">
+            <div class="sort-name">Toss / Recycle</div>
+            <div class="sort-desc">Broken, unsafe, or beyond repair.</div>
+            <div class="sort-count"><span class="cl">Loads</span><span class="cline"></span></div>
+          </div>
+          <div class="sort-cell s-relo">
+            <div class="sort-name">Relocate</div>
+            <div class="sort-desc">Belongs inside or with its owner.</div>
+            <div class="sort-count"><span class="cl">Items</span><span class="cline"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="affirmation">Start with one zone and finish it before opening the next. A garage gets organized the same way it got cluttered — one shelf at a time.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 : LABELS + INVENTORY ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Bin &amp; Shelf Labels</div>
+      <div class="header-sub">Cut along the dashed lines and tape one to every bin, shelf, and hook.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Bins labeled</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Zones done</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Match each label's color to its zone on Page 1. Use the blanks for anything unique to your garage, then log where it lives below.</span>
+    <span class="subheader-tag">Page 2 of 2</span>
+  </div>
+
+  <!-- Label cards -->
+  <div class="labels-grid">
+    <div class="label-card lc-a"><span class="lc-strip"></span><div class="lc-name">POWER TOOLS</div><div class="lc-sub">Zone 1 · Tools</div></div>
+    <div class="label-card lc-a"><span class="lc-strip"></span><div class="lc-name">HAND TOOLS</div><div class="lc-sub">Zone 1 · Tools</div></div>
+    <div class="label-card lc-a"><span class="lc-strip"></span><div class="lc-name">HARDWARE &amp; FASTENERS</div><div class="lc-sub">Zone 1 · Tools</div></div>
+    <div class="label-card lc-e"><span class="lc-strip"></span><div class="lc-name">PAINT &amp; FINISHES</div><div class="lc-sub">Zone 1 · store upright</div></div>
+
+    <div class="label-card lc-b"><span class="lc-strip"></span><div class="lc-name">LAWN &amp; GARDEN</div><div class="lc-sub">Zone 2 · Garden</div></div>
+    <div class="label-card lc-b"><span class="lc-strip"></span><div class="lc-name">WATERING &amp; HOSE</div><div class="lc-sub">Zone 2 · Garden</div></div>
+    <div class="label-card lc-c"><span class="lc-strip"></span><div class="lc-name">CLEANING &amp; UTILITY</div><div class="lc-sub">Zone 3 · Utility</div></div>
+    <div class="label-card lc-c"><span class="lc-strip"></span><div class="lc-name">EXTENSION CORDS</div><div class="lc-sub">Zone 3 · Utility</div></div>
+
+    <div class="label-card lc-d"><span class="lc-strip"></span><div class="lc-name">SPORTS &amp; REC</div><div class="lc-sub">Zone 4 · Recreation</div></div>
+    <div class="label-card lc-d"><span class="lc-strip"></span><div class="lc-name">CAMPING &amp; OUTDOOR</div><div class="lc-sub">Zone 4 · Recreation</div></div>
+    <div class="label-card lc-f"><span class="lc-strip"></span><div class="lc-name">HOLIDAY &amp; SEASONAL</div><div class="lc-sub">Zone 5 · up high</div></div>
+    <div class="label-card lc-f"><span class="lc-strip"></span><div class="lc-name">AUTOMOTIVE CARE</div><div class="lc-sub">Zone 6 · Overflow</div></div>
+
+    <div class="label-card lc-a">
+      <span class="lc-strip"></span>
+      <svg class="lc-mini-leaf" viewBox="0 0 54 90" fill="none"><line x1="27" y1="82" x2="27" y2="14" stroke="#7A9E7E" stroke-width="2"/><path d="M27 44 C20 34 10 32 6 27 C13 25 22 30 27 44Z" fill="#B5C9B7" fill-opacity="0.4" stroke="#7A9E7E" stroke-width="1.2"/><path d="M27 57 C34 47 44 45 48 40 C41 38 32 43 27 57Z" fill="#B5C9B7" fill-opacity="0.4" stroke="#7A9E7E" stroke-width="1.2"/><circle cx="27" cy="11" r="4" fill="#C4826E"/></svg>
+      <div class="lc-sub">Blank — write your own</div><div class="lc-line"></div>
+    </div>
+    <div class="label-card lc-b"><span class="lc-strip"></span><div class="lc-sub">Blank — write your own</div><div class="lc-line"></div></div>
+    <div class="label-card lc-c"><span class="lc-strip"></span><div class="lc-sub">Blank — write your own</div><div class="lc-line"></div></div>
+    <div class="label-card lc-d"><span class="lc-strip"></span><div class="lc-sub">Blank — write your own</div><div class="lc-line"></div></div>
+  </div>
+
+  <!-- Zone inventory + summary -->
+  <div class="body" style="display:grid; grid-template-columns: 1.7fr 1fr; gap: 0.20in; height:auto; margin-top: 10px;">
+    <div>
+      <div class="section" style="margin-bottom:0;">
+        <div class="section-header sh-taupe">Zone Inventory — What Goes Where <span class="focus">your master map</span></div>
+        <div class="inv" style="border:none; border-radius:0;">
+          <div class="inv-row head"><span>Zone</span><span>Stored Here</span><span>Bin / Shelf #</span></div>
+          <div class="inv-row odd"><div class="inv-cell inv-zone"><span class="inv-dot" style="background:#7A9E7E"></span>1 · Tools &amp; Workbench</div><div class="inv-cell inv-fill"></div><div class="inv-cell inv-fill"></div></div>
+          <div class="inv-row even"><div class="inv-cell inv-zone"><span class="inv-dot" style="background:#A89080"></span>2 · Lawn &amp; Garden</div><div class="inv-cell inv-fill"></div><div class="inv-cell inv-fill"></div></div>
+          <div class="inv-row odd"><div class="inv-cell inv-zone"><span class="inv-dot" style="background:#8B7BA0"></span>3 · Cleaning &amp; Utility</div><div class="inv-cell inv-fill"></div><div class="inv-cell inv-fill"></div></div>
+          <div class="inv-row even"><div class="inv-cell inv-zone"><span class="inv-dot" style="background:#6B8FAE"></span>4 · Sports &amp; Recreation</div><div class="inv-cell inv-fill"></div><div class="inv-cell inv-fill"></div></div>
+          <div class="inv-row odd"><div class="inv-cell inv-zone"><span class="inv-dot" style="background:#C4826E"></span>5 · Seasonal &amp; Holiday</div><div class="inv-cell inv-fill"></div><div class="inv-cell inv-fill"></div></div>
+          <div class="inv-row even"><div class="inv-cell inv-zone"><span class="inv-dot" style="background:#4A6B4E"></span>6 · Bulk &amp; Overflow</div><div class="inv-cell inv-fill"></div><div class="inv-cell inv-fill"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="affirmation" style="margin-bottom:8px;">Label the bin before it goes on the shelf — future you will know exactly where everything belongs.</div>
+      <div class="summary-bar">
+        <div class="sum-cell"><span class="sum-label">Zones done</span><div class="sum-value"></div></div>
+        <div class="sum-cell"><span class="sum-label">Bins labeled</span><div class="sum-value"></div></div>
+        <div class="sum-cell"><span class="sum-label">Bags donated</span><div class="sum-value"></div></div>
+        <div class="sum-cell highlight"><span class="sum-label">Car parked?</span><div class="sum-value"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

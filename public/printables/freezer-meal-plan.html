@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Freezer Meal Plan + Inventory — Free Printable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2;
+    -webkit-print-color-adjust: exact; }
+
+  .page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative;
+    page-break-after: always; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Botanical motif */
+  .leaf { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; }
+
+  /* Header */
+  .header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 9px 16px 11px;
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; line-height: 1; }
+  .header-sub { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+  .header-fields { display: flex; gap: 14px; }
+  .hf { text-align: left; }
+  .hf-label { font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(255,255,255,0.85); }
+  .hf-line { width: 1.1in; border-bottom: 1px solid rgba(255,255,255,0.7); height: 13px; }
+
+  /* Subheader strip */
+  .subheader { background: #B5C9B7; padding: 5px 12px; display: flex;
+    justify-content: space-between; align-items: center; }
+  .subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+  .subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #4A6B4E; }
+
+  /* Section blocks */
+  .section { margin-top: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+  .section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600;
+    color: #fff; padding: 5px 11px; display: flex; justify-content: space-between; align-items: baseline; }
+  .section-header .focus { font-family: 'Lato', sans-serif; font-size: 6.8pt; font-style: italic;
+    font-weight: 400; color: rgba(255,255,255,0.82); text-transform: none; letter-spacing: 0; }
+  .sh-sage    { background: #7A9E7E; }
+  .sh-steel   { background: #6B8FAE; }
+  .sh-taupe   { background: #A89080; }
+  .sh-purple  { background: #8B7BA0; }
+  .sh-rose    { background: #C4826E; }
+  .sh-dark    { background: #4A6B4E; }
+
+  /* Two-column layout */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; margin-top: 8px; }
+  .two-col .section { margin-top: 0; }
+
+  /* Inventory column labels */
+  .col-labels { display: grid; grid-template-columns: 1fr 0.34in 0.52in 0.52in;
+    gap: 4px; padding: 3px 11px; background: #EDE6DB; align-items: center; }
+  .col-labels span { font-size: 5.6pt; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.4px; color: #8A7A6A; text-align: center; }
+  .col-labels span:first-child { text-align: left; }
+
+  /* Inventory rows */
+  .inv-row { display: grid; grid-template-columns: 1fr 0.34in 0.52in 0.52in;
+    gap: 4px; padding: 4.5px 11px; align-items: end; }
+  .inv-row.odd  { background: #FAF7F2; }
+  .inv-row.even { background: #F5F0EA; }
+  .inv-item { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+  .inv-cell { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+
+  /* Checkbox rows */
+  .check-row { display: grid; grid-template-columns: 13px 1fr; gap: 8px; align-items: center;
+    padding: 4.5px 11px; }
+  .check-row.odd  { background: #FAF7F2; }
+  .check-row.even { background: #F5F0EA; }
+  .box { width: 12px; height: 12px; border: 1.4px solid #7A9E7E; border-radius: 3px; background: #fff; }
+  .check-label { font-family: 'Lato', sans-serif; font-size: 8pt; color: #3D3530; }
+  .check-label b { font-weight: 700; color: #2D2D2D; }
+
+  /* Batch cook rows */
+  .batch-labels { display: grid; grid-template-columns: 1fr 0.5in 0.95in 0.95in;
+    gap: 6px; padding: 3px 11px; background: #EDE6DB; align-items: center; }
+  .batch-labels span { font-size: 5.6pt; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.4px; color: #8A7A6A; }
+  .batch-labels span:nth-child(2) { text-align: center; }
+  .batch-row { display: grid; grid-template-columns: 1fr 0.5in 0.95in 0.95in;
+    gap: 6px; padding: 5.5px 11px; align-items: end; }
+  .batch-row.odd  { background: #FAF7F2; }
+  .batch-row.even { background: #F5F0EA; }
+  .batch-line { border-bottom: 1.2px solid #C4B5A5; height: 16px; }
+
+  /* Storage guide reference grid */
+  .guide-grid { display: grid; grid-template-columns: 1fr 1fr; }
+  .guide-item { display: grid; grid-template-columns: 1fr auto; gap: 8px;
+    padding: 4px 11px; align-items: baseline; }
+  .guide-item.odd  { background: #FAF7F2; }
+  .guide-item.even { background: #F5F0EA; }
+  .guide-food { font-size: 7.6pt; color: #3D3530; }
+  .guide-time { font-size: 7.4pt; font-weight: 700; color: #4A6B4E; white-space: nowrap; }
+
+  /* Callout strip */
+  .affirmation { margin-top: 8px; background: #B5C9B7; border-radius: 5px; padding: 6px 11px;
+    font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+  /* Summary bar */
+  .summary-bar { margin-top: 8px; background: #4A6B4E; border-radius: 7px; padding: 0.10in 0.14in;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .sum-cell { text-align: center; }
+  .sum-label { font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+  .sum-value { background: rgba(255,255,255,0.92); border-radius: 4px; min-height: 22px;
+    display: flex; align-items: center; justify-content: center; font-size: 9pt; font-weight: 700; color: #2D2D2D; }
+  .sum-cell.highlight .sum-value { background: #C4826E; color: #fff; }
+
+  /* Cut-out freezer label sheet */
+  .label-note { font-size: 6.5pt; font-style: italic; color: #8A7A6A; padding: 4px 11px 2px; }
+  .label-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 4px 11px 10px; }
+  .label-card { border: 1.3px dashed #C4826E; border-radius: 6px; padding: 7px 9px 8px; background: #fff; }
+  .label-title { font-family: 'Playfair Display', Georgia, serif; font-size: 6.5pt; font-weight: 600;
+    color: #C4826E; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
+  .label-meal { border-bottom: 1.4px solid #C4B5A5; height: 17px; margin-bottom: 6px; }
+  .label-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 10px; }
+  .lf { }
+  .lf-label { font-size: 5.6pt; text-transform: uppercase; letter-spacing: 0.4px; color: #8A7A6A; }
+  .lf-line { border-bottom: 1px solid #C4B5A5; height: 12px; }
+  .lf.full { grid-column: 1 / -1; }
+
+  /* Footer */
+  .footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+    border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+  .footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<!-- ─────────────── PAGE 1 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Freezer Meal Plan</div>
+      <div class="header-sub">Know what's in there — waste less, cook once, eat easy.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Month</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Updated</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Log every item as it goes in. Fill the date frozen so the "use by" is easy to spot — cook the oldest first.</span>
+    <span class="subheader-tag">Page 1 of 2 · Inventory</span>
+  </div>
+
+  <!-- Inventory: 4 zones in two columns -->
+  <div class="two-col">
+    <!-- Proteins & Meat -->
+    <div class="section">
+      <div class="section-header sh-rose">Proteins &amp; Meat <span class="focus">keeps 3–12 months</span></div>
+      <div class="col-labels"><span>Item</span><span>Qty</span><span>In</span><span>Use By</span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+    </div>
+
+    <!-- Prepped Meals & Soups -->
+    <div class="section">
+      <div class="section-header sh-sage">Prepped Meals &amp; Soups <span class="focus">keeps 2–3 months</span></div>
+      <div class="col-labels"><span>Item</span><span>Qty</span><span>In</span><span>Use By</span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+    </div>
+
+    <!-- Veggies & Fruit -->
+    <div class="section">
+      <div class="section-header sh-steel">Veggies &amp; Fruit <span class="focus">keeps 8–12 months</span></div>
+      <div class="col-labels"><span>Item</span><span>Qty</span><span>In</span><span>Use By</span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+    </div>
+
+    <!-- Bread, Dairy & Extras -->
+    <div class="section">
+      <div class="section-header sh-taupe">Bread, Dairy &amp; Extras <span class="focus">keeps 1–3 months</span></div>
+      <div class="col-labels"><span>Item</span><span>Qty</span><span>In</span><span>Use By</span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row odd"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+      <div class="inv-row even"><span class="inv-item"></span><span class="inv-cell"></span><span class="inv-cell"></span><span class="inv-cell"></span></div>
+    </div>
+  </div>
+
+  <!-- Storage guide reference -->
+  <div class="section">
+    <div class="section-header sh-purple">How Long It Keeps <span class="focus">safe-quality freezer times at 0&deg;F / -18&deg;C</span></div>
+    <div class="guide-grid">
+      <div class="guide-item odd"><span class="guide-food">Ground meat &amp; sausage</span><span class="guide-time">3–4 mo</span></div>
+      <div class="guide-item even"><span class="guide-food">Cooked casseroles &amp; bakes</span><span class="guide-time">2–3 mo</span></div>
+      <div class="guide-item odd"><span class="guide-food">Chicken &amp; turkey pieces</span><span class="guide-time">9 mo</span></div>
+      <div class="guide-item even"><span class="guide-food">Soups &amp; stews</span><span class="guide-time">2–3 mo</span></div>
+      <div class="guide-item odd"><span class="guide-food">Steaks &amp; roasts (beef)</span><span class="guide-time">6–12 mo</span></div>
+      <div class="guide-item even"><span class="guide-food">Cooked rice &amp; grains</span><span class="guide-time">1–2 mo</span></div>
+      <div class="guide-item odd"><span class="guide-food">Fish (lean, cod/tilapia)</span><span class="guide-time">6 mo</span></div>
+      <div class="guide-item even"><span class="guide-food">Blanched vegetables</span><span class="guide-time">8–12 mo</span></div>
+      <div class="guide-item odd"><span class="guide-food">Bacon &amp; deli meat</span><span class="guide-time">1 mo</span></div>
+      <div class="guide-item even"><span class="guide-food">Bread, rolls &amp; muffins</span><span class="guide-time">3 mo</span></div>
+      <div class="guide-item odd"><span class="guide-food">Berries &amp; sliced fruit</span><span class="guide-time">10–12 mo</span></div>
+      <div class="guide-item even"><span class="guide-food">Butter &amp; shredded cheese</span><span class="guide-time">6 mo</span></div>
+    </div>
+  </div>
+
+  <div class="affirmation">Freezer meals are a gift to your future self. A stocked freezer turns a hard day into a warm dinner in minutes.</div>
+
+  <div class="summary-bar">
+    <div class="sum-cell"><span class="sum-label">Meals ready</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Oldest item</span><div class="sum-value"></div></div>
+    <div class="sum-cell"><span class="sum-label">Use up first</span><div class="sum-value"></div></div>
+    <div class="sum-cell highlight"><span class="sum-label">Next prep day</span><div class="sum-value"></div></div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+<!-- ─────────────── PAGE 2 ─────────────── -->
+<div class="page">
+  <svg class="leaf" viewBox="0 0 54 90" fill="none">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">Prep Day &amp; Labels</div>
+      <div class="header-sub">Batch-cook once, then peel, fill, and stick a label on every container.</div>
+    </div>
+    <div class="header-fields">
+      <div class="hf"><div class="hf-label">Prep date</div><div class="hf-line"></div></div>
+      <div class="hf"><div class="hf-label">Meals made</div><div class="hf-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Work top to bottom: plan, shop, cook, cool, then label. Cool food fully before freezing so it keeps its texture.</span>
+    <span class="subheader-tag">Page 2 of 2 · Prep &amp; Labels</span>
+  </div>
+
+  <!-- Prep Day Plan -->
+  <div class="section">
+    <div class="section-header sh-steel">Prep Day Plan <span class="focus">tick each step as you go</span></div>
+    <div class="two-col" style="margin-top:0; gap:0; grid-template-columns:1fr 1fr;">
+      <div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label"><b>Pick 3–5 recipes</b> that freeze well</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label"><b>Shop the sales</b> — buy proteins in bulk</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label"><b>Clear counters,</b> set out containers &amp; bags</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label"><b>Chop &amp; measure</b> all ingredients first</span></div>
+      </div>
+      <div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label"><b>Batch cook</b> — brown, simmer, assemble</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label"><b>Cool completely</b> before packing (30–60 min)</span></div>
+        <div class="check-row odd"><span class="box"></span><span class="check-label"><b>Portion &amp; label,</b> press out air, lay flat</span></div>
+        <div class="check-row even"><span class="box"></span><span class="check-label"><b>Update the inventory</b> on page 1</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Batch Cook Plan -->
+  <div class="section">
+    <div class="section-header sh-taupe">Batch Cook Plan <span class="focus">what you're making &amp; how to serve it</span></div>
+    <div class="batch-labels"><span>Recipe</span><span>Serves</span><span>Freeze As</span><span>Reheat Method</span></div>
+    <div class="batch-row odd"><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span></div>
+    <div class="batch-row even"><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span></div>
+    <div class="batch-row odd"><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span></div>
+    <div class="batch-row even"><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span></div>
+    <div class="batch-row odd"><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span></div>
+    <div class="batch-row even"><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span><span class="batch-line"></span></div>
+  </div>
+
+  <!-- Cut-out label sheet -->
+  <div class="section">
+    <div class="section-header sh-rose">Cut-Out Freezer Labels <span class="focus">fill in, cut along the dashes, tape to each container</span></div>
+    <div class="label-note">Tip: always write the "use by" date, not just the date frozen — it's the number you'll actually read at 5 p.m.</div>
+    <div class="label-grid">
+      <div class="label-card">
+        <div class="label-title">Freezer Meal</div>
+        <div class="label-meal"></div>
+        <div class="label-fields">
+          <div class="lf"><div class="lf-label">Date Frozen</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Use By</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Servings</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Thaw?</div><div class="lf-line"></div></div>
+          <div class="lf full"><div class="lf-label">Reheat / Cook</div><div class="lf-line"></div></div>
+        </div>
+      </div>
+      <div class="label-card">
+        <div class="label-title">Freezer Meal</div>
+        <div class="label-meal"></div>
+        <div class="label-fields">
+          <div class="lf"><div class="lf-label">Date Frozen</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Use By</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Servings</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Thaw?</div><div class="lf-line"></div></div>
+          <div class="lf full"><div class="lf-label">Reheat / Cook</div><div class="lf-line"></div></div>
+        </div>
+      </div>
+      <div class="label-card">
+        <div class="label-title">Freezer Meal</div>
+        <div class="label-meal"></div>
+        <div class="label-fields">
+          <div class="lf"><div class="lf-label">Date Frozen</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Use By</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Servings</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Thaw?</div><div class="lf-line"></div></div>
+          <div class="lf full"><div class="lf-label">Reheat / Cook</div><div class="lf-line"></div></div>
+        </div>
+      </div>
+      <div class="label-card">
+        <div class="label-title">Freezer Meal</div>
+        <div class="label-meal"></div>
+        <div class="label-fields">
+          <div class="lf"><div class="lf-label">Date Frozen</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Use By</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Servings</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Thaw?</div><div class="lf-line"></div></div>
+          <div class="lf full"><div class="lf-label">Reheat / Cook</div><div class="lf-line"></div></div>
+        </div>
+      </div>
+      <div class="label-card">
+        <div class="label-title">Freezer Meal</div>
+        <div class="label-meal"></div>
+        <div class="label-fields">
+          <div class="lf"><div class="lf-label">Date Frozen</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Use By</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Servings</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Thaw?</div><div class="lf-line"></div></div>
+          <div class="lf full"><div class="lf-label">Reheat / Cook</div><div class="lf-line"></div></div>
+        </div>
+      </div>
+      <div class="label-card">
+        <div class="label-title">Freezer Meal</div>
+        <div class="label-meal"></div>
+        <div class="label-fields">
+          <div class="lf"><div class="lf-label">Date Frozen</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Use By</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Servings</div><div class="lf-line"></div></div>
+          <div class="lf"><div class="lf-label">Thaw?</div><div class="lf-line"></div></div>
+          <div class="lf full"><div class="lf-label">Reheat / Cook</div><div class="lf-line"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">paperposy.com</span>
+  </div>
+</div>
+
+</body>
+</html>

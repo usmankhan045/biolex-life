@@ -1,0 +1,218 @@
+{
+  "weekly-cleaning-schedule": {
+    "title": "Weekly Cleaning Schedule — Free Printable",
+    "description": "A realistic weekly cleaning schedule: a 15-minute daily-essentials checklist plus one focus zone per day, Monday through Sunday, with a weekly reset and progress summary. Print on standard letter paper.",
+    "file_url": "/printables/weekly-cleaning-schedule.pdf",
+    "thumbnail_url": "/printables/weekly-cleaning-schedule-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "deep-cleaning-checklist": {
+    "title": "Deep Cleaning Checklist — Free Printable",
+    "description": "A room-by-room deep cleaning checklist for your whole home, with tick-box tasks for the kitchen, bathrooms, bedrooms, and every other room, plus a supplies list and the often-missed spots. Print it out and work through one room at a time for a top-to-bottom house reset.",
+    "file_url": "/printables/deep-cleaning-checklist.pdf",
+    "thumbnail_url": "/printables/deep-cleaning-checklist-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "decluttering-checklist": {
+    "title": "Declutter Your Home Checklist — Free Printable",
+    "description": "A room-by-room decluttering checklist with Keep, Donate, and Toss columns plus twelve 20-minute declutter zones, so you can clear the clutter from your whole home one shelf at a time.",
+    "file_url": "/printables/decluttering-checklist.pdf",
+    "thumbnail_url": "/printables/decluttering-checklist-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "home-organization-binder": {
+    "title": "Home Organization Binder Set — Free Printable",
+    "description": "A free printable home organization binder set with a household information sheet, emergency contacts, important dates, and a monthly zone and chore planner to keep everything your home needs in one tidy place.",
+    "file_url": "/printables/home-organization-binder.pdf",
+    "thumbnail_url": "/printables/home-organization-binder-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "bathroom-organization-labels": {
+    "title": "Bathroom Organization Labels + Zone Plan — Free Printable",
+    "description": "Free printable bathroom organization labels for toiletries, first aid, skincare, and more, plus a small-bathroom zone plan to give every item a home.",
+    "file_url": "/printables/bathroom-organization-labels.pdf",
+    "thumbnail_url": "/printables/bathroom-organization-labels-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "laundry-room-labels": {
+    "title": "Laundry Room Labels + Routine — Free Printable",
+    "description": "A free printable set of laundry room labels for detergent, fabric softener, stain remover and delicates, plus a weekly laundry routine card with a stain quick guide and wash-temperature cheat sheet.",
+    "file_url": "/printables/laundry-room-labels.pdf",
+    "thumbnail_url": "/printables/laundry-room-labels-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "garage-zone-plan": {
+    "title": "Garage Organization Zone Plan — Free Printable",
+    "description": "A free printable garage organization zone plan that maps your garage into six storage zones, plus a declutter-before-you-store checklist, cut-out bin and shelf labels, and a what-goes-where inventory tracker.",
+    "file_url": "/printables/garage-zone-plan.pdf",
+    "thumbnail_url": "/printables/garage-zone-plan-preview.png",
+    "orientation": "landscape",
+    "category": "home-organization"
+  },
+  "bedroom-organization-plan": {
+    "title": "Bedroom Organization Plan — Free Printable",
+    "description": "A free printable bedroom organization plan with zone-by-zone checklists for surfaces, nightstand, closet, drawers, and under-bed storage, plus nightly and weekly reset routines to keep your bedroom tidy for good.",
+    "file_url": "/printables/bedroom-organization-plan.pdf",
+    "thumbnail_url": "/printables/bedroom-organization-plan-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "closet-organization-plan": {
+    "title": "Closet Organization Plan + Labels — Free Printable",
+    "description": "A free printable closet organization plan that maps every zone of your closet, walks you through a keep/donate/toss capsule declutter, and includes cut-out shelf and bin labels plus a weekly reset routine.",
+    "file_url": "/printables/closet-organization-plan.pdf",
+    "thumbnail_url": "/printables/closet-organization-plan-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "pantry-and-kitchen-labels": {
+    "title": "Pantry & Kitchen Labels — Free Printable",
+    "description": "A free printable set of pantry and kitchen labels for jars, bins, and canisters, plus a cabinet zone map to plan where everything goes. Print on sticker paper or cardstock, cut, and stick.",
+    "file_url": "/printables/pantry-and-kitchen-labels.pdf",
+    "thumbnail_url": "/printables/pantry-and-kitchen-labels-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "fridge-organization-labels": {
+    "title": "Fridge Organization Labels + Map — Free Printable",
+    "description": "A free printable fridge organization set with a shelf-by-shelf zone map showing where each food stays freshest, plus cut-out bin labels for dairy, produce, leftovers, meal prep and more. Includes a leftovers tracker so nothing gets forgotten.",
+    "file_url": "/printables/fridge-organization-labels.pdf",
+    "thumbnail_url": "/printables/fridge-organization-labels-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "small-space-storage-plan": {
+    "title": "Small-Space Storage Plan — Free Printable",
+    "description": "A free printable small-space storage plan with a room-by-room storage checklist for every part of a compact home, plus a shelf-by-shelf linen closet zone map to organize towels, sheets, and toiletries.",
+    "file_url": "/printables/small-space-storage-plan.pdf",
+    "thumbnail_url": "/printables/small-space-storage-plan-preview.png",
+    "orientation": "portrait",
+    "category": "home-organization"
+  },
+  "weekly-meal-planner": {
+    "title": "Weekly Meal Planner — Free Printable",
+    "description": "A free printable weekly meal planner with a Monday–Sunday grid for breakfast, lunch, dinner, and snacks, plus a by-aisle grocery list and prep plan so you can plan your meals for the week and shop just once.",
+    "file_url": "/printables/weekly-meal-planner.pdf",
+    "thumbnail_url": "/printables/weekly-meal-planner-preview.png",
+    "orientation": "landscape",
+    "category": "meal-planning"
+  },
+  "grocery-list-template": {
+    "title": "Grocery List Template (By Aisle) — Free Printable",
+    "description": "A free printable grocery list template organized by store aisle — produce, meat, dairy, pantry, frozen, and more — with a price column and budget tracker so you shop faster and spend less.",
+    "file_url": "/printables/grocery-list-template.pdf",
+    "thumbnail_url": "/printables/grocery-list-template-preview.png",
+    "orientation": "portrait",
+    "category": "meal-planning"
+  },
+  "freezer-meal-plan": {
+    "title": "Freezer Meal Plan + Inventory — Free Printable",
+    "description": "A free printable freezer meal plan with a freezer inventory tracker, batch-cook prep-day plan, and cut-out freezer labels so you always know what's inside and use it up before it expires.",
+    "file_url": "/printables/freezer-meal-plan.pdf",
+    "thumbnail_url": "/printables/freezer-meal-plan-preview.png",
+    "orientation": "portrait",
+    "category": "meal-planning"
+  },
+  "pantry-staples-list": {
+    "title": "Pantry Staples Checklist — Free Printable",
+    "description": "A printable pantry staples list that organizes every kitchen essential by category, with a check-the-box and running-low column so you always know exactly what to restock before you shop.",
+    "file_url": "/printables/pantry-staples-list.pdf",
+    "thumbnail_url": "/printables/pantry-staples-list-preview.png",
+    "orientation": "portrait",
+    "category": "meal-planning"
+  },
+  "chore-chart": {
+    "title": "Kids Chore Chart — Free Printable",
+    "description": "A free printable kids chore chart with a weekly grid, reward stars column, and age-appropriate chore suggestions for toddlers through tweens. Print it, pick a few jobs, and let kids track chores and earn stars toward a reward.",
+    "file_url": "/printables/chore-chart.pdf",
+    "thumbnail_url": "/printables/chore-chart-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "preschool-activities-planner": {
+    "title": "Preschool Activities Planner — Free Printable",
+    "description": "A free printable preschool activities planner for learning at home, with a weekly plan organized by skill area plus a no-prep activity idea bank you can check off as you go.",
+    "file_url": "/printables/preschool-activities-planner.pdf",
+    "thumbnail_url": "/printables/preschool-activities-planner-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "preschool-crafts-planner": {
+    "title": "Preschool Crafts Idea Planner — Free Printable",
+    "description": "A free printable preschool crafts planner with seasonal craft ideas, a craft supply checklist, and a weekly craft planner to organize easy at-home crafts for kids.",
+    "file_url": "/printables/preschool-crafts-planner.pdf",
+    "thumbnail_url": "/printables/preschool-crafts-planner-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "fine-motor-activities-checklist": {
+    "title": "Fine Motor Activities Checklist — Free Printable",
+    "description": "A free printable fine motor activities checklist with age-by-age play ideas for babies through kindergarten, plus a weekly practice tracker to check off pinching, cutting, drawing, threading, and self-care skills.",
+    "file_url": "/printables/fine-motor-activities-checklist.pdf",
+    "thumbnail_url": "/printables/fine-motor-activities-checklist-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "handwriting-worksheet": {
+    "title": "Preschool Handwriting & Numbers Worksheet — Free Printable",
+    "description": "A free printable preschool handwriting worksheet with dotted guide lines for tracing uppercase and lowercase letters, numbers 1-10, and first words, plus warm-up strokes and count-and-write practice.",
+    "file_url": "/printables/handwriting-worksheet.pdf",
+    "thumbnail_url": "/printables/handwriting-worksheet-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "classroom-labels": {
+    "title": "Classroom Labels & Signs — Free Printable",
+    "description": "A set of printable classroom labels with matching picture-and-word supply bin tags, learning-center signs, and rotating job chart tags. Just print, cut, and stick to set up a calm, self-running room in minutes.",
+    "file_url": "/printables/classroom-labels.pdf",
+    "thumbnail_url": "/printables/classroom-labels-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "printable-calendar": {
+    "title": "Undated Monthly Calendar — Free Printable",
+    "description": "A free printable undated monthly calendar you can use for any month or year, with a goals and notes sidebar plus a habit tracker and monthly planning page.",
+    "file_url": "/printables/printable-calendar.pdf",
+    "thumbnail_url": "/printables/printable-calendar-preview.png",
+    "orientation": "landscape",
+    "category": "kids-printables"
+  },
+  "printable-labels": {
+    "title": "Printable Labels (Blank + Home) — Free Printable",
+    "description": "A versatile set of free printable labels for organizing your home, with a sheet of blank write-on labels, round jar and gift tags, basket spine labels, and ready-made pantry, bathroom, and laundry labels. Just print, cut, and stick.",
+    "file_url": "/printables/printable-labels.pdf",
+    "thumbnail_url": "/printables/printable-labels-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "party-invitations-template": {
+    "title": "Fill-in Party Invitation Template — Free Printable",
+    "description": "A fill-in-the-blank party invitation template with eight print-at-home cards — four birthday and celebration invites plus four baby shower invitations. Just write in the details, cut along the dashed lines, and hand them out.",
+    "file_url": "/printables/party-invitations-template.pdf",
+    "thumbnail_url": "/printables/party-invitations-template-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "kids-scavenger-hunt": {
+    "title": "Kids Scavenger Hunt & Bingo — Free Printable",
+    "description": "A free printable kids scavenger hunt with indoor, outdoor, and nature walk lists plus a 5x5 activity bingo card — perfect for a screen-free rainy day or backyard adventure.",
+    "file_url": "/printables/kids-scavenger-hunt.pdf",
+    "thumbnail_url": "/printables/kids-scavenger-hunt-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  },
+  "bible-study-printable": {
+    "title": "Simple Bible Study Worksheet — Free Printable",
+    "description": "A simple, printable Bible study worksheet that walks you through reading, observing, applying, and praying over one passage at a time. Includes a weekly reading plan, prayer list, memory-verse space, and gratitude prompts to keep your quiet time consistent.",
+    "file_url": "/printables/bible-study-printable.pdf",
+    "thumbnail_url": "/printables/bible-study-printable-preview.png",
+    "orientation": "portrait",
+    "category": "kids-printables"
+  }
+}
