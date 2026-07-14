@@ -45,8 +45,8 @@ Flipping this to `false` automatically:
 - hides the printables CTAs on the homepage
 - drops printables URLs from `sitemap.xml`
 
-No routes or components need to be deleted. SpendWiseCents keeps
-`printables: true`; nothing about it changes.
+No routes or components need to be deleted. A blog+printables site keeps
+`printables: true`; a blog-only site sets it to `false`.
 
 ---
 
@@ -81,8 +81,8 @@ across the whole site):
 - `domain`, `name`, `tagline`, `niche`
 - `features.printables` — `false` for a blog-only site
 - `contact.email`, `contact.privacyEmail`
-- `legal.lastUpdated`, `legal.disclaimer` (the footer/legal one-liner — swap the
-  finance wording for your niche)
+- `legal.lastUpdated`, `legal.disclaimer` (the footer/legal one-liner — set the
+  wording for your niche)
 - `brand.monogram` (2-letter mark), `brand.foundedYear`
 - `theme.colors` / `theme.fonts` / `theme.radius` — restyles the entire site
 - `nav`, `footerLinks`, `social`
@@ -92,7 +92,7 @@ across the whole site):
 
 ### 3. Set env vars — copy `.env.local.example` → `.env.local`
 The `SUPABASE_*`, `ADMIN_API_TOKEN`, and `REVALIDATION_SECRET` values are the
-**same** as SpendWiseCents (shared project). See `.env.local.example` for which
+**same** across every site (shared project). See `.env.local.example` for which
 vars are shared vs per-site.
 
 ### 4. Register the site + categories in the DB
@@ -103,12 +103,13 @@ should drop the `printables` category row.
 
 ### 5. Review the per-site content pages
 These pages carry brand tokens from config automatically (name/domain/emails/
-disclaimer), but their **prose is still SpendWiseCents placeholder copy**.
+disclaimer), but their **prose is still generic placeholder copy**.
 Rewrite the narrative for your niche:
 - `app/page.tsx` — homepage hero, value props, about teaser
 - `app/about/page.tsx` — the "Our story" section (or seed an `about` page row)
-- `app/disclaimer/page.tsx` — **finance-specific sections** (Financial /
-  Earnings / Affiliate disclaimers). Edit or remove for a non-finance niche.
+- `app/disclaimer/page.tsx` — the disclaimer sections. Edit, add, or remove
+  sections to match your niche (e.g. add a Financial/Earnings disclaimer only if
+  your site gives financial or income-related guidance).
 - `app/privacy-policy/page.tsx` / `app/terms-of-use/page.tsx` — the third-party
   services list (Google AdSense, etc.) and any niche wording
 
@@ -141,8 +142,8 @@ the custom domain. Update the `deploy_url` in the site's DB row if needed.
 - [ ] Theme colors/fonts set; site visually rebranded
 - [ ] `contact.email` / `contact.privacyEmail` are real, monitored inboxes
 - [ ] `legal.disclaimer` reworded for the niche
-- [ ] Homepage + About prose rewritten (not SpendWiseCents copy)
-- [ ] Legal pages reviewed for the niche (esp. `disclaimer` finance sections)
+- [ ] Homepage + About prose rewritten (not placeholder copy)
+- [ ] Legal pages reviewed for the niche (esp. the `disclaimer` sections)
 - [ ] `audienceSegments` set or emptied
 - [ ] `.env.local` filled; Vercel env vars set
 - [ ] DB seeded (site row + categories); verified with the queries at the bottom

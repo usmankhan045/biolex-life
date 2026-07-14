@@ -22,17 +22,17 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "SpendWiseCents: Budgeting That Fits Your Real Life",
+    absolute: `${siteConfig.name}: Guides, Tips, and Free Resources`,
   },
   description:
-    "Practical budgeting guides for single moms, families, college students, first-job earners, and anyone managing money on a real income. No hustle culture. No guilt. Real systems that work.",
+    "Practical guides and free resources to help you learn, plan, and make progress on the topics that matter to you. Clear, useful, and free to read.",
   alternates: { canonical: "/" },
   openGraph: {
     url: "/",
     type: "website",
-    title: "SpendWiseCents: Budgeting That Fits Your Real Life",
+    title: `${siteConfig.name}: Guides, Tips, and Free Resources`,
     description:
-      "Practical budgeting guides for single moms, families, college students, and first-job earners. Real systems for real life.",
+      "Practical guides and free resources on the topics that matter to you. Clear, useful, and free to read.",
     images: ogImages(),
   },
   twitter: twitterImages(),
@@ -45,113 +45,112 @@ export const metadata: Metadata = {
 const PLACEHOLDER_POSTS: Post[] = [
   {
     id: "ph-1",
-    slug: "zero-based-budgeting-beginners",
-    title: "Zero-Based Budgeting: Give Every Dollar a Job (Even the Scary Ones)",
+    slug: "getting-started-guide",
+    title: "Getting Started: A Simple First-Step Guide for Beginners",
     excerpt:
-      "Zero-based budgeting means your income minus your expenses equals zero, not because you spend everything, but because every dollar has a plan. Here's how to start in one afternoon.",
+      "New to the topic and not sure where to begin? This guide walks you through the essentials in plain language, so you can take a confident first step today.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
-    audience_tags: ["families", "first-job", "low-income"],
+    audience_tags: [],
     published_at: "2026-01-15T00:00:00Z",
     created_at: "2026-01-15T00:00:00Z",
     updated_at: "2026-01-15T00:00:00Z",
-    categories: { slug: "budgeting-basics", name: "Budgeting Basics" },
+    categories: { slug: "getting-started", name: "Getting Started" },
   },
   {
     id: "ph-2",
-    slug: "single-mom-budget-guide",
-    title: "The Single Mom Budget Guide: More With Less (And Feeling Okay About It)",
+    slug: "common-beginner-mistakes",
+    title: "5 Common Beginner Mistakes (and How to Avoid Them)",
     excerpt:
-      "Managing money on one income with kids depending on you is genuinely hard. This isn't a 'just cut your lattes' guide. It's a real plan for a real situation.",
+      "Everyone makes a few early missteps. Here are the most common ones, why they happen, and simple ways to steer clear so you can keep making progress.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
-    audience_tags: ["single-mom", "low-income"],
+    audience_tags: [],
     published_at: "2026-01-22T00:00:00Z",
     created_at: "2026-01-22T00:00:00Z",
     updated_at: "2026-01-22T00:00:00Z",
-    categories: { slug: "single-mom-money", name: "Single Mom Money" },
+    categories: { slug: "tips", name: "Tips & Guides" },
   },
   {
     id: "ph-3",
-    slug: "first-paycheck-what-to-do",
-    title: "Just Got Paid? Here's Exactly What to Do With Your First Paycheck",
+    slug: "essential-tools-and-resources",
+    title: "Essential Tools and Resources for Getting Things Done",
     excerpt:
-      "Your first real paycheck is both a milestone and a decision point. Here's a simple plan for the first 24 hours after it lands, so future-you says thank you.",
+      "A short, practical roundup of the tools and resources worth knowing about. No fluff, just the ones that actually help you get started and stay organized.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
-    audience_tags: ["first-job", "college-student"],
+    audience_tags: [],
     published_at: "2026-02-01T00:00:00Z",
     created_at: "2026-02-01T00:00:00Z",
     updated_at: "2026-02-01T00:00:00Z",
-    categories: { slug: "first-job-finance", name: "First Job Finance" },
+    categories: { slug: "resources", name: "Resources" },
   },
   {
     id: "ph-4",
-    slug: "couples-budget-without-fighting",
-    title: "How to Budget as a Couple Without Fighting About Money",
+    slug: "how-to-stay-consistent",
+    title: "How to Stay Consistent When Motivation Fades",
     excerpt:
-      "Money fights are rarely about money. But a shared system removes most of the friction. Here's how two people build one budget that actually holds.",
+      "Motivation comes and goes. A simple system keeps you moving anyway. Here's how to build routines that hold up on the days you don't feel like it.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
-    audience_tags: ["couples", "families"],
+    audience_tags: [],
     published_at: "2026-02-10T00:00:00Z",
     created_at: "2026-02-10T00:00:00Z",
     updated_at: "2026-02-10T00:00:00Z",
-    categories: { slug: "couples-money", name: "Couples & Money" },
+    categories: { slug: "how-to", name: "How-To" },
   },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
 // § Hero artifact — the signature element
 //
-// A real zero-based budget worksheet, rendered in HTML. It does the one job a
-// hero must do here: show a first-time visitor *exactly* what this site is —
-// budgeting worksheets where every dollar gets assigned down to a $0 balance.
-// The faint offset sheet behind it nods to "print as many copies as you need."
+// A simple content-preview card, rendered in HTML. It does the one job a hero
+// must do here: show a first-time visitor at a glance what this site offers —
+// a growing library of clear, practical guides they can browse and read. The
+// faint offset sheet behind it hints at "there's plenty more to explore."
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Category dot colors borrowed from the printable envelope palette — each row
-// reads like an assigned spending category, not an abstract line item.
-const LEDGER_ROWS: { label: string; amount: string; dot: string }[] = [
-  { label: "Income",      amount: "3,000", dot: "#3D8C74" },
-  { label: "Rent",        amount: "1,100", dot: "#6B8FAE" },
-  { label: "Groceries",   amount: "480",   dot: "#A89080" },
-  { label: "Utilities",   amount: "210",   dot: "#8B7BA0" },
-  { label: "Savings",     amount: "300",   dot: "#C4826E" },
-  { label: "Debt payoff", amount: "250",   dot: "#C8943A" },
+// Neutral accent dots per row — each row reads like a topic in the library.
+const PREVIEW_ROWS: { label: string; meta: string; dot: string }[] = [
+  { label: "Getting Started",  meta: "5 min", dot: "#3F9D6C" },
+  { label: "Core Concepts",    meta: "8 min", dot: "#6B8FAE" },
+  { label: "Step-by-Step",     meta: "6 min", dot: "#A89080" },
+  { label: "Common Questions", meta: "4 min", dot: "#8B7BA0" },
+  { label: "Templates",        meta: "3 min", dot: "#C4826E" },
+  { label: "Next Steps",       meta: "7 min", dot: "#E08A3C" },
 ];
 
-function BudgetLedgerCard() {
+function FeaturedContentCard() {
   return (
     <div className="relative w-full max-w-sm mx-auto lg:mx-0">
-      {/* Second sheet, peeking out behind — "free to print, again and again" */}
+      {/* Second sheet, peeking out behind — "there's more to explore" */}
       <div
         aria-hidden
         className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl bg-white/70 border border-black/[0.06] shadow-sm rotate-[2deg]"
       />
 
-      {/* Worksheet */}
+      {/* Preview */}
       <div className="relative rounded-2xl bg-white border border-black/[0.08] shadow-xl shadow-primary/10 overflow-hidden">
         {/* Header strip */}
         <div className="bg-primary px-5 py-3.5 flex items-center justify-between">
           <div>
             <p className="font-display text-white font-semibold text-base leading-none">
-              Monthly Budget
+              Latest Guides
             </p>
-            <p className="stamp text-white/60 mt-1.5">Zero-Based Worksheet</p>
+            <p className="stamp text-white/60 mt-1.5">From the blog</p>
           </div>
           <span className="stamp text-white/90 border border-white/40 rounded-[3px] px-2 py-[3px]">
-            June
+            New
           </span>
         </div>
 
         {/* Line items */}
         <div className="divide-y divide-black/[0.05]">
-          {LEDGER_ROWS.map((row, i) => (
+          {PREVIEW_ROWS.map((row, i) => (
             <div
               key={row.label}
               className={cn(
@@ -168,28 +167,27 @@ function BudgetLedgerCard() {
                 <span
                   className={cn(
                     "text-sm text-text",
-                    row.label === "Income" && "font-semibold"
+                    row.label === "Getting Started" && "font-semibold"
                   )}
                 >
                   {row.label}
                 </span>
               </span>
-              <span className="font-mono text-sm text-text tabular-nums">
-                <span className="text-muted">$</span>
-                {row.amount}
+              <span className="font-mono text-sm text-muted tabular-nums">
+                {row.meta}
               </span>
             </div>
           ))}
         </div>
 
-        {/* Balance — the payoff of the whole method */}
+        {/* Footer highlight — the invitation to start */}
         <div className="bg-success/[0.1] border-t-2 border-success/30 px-5 py-3.5 flex items-center justify-between">
           <div>
-            <p className="stamp text-success leading-none">Left to assign</p>
-            <p className="text-xs text-muted mt-1.5">Every dollar has a job</p>
+            <p className="stamp text-success leading-none">Start reading</p>
+            <p className="text-xs text-muted mt-1.5">New guides added regularly</p>
           </div>
           <span className="font-display text-2xl font-bold text-success tabular-nums">
-            $0
+            →
           </span>
         </div>
       </div>
@@ -198,24 +196,24 @@ function BudgetLedgerCard() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// § "What you get" — three plain-language promises, with ledger-paper icons.
+// § "What you get" — three plain-language promises, with simple line icons.
 //   This is the first-sight clarity layer, directly under the hero.
 // ─────────────────────────────────────────────────────────────────────────────
 const VALUE_PROPS: { icon: "guide" | "printable" | "note"; title: string; body: string }[] = [
   {
     icon: "guide",
     title: "Step-by-step guides",
-    body: "Real walkthroughs written for your exact situation: single mom, one income, or first paycheck. Never generic advice.",
+    body: "Clear, practical walkthroughs written for real situations, so you can follow along and get results. Never generic filler.",
   },
   {
     icon: "printable",
     title: "Free printables",
-    body: "Zero-based budget templates, savings trackers, and debt planners. Download, print, and fill them in by hand.",
+    body: "Templates, checklists, and worksheets. Download, print, and fill them in by hand whenever you need them.",
   },
   {
     icon: "note",
     title: "Free, no signup",
-    body: "Every guide and printable is free to read and download. No account, no paywall, no catch, no guilt.",
+    body: "Every guide and printable is free to read and download. No account, no paywall, no catch.",
   },
 ];
 
@@ -365,8 +363,8 @@ export default async function HomePage() {
       {/* ══════════════════════════════════════════════════════════════════
           § HERO — the page's thesis.
           A first-time visitor learns three things instantly: what this is
-          (a budgeting worksheet), who it's for (real, tight budgets), and
-          what to do next (read guides / get printables).
+          (a library of clear guides), who it's for (anyone getting started),
+          and what to do next (read guides / get printables).
       ══════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden bg-gradient-to-b from-primary/[0.06] via-primary/[0.02] to-background"
@@ -379,23 +377,22 @@ export default async function HomePage() {
             <div className="min-w-0 max-w-xl">
               <p className="stamp text-primary mb-5 flex items-center gap-2">
                 <span className="h-px w-6 bg-primary/40" aria-hidden />
-                Free budgeting guides &amp; printables
+                Free guides &amp; printables
               </p>
 
               <h1
                 id="hero-heading"
                 className="font-display text-4xl sm:text-5xl lg:text-[3.1rem] font-bold text-text leading-[1.05] tracking-tight text-balance"
               >
-                Give every dollar a job,{" "}
-                <em className="not-italic text-primary">before</em> the month spends it
-                for you.
+                Make real progress,{" "}
+                <em className="not-italic text-primary">one clear step</em> at a
+                time.
               </h1>
 
               <p className="mt-5 text-lg text-muted leading-relaxed max-w-lg">
-                SpendWiseCents turns a tight paycheck into a plan you can actually keep.
-                Step-by-step guides and free printable worksheets, built for single
-                moms, families, students, and anyone starting over. No guilt. No hustle
-                culture.
+                {siteConfig.name} turns big topics into simple, doable steps.
+                Step-by-step guides and free printable worksheets, built for
+                beginners and anyone starting over. No fluff. No overwhelm.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
@@ -424,7 +421,7 @@ export default async function HomePage() {
 
             {/* Right, the artifact */}
             <div className="min-w-0 w-full lg:w-[22rem]">
-              <BudgetLedgerCard />
+              <FeaturedContentCard />
             </div>
           </div>
         </Container>
@@ -541,8 +538,8 @@ export default async function HomePage() {
         <section className="py-12 sm:py-16" aria-label="Free printable">
           <Container width="narrow">
             <PrintableCallout
-              title="Free Monthly Budget Printable: Zero-Based Template"
-              description="A single-page worksheet to give every dollar a job before the month starts. Print it, fill it in, and know exactly where you stand. Works for any income level."
+              title="Free Starter Printable: Simple One-Page Template"
+              description="A single-page worksheet to help you plan, track, and stay organized. Print it, fill it in, and put it to work today. Free to download, no sign-up."
               href="/free-printables"
               badge="Free Printable"
             />
@@ -574,9 +571,9 @@ export default async function HomePage() {
             </div>
 
             <blockquote className="font-display text-xl sm:text-2xl font-medium text-text leading-relaxed mb-6 max-w-lg mx-auto">
-              &ldquo;Most money advice is written for people who already have margin to
-              spare. I built {siteConfig.name} for everyone else, with practical guides and
-              free tools for real budgets and real life.&rdquo;
+              &ldquo;Most guides assume you already know where to start. I built{" "}
+              {siteConfig.name} for everyone else, with clear, practical guides and
+              free tools for real life.&rdquo;
             </blockquote>
 
             <p

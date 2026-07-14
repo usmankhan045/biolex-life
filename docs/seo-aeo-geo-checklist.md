@@ -8,9 +8,9 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 
 ### Metadata (every page)
 
-- [x] Title template `%s | SpendWiseCents` via root layout metadata
+- [x] Title template `%s | My Site` (from `siteConfig.name`) via root layout metadata
 - [x] Default `description` from `siteConfig.tagline`
-- [x] `metadataBase` set to `https://spendwisecents.com` for absolute URL resolution
+- [x] `metadataBase` set to `https://www.example.com` (from `siteConfig.domain`) for absolute URL resolution
 - [x] Canonical `alternates.canonical` on every page (layout default `/`, overridden per route)
 - [x] OpenGraph `siteName`, `type`, `locale`, default `og:image` (`/og-default.jpg`)
 - [x] Twitter card `summary_large_image` default with fallback image
@@ -59,9 +59,9 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 ### Search Console & Bing Webmaster
 
 1. **Google Search Console**
-   - Add property for `spendwisecents.com`
+   - Add property for `www.example.com`
    - Verify via DNS TXT record or HTML file in `/public/`
-   - Submit `https://spendwisecents.com/sitemap.xml`
+   - Submit `https://www.example.com/sitemap.xml`
    - Monitor Core Web Vitals report after launch
 
 2. **Bing Webmaster Tools**
@@ -80,8 +80,8 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 ### OG Default Image
 
 - Create `/public/og-default.jpg` at **1200×630px**
-- Design: site name, tagline, brand colors (primary `#2A5C55`, accent `#C8943A`, background `#F5F4F0`)
-- Use Fraunces for the title, Public Sans for the tagline
+- Design: site name, tagline, brand colors (use your `siteConfig.theme.colors` — primary, accent, background)
+- Use the display font for the title, the body font for the tagline (from `siteConfig.theme.fonts`)
 - This image appears in social shares for any page without a post-specific featured image
 
 ### Per-post OG Images
@@ -91,10 +91,10 @@ Status as of 2026-06-14. AEO (Answer Engine Optimisation) and GEO (Generative En
 
 ### Twitter/X Account
 
-- Create `@spendwisecents` on X (if not already done)
+- Create your site's account on X (if not already done)
 - Add to `siteConfig.social` and update the Twitter card metadata:
   ```ts
-  twitter: { card: "summary_large_image", creator: "@spendwisecents" }
+  twitter: { card: "summary_large_image", creator: "@your_handle" }
   ```
 
 ### Core Web Vitals
@@ -105,7 +105,7 @@ Run Lighthouse after deploying to Vercel:
 npm install -g lighthouse
 
 # Run against production URL
-lighthouse https://spendwisecents.com --output=html --output-path=lighthouse-report.html
+lighthouse https://www.example.com --output=html --output-path=lighthouse-report.html
 ```
 
 Target scores: **Performance ≥ 90, Accessibility ≥ 95, Best Practices = 100, SEO = 100**

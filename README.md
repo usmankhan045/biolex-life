@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Multi-Site Content Template
+
+A reusable, multi-tenant blog + printables starter built with
+[Next.js](https://nextjs.org) (App Router). One shared Supabase database and
+admin API power many independent sites; each site supplies its own theme,
+identity, and content.
+
+**Stack:** Next.js 16 · Tailwind CSS 4 · Supabase (PostgreSQL) · WeasyPrint
+(HTML → PDF for printable downloads).
 
 > **Building a new site from this template?** This repo is a multi-site
 > template (shared Supabase DB + admin API; per-site theme, content, and a
@@ -6,9 +14,24 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 > **[docs/NEW_SITE_GUIDE.md](docs/NEW_SITE_GUIDE.md)** for the full spin-up
 > runbook, and `docs/templates/new-site-seed.sql` for the DB seed.
 
+## What's in the box
+
+- **Blog engine** — posts, categories, audience-segment hub pages, FAQ schema,
+  and answer-first content fields (`quick_answer`, `faq_items`).
+- **Optional printables** — WeasyPrint-generated PDF worksheets, gated behind a
+  per-site `features.printables` flag.
+- **Admin API** — bearer-token CRUD for posts, pages, categories, printables,
+  media uploads, and subscribers across every site. See
+  [docs/admin-api.md](docs/admin-api.md).
+- **Per-site config** — brand, theme, nav, and audience segments all live in
+  `lib/site.config.ts`; nothing site-specific is hardcoded in components.
+- **SEO / AEO / GEO** — metadata, JSON-LD, sitemap, robots, and `llms.txt`
+  wired up out of the box. See [docs/seo-aeo-geo-checklist.md](docs/seo-aeo-geo-checklist.md).
+
 ## Getting Started
 
-First, run the development server:
+First, copy `.env.local.example` to `.env.local` and fill in the Supabase and
+admin credentials. Then run the development server:
 
 ```bash
 npm run dev
@@ -24,7 +47,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key docs
+
+- [docs/NEW_SITE_GUIDE.md](docs/NEW_SITE_GUIDE.md) — spin up a new site from this template.
+- [docs/admin-api.md](docs/admin-api.md) — admin API reference.
+- [docs/content-guidelines.md](docs/content-guidelines.md) — content and writing standards.
+- [docs/seo-aeo-geo-checklist.md](docs/seo-aeo-geo-checklist.md) — SEO/AEO/GEO checklist.
 
 ## Learn More
 
@@ -32,8 +60,6 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 

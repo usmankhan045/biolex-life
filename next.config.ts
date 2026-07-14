@@ -35,6 +35,11 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
+    // Allow same-origin SVG placeholders (e.g. /author.svg) to render through
+    // next/image. Served as attachments with a locked-down CSP for safety.
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: "https",

@@ -17,12 +17,12 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Free Printables",
   description:
-    "Free budget worksheets, savings trackers, and debt payoff planners, download and print instantly. No sign-up or email required.",
+    "Free worksheets, checklists, and templates, download and print instantly. No sign-up or email required.",
   alternates: { canonical: "/free-printables" },
   openGraph: {
-    title: "Free Budget Printables",
+    title: "Free Printables",
     description:
-      "Free budget worksheets, savings trackers, and debt payoff planners, download and print instantly.",
+      "Free worksheets, checklists, and templates, download and print instantly.",
     url: "/free-printables",
     type: "website",
     images: ogImages(),
@@ -144,9 +144,9 @@ export default async function FreePrintablesPage() {
     <main className="flex-1">
       <JsonLd data={[
         collectionPageSchema({
-          name: "Free Budget Printables",
+          name: "Free Printables",
           description:
-            "Free budget worksheets, savings trackers, and debt payoff planners — download and print instantly.",
+            "Free worksheets, checklists, and templates — download and print instantly.",
           slug: "free-printables",
         }),
         breadcrumbSchema([
@@ -167,11 +167,11 @@ export default async function FreePrintablesPage() {
             id="printables-heading"
             className="font-display text-4xl sm:text-5xl font-bold text-text leading-tight mb-5"
           >
-            Free Budget Printables
+            Free Printables
           </h1>
           <p className="text-lg text-muted leading-relaxed max-w-xl">
-            Worksheets, trackers, and planners designed to make budgeting tangible.
-            Print them, fill them in, and know exactly where your money is going.
+            Worksheets, checklists, and templates designed to make things tangible.
+            Print them, fill them in, and put them to work.
             All free, download instantly, no sign-up required.
           </p>
         </Container>
@@ -186,7 +186,7 @@ export default async function FreePrintablesPage() {
                 Printables coming soon
               </p>
               <p className="text-muted text-sm max-w-sm mx-auto leading-relaxed">
-                We&rsquo;re finishing up a set of budget worksheets and trackers.
+                We&rsquo;re finishing up a set of worksheets and templates.
                 Check back soon, they&rsquo;ll be free to download.
               </p>
             </div>

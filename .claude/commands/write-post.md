@@ -1,6 +1,6 @@
 # Write Blog Post
 
-Write and publish a new SpendWiseCents blog post. Pass the post number (01–10) or a custom brief.
+Write and publish a new blog post for this site. Pass the post number (01–10) or a custom brief.
 
 ## How to use
 
@@ -72,10 +72,10 @@ print('thumbnail ok', pages[0].size)
 "
 ```
 
-Then insert into Supabase (project_id: ruucexzgebbehjcrinhj):
+Then insert into Supabase (use your Supabase project ref):
 ```sql
 INSERT INTO printables (site_id, slug, title, description, file_url, thumbnail_url, category_id, orientation)
-VALUES ('f7998f95-ac2c-4188-8202-418c91572a45', '<slug>', '<title>', '<description>', '/printables/<slug>.pdf', '/printables/<slug>-preview.png', '<category_id>', '<portrait|landscape>')
+VALUES ('<YOUR_SITE_ID>', '<slug>', '<title>', '<description>', '/printables/<slug>.pdf', '/printables/<slug>-preview.png', '<category_id>', '<portrait|landscape>')
 ON CONFLICT (site_id, slug) DO NOTHING;
 ```
 
@@ -93,7 +93,7 @@ Skip everything in this section entirely.
 ```sql
 DO $$ BEGIN
 INSERT INTO posts (site_id, slug, title, excerpt, content, quick_answer, category_id, audience_tags, status, seo_title, seo_description, faq_items, published_at)
-VALUES ('f7998f95-ac2c-4188-8202-418c91572a45', '<slug>', '<title>', '<excerpt>', $BODY$<markdown>$BODY$, '<quick_answer>', '<cat_id>', ARRAY['<tags>'], 'published', '<seo_title>', '<seo_desc>', '<faq_json>'::jsonb, NOW())
+VALUES ('<YOUR_SITE_ID>', '<slug>', '<title>', '<excerpt>', $BODY$<markdown>$BODY$, '<quick_answer>', '<cat_id>', ARRAY['<tags>'], 'published', '<seo_title>', '<seo_desc>', '<faq_json>'::jsonb, NOW())
 ON CONFLICT (site_id, slug) DO NOTHING;
 END $$;
 ```

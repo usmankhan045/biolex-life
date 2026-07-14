@@ -1,39 +1,40 @@
 export const siteConfig = {
-  slug: "spendwisecents",
+  slug: "my-site",
   // Canonical host. MUST match the host the deployment actually serves with a
   // 200 (Vercel redirects the apex → www), so canonical tags, sitemap <loc>,
   // og:url and robots Host/Sitemap all agree with production.
-  domain: "www.spendwisecents.com",
+  domain: "www.example.com",
   // Known site_id for this tenant. Used as a resilient fallback if the runtime
   // `sites` table lookup is unavailable (e.g. build-time prerender). See
   // getCurrentSiteId() in lib/supabase.ts.
-  siteId: "f7998f95-ac2c-4188-8202-418c91572a45",
-  name: "SpendWiseCents",
-  tagline: "Budgeting that fits your real life",
-  niche: "Personal finance & budgeting for women",
+  //
+  // PLACEHOLDER — set this to the real UUID you get back when you seed the
+  // site's `sites` row in Supabase (see docs/NEW_SITE_GUIDE.md).
+  siteId: "00000000-0000-0000-0000-000000000000",
+  name: "My Site",
+  tagline: "A short, memorable tagline goes here",
+  niche: "Your niche or topic",
 
   // ── AUTHORSHIP / E-E-A-T ─────────────────────────────────────────────────
-  // A named, real person behind the money advice — required for YMYL trust and
+  // A named, real person behind the content — required for trust and
   // AI-citation entity resolution. Surfaced as a byline on posts, an author bio
   // on the About page, and Person schema (author/publisher) in JSON-LD.
   author: {
-    name: "Muhammad Usman",
-    slug: "muhammad-usman",
+    name: "Author Name",
+    slug: "author-name",
     role: "Founder & Editor",
-    // Real author headshot (public/author-muhammad-usman.jpg). Rendered in the
-    // author box, author page, About page, homepage, and Person schema.
-    photo: "/author-muhammad-usman.jpg",
-    // Real external profiles for the author — drives Person `sameAs` (the biggest
-    // AI-citation / entity-resolution signal). Add more real profiles here.
-    sameAs: [
-      "https://www.linkedin.com/in/muhammadusman80/",
-    ] as readonly string[],
+    // Author headshot (public/author.svg is a neutral placeholder). Replace with
+    // a real photo (e.g. public/author.jpg) before launch and update this path.
+    photo: "/author.svg",
+    // Real external profiles for the author — drives Person `sameAs` (a strong
+    // AI-citation / entity-resolution signal). Add real profiles here.
+    sameAs: [] as readonly string[],
     // Relative URL to the author's on-site profile page (author archive).
-    url: "/author/muhammad-usman",
+    url: "/author/author-name",
     shortBio:
-      "Muhammad Usman is the founder and editor of SpendWiseCents. He started the site to make practical, judgment-free budgeting help freely available to people managing money on tight or irregular incomes.",
+      "One or two sentences introducing the author and why they started this site.",
     longBio:
-      "Muhammad Usman founded SpendWiseCents to make practical, judgment-free budgeting help freely available to people managing money on tight or irregular incomes. He researches every guide against real, constrained budgets — not aspirational ones — and edits the site's printables and articles. He is not a licensed financial advisor; the site shares educational information, not personalized financial advice.",
+      "A longer author bio for the About page and Person schema. Describe the author's background, why the site exists, and who it is for.",
   },
 
   // ── FEATURE FLAGS ────────────────────────────────────────────────────────
@@ -48,33 +49,34 @@ export const siteConfig = {
   // Surfaced in the legal pages, footer, and about page. Set these per site so
   // the boilerplate legal copy carries the right brand, domain, and emails.
   contact: {
-    email: "contact@spendwisecents.com",       // general / terms contact
-    privacyEmail: "privacy@spendwisecents.com", // privacy + data requests
+    email: "contact@example.com",       // general / terms contact
+    privacyEmail: "privacy@example.com", // privacy + data requests
   },
   legal: {
-    lastUpdated: "June 13, 2026", // shown at the top of each legal page
+    lastUpdated: "July 14, 2026", // shown at the top of each legal page
     // One-line disclaimer in the footer bottom bar. Swap for your niche.
     disclaimer:
-      "This site does not provide financial advice. Always consult a qualified professional.",
+      "This site is for general informational purposes only.",
   },
   brand: {
-    monogram: "SW",   // 2-letter mark used in avatar / quote blocks
+    monogram: "MS",   // 2-letter mark used in avatar / quote blocks
     foundedYear: 2026, // used in the footer copyright line
   },
 
   theme: {
     colors: {
-      primary:    "#2A5C55", // Ledger Teal — old ledger cloth binding; calm, capable
-      accent:     "#C8943A", // Ink Amber — rubber-stamp ochre; not terracotta
-      background: "#F5F4F0", // Bond Paper — mineral paper-white; not the AI-default cream
-      text:       "#1C2421", // Ledger Ink — near-black with green undertone
-      muted:      "#7B8C88", // Ruled Line — teal-touched gray; like accounting paper rules
-      success:    "#3D8C74", // Balance Green — positive states, completed budgets
+      primary:    "#2F4858", // deep slate — nav, buttons, primary accents
+      accent:     "#E08A3C", // warm amber — highlights
+      background: "#FAFAF8", // near-white page background
+      text:       "#1A1F24", // near-black body text
+      muted:      "#6B7680", // secondary text, rules
+      success:    "#3F9D6C", // positive states
     },
     fonts: {
-      display: "Fraunces",      // warm-editorial variable serif; vintage without being corporate
-      body:    "Public Sans",   // legible, lightly institutional; right for a finance context
-      mono:    "IBM Plex Mono", // typewriter-meets-ledger; numbers, stamps, tags
+      // Any font swapped here must also be wired up in lib/fonts.ts (FONT_MAP).
+      display: "Fraunces",      // warm-editorial variable serif
+      body:    "Public Sans",   // legible, neutral sans
+      mono:    "IBM Plex Mono", // numbers, stamps, tags
     },
     radius: "0.75rem",
   },
@@ -96,70 +98,29 @@ export const siteConfig = {
     { label: "Terms of Use", href: "/terms-of-use" },
   ],
 
-  social: {
-    pinterest: "https://pinterest.com/spendwisecents",
-  },
+  // Social profile URLs — add the ones this site actually has, e.g.
+  // { pinterest: "https://pinterest.com/yourhandle" }.
+  social: {} as Record<string, string>,
 
   // Reader testimonials — shown on the homepage when non-empty. IMPORTANT: only
-  // add REAL reader quotes here. Fabricated reviews on a financial site mislead
-  // visitors and violate Google's guidelines. Format below; fill with genuine
-  // feedback (first name + situation is enough — no need for full names).
+  // add REAL quotes here. Fabricated reviews mislead visitors and violate
+  // Google's guidelines. Format: { quote, name, context }.
   testimonials: [
-    // { quote: "…", name: "Jess", context: "Single mom, TX" },
+    // { quote: "…", name: "Jess", context: "…" },
   ] as ReadonlyArray<{ quote: string; name: string; context: string }>,
 
   // AUDIENCE SEGMENTS — drives hub pages via a single dynamic route.
-  // Adding/removing a segment here adds/removes a hub page automatically.
-  audienceSegments: [
-    {
-      slug: "budgeting-for-moms",
-      label: "Families & Moms",
-      tag: "families",
-      headline: "Budgeting for Moms: Real Systems for Real Family Life",
-      tone: "practical, warm",
-      startHereLabel: "I'm a mom trying to budget for my family",
-    },
-    {
-      slug: "single-mom-budget",
-      label: "Single Moms",
-      tag: "single-mom",
-      headline: "Single Mom Budget Guide: Doing More With Less (And Doing It Well)",
-      tone: "empathetic, dignified, no sugarcoating",
-      startHereLabel: "I'm a single mom on my own",
-    },
-    {
-      slug: "college-student-budget",
-      label: "College Students",
-      tag: "college-student",
-      headline: "College Budget 101: How to Make Your Money Last the Whole Semester",
-      tone: "light, relatable, encouraging",
-      startHereLabel: "I'm a college student with no money",
-    },
-    {
-      slug: "budget-on-low-income",
-      label: "Low Income",
-      tag: "low-income",
-      headline: "How to Budget When There's Barely Enough",
-      tone: "respectful, non-judgmental, practical, NO hustle-culture language",
-      startHereLabel: "I have little or no income right now",
-    },
-    {
-      slug: "first-job-budget",
-      label: "First Job",
-      tag: "first-job",
-      headline: "Just Got Paid? Here's Exactly What to Do With Your First Paycheck",
-      tone: "exciting, milestone-focused, forward-looking",
-      startHereLabel: "I just got my first job",
-    },
-    {
-      slug: "couples-budget",
-      label: "Couples",
-      tag: "couples",
-      headline: "How to Budget as a Couple Without Fighting About Money",
-      tone: "relatable, solution-focused",
-      startHereLabel: "My partner and I need to get on the same page",
-    },
-  ],
+  // Adding an entry here adds a `/<segment-slug>` hub page automatically; the
+  // copy for each lives in content/segment-intros.ts. Leave empty to remove the
+  // hub pages entirely.
+  audienceSegments: [] as ReadonlyArray<{
+    slug: string;
+    label: string;
+    tag: string;
+    headline: string;
+    tone: string;
+    startHereLabel: string;
+  }>,
 } as const;
 
 export type SiteConfig = typeof siteConfig;

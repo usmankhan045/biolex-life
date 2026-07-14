@@ -21,19 +21,15 @@ import { dirname, join } from "node:path";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE = join(ROOT, "content-queue");
 
-const SITE_ID = "f7998f95-ac2c-4188-8202-418c91572a45"; // spendwisecents
-const CATEGORY_ID = {
-  "budgeting-basics": "823b89f4-5540-42f0-a287-e888fb0adef1",
-  "printables": "bfb77e91-73ca-4b78-8e03-b034c3f08356",
-  "saving-money": "8b8ab022-9cd9-4b10-a67e-9d23c2ae8e6b",
-  "debt-payoff": "ddbb0983-77db-4227-8ea1-9ff08a689612",
-  "family-budget": "12de1380-0ba7-4cb2-aefc-d3f72b1693fb",
-  "low-income-budget": "daf6134b-f413-4a5d-84ff-fcc4e66ddae7",
-  "single-mom-money": "7a10fb83-23b6-48d6-a79d-7ac4f75916ae",
-  "college-budget": "0d5a5c7e-68c7-4e8a-9ede-666eafbece0f",
-  "first-job-finance": "d555cb29-7e39-4046-bada-8d5b3acaf763",
-  "couples-money": "180d20c6-5677-4fe9-b717-2d887a76bc1c",
-};
+// The tenant this publisher writes to. Set SITE_ID via env, or replace the
+// placeholder default below with this site's real UUID (from the `sites` table).
+const SITE_ID = (process.env.SITE_ID || "00000000-0000-0000-0000-000000000000").trim();
+
+// Map each category slug used in the content queue to this site's category
+// UUID (from the `categories` table). Provide it as a JSON object in the
+// CATEGORY_ID env var, or hardcode your site's mapping here.
+//   e.g. CATEGORY_ID='{"category-one":"<uuid>","category-two":"<uuid>"}'
+const CATEGORY_ID = JSON.parse(process.env.CATEGORY_ID || "{}");
 
 // Normalize the URL defensively: trim whitespace/newlines, add https:// if the
 // scheme was omitted, and strip any trailing slash. A malformed SUPABASE_URL

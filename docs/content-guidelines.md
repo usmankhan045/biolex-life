@@ -1,4 +1,4 @@
-# Content Guidelines — SpendWiseCents
+# Content Guidelines
 
 These guidelines keep every article consistent, scannable, and optimised for both readers and AI discovery tools (Google AI Overviews, ChatGPT, Perplexity).
 
@@ -36,12 +36,12 @@ Each H2 section covers one idea completely before moving to the next. If you fin
 Open every article — and every section — with the direct answer to the question the reader came with. Explanation, context, and caveats follow.
 
 **Good:**
-> Zero-based budgeting means assigning every dollar of your income to a specific category until you reach zero. You don't spend down to zero — every dollar has a job.
+> [Term] means [the direct, plain-English definition of the concept]. [One more sentence of the essential "what" or "why."]
 >
 > Here's how it works in practice…
 
 **Not good:**
-> Many budgeting methods exist, and over the years financial experts have developed a variety of systems. One of the most popular is zero-based budgeting, which was pioneered by…
+> Over the years, experts have developed a variety of approaches to this topic. One of the most popular is [term], which was first introduced by…
 
 ### Quick Answer box
 
@@ -124,16 +124,16 @@ Remove on sight:
 ### seo_title format
 
 ```
-[Primary keyword] | SpendWiseCents
+[Primary keyword] | My Site
 ```
 
-Example: `How to Budget on $30,000 a Year | SpendWiseCents`
+Example: `Your Primary Keyword Phrase | My Site`
 
 ### seo_description format
 
 Lead with what the reader gets. Include the primary keyword. End with a benefit or call to action.
 
-Example: `Step-by-step budgeting guide for a $30,000 income — categories, percentages, and a zero-based template you can use today.`
+Example: `A step-by-step guide to [topic] — the key steps, options, and a template you can use today.`
 
 ### slug format
 
@@ -146,16 +146,15 @@ Example: `Step-by-step budgeting guide for a $30,000 income — categories, perc
 
 ## Audience tagging
 
-Use `audience_tags` to tag posts for the correct hub pages. A post can have multiple tags.
+Use `audience_tags` to tag posts for the correct hub pages. A post can have
+multiple tags. The tag values and hub pages come from `audienceSegments` in
+`lib/site.config.ts` — define them for your own niche. For example:
 
 | Tag value | Hub page |
 |---|---|
-| `families` | /budgeting-for-moms |
-| `single-mom` | /single-mom-budget |
-| `college-student` | /college-student-budget |
-| `low-income` | /budget-on-low-income |
-| `first-job` | /first-job-budget |
-| `couples` | /couples-budget |
+| `segment-one` | /segment-one |
+| `segment-two` | /segment-two |
+| `segment-three` | /segment-three |
 
 ---
 

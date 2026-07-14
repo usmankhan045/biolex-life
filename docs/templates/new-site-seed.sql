@@ -1,7 +1,7 @@
 -- ═══════════════════════════════════════════════════════════════════════════
 -- NEW SITE SEED TEMPLATE
 -- ═══════════════════════════════════════════════════════════════════════════
--- Run this ONCE against the shared Supabase project (ruucexzgebbehjcrinhj) to
+-- Run this ONCE against the shared Supabase project (<your Supabase project ref>) to
 -- register a new tenant site + its categories. Every site shares the same
 -- database and tables; rows are isolated by `site_id`.
 --

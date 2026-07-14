@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 const DEFAULT_INTRO =
-  `${siteConfig.name} was built because most personal finance advice assumes you have margin to work with: extra money, extra time, extra emotional bandwidth. This site was built for when you don't.`;
+  `${siteConfig.name} was built to make helpful, practical information easy to find and easy to use. Clear guides and free tools you can put to work the same day, without the fluff.`;
 
 export default async function AboutPage() {
   let intro = DEFAULT_INTRO;
@@ -43,9 +43,9 @@ export default async function AboutPage() {
             id="about-hero-heading"
             className="font-display text-4xl sm:text-5xl font-bold text-text leading-tight mb-5"
           >
-            Real money help,
+            Practical help,
             <br className="hidden sm:block" />
-            for real life.
+            made simple.
           </h1>
           <p className="text-lg text-muted leading-relaxed">{intro}</p>
         </Container>
@@ -76,34 +76,31 @@ export default async function AboutPage() {
               </p>
 
               <p className="text-sm sm:text-base">
-                {siteConfig.name} started with a simple frustration: most personal finance
-                advice is written for people who already have margin to work with. The
-                budgeting books talk about &ldquo;dining out budgets&rdquo; and
-                &ldquo;vacation savings&rdquo; but skip right past the months when
-                money is tight, the bills outpace the paycheck, and there&rsquo;s no room
-                for mistakes.
+                {siteConfig.name} started with a simple frustration: most advice online is
+                written for people who already know the basics. It skips past the
+                questions beginners actually have, buries the useful parts under filler,
+                and assumes you have hours to figure it all out on your own.
               </p>
 
               <p className="text-sm sm:text-base">
-                So I built the site I wished existed. I research what actually works when
-                you&rsquo;re living paycheck to paycheck, doing it on one income, or
-                starting over from scratch &mdash; and turn it into clear guides and free
-                tools you can use the same day. Every guide is edited to hold up against a
-                real, constrained budget, not an aspirational one.
+                So I built the site I wished existed. I research what actually works,
+                test it, and turn it into clear guides and free tools you can use the
+                same day. Every guide is edited to be genuinely useful for someone
+                starting from scratch, not just impressive to skim.
               </p>
 
               <p className="text-sm sm:text-base">
-                What we publish isn&rsquo;t the watered-down, &ldquo;just cut your
-                coffee&rdquo; version. It&rsquo;s the real version, the practical steps
-                that help people pay down debt, build a small emergency fund, and feel
-                okay about money, often for the first time in their adult lives.
+                What we publish isn&rsquo;t the watered-down, surface-level version.
+                It&rsquo;s the practical version, the concrete steps that help people
+                understand a topic, make a decision, and feel confident doing it, often
+                for the first time.
               </p>
 
               <p className="text-sm sm:text-base">
-                I&rsquo;m not a financial advisor, and nothing here is a substitute for
-                personalized advice. This is the unglamorous, tested work of figuring money
-                out &mdash; shared freely, so the path is a little easier for you. That&rsquo;s
-                the entire point of this site.
+                Nothing here is a substitute for personalized professional advice. This
+                is the honest, tested work of figuring things out &mdash; shared freely,
+                so the path is a little easier for you. That&rsquo;s the entire point of
+                this site.
               </p>
 
               <p className="font-medium text-text">
@@ -172,24 +169,24 @@ export default async function AboutPage() {
           <ul className="space-y-7">
             {([
               {
-                title: "Budgeting guides for your actual situation",
-                body: "Not generic advice. Every guide is written for a specific life: single mom, college student, family on one income, or someone just getting started with their first paycheck.",
+                title: "Guides written for real situations",
+                body: "Not generic advice. Every guide is written with a specific reader in mind, whether you're a complete beginner or picking things back up after a break.",
               },
               {
                 title: "Free printables and worksheets",
-                body: "Zero-based budget templates, savings trackers, debt snowball planners, and more. Designed to be printed and filled in by hand, because sometimes that's what actually works.",
+                body: "Templates, checklists, trackers, and planners. Designed to be printed and filled in by hand, because sometimes that's what actually works.",
               },
               {
-                title: "Real talk about money",
-                body: "No hustle culture. No \"just cut your coffee\" advice. We talk about the real tradeoffs, the hard decisions, and the slow, unglamorous work of building financial stability.",
+                title: "Straight talk, no filler",
+                body: "No hype. No padding. We talk about the real tradeoffs, the common questions, and the practical steps that get you from confused to confident.",
               },
               {
                 title: "Simple systems, not perfect ones",
-                body: "A budget you'll actually stick to beats a perfect budget you abandon in week two. We focus on systems that work in a messy, real life.",
+                body: "A routine you'll actually stick to beats a perfect plan you abandon in week two. We focus on systems that work in a messy, real life.",
               },
               {
                 title: "No judgment, ever",
-                body: "Whether you have $0 saved or $50,000 in debt, and everything in between, you belong here. We don't shame, we don't lecture. We just help.",
+                body: "Wherever you're starting from, you belong here. We don't shame, we don't lecture. We just help.",
               },
             ] as const).map((item) => (
               <li key={item.title} className="flex gap-4">
@@ -209,15 +206,15 @@ export default async function AboutPage() {
         </Container>
       </section>
 
-      {/* ── Financial disclaimer ───────────────────────────────────────────── */}
-      <section className="py-12 bg-primary/[0.03]" aria-label="Financial disclaimer">
+      {/* ── Disclaimer ─────────────────────────────────────────────────────── */}
+      <section className="py-12 bg-primary/[0.03]" aria-label="Disclaimer">
         <Container width="narrow">
           <div className="border border-black/[0.08] rounded-xl bg-white p-5">
             <p className="text-xs text-muted leading-relaxed">
-              <span className="font-medium text-text">Financial disclaimer: </span>
-              The content on {siteConfig.name} is for educational and informational purposes
-              only. It is not financial, legal, or tax advice. Always consult a qualified
-              professional before making significant financial decisions.{" "}
+              <span className="font-medium text-text">Disclaimer: </span>
+              The content on {siteConfig.name} is for general educational and informational
+              purposes only. It is not professional advice. Always consult a qualified
+              professional before making important decisions.{" "}
               <Link
                 href="/disclaimer"
                 className="text-primary underline underline-offset-3 hover:opacity-80"

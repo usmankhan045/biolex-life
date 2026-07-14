@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site.config";
 
 export const metadata: Metadata = {
   title: "Disclaimer",
-  description: `Financial disclaimer, affiliate disclosure, and earnings disclaimer for ${siteConfig.name}.`,
+  description: `General disclaimer, affiliate disclosure, and results disclaimer for ${siteConfig.name}.`,
   alternates: { canonical: "/disclaimer" },
   openGraph: { url: "/disclaimer", type: "website" },
   robots: { index: false },
@@ -25,28 +25,34 @@ export default function DisclaimerPage() {
         <div className="space-y-10 text-text/85 leading-relaxed">
 
           <section>
+            <p className="mb-4 text-sm">
+              This page is a general boilerplate starting point, not legal advice.
+              Review and adapt it for your own site, and consult a qualified
+              professional where appropriate.
+            </p>
+          </section>
+
+          <section>
             <h2 className="font-display text-xl font-semibold text-text mb-5">
-              Financial Disclaimer
+              General Disclaimer
             </h2>
             <p className="mb-4 text-sm">
               The content published on {siteConfig.name} ({siteConfig.domain}) is intended
-              for educational and informational purposes only. Nothing on this site
-              constitutes financial, investment, legal, or tax advice, and nothing should
-              be interpreted as a recommendation to buy, sell, or hold any financial
-              product or security.
+              for general educational and informational purposes only. Nothing on this
+              site constitutes professional, legal, or other specialized advice, and
+              nothing should be interpreted as a recommendation to take any particular
+              course of action.
             </p>
             <p className="mb-4 text-sm">
-              The owner of {siteConfig.name} is not a licensed financial advisor, broker,
-              investment advisor, or tax professional. Content on this site reflects
-              personal experience, general research, and publicly available information.
-              It is not tailored to your individual financial situation, goals, risk
-              tolerance, or tax circumstances.
+              The owner of {siteConfig.name} is not a licensed professional in any
+              regulated field. Content on this site reflects personal experience, general
+              research, and publicly available information. It is not tailored to your
+              individual circumstances, goals, or situation.
             </p>
             <p className="text-sm">
-              Your financial situation is unique. Before making any significant financial
-              decision, including changes to your budget, savings strategy, investment
-              approach, debt repayment plan, or tax filings, please consult a qualified,
-              licensed professional who can evaluate your specific circumstances.
+              Your situation is unique. Before acting on any information found here or
+              making any significant decision, please consult a qualified professional
+              who can evaluate your specific circumstances.
             </p>
           </section>
 
@@ -73,20 +79,18 @@ export default function DisclaimerPage() {
 
           <section>
             <h2 className="font-display text-xl font-semibold text-text mb-5">
-              Earnings Disclaimer
+              Results Disclaimer
             </h2>
             <p className="mb-4 text-sm">
-              Any examples of financial results, debt payoff amounts, or savings figures
-              mentioned on {siteConfig.name} represent individual experiences or illustrative
-              scenarios. They should not be interpreted as typical, average, or guaranteed
-              results.
+              Any examples of results or outcomes mentioned on {siteConfig.name} represent
+              individual experiences or illustrative scenarios. They should not be
+              interpreted as typical, average, or guaranteed results.
             </p>
             <p className="text-sm">
-              Personal finance outcomes vary significantly based on individual income,
-              expenses, debt levels, life circumstances, consistency of effort, and many
-              other factors outside our control. {siteConfig.name} makes no guarantee,
-              express or implied, that you will achieve any specific financial outcome
-              by following the information or strategies described on this site.
+              Outcomes vary significantly based on individual circumstances, consistency
+              of effort, and many other factors outside our control. {siteConfig.name}
+              makes no guarantee, express or implied, that you will achieve any specific
+              outcome by following the information or strategies described on this site.
             </p>
           </section>
 
@@ -124,7 +128,7 @@ export default function DisclaimerPage() {
               warranties of any kind. We make reasonable efforts to ensure that
               information is accurate and up to date, but we make no representations
               or warranties regarding completeness, accuracy, reliability, or suitability
-              for any particular purpose. Financial laws, regulations, and best practices
+              for any particular purpose. Laws, regulations, and best practices
               change over time. Content may become outdated. Always verify information
               through current, authoritative sources before relying on it.
             </p>

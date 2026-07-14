@@ -3,7 +3,7 @@
 // IBM Plex Mono · uppercase · 0.12em letter-spacing · 1px border · 3px radius
 // The 1.5px offset box-shadow (shadow-[1.5px_1.5px_0_currentColor]) references
 // a rubber stamp that didn't land perfectly — the visible impression of a
-// repeated, deliberate act. This is "budgeting as calm ritual" made visible.
+// repeated, deliberate act — a calm, consistent ritual made visible.
 //
 // Uses currentColor throughout so every variant needs only a text+border class.
 

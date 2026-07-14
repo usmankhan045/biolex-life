@@ -8,8 +8,7 @@ import { siteConfig } from "@/lib/site.config";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description:
-    "Get in touch with SpendWiseCents. Questions, feedback, topic ideas, or collaboration, we'd love to hear from you.",
+  description: `Get in touch with ${siteConfig.name}. Questions, feedback, topic ideas, or collaboration, we'd love to hear from you.`,
   alternates: { canonical: "/contact" },
   openGraph: { url: "/contact", type: "website", images: ogImages() },
   twitter: twitterImages(),
@@ -34,7 +33,7 @@ export default function ContactPage() {
             Let&rsquo;s talk.
           </h1>
           <p className="text-lg text-muted leading-relaxed">
-            Have a question about budgeting? A topic you&rsquo;d like to see covered?
+            Have a question? A topic you&rsquo;d like to see covered?
             A collaboration idea? Or just want to say hi?{" "}
             I&rsquo;d love to hear from you.
           </p>
@@ -76,7 +75,7 @@ export default function ContactPage() {
                 <div>
                   <p className="font-medium text-text mb-1.5">What I can help with</p>
                   <ul className="text-sm space-y-2 list-disc pl-4">
-                    <li>General budgeting questions</li>
+                    <li>General questions</li>
                     <li>Content requests or topic ideas</li>
                     <li>Sponsorship or collaboration inquiries</li>
                     <li>Technical issues with the site</li>
@@ -89,9 +88,9 @@ export default function ContactPage() {
                     What I can&rsquo;t help with
                   </p>
                   <p className="text-sm">
-                    I&rsquo;m not a licensed financial advisor and can&rsquo;t give
-                    personalized financial advice. For guidance specific to your
-                    situation, please consult a qualified professional.
+                    I can&rsquo;t give personalized professional advice. For guidance
+                    specific to your situation, please consult a qualified
+                    professional.
                   </p>
                 </div>
               </div>

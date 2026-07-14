@@ -1,6 +1,6 @@
 # Create Printable
 
-Create a printable PDF for SpendWiseCents. Accepts a post number (01–10) or a custom spec.
+Create a printable PDF for this site. Accepts a post number (01–10) or a custom spec.
 
 ## How to use
 
@@ -193,7 +193,7 @@ Charcoal     #2D2D2D  — body text
   display: flex; justify-content: space-between; align-items: center;
 }
 /* Left: Lato 6.5pt italic #B0A090 — "Free Printable — Print as many copies as you need 🌿" */
-/* Right: Lato 7pt bold #7A9E7E — "SpendWiseCents.com" */
+/* Right: Lato 7pt bold #7A9E7E — your site's domain (from siteConfig.domain) */
 ```
 
 ---
@@ -214,10 +214,10 @@ Charcoal     #2D2D2D  — body text
    "
    ```
 
-5. **Insert into Supabase** (project_id: ruucexzgebbehjcrinhj):
+5. **Insert into Supabase** (use your Supabase project ref):
    ```sql
    INSERT INTO printables (site_id, slug, title, description, file_url, thumbnail_url, category_id, orientation)
-   VALUES ('f7998f95-ac2c-4188-8202-418c91572a45', '<slug>', '<title>', '<description>', '/printables/<slug>.pdf', '/printables/<slug>-preview.png', '<category_id>', '<portrait|landscape>')
+   VALUES ('<YOUR_SITE_ID>', '<slug>', '<title>', '<description>', '/printables/<slug>.pdf', '/printables/<slug>-preview.png', '<category_id>', '<portrait|landscape>')
    ON CONFLICT (site_id, slug) DO UPDATE SET file_url = EXCLUDED.file_url, title = EXCLUDED.title, thumbnail_url = EXCLUDED.thumbnail_url, orientation = EXCLUDED.orientation;
    ```
    Set `orientation` to `'landscape'` when `@page { size: letter landscape; }` is used, otherwise `'portrait'`.

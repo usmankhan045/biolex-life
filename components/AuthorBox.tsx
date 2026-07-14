@@ -41,8 +41,8 @@ export function AuthorBox() {
               <Link href="/editorial-policy" className="underline underline-offset-2 hover:text-primary transition-colors">
                 editorial standards
               </Link>
-              . {siteConfig.name} is not a licensed financial advisor; this is
-              educational information, not personalized advice.
+              . {siteConfig.name} shares general educational information, not
+              personalized professional advice.
             </p>
             <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
               <Link

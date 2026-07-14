@@ -101,7 +101,7 @@ export default async function SegmentHubPage({
   if (!seg) notFound();
 
   const intro = segmentIntros[slug];
-  const isLowIncome = slug === "budget-on-low-income";
+  const showResources = slug === "resources";
 
   let posts: Post[] = [];
   try {
@@ -142,7 +142,7 @@ export default async function SegmentHubPage({
           { name: seg.label, slug: `/${slug}` },
         ]),
         collectionPageSchema({
-          name: `${seg.label} Budgeting Guides`,
+          name: `${seg.label} Guides`,
           description: intro.metaDescription,
           slug,
         }),
@@ -165,7 +165,7 @@ export default async function SegmentHubPage({
             {intro.paragraphs[0]}
           </p>
           <p className="mt-5 text-xs font-mono text-muted/60 uppercase tracking-wide">
-            SpendWiseCents Editorial
+            {siteConfig.name} Editorial
           </p>
         </Container>
       </section>
@@ -284,8 +284,8 @@ export default async function SegmentHubPage({
         </Container>
       </section>
 
-      {/* ── Resources (budget-on-low-income only) ───────────────────────── */}
-      {isLowIncome && (
+      {/* ── Resources (shown only for a "resources" segment) ────────────── */}
+      {showResources && (
         <section
           className="py-14 sm:py-16 bg-primary/[0.03]"
           aria-labelledby="resources-heading"
@@ -296,51 +296,50 @@ export default async function SegmentHubPage({
               id="resources-heading"
               className="font-display text-3xl font-bold text-text mt-8 mb-3"
             >
-              Get help now
+              Helpful resources
             </h2>
             <p className="text-muted mb-8">
-              These programs may be able to help you right now, with food, utilities,
-              rent, and more. There&rsquo;s no shame in using them. They exist for exactly
-              this.
+              A few trusted places to turn to for more help on this topic. Add your
+              own recommended links here.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {([
                 {
-                  name: "211 (Dial 2-1-1)",
-                  href: "https://www.211.org",
+                  name: "Resource One",
+                  href: "https://www.example.com",
                   description:
-                    "A nationwide helpline that connects you to local assistance for rent, food, utilities, childcare, and more. Available 24/7 by phone or online.",
+                    "A short description of this resource and how it can help. Replace this placeholder with a genuinely useful link for your niche.",
                 },
                 {
-                  name: "Benefits.gov",
-                  href: "https://www.benefits.gov",
+                  name: "Resource Two",
+                  href: "https://www.example.com",
                   description:
-                    "The official U.S. government portal for finding federal benefit programs. Enter your situation and see what you may be eligible for.",
+                    "A short description of this resource and how it can help. Replace this placeholder with a genuinely useful link for your niche.",
                 },
                 {
-                  name: "SNAP (Food Assistance)",
-                  href: "https://www.fns.usda.gov/snap/recipient/eligibility",
+                  name: "Resource Three",
+                  href: "https://www.example.com",
                   description:
-                    "The Supplemental Nutrition Assistance Program provides monthly benefits to help pay for food. Check eligibility and apply through your state.",
+                    "A short description of this resource and how it can help. Replace this placeholder with a genuinely useful link for your niche.",
                 },
                 {
-                  name: "LIHEAP (Utility Help)",
-                  href: "https://www.acf.hhs.gov/ocs/programs/liheap",
+                  name: "Resource Four",
+                  href: "https://www.example.com",
                   description:
-                    "The Low Income Home Energy Assistance Program helps with heating and cooling costs. Apply through your state's LIHEAP office.",
+                    "A short description of this resource and how it can help. Replace this placeholder with a genuinely useful link for your niche.",
                 },
                 {
-                  name: "Feeding America",
-                  href: "https://www.feedingamerica.org/find-your-local-foodbank",
+                  name: "Resource Five",
+                  href: "https://www.example.com",
                   description:
-                    "Find your nearest food bank or food pantry. Most food banks serve anyone in need, no documentation required at many locations.",
+                    "A short description of this resource and how it can help. Replace this placeholder with a genuinely useful link for your niche.",
                 },
                 {
-                  name: "WIC Program",
-                  href: "https://www.fns.usda.gov/wic",
+                  name: "Resource Six",
+                  href: "https://www.example.com",
                   description:
-                    "For pregnant women, new mothers, and children under 5: nutritious food, health referrals, and support. Apply through your state WIC office.",
+                    "A short description of this resource and how it can help. Replace this placeholder with a genuinely useful link for your niche.",
                 },
               ] as const).map((resource) => (
                 <a

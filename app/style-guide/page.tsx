@@ -50,12 +50,12 @@ function Label({ children }: { children: React.ReactNode }) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const palette = [
-  { token: "primary",    name: "Ledger Teal",   hex: siteConfig.theme.colors.primary,    textClass: "text-white" },
-  { token: "accent",     name: "Ink Amber",      hex: siteConfig.theme.colors.accent,     textClass: "text-white" },
-  { token: "background", name: "Bond Paper",     hex: siteConfig.theme.colors.background, textClass: "text-text" },
-  { token: "text",       name: "Ledger Ink",     hex: siteConfig.theme.colors.text,       textClass: "text-white" },
-  { token: "muted",      name: "Ruled Line",     hex: siteConfig.theme.colors.muted,      textClass: "text-white" },
-  { token: "success",    name: "Balance Green",  hex: siteConfig.theme.colors.success,    textClass: "text-white" },
+  { token: "primary",    name: "Primary",     hex: siteConfig.theme.colors.primary,    textClass: "text-white" },
+  { token: "accent",     name: "Accent",      hex: siteConfig.theme.colors.accent,     textClass: "text-white" },
+  { token: "background", name: "Background",  hex: siteConfig.theme.colors.background, textClass: "text-text" },
+  { token: "text",       name: "Text",        hex: siteConfig.theme.colors.text,       textClass: "text-white" },
+  { token: "muted",      name: "Muted",       hex: siteConfig.theme.colors.muted,      textClass: "text-white" },
+  { token: "success",    name: "Success",     hex: siteConfig.theme.colors.success,    textClass: "text-white" },
 ] as const;
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -136,19 +136,19 @@ export default function StyleGuidePage() {
             <div>
               <Label>font-display · text-5xl · Fraunces</Label>
               <p className="font-display text-5xl font-bold text-text leading-tight">
-                Budgeting that fits your real life
+                Guides that fit your real life
               </p>
             </div>
             <div>
               <Label>font-display · text-3xl</Label>
               <p className="font-display text-3xl font-semibold text-text leading-snug">
-                How to Budget as a Couple Without Fighting About Money
+                How to Get Started Without Feeling Overwhelmed
               </p>
             </div>
             <div>
               <Label>font-display · text-2xl</Label>
               <p className="font-display text-2xl font-semibold text-text">
-                Your First Paycheck: A Calm Guide
+                Your First Step: A Calm Guide
               </p>
             </div>
             <div>
@@ -164,43 +164,43 @@ export default function StyleGuidePage() {
             <div>
               <Label>font-body · text-lg · Public Sans</Label>
               <p className="text-lg text-text leading-relaxed">
-                Money is just a series of small decisions made repeatedly. That&rsquo;s it.
-                You don&rsquo;t need to be a spreadsheet person to budget. You just need
+                Progress is just a series of small decisions made repeatedly. That&rsquo;s it.
+                You don&rsquo;t need to be an expert to start. You just need
                 a system that fits how you actually live.
               </p>
             </div>
             <div>
               <Label>font-body · text-base</Label>
               <p className="text-base text-text leading-relaxed">
-                Whether you&rsquo;re managing a household of four, supporting yourself
-                on a single income, or figuring out your first paycheck, the principles
+                Whether you&rsquo;re a complete beginner, picking things back up after a
+                break, or just looking to sharpen the basics, the principles
                 are the same. Small, consistent, kind to yourself.
               </p>
             </div>
             <div>
               <Label>font-body · text-sm · text-muted</Label>
               <p className="text-sm text-muted leading-relaxed">
-                Last updated June 2026 · 8 min read · Filed under Budgeting Basics
+                Last updated June 2026 · 8 min read · Filed under Getting Started
               </p>
             </div>
           </div>
 
           {/* Mono scale */}
           <div className="space-y-3 p-6 bg-primary/[0.04] rounded-xl border border-primary/20">
-            <Label>font-mono · IBM Plex Mono · numbers, tags, ledger entries</Label>
+            <Label>font-mono · IBM Plex Mono · numbers, tags, metadata</Label>
             <div className="space-y-2">
               <p className="font-mono text-base text-primary">
-                Income:   $3,240.00
+                Published: 2026-06-01
               </p>
               <p className="font-mono text-base text-text">
-                Housing: −$1,100.00
+                Read time: 8 min
               </p>
               <p className="font-mono text-base text-text">
-                Food:      −$420.00
+                Category:  Getting Started
               </p>
               <div className="h-px bg-primary/20" />
               <p className="font-mono text-base font-semibold text-success">
-                Remaining: +$1,720.00
+                Status:    Published
               </p>
             </div>
             <div className="flex gap-2 flex-wrap pt-2">
@@ -255,7 +255,7 @@ export default function StyleGuidePage() {
               <div>
                 <Label>Category tags</Label>
                 <div className="flex flex-wrap gap-2 mt-2">
-                  {["Budgeting Basics", "Saving Money", "Debt Payoff", "First Job", "Couples", "Printables"].map(
+                  {["Getting Started", "Tips & Guides", "How-To", "Resources", "Reviews", "Printables"].map(
                     (cat) => <Tag key={cat}>{cat}</Tag>
                   )}
                 </div>
@@ -279,7 +279,7 @@ export default function StyleGuidePage() {
                 <div className="flex items-start gap-8 flex-wrap">
                   <div className="flex flex-col gap-1">
                     <span className="stamp text-primary border border-primary shadow-[1.5px_1.5px_0_currentColor] px-2 py-[3px] rounded-[3px] inline-flex">
-                      Families &amp; Moms
+                      Getting Started
                     </span>
                     <div className="flex flex-col gap-0.5 mt-2">
                       <p className="font-mono text-[10px] text-muted">↑ font: IBM Plex Mono</p>
@@ -332,18 +332,18 @@ export default function StyleGuidePage() {
         <Section title="05: Cards">
           <div className="grid sm:grid-cols-2 gap-5">
             <div>
-              <Label>Ledger variant (default): the 3px left tab is the ledger-entry accent</Label>
+              <Label>Default variant: the 3px left tab is the card accent</Label>
               <Card className="mt-3">
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
-                    <Tag variant="primary">Families</Tag>
+                    <Tag variant="primary">Getting Started</Tag>
                     <Tag variant="default">6 min read</Tag>
                   </div>
-                  <CardTitle>How We Cut Our Grocery Bill by $300 a Month</CardTitle>
+                  <CardTitle>How We Built a Simple Routine That Actually Stuck</CardTitle>
                 </CardHeader>
                 <CardBody>
-                  Small changes, made consistently, compound faster than any spreadsheet
-                  will ever show you. Here&rsquo;s exactly what we changed and what we kept.
+                  Small changes, made consistently, compound faster than any grand plan
+                  ever will. Here&rsquo;s exactly what we changed and what we kept.
                 </CardBody>
                 <CardFooter>
                   <Button variant="ghost" size="sm">Read article →</Button>
@@ -358,8 +358,8 @@ export default function StyleGuidePage() {
                   <CardTitle as="h4">About the Author</CardTitle>
                 </CardHeader>
                 <CardBody>
-                  A single mom who paid off $27,000 in debt over 3 years, not with a
-                  side hustle, but with a budget I actually stuck to.
+                  A writer and lifelong tinkerer who learned this the slow way, and now
+                  shares the shortcuts, so you don&rsquo;t have to.
                 </CardBody>
               </Card>
             </div>
@@ -369,8 +369,8 @@ export default function StyleGuidePage() {
               <Card compact className="mt-3">
                 <div className="flex items-center justify-between">
                   <div>
-                    <CardTitle as="h4" className="text-base">Emergency Fund Tracker</CardTitle>
-                    <p className="text-xs text-muted mt-0.5 font-mono">Goal: $1,000 · Saved: $640</p>
+                    <CardTitle as="h4" className="text-base">Progress Tracker</CardTitle>
+                    <p className="text-xs text-muted mt-0.5 font-mono">Goal: 100 · Done: 64</p>
                   </div>
                   <Tag variant="success">64%</Tag>
                 </div>
@@ -407,7 +407,7 @@ export default function StyleGuidePage() {
             <p className="text-sm text-muted mt-6">Titled: label centered between rules, in the stamp style</p>
             <SectionDivider variant="titled" label="Free Printables" spacing="sm" />
             <SectionDivider variant="titled" label="Most Popular" spacing="sm" />
-            <SectionDivider variant="titled" label="For Single Moms" spacing="sm" />
+            <SectionDivider variant="titled" label="For Beginners" spacing="sm" />
           </div>
         </Section>
 
@@ -418,12 +418,12 @@ export default function StyleGuidePage() {
         >
           <div className="space-y-4">
             <PrintableCallout
-              title="Monthly Budget Worksheet: Zero-Based"
-              description="A single-page tracker to give every dollar a job before the month starts. Works for any income level."
+              title="Simple One-Page Planner"
+              description="A single-page worksheet to help you plan, track, and stay organized. Works for any goal."
             />
             <PrintableCallout
-              title="Debt Payoff Tracker (Snowball Method)"
-              description="List your debts smallest to largest, check off each balance as you go. Fits on one page."
+              title="Progress Checklist"
+              description="List your steps in order, check off each one as you go. Fits on one page."
               badge="Free Printable"
             />
           </div>

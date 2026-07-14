@@ -163,7 +163,7 @@ export default function PrivacyPolicyPage() {
               Email Communications
             </h2>
             <p className="text-sm">
-              When you subscribe to our newsletter, we may send you budgeting tips, new
+              When you subscribe to our newsletter, we may send you helpful tips, new
               posts, free resources, and occasional promotional messages. You can
               unsubscribe at any time using the link in any email we send. After
               unsubscribing, we will stop sending marketing emails promptly.

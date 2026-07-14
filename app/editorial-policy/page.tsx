@@ -6,7 +6,7 @@ import { ogImages, twitterImages } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Editorial Policy",
-  description: `How ${siteConfig.name} researches, sources, fact-checks, and updates its budgeting guides — and the limits of what we publish.`,
+  description: `How ${siteConfig.name} researches, sources, fact-checks, and updates its guides — and the limits of what we publish.`,
   alternates: { canonical: "/editorial-policy" },
   openGraph: { url: "/editorial-policy", type: "website", images: ogImages() },
   twitter: twitterImages(),
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 
 const PRINCIPLES: { title: string; body: string }[] = [
   {
-    title: "We test advice against real, constrained budgets",
-    body: "Every guide is written and edited against tight, real-world numbers — not aspirational scenarios with money left over. If a strategy only works when you already have margin, we say so.",
+    title: "We test advice against real-world conditions",
+    body: "Every guide is written and edited against practical, real-world situations — not idealized scenarios. If a strategy only works under specific conditions, we say so.",
   },
   {
     title: "We cite primary sources for data",
-    body: "Statistics and dollar figures are sourced from primary references where possible — the Federal Reserve, the Bureau of Labor Statistics, the USDA, and official government assistance programs — and linked inline so you can verify them yourself.",
+    body: "Statistics and figures are sourced from primary references where possible — official reports, reputable studies, and authoritative organizations — and linked inline so you can verify them yourself.",
   },
   {
     title: "We separate fact from experience and opinion",
@@ -27,7 +27,7 @@ const PRINCIPLES: { title: string; body: string }[] = [
   },
   {
     title: "We keep guides current",
-    body: "Money data changes — grocery prices, benefit thresholds, survey figures. We review evergreen guides on a recurring basis and update the numbers when they change. Substantive updates are reflected in each article's “Updated” date.",
+    body: "Information changes over time — prices, figures, and best practices. We review evergreen guides on a recurring basis and update them when things change. Substantive updates are reflected in each article's “Updated” date.",
   },
   {
     title: "We correct mistakes openly",
@@ -52,9 +52,9 @@ export default function EditorialPolicyPage() {
             How we research and fact-check.
           </h1>
           <p className="text-lg text-muted leading-relaxed">
-            {siteConfig.name} publishes money guides for people managing real,
-            often tight, budgets. Because this is your money, here is exactly how
-            we research, source, and maintain what we publish.
+            {siteConfig.name} publishes guides and resources for real people
+            putting them to use. Because you rely on what we publish, here is
+            exactly how we research, source, and maintain it.
           </p>
         </Container>
       </section>
@@ -91,7 +91,7 @@ export default function EditorialPolicyPage() {
               {siteConfig.author.name}
             </Link>
             , {siteConfig.author.role.toLowerCase()} of {siteConfig.name}. We are
-            not licensed financial advisors, and nothing here is a substitute for
+            not licensed professionals, and nothing here is a substitute for
             personalized advice. The content is educational. For guidance specific
             to your situation, please consult a qualified professional — see our{" "}
             <Link href="/disclaimer" className="text-primary font-medium hover:underline underline-offset-4">

@@ -39,11 +39,11 @@ curl -H "Authorization: Bearer $TOKEN" http://localhost:3000/api/admin/sites
   "sites": [
     {
       "id": "uuid",
-      "slug": "spendwisecents",
-      "domain": "spendwisecents.com",
-      "name": "SpendWiseCents",
-      "niche": "Personal finance & budgeting for women",
-      "deploy_url": "https://spendwisecents.vercel.app",
+      "slug": "my-site",
+      "domain": "www.example.com",
+      "name": "My Site",
+      "niche": "Your niche or topic",
+      "deploy_url": "https://my-site.vercel.app",
       "theme_config": null,
       "created_at": "2024-01-01T00:00:00Z"
     }
@@ -58,11 +58,11 @@ Register a new site. Use when launching site #2+.
 **Body**
 ```json
 {
-  "slug": "frugalmom",
-  "domain": "frugalmom.com",
-  "name": "FrugalMom",
-  "niche": "Budget living for moms",
-  "deploy_url": "https://frugalmom.vercel.app",
+  "slug": "second-site",
+  "domain": "second-site.com",
+  "name": "Second Site",
+  "niche": "Your niche or topic",
+  "deploy_url": "https://second-site.vercel.app",
   "theme_config": {}
 }
 ```
@@ -71,7 +71,7 @@ Register a new site. Use when launching site #2+.
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"slug":"frugalmom","domain":"frugalmom.com","name":"FrugalMom","deploy_url":"https://frugalmom.vercel.app"}' \
+  -d '{"slug":"second-site","domain":"second-site.com","name":"Second Site","deploy_url":"https://second-site.vercel.app"}' \
   http://localhost:3000/api/admin/sites
 ```
 
@@ -87,7 +87,7 @@ Update a site's `deploy_url`, `theme_config`, `name`, or `niche`.
 **Body** (all fields optional)
 ```json
 {
-  "deploy_url": "https://frugalmom-v2.vercel.app",
+  "deploy_url": "https://second-site-v2.vercel.app",
   "theme_config": { "colors": { "primary": "#123456" } }
 }
 ```
@@ -96,7 +96,7 @@ Update a site's `deploy_url`, `theme_config`, `name`, or `niche`.
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"deploy_url":"https://frugalmom-v2.vercel.app"}' \
+  -d '{"deploy_url":"https://second-site-v2.vercel.app"}' \
   http://localhost:3000/api/admin/sites/SITE_ID
 ```
 
@@ -116,11 +116,11 @@ List posts with optional filters.
 | `site_id` | Defaults to current site |
 | `status` | `draft` or `published` |
 | `category` | Filter by category UUID |
-| `audience_tag` | Filter by tag value (e.g. `families`) |
+| `audience_tag` | Filter by tag value (e.g. `segment-one`) |
 
 ```bash
 curl -H "Authorization: Bearer $TOKEN" \
-  "http://localhost:3000/api/admin/posts?status=published&audience_tag=families"
+  "http://localhost:3000/api/admin/posts?status=published&audience_tag=segment-one"
 ```
 
 ### GET /api/admin/posts/:id
@@ -139,18 +139,18 @@ Create a post.
 ```json
 {
   "site_id": "uuid (optional, defaults to current site)",
-  "title": "How to Budget on $30k a Year",
-  "slug": "budget-30k-year",
+  "title": "Your Post Title Here",
+  "slug": "your-post-slug",
   "content": "## Introduction\n...",
   "excerpt": "Short teaser text",
-  "quick_answer": "Yes, it is possible with the 50/30/20 rule.",
+  "quick_answer": "A 1–3 sentence plain-English answer to the article's core question.",
   "category_id": "uuid | null",
-  "audience_tags": ["families", "low-income"],
+  "audience_tags": ["segment-one", "segment-two"],
   "status": "draft",
-  "seo_title": "Budgeting on $30,000 a Year | SpendWiseCents",
-  "seo_description": "Practical guide to making $30k stretch...",
+  "seo_title": "Your Post Title | My Site",
+  "seo_description": "Short meta description of what the reader gets...",
   "faq_items": [
-    { "question": "Is $30k a livable wage?", "answer": "It depends on..." }
+    { "question": "A question a reader might type?", "answer": "It depends on..." }
   ],
   "featured_image_url": "https://example.com/image.jpg",
   "published_at": null
@@ -221,7 +221,7 @@ curl -H "Authorization: Bearer $TOKEN" \
   "slug": "start-here",
   "title": "Start Here",
   "content": "## Welcome\n...",
-  "seo_title": "Start Here | SpendWiseCents",
+  "seo_title": "Start Here | My Site",
   "seo_description": "New to the site? Begin here."
 }
 ```
@@ -251,9 +251,9 @@ curl -H "Authorization: Bearer $TOKEN" \
 ```json
 {
   "site_id": "uuid (optional)",
-  "slug": "debt-payoff",
-  "name": "Debt Payoff",
-  "description": "Plans and motivation for paying off debt faster"
+  "slug": "category-one",
+  "name": "Category One",
+  "description": "Short description of this category"
 }
 ```
 
@@ -275,11 +275,11 @@ curl -H "Authorization: Bearer $TOKEN" \
 ```json
 {
   "site_id": "uuid (optional)",
-  "slug": "monthly-budget-tracker",
-  "title": "Monthly Budget Tracker",
-  "description": "Track every dollar with this printable sheet",
-  "file_url": "https://example.com/tracker.pdf",
-  "thumbnail_url": "https://example.com/tracker-thumb.jpg",
+  "slug": "printable-worksheet",
+  "title": "Printable Worksheet",
+  "description": "Short description of this printable sheet",
+  "file_url": "https://example.com/worksheet.pdf",
+  "thumbnail_url": "https://example.com/worksheet-thumb.jpg",
   "category_id": "uuid | null"
 }
 ```
@@ -325,8 +325,8 @@ curl -X POST \
 **Response** `201`
 ```json
 {
-  "url": "https://xxxx.supabase.co/storage/v1/object/public/media/spendwisecents/1700000000-image.jpg",
-  "path": "spendwisecents/1700000000-image.jpg"
+  "url": "https://xxxx.supabase.co/storage/v1/object/public/media/my-site/1700000000-image.jpg",
+  "path": "my-site/1700000000-image.jpg"
 }
 ```
 
@@ -380,10 +380,10 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:3000/api/admin/audit?si
   "sites": [
     {
       "id": "uuid",
-      "slug": "spendwisecents",
-      "name": "SpendWiseCents",
-      "domain": "spendwisecents.com",
-      "deploy_url": "https://spendwisecents.vercel.app",
+      "slug": "my-site",
+      "name": "My Site",
+      "domain": "www.example.com",
+      "deploy_url": "https://my-site.vercel.app",
       "summary": {
         "post_count": 25,
         "published_post_count": 20,
@@ -397,8 +397,8 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:3000/api/admin/audit?si
       "posts": [
         {
           "id": "uuid",
-          "slug": "budget-30k-year",
-          "title": "How to Budget on $30k a Year",
+          "slug": "your-post-slug",
+          "title": "Your Post Title Here",
           "status": "published",
           "word_count": 1845,
           "has_faq": true,
@@ -406,12 +406,12 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:3000/api/admin/audit?si
           "has_seo_description": true,
           "seo_title": "...",
           "seo_description": "...",
-          "audience_tags": ["families"],
-          "category_slug": "budgeting-basics"
+          "audience_tags": ["segment-one"],
+          "category_slug": "category-one"
         }
       ],
       "pages": [ { "id": "uuid", "slug": "start-here", "title": "Start Here", "word_count": 600, "has_seo_title": true, "has_seo_description": true } ],
-      "printables": [ { "id": "uuid", "slug": "monthly-budget-tracker", "title": "Monthly Budget Tracker", "has_description": true } ]
+      "printables": [ { "id": "uuid", "slug": "printable-worksheet", "title": "Printable Worksheet", "has_description": true } ]
     }
   ]
 }
@@ -429,7 +429,7 @@ Every site must expose this endpoint to receive cross-site cache purge signals.
 ```json
 {
   "secret": "REVALIDATION_SECRET value",
-  "paths": ["/blog", "/blog/some-post-slug", "/category/budgeting-basics"]
+  "paths": ["/blog", "/blog/some-post-slug", "/category/category-one"]
 }
 ```
 
@@ -469,7 +469,7 @@ POST_RESPONSE=$(curl -s -X POST \
     "slug": "test-post-smoke",
     "content": "## Hello\nThis is a test post created via the admin API.",
     "status": "published",
-    "audience_tags": ["families"]
+    "audience_tags": ["segment-one"]
   }' \
   $BASE/api/admin/posts)
 

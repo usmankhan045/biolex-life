@@ -31,7 +31,8 @@ export default function AffiliateDisclosurePage() {
           <p className="text-lg text-muted leading-relaxed">
             {siteConfig.name} is free to read, and we keep it that way partly
             through affiliate partnerships. Here&rsquo;s exactly what that means,
-            in plain language.
+            in plain language. This page is a boilerplate starting point, not
+            legal advice &mdash; adapt it for your own site.
           </p>
         </Container>
       </section>
@@ -47,21 +48,21 @@ export default function AffiliateDisclosurePage() {
               You never pay more for using our link.
             </p>
             <p>
-              We only mention tools we believe are genuinely useful for the people
-              this site is built for &mdash; things like budgeting apps (for example,
-              YNAB and EveryDollar), debt-payoff tools, and the occasional item on
-              Amazon (binders, cash wallets, sheet protectors). As an Amazon
-              Associate, we earn from qualifying purchases.
+              We only mention tools, products, and services we believe are genuinely
+              useful for the people this site is built for. Some of these are offered
+              through third-party affiliate or associate programs, and we may earn a
+              commission when you sign up or make a qualifying purchase through our
+              links.
             </p>
             <p className="font-medium text-text">
               A commission never changes our recommendation.
             </p>
             <p>
               We do not accept payment to feature a product, and we don&rsquo;t
-              recommend anything we wouldn&rsquo;t suggest to a friend on a tight
-              budget. If a free option works just as well, we&rsquo;ll tell you &mdash;
-              our free printables exist precisely so you never <em>have</em> to buy
-              anything to budget well.
+              recommend anything we wouldn&rsquo;t suggest to a friend. If a free
+              option works just as well, we&rsquo;ll tell you &mdash; our free
+              resources exist precisely so you never <em>have</em> to buy anything
+              to get value from this site.
             </p>
             <p>
               This disclosure is provided in good faith and in line with the U.S.

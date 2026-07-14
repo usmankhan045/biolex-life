@@ -26,9 +26,8 @@ import { cn } from "@/lib/utils";
 
 // Explicit printable→article pairings where slug-keyword matching picks the
 // wrong companion (the ideal companion is the guide that embeds the printable).
-const COMPANION_OVERRIDES: Record<string, string> = {
-  "debt-snowball-tracker": "free-debt-payoff-tracker-printable",
-};
+// Add entries as "<printable-slug>": "<post-slug>" when auto-matching misses.
+const COMPANION_OVERRIDES: Record<string, string> = {};
 
 export const revalidate = 3600;
 
@@ -186,7 +185,7 @@ export default async function PrintableDetailPage({
 
   // Companion article — cross-link the printable back into the blog content
   // pillar. Printables live in the post-less "printables" category, so match by
-  // slug keyword first (e.g. "biweekly-budget-template" → the biweekly guide),
+  // slug keyword first (e.g. "starter-template" → the "getting started" guide),
   // then fall back to the most recent guide so the cross-link always renders.
   let companion: Post | null = null;
   try {
@@ -310,8 +309,8 @@ export default async function PrintableDetailPage({
                 {[
                   "Free to download and print",
                   "No purchase or credit card required",
-                  "Designed for real budgets, not ideal scenarios",
-                  "Works with any income level",
+                  "Designed to be simple and genuinely useful",
+                  "Works for beginners and everyone else",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2">
                     <span className="shrink-0 text-success font-bold text-xs mt-0.5">✓</span>

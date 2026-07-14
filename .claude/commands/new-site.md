@@ -20,8 +20,8 @@ Then the user describes the site, e.g.:
 ## Guardrails
 
 - **This is a repeatable setup for a cloned repo.** Assume the codebase is
-  currently the SpendWiseCents template. Your job is to replace all
-  SpendWiseCents-specific identity + content with the new site's, consistently.
+  currently this blank starter template. Your job is to replace all the
+  template's placeholder identity + content with the new site's, consistently.
 - **Everything flows from `lib/site.config.ts`.** The running app derives its
   `site_id` from `siteConfig.slug`, and its theme/nav/brand from the same file.
   Set the slug **once** and reuse it verbatim in the DB seed — a mismatch makes
@@ -50,7 +50,7 @@ Resolve these from the description (derive sensible values; don't over-ask):
 | Theme `fonts` | display / body / mono — real Google Font family names |
 | `theme.radius` | e.g. `"0.75rem"` |
 | `contact.email`, `contact.privacyEmail` | real inboxes if given, else `contact@<domain>` / `privacy@<domain>` |
-| `legal.disclaimer` | one-liner suited to the niche (drop finance wording for non-finance sites) |
+| `legal.disclaimer` | one-liner suited to the niche |
 | `legal.lastUpdated` | today's date, human format |
 | `brand.monogram` | 2 letters from the name |
 | `brand.foundedYear` | current year unless told |
@@ -103,21 +103,21 @@ curl -sS -X POST "$SUPABASE_URL/rest/v1/categories" \
 
 ## Step 4 — Replace the placeholder CONTENT for the new niche
 
-The template ships with SpendWiseCents copy. Rewrite these surfaces so the site
-reads as its own brand (brand tokens like name/domain already come from config;
-you're replacing the *prose and niche-specific demos*):
+The template ships with generic placeholder copy. Rewrite these surfaces so the
+site reads as its own brand (brand tokens like name/domain already come from
+config; you're replacing the *prose and niche-specific demos*):
 
 - **`app/page.tsx`** — the homepage. Update: `metadata` (title/description/OG),
   the hero heading + subcopy, `VALUE_PROPS`, `PLACEHOLDER_POSTS` (titles/
   excerpts/category names fitting the niche), and the about-teaser blockquote.
-  The hero artifact `BudgetLedgerCard` + `LEDGER_ROWS` is a **finance-specific
-  demo** — for a non-finance site, replace it with a simple on-brand hero visual
-  (or a clean text/image hero) so it doesn't show a budget worksheet.
+  If the hero includes a demo artifact/visual, replace it with a simple on-brand
+  hero visual (or a clean text/image hero) that fits the new niche.
 - **`app/about/page.tsx`** — rewrite the "Our story" paragraphs and the "What
   you'll find here" list for the new niche and voice.
-- **`app/disclaimer/page.tsx`** — the Financial / Earnings disclaimer sections
-  are finance-only. Rewrite or remove them for the niche; keep Affiliate/
-  Advertising/External-Links/No-Warranties if relevant.
+- **`app/disclaimer/page.tsx`** — edit, add, or remove disclaimer sections for
+  the niche; keep Affiliate/Advertising/External-Links/No-Warranties if relevant,
+  and add niche-specific sections (e.g. a Financial/Earnings disclaimer) only
+  where they actually apply.
 - **`app/privacy-policy/page.tsx`** — update the third-party services list
   (Google AdSense, Resend, etc.) to what this site actually uses.
 - **`app/terms-of-use/page.tsx`** — drop the "printable worksheets" clause in
@@ -128,8 +128,8 @@ brand literals — reference `siteConfig` where a value is brand identity.
 
 ## Step 5 — Brand assets (flag, don't fake)
 
-`app/favicon.ico` and `public/og-default.jpg` still carry SpendWiseCents art.
-You can't author a good logo/OG image blind — leave them and list them as
+`app/favicon.ico` and `public/og-default.jpg` still carry the template's
+placeholder art. You can't author a good logo/OG image blind — leave them and list them as
 manual to-dos in the final report (or offer to generate an OG image if the user
 wants).
 

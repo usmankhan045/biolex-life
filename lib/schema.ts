@@ -34,7 +34,6 @@ export function organizationSchema() {
     "@type": "Organization",
     "@id": ORG_ID,
     name: siteConfig.name,
-    alternateName: "Spend Wise Cents",
     url: BASE_URL,
     description: siteConfig.niche,
     slogan: siteConfig.tagline,
@@ -48,25 +47,13 @@ export function organizationSchema() {
     image: OG_DEFAULT,
     founder: { "@id": PERSON_ID },
     email: siteConfig.contact.email,
-    knowsAbout: [
-      "Personal finance",
-      "Budgeting",
-      "Debt payoff",
-      "Saving money",
-      "Frugal living",
-      "Paycheck-to-paycheck budgeting",
-    ],
-    areaServed: { "@type": "Country", name: "United States" },
-    audience: {
-      "@type": "Audience",
-      audienceType: "People managing money on a real, often tight, budget",
-    },
+    knowsAbout: [siteConfig.niche],
     publishingPrinciples: `${BASE_URL}/editorial-policy`,
-    sameAs: [siteConfig.social.pinterest],
+    sameAs: Object.values(siteConfig.social),
   };
 }
 
-/** The named human behind the site — E-E-A-T anchor for YMYL money content. */
+/** The named human behind the site — E-E-A-T authority anchor. */
 export function personSchema() {
   return {
     "@context": "https://schema.org",
@@ -78,13 +65,7 @@ export function personSchema() {
     jobTitle: siteConfig.author.role,
     description: siteConfig.author.shortBio,
     worksFor: { "@id": ORG_ID },
-    knowsAbout: [
-      "Personal finance",
-      "Budgeting",
-      "Debt payoff",
-      "Saving money",
-      "Paycheck-to-paycheck budgeting",
-    ],
+    knowsAbout: [siteConfig.niche],
     ...(siteConfig.author.sameAs.length > 0 && {
       sameAs: [...siteConfig.author.sameAs],
     }),
@@ -147,8 +128,7 @@ export function blogSchema() {
     "@id": `${BASE_URL}/blog#blog`,
     name: `${siteConfig.name} Blog`,
     url: `${BASE_URL}/blog`,
-    description:
-      "Practical budgeting guides, honest money advice, and real-life strategies for every financial situation.",
+    description: `Articles and guides from ${siteConfig.name}.`,
     publisher: { "@id": ORG_ID },
     inLanguage: "en-US",
   };
