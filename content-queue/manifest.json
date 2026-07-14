@@ -1,6 +1,6 @@
 {
   "site": "paper-posy",
-  "phase": 1,
+  "phase": "1 + seasonal",
   "generated_note": "Phase 1 = no-artwork pillars (Home Org, Meal Planning, Kids). Each post embeds its printable via {{printable:<slug>}} twice and links to 2 same-category posts. Pins live in docs/pinterest-pins.md.",
   "printables": [
     {
@@ -191,6 +191,174 @@
       "category": "kids-printables",
       "status": "new",
       "spec": "SOAP-style read/reflect/pray study worksheet lines (original wording)"
+    },
+    {
+      "slug": "christmas-mandala-coloring-page",
+      "title": "Christmas Mandala Coloring Page — Free Printable",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "christmas-ornament-mandala-coloring-page",
+      "title": "Ornament Mandala Coloring Page — Free Printable",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "snowflake-mandala-coloring-page",
+      "title": "Snowflake Mandala Coloring Page — Free Printable",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "star-mandala-coloring-page",
+      "title": "Star Mandala Coloring Page — Free Printable",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "halloween-mandala-coloring-page",
+      "title": "Halloween Mandala Coloring Page — Free Printable",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "spiderweb-mandala-coloring-page",
+      "title": "Spiderweb Coloring Page — Free Printable",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "new-year-mandala-coloring-page",
+      "title": "New Year Mandala Coloring Page — Free Printable",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "merry-and-bright-wall-art",
+      "title": "Merry & Bright Christmas Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "joy-wall-art",
+      "title": "Joy Christmas Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "let-it-snow-wall-art",
+      "title": "Let It Snow Winter Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "gather-wall-art",
+      "title": "Gather Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "believe-wall-art",
+      "title": "Believe Christmas Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "new-chapter-wall-art",
+      "title": "New Chapter New Year Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": ""
+    },
+    {
+      "slug": "christmas-gift-tags",
+      "title": "Printable Christmas Gift Tags — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "sheet of cut-out fill-in gift tags (To/From) in the Paper Posy palette, typography only, no illustration"
+    },
+    {
+      "slug": "advent-activity-calendar",
+      "title": "Printable Advent Activity Calendar — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "25-day December advent calendar grid with a fill-in activity per day + blank version; festive but no artwork"
+    },
+    {
+      "slug": "christmas-planning-checklist",
+      "title": "Christmas Planning Checklist — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "master holiday prep checklist: gifts, cards, decor, food, cleaning, by-week countdown sections"
+    },
+    {
+      "slug": "christmas-dinner-meal-plan",
+      "title": "Christmas Dinner Meal Plan — Free Printable",
+      "category": "meal-planning",
+      "status": "new",
+      "spec": "holiday menu planner: courses, guest count, shopping list, make-ahead timeline; landscape"
+    },
+    {
+      "slug": "christmas-gift-planner",
+      "title": "Christmas Gift Planner & Tracker — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "gift tracker: person, idea, budget, bought/wrapped checkboxes (gift planning, not personal finance)"
+    },
+    {
+      "slug": "halloween-party-games",
+      "title": "Halloween Party Games & Bingo — Free Printable",
+      "category": "kids-printables",
+      "status": "new",
+      "spec": "Halloween bingo card + party games list + would-you-rather sheet, text/CSS shapes only, no emoji"
+    },
+    {
+      "slug": "new-year-goals-planner",
+      "title": "New Year Goals Planner — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "yearly goals by life area, quarterly milestones, monthly focus, habit tracker; goal-setting not budgeting"
+    },
+    {
+      "slug": "declutter-challenge",
+      "title": "30-Day Declutter Challenge — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "30-day declutter calendar with one small area per day + progress tracker"
+    },
+    {
+      "slug": "new-year-reset-checklist",
+      "title": "New Year Home Reset Checklist — Free Printable",
+      "category": "home-organization",
+      "status": "new",
+      "spec": "whole-home fresh-start reset checklist by room + digital/paperwork reset section"
+    },
+    {
+      "slug": "word-of-the-year",
+      "title": "Word of the Year — Free Printable",
+      "category": "printable-wall-art",
+      "status": "new",
+      "spec": "fill-in Word of the Year decor sheet: large frame for the word + reflection prompts; elegant, framable"
+    },
+    {
+      "slug": "vision-board-kit",
+      "title": "Vision Board Kit — Free Printable",
+      "category": "printable-wall-art",
+      "status": "new",
+      "spec": "printable vision-board template: goal frames, prompts, and cut-out label cards; typography only"
     }
   ],
   "posts": [
@@ -953,9 +1121,243 @@
       "category": "kids-printables",
       "printable": "preschool-crafts-planner",
       "printable_status": "existing"
+    },
+    {
+      "slug": "halloween-coloring-pages-printable",
+      "title": "Free Halloween Coloring Pages to Print",
+      "keyword": "halloween coloring pages",
+      "category": "coloring-pages",
+      "printable": "halloween-mandala-coloring-page",
+      "printable_status": "art"
+    },
+    {
+      "slug": "halloween-coloring-pages-for-adults-printable",
+      "title": "Halloween Coloring Pages for Adults (Free Printable)",
+      "keyword": "halloween coloring pages for adults",
+      "category": "coloring-pages",
+      "printable": "spiderweb-mandala-coloring-page",
+      "printable_status": "art"
+    },
+    {
+      "slug": "printable-halloween-party-games",
+      "title": "Printable Halloween Party Games & Bingo (Free)",
+      "keyword": "halloween party games printable",
+      "category": "kids-printables",
+      "printable": "halloween-party-games",
+      "printable_status": "new"
+    },
+    {
+      "slug": "halloween-scavenger-hunt-printable",
+      "title": "The Printable Halloween Scavenger Hunt for Kids (Free)",
+      "keyword": "halloween scavenger hunt printable",
+      "category": "kids-printables",
+      "printable": "halloween-party-games",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "halloween-party-checklist-printable",
+      "title": "The Halloween Party Planning Checklist (Free Printable)",
+      "keyword": "halloween party checklist",
+      "category": "home-organization",
+      "printable": "christmas-planning-checklist",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "christmas-coloring-pages-printable",
+      "title": "Free Christmas Coloring Pages to Print",
+      "keyword": "christmas coloring pages",
+      "category": "coloring-pages",
+      "printable": "christmas-mandala-coloring-page",
+      "printable_status": "art"
+    },
+    {
+      "slug": "christmas-coloring-pages-for-adults-printable",
+      "title": "Christmas Coloring Pages for Adults (Free Printable)",
+      "keyword": "christmas coloring pages for adults",
+      "category": "coloring-pages",
+      "printable": "christmas-ornament-mandala-coloring-page",
+      "printable_status": "art"
+    },
+    {
+      "slug": "christmas-mandala-coloring-pages-printable",
+      "title": "Christmas Mandala Coloring Pages (Free Printable)",
+      "keyword": "christmas mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "star-mandala-coloring-page",
+      "printable_status": "art"
+    },
+    {
+      "slug": "snowflake-coloring-pages-printable",
+      "title": "Free Printable Snowflake Coloring Pages",
+      "keyword": "snowflake coloring pages",
+      "category": "coloring-pages",
+      "printable": "snowflake-mandala-coloring-page",
+      "printable_status": "art"
+    },
+    {
+      "slug": "christmas-wall-art-printable",
+      "title": "Free Christmas Printable Wall Art to Frame",
+      "keyword": "christmas printable wall art",
+      "category": "printable-wall-art",
+      "printable": "merry-and-bright-wall-art",
+      "printable_status": "art"
+    },
+    {
+      "slug": "christmas-quotes-wall-art-printable",
+      "title": "Christmas Quote Wall Art (Free Printable Set)",
+      "keyword": "christmas wall art quotes",
+      "category": "printable-wall-art",
+      "printable": "joy-wall-art",
+      "printable_status": "art"
+    },
+    {
+      "slug": "printable-christmas-gift-tags",
+      "title": "Free Printable Christmas Gift Tags",
+      "keyword": "printable christmas gift tags",
+      "category": "kids-printables",
+      "printable": "christmas-gift-tags",
+      "printable_status": "new"
+    },
+    {
+      "slug": "printable-advent-calendar",
+      "title": "The Free Printable Advent Activity Calendar",
+      "keyword": "printable advent calendar",
+      "category": "kids-printables",
+      "printable": "advent-activity-calendar",
+      "printable_status": "new"
+    },
+    {
+      "slug": "christmas-planning-checklist-printable",
+      "title": "The Christmas Planning Checklist That Keeps You Sane (Free Printable)",
+      "keyword": "christmas planning checklist",
+      "category": "home-organization",
+      "printable": "christmas-planning-checklist",
+      "printable_status": "new"
+    },
+    {
+      "slug": "christmas-cleaning-schedule-printable",
+      "title": "The Pre-Christmas Cleaning Schedule (Free Printable)",
+      "keyword": "christmas cleaning schedule",
+      "category": "home-organization",
+      "printable": "weekly-cleaning-schedule",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "christmas-dinner-meal-plan-printable",
+      "title": "The Christmas Dinner Meal Plan & Menu (Free Printable)",
+      "keyword": "christmas dinner meal plan",
+      "category": "meal-planning",
+      "printable": "christmas-dinner-meal-plan",
+      "printable_status": "new"
+    },
+    {
+      "slug": "christmas-gift-planner-printable",
+      "title": "The Christmas Gift Planner That Tracks Every Gift (Free Printable)",
+      "keyword": "christmas gift planner printable",
+      "category": "home-organization",
+      "printable": "christmas-gift-planner",
+      "printable_status": "new"
+    },
+    {
+      "slug": "new-year-goals-printable",
+      "title": "The New Year Goals Printable That Actually Works",
+      "keyword": "new year goals printable",
+      "category": "home-organization",
+      "printable": "new-year-goals-planner",
+      "printable_status": "new"
+    },
+    {
+      "slug": "2027-goal-planner-printable",
+      "title": "The 2027 Goal Planner (Free Printable)",
+      "keyword": "goal planner printable",
+      "category": "home-organization",
+      "printable": "new-year-goals-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "new-year-resolutions-printable",
+      "title": "Free Printable New Year Resolutions Worksheet",
+      "keyword": "new year resolutions printable",
+      "category": "home-organization",
+      "printable": "new-year-goals-planner",
+      "printable_status": "existing"
+    },
+    {
+      "slug": "printable-declutter-challenge",
+      "title": "The 30-Day Declutter Challenge (Free Printable)",
+      "keyword": "declutter challenge printable",
+      "category": "home-organization",
+      "printable": "declutter-challenge",
+      "printable_status": "new"
+    },
+    {
+      "slug": "new-year-home-reset-checklist-printable",
+      "title": "The New Year Home Reset Checklist (Free Printable)",
+      "keyword": "new year home reset checklist",
+      "category": "home-organization",
+      "printable": "new-year-reset-checklist",
+      "printable_status": "new"
+    },
+    {
+      "slug": "word-of-the-year-printable",
+      "title": "The Word of the Year Printable to Frame (Free)",
+      "keyword": "word of the year printable",
+      "category": "printable-wall-art",
+      "printable": "word-of-the-year",
+      "printable_status": "new"
+    },
+    {
+      "slug": "printable-vision-board-kit",
+      "title": "The Free Printable Vision Board Kit",
+      "keyword": "printable vision board",
+      "category": "printable-wall-art",
+      "printable": "vision-board-kit",
+      "printable_status": "new"
+    },
+    {
+      "slug": "new-year-mandala-coloring-page-printable",
+      "title": "New Year Mandala Coloring Page (Free Printable)",
+      "keyword": "new year coloring pages",
+      "category": "coloring-pages",
+      "printable": "new-year-mandala-coloring-page",
+      "printable_status": "art"
+    },
+    {
+      "slug": "new-year-meal-prep-reset-printable",
+      "title": "The New Year Meal Prep Reset (Free Printable Plan)",
+      "keyword": "new year meal prep",
+      "category": "meal-planning",
+      "printable": "weekly-meal-planner",
+      "printable_status": "existing"
     }
   ],
   "publish_order": [
+    "halloween-coloring-pages-printable",
+    "halloween-coloring-pages-for-adults-printable",
+    "printable-halloween-party-games",
+    "halloween-scavenger-hunt-printable",
+    "halloween-party-checklist-printable",
+    "christmas-coloring-pages-printable",
+    "christmas-coloring-pages-for-adults-printable",
+    "christmas-mandala-coloring-pages-printable",
+    "snowflake-coloring-pages-printable",
+    "christmas-wall-art-printable",
+    "christmas-quotes-wall-art-printable",
+    "printable-christmas-gift-tags",
+    "printable-advent-calendar",
+    "christmas-planning-checklist-printable",
+    "christmas-cleaning-schedule-printable",
+    "christmas-dinner-meal-plan-printable",
+    "christmas-gift-planner-printable",
+    "new-year-goals-printable",
+    "2027-goal-planner-printable",
+    "new-year-resolutions-printable",
+    "printable-declutter-challenge",
+    "new-year-home-reset-checklist-printable",
+    "word-of-the-year-printable",
+    "printable-vision-board-kit",
+    "new-year-mandala-coloring-page-printable",
+    "new-year-meal-prep-reset-printable",
     "weekly-cleaning-schedule-printable",
     "weekly-meal-plan-printable",
     "chore-chart-printable",

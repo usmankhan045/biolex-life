@@ -214,5 +214,109 @@
     "thumbnail_url": "/printables/bible-study-printable-preview.png",
     "orientation": "portrait",
     "category": "kids-printables"
+  },
+  "christmas-mandala-coloring-page": {
+    "title": "Christmas Mandala Coloring Page — Free Printable",
+    "description": "A calming original Christmas mandala coloring page with layered petal and scallop rings. Print on letter paper and color it your way.",
+    "file_url": "/printables/christmas-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/christmas-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "christmas-ornament-mandala-coloring-page": {
+    "title": "Ornament Mandala Coloring Page — Free Printable",
+    "description": "An intricate ornament-style Christmas mandala coloring page for adults, with delicate scalloped and diamond detail.",
+    "file_url": "/printables/christmas-ornament-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/christmas-ornament-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "snowflake-mandala-coloring-page": {
+    "title": "Snowflake Mandala Coloring Page — Free Printable",
+    "description": "A crisp snowflake mandala coloring page built from stars and diamonds — a wintry design to color in.",
+    "file_url": "/printables/snowflake-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/snowflake-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "star-mandala-coloring-page": {
+    "title": "Star Mandala Coloring Page — Free Printable",
+    "description": "A bold star-burst mandala coloring page with pointed petals — festive for Christmas or a New Year.",
+    "file_url": "/printables/star-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/star-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "halloween-mandala-coloring-page": {
+    "title": "Halloween Mandala Coloring Page — Free Printable",
+    "description": "A spooky-season Halloween mandala coloring page with sharp star petals — original line art to color.",
+    "file_url": "/printables/halloween-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/halloween-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "spiderweb-mandala-coloring-page": {
+    "title": "Spiderweb Coloring Page — Free Printable",
+    "description": "A symmetrical spiderweb coloring page for Halloween — concentric webs and radial spokes to color in.",
+    "file_url": "/printables/spiderweb-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/spiderweb-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "new-year-mandala-coloring-page": {
+    "title": "New Year Mandala Coloring Page — Free Printable",
+    "description": "A fresh-start New Year mandala coloring page — a mindful way to welcome the new year.",
+    "file_url": "/printables/new-year-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/new-year-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "merry-and-bright-wall-art": {
+    "title": "Merry & Bright Christmas Wall Art — Free Printable",
+    "description": "Elegant Merry & Bright Christmas printable wall art in classic serif type — print, frame, and hang.",
+    "file_url": "/printables/merry-and-bright-wall-art.pdf",
+    "thumbnail_url": "/printables/merry-and-bright-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "joy-wall-art": {
+    "title": "Joy Christmas Wall Art — Free Printable",
+    "description": "Minimalist Joy Christmas printable wall art with a hand-drawn sprig — timeless holiday decor to print and frame.",
+    "file_url": "/printables/joy-wall-art.pdf",
+    "thumbnail_url": "/printables/joy-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "let-it-snow-wall-art": {
+    "title": "Let It Snow Winter Wall Art — Free Printable",
+    "description": "A cozy Let It Snow printable wall art in serif type — simple winter decor you can print and frame at home.",
+    "file_url": "/printables/let-it-snow-wall-art.pdf",
+    "thumbnail_url": "/printables/let-it-snow-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "gather-wall-art": {
+    "title": "Gather Wall Art — Free Printable",
+    "description": "A warm Gather printable wall art — understated serif decor for the holiday table or entryway.",
+    "file_url": "/printables/gather-wall-art.pdf",
+    "thumbnail_url": "/printables/gather-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "believe-wall-art": {
+    "title": "Believe Christmas Wall Art — Free Printable",
+    "description": "A quiet Believe Christmas printable wall art in elegant type — minimalist holiday decor to print and frame.",
+    "file_url": "/printables/believe-wall-art.pdf",
+    "thumbnail_url": "/printables/believe-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "new-chapter-wall-art": {
+    "title": "New Chapter New Year Wall Art — Free Printable",
+    "description": "A fresh New Chapter printable wall art for the new year — clean serif decor to print, frame, and start fresh.",
+    "file_url": "/printables/new-chapter-wall-art.pdf",
+    "thumbnail_url": "/printables/new-chapter-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
   }
 }
