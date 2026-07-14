@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Budget Categories Checklist — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; }
+
+.botanical { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; pointer-events: none; }
+
+.header { background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0; padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.header-subtitle { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 2px; }
+.hfield-line { width: 78pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-text { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+
+.body { margin: 8px 0.42in 0; }
+
+.section { margin-bottom: 7px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 6px 10px; letter-spacing: 0.2px; }
+.sh-fixed { background: #7A9E7E; }
+.sh-variable { background: #A89080; }
+.sh-debt { background: #6B8FAE; }
+.sh-savings { background: #8B7BA0; }
+.sh-income { background: #C4826E; }
+
+.check-grid { display: grid; grid-template-columns: repeat(3, 1fr); background: #FAF7F2; }
+.check-item { display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-bottom: 1px solid rgba(0,0,0,0.045); border-right: 1px solid rgba(0,0,0,0.045); }
+.check-box { width: 10px; height: 10px; border: 1.3px solid #7A9E7E; border-radius: 3px; flex-shrink: 0; }
+.check-label { font-family: 'Lato', Arial, sans-serif; font-size: 7.4pt; color: #3D3530; }
+.check-fill { flex: 1; border-bottom: 1px solid #C4B5A5; height: 12px; margin-left: 2px; }
+
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 5px 10px; margin-bottom: 6px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">BUDGET CATEGORIES CHECKLIST</div>
+      <div class="header-subtitle">Every expense you might be forgetting — check off what applies to you 🌿</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Name</span><div class="hfield-line"></div></div>
+      <div class="hfield"><span class="hfield-label">Date</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Go line by line — tick each category you have, so nothing sneaks up on your budget later.</span>
+    <span class="subheader-tag">Don't Forget These</span>
+  </div>
+
+  <div class="body">
+
+    <!-- FIXED -->
+    <div class="section">
+      <div class="section-header sh-fixed">FIXED MONTHLY EXPENSES</div>
+      <div class="check-grid">
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Rent / Mortgage</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Renters / Home Insurance</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Car Payment</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Car Insurance</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Health Insurance</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Life Insurance</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Electricity</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Gas / Heating</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Water / Sewer</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Trash / Recycling</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Phone Bill</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Internet / Wi-Fi</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Childcare / Daycare</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Student Loan</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Personal Loan</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Gym Membership</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Streaming Services</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">App / Cloud Subscriptions</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">HOA Fees</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Cable / TV</span></div>
+      </div>
+    </div>
+
+    <!-- VARIABLE -->
+    <div class="section">
+      <div class="section-header sh-variable">VARIABLE / EVERYDAY EXPENSES</div>
+      <div class="check-grid">
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Groceries</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Dining Out</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Coffee / Snacks</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Gas / Fuel</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Rideshare / Transit</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Household Supplies</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Toiletries</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Personal Care / Beauty</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Haircuts / Salon</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Clothing</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Kids' Activities</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">School Supplies</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Pet Food / Care</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Medical / Copays</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Prescriptions</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Entertainment</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Hobbies</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Gifts</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Date Night</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Miscellaneous</span></div>
+      </div>
+    </div>
+
+    <!-- IRREGULAR -->
+    <div class="section">
+      <div class="section-header sh-debt">IRREGULAR / ANNUAL EXPENSES (the sneaky ones)</div>
+      <div class="check-grid">
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Car Registration / Tags</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Car Maintenance / Oil</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Property Taxes</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Tax Prep / Payments</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Annual Premiums</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Prime / Memberships</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Holidays / Christmas</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Birthdays</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Back-to-School</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Vacation / Travel</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Dental / Eye Checkups</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Vet Visits</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Home Repairs</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Warranty Renewals</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Professional Dues</span></div>
+      </div>
+    </div>
+
+    <!-- SAVINGS -->
+    <div class="section">
+      <div class="section-header sh-savings">SAVINGS &amp; GOALS</div>
+      <div class="check-grid">
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Emergency Fund</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Retirement / IRA</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Sinking Funds</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Vacation Fund</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Holiday Fund</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Car Replacement Fund</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Home Down Payment</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Kids' College Fund</span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-label">Extra Debt Payoff</span></div>
+      </div>
+    </div>
+
+    <!-- MY EXTRAS -->
+    <div class="section">
+      <div class="section-header sh-income">MY EXTRAS — ADD YOUR OWN</div>
+      <div class="check-grid">
+        <div class="check-item"><span class="check-box"></span><span class="check-fill"></span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-fill"></span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-fill"></span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-fill"></span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-fill"></span></div>
+        <div class="check-item"><span class="check-box"></span><span class="check-fill"></span></div>
+      </div>
+    </div>
+
+    <div class="affirmation">"When you name every expense, none of them can surprise you." 🌿</div>
+
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+
+</div>
+
+</body>
+</html>

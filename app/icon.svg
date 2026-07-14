@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SpendWiseCents">
+  <rect width="512" height="512" rx="112" fill="#2A5C55"/>
+  <!-- Cent mark: an open 'C' (gap on the right) crossed by a vertical bar -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M 331.9 165.6 A 118 118 0 1 0 331.9 346.4" stroke="#F5F4F0" stroke-width="46"/>
+    <line x1="256" y1="92" x2="256" y2="420" stroke="#C8943A" stroke-width="40"/>
+  </g>
+</svg>

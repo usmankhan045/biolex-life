@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Savings Goal Tracker — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #2D2D2D;
+  background: #FAF7F2;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+  background: #FAF7F2;
+  position: relative;
+  overflow: hidden;
+}
+
+.botanical {
+  position: absolute;
+  top: 0.25in;
+  right: 0.30in;
+  width: 0.75in;
+  opacity: 0.22;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* HEADER */
+.header {
+  background: #7A9E7E;
+  border-radius: 8px 8px 0 0;
+  margin: 0.38in 0.42in 0;
+  padding: 8px 14px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22pt;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+.header-subtitle {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 7.5pt;
+  font-style: italic;
+  color: rgba(255,255,255,0.78);
+  margin-top: 3px;
+}
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 6.5pt;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 2px;
+}
+.hfield-line { width: 78pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+
+/* SUBHEADER */
+.subheader {
+  background: #B5C9B7;
+  margin: 0 0.42in;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subheader-text { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+
+.body { margin: 8px 0.42in 0; }
+
+/* SECTIONS */
+.section { margin-bottom: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: #fff;
+  padding: 6px 10px;
+  letter-spacing: 0.2px;
+}
+.sh-income { background: #C4826E; }
+.sh-fixed { background: #7A9E7E; }
+.sh-savings { background: #8B7BA0; }
+.sh-summary { background: #4A6B4E; }
+
+/* THERMOMETER */
+.thermo-block { padding: 12px 14px 14px; background: #FAF7F2; }
+.thermo-wrap { display: flex; align-items: center; margin: 4px 0 2px; }
+.thermo-bulb {
+  width: 0.52in; height: 0.52in; border-radius: 50%;
+  border: 1.8px solid #7A9E7E; background: #C4826E;
+  flex-shrink: 0; margin-right: -10px; z-index: 3;
+}
+.thermo-bar {
+  flex: 1; display: flex; height: 0.46in;
+  border: 1.8px solid #7A9E7E; border-radius: 0 12px 12px 0;
+  overflow: hidden;
+}
+.thermo-seg { flex: 1; border-right: 1px dashed #B5C9B7; background: #FAF7F2; }
+.thermo-seg:last-child { border-right: none; }
+.thermo-flag {
+  flex-shrink: 0; margin-left: 8px;
+  font-family: 'Playfair Display', Georgia, serif; font-size: 9pt; font-weight: 700; color: #C4826E;
+}
+.thermo-scale { display: flex; margin: 5px 0.52in 0 0.42in; }
+.thermo-mark { flex: 1; text-align: center; }
+.thermo-pct { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; display: block; }
+.thermo-amt {
+  font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: #8A7A6A;
+  border-bottom: 1px solid #C4B5A5; height: 12px; margin: 3px 3px 0; display: block;
+}
+
+/* MILESTONES */
+.milestones { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 10px 12px; background: #FAF7F2; }
+.mstone { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 6px; padding: 7px 8px 9px; text-align: center; }
+.mstone-pct { font-family: 'Playfair Display', Georgia, serif; font-size: 12pt; font-weight: 700; color: #C4826E; }
+.mstone-title { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.3px; color: #8A7A6A; margin: 2px 0 6px; }
+.mstone-line { border-bottom: 1px solid #D4B4A8; height: 15px; }
+.mstone-line + .mstone-line { margin-top: 4px; }
+
+/* DEPOSIT LOG */
+.log-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.log-col { border-right: 1px solid #DDD5C8; }
+.log-col:last-child { border-right: none; }
+.log-head {
+  display: grid; grid-template-columns: 0.9in 1fr 1fr;
+  background: #EDE8E0; padding: 4px 10px;
+  font-family: 'Lato', Arial, sans-serif; font-size: 6.8pt; font-weight: 700; color: #3D3530;
+  text-transform: uppercase; letter-spacing: 0.3px; gap: 4px;
+}
+.log-row {
+  display: grid; grid-template-columns: 0.9in 1fr 1fr;
+  padding: 4px 10px; gap: 4px; align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.log-row:last-child { border-bottom: none; }
+.log-row.odd { background: #FAF7F2; }
+.log-row.even { background: #F5F0EA; }
+.log-cell { border-bottom: 1.2px solid #C4B5A5; height: 14px; }
+.log-money { display: flex; align-items: flex-end; gap: 2px; }
+.dollar-sign { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; color: #8A7A6A; flex-shrink: 0; line-height: 13px; }
+.log-money .log-cell { flex: 1; }
+
+/* NOTES */
+.notes { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 7px 10px 9px; margin-bottom: 8px; }
+.notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+.notes-line { border-bottom: 1px solid #D4B4A8; height: 18px; }
+
+.affirmation {
+  background: #B5C9B7; border-radius: 5px; padding: 5px 10px; margin-bottom: 6px;
+  font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in;
+  border-top: 1px solid #DDD5C8; padding-top: 5px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.footer-left { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">SAVINGS GOAL TRACKER</div>
+      <div class="header-subtitle">Color in your progress and watch your savings goal fill up 🌿</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Goal</span><div class="hfield-line"></div></div>
+      <div class="hfield"><span class="hfield-label">Target $</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Deadline: _______________ &nbsp;|&nbsp; Saving per week / paycheck: $_______________ &nbsp;|&nbsp; Starting balance: $_______________</span>
+    <span class="subheader-tag">Any $ Goal</span>
+  </div>
+
+  <div class="body">
+
+    <!-- THERMOMETER -->
+    <div class="section">
+      <div class="section-header sh-savings">MY PROGRESS THERMOMETER — COLOR IN AS YOU SAVE</div>
+      <div class="thermo-block">
+        <div class="thermo-wrap">
+          <div class="thermo-bulb"></div>
+          <div class="thermo-bar">
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div><div class="thermo-seg"></div><div class="thermo-seg"></div>
+            <div class="thermo-seg"></div>
+          </div>
+          <span class="thermo-flag">🎯 GOAL!</span>
+        </div>
+        <div class="thermo-scale">
+          <div class="thermo-mark"><span class="thermo-pct">10%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">20%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">30%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">40%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">50%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">60%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">70%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">80%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">90%</span><span class="thermo-amt"></span></div>
+          <div class="thermo-mark"><span class="thermo-pct">100%</span><span class="thermo-amt"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MILESTONES -->
+    <div class="section">
+      <div class="section-header sh-income">MILESTONE REWARDS — CELEBRATE EACH QUARTER</div>
+      <div class="milestones">
+        <div class="mstone"><div class="mstone-pct">25%</div><div class="mstone-title">My Reward</div><div class="mstone-line"></div><div class="mstone-line"></div></div>
+        <div class="mstone"><div class="mstone-pct">50%</div><div class="mstone-title">My Reward</div><div class="mstone-line"></div><div class="mstone-line"></div></div>
+        <div class="mstone"><div class="mstone-pct">75%</div><div class="mstone-title">My Reward</div><div class="mstone-line"></div><div class="mstone-line"></div></div>
+        <div class="mstone"><div class="mstone-pct">100%</div><div class="mstone-title">My Reward</div><div class="mstone-line"></div><div class="mstone-line"></div></div>
+      </div>
+    </div>
+
+    <!-- DEPOSIT LOG -->
+    <div class="section">
+      <div class="section-header sh-fixed">WEEKLY DEPOSIT LOG — EVERY DOLLAR COUNTS</div>
+      <div class="log-wrap">
+        <div class="log-col">
+          <div class="log-head"><span>Date</span><span>Amount</span><span>Running Total</span></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+        </div>
+        <div class="log-col">
+          <div class="log-head"><span>Date</span><span>Amount</span><span>Running Total</span></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row even"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+          <div class="log-row odd"><div class="log-cell"></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div><div class="log-money"><span class="dollar-sign">$</span><div class="log-cell"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOTES -->
+    <div class="notes">
+      <div class="notes-title">💛 Why This Goal Matters to Me</div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+      <div class="notes-line"></div>
+    </div>
+
+    <div class="affirmation">"You don't have to save it all at once — you just have to keep going." 🌿</div>
+
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+
+</div>
+
+</body>
+</html>

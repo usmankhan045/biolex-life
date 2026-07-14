@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Couples Money Date Worksheet — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; }
+.botanical { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; pointer-events: none; }
+
+.header { background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0; padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 21pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.header-subtitle { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 2px; }
+.hfield-line { width: 78pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-text { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+
+.body { margin: 8px 0.42in 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+.section { margin-bottom: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 6px 10px; letter-spacing: 0.2px; }
+.sh-income   { background: #C4826E; }
+.sh-fixed    { background: #7A9E7E; }
+.sh-variable { background: #A89080; }
+.sh-savings  { background: #8B7BA0; }
+.sh-summary  { background: #4A6B4E; }
+
+/* CHECK ITEMS */
+.check-item { display: flex; align-items: baseline; gap: 8px; padding: 6px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.check-item:last-child { border-bottom: none; }
+.check-item.odd  { background: #FAF7F2; }
+.check-item.even { background: #F5F0EA; }
+.check-box { width: 11px; height: 11px; border: 1.3px solid #C4826E; border-radius: 3px; flex-shrink: 0; margin-top: 1px; }
+.check-label { font-family: 'Lato', Arial, sans-serif; font-size: 7.6pt; color: #3D3530; line-height: 1.28; }
+
+/* SPLIT WORKSHEET */
+.row { display: grid; grid-template-columns: 1fr 0.75in; padding: 4.5px 10px; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.row:last-child { border-bottom: none; }
+.row.odd  { background: #FAF7F2; }
+.row.even { background: #F5F0EA; }
+.row.total-row { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; border-bottom: none; }
+.row-label { font-family: 'Lato', Arial, sans-serif; font-size: 7.7pt; color: #3D3530; }
+.row.total-row .row-label { font-size: 7.4pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #2D2D2D; }
+.field-cell { display: flex; align-items: flex-end; gap: 2px; }
+.dollar-sign { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; color: #8A7A6A; flex-shrink: 0; line-height: 14px; }
+.field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+.row.total-row .field-line { border-bottom: 2px solid #7A9E7E; }
+
+/* BILLS SPLIT TABLE */
+.split-head { display: grid; grid-template-columns: 1fr 0.62in 0.62in 0.62in; gap: 3px; background: #EDE8E0; padding: 5px 10px;
+  font-family: 'Lato', Arial, sans-serif; font-size: 6.6pt; font-weight: 700; color: #3D3530; text-transform: uppercase; letter-spacing: 0.2px; }
+.split-head span:not(:first-child) { text-align: center; }
+.split-row { display: grid; grid-template-columns: 1fr 0.62in 0.62in 0.62in; gap: 3px; padding: 4.5px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); align-items: center; }
+.split-row:last-child { border-bottom: none; }
+.split-row.odd  { background: #FAF7F2; }
+.split-row.even { background: #F5F0EA; }
+.split-label { font-family: 'Lato', Arial, sans-serif; font-size: 7.4pt; color: #3D3530; }
+.split-field { display: flex; align-items: flex-end; gap: 1px; }
+.split-field .dollar-sign { font-size: 6.8pt; }
+.split-field .field-line { height: 13px; }
+
+/* GOALS TABLE */
+.goal-head { display: grid; grid-template-columns: 1fr 0.7in 0.75in 0.7in; gap: 4px; background: #EDE8E0; padding: 5px 10px;
+  font-family: 'Lato', Arial, sans-serif; font-size: 6.6pt; font-weight: 700; color: #3D3530; text-transform: uppercase; letter-spacing: 0.2px; }
+.goal-head span:not(:first-child) { text-align: center; }
+.goal-row { display: grid; grid-template-columns: 1fr 0.7in 0.75in 0.7in; gap: 4px; padding: 6px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); align-items: center; }
+.goal-row:last-child { border-bottom: none; }
+.goal-row.odd  { background: #FAF7F2; }
+.goal-row.even { background: #F5F0EA; }
+.goal-field { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+
+/* HONESTY CHECK-IN BOX */
+.honesty { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 8px 11px 10px; margin-bottom: 8px; }
+.honesty-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+.honesty-q { font-family: 'Lato', Arial, sans-serif; font-size: 7.2pt; color: #3D3530; margin-bottom: 3px; line-height: 1.3; }
+.honesty-line { border-bottom: 1px solid #D4B4A8; height: 17px; margin-bottom: 5px; }
+
+/* NEXT DATE STRIP */
+.nextdate { background: #4A6B4E; border-radius: 7px; padding: 9px 14px; display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 8px; }
+.nextdate-label { font-family: 'Playfair Display', Georgia, serif; font-size: 9pt; font-style: italic; color: #fff; flex-shrink: 0; }
+.nextdate-fields { display: flex; gap: 20px; flex: 1; }
+.nd-field { display: flex; align-items: flex-end; gap: 5px; flex: 1; }
+.nd-flabel { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; text-transform: uppercase; letter-spacing: 0.4px; color: rgba(255,255,255,0.75); flex-shrink: 0; }
+.nd-line { flex: 1; border-bottom: 1.4px solid rgba(255,255,255,0.6); height: 15px; }
+
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 6px 10px; margin-bottom: 8px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; text-align: center; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">COUPLES MONEY DATE</div>
+      <div class="header-subtitle">Conversation prompts &amp; a fair split worksheet for a calm, honest money date</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Partners</span><div class="hfield-line"></div></div>
+      <div class="hfield"><span class="hfield-label">Date</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Grab a coffee, silence your phones, and remember: you're on the same team facing the money — not each other.</span>
+    <span class="subheader-tag">30-Minute Date</span>
+  </div>
+
+  <div class="body">
+    <div class="two-col">
+      <!-- LEFT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-income">💬 CONVERSATION PROMPTS — TALK IT THROUGH</div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label">One money win we're proud of this month?</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label">Any surprise expenses or bills coming up?</span></div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label">What's one thing stressing us about money?</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label">Are we happy with how we split things?</span></div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label">What do we want to save toward together?</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label">A purchase either of us wants to make soon?</span></div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label">How much "no questions asked" fun money each?</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label">One thing we'll do differently next month?</span></div>
+        </div>
+
+        <div class="honesty">
+          <div class="honesty-title">🤝 Money Honesty Check-In</div>
+          <div class="honesty-q">Is there any spending or debt I haven't shared yet?</div>
+          <div class="honesty-line"></div>
+          <div class="honesty-q">Do I feel heard about money in this relationship?</div>
+          <div class="honesty-line"></div>
+          <div class="honesty-q">What do I need from my partner to feel secure?</div>
+          <div class="honesty-line"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-fixed">⚖ SHARED BILLS — SPLIT FAIRLY BY INCOME</div>
+          <div class="row odd"><span class="row-label">Partner A monthly income</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Partner B monthly income</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">▶ Combined income</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="split-head"><span>A's share ____% &nbsp;/&nbsp; B's share ____%</span><span>Bill</span><span>A</span><span>B</span></div>
+          <div class="split-row odd"><span class="split-label">Rent / Mortgage</span><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="split-row even"><span class="split-label">Utilities</span><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="split-row odd"><span class="split-label">Groceries</span><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="split-row even"><span class="split-label">Insurance</span><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="split-row odd"><span class="split-label">Subscriptions</span><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="split-row total-row" style="display:grid;grid-template-columns:1fr 0.62in 0.62in 0.62in;gap:3px;"><span class="split-label" style="font-weight:700;text-transform:uppercase;font-size:6.8pt;letter-spacing:0.3px;">Totals</span><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="split-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOALS TABLE (full width) -->
+    <div class="section">
+      <div class="section-header sh-savings">🎯 INDIVIDUAL vs. JOINT GOALS</div>
+      <div class="goal-head"><span>Goal</span><span>Mine / Ours</span><span>Target $</span><span>By When</span></div>
+      <div class="goal-row odd"><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div></div>
+      <div class="goal-row even"><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div></div>
+      <div class="goal-row odd"><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div></div>
+      <div class="goal-row even"><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div><div class="goal-field"></div></div>
+    </div>
+
+    <!-- NEXT DATE -->
+    <div class="nextdate">
+      <span class="nextdate-label">🗓 Our next money date is...</span>
+      <div class="nextdate-fields">
+        <div class="nd-field"><span class="nd-flabel">Date</span><div class="nd-line"></div></div>
+        <div class="nd-field"><span class="nd-flabel">Where / Treat</span><div class="nd-line"></div></div>
+      </div>
+    </div>
+
+    <div class="affirmation">"We talk about money the way we love — with honesty, patience, and a shared plan for the life we're building." 🌿</div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+</body>
+</html>

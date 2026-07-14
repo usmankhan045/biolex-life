@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Family Documents &amp; Estate Checklist — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; padding: 0.38in 0.42in 0.30in; }
+.botanical { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; pointer-events: none; }
+
+.header { background: #7A9E7E; border-radius: 8px 8px 0 0; padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.header-subtitle { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label { font-size: 6.5pt; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 2px; }
+.hfield-line { width: 78pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+
+.subheader { background: #B5C9B7; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+
+.body { margin-top: 8px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+.section { margin-bottom: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 6px 10px; letter-spacing: 0.2px; }
+.sh-income { background: #C4826E; }
+.sh-fixed { background: #7A9E7E; }
+.sh-variable { background: #A89080; }
+.sh-savings { background: #8B7BA0; }
+.sh-debt { background: #6B8FAE; }
+.sh-summary { background: #4A6B4E; }
+
+/* CHECKLIST */
+.check-list { background: #FAF7F2; }
+.check-item { display: flex; align-items: center; gap: 7px; padding: 4.5px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.check-item:last-child { border-bottom: none; }
+.check-item.even { background: #F5F0EA; }
+.check-box { width: 11px; height: 11px; border: 1.3px solid #7A9E7E; border-radius: 3px; flex-shrink: 0; }
+.check-label { font-size: 7.8pt; color: #3D3530; }
+
+/* DOLLAR ROWS */
+.row { display: grid; grid-template-columns: 1fr 0.75in; padding: 4.5px 10px; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.row:last-child { border-bottom: none; }
+.row.odd { background: #FAF7F2; }
+.row.even { background: #F5F0EA; }
+.row.total-row { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; border-bottom: none; }
+.row-label { font-size: 7.8pt; color: #3D3530; }
+.row.total-row .row-label { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #2D2D2D; }
+.field-cell { display: flex; align-items: flex-end; gap: 2px; }
+.dollar-sign { font-size: 7.5pt; color: #8A7A6A; flex-shrink: 0; line-height: 14px; }
+.field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; background: transparent; height: 15px; }
+.row.total-row .field-line { border-bottom: 2px solid #7A9E7E; }
+
+/* MULTI-COLUMN TABLE */
+.tbl-head, .tbl-row { display: grid; align-items: center; gap: 5px; padding: 5px 10px; }
+.tbl-head { background: #EDE8E0; font-size: 7pt; font-weight: 700; color: #3D3530; text-transform: uppercase; letter-spacing: 0.3px; }
+.tbl-row { border-bottom: 1px solid rgba(0,0,0,0.05); font-size: 7.8pt; color: #3D3530; }
+.tbl-row:last-child { border-bottom: none; }
+.tbl-row.odd { background: #FAF7F2; }
+.tbl-row.even { background: #F5F0EA; }
+.tbl-fill { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+.tbl-check { width: 11px; height: 11px; border: 1.3px solid #7A9E7E; border-radius: 3px; margin: 0 auto; }
+.c3 { grid-template-columns: 1.4fr 1fr 0.4in; }
+
+/* NOTES */
+.notes { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 7px 10px 9px; margin-bottom: 8px; }
+.notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+.notes-line { border-bottom: 1px solid #D4B4A8; height: 18px; }
+
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 5px 10px; margin-bottom: 6px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">FAMILY DOCUMENTS &amp; ESTATE</div>
+      <div class="header-subtitle">A simple checklist of the wills, beneficiaries and documents every young family needs</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Reviewed</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">This isn't about being morbid — it's about making sure the people you love are protected and know where things are.</span>
+    <span class="subheader-tag">Keep in a safe place</span>
+  </div>
+
+  <div class="body">
+    <div class="two-col">
+
+      <!-- LEFT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-fixed">✓ ESSENTIAL DOCUMENTS</div>
+          <div class="check-list">
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Last Will &amp; Testament</span></div>
+            <div class="check-item even"><span class="check-box"></span><span class="check-label">Living Will / Advance Directive</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Financial Power of Attorney</span></div>
+            <div class="check-item even"><span class="check-box"></span><span class="check-label">Medical Power of Attorney</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Guardianship for children</span></div>
+            <div class="check-item even"><span class="check-box"></span><span class="check-label">Life insurance policy</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Birth &amp; marriage certificates</span></div>
+            <div class="check-item even"><span class="check-box"></span><span class="check-label">Social Security cards</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Property deeds &amp; titles</span></div>
+            <div class="check-item even"><span class="check-box"></span><span class="check-label">Trust documents (if any)</span></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-summary">FINAL-EXPENSES ESTIMATE</div>
+          <div class="row odd"><span class="row-label">Funeral / Service</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Burial / Cremation</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Outstanding Debts</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Legal / Probate Fees</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">▶ ESTIMATED TOTAL</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-savings">BENEFICIARIES REVIEW</div>
+          <div class="tbl-head c3"><span>Account / Policy</span><span>Beneficiary</span><span style="text-align:center;">Updated</span></div>
+          <div class="tbl-row c3 odd"><span>Life Insurance</span><div class="tbl-fill"></div><div class="tbl-check"></div></div>
+          <div class="tbl-row c3 even"><span>401(k) / Pension</span><div class="tbl-fill"></div><div class="tbl-check"></div></div>
+          <div class="tbl-row c3 odd"><span>IRA / Investments</span><div class="tbl-fill"></div><div class="tbl-check"></div></div>
+          <div class="tbl-row c3 even"><span>Bank Accounts</span><div class="tbl-fill"></div><div class="tbl-check"></div></div>
+          <div class="tbl-row c3 odd"><span>Other</span><div class="tbl-fill"></div><div class="tbl-check"></div></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-debt">ACCOUNT &amp; PASSWORD LOCATIONS</div>
+          <div class="tbl-head" style="grid-template-columns: 1fr 1fr;"><span>Account</span><span>Where It's Kept</span></div>
+          <div class="tbl-row odd" style="grid-template-columns: 1fr 1fr;"><span>Bank / Login</span><div class="tbl-fill"></div></div>
+          <div class="tbl-row even" style="grid-template-columns: 1fr 1fr;"><span>Investments</span><div class="tbl-fill"></div></div>
+          <div class="tbl-row odd" style="grid-template-columns: 1fr 1fr;"><span>Insurance</span><div class="tbl-fill"></div></div>
+          <div class="tbl-row even" style="grid-template-columns: 1fr 1fr;"><span>Utilities / Bills</span><div class="tbl-fill"></div></div>
+          <div class="tbl-row odd" style="grid-template-columns: 1fr 1fr;"><span>Password Manager</span><div class="tbl-fill"></div></div>
+        </div>
+
+        <div class="notes">
+          <div class="notes-title">🔑 Who to Tell &amp; Where It's Kept</div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+        </div>
+      </div>
+
+    </div><!-- /two-col -->
+
+    <div class="affirmation">"Getting your documents in order is one of the most loving things you can do for your family." 🌿</div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+</body>
+</html>

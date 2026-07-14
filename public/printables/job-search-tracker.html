@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Job &amp; Raise Tracker — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family:'Lato',Arial,sans-serif; color:#2D2D2D; background:#FAF7F2; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+.page { width:8.5in; height:11in; background:#FAF7F2; position:relative; page-break-after:always; overflow:hidden; }
+.page:last-child { page-break-after:avoid; }
+.botanical { position:absolute; top:0.25in; right:0.30in; width:0.75in; opacity:0.22; z-index:2; pointer-events:none; }
+
+.header { background:#7A9E7E; border-radius:8px 8px 0 0; margin:0.38in 0.42in 0; padding:8px 14px 10px; display:flex; justify-content:space-between; align-items:flex-end; }
+.header-title { font-family:'Playfair Display',Georgia,serif; font-size:22pt; font-weight:700; color:#fff; letter-spacing:0.5px; line-height:1.1; }
+.header-subtitle { font-size:7.5pt; font-style:italic; color:rgba(255,255,255,0.78); margin-top:3px; }
+.header-fields { display:flex; gap:14px; align-items:flex-end; flex-shrink:0; }
+.hfield { display:flex; flex-direction:column; align-items:flex-start; }
+.hfield-label { font-size:6.5pt; color:rgba(255,255,255,0.85); text-transform:uppercase; letter-spacing:0.4px; margin-bottom:2px; }
+.hfield-line { width:78pt; border-bottom:1.5px solid rgba(255,255,255,0.7); height:16pt; }
+
+.subheader { background:#B5C9B7; margin:0 0.42in; padding:5px 10px; display:flex; justify-content:space-between; align-items:center; }
+.subheader-text { font-size:7pt; font-style:italic; color:#2D2D2D; }
+.subheader-tag { font-size:7.5pt; font-weight:700; text-transform:uppercase; color:#4A6B4E; letter-spacing:0.3px; }
+
+.body { margin:8px 0.42in 0; }
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:0.14in; }
+
+.section { margin-bottom:8px; border-radius:7px; border:1px solid #DDD5C8; overflow:hidden; }
+.section-header { font-family:'Playfair Display',Georgia,serif; font-size:8.5pt; font-weight:600; color:#fff; padding:6px 10px; letter-spacing:0.2px; }
+.sh-income{background:#C4826E;} .sh-fixed{background:#7A9E7E;} .sh-debt{background:#6B8FAE;} .sh-summary{background:#4A6B4E;}
+
+.dhead { display:grid; background:#EDE8E0; padding:5px 8px; font-size:6.6pt; font-weight:700; color:#3D3530; gap:4px; text-transform:uppercase; letter-spacing:0.2px; }
+.drow { display:grid; padding:6.5px 8px; border-bottom:1px solid rgba(0,0,0,0.05); font-size:7.5pt; color:#3D3530; align-items:center; gap:4px; }
+.drow:last-child { border-bottom:none; }
+.drow.odd{background:#FAF7F2;} .drow.even{background:#F5F0EA;}
+.dcell { border-bottom:1.2px solid #C4B5A5; height:15px; }
+.dcell.dollar { display:flex; align-items:flex-end; gap:2px; }
+.dcell.dollar .ds { font-size:6.5pt; color:#8A7A6A; line-height:14px; }
+.dcell.dollar .ln { flex:1; border-bottom:1.2px solid #C4B5A5; height:14px; }
+
+.app-cols { grid-template-columns:1.1fr 1fr 0.65in 0.65in 0.65in 0.7in; }
+
+.notes { border:1px solid #E0C4B8; border-radius:7px; overflow:hidden; margin-bottom:8px; }
+.notes-body { background:#F2DDD5; padding:7px 10px 9px; }
+.notes-line { border-bottom:1px solid #D4B4A8; height:18px; }
+.notes-sub { font-size:6.8pt; font-weight:700; color:#C4826E; text-transform:uppercase; letter-spacing:0.3px; margin:5px 0 4px; }
+.notes-sub:first-child{margin-top:0;}
+
+.checklist { background:#FAF7F2; }
+.chk-item { display:flex; align-items:center; gap:7px; padding:5.5px 10px; border-bottom:1px solid rgba(0,0,0,0.05); font-size:7.6pt; color:#3D3530; }
+.chk-item:last-child{border-bottom:none;}
+.chk-box { width:12px; height:12px; border:1.2px solid #7A9E7E; border-radius:3px; flex-shrink:0; }
+.chk-fill { flex:1; border-bottom:1px solid #C4B5A5; height:13px; margin-left:2px; }
+
+.affirmation { background:#B5C9B7; border-radius:5px; padding:5px 10px; margin-bottom:8px; font-family:'Playfair Display',Georgia,serif; font-size:7.5pt; font-style:italic; color:#3D5C40; }
+
+.footer { position:absolute; bottom:0.14in; left:0.42in; right:0.42in; border-top:1px solid #DDD5C8; padding-top:5px; display:flex; justify-content:space-between; align-items:center; }
+.footer-left { font-size:6.5pt; font-style:italic; color:#B0A090; }
+.footer-right { font-size:7pt; font-weight:700; color:#7A9E7E; }
+</style>
+</head>
+<body>
+<div class="page">
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">JOB &amp; RAISE TRACKER</div>
+      <div class="header-subtitle">Track work-from-home applications or prep your case for a raise, all on one page</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Name</span><div class="hfield-line"></div></div>
+      <div class="hfield"><span class="hfield-label">Month</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Log every application and follow-up so nothing slips — or build the case for the raise you've earned.</span>
+    <span class="subheader-tag">Page 1 of 1</span>
+  </div>
+
+  <div class="body">
+
+    <!-- APPLICATION TABLE -->
+    <div class="section">
+      <div class="section-header sh-debt">APPLICATION TRACKER</div>
+      <div class="dhead app-cols"><span>Company</span><span>Role</span><span style="text-align:center;">Pay</span><span style="text-align:center;">Applied</span><span style="text-align:center;">Follow-up</span><span style="text-align:center;">Status</span></div>
+      <div class="drow odd app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow even app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow odd app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow even app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow odd app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow even app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow odd app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow even app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow odd app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+      <div class="drow even app-cols"><div class="dcell"></div><div class="dcell"></div><div class="dcell dollar"><span class="ds">$</span><span class="ln"></span></div><div class="dcell"></div><div class="dcell"></div><div class="dcell"></div></div>
+    </div>
+
+    <div class="two-col">
+      <!-- RAISE PREP BOX -->
+      <div class="notes" style="margin-bottom:0;">
+        <div class="section-header sh-income">💬 RAISE-REQUEST PREP</div>
+        <div class="notes-body">
+          <div class="notes-sub">My wins &amp; results this year</div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-sub">Market rate for my role</div>
+          <div class="notes-line"></div>
+          <div class="notes-sub">The number I'm asking for</div>
+          <div class="notes-line"></div>
+        </div>
+      </div>
+
+      <!-- INTERVIEW / NOTES -->
+      <div class="section" style="margin-bottom:0;">
+        <div class="section-header sh-fixed">INTERVIEW &amp; CONTACT NOTES</div>
+        <div class="drow odd" style="grid-template-columns:0.9in 1fr;"><div class="dcell"></div><div class="dcell"></div></div>
+        <div class="drow even" style="grid-template-columns:0.9in 1fr;"><div class="dcell"></div><div class="dcell"></div></div>
+        <div class="drow odd" style="grid-template-columns:0.9in 1fr;"><div class="dcell"></div><div class="dcell"></div></div>
+        <div class="drow even" style="grid-template-columns:0.9in 1fr;"><div class="dcell"></div><div class="dcell"></div></div>
+        <div class="drow odd" style="grid-template-columns:0.9in 1fr;"><div class="dcell"></div><div class="dcell"></div></div>
+        <div class="drow even" style="grid-template-columns:0.9in 1fr;"><div class="dcell"></div><div class="dcell"></div></div>
+      </div>
+    </div>
+
+    <!-- NEXT STEPS CHECKLIST -->
+    <div class="section" style="margin-top:8px;">
+      <div class="section-header sh-summary">NEXT-STEPS CHECKLIST</div>
+      <div class="checklist" style="display:grid; grid-template-columns:1fr 1fr;">
+        <div class="chk-item"><span class="chk-box"></span>Update résumé</div>
+        <div class="chk-item"><span class="chk-box"></span>Refresh LinkedIn profile</div>
+        <div class="chk-item"><span class="chk-box"></span>Send follow-up emails</div>
+        <div class="chk-item"><span class="chk-box"></span>Practice interview answers</div>
+        <div class="chk-item"><span class="chk-box"></span>Ask for references</div>
+        <div class="chk-item"><span class="chk-box"></span>Schedule raise conversation</div>
+        <div class="chk-item"><span class="chk-box"></span><span class="chk-fill"></span></div>
+        <div class="chk-item"><span class="chk-box"></span><span class="chk-fill"></span></div>
+      </div>
+    </div>
+
+    <div class="affirmation">"Know your worth, then add tax. Every follow-up and every ask moves you forward." 🌿</div>
+
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+name: Publish scheduled posts
+
+# Drip-publishes queued blog posts on their scheduled time (8/day, 30 min apart —
+# see content-queue/schedule.json). The publisher is idempotent: it only inserts
+# posts whose scheduled time has passed and that are not already in the database,
+# so re-runs and delayed/overlapping runs are safe.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   SUPABASE_URL
+#   SUPABASE_SERVICE_ROLE_KEY
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes (GitHub cron is best-effort; catch-up is automatic)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Log what would publish without inserting"
+        type: boolean
+        default: false
+
+concurrency:
+  group: publish-scheduled-posts
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Publish due posts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '0' }}
+        run: node scripts/publish-due-posts.mjs

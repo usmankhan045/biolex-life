@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Baby on a Budget Savings Checklist — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; }
+.botanical { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; pointer-events: none; }
+
+.header { background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0; padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 21pt; font-weight: 700; color: #fff; letter-spacing: 0.4px; line-height: 1.1; }
+.header-subtitle { font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label { font-size: 6.5pt; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 2px; }
+.hfield-line { width: 70pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-text { font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+
+.body { margin: 6px 0.42in 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+.section { margin-bottom: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 6px 10px; letter-spacing: 0.2px; }
+.sh-savings { background: #8B7BA0; }
+.sh-fixed { background: #7A9E7E; }
+.sh-income { background: #C4826E; }
+.sh-variable { background: #A89080; }
+
+/* SAVINGS TRACKER */
+.tracker-wrap { background: #FAF7F2; padding: 8px 12px 10px; }
+.tracker-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 7px; }
+.tracker-goal { font-size: 7.3pt; color: #3D3530; display: flex; align-items: flex-end; gap: 3px; }
+.tracker-goal .ds { font-size: 7.3pt; color: #8A7A6A; }
+.tracker-goal .tg-line { border-bottom: 1.2px solid #C4B5A5; height: 14px; width: 62px; }
+.tracker-goal b { font-weight: 700; }
+.track-bar { display: flex; border: 1.3px solid #7A9E7E; border-radius: 5px; overflow: hidden; }
+.track-seg { flex: 1; height: 30px; border-right: 1px solid #B5C9B7; }
+.track-seg:nth-child(5n) { border-right: 1.3px solid #7A9E7E; }
+.track-seg:last-child { border-right: none; }
+.track-labels { display: flex; justify-content: space-between; margin-top: 4px; font-size: 6.3pt; color: #8A7A6A; }
+.tracker-note { font-size: 6.6pt; font-style: italic; color: #8A7A6A; margin-top: 5px; text-align: center; }
+
+/* ROWS */
+.row { display: grid; grid-template-columns: 1fr 0.75in; padding: 4.5px 10px; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.row:last-child { border-bottom: none; }
+.row.odd { background: #FAF7F2; }
+.row.even { background: #F5F0EA; }
+.row.total-row { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; border-bottom: none; }
+.row-label { font-size: 7.8pt; color: #3D3530; }
+.row.total-row .row-label { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #2D2D2D; }
+.field-cell { display: flex; align-items: flex-end; gap: 2px; }
+.dollar-sign { font-size: 7.5pt; color: #8A7A6A; flex-shrink: 0; line-height: 14px; }
+.field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+.row.total-row .field-line { border-bottom: 2px solid #7A9E7E; }
+
+/* NEW vs SECONDHAND checklist */
+.nvs-header { display: grid; grid-template-columns: 1fr 0.55in 0.55in; background: #EDE8E0; padding: 5px 10px; font-size: 6.8pt; font-weight: 700; color: #3D3530; text-transform: uppercase; letter-spacing: 0.2px; gap: 4px; }
+.nvs-header span:not(:first-child) { text-align: center; }
+.nvs-row { display: grid; grid-template-columns: 1fr 0.55in 0.55in; padding: 4px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); align-items: center; gap: 4px; }
+.nvs-row:last-child { border-bottom: none; }
+.nvs-row.odd { background: #FAF7F2; }
+.nvs-row.even { background: #F5F0EA; }
+.nvs-label { font-size: 7.5pt; color: #3D3530; }
+.nvs-box { justify-self: center; width: 12px; height: 12px; border: 1.2px solid #7A9E7E; border-radius: 3px; }
+
+.check-grid { background: #FAF7F2; }
+.check-item { display: flex; align-items: center; gap: 6px; padding: 4.5px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.check-item:last-child { border-bottom: none; }
+.check-box { width: 11px; height: 11px; border: 1.2px solid #7A9E7E; border-radius: 3px; flex-shrink: 0; }
+.check-label { font-size: 7.6pt; color: #3D3530; flex: 1; display: flex; align-items: flex-end; }
+.check-fill { flex: 1; border-bottom: 1px solid #C4B5A5; height: 13px; margin-left: 3px; min-width: 30px; }
+
+.notes { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 7px 10px 9px; margin-bottom: 8px; }
+.notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 5px; }
+.notes-sub { font-size: 6.8pt; font-style: italic; color: #8A7A6A; margin-bottom: 6px; line-height: 1.4; }
+.notes-line { border-bottom: 1px solid #D4B4A8; height: 17px; }
+
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 5px 10px; margin-bottom: 6px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">BABY ON A BUDGET</div>
+      <div class="header-subtitle">Plan and save for baby's first year — without buying everything brand new</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Due Date</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Set a savings goal, estimate the real costs, and decide what to buy new vs secondhand.</span>
+    <span class="subheader-tag">Free Printable</span>
+  </div>
+
+  <div class="body">
+
+    <div class="section">
+      <div class="section-header sh-savings">BABY FUND SAVINGS TRACKER — COLOR IN AS YOU SAVE</div>
+      <div class="tracker-wrap">
+        <div class="tracker-top">
+          <span class="tracker-goal"><b>Goal:</b> <span class="ds">$</span><span class="tg-line"></span></span>
+          <span class="tracker-goal"><b>Saved so far:</b> <span class="ds">$</span><span class="tg-line"></span></span>
+        </div>
+        <div class="track-bar">
+          <div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div>
+          <div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div>
+          <div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div>
+          <div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div><div class="track-seg"></div>
+        </div>
+        <div class="track-labels"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+        <div class="tracker-note">Color in one box for each 5% of your goal you reach — a little each paycheck adds up.</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <!-- LEFT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-income">FIRST-YEAR COST ESTIMATE</div>
+          <div class="row odd"><span class="row-label">Diapers &amp; wipes</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Formula / feeding</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Clothing (0–12 mo)</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Nursery &amp; furniture</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Car seat &amp; stroller</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Health / copays</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row odd"><span class="row-label">Childcare</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row even"><span class="row-label">Other</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="row total-row"><span class="row-label">▶ Estimated Total</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-variable">✓ REGISTRY PRIORITIES</div>
+          <div class="check-grid">
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Car seat (buy new)</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Crib &amp; safe mattress</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Stroller / carrier</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Diaper stockpile</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Bottles &amp; feeding</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Baby monitor</span></div>
+            <div class="check-item"><span class="check-box"></span><span class="check-label">Other: </span><span class="check-fill"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-fixed">ESSENTIALS — BUY NEW vs SECONDHAND</div>
+          <div class="nvs-header"><span>Essential</span><span>New</span><span>2nd-Hand</span></div>
+          <div class="nvs-row odd"><span class="nvs-label">Car seat</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row even"><span class="nvs-label">Crib &amp; mattress</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row odd"><span class="nvs-label">Clothing</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row even"><span class="nvs-label">Stroller</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row odd"><span class="nvs-label">High chair</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row even"><span class="nvs-label">Baby carrier</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row odd"><span class="nvs-label">Toys &amp; books</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row even"><span class="nvs-label">Bouncer / swing</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row odd"><span class="nvs-label">Changing table</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+          <div class="nvs-row even"><span class="nvs-label">Bath tub</span><span class="nvs-box"></span><span class="nvs-box"></span></div>
+        </div>
+
+        <div class="notes">
+          <div class="notes-title">🍼 Maternity-Leave Gap Plan</div>
+          <div class="notes-sub">How many weeks unpaid? How much do you need to set aside to cover the gap?</div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+          <div class="notes-line"></div>
+        </div>
+
+        <div class="affirmation">"Babies need love and safety, not a showroom nursery — secondhand is smart, not less." 🌿</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+
+</div>
+
+</body>
+</html>

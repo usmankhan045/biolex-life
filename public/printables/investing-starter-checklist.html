@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beginner Investing Starter Checklist — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #2D2D2D;
+  background: #FAF7F2;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; }
+
+.botanical { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; pointer-events: none; }
+
+.header {
+  background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0; padding: 8px 14px 10px;
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+.header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 21pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.header-subtitle { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 2px; }
+.hfield-line { width: 78pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-text { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+
+.body { margin: 8px 0.42in 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+.section { margin-bottom: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 6px 10px; letter-spacing: 0.2px; }
+.sh-income   { background: #C4826E; }
+.sh-fixed    { background: #7A9E7E; }
+.sh-variable { background: #A89080; }
+.sh-savings  { background: #8B7BA0; }
+.sh-debt     { background: #6B8FAE; }
+.sh-summary  { background: #4A6B4E; }
+
+/* CHECK ITEMS */
+.check-item { display: flex; align-items: baseline; gap: 8px; padding: 6px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.check-item:last-child { border-bottom: none; }
+.check-item.odd  { background: #FAF7F2; }
+.check-item.even { background: #F5F0EA; }
+.check-box { width: 11px; height: 11px; border: 1.3px solid #7A9E7E; border-radius: 3px; flex-shrink: 0; margin-top: 1px; }
+.check-item.debt .check-box { border-color: #6B8FAE; }
+.check-label { font-family: 'Lato', Arial, sans-serif; font-size: 7.7pt; color: #3D3530; line-height: 1.28; }
+.check-label b { color: #2D2D2D; }
+.check-note { color: #8A7A6A; font-style: italic; }
+
+/* FLOW STEPS */
+.flow-step {
+  display: flex; align-items: flex-start; gap: 8px; padding: 6px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.flow-step:last-child { border-bottom: none; }
+.flow-step.odd  { background: #FAF7F2; }
+.flow-step.even { background: #F5F0EA; }
+.flow-num {
+  font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; color: #fff;
+  background: #8B7BA0; border-radius: 50%; width: 16px; height: 16px; min-width: 16px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+}
+.flow-text { font-family: 'Lato', Arial, sans-serif; font-size: 7.6pt; color: #3D3530; line-height: 1.28; }
+.flow-text b { color: #6B4E82; }
+
+/* CONTRIBUTION TRACKER */
+.tracker-head {
+  display: grid; grid-template-columns: 1fr 0.7in 0.7in;
+  background: #EDE8E0; padding: 5px 10px; gap: 4px;
+  font-family: 'Lato', Arial, sans-serif; font-size: 6.8pt; font-weight: 700; color: #3D3530; text-transform: uppercase; letter-spacing: 0.3px;
+}
+.tracker-row {
+  display: grid; grid-template-columns: 1fr 0.7in 0.7in; gap: 4px;
+  padding: 5px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); align-items: center;
+}
+.tracker-row:last-child { border-bottom: none; }
+.tracker-row.odd  { background: #FAF7F2; }
+.tracker-row.even { background: #F5F0EA; }
+.tracker-month { font-family: 'Lato', Arial, sans-serif; font-size: 7.6pt; color: #3D3530; }
+.tracker-field { display: flex; align-items: flex-end; gap: 2px; }
+.dollar-sign { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; color: #8A7A6A; flex-shrink: 0; line-height: 13px; }
+.field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 14px; }
+
+/* TERMS CHEAT SHEET */
+.terms { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 8px 11px 10px; margin-bottom: 8px; }
+.terms-title { font-family: 'Playfair Display', Georgia, serif; font-size: 8pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+.terms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
+.term { font-family: 'Lato', Arial, sans-serif; font-size: 7.3pt; color: #3D3530; line-height: 1.3; }
+.term b { color: #B05F45; }
+
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 6px 10px; margin-bottom: 8px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; text-align: center; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">INVESTING STARTER CHECKLIST</div>
+      <div class="header-subtitle">A plain-English path to open your first account and invest your first dollars</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Name</span><div class="hfield-line"></div></div>
+      <div class="hfield"><span class="hfield-label">Date</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">You don't need to be rich or an expert. Work top to bottom — check each box as you go.</span>
+    <span class="subheader-tag">Beginner Friendly</span>
+  </div>
+
+  <div class="body">
+    <div class="two-col">
+
+      <!-- LEFT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-fixed">✓ BEFORE YOU INVEST A DOLLAR</div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label"><b>Starter emergency fund saved</b> — $1,000 set aside for surprises.</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label"><b>Employer 401(k) match claimed</b> — <span class="check-note">it's free money; never skip it.</span></span></div>
+          <div class="check-item debt odd"><span class="check-box"></span><span class="check-label"><b>High-interest debt handled</b> — pay off cards over ~8% APR first.</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label"><b>Monthly budget in place</b> — you know what you can spare.</span></div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label"><b>An amount you won't need for 5+ years</b> — investing is long-term.</span></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-savings">⚙ ACCOUNT SETUP STEPS</div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label"><b>401(k):</b> log into your workplace plan &amp; set contribution %.</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label"><b>Roth IRA:</b> open at Fidelity, Vanguard, or Schwab (free).</span></div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label"><b>Link your bank</b> &amp; set an automatic monthly transfer.</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label"><b>HSA</b> (if on a high-deductible plan) — triple tax-free.</span></div>
+          <div class="check-item odd"><span class="check-box"></span><span class="check-label"><b>Pick a fund</b> — a low-cost index or target-date fund.</span></div>
+          <div class="check-item even"><span class="check-box"></span><span class="check-label"><b>Confirm it's invested</b> — cash sitting in the account isn't.</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div>
+        <div class="section">
+          <div class="section-header sh-income">💵 YOUR FIRST $1,000 — ORDER OF OPERATIONS</div>
+          <div class="flow-step odd"><span class="flow-num">1</span><span class="flow-text"><b>Grab the full 401(k) match</b> — contribute at least enough to get every matched dollar.</span></div>
+          <div class="flow-step even"><span class="flow-num">2</span><span class="flow-text"><b>Open &amp; fund a Roth IRA</b> — after-tax now, tax-free in retirement.</span></div>
+          <div class="flow-step odd"><span class="flow-num">3</span><span class="flow-text"><b>Automate a small amount</b> — even $25–$50 a paycheck builds the habit.</span></div>
+          <div class="flow-step even"><span class="flow-num">4</span><span class="flow-text"><b>Buy a broad index fund</b> — one fund, whole market, low fees.</span></div>
+          <div class="flow-step odd"><span class="flow-num">5</span><span class="flow-text"><b>Leave it alone &amp; repeat</b> — time in the market beats timing it.</span></div>
+        </div>
+
+        <div class="section">
+          <div class="section-header sh-summary">CONTRIBUTION TRACKER</div>
+          <div class="tracker-head"><span>Month</span><span style="text-align:center;">Amount</span><span style="text-align:center;">Running $</span></div>
+          <div class="tracker-row odd"><span class="tracker-month">___________</span><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="tracker-row even"><span class="tracker-month">___________</span><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="tracker-row odd"><span class="tracker-month">___________</span><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="tracker-row even"><span class="tracker-month">___________</span><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="tracker-row odd"><span class="tracker-month">___________</span><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+          <div class="tracker-row even"><span class="tracker-month">___________</span><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="tracker-field"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        </div>
+      </div>
+
+    </div><!-- /two-col -->
+
+    <div class="terms">
+      <div class="terms-title">📖 Plain-English Terms Cheat-Sheet</div>
+      <div class="terms-grid">
+        <div class="term"><b>Roth IRA</b> — a retirement account you fund with after-tax money; growth &amp; withdrawals in retirement are tax-free.</div>
+        <div class="term"><b>401(k)</b> — a retirement account through your employer, often with a matching contribution.</div>
+        <div class="term"><b>HSA</b> — Health Savings Account; tax-free in, grows tax-free, tax-free out for medical costs.</div>
+        <div class="term"><b>Index fund</b> — one fund that holds hundreds of companies, so your risk is spread out.</div>
+        <div class="term"><b>Target-date fund</b> — a "set it &amp; forget it" fund that adjusts as you near retirement.</div>
+        <div class="term"><b>Compound growth</b> — your money earns money, and that money earns money too.</div>
+        <div class="term"><b>Expense ratio</b> — the fee a fund charges; lower is better (aim under 0.20%).</div>
+        <div class="term"><b>Employer match</b> — free money your job adds when you contribute. Always grab it.</div>
+      </div>
+    </div>
+
+    <div class="affirmation">"Starting small is still starting. Every dollar invested today is working for the woman I'm becoming." 🌿</div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Credit Card Payoff Worksheet — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #2D2D2D;
+  background: #FAF7F2;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; }
+.botanical { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; pointer-events: none; }
+.header {
+  background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0;
+  padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end;
+}
+.header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.header-subtitle { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 2px; }
+.hfield-line { width: 78pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-text { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+.body { margin: 8px 0.42in 0; }
+.section { margin-bottom: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 6px 10px; letter-spacing: 0.2px; }
+.sh-debt { background: #6B8FAE; }
+.sh-summary { background: #4A6B4E; }
+.sh-savings { background: #8B7BA0; }
+.dollar-sign { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; color: #8A7A6A; flex-shrink: 0; line-height: 14px; }
+
+/* CARD TABLE */
+.card-header, .card-row {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9in 0.6in 0.85in 0.95in;
+  gap: 6px; padding: 6px 10px; align-items: flex-end;
+}
+.card-header {
+  background: #EDE8E0; font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700;
+  color: #3D3530; text-transform: uppercase; letter-spacing: 0.3px; align-items: center;
+}
+.card-row { border-bottom: 1px solid rgba(0,0,0,0.05); }
+.card-row:last-child { border-bottom: none; }
+.card-row.odd { background: #FAF7F2; }
+.card-row.even { background: #F5F0EA; }
+.card-field { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+.cf-dollar { display: flex; align-items: flex-end; gap: 2px; }
+.cf-dollar .card-field { flex: 1; }
+.pct-field { display: flex; align-items: flex-end; gap: 2px; }
+.pct-sign { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; color: #8A7A6A; flex-shrink: 0; line-height: 14px; }
+.pct-field .card-field { flex: 1; }
+.card-row.total-row { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; }
+.card-row.total-row .tlabel { font-family: 'Lato', Arial, sans-serif; font-size: 7.3pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #2D2D2D; }
+.card-row.total-row .card-field { border-bottom: 2px solid #6B8FAE; }
+
+/* PAYOFF ORDER */
+.order-note { padding: 7px 10px 9px; background: #FAF7F2; }
+.order-strategy { display: flex; gap: 18px; margin-bottom: 8px; }
+.strat-opt { display: flex; align-items: center; gap: 5px; font-family: 'Lato', Arial, sans-serif; font-size: 7.6pt; color: #3D3530; }
+.strat-check { width: 11px; height: 11px; border: 1.3px solid #6B8FAE; border-radius: 3px; flex-shrink: 0; }
+.strat-opt b { color: #2D2D2D; }
+.order-list { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 18px; }
+.order-item { display: flex; align-items: flex-end; gap: 6px; font-family: 'Lato', Arial, sans-serif; font-size: 7.8pt; color: #3D3530; }
+.order-num { width: 15px; height: 15px; background: #6B8FAE; color: #fff; border-radius: 50%; font-size: 7pt; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.order-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+
+/* PLAN ROWS */
+.plan-header, .plan-row {
+  display: grid; grid-template-columns: 1.3fr 0.9in 0.9in 0.9in; gap: 6px; padding: 6px 10px; align-items: flex-end;
+}
+.plan-header { background: #EDE8E0; font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #3D3530; text-transform: uppercase; letter-spacing: 0.3px; align-items: center; }
+.plan-row { border-bottom: 1px solid rgba(0,0,0,0.05); }
+.plan-row:last-child { border-bottom: none; }
+.plan-row.odd { background: #FAF7F2; }
+.plan-row.even { background: #F5F0EA; }
+.plan-field { border-bottom: 1.2px solid #C4B5A5; height: 15px; }
+.pf-dollar { display: flex; align-items: flex-end; gap: 2px; }
+.pf-dollar .plan-field { flex: 1; }
+
+/* PROGRESS BAR */
+.progress-wrap { padding: 9px 12px 11px; background: #FAF7F2; }
+.progress-label { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; color: #8A7A6A; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 6px; }
+.progress-bar { display: flex; border: 1.5px solid #6B8FAE; border-radius: 5px; overflow: hidden; height: 26px; }
+.progress-seg { flex: 1; border-right: 1px solid #C6D4E0; }
+.progress-seg:last-child { border-right: none; }
+.progress-seg.q { background: #DDE6EE; }
+.progress-scale { display: flex; justify-content: space-between; font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: #6B8FAE; margin-top: 4px; }
+
+.notes { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 8px 11px 10px; margin-bottom: 8px; }
+.notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 5px; }
+.notes-body { font-family: 'Lato', Arial, sans-serif; font-size: 7.2pt; color: #6E5A4E; line-height: 1.5; }
+.notes-body .blank { display: inline-block; border-bottom: 1px solid #D4B4A8; min-width: 55px; height: 12px; }
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 5px 10px; margin-bottom: 8px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; }
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">CREDIT CARD PAYOFF</div>
+      <div class="header-subtitle">List every card, its balance and APR — then build a fast payoff plan</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Date</span><div class="hfield-line"></div></div>
+      <div class="hfield"><span class="hfield-label">Target Payoff</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">Seeing all your cards in one place is how you take back control — one payment at a time 🌿</span>
+    <span class="subheader-tag">Worksheet</span>
+  </div>
+
+  <div class="body">
+
+    <div class="section">
+      <div class="section-header sh-debt">YOUR CREDIT CARDS</div>
+      <div class="card-header">
+        <span>Card Name</span>
+        <span style="text-align:center;">Balance</span>
+        <span style="text-align:center;">APR</span>
+        <span style="text-align:center;">Min. Pmt</span>
+        <span style="text-align:center;">Payoff Date</span>
+      </div>
+      <div class="card-row odd"><div class="card-field"></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="pct-field"><div class="card-field"></div><span class="pct-sign">%</span></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="card-field"></div></div>
+      <div class="card-row even"><div class="card-field"></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="pct-field"><div class="card-field"></div><span class="pct-sign">%</span></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="card-field"></div></div>
+      <div class="card-row odd"><div class="card-field"></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="pct-field"><div class="card-field"></div><span class="pct-sign">%</span></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="card-field"></div></div>
+      <div class="card-row even"><div class="card-field"></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="pct-field"><div class="card-field"></div><span class="pct-sign">%</span></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="card-field"></div></div>
+      <div class="card-row odd"><div class="card-field"></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="pct-field"><div class="card-field"></div><span class="pct-sign">%</span></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="card-field"></div></div>
+      <div class="card-row even"><div class="card-field"></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="pct-field"><div class="card-field"></div><span class="pct-sign">%</span></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div class="card-field"></div></div>
+      <div class="card-row total-row"><span class="tlabel">▶ Total Owed</span><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div></div><div class="cf-dollar"><span class="dollar-sign">$</span><div class="card-field"></div></div><div></div></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-debt">PAYOFF ORDER — PICK YOUR STRATEGY</div>
+      <div class="order-note">
+        <div class="order-strategy">
+          <span class="strat-opt"><span class="strat-check"></span><b>Avalanche</b>&nbsp;— highest APR first (saves the most interest)</span>
+          <span class="strat-opt"><span class="strat-check"></span><b>Snowball</b>&nbsp;— smallest balance first (fastest wins)</span>
+        </div>
+        <div class="order-list">
+          <div class="order-item"><span class="order-num">1</span><div class="order-line"></div></div>
+          <div class="order-item"><span class="order-num">2</span><div class="order-line"></div></div>
+          <div class="order-item"><span class="order-num">3</span><div class="order-line"></div></div>
+          <div class="order-item"><span class="order-num">4</span><div class="order-line"></div></div>
+          <div class="order-item"><span class="order-num">5</span><div class="order-line"></div></div>
+          <div class="order-item"><span class="order-num">6</span><div class="order-line"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-savings">MONTHLY PAYOFF PLAN</div>
+      <div class="plan-header">
+        <span>Card (in payoff order)</span>
+        <span style="text-align:center;">Extra $ / mo</span>
+        <span style="text-align:center;">Total $ / mo</span>
+        <span style="text-align:center;">Est. Payoff</span>
+      </div>
+      <div class="plan-row odd"><div class="plan-field"></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="plan-field"></div></div>
+      <div class="plan-row even"><div class="plan-field"></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="plan-field"></div></div>
+      <div class="plan-row odd"><div class="plan-field"></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="plan-field"></div></div>
+      <div class="plan-row even"><div class="plan-field"></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="pf-dollar"><span class="dollar-sign">$</span><div class="plan-field"></div></div><div class="plan-field"></div></div>
+    </div>
+
+    <div class="section">
+      <div class="section-header sh-summary">PAYOFF PROGRESS — COLOR IN AS YOU GO</div>
+      <div class="progress-wrap">
+        <div class="progress-label">Each block = 10% of your total balance paid off</div>
+        <div class="progress-bar">
+          <div class="progress-seg"></div><div class="progress-seg"></div><div class="progress-seg"></div><div class="progress-seg"></div><div class="progress-seg q"></div>
+          <div class="progress-seg"></div><div class="progress-seg"></div><div class="progress-seg"></div><div class="progress-seg"></div><div class="progress-seg"></div>
+        </div>
+        <div class="progress-scale"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>DEBT-FREE!</span></div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <div class="notes-title">💡 Interest Saved</div>
+      <div class="notes-body">By paying an extra <span class="blank"></span> per month, I'll be debt-free by <span class="blank"></span> and save about <span class="blank"></span> in interest versus paying only the minimums. Tools like Undebt.it can run the exact numbers for free.</div>
+    </div>
+
+    <div class="affirmation">"Every extra dollar toward your balance is a dollar that stops working against you." 🌿</div>
+
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+
+</div>
+</body>
+</html>

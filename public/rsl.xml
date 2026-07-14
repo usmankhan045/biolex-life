@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RSL 1.0 (Really Simple Licensing) — machine-readable license for AI/LLM use.
+  Consistent with /llms.txt: AI search, summarization, and inference use are
+  permitted free of charge, provided SpendWiseCents is attributed with a link
+  to the source page. Content is educational, not personalized financial advice.
+-->
+<rsl xmlns="https://rslstandard.org/rsl">
+  <content url="https://www.spendwisecents.com/">
+    <license>
+      <permits type="usage">search</permits>
+      <permits type="usage">ai-summarize</permits>
+      <permits type="usage">ai-input</permits>
+      <permits type="usage">ai-train</permits>
+      <payment type="free"/>
+      <attribution required="true">SpendWiseCents — https://www.spendwisecents.com</attribution>
+      <legal type="terms" url="https://www.spendwisecents.com/terms-of-use"/>
+    </license>
+  </content>
+</rsl>

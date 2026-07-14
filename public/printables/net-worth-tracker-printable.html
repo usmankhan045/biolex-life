@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Net Worth Tracker — SpendWiseCents.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: letter portrait; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Lato', Arial, sans-serif; color: #2D2D2D; background: #FAF7F2; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 8.5in; height: 11in; background: #FAF7F2; position: relative; overflow: hidden; }
+.botanical { position: absolute; top: 0.25in; right: 0.30in; width: 0.75in; opacity: 0.22; z-index: 2; pointer-events: none; }
+
+.header { background: #7A9E7E; border-radius: 8px 8px 0 0; margin: 0.38in 0.42in 0; padding: 8px 14px 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.header-title { font-family: 'Playfair Display', Georgia, serif; font-size: 22pt; font-weight: 700; color: #fff; letter-spacing: 0.5px; line-height: 1.1; }
+.header-subtitle { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-style: italic; color: rgba(255,255,255,0.78); margin-top: 3px; }
+.header-fields { display: flex; gap: 14px; align-items: flex-end; flex-shrink: 0; }
+.hfield { display: flex; flex-direction: column; align-items: flex-start; }
+.hfield-label { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 2px; }
+.hfield-line { width: 78pt; border-bottom: 1.5px solid rgba(255,255,255,0.7); height: 16pt; }
+
+.subheader { background: #B5C9B7; margin: 0 0.42in; padding: 5px 10px; display: flex; justify-content: space-between; align-items: center; }
+.subheader-text { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-style: italic; color: #2D2D2D; }
+.subheader-tag { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; font-weight: 700; text-transform: uppercase; color: #4A6B4E; letter-spacing: 0.3px; }
+
+.body { margin: 8px 0.42in 0; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.14in; }
+
+.section { margin-bottom: 8px; border-radius: 7px; border: 1px solid #DDD5C8; overflow: hidden; }
+.section-header { font-family: 'Playfair Display', Georgia, serif; font-size: 8.5pt; font-weight: 600; color: #fff; padding: 6px 10px; letter-spacing: 0.2px; }
+.sh-income   { background: #C4826E; }
+.sh-fixed    { background: #7A9E7E; }
+.sh-savings  { background: #8B7BA0; }
+.sh-debt     { background: #6B8FAE; }
+.sh-summary  { background: #4A6B4E; }
+
+.row { display: grid; grid-template-columns: 1fr 0.75in; padding: 4.5px 10px; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.row:last-child { border-bottom: none; }
+.row.odd  { background: #FAF7F2; }
+.row.even { background: #F5F0EA; }
+.row.total-row { background: rgba(0,0,0,0.04); border-top: 1px solid #DDD5C8; border-bottom: none; }
+.row-label { font-family: 'Lato', Arial, sans-serif; font-size: 7.8pt; color: #3D3530; }
+.row.total-row .row-label { font-size: 7.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: #2D2D2D; }
+.field-cell { display: flex; align-items: flex-end; gap: 2px; }
+.dollar-sign { font-family: 'Lato', Arial, sans-serif; font-size: 7.5pt; color: #8A7A6A; flex-shrink: 0; line-height: 14px; }
+.field-line { flex: 1; border-bottom: 1.2px solid #C4B5A5; background: transparent; height: 15px; }
+.row.total-row .field-line { border-bottom: 2px solid #7A9E7E; }
+.sh-debt ~ .total-row .field-line { }
+
+/* NET WORTH SUMMARY BAR */
+.networth-bar {
+  background: #4A6B4E; border-radius: 7px; padding: 0.12in 0.16in; margin-bottom: 10px;
+  display: grid; grid-template-columns: 1fr 22px 1fr 22px 1.1fr; gap: 8px; align-items: center;
+}
+.nw-cell { text-align: center; }
+.nw-label { font-family: 'Lato', Arial, sans-serif; font-size: 6pt; color: rgba(255,255,255,0.72); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 4px; }
+.nw-value { background: rgba(255,255,255,0.92); border-radius: 4px; font-family: 'Lato', Arial, sans-serif; font-size: 10pt; font-weight: 700; color: #2D2D2D; padding: 5px 6px; min-height: 26px; display: flex; align-items: center; justify-content: center; }
+.nw-op { font-family: 'Playfair Display', Georgia, serif; font-size: 15pt; font-weight: 700; color: rgba(255,255,255,0.9); text-align: center; }
+.nw-cell.highlight .nw-value { background: #C4826E; color: #fff; font-size: 11pt; }
+.nw-cell.highlight .nw-label { color: #fff; }
+
+/* 12-MONTH LOG GRID */
+.log-head {
+  display: grid; grid-template-columns: 0.85in 1fr 0.9in; gap: 4px; background: #EDE8E0; padding: 5px 10px;
+  font-family: 'Lato', Arial, sans-serif; font-size: 6.8pt; font-weight: 700; color: #3D3530; text-transform: uppercase; letter-spacing: 0.3px;
+}
+.log-row { display: grid; grid-template-columns: 0.85in 1fr 0.9in; gap: 4px; padding: 5.5px 10px; border-bottom: 1px solid rgba(0,0,0,0.05); align-items: center; }
+.log-row:last-child { border-bottom: none; }
+.log-row.odd  { background: #FAF7F2; }
+.log-row.even { background: #F5F0EA; }
+.log-month { font-family: 'Lato', Arial, sans-serif; font-size: 7.6pt; color: #3D3530; }
+.log-field { display: flex; align-items: flex-end; gap: 2px; }
+
+/* CHART / PROGRESS NOTE */
+.chart-box { border: 1px solid #DDD5C8; border-radius: 7px; overflow: hidden; margin-bottom: 8px; }
+.chart-area { background: #FAF7F2; padding: 10px 12px 6px; position: relative; height: 1.35in; }
+.chart-grid-line { position: absolute; left: 12px; right: 12px; border-top: 1px dashed #DDD5C8; }
+.chart-baseline { position: absolute; left: 12px; right: 12px; border-top: 1.4px solid #A89080; }
+.chart-xlabels { display: grid; grid-template-columns: repeat(12, 1fr); padding: 3px 12px 7px; }
+.chart-x { font-family: 'Lato', Arial, sans-serif; font-size: 5.8pt; color: #8A7A6A; text-align: center; }
+.chart-caption { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #7B8C88; text-align: center; padding-bottom: 6px; }
+
+.notes { background: #F2DDD5; border: 1px solid #E0C4B8; border-radius: 7px; padding: 8px 10px 10px; margin-bottom: 8px; }
+.notes-title { font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-weight: 600; color: #C4826E; margin-bottom: 6px; }
+.notes-line { border-bottom: 1px solid #D4B4A8; height: 19px; }
+
+.affirmation { background: #B5C9B7; border-radius: 5px; padding: 6px 10px; margin-bottom: 8px; font-family: 'Playfair Display', Georgia, serif; font-size: 7.5pt; font-style: italic; color: #3D5C40; text-align: center; }
+
+.footer { position: absolute; bottom: 0.14in; left: 0.42in; right: 0.42in; border-top: 1px solid #DDD5C8; padding-top: 5px; display: flex; justify-content: space-between; align-items: center; }
+.footer-left { font-family: 'Lato', Arial, sans-serif; font-size: 6.5pt; font-style: italic; color: #B0A090; }
+.footer-right { font-family: 'Lato', Arial, sans-serif; font-size: 7pt; font-weight: 700; color: #7A9E7E; }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <svg class="botanical" viewBox="0 0 54 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="27" y1="82" x2="27" y2="10" stroke="#7A9E7E" stroke-width="1.5"/>
+    <path d="M27 42 C20 32 10 30 6 25 C13 23 22 28 27 42Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 55 C34 45 44 43 48 38 C41 36 32 41 27 55Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 28 C21 20 15 16 11 12 C16 12 23 17 27 28Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <path d="M27 67 C33 58 40 56 44 52 C39 50 32 55 27 67Z" fill="#B5C9B7" fill-opacity="0.3" stroke="#7A9E7E" stroke-width="1"/>
+    <circle cx="27" cy="8" r="3.5" fill="#C4826E"/>
+  </svg>
+
+  <div class="header">
+    <div>
+      <div class="header-title">NET WORTH TRACKER</div>
+      <div class="header-subtitle">Add up what you own, subtract what you owe — even if it starts negative</div>
+    </div>
+    <div class="header-fields">
+      <div class="hfield"><span class="hfield-label">Name</span><div class="hfield-line"></div></div>
+      <div class="hfield"><span class="hfield-label">As of</span><div class="hfield-line"></div></div>
+    </div>
+  </div>
+
+  <div class="subheader">
+    <span class="subheader-text">A negative number is a starting line, not a failing grade. What matters is the direction over time.</span>
+    <span class="subheader-tag">Snapshot + 12-Month Log</span>
+  </div>
+
+  <div class="body">
+    <div class="two-col">
+      <!-- ASSETS -->
+      <div class="section">
+        <div class="section-header sh-income">💚 ASSETS — WHAT YOU OWN</div>
+        <div class="row odd"><span class="row-label">Checking Account(s)</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-label">Savings / Emergency Fund</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-label">Retirement (401k / IRA)</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-label">Investments / Brokerage</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-label">Home Value (if owned)</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-label">Car Value</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-label">Other Assets</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row total-row"><span class="row-label">▶ TOTAL ASSETS</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      </div>
+
+      <!-- DEBTS -->
+      <div class="section">
+        <div class="section-header sh-debt">💳 DEBTS — WHAT YOU OWE</div>
+        <div class="row odd"><span class="row-label">Credit Card Balances</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-label">Student Loans</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-label">Car Loan</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-label">Mortgage Balance</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-label">Medical Debt</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row even"><span class="row-label">Personal / Payday Loans</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row odd"><span class="row-label">Other Debts</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+        <div class="row total-row"><span class="row-label">▶ TOTAL DEBTS</span><div class="field-cell"><span class="dollar-sign">$</span><div class="field-line"></div></div></div>
+      </div>
+    </div>
+
+    <!-- NET WORTH FORMULA BAR -->
+    <div class="networth-bar">
+      <div class="nw-cell"><span class="nw-label">Total Assets</span><div class="nw-value">$</div></div>
+      <div class="nw-op">−</div>
+      <div class="nw-cell"><span class="nw-label">Total Debts</span><div class="nw-value">$</div></div>
+      <div class="nw-op">=</div>
+      <div class="nw-cell highlight"><span class="nw-label">Your Net Worth</span><div class="nw-value">$</div></div>
+    </div>
+
+    <div class="two-col" style="gap:0.14in;">
+      <!-- 12 MONTH LOG -->
+      <div class="section" style="margin-bottom:0;">
+        <div class="section-header sh-summary">12-MONTH NET WORTH LOG</div>
+        <div class="log-head"><span>Month</span><span>Net Worth</span><span style="text-align:center;">+ / −</span></div>
+        <div class="log-row odd"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row even"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row odd"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row even"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row odd"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row even"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+      </div>
+      <div class="section" style="margin-bottom:0;">
+        <div class="section-header sh-summary">&nbsp;</div>
+        <div class="log-head"><span>Month</span><span>Net Worth</span><span style="text-align:center;">+ / −</span></div>
+        <div class="log-row odd"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row even"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row odd"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row even"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row odd"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+        <div class="log-row even"><span class="log-month">_________</span><div class="log-field"><span class="dollar-sign">$</span><div class="field-line"></div></div><div class="log-field"><div class="field-line"></div></div></div>
+      </div>
+    </div>
+
+    <div style="height:8px;"></div>
+
+    <!-- PROGRESS CHART -->
+    <div class="chart-box">
+      <div class="section-header sh-fixed">📈 PLOT YOUR PROGRESS — CONNECT THE DOTS EACH MONTH</div>
+      <div class="chart-area">
+        <div class="chart-grid-line" style="top:12px;"></div>
+        <div class="chart-grid-line" style="top:42px;"></div>
+        <div class="chart-grid-line" style="top:72px;"></div>
+        <div class="chart-baseline" style="top:97px;"></div>
+      </div>
+      <div class="chart-xlabels">
+        <span class="chart-x">1</span><span class="chart-x">2</span><span class="chart-x">3</span><span class="chart-x">4</span>
+        <span class="chart-x">5</span><span class="chart-x">6</span><span class="chart-x">7</span><span class="chart-x">8</span>
+        <span class="chart-x">9</span><span class="chart-x">10</span><span class="chart-x">11</span><span class="chart-x">12</span>
+      </div>
+      <div class="chart-caption">Mark a dot for each month's net worth, then connect them — watch your line climb.</div>
+    </div>
+
+    <div class="affirmation">"Net worth isn't self-worth. I'm simply watching my numbers move in the right direction, month by month." 🌿</div>
+  </div>
+
+  <div class="footer">
+    <span class="footer-left">Free Printable — Print as many copies as you need 🌿</span>
+    <span class="footer-right">SpendWiseCents.com</span>
+  </div>
+</div>
+
+</body>
+</html>
