@@ -37,22 +37,21 @@ export default function DisclaimerPage() {
               General Disclaimer
             </h2>
             <p className="mb-4 text-sm">
-              The content published on {siteConfig.name} ({siteConfig.domain}) is intended
-              for general educational and informational purposes only. Nothing on this
-              site constitutes professional, legal, or other specialized advice, and
-              nothing should be interpreted as a recommendation to take any particular
-              course of action.
+              The printables and content published on {siteConfig.name} ({siteConfig.domain})
+              are provided for general, personal, non-commercial use. They are intended
+              for home décor, organisation, education, and entertainment, and nothing on
+              this site constitutes professional, legal, medical, or financial advice.
             </p>
             <p className="mb-4 text-sm">
-              The owner of {siteConfig.name} is not a licensed professional in any
-              regulated field. Content on this site reflects personal experience, general
-              research, and publicly available information. It is not tailored to your
-              individual circumstances, goals, or situation.
+              Printed results vary by printer, ink, paper, monitor calibration, and
+              settings. Colours on screen may not match your printout exactly, and page
+              sizing depends on your print dialog. We design and test every file on
+              standard US Letter paper, but we cannot guarantee results on every device.
             </p>
             <p className="text-sm">
-              Your situation is unique. Before acting on any information found here or
-              making any significant decision, please consult a qualified professional
-              who can evaluate your specific circumstances.
+              Please preview and, where relevant, print a test page before printing in
+              bulk. {siteConfig.name} is not responsible for wasted paper, ink, or
+              materials.
             </p>
           </section>
 
@@ -79,18 +78,31 @@ export default function DisclaimerPage() {
 
           <section>
             <h2 className="font-display text-xl font-semibold text-text mb-5">
-              Results Disclaimer
+              Intellectual Property &amp; Personal-Use License
             </h2>
             <p className="mb-4 text-sm">
-              Any examples of results or outcomes mentioned on {siteConfig.name} represent
-              individual experiences or illustrative scenarios. They should not be
-              interpreted as typical, average, or guaranteed results.
+              All artwork, designs, and printable files on {siteConfig.name} are original
+              and remain the property of {siteConfig.name}. You are welcome to download
+              and print them for your own personal, non-commercial use, and to print as
+              many copies as you need for your household or classroom.
+            </p>
+            <p className="mb-4 text-sm">
+              You may <span className="font-medium text-text">not</span> resell,
+              redistribute, sublicense, or claim the files as your own, share the direct
+              PDF links, or use them for any commercial purpose without written
+              permission. To feature a printable elsewhere, please link back to the
+              original post rather than hosting the file yourself.
             </p>
             <p className="text-sm">
-              Outcomes vary significantly based on individual circumstances, consistency
-              of effort, and many other factors outside our control. {siteConfig.name}
-              makes no guarantee, express or implied, that you will achieve any specific
-              outcome by following the information or strategies described on this site.
+              We design original art only and do not publish characters, brands, or
+              franchises. If you believe any content infringes your rights, contact us at{" "}
+              <a
+                href={`mailto:${siteConfig.contact.email}`}
+                className="text-primary underline underline-offset-2 hover:opacity-80"
+              >
+                {siteConfig.contact.email}
+              </a>{" "}
+              and we will review it promptly.
             </p>
           </section>
 

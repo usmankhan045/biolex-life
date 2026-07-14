@@ -27,16 +27,18 @@ const variantClasses: Record<ButtonVariant, string> = {
     "hover:bg-primary/10 " +
     "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
 
+  // Lime accent carries INK text — white is invisible on the bright lime.
   accent:
-    "bg-accent text-white border-2 border-accent " +
+    "bg-accent text-text border-2 border-text " +
     "hover:opacity-90 active:opacity-80 " +
-    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+    "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text",
 };
 
+// Pill buttons — the "bold daylight" nav/CTA shape from the brand mockup.
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: "px-3.5 py-1.5 text-sm rounded-lg",
-  md: "px-5 py-2.5 text-base rounded-xl",
-  lg: "px-7 py-3.5 text-lg rounded-xl",
+  sm: "px-4 py-1.5 text-sm rounded-full",
+  md: "px-6 py-2.5 text-base rounded-full",
+  lg: "px-8 py-3.5 text-lg rounded-full",
 };
 
 export function Button({
@@ -51,7 +53,7 @@ export function Button({
     <button
       className={cn(
         "inline-flex items-center justify-center gap-2",
-        "font-body font-medium",
+        "font-body font-semibold",
         "transition duration-150 cursor-pointer",
         "disabled:opacity-50 disabled:pointer-events-none",
         variantClasses[variant],

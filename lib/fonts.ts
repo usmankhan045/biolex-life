@@ -1,4 +1,4 @@
-import { Fraunces, Public_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Hanken_Grotesk, Geist_Mono } from "next/font/google";
 import { siteConfig } from "./site.config";
 
 // next/font requires static imports — dynamic font loading is not supported.
@@ -8,31 +8,31 @@ import { siteConfig } from "./site.config";
 //   3. Add an entry to FONT_MAP keyed by the exact font name in siteConfig.theme.fonts.
 //   4. Update siteConfig.theme.fonts to reference that key.
 
-const fraunces = Fraunces({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  // Only the weight axis is loaded (smaller file → faster heading render).
-  // Re-add axes: ["SOFT", "WONK"] here if you want the softer letterforms back.
+  // Bold, expressive display weights only (headings render heavy in the
+  // "bold daylight" aesthetic).
+  weight: ["600", "700", "800"],
   variable: "--font-display",
   display: "swap",
 });
 
-const publicSans = Public_Sans({
+const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
   variable: "--font-mono",
   display: "swap",
 });
 
 const FONT_MAP: Record<string, { variable: string; className: string }> = {
-  "Fraunces":      fraunces,
-  "Public Sans":   publicSans,
-  "IBM Plex Mono": ibmPlexMono,
+  "Bricolage Grotesque": bricolage,
+  "Hanken Grotesk":      hankenGrotesk,
+  "Geist Mono":          geistMono,
 };
 
 export function getSiteFonts() {

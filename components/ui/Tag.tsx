@@ -19,7 +19,9 @@ interface TagProps extends HTMLAttributes<HTMLSpanElement> {
 const variantClasses: Record<TagVariant, string> = {
   default: "text-muted  border-muted",
   primary: "text-primary border-primary",
-  accent:  "text-accent  border-accent",
+  // Filled lime chip with ink text + ink offset shadow — the bright lime is
+  // unreadable as a text/border color, so accent tags invert to a solid mark.
+  accent:  "bg-accent text-text border-text",
   success: "text-success border-success",
 };
 

@@ -22,17 +22,17 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: {
-    absolute: `${siteConfig.name}: Guides, Tips, and Free Resources`,
+    absolute: `${siteConfig.name}: Free Printables for Your Home`,
   },
   description:
-    "Practical guides and free resources to help you learn, plan, and make progress on the topics that matter to you. Clear, useful, and free to read.",
+    "Free printable wall art, coloring pages, and home organisation printables. Instant downloads, no sign-up required — print it, frame it, done.",
   alternates: { canonical: "/" },
   openGraph: {
     url: "/",
     type: "website",
-    title: `${siteConfig.name}: Guides, Tips, and Free Resources`,
+    title: `${siteConfig.name}: Free Printables for Your Home`,
     description:
-      "Practical guides and free resources on the topics that matter to you. Clear, useful, and free to read.",
+      "Free printable wall art, coloring pages, planners, and organisation printables. Instant downloads, no sign-up required.",
     images: ogImages(),
   },
   twitter: twitterImages(),
@@ -40,157 +40,121 @@ export const metadata: Metadata = {
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Placeholder posts — shown when the DB is not yet configured or has no content.
-// Replace with real content via Supabase once live.
+// Every title carries the word "printable" (the master-plan rule: printable is
+// the business, not a modifier). Replace with real content via Supabase.
 // ─────────────────────────────────────────────────────────────────────────────
 const PLACEHOLDER_POSTS: Post[] = [
   {
     id: "ph-1",
-    slug: "getting-started-guide",
-    title: "Getting Started: A Simple First-Step Guide for Beginners",
+    slug: "printable-wall-art-for-bedroom",
+    title: "Printable Wall Art for the Bedroom: 12 Sets to Frame Tonight",
     excerpt:
-      "New to the topic and not sure where to begin? This guide walks you through the essentials in plain language, so you can take a confident first step today.",
+      "Twelve free printable wall art sets sized for standard frames, plus how to print them sharp and hang a balanced pair above the bed.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
     audience_tags: [],
-    published_at: "2026-01-15T00:00:00Z",
-    created_at: "2026-01-15T00:00:00Z",
-    updated_at: "2026-01-15T00:00:00Z",
-    categories: { slug: "getting-started", name: "Getting Started" },
+    published_at: "2026-07-01T00:00:00Z",
+    created_at: "2026-07-01T00:00:00Z",
+    updated_at: "2026-07-01T00:00:00Z",
+    categories: { slug: "printable-wall-art", name: "Printable Wall Art" },
   },
   {
     id: "ph-2",
-    slug: "common-beginner-mistakes",
-    title: "5 Common Beginner Mistakes (and How to Avoid Them)",
+    slug: "printable-animal-coloring-pages",
+    title: "Free Animal Coloring Pages: 30 Printable Sheets for Kids & Adults",
     excerpt:
-      "Everyone makes a few early missteps. Here are the most common ones, why they happen, and simple ways to steer clear so you can keep making progress.",
+      "Thirty original animal coloring pages to download and print — from simple shapes for toddlers to detailed line art for grown-ups.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
     audience_tags: [],
-    published_at: "2026-01-22T00:00:00Z",
-    created_at: "2026-01-22T00:00:00Z",
-    updated_at: "2026-01-22T00:00:00Z",
-    categories: { slug: "tips", name: "Tips & Guides" },
+    published_at: "2026-07-04T00:00:00Z",
+    created_at: "2026-07-04T00:00:00Z",
+    updated_at: "2026-07-04T00:00:00Z",
+    categories: { slug: "coloring-pages", name: "Coloring Pages" },
   },
   {
     id: "ph-3",
-    slug: "essential-tools-and-resources",
-    title: "Essential Tools and Resources for Getting Things Done",
+    slug: "bathroom-organization-printables",
+    title: "Bathroom Organization Printables: Labels, Zone Map & Checklist",
     excerpt:
-      "A short, practical roundup of the tools and resources worth knowing about. No fluff, just the ones that actually help you get started and stay organized.",
+      "A printable label set, a zone map, and a restock checklist to sort every drawer and cabinet — with a step-by-step on where each zone goes.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
     audience_tags: [],
-    published_at: "2026-02-01T00:00:00Z",
-    created_at: "2026-02-01T00:00:00Z",
-    updated_at: "2026-02-01T00:00:00Z",
-    categories: { slug: "resources", name: "Resources" },
+    published_at: "2026-07-08T00:00:00Z",
+    created_at: "2026-07-08T00:00:00Z",
+    updated_at: "2026-07-08T00:00:00Z",
+    categories: { slug: "home-organization", name: "Home Organization" },
   },
   {
     id: "ph-4",
-    slug: "how-to-stay-consistent",
-    title: "How to Stay Consistent When Motivation Fades",
+    slug: "preschool-activities-printable",
+    title: "Preschool Activities Printable: A Week of At-Home Worksheets",
     excerpt:
-      "Motivation comes and goes. A simple system keeps you moving anyway. Here's how to build routines that hold up on the days you don't feel like it.",
+      "Five days of printable preschool worksheets — letters, counting, and fine-motor practice — with a simple daily plan any parent can follow.",
     content: null, quick_answer: null, featured_image_url: null,
     category_id: null, status: "published",
     seo_title: null, seo_description: null, faq_items: [],
     audience_tags: [],
-    published_at: "2026-02-10T00:00:00Z",
-    created_at: "2026-02-10T00:00:00Z",
-    updated_at: "2026-02-10T00:00:00Z",
-    categories: { slug: "how-to", name: "How-To" },
+    published_at: "2026-07-11T00:00:00Z",
+    created_at: "2026-07-11T00:00:00Z",
+    updated_at: "2026-07-11T00:00:00Z",
+    categories: { slug: "kids-printables", name: "Kids & Preschool" },
   },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
-// § Hero artifact — the signature element
+// § Hero artifact — the signature "bold daylight" panel.
 //
-// A simple content-preview card, rendered in HTML. It does the one job a hero
-// must do here: show a first-time visitor at a glance what this site offers —
-// a growing library of clear, practical guides they can browse and read. The
-// faint offset sheet behind it hints at "there's plenty more to explore."
+// A grape panel with a lime blob and a stack of check chips, one per pillar of
+// the library. It answers the first-time visitor's question at a glance: what
+// is on the shelves, and that it's all free.
 // ─────────────────────────────────────────────────────────────────────────────
-
-// Neutral accent dots per row — each row reads like a topic in the library.
-const PREVIEW_ROWS: { label: string; meta: string; dot: string }[] = [
-  { label: "Getting Started",  meta: "5 min", dot: "#3F9D6C" },
-  { label: "Core Concepts",    meta: "8 min", dot: "#6B8FAE" },
-  { label: "Step-by-Step",     meta: "6 min", dot: "#A89080" },
-  { label: "Common Questions", meta: "4 min", dot: "#8B7BA0" },
-  { label: "Templates",        meta: "3 min", dot: "#C4826E" },
-  { label: "Next Steps",       meta: "7 min", dot: "#E08A3C" },
+const PILLAR_CHIPS: string[] = [
+  "Wall art — by room & style",
+  "Coloring pages — animals & mandalas",
+  "Home organization — labels & schedules",
+  "Kids & preschool worksheets",
+  "Meal planning & grocery lists",
 ];
 
-function FeaturedContentCard() {
+function LibraryPanel() {
   return (
-    <div className="relative w-full max-w-sm mx-auto lg:mx-0">
-      {/* Second sheet, peeking out behind — "there's more to explore" */}
+    <div className="relative overflow-hidden rounded-[26px] bg-primary text-white p-8 sm:p-9 hard-ink">
+      {/* Lime blob, top-right */}
       <div
         aria-hidden
-        className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl bg-white/70 border border-black/[0.06] shadow-sm rotate-[2deg]"
+        className="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-accent"
       />
 
-      {/* Preview */}
-      <div className="relative rounded-2xl bg-white border border-black/[0.08] shadow-xl shadow-primary/10 overflow-hidden">
-        {/* Header strip */}
-        <div className="bg-primary px-5 py-3.5 flex items-center justify-between">
-          <div>
-            <p className="font-display text-white font-semibold text-base leading-none">
-              Latest Guides
-            </p>
-            <p className="stamp text-white/60 mt-1.5">From the blog</p>
-          </div>
-          <span className="stamp text-white/90 border border-white/40 rounded-[3px] px-2 py-[3px]">
-            New
-          </span>
-        </div>
+      <p className="relative stamp text-white/70 mb-4">The Paper Posy library</p>
+      <h2 className="relative font-display text-2xl sm:text-[1.7rem] font-extrabold leading-[1.08]">
+        Five shelves.
+        <br />
+        One printer.
+        <br />
+        Everything free.
+      </h2>
 
-        {/* Line items */}
-        <div className="divide-y divide-black/[0.05]">
-          {PREVIEW_ROWS.map((row, i) => (
-            <div
-              key={row.label}
-              className={cn(
-                "flex items-center justify-between px-5 py-2.5",
-                i % 2 === 1 && "bg-black/[0.015]"
-              )}
+      <ul className="relative mt-7 flex flex-col gap-2.5">
+        {PILLAR_CHIPS.map((chip) => (
+          <li
+            key={chip}
+            className="inline-flex items-center gap-2.5 w-fit rounded-xl bg-white/[0.14] border border-white/25 px-3 py-2 text-sm font-medium"
+          >
+            <span
+              aria-hidden
+              className="grid place-items-center w-4 h-4 rounded-full bg-accent text-primary text-[11px] font-bold shrink-0"
             >
-              <span className="flex items-center gap-2.5">
-                <span
-                  className="w-2 h-2 rounded-full shrink-0"
-                  style={{ backgroundColor: row.dot }}
-                  aria-hidden
-                />
-                <span
-                  className={cn(
-                    "text-sm text-text",
-                    row.label === "Getting Started" && "font-semibold"
-                  )}
-                >
-                  {row.label}
-                </span>
-              </span>
-              <span className="font-mono text-sm text-muted tabular-nums">
-                {row.meta}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        {/* Footer highlight — the invitation to start */}
-        <div className="bg-success/[0.1] border-t-2 border-success/30 px-5 py-3.5 flex items-center justify-between">
-          <div>
-            <p className="stamp text-success leading-none">Start reading</p>
-            <p className="text-xs text-muted mt-1.5">New guides added regularly</p>
-          </div>
-          <span className="font-display text-2xl font-bold text-success tabular-nums">
-            →
-          </span>
-        </div>
-      </div>
+              ✓
+            </span>
+            {chip}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
@@ -201,19 +165,19 @@ function FeaturedContentCard() {
 // ─────────────────────────────────────────────────────────────────────────────
 const VALUE_PROPS: { icon: "guide" | "printable" | "note"; title: string; body: string }[] = [
   {
-    icon: "guide",
-    title: "Step-by-step guides",
-    body: "Clear, practical walkthroughs written for real situations, so you can follow along and get results. Never generic filler.",
-  },
-  {
     icon: "printable",
-    title: "Free printables",
-    body: "Templates, checklists, and worksheets. Download, print, and fill them in by hand whenever you need them.",
+    title: "Instant download, no sign-up",
+    body: "Every file is free. Open the post, download the PDF, and print at home — no account, no email wall, no catch.",
   },
   {
     icon: "note",
-    title: "Free, no signup",
-    body: "Every guide and printable is free to read and download. No account, no paywall, no catch.",
+    title: "Print-tested on letter paper",
+    body: "Sized for US Letter to line up right the first time. Each printable comes with a short guide on how to print and frame it.",
+  },
+  {
+    icon: "guide",
+    title: "Original art, always",
+    body: "Wall art, coloring pages, and planners we design in-house. No stock photos, no AI art, no copyrighted characters.",
   },
 ];
 
@@ -261,14 +225,14 @@ function CategoryCard({
     <Link
       href={`/category/${category.slug}`}
       className="group block focus-visible:outline-none"
-      aria-label={`Browse ${category.name} posts`}
+      aria-label={`Browse ${category.name} printables`}
     >
       <Card
         variant="plain"
         className={cn(
           "h-full flex flex-col gap-2",
           "transition duration-200",
-          "group-hover:shadow-md group-hover:-translate-y-0.5 group-hover:border-primary/30",
+          "group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:shadow-[6px_6px_0_var(--color-primary)] group-hover:border-primary",
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
         )}
       >
@@ -279,7 +243,7 @@ function CategoryCard({
           </p>
         )}
         <p className="mt-auto pt-3 text-xs font-mono text-primary/70 font-medium tracking-wide uppercase">
-          {category.postCount} {category.postCount === 1 ? "post" : "posts"} →
+          {category.postCount} {category.postCount === 1 ? "printable set" : "printable sets"} →
         </p>
       </Card>
     </Link>
@@ -295,7 +259,7 @@ function PostCard({ post }: { post: Post }) {
         className={cn(
           "h-full flex flex-col",
           "transition duration-200",
-          "group-hover:shadow-md group-hover:-translate-y-0.5",
+          "group-hover:-translate-x-0.5 group-hover:-translate-y-0.5 group-hover:shadow-[6px_6px_0_var(--color-primary)]",
           "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
         )}
       >
@@ -323,7 +287,7 @@ function PostCard({ post }: { post: Post }) {
 
         {/* Read link */}
         <p className="mt-4 text-xs font-mono text-primary font-medium tracking-wide uppercase">
-          Read →
+          Read &amp; download →
         </p>
       </Card>
     </Link>
@@ -363,65 +327,64 @@ export default async function HomePage() {
       {/* ══════════════════════════════════════════════════════════════════
           § HERO — the page's thesis.
           A first-time visitor learns three things instantly: what this is
-          (a library of clear guides), who it's for (anyone getting started),
-          and what to do next (read guides / get printables).
+          (a free printables library), what's on it (five pillars), and what
+          to do next (browse printables / read the guides).
       ══════════════════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden bg-gradient-to-b from-primary/[0.06] via-primary/[0.02] to-background"
         aria-labelledby="hero-heading"
       >
-        <Container className="pt-8 pb-12 sm:pt-10 sm:pb-14 lg:pt-12 lg:pb-16">
-          <div className="grid lg:grid-cols-[minmax(0,1fr)_auto] gap-10 lg:gap-14 items-center">
+        <Container className="pt-10 pb-14 sm:pt-12 sm:pb-16 lg:pt-16 lg:pb-20">
+          <div className="grid lg:grid-cols-[1.1fr_.9fr] gap-10 lg:gap-14 items-center">
 
             {/* Left, the promise */}
             <div className="min-w-0 max-w-xl">
-              <p className="stamp text-primary mb-5 flex items-center gap-2">
-                <span className="h-px w-6 bg-primary/40" aria-hidden />
-                Free guides &amp; printables
+              <p className="stamp text-primary mb-5 flex items-center gap-2.5">
+                <span className="h-2 w-6 rounded-full bg-accent" aria-hidden />
+                Free printables for your home
               </p>
 
               <h1
                 id="hero-heading"
-                className="font-display text-4xl sm:text-5xl lg:text-[3.1rem] font-bold text-text leading-[1.05] tracking-tight text-balance"
+                className="font-display text-[2.6rem] sm:text-6xl lg:text-[4rem] font-extrabold text-text leading-[0.98] tracking-tight text-balance"
               >
-                Make real progress,{" "}
-                <em className="not-italic text-primary">one clear step</em> at a
-                time.
+                Wall art, coloring pages &amp; planners you can{" "}
+                <span className="lime-mark">print today</span>.
               </h1>
 
-              <p className="mt-5 text-lg text-muted leading-relaxed max-w-lg">
-                {siteConfig.name} turns big topics into simple, doable steps.
-                Step-by-step guides and free printable worksheets, built for
-                beginners and anyone starting over. No fluff. No overwhelm.
+              <p className="mt-6 text-lg sm:text-xl text-muted leading-relaxed max-w-lg">
+                {siteConfig.name} is a free library of printables for the home —
+                download the PDF, print it at home, frame it or fill it in. No
+                sign-up, no paywall, no catch.
               </p>
 
-              <div className="mt-7 flex flex-wrap gap-3">
-                <Button size="lg">
+              <div className="mt-8 flex flex-wrap gap-3">
+                {siteConfig.features.printables && (
+                  <Button size="lg">
+                    <Link href="/free-printables" className="contents">
+                      Browse free printables
+                    </Link>
+                  </Button>
+                )}
+                <Button variant="outline" size="lg">
                   <Link href="/blog" className="contents">
                     Read the guides
                   </Link>
                 </Button>
-                {siteConfig.features.printables && (
-                  <Button variant="outline" size="lg">
-                    <Link href="/free-printables" className="contents">
-                      Get free printables
-                    </Link>
-                  </Button>
-                )}
               </div>
 
-              <p className="mt-6 stamp text-muted/80 flex flex-wrap items-center gap-x-3 gap-y-1">
-                <span>No signup to read</span>
+              <p className="mt-7 stamp text-muted/80 flex flex-wrap items-center gap-x-3 gap-y-1">
+                <span>Instant download</span>
+                <span className="text-muted/40" aria-hidden>·</span>
+                <span>No sign-up</span>
                 <span className="text-muted/40" aria-hidden>·</span>
                 <span>Always free</span>
-                <span className="text-muted/40" aria-hidden>·</span>
-                <span>Zero judgment</span>
               </p>
             </div>
 
             {/* Right, the artifact */}
-            <div className="min-w-0 w-full lg:w-[22rem]">
-              <FeaturedContentCard />
+            <div className="min-w-0 w-full">
+              <LibraryPanel />
             </div>
           </div>
         </Container>
@@ -430,7 +393,7 @@ export default async function HomePage() {
       {/* ══════════════════════════════════════════════════════════════════
           § WHAT YOU GET — first-sight clarity, three plain promises.
       ══════════════════════════════════════════════════════════════════ */}
-      <section className="py-14 sm:py-16 border-y border-black/[0.06]" aria-label="What you get here">
+      <section className="py-14 sm:py-16 border-y-2 border-black/[0.08]" aria-label="What you get here">
         <Container>
           <div className="grid gap-6 sm:grid-cols-3">
             {VALUE_PROPS.map((vp) => (
@@ -441,7 +404,7 @@ export default async function HomePage() {
                 >
                   <ValueIcon name={vp.icon} />
                 </span>
-                <h2 className="font-display text-lg font-semibold text-text mb-1.5">
+                <h2 className="font-display text-lg font-bold text-text mb-1.5">
                   {vp.title}
                 </h2>
                 <p className="text-sm text-muted leading-relaxed">{vp.body}</p>
@@ -464,13 +427,13 @@ export default async function HomePage() {
             <div className="mt-10">
               <h2
                 id="categories-heading"
-                className="font-display text-3xl sm:text-4xl font-bold text-text mb-3"
+                className="font-display text-3xl sm:text-4xl font-extrabold text-text mb-3"
               >
-                Find your topic.
+                Pick a shelf.
               </h2>
               <p className="text-muted text-lg max-w-xl mb-10">
-                Every guide is filed by topic. Pick a category to see all of its
-                posts in one place.
+                Every printable is filed by pillar. Choose a category to see all
+                of its download sets and how-to guides in one place.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -482,9 +445,9 @@ export default async function HomePage() {
               <div className="mt-8 text-center">
                 <Link
                   href="/blog"
-                  className="text-sm text-primary font-medium hover:underline underline-offset-4"
+                  className="text-sm text-primary font-semibold hover:underline underline-offset-4"
                 >
-                  Browse all guides →
+                  Browse all printables →
                 </Link>
               </div>
             </div>
@@ -501,17 +464,17 @@ export default async function HomePage() {
             <div>
               <h2
                 id="posts-heading"
-                className="font-display text-3xl sm:text-4xl font-bold text-text"
+                className="font-display text-3xl sm:text-4xl font-extrabold text-text"
               >
-                Latest from the blog
+                Fresh off the printer
               </h2>
               <p className="text-muted mt-2">
-                Practical guides, honest takes, and no filler.
+                New printable sets and the guides that go with them.
               </p>
             </div>
             <Link
               href="/blog"
-              className="text-sm text-primary font-medium hover:underline underline-offset-4 shrink-0"
+              className="text-sm text-primary font-semibold hover:underline underline-offset-4 shrink-0"
             >
               View all →
             </Link>
@@ -538,8 +501,8 @@ export default async function HomePage() {
         <section className="py-12 sm:py-16" aria-label="Free printable">
           <Container width="narrow">
             <PrintableCallout
-              title="Free Starter Printable: Simple One-Page Template"
-              description="A single-page worksheet to help you plan, track, and stay organized. Print it, fill it in, and put it to work today. Free to download, no sign-up."
+              title="Free Starter Set: Printable Weekly Planner + Grocery List"
+              description="A one-page weekly planner and a matching grocery list, sized for US Letter. Download the PDF, print it, and plan your week in ten minutes. Free, no sign-up."
               href="/free-printables"
               badge="Free Printable"
             />
@@ -570,10 +533,10 @@ export default async function HomePage() {
               />
             </div>
 
-            <blockquote className="font-display text-xl sm:text-2xl font-medium text-text leading-relaxed mb-6 max-w-lg mx-auto">
-              &ldquo;Most guides assume you already know where to start. I built{" "}
-              {siteConfig.name} for everyone else, with clear, practical guides and
-              free tools for real life.&rdquo;
+            <blockquote className="font-display text-xl sm:text-2xl font-bold text-text leading-relaxed mb-6 max-w-lg mx-auto">
+              &ldquo;I was tired of printables that looked great on screen and
+              fell apart on paper. So I design every one here, print-test it, and
+              give it away free.&rdquo;
             </blockquote>
 
             <p

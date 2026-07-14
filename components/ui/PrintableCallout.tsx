@@ -23,11 +23,9 @@ export function PrintableCallout({
   return (
     <div
       className={cn(
-        // Dashed accent border — the "cut here" perforation motif
-        "border-2 border-dashed border-accent/60",
-        "rounded-xl p-6",
-        // Very subtle accent wash so it reads as a special callout without screaming
-        "bg-accent/[0.05]",
+        // Dashed grape border — the "cut here" perforation motif
+        "border-2 border-dashed border-primary/60",
+        "rounded-2xl p-6 bg-white hard-sm",
         "flex flex-col sm:flex-row items-start sm:items-center gap-5",
         className
       )}
@@ -35,7 +33,7 @@ export function PrintableCallout({
     >
       {/* Printable icon — a ruled-paper glyph */}
       <div
-        className="shrink-0 w-14 h-16 rounded-lg bg-white border border-accent/30 shadow-sm flex flex-col justify-center items-center gap-1.5 px-2"
+        className="shrink-0 w-14 h-16 rounded-lg bg-background border-2 border-text/15 flex flex-col justify-center items-center gap-1.5 px-2"
         aria-hidden
       >
         {[0, 1, 2, 3].map((i) => (
@@ -63,14 +61,14 @@ export function PrintableCallout({
         href={href}
         className={cn(
           "shrink-0 inline-flex items-center justify-center gap-2",
-          "bg-accent text-white border-2 border-accent",
-          "px-3.5 py-1.5 text-sm rounded-lg",
-          "font-medium transition duration-150",
+          "bg-primary text-white border-2 border-primary",
+          "px-5 py-2 text-sm rounded-full",
+          "font-semibold transition duration-150",
           "hover:opacity-90 active:opacity-80",
-          "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         )}
       >
-        Download
+        Download →
       </a>
     </div>
   );

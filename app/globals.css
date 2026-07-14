@@ -41,9 +41,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display), ui-serif, Georgia, serif;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 code, pre, kbd, samp {
@@ -63,6 +64,37 @@ code, pre, kbd, samp {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+/* ─── Signature element: Hard offset shadow ("bold daylight") ─────────────────
+   The brand's defining move — a thick 2px ink border with a hard, un-blurred
+   drop shadow offset down-right. References screen-printed poster stock and
+   sticker sheets: the printed thing sitting proud of the page. Applied to hero
+   artifacts, callouts, and cards on hover.
+   ─────────────────────────────────────────────────────────────────────────── */
+@utility hard {
+  box-shadow: 6px 6px 0 var(--color-primary);
+}
+@utility hard-sm {
+  box-shadow: 3px 3px 0 var(--color-primary);
+}
+@utility hard-ink {
+  box-shadow: 6px 6px 0 var(--color-text);
+}
+
+/* ─── Signature element: Lime highlight mark ──────────────────────────────────
+   A rotated block of accent lime sitting behind a run of heading text — the
+   marker-pen highlight over the word that matters. Dark ink stays on top for
+   legibility (never white on lime). Mirrors the <span class="u"> in the brand
+   mockup.
+   ─────────────────────────────────────────────────────────────────────────── */
+.lime-mark {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-text);
+  padding: 0 0.28em;
+  border-radius: 0.35rem;
+  transform: rotate(-1.5deg);
 }
 
 /* ─── Mobile: center flowing page text ────────────────────────────────────────

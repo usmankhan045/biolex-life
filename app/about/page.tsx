@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export const revalidate = 3600;
 
 const DEFAULT_INTRO =
-  `${siteConfig.name} was built to make helpful, practical information easy to find and easy to use. Clear guides and free tools you can put to work the same day, without the fluff.`;
+  `${siteConfig.name} is a free library of printables for the home — wall art, coloring pages, and organising systems you can download and print today. Every file is designed in-house, print-tested on plain letter paper, and free to use.`;
 
 export default async function AboutPage() {
   let intro = DEFAULT_INTRO;
@@ -41,11 +41,11 @@ export default async function AboutPage() {
           <Tag variant="primary" className="mb-5">About</Tag>
           <h1
             id="about-hero-heading"
-            className="font-display text-4xl sm:text-5xl font-bold text-text leading-tight mb-5"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-text leading-[1.02] mb-5"
           >
-            Practical help,
+            Print it. Frame it.
             <br className="hidden sm:block" />
-            made simple.
+            {" "}Done.
           </h1>
           <p className="text-lg text-muted leading-relaxed">{intro}</p>
         </Container>
@@ -76,31 +76,33 @@ export default async function AboutPage() {
               </p>
 
               <p className="text-sm sm:text-base">
-                {siteConfig.name} started with a simple frustration: most advice online is
-                written for people who already know the basics. It skips past the
-                questions beginners actually have, buries the useful parts under filler,
-                and assumes you have hours to figure it all out on your own.
+                {siteConfig.name} started with a simple frustration: most free
+                printables look great on screen and fall apart on paper. The art
+                is blurry, the margins are cut off, the planner doesn&rsquo;t fit
+                a standard frame, and half of them quietly reuse someone
+                else&rsquo;s copyrighted characters.
               </p>
 
               <p className="text-sm sm:text-base">
-                So I built the site I wished existed. I research what actually works,
-                test it, and turn it into clear guides and free tools you can use the
-                same day. Every guide is edited to be genuinely useful for someone
-                starting from scratch, not just impressive to skim.
+                So I built the library I wished existed. Every printable here is
+                designed in-house &mdash; original wall art, coloring pages,
+                planners, labels, and worksheets &mdash; then print-tested on plain
+                US Letter paper before it goes up. No stock photos, no AI art, no
+                branded characters.
               </p>
 
               <p className="text-sm sm:text-base">
-                What we publish isn&rsquo;t the watered-down, surface-level version.
-                It&rsquo;s the practical version, the concrete steps that help people
-                understand a topic, make a decision, and feel confident doing it, often
-                for the first time.
+                And nothing is a bare download page. Each printable sits inside a
+                real guide: how to print it sharp, what frame to buy, how to style
+                it, or how to actually use the system. That&rsquo;s the part the AI
+                slop flooding this space skips &mdash; and the reason people come
+                back.
               </p>
 
               <p className="text-sm sm:text-base">
-                Nothing here is a substitute for personalized professional advice. This
-                is the honest, tested work of figuring things out &mdash; shared freely,
-                so the path is a little easier for you. That&rsquo;s the entire point of
-                this site.
+                Everything is free for personal use. Download it, print as many
+                copies as you like, and put it on your wall or your fridge.
+                That&rsquo;s the entire point of this site.
               </p>
 
               <p className="font-medium text-text">
@@ -113,47 +115,49 @@ export default async function AboutPage() {
       </section>
 
       {/* ── Who this is for ────────────────────────────────────────────────── */}
-      <section
-        className="py-12 sm:py-14 bg-primary/[0.03]"
-        aria-labelledby="audience-heading"
-      >
-        <Container>
-          <SectionDivider variant="titled" label="Who this is for" spacing="sm" />
-          <h2
-            id="audience-heading"
-            className="font-display text-3xl sm:text-4xl font-bold text-text mt-8 mb-3"
-          >
-            You&rsquo;re in the right place if&hellip;
-          </h2>
-          <p className="text-muted mb-10 max-w-lg">
-            Every section of this site is built around a specific situation. Find yours
-            and you&rsquo;ll find guides written exactly for where you are.
-          </p>
+      {siteConfig.audienceSegments.length > 0 && (
+        <section
+          className="py-12 sm:py-14 bg-primary/[0.03]"
+          aria-labelledby="audience-heading"
+        >
+          <Container>
+            <SectionDivider variant="titled" label="Who this is for" spacing="sm" />
+            <h2
+              id="audience-heading"
+              className="font-display text-3xl sm:text-4xl font-bold text-text mt-8 mb-3"
+            >
+              You&rsquo;re in the right place if&hellip;
+            </h2>
+            <p className="text-muted mb-10 max-w-lg">
+              Every section of this site is built around a specific situation. Find yours
+              and you&rsquo;ll find guides written exactly for where you are.
+            </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {siteConfig.audienceSegments.map((segment) => (
-              <Link
-                key={segment.slug}
-                href={`/${segment.slug}`}
-                className="group block focus-visible:outline-none"
-                aria-label={segment.startHereLabel}
-              >
-                <Card
-                  className="h-full flex flex-col gap-2 transition duration-200 group-hover:shadow-md group-hover:-translate-y-0.5 group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {siteConfig.audienceSegments.map((segment) => (
+                <Link
+                  key={segment.slug}
+                  href={`/${segment.slug}`}
+                  className="group block focus-visible:outline-none"
+                  aria-label={segment.startHereLabel}
                 >
-                  <Tag variant="primary" className="self-start">{segment.label}</Tag>
-                  <p className="text-sm text-text font-medium leading-snug mt-0.5">
-                    {segment.startHereLabel}
-                  </p>
-                  <p className="mt-auto pt-3 text-xs font-mono text-primary/70 font-medium tracking-wide uppercase">
-                    Start here →
-                  </p>
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </Container>
-      </section>
+                  <Card
+                    className="h-full flex flex-col gap-2 transition duration-200 group-hover:shadow-md group-hover:-translate-y-0.5 group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary"
+                  >
+                    <Tag variant="primary" className="self-start">{segment.label}</Tag>
+                    <p className="text-sm text-text font-medium leading-snug mt-0.5">
+                      {segment.startHereLabel}
+                    </p>
+                    <p className="mt-auto pt-3 text-xs font-mono text-primary/70 font-medium tracking-wide uppercase">
+                      Start here →
+                    </p>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* ── What you'll find here ──────────────────────────────────────────── */}
       <section className="py-12 sm:py-14" aria-labelledby="content-heading">
@@ -161,32 +165,32 @@ export default async function AboutPage() {
           <SectionDivider variant="titled" label="What you'll find here" spacing="sm" />
           <h2
             id="content-heading"
-            className="font-display text-3xl font-bold text-text mt-8 mb-8"
+            className="font-display text-3xl font-extrabold text-text mt-8 mb-8"
           >
-            Practical tools. Honest guides.
+            Five shelves, one printer.
           </h2>
 
           <ul className="space-y-7">
             {([
               {
-                title: "Guides written for real situations",
-                body: "Not generic advice. Every guide is written with a specific reader in mind, whether you're a complete beginner or picking things back up after a break.",
+                title: "Printable wall art",
+                body: "Original art for every room and style — bedroom, nursery, kitchen, boho, minimalist — sized for standard frames, with a guide on printing and hanging it.",
               },
               {
-                title: "Free printables and worksheets",
-                body: "Templates, checklists, trackers, and planners. Designed to be printed and filled in by hand, because sometimes that's what actually works.",
+                title: "Coloring pages",
+                body: "Animals, mandalas, florals, and seasonal sheets for kids and adults. All original line art you can print by the sheet or the set.",
               },
               {
-                title: "Straight talk, no filler",
-                body: "No hype. No padding. We talk about the real tradeoffs, the common questions, and the practical steps that get you from confused to confident.",
+                title: "Home organization printables",
+                body: "Labels, cleaning schedules, zone maps, and checklists to sort every room — never a bare listicle, always a real system you can print.",
               },
               {
-                title: "Simple systems, not perfect ones",
-                body: "A routine you'll actually stick to beats a perfect plan you abandon in week two. We focus on systems that work in a messy, real life.",
+                title: "Kids & preschool worksheets",
+                body: "Activity sheets, worksheets, chore charts, and classroom printables built for parents and teachers, not for a craft-supply haul.",
               },
               {
-                title: "No judgment, ever",
-                body: "Wherever you're starting from, you belong here. We don't shame, we don't lecture. We just help.",
+                title: "Meal planning & grocery printables",
+                body: "Weekly meal planners, grocery lists, and freezer templates. Planning tools you fill in — no recipes, no food photos, just structure.",
               },
             ] as const).map((item) => (
               <li key={item.title} className="flex gap-4">
@@ -209,12 +213,12 @@ export default async function AboutPage() {
       {/* ── Disclaimer ─────────────────────────────────────────────────────── */}
       <section className="py-12 bg-primary/[0.03]" aria-label="Disclaimer">
         <Container width="narrow">
-          <div className="border border-black/[0.08] rounded-xl bg-white p-5">
+          <div className="border-2 border-black/[0.08] rounded-xl bg-white p-5">
             <p className="text-xs text-muted leading-relaxed">
               <span className="font-medium text-text">Disclaimer: </span>
-              The content on {siteConfig.name} is for general educational and informational
-              purposes only. It is not professional advice. Always consult a qualified
-              professional before making important decisions.{" "}
+              {siteConfig.name} printables are free for personal, non-commercial use
+              only. Please don&rsquo;t resell or redistribute the files. Any product
+              or tool we mention may be an affiliate link.{" "}
               <Link
                 href="/disclaimer"
                 className="text-primary underline underline-offset-3 hover:opacity-80"

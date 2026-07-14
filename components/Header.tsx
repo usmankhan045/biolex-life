@@ -112,10 +112,17 @@ export function Header({ categories = [] }: { categories?: CategoryLink[] }) {
           {/* ── Logo ─────────────────────────────────────────────────────── */}
           <Link
             href="/"
-            className="font-display text-xl font-bold text-primary shrink-0 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-2.5 shrink-0 hover:opacity-80 transition-opacity"
             aria-label={`${siteConfig.name} home`}
           >
-            {siteConfig.name}
+            {/* Brand mark — grape rounded square with a lime dot at its centre */}
+            <span
+              aria-hidden
+              className="relative w-7 h-7 rounded-[9px] bg-primary shrink-0 after:content-[''] after:absolute after:inset-[7px] after:rounded-full after:bg-accent"
+            />
+            <span className="font-display text-xl font-extrabold text-text tracking-tight">
+              {siteConfig.name}
+            </span>
           </Link>
 
           {/* ── Desktop nav ──────────────────────────────────────────────── */}

@@ -24,10 +24,10 @@ export function Card({
       className={cn(
         // text-left keeps card interiors left-aligned even under the mobile
         // text-centering rule in globals.css (cards read cleaner left-aligned).
-        "bg-white rounded-xl text-left",
-        "border border-black/[0.07]",
-        "shadow-sm",
-        variant === "ledger" && "border-l-[3px] border-l-primary",
+        "bg-white rounded-[var(--radius)] text-left",
+        "border-2 border-black/[0.09]",
+        "shadow-[3px_3px_0_rgba(25,23,32,0.06)]",
+        variant === "ledger" && "border-l-[5px] border-l-primary",
         compact ? "p-4" : "p-6",
         className
       )}

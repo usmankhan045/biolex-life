@@ -1,27 +1,26 @@
 export const siteConfig = {
-  slug: "my-site",
+  slug: "paper-posy",
   // Canonical host. MUST match the host the deployment actually serves with a
   // 200 (Vercel redirects the apex → www), so canonical tags, sitemap <loc>,
   // og:url and robots Host/Sitemap all agree with production.
-  domain: "www.example.com",
+  domain: "www.paperposy.com",
   // Known site_id for this tenant. Used as a resilient fallback if the runtime
   // `sites` table lookup is unavailable (e.g. build-time prerender). See
   // getCurrentSiteId() in lib/supabase.ts.
   //
-  // PLACEHOLDER — set this to the real UUID you get back when you seed the
-  // site's `sites` row in Supabase (see docs/NEW_SITE_GUIDE.md).
-  siteId: "00000000-0000-0000-0000-000000000000",
-  name: "My Site",
-  tagline: "A short, memorable tagline goes here",
-  niche: "Your niche or topic",
+  // Set to the real UUID returned when the site's `sites` row was seeded.
+  siteId: "5a5babff-6213-4f05-b8cb-986aaa2d0b80",
+  name: "Paper Posy",
+  tagline: "Print it. Frame it. Done.",
+  niche: "Free printables for the home",
 
   // ── AUTHORSHIP / E-E-A-T ─────────────────────────────────────────────────
   // A named, real person behind the content — required for trust and
   // AI-citation entity resolution. Surfaced as a byline on posts, an author bio
   // on the About page, and Person schema (author/publisher) in JSON-LD.
   author: {
-    name: "Author Name",
-    slug: "author-name",
+    name: "Marlowe Hart",
+    slug: "marlowe-hart",
     role: "Founder & Editor",
     // Author headshot (public/author.svg is a neutral placeholder). Replace with
     // a real photo (e.g. public/author.jpg) before launch and update this path.
@@ -30,11 +29,11 @@ export const siteConfig = {
     // AI-citation / entity-resolution signal). Add real profiles here.
     sameAs: [] as readonly string[],
     // Relative URL to the author's on-site profile page (author archive).
-    url: "/author/author-name",
+    url: "/author/marlowe-hart",
     shortBio:
-      "One or two sentences introducing the author and why they started this site.",
+      "Marlowe designs and tests every printable in the Paper Posy library — from wall art to weekly meal planners — so each one prints clean on a home printer.",
     longBio:
-      "A longer author bio for the About page and Person schema. Describe the author's background, why the site exists, and who it is for.",
+      "Marlowe Hart started Paper Posy after years of hunting for printables that actually looked good on the wall and lined up correctly on the page. Everything here is designed in-house, print-tested on plain letter paper, and paired with a short guide on how to frame it, style it, or fill it in. No stock photos, no filler — just files you can download and print today.",
   },
 
   // ── FEATURE FLAGS ────────────────────────────────────────────────────────
@@ -49,36 +48,36 @@ export const siteConfig = {
   // Surfaced in the legal pages, footer, and about page. Set these per site so
   // the boilerplate legal copy carries the right brand, domain, and emails.
   contact: {
-    email: "contact@example.com",       // general / terms contact
-    privacyEmail: "privacy@example.com", // privacy + data requests
+    email: "hello@paperposy.com",       // general / terms contact
+    privacyEmail: "privacy@paperposy.com", // privacy + data requests
   },
   legal: {
     lastUpdated: "July 14, 2026", // shown at the top of each legal page
     // One-line disclaimer in the footer bottom bar. Swap for your niche.
     disclaimer:
-      "This site is for general informational purposes only.",
+      "Paper Posy printables are free for personal, non-commercial use. Print as many copies as you need.",
   },
   brand: {
-    monogram: "MS",   // 2-letter mark used in avatar / quote blocks
+    monogram: "PP",   // 2-letter mark used in avatar / quote blocks
     foundedYear: 2026, // used in the footer copyright line
   },
 
   theme: {
     colors: {
-      primary:    "#2F4858", // deep slate — nav, buttons, primary accents
-      accent:     "#E08A3C", // warm amber — highlights
-      background: "#FAFAF8", // near-white page background
-      text:       "#1A1F24", // near-black body text
-      muted:      "#6B7680", // secondary text, rules
-      success:    "#3F9D6C", // positive states
+      primary:    "#5B34E0", // grape violet — nav, buttons, primary accents
+      accent:     "#C9F24E", // electric lime — highlights (dark text on top)
+      background: "#FCFBF7", // warm paper cream — page background
+      text:       "#191720", // near-black ink — body text
+      muted:      "#5A5763", // dim slate — secondary text, rules
+      success:    "#3F9D6C", // green — positive states
     },
     fonts: {
       // Any font swapped here must also be wired up in lib/fonts.ts (FONT_MAP).
-      display: "Fraunces",      // warm-editorial variable serif
-      body:    "Public Sans",   // legible, neutral sans
-      mono:    "IBM Plex Mono", // numbers, stamps, tags
+      display: "Bricolage Grotesque", // bold expressive grotesque headings
+      body:    "Hanken Grotesk",      // clean, warm humanist sans body
+      mono:    "Geist Mono",          // numbers, stamps, tags
     },
-    radius: "0.75rem",
+    radius: "0.9rem",
   },
 
   nav: [
