@@ -17,6 +17,7 @@ import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { cleanValue } from "./lib-dedash.mjs";
+import { cleanBrand } from "./lib-brand.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DRAFTS = join(ROOT, "content-queue", "drafts");
@@ -46,12 +47,14 @@ async function buildOne(slug) {
     category: meta.category,
     featured_image_url: `/covers/${slug}.png`,
     printable: meta.printable,
+    printable_extra: meta.printable_extra || undefined,
     cover: meta.cover || undefined,
     faq_items: meta.faq_items.map((f) => ({ question: f.question, answer: f.answer })),
   };
   await mkdir(ARTICLES, { recursive: true });
-  // House rule: never ship em/en dashes (an AI-writing tell). Auto-strip on build.
-  await writeFile(join(ARTICLES, `${slug}.json`), JSON.stringify(cleanValue(article), null, 2) + "\n");
+  // House rules: never ship em/en dashes (an AI tell), and always use the
+  // current brand (Barrio Vibe). Both are auto-corrected on build.
+  await writeFile(join(ARTICLES, `${slug}.json`), JSON.stringify(cleanBrand(cleanValue(article)), null, 2) + "\n");
   return { slug, words: wc, faqs: article.faq_items.length };
 }
 

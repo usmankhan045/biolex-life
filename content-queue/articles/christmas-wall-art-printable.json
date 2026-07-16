@@ -14,9 +14,14 @@
   "category": "printable-wall-art",
   "featured_image_url": "/covers/christmas-wall-art-printable.png",
   "printable": "merry-and-bright-wall-art",
+  "printable_extra": [
+    "let-it-snow-wall-art",
+    "gather-wall-art",
+    "believe-wall-art"
+  ],
   "cover": {
-    "eyebrow": "Printable Wall Art",
-    "badge": "Free Download"
+    "eyebrow": "Home Organization",
+    "badge": "Free Printable Inside"
   },
   "faq_items": [
     {
@@ -39,10 +44,5 @@
       "question": "Can I reuse printable Christmas wall art next year?",
       "answer": "Yes. After the holidays, slide the prints out and store them flat in a folder with your other decorations to rehang next December for free. If one gets creased, just reprint the file. The frames aren't seasonal, so you can swap in new art any time of year."
     }
-  ],
-  "printable_extra": [
-    "let-it-snow-wall-art",
-    "gather-wall-art",
-    "believe-wall-art"
   ]
 }

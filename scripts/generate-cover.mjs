@@ -155,7 +155,9 @@ async function main() {
       const slug = f.replace(/\.json$/, "");
       if (!a.force && (await exists(join(OUT_DIR, `${slug}.png`)))) { skipped++; continue; }
       const art = JSON.parse(await readFile(join(dir, f), "utf8"));
-      const eyebrow = art.cover?.eyebrow || CATEGORY_LABEL[art.category] || "Free Printable";
+      // The category label is always correct; the writer-supplied cover.eyebrow
+      // is only a fallback for categories not in the map.
+      const eyebrow = CATEGORY_LABEL[art.category] || art.cover?.eyebrow || "Free Printable";
       const badge = art.cover?.badge ?? "Free Printable Inside";
       // Cover uses the SEO title without the "(Free Printable)" tail for a cleaner headline.
       const title = (art.cover?.title || art.title).replace(/\s*\((?:free\s+)?printable\)\s*$/i, "");

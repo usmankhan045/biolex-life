@@ -14,6 +14,7 @@
 import { readFile, readdir, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { deBrand } from "./lib-brand.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PINS = join(ROOT, "docs", "pins");
@@ -50,7 +51,7 @@ async function buildFile(order, have, outFile, label) {
   const rows = [];
   for (let gi = 0; gi < ordered.length; gi++) {
     const slug = ordered[gi];
-    const pins = parsePins(await readFile(join(PINS, `${slug}.md`), "utf8"));
+    const pins = parsePins(deBrand(await readFile(join(PINS, `${slug}.md`), "utf8")));
     for (const v of ["A", "B", "C"]) {
       if (!pins[v]) continue;
       const { day, slot } = dayFor(gi, v);
