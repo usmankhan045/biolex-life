@@ -46,7 +46,7 @@ function dateStr(day) {
   return `${d.toISOString().slice(0, 10)} (${wd})`;
 }
 
-async function buildFile(order, have, outFile, label) {
+async function buildFile(order, have, outFile, label, siteUrl) {
   const ordered = order.filter((s) => have.has(s));
   const rows = [];
   for (let gi = 0; gi < ordered.length; gi++) {
@@ -66,7 +66,7 @@ async function buildFile(order, have, outFile, label) {
     rows.filter((r) => r.day === day).forEach((r, i) => {
       out += `**Pin ${i + 1} · ${r.slug} (Pin ${r.v})**\n`;
       out += `- Board: ${r.board}\n- Title: ${r.title}\n- Description: ${r.description}\n`;
-      out += `- Alt text: ${r.alt}\n- Image prompt: ${r.prompt}\n- Link: /blog/${r.slug}\n\n`;
+      out += `- Alt text: ${r.alt}\n- Image prompt: ${r.prompt}\n- Link: ${siteUrl}/blog/${r.slug}\n\n`;
     });
   }
   await writeFile(join(ROOT, "docs", outFile), out);
@@ -78,14 +78,19 @@ async function main() {
   const phaseOf = Object.fromEntries(manifest.posts.map((p) => [p.slug, p.phase || 1]));
   const have = new Set((await readdir(PINS)).filter((f) => f.endsWith(".md") && f !== "_intro.md").map((f) => f.replace(/\.md$/, "")));
 
+  // Full site URL for pin links, read from lib/site.config.ts (single source of truth).
+  const cfg = await readFile(join(ROOT, "lib", "site.config.ts"), "utf8");
+  const domain = (cfg.match(/domain:\s*["']([^"']+)["']/) || [])[1] || "www.barriovibe.com";
+  const siteUrl = `https://${domain.replace(/^https?:\/\//, "").replace(/\/+$/, "")}`;
+
   // Phase 1 + seasonal = publish_order minus any phase-2 slugs
   const p2set = new Set(manifest.publish_order_p2 || []);
   const p1order = manifest.publish_order.filter((s) => !p2set.has(s) && phaseOf[s] !== 2);
-  await buildFile(p1order, have, "pinterest-pins.md", "Phase 1 + seasonal");
+  await buildFile(p1order, have, "pinterest-pins.md", "Phase 1 + seasonal", siteUrl);
 
   // Phase 2 in its own file, its own Day 1
   if ((manifest.publish_order_p2 || []).length) {
-    await buildFile(manifest.publish_order_p2, have, "pinterest-pins-phase2.md", "Phase 2");
+    await buildFile(manifest.publish_order_p2, have, "pinterest-pins-phase2.md", "Phase 2", siteUrl);
   }
 }
 main().catch((e) => { console.error(e); process.exit(1); });
