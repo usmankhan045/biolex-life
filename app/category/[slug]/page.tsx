@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   getCategories,
   getCategoryBySlug,
@@ -168,12 +169,23 @@ export default async function CategoryArchivePage({
                   >
                     <Card
                       className={cn(
-                        "h-full flex flex-col",
+                        "h-full flex flex-col overflow-hidden",
                         "transition duration-200",
                         "group-hover:shadow-md group-hover:-translate-y-0.5",
                         "group-focus-visible:ring-2 group-focus-visible:ring-primary group-focus-visible:ring-offset-2"
                       )}
                     >
+                      {post.featured_image_url && (
+                        <div className="relative -mt-6 -mx-6 mb-4 aspect-[16/9] overflow-hidden bg-primary/[0.05]">
+                          <Image
+                            src={post.featured_image_url}
+                            alt={post.title}
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          />
+                        </div>
+                      )}
                       <CardTitle
                         as="h2"
                         className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
