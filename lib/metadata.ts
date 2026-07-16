@@ -9,17 +9,29 @@ import { siteConfig } from "./site.config";
  */
 const DEFAULT_OG_IMAGE = "/og-default.jpg";
 
+// Derive the MIME type from the file extension so og:image:type matches the
+// actual asset (post covers are .png, the default is .jpg). A mismatched type
+// is a real validation defect some scrapers reject.
+function imageType(url: string): string {
+  const u = url.split("?")[0].toLowerCase();
+  if (u.endsWith(".png")) return "image/png";
+  if (u.endsWith(".webp")) return "image/webp";
+  if (u.endsWith(".gif")) return "image/gif";
+  return "image/jpeg";
+}
+
 export function ogImages(
   url: string | null | undefined = DEFAULT_OG_IMAGE,
   alt: string = `${siteConfig.name}: ${siteConfig.tagline}`
 ) {
+  const resolved = url ?? DEFAULT_OG_IMAGE;
   return [
     {
-      url: url ?? DEFAULT_OG_IMAGE,
+      url: resolved,
       width: 1200,
       height: 630,
       alt,
-      type: "image/jpeg",
+      type: imageType(resolved),
     },
   ];
 }
