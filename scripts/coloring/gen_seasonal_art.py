@@ -92,7 +92,7 @@ h1{{font-family:'Playfair Display',serif;font-size:26pt;font-weight:700;margin:5
 <div class="page"><div class="frame"></div><div class="frame2"></div>
 <div class="head"><div class="eyebrow">{eyebrow}</div><h1>{title}</h1><div class="sub">Color it your way, pencils, markers, or paint</div></div>
 <div class="art"><svg viewBox="-410 -410 820 820" xmlns="http://www.w3.org/2000/svg">{art_svg}</svg></div>
-<div class="foot"><span class="l">Free printable, print as many as you like</span><span class="r">paperposy.com</span></div>
+<div class="foot"><span class="l">Free printable, print as many as you like</span><span class="r">barriovibe.com</span></div>
 </div></body></html>'''
 
 SPRIG='''<svg class="sprig" viewBox="0 0 120 60" fill="none" stroke="#7A9E7E" stroke-width="1.6" stroke-linecap="round">
@@ -119,13 +119,13 @@ body{{-webkit-print-color-adjust:exact}}
 
 # ---------- catalogue ----------
 COLORING=[
- ("christmas-mandala-coloring-page","Christmas Mandala","Paper Posy · Free Coloring Page",mandala_variant(V_CLASSIC),"A calming original Christmas mandala coloring page with layered petal and scallop rings. Print on letter paper and color it your way."),
- ("christmas-ornament-mandala-coloring-page","Ornament Mandala","Paper Posy · Christmas Coloring Page",mandala_variant(V_ORNAMENT),"An intricate ornament-style Christmas mandala coloring page for adults, with delicate scalloped and diamond detail."),
- ("snowflake-mandala-coloring-page","Snowflake Mandala","Paper Posy · Winter Coloring Page",mandala_variant(V_SNOW),"A crisp snowflake mandala coloring page built from stars and diamonds, a wintry design to color in."),
- ("star-mandala-coloring-page","Star Mandala","Paper Posy · Free Coloring Page",mandala_variant(V_STAR),"A bold star-burst mandala coloring page with pointed petals, festive for Christmas or a New Year."),
- ("halloween-mandala-coloring-page","Halloween Mandala","Paper Posy · Halloween Coloring Page",mandala_variant(V_STAR),"A spooky-season Halloween mandala coloring page with sharp star petals, original line art to color."),
- ("spiderweb-mandala-coloring-page","Spiderweb","Paper Posy · Halloween Coloring Page",spiderweb(7,12),"A symmetrical spiderweb coloring page for Halloween, concentric webs and radial spokes to color in."),
- ("new-year-mandala-coloring-page","New Year Mandala","Paper Posy · Free Coloring Page",mandala_variant(V_CLASSIC),"A fresh-start New Year mandala coloring page, a mindful way to welcome the new year."),
+ ("christmas-mandala-coloring-page","Christmas Mandala","Barrio Vibe · Free Coloring Page",mandala_variant(V_CLASSIC),"A calming original Christmas mandala coloring page with layered petal and scallop rings. Print on letter paper and color it your way."),
+ ("christmas-ornament-mandala-coloring-page","Ornament Mandala","Barrio Vibe · Christmas Coloring Page",mandala_variant(V_ORNAMENT),"An intricate ornament-style Christmas mandala coloring page for adults, with delicate scalloped and diamond detail."),
+ ("snowflake-mandala-coloring-page","Snowflake Mandala","Barrio Vibe · Winter Coloring Page",mandala_variant(V_SNOW),"A crisp snowflake mandala coloring page built from stars and diamonds, a wintry design to color in."),
+ ("star-mandala-coloring-page","Star Mandala","Barrio Vibe · Free Coloring Page",mandala_variant(V_STAR),"A bold star-burst mandala coloring page with pointed petals, festive for Christmas or a New Year."),
+ ("halloween-mandala-coloring-page","Halloween Mandala","Barrio Vibe · Halloween Coloring Page",mandala_variant(V_STAR),"A spooky-season Halloween mandala coloring page with sharp star petals, original line art to color."),
+ ("spiderweb-mandala-coloring-page","Spiderweb","Barrio Vibe · Halloween Coloring Page",spiderweb(7,12),"A symmetrical spiderweb coloring page for Halloween, concentric webs and radial spokes to color in."),
+ ("new-year-mandala-coloring-page","New Year Mandala","Barrio Vibe · Free Coloring Page",mandala_variant(V_CLASSIC),"A fresh-start New Year mandala coloring page, a mindful way to welcome the new year."),
 ]
 WALLART=[
  ("merry-and-bright-wall-art","have yourself a",'Merry <span class="amp">&amp;</span><br>Bright',"Christmas","Elegant Merry & Bright Christmas printable wall art in classic serif type, print, frame, and hang."),

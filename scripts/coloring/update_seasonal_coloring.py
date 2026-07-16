@@ -55,14 +55,14 @@ R = {
     [("star",300,372,26,12),("dots",286,5,12),("diam",210,296,22,12),("star",140,208,28,6),
      ("dots",124,6,12),("diam",56,132,18,6),("star",6,50,14,6),("circ",8)]),
 }
-EYE = {"halloween-mandala-coloring-page":"Paper Posy · Halloween Coloring Page",
-       "spiderweb-mandala-coloring-page":"Paper Posy · Halloween Coloring Page",
-       "snowflake-mandala-coloring-page":"Paper Posy · Winter Coloring Page"}
+EYE = {"halloween-mandala-coloring-page":"Barrio Vibe · Halloween Coloring Page",
+       "spiderweb-mandala-coloring-page":"Barrio Vibe · Halloween Coloring Page",
+       "snowflake-mandala-coloring-page":"Barrio Vibe · Winter Coloring Page"}
 
 OUT = "public/printables"
 for slug, (title, rings) in R.items():
     art = mandala_recipe(rings)
-    open(f"{OUT}/{slug}.html","w").write(coloring_page(title, EYE.get(slug,"Paper Posy · Free Coloring Page"), art))
+    open(f"{OUT}/{slug}.html","w").write(coloring_page(title, EYE.get(slug,"Barrio Vibe · Free Coloring Page"), art))
 # spiderweb distinct
 open(f"{OUT}/spiderweb-mandala-coloring-page.html","w").write(coloring_page("Spiderweb", EYE["spiderweb-mandala-coloring-page"], spiderweb()))
 print("regenerated 7 seasonal coloring pages (all distinct)")
