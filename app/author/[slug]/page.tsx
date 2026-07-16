@@ -13,7 +13,7 @@ import {
   SectionDivider,
 } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { profilePageSchema } from "@/lib/schema";
+import { profilePageSchema, breadcrumbSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 
@@ -67,7 +67,15 @@ export default async function AuthorPage({
 
   return (
     <main className="flex-1">
-      <JsonLd data={[profilePageSchema()]} />
+      <JsonLd
+        data={[
+          profilePageSchema(),
+          breadcrumbSchema([
+            { name: "Home", slug: "/" },
+            { name: siteConfig.author.name, slug: siteConfig.author.url },
+          ]),
+        ]}
+      />
 
       {/* ── Author header ──────────────────────────────────────────────────── */}
       <section

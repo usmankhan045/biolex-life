@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site.config";
 import { getPageBySlug } from "@/lib/queries";
 import { Container, Tag, SectionDivider, Card } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { aboutPageSchema } from "@/lib/schema";
+import { aboutPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 
 export const metadata: Metadata = {
@@ -30,7 +30,15 @@ export default async function AboutPage() {
 
   return (
     <main className="flex-1">
-      <JsonLd data={[aboutPageSchema()]} />
+      <JsonLd
+        data={[
+          aboutPageSchema(),
+          breadcrumbSchema([
+            { name: "Home", slug: "/" },
+            { name: "About", slug: "/about" },
+          ]),
+        ]}
+      />
 
       {/* ── Hero ───────────────────────────────────────────────────────────── */}
       <section

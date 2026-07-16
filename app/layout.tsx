@@ -25,6 +25,11 @@ export const metadata: Metadata = {
   creator: siteConfig.author.name,
   publisher: siteConfig.name,
   category: siteConfig.niche,
+  // Broad favicon coverage: SVG for modern UAs, PNG for legacy + Apple touch.
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }, { url: "/logo.png", type: "image/png" }],
+    apple: [{ url: "/logo.png" }],
+  },
   keywords: [
     "free printables",
     "printable wall art",

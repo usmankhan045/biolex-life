@@ -49,7 +49,16 @@ export function organizationSchema() {
     email: siteConfig.contact.email,
     knowsAbout: [siteConfig.niche],
     publishingPrinciples: `${BASE_URL}/editorial-policy`,
-    sameAs: Object.values(siteConfig.social),
+    // Only emit sameAs when we actually have verifiable profiles. An empty array
+    // is a dead entity-resolution signal; fall back to the founder's profiles so
+    // a solo brand still correlates to a real, verifiable identity.
+    ...(() => {
+      const profiles = [
+        ...Object.values(siteConfig.social),
+        ...siteConfig.author.sameAs,
+      ].filter(Boolean);
+      return profiles.length > 0 ? { sameAs: Array.from(new Set(profiles)) } : {};
+    })(),
   };
 }
 
@@ -186,6 +195,7 @@ export function digitalDocumentSchema(printable: {
   description: string | null;
   file_url?: string | null;
   thumbnail_url?: string | null;
+  created_at?: string | null;
 }) {
   const url = `${BASE_URL}/free-printables/${printable.slug}`;
   const absolutize = (u: string) => (u.startsWith("http") ? u : `${BASE_URL}${u}`);
@@ -194,12 +204,16 @@ export function digitalDocumentSchema(printable: {
   return {
     "@context": "https://schema.org",
     "@type": "DigitalDocument",
+    // Stable @id so the node is mergeable/addressable like every other type here.
+    "@id": `${url}#document`,
     name: printable.title,
     ...(printable.description && { description: printable.description }),
     url,
     isAccessibleForFree: true,
+    ...(printable.created_at && { datePublished: printable.created_at }),
     ...(fileUrl && { contentUrl: fileUrl, encodingFormat: "application/pdf" }),
     ...(thumbUrl && { thumbnailUrl: thumbUrl }),
+    isPartOf: { "@id": `${BASE_URL}/#website` },
     publisher: { "@id": ORG_ID },
   };
 }

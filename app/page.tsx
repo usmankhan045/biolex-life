@@ -484,13 +484,25 @@ export default async function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {displayPosts.map((post) => (
-              <PostCard key={post.id} post={post} />
-            ))}
-          </div>
+          {displayPosts.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {displayPosts.map((post) => (
+                <PostCard key={post.id} post={post} />
+              ))}
+            </div>
+          ) : (
+            // Production with an empty DB: a genuine empty state, never fake cards.
+            <p className="py-8 text-center text-muted">
+              New printable guides are publishing soon.{" "}
+              <Link href="/free-printables" className="text-primary font-medium hover:underline underline-offset-4">
+                Browse the printables
+              </Link>{" "}
+              in the meantime.
+            </p>
+          )}
 
-          {posts.length === 0 && (
+          {/* Dev-only marker so a blank DB is obvious locally; never ships to prod. */}
+          {posts.length === 0 && !isProd && (
             <p className="mt-6 text-center text-xs font-mono text-muted/50 uppercase tracking-widest">
               Showing placeholder content. Connect Supabase to display real posts
             </p>

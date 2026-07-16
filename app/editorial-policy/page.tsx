@@ -14,16 +14,16 @@ export const metadata: Metadata = {
 
 const PRINCIPLES: { title: string; body: string }[] = [
   {
-    title: "We test advice against real-world conditions",
-    body: "Every guide is written and edited against practical, real-world situations, not idealized scenarios. If a strategy only works under specific conditions, we say so.",
+    title: "We print-test every file",
+    body: "Every printable is designed in-house and test-printed on plain US Letter paper (8.5\" x 11\") before it goes up, so margins line up, art stays sharp, and it fits standard frames. If a file needs specific print settings, we say so in the guide.",
   },
   {
-    title: "We cite primary sources for data",
-    body: "Statistics and figures are sourced from primary references where possible, official reports, reputable studies, and authoritative organizations, and linked inline so you can verify them yourself.",
+    title: "We design original art, never borrowed",
+    body: "All wall art, coloring pages, and worksheets are original work. No stock photos, no AI art, and no copyrighted or licensed characters. When a guide references an outside product or source, we link it so you can check it yourself.",
   },
   {
-    title: "We separate fact from experience and opinion",
-    body: "Where a claim is based on our own experience rather than a study, we frame it that way. We do not present estimates or opinions as if they were researched statistics.",
+    title: "We separate tested fact from opinion",
+    body: "Where a tip is based on our own hands-on testing rather than a cited source, we frame it that way. We do not present estimates or preferences as if they were verified facts.",
   },
   {
     title: "We keep guides current",
@@ -90,10 +90,10 @@ export default function EditorialPolicyPage() {
             <Link href={siteConfig.author.url} className="text-primary font-medium hover:underline underline-offset-4">
               {siteConfig.author.name}
             </Link>
-            , {siteConfig.author.role.toLowerCase()} of {siteConfig.name}. We are
-            not licensed professionals, and nothing here is a substitute for
-            personalized advice. The content is educational. For guidance specific
-            to your situation, please consult a qualified professional, see our{" "}
+            , {siteConfig.author.role.toLowerCase()} of {siteConfig.name}. Our
+            printables and guides are for general, personal use, and print
+            results vary by printer, paper, and settings. If something does not
+            print as expected, check the guide&rsquo;s print notes or reach out. See our{" "}
             <Link href="/disclaimer" className="text-primary font-medium hover:underline underline-offset-4">
               full disclaimer
             </Link>
