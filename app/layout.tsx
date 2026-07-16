@@ -7,7 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { websiteSchema, organizationSchema, personSchema } from "@/lib/schema";
-import { getCategoriesWithPostCounts } from "@/lib/queries";
+import { getCategories } from "@/lib/queries";
 
 const fonts = getSiteFonts();
 const BASE_URL = `https://${siteConfig.domain}`;
@@ -67,13 +67,23 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // Drives the navbar "Categories" dropdown. Falls back to [] if DB is unconfigured.
+  // Drives the navbar "Categories" dropdown, all 5 pillars, in pillar order.
+  // Falls back to [] if the DB is unconfigured.
+  const CATEGORY_ORDER = [
+    "printable-wall-art",
+    "coloring-pages",
+    "home-organization",
+    "kids-printables",
+    "meal-planning",
+  ];
   let categories: { slug: string; name: string }[] = [];
   try {
-    categories = (await getCategoriesWithPostCounts()).map(({ slug, name }) => ({
-      slug,
-      name,
-    }));
+    const all = (await getCategories()).map(({ slug, name }) => ({ slug, name }));
+    const ordered = CATEGORY_ORDER
+      .map((s) => all.find((c) => c.slug === s))
+      .filter((c): c is { slug: string; name: string } => Boolean(c));
+    const rest = all.filter((c) => !CATEGORY_ORDER.includes(c.slug));
+    categories = [...ordered, ...rest];
   } catch {
     // DB not yet configured, render nav without the Categories dropdown
   }
