@@ -18,11 +18,12 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Practical budgeting guides, honest money advice, and real-life strategies for every financial situation.",
+    "Practical printable guides: how to print wall art sharp, frame it, use planners and organizers, and get the most from every free download.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog",
-    description: "Practical budgeting guides, honest money advice, and real-life strategies for every financial situation.",
+    description:
+      "Practical printable guides: how to print wall art sharp, frame it, use planners and organizers, and get the most from every free download.",
     url: "/blog",
     type: "website",
     images: ogImages(),
@@ -95,8 +96,9 @@ export default async function BlogIndexPage({ searchParams }: Props) {
             No filler.
           </h1>
           <p className="text-lg text-muted leading-relaxed max-w-xl mb-6">
-            Budgeting strategies, money advice, and honest takes, all written
-            for real life, not ideal scenarios.
+            Printing tips, framing and styling guides, and how-to walkthroughs
+            for every free printable, written for real home printers, not ideal
+            studio setups.
           </p>
 
           {/* Search, makes the WebSite SearchAction schema functional */}

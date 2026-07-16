@@ -8,7 +8,13 @@ import {
   PrintableCallout,
 } from "@/components/ui";
 
-export const metadata = { title: "Style Guide" };
+// Internal design reference, not real content: keep it out of the index so it
+// can't be crawled/indexed as a thin, off-topic page (and it stays out of the
+// sitemap, which only lists real routes).
+export const metadata = {
+  title: "Style Guide",
+  robots: { index: false, follow: false },
+};
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Helpers

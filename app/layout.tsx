@@ -14,12 +14,26 @@ const BASE_URL = `https://${siteConfig.domain}`;
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name}: ${siteConfig.niche}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.tagline,
   metadataBase: new URL(BASE_URL),
   alternates: { canonical: "/" },
+  applicationName: siteConfig.name,
+  authors: [{ name: siteConfig.author.name, url: `${BASE_URL}${siteConfig.author.url}` }],
+  creator: siteConfig.author.name,
+  publisher: siteConfig.name,
+  category: siteConfig.niche,
+  keywords: [
+    "free printables",
+    "printable wall art",
+    "coloring pages",
+    "home organization printables",
+    "kids printables",
+    "meal planning printables",
+    "instant download printables",
+  ],
   openGraph: {
     siteName: siteConfig.name,
     type: "website",
@@ -40,7 +54,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 

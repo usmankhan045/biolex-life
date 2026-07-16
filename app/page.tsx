@@ -306,7 +306,11 @@ export default async function HomePage() {
   } catch {
     // Supabase not configured or site not yet seeded; use placeholder posts.
   }
-  const displayPosts = posts.length > 0 ? posts : PLACEHOLDER_POSTS;
+  // Never ship fabricated post cards to production: the placeholder set is a
+  // dev-only demo aid. In production with an empty DB we render a real empty
+  // state instead, so crawlers/AI never index posts that don't exist.
+  const isProd = process.env.NODE_ENV === "production";
+  const displayPosts = posts.length > 0 ? posts : isProd ? [] : PLACEHOLDER_POSTS;
 
   // Categories for the "Browse by category" section. Empty if DB unconfigured.
   let categories: Array<{

@@ -74,6 +74,15 @@ export function personSchema() {
 
 export function articleSchema(post: Post) {
   const url = `${BASE_URL}/blog/${post.slug}`;
+  // Rough word count from the markdown body, an explicit content-depth signal
+  // for Google and AI extractors (omitted when there is no body).
+  const wordCount = post.content
+    ? post.content.trim().split(/\s+/).filter(Boolean).length
+    : undefined;
+  // audience_tags double as topical keywords for AI entity/topic resolution.
+  const keywords = post.audience_tags?.length
+    ? post.audience_tags.map((t) => t.replace(/-/g, " ")).join(", ")
+    : undefined;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -92,6 +101,11 @@ export function articleSchema(post: Post) {
     dateModified: post.updated_at,
     author: { "@id": PERSON_ID },
     publisher: { "@id": ORG_ID },
+    // Section (category) + keywords + depth signals for SEO/AEO extraction.
+    ...(post.categories?.name && { articleSection: post.categories.name }),
+    ...(wordCount && { wordCount }),
+    ...(keywords && { keywords }),
+    isAccessibleForFree: true,
     // Reference the WebSite node (defined on every page) rather than the Blog
     // node (only defined on /blog) so the on-page graph has no dangling @id.
     isPartOf: { "@id": `${BASE_URL}/#website` },

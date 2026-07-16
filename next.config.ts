@@ -33,6 +33,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Don't advertise the framework in a response header (minor info-disclosure).
+  poweredByHeader: false,
   images: {
     formats: ["image/avif", "image/webp"],
     // Allow same-origin SVG placeholders (e.g. /author.svg) to render through
@@ -53,6 +55,18 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         headers: securityHeaders,
+      },
+    ];
+  },
+  // The author archive slug moved from marlowe-hart -> muhammad-usman. The old
+  // slug is already live and in the previously-crawled sitemap, so 301 it to the
+  // new URL instead of letting it 404 and drop the author's link equity.
+  async redirects() {
+    return [
+      {
+        source: "/author/marlowe-hart",
+        destination: "/author/muhammad-usman",
+        permanent: true,
       },
     ];
   },

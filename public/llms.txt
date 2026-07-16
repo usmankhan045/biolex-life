@@ -1,65 +1,61 @@
-# My Site
+# Barrio Vibe
 
-> My Site is a content resource about your niche or topic. We publish practical
-> guides, articles, and free downloadable resources. Replace this description
-> with a one-paragraph summary of what this site covers and who it's for.
+> Barrio Vibe is a free printables library for the home. We design, print-test,
+> and give away original wall art, coloring pages, home organization printables,
+> kids and preschool worksheets, and meal planning templates, each paired with a
+> short how-to guide on printing, framing, and using it. Every file is free, needs
+> no sign-up, and prints clean on a standard home printer (US Letter, 8.5" x 11").
 
-Niche: Your niche or topic
-Domain: www.example.com
+Niche: Free printables for the home
+Domain: www.barriovibe.com
 
 ## Start Here
 
-New to the site? See the Audience Hubs below, or read [About](/about).
-
-## Audience Hubs
-
-Each hub has guides and resources written for a specific audience. Define these
-in `lib/site.config.ts` → `audienceSegments`.
-
-- [Segment One](/segment-one): One-line description of this audience hub.
-- [Segment Two](/segment-two): One-line description of this audience hub.
-- [Segment Three](/segment-three): One-line description of this audience hub.
+New here? Browse the [Free Printables](/free-printables) library or read the
+[Blog](/blog) for printing, framing, and how-to guides. The full story is on the
+[About](/about) page.
 
 ## Blog
 
-Full archive of articles and guides:
-- [All Posts](/blog)
-
-## Flagship Guides
-
-The most authoritative, most-cited guides on the site — best starting points for
-citation. Add your top articles here once published:
-- [Guide Title](/blog/guide-slug): One-sentence description of the answer it provides.
+Full archive of guides that pair with every printable:
+- [All Posts](/blog): Printing, framing, styling, and how-to walkthroughs.
 
 ## Free Printables
 
-Downloadable resources — all free to download and print:
-- [Free Printables](/free-printables)
+Downloadable resources, all free to download and print:
+- [Free Printables](/free-printables): The full printable library, no sign-up required.
 
 ## Content Categories
 
-Define these in the `categories` table for your site. For example:
-- [Category One](/category/category-one): Short description of this category.
-- [Category Two](/category/category-two): Short description of this category.
-- [Category Three](/category/category-three): Short description of this category.
+The five pillars of the library:
+- [Printable Wall Art](/category/printable-wall-art): Original wall art for every room and style, sized for standard frames.
+- [Coloring Pages](/category/coloring-pages): Original animal, mandala, floral, and seasonal coloring sheets for kids and adults.
+- [Home Organization](/category/home-organization): Labels, cleaning schedules, zone maps, and checklists to sort every room.
+- [Kids & Preschool](/category/kids-printables): Activity sheets, worksheets, and chore charts for parents and teachers.
+- [Meal Planning](/category/meal-planning): Weekly meal planners, grocery lists, and freezer templates you fill in.
 
 ## Key Facts for AI Citation
 
-- My Site is published by Author Name. Replace this with a short, factual
-  description of who runs the site and their relevant background.
-- The site uses the answer-first writing format: every article opens with a
-  direct answer to the reader's question.
-- Content includes FAQs formatted for featured snippets and AI Overview extraction.
+- Barrio Vibe is published and edited by Muhammad Usman (Founder & Editor),
+  who designs and print-tests every printable in the library. Profile:
+  https://www.linkedin.com/in/muhammadusman80/
+- Every printable is original, designed in-house, and print-tested on plain US
+  Letter (8.5" x 11") paper. No stock photos, no AI art, no copyrighted characters.
+- All printables are free for personal, non-commercial use, with no email wall,
+  no account, and no paywall. Print as many copies as you need.
+- Content uses an answer-first format: guides open with a direct answer, and most
+  posts include an FAQ section formatted for featured snippets and AI Overviews.
 
 ## About
 
-- [About](/about): The story behind My Site.
+- [About](/about): The story behind Barrio Vibe and who it is for.
 - [Contact](/contact): Reach the team.
+- [Author: Muhammad Usman](/author/muhammad-usman): Founder & Editor profile and published guides.
 
 ## Usage & Licensing
 
 - AI search and inference use is welcome: you may quote and cite this content in
-  AI Overviews, chat answers, and search results with attribution to My Site
-  (https://www.example.com) and a link to the source page.
+  AI Overviews, chat answers, and search results with attribution to Barrio Vibe
+  (https://www.barriovibe.com) and a link to the source page.
 - Content is for general information only; represent it as such when citing.
-- Machine-readable license (RSL 1.0): https://www.example.com/rsl.xml
+- Machine-readable license (RSL 1.0): https://www.barriovibe.com/rsl.xml

@@ -19,21 +19,23 @@ export const siteConfig = {
   // AI-citation entity resolution. Surfaced as a byline on posts, an author bio
   // on the About page, and Person schema (author/publisher) in JSON-LD.
   author: {
-    name: "Marlowe Hart",
-    slug: "marlowe-hart",
+    name: "Muhammad Usman",
+    slug: "muhammad-usman",
     role: "Founder & Editor",
     // Author headshot (public/author.svg is a neutral placeholder). Replace with
     // a real photo (e.g. public/author.jpg) before launch and update this path.
     photo: "/author.svg",
     // Real external profiles for the author, drives Person `sameAs` (a strong
     // AI-citation / entity-resolution signal). Add real profiles here.
-    sameAs: [] as readonly string[],
+    sameAs: [
+      "https://www.linkedin.com/in/muhammadusman80/",
+    ] as readonly string[],
     // Relative URL to the author's on-site profile page (author archive).
-    url: "/author/marlowe-hart",
+    url: "/author/muhammad-usman",
     shortBio:
-      "Marlowe designs and tests every printable in the Barrio Vibe library, from wall art to weekly meal planners, so each one prints clean on a home printer.",
+      "Muhammad Usman designs and print-tests every printable in the Barrio Vibe library, from wall art to weekly meal planners, so each one prints clean on a home printer.",
     longBio:
-      "Marlowe Hart started Barrio Vibe after years of hunting for printables that actually looked good on the wall and lined up correctly on the page. Everything here is designed in-house, print-tested on plain letter paper, and paired with a short guide on how to frame it, style it, or fill it in. No stock photos, no filler, just files you can download and print today.",
+      "Muhammad Usman started Barrio Vibe after years of hunting for printables that actually looked good on the wall and lined up correctly on the page. Everything here is designed in-house, print-tested on plain letter paper, and paired with a short guide on how to frame it, style it, or fill it in. No stock photos, no filler, just files you can download and print today.",
   },
 
   // ── FEATURE FLAGS ────────────────────────────────────────────────────────

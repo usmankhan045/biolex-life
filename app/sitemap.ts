@@ -26,6 +26,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/editorial-policy`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE_URL}/affiliate-disclosure`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE_URL}/contact`, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/privacy-policy`, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE_URL}/terms-of-use`, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE_URL}/disclaimer`, changeFrequency: "yearly", priority: 0.2 },
   ];
 
   // Audience hub pages
