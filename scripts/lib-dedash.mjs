@@ -13,7 +13,9 @@ export function deDash(s) {
     .replace(/,[ \t]*([.!?;:])/g, "$1")
     .replace(/,[ \t]*\)/g, ")")
     .replace(/\([ \t]*,[ \t]*/g, "(")
-    .replace(/[ \t]{2,}/g, " ");
+    // collapse runs of spaces only AFTER a non-space char, so leading
+    // indentation (line starts) is never touched — safe for source code.
+    .replace(/(\S)[ \t]{2,}/g, "$1 ");
   return o;
 }
 export function cleanValue(v) {

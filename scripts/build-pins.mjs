@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-// Builds docs/pinterest-pins.md as a plain day-by-day UPLOAD SCHEDULE, nothing else.
-// Each day shows the 6 pins to post that day (mixed across posts), with the pin's
-// board, title, description, alt text, image prompt, and link.
+// Builds the day-by-day Pinterest UPLOAD SCHEDULE(s) from the pin fragments in
+// docs/pins/<slug>.md. Splits by phase into SEPARATE files:
+//   docs/pinterest-pins.md         — Phase 1 + seasonal posts
+//   docs/pinterest-pins-phase2.md  — Phase 2 posts (Wall Art + Coloring), own Day 1
 //
-// Rule: 6 pins/day from 6 different articles; each article's 3 pins post 2 days
-// apart (A on day d, B on d+2, C on d+4); order follows the article publish order
-// so a pin never precedes its article. Source pins: docs/pins/<slug>.md.
+// Each file: 6 pins/day from 6 different posts, each post's 3 pins 2 days apart,
+// in publish order so a pin never precedes its article. Each day lists its pins
+// with board, title, description, alt text, image prompt, and link.
 //
 //   node scripts/build-pins.mjs                # dates start today
 //   node scripts/build-pins.mjs 2026-08-01     # dates start on your go-live date
@@ -25,10 +26,8 @@ function parsePins(md) {
   for (let i = 1; i < parts.length; i += 2) {
     const b = parts[i + 1] || "";
     out[parts[i]] = {
-      board: field(b, "Board"),
-      title: field(b, "Title"),
-      description: field(b, "Description"),
-      alt: field(b, "Alt text"),
+      board: field(b, "Board"), title: field(b, "Title"),
+      description: field(b, "Description"), alt: field(b, "Alt text"),
       prompt: (b.match(/\*\*Image prompt:\*\*\s*`([\s\S]*?)`/) || [])[1]?.trim() || "",
     };
   }
@@ -46,12 +45,8 @@ function dateStr(day) {
   return `${d.toISOString().slice(0, 10)} (${wd})`;
 }
 
-async function main() {
-  const manifest = JSON.parse(await readFile(join(ROOT, "content-queue", "manifest.json"), "utf8"));
-  const order = manifest.publish_order;
-  const have = new Set((await readdir(PINS)).filter((f) => f.endsWith(".md") && f !== "_intro.md").map((f) => f.replace(/\.md$/, "")));
-  const ordered = [...order.filter((s) => have.has(s)), ...[...have].filter((s) => !order.includes(s)).sort()];
-
+async function buildFile(order, have, outFile, label) {
+  const ordered = order.filter((s) => have.has(s));
   const rows = [];
   for (let gi = 0; gi < ordered.length; gi++) {
     const slug = ordered[gi];
@@ -64,21 +59,32 @@ async function main() {
   }
   rows.sort((a, b) => a.day - b.day || a.slot - b.slot || a.v.localeCompare(b.v));
   const days = [...new Set(rows.map((r) => r.day))].sort((a, b) => a - b);
-
   let out = "";
   for (const day of days) {
     out += `## ${dateStr(day)}\n\n`;
     rows.filter((r) => r.day === day).forEach((r, i) => {
       out += `**Pin ${i + 1} · ${r.slug} (Pin ${r.v})**\n`;
-      out += `- Board: ${r.board}\n`;
-      out += `- Title: ${r.title}\n`;
-      out += `- Description: ${r.description}\n`;
-      out += `- Alt text: ${r.alt}\n`;
-      out += `- Image prompt: ${r.prompt}\n`;
-      out += `- Link: /blog/${r.slug}\n\n`;
+      out += `- Board: ${r.board}\n- Title: ${r.title}\n- Description: ${r.description}\n`;
+      out += `- Alt text: ${r.alt}\n- Image prompt: ${r.prompt}\n- Link: /blog/${r.slug}\n\n`;
     });
   }
-  await writeFile(join(ROOT, "docs", "pinterest-pins.md"), out);
-  console.log(`Wrote docs/pinterest-pins.md: ${days.length} days, ${rows.length} pins, starting ${dateStr(1)}`);
+  await writeFile(join(ROOT, "docs", outFile), out);
+  console.log(`${label}: ${outFile} — ${days.length} days, ${rows.length} pins (${ordered.length} posts)`);
+}
+
+async function main() {
+  const manifest = JSON.parse(await readFile(join(ROOT, "content-queue", "manifest.json"), "utf8"));
+  const phaseOf = Object.fromEntries(manifest.posts.map((p) => [p.slug, p.phase || 1]));
+  const have = new Set((await readdir(PINS)).filter((f) => f.endsWith(".md") && f !== "_intro.md").map((f) => f.replace(/\.md$/, "")));
+
+  // Phase 1 + seasonal = publish_order minus any phase-2 slugs
+  const p2set = new Set(manifest.publish_order_p2 || []);
+  const p1order = manifest.publish_order.filter((s) => !p2set.has(s) && phaseOf[s] !== 2);
+  await buildFile(p1order, have, "pinterest-pins.md", "Phase 1 + seasonal");
+
+  // Phase 2 in its own file, its own Day 1
+  if ((manifest.publish_order_p2 || []).length) {
+    await buildFile(manifest.publish_order_p2, have, "pinterest-pins-phase2.md", "Phase 2");
+  }
 }
 main().catch((e) => { console.error(e); process.exit(1); });

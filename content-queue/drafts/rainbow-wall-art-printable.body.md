@@ -1,0 +1,40 @@
+You keep meaning to do something about that blank wall above the crib or the toddler bed. You have pinned a dozen soft, boho rainbows, you know the exact look you want, warm and cheerful without being loud, and yet the wall stays bare. Maybe you priced out real prints and flinched at paying thirty dollars for a single sheet of paper, plus shipping, plus the wait. Maybe you found something close but the colors clashed with the room, or the file was locked behind an email list and a checkout page. Maybe you bought a frame months ago and it is still sitting empty in the closet because the art part never actually happened. Decorating a kids space should feel like the fun part, not one more errand that never gets crossed off, and definitely not a line item you have to justify. The good news is that the wall does not need a bigger budget or a trip to the store. It needs the right file, a printer, and about ten minutes.
+
+## What makes rainbow wall art work in a kids room or nursery?
+
+Rainbow wall art works in a kids room or nursery because it adds color, warmth, and a sense of play without committing to a loud theme you will outgrow. A soft, boho rainbow in muted terracotta, mustard, sage, and dusty blue reads as cheerful at any age, so it can carry a child from newborn all the way to grade school. Unlike character decor tied to one show or a passing phase, a rainbow is timeless and gender-neutral, which makes it an easy anchor piece for a gallery wall you will not have to redo in a year. It also plays well with the neutral, earthy palettes most parents reach for now, adding just enough color to feel intentional rather than busy. Because the shape is simple and symmetrical, it balances a wall without overwhelming it, and it pairs with almost anything else you hang nearby. That combination, flexible, calming, and quietly joyful, is exactly why the boho rainbow has become the default first print for so many nurseries.
+
+## What colors and style should you look for in a rainbow print?
+
+Look for a muted, earth-toned palette rather than a primary-color rainbow if you want the print to blend with modern decor. The most versatile option, a boho rainbow, swaps bright red, orange, and yellow for softer terracotta, ochre, blush, sage, and denim blue, colors that sit comfortably against white walls, wood tones, and linen bedding. Decide early whether you want a single statement rainbow or a small set of coordinating prints, since a trio (a rainbow, a sun, and a short quote) fills a wall more evenly than one lonely sheet floating in the middle. Match the style to the room, too: rounded, hand-drawn arcs feel soft and organic for a nursery, while bolder geometric bands suit an older kid who wants something with more energy. Pay attention to the background as well. A cream or off-white background prints cleaner and frames better than pure white, which can look stark on the wall and show every smudge on the glass. When the palette and background are right, an inexpensive home print can easily pass for something you paid a premium for, and no visitor will ever guess it started as a free download on your laptop.
+
+## How do you print rainbow wall art at home so it looks framed-quality?
+
+To get framed-quality results at home, print on heavier paper at the highest quality setting your printer allows. Standard copy paper (20 lb) looks thin and lets color bleed through from the back, so choose a matte cardstock in the 60-to-80 lb range instead. It feels substantial in the frame and holds saturated ink far more crisply. In your print dialog, select Best or High quality, set the paper type to cardstock or presentation paper, and turn off Fit to Page so the design keeps its exact proportions and does not shrink with a white border. Run a quick draft on plain paper first to check the color and placement before you commit your good stock, since printers vary and a test sheet costs almost nothing. If your home printer struggles with large blocks of color or leaves visible banding, the self-serve machines at an office-supply or pharmacy counter will run the same file on nice paper for a couple of dollars. Once it is printed, trim to size if needed, slip it into the frame, and you are done.
+
+{{printable:boho-rainbow-wall-art}}
+
+## What size and frame should you use for a rainbow print?
+
+Match the print size to the wall and the frame to your existing decor. Most printable rainbow art is designed to scale cleanly to standard frame sizes, so you can print the same file small for a shelf or large for a statement wall without redrawing anything. Here is a quick guide to common sizes and where each one tends to work best:
+
+| Print size | Best for | Frame tip |
+|---|---|---|
+| 5x7 | Shelf, dresser top, or small nook | Simple standing frame |
+| 8x10 | Above a changing table or crib rail | Thin wood or plain white frame |
+| 11x14 | Statement piece over a toddler bed | Add a wide mat for a gallery look |
+| 16x20 | Large blank wall or a room focal point | Oversized frame, minimal border |
+
+When you are torn between two sizes, size up. A slightly larger print with a generous white mat almost always looks more polished than a small print rattling around inside a big frame. Stick to natural wood or clean white frames so the focus stays on the rainbow itself rather than the border. Consistent, simple framing is the single easiest way to make a free download look like a boutique purchase. If you already own a frame in an odd size, measure its opening first and print to fit that, since working with a frame you have beats buying a new one to match the file.
+
+## How do you build a gallery wall around a rainbow print?
+
+Start with the rainbow as your anchor and build outward with two to four smaller coordinating prints. Lay everything on the floor first and arrange the grouping before a single nail goes into the wall, which saves you from a wall full of extra holes and second-guessing. A balanced arrangement mixes one larger piece with a few smaller ones, keeps a consistent two-inch gap between every frame, and repeats one or two colors from the rainbow across the other prints so the whole set reads as intentional rather than random. For renters, or anyone who hates patching holes, a pack of damage-free adhesive strips lets you hang and reposition lightweight frames without tools or touch-up paint. Keep all the frames in the same finish even when the sizes differ, because matching frames make a mismatched set of prints instantly look curated. If you want a done-for-you starting point instead of sourcing every piece yourself, our [free printable wall art for a kids room](/blog/printable-wall-art-for-kids-room) set pairs beautifully with a rainbow as the centerpiece and saves you the guesswork of coordinating colors.
+
+## Where should you hang rainbow wall art in a nursery?
+
+Hang rainbow wall art at the child's eye level or centered over a piece of furniture, not at adult eye level, which leaves it floating awkwardly high on the wall. Over a crib, center the art so its bottom edge sits about eight to ten inches above the rail, close enough to feel connected to the crib but high enough to stay out of curious hands. Above a dresser or changing table, treat the furniture as the anchor and center the frame, or the whole gallery grouping, on it rather than on the wall as a whole. For safety, avoid hanging anything heavy or glass-framed directly over the spot where the baby sleeps. Use lightweight frames or shatter-resistant acrylic instead, and secure everything firmly to the wall. For a fuller, layered look that grows along with a boho nursery, our [free boho nursery printable wall art](/blog/boho-nursery-wall-art-printable) coordinates with the same soft, earthy palette so the pieces feel like a collection. Print it, frame it, and the wall you have been meaning to finish is finally, quietly done.
+
+{{printable:boho-rainbow-wall-art}}
+
+Save the file, print it on nice paper, and drop it into a frame you already own. The blank wall you keep scrolling past can be finished tonight, for the price of a sheet of cardstock.

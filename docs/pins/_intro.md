@@ -1,4 +1,4 @@
-# Paper Posy, Pinterest Pin Bank
+# Barrio Vibe, Pinterest Pin Bank
 
 Every published post gets **3 pins**, each a different hook/angle but all linking
 to the **same destination: the blog article** (never the raw PDF, never the
@@ -54,7 +54,7 @@ boards for maximum surface area.
 | Home Organization | Cleaning Schedules & Checklists · Home Organization Printables · Bathroom & Laundry Organization · Kitchen & Pantry Organization · Decluttering Systems |
 | Kids & Preschool | Preschool Printables & Worksheets · Classroom & Teacher Printables · Chore Charts & Kids Routines |
 | Meal Planning | Meal Planning & Grocery Printables |
-| Brand (all) | Paper Posy, Free Printables Library |
+| Brand (all) | Barrio Vibe, Free Printables Library |
 
 ---
 
@@ -68,7 +68,7 @@ graphic** that is:
  sheet with the schedule/checklist visible) on a soft flat-lay or framed board,
  plus a bold text overlay. This shows the payload and reads as a made asset.
 - **Big legible headline** carrying the keyword, a smaller supporting line, and a
- small "paperposy.com" wordmark + a lime "Free Printable" pill.
+ small "barriovibe.com" wordmark + a lime "Free Printable" pill.
 - Fonts: a bold grotesque headline + clean sans supporting text.
 - No stock-photo clutter, no people's faces, no brand logos.
 

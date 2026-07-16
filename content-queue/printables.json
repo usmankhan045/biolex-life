@@ -406,5 +406,317 @@
     "thumbnail_url": "/printables/vision-board-kit-preview.png",
     "orientation": "portrait",
     "category": "printable-wall-art"
+  },
+  "mandala-coloring-page": {
+    "title": "Mandala",
+    "description": "An intricate original mandala coloring page for adults and older kids, clean line art to print and color.",
+    "file_url": "/printables/mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "rosette-mandala-coloring-page": {
+    "title": "Rosette Mandala",
+    "description": "An intricate original rosette mandala coloring page for adults and older kids, clean line art to print and color.",
+    "file_url": "/printables/rosette-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/rosette-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "geometric-mandala-coloring-page": {
+    "title": "Geometric Mandala",
+    "description": "An intricate original geometric mandala coloring page for adults and older kids, clean line art to print and color.",
+    "file_url": "/printables/geometric-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/geometric-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "lace-mandala-coloring-page": {
+    "title": "Lace Mandala",
+    "description": "An intricate original lace mandala coloring page for adults and older kids, clean line art to print and color.",
+    "file_url": "/printables/lace-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/lace-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "sunburst-mandala-coloring-page": {
+    "title": "Sunburst Mandala",
+    "description": "An intricate original sunburst mandala coloring page for adults and older kids, clean line art to print and color.",
+    "file_url": "/printables/sunburst-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/sunburst-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "kaleidoscope-mandala-coloring-page": {
+    "title": "Kaleidoscope Mandala",
+    "description": "An intricate original kaleidoscope mandala coloring page for adults and older kids, clean line art to print and color.",
+    "file_url": "/printables/kaleidoscope-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/kaleidoscope-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "floral-mandala-coloring-page": {
+    "title": "Floral Mandala",
+    "description": "A calming floral mandala coloring page of layered daisies and petals, original line art to color.",
+    "file_url": "/printables/floral-mandala-coloring-page.pdf",
+    "thumbnail_url": "/printables/floral-mandala-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "flower-bouquet-coloring-page": {
+    "title": "Flower Bouquet",
+    "description": "A cheerful flower-bouquet-in-a-jar coloring page, an easy, satisfying page for all ages to color.",
+    "file_url": "/printables/flower-bouquet-coloring-page.pdf",
+    "thumbnail_url": "/printables/flower-bouquet-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "rose-coloring-page": {
+    "title": "Rose",
+    "description": "A detailed layered rose coloring page with cupped petals and leaves, an intricate floral to color.",
+    "file_url": "/printables/rose-coloring-page.pdf",
+    "thumbnail_url": "/printables/rose-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "peony-coloring-page": {
+    "title": "Peony",
+    "description": "A lush layered peony coloring page of petals radiating from the center, a highly detailed floral to color.",
+    "file_url": "/printables/peony-coloring-page.pdf",
+    "thumbnail_url": "/printables/peony-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "daisy-wreath-coloring-page": {
+    "title": "Daisy Wreath",
+    "description": "A pretty daisy-wreath coloring page, a wreath of simple flowers and leaves to color.",
+    "file_url": "/printables/daisy-wreath-coloring-page.pdf",
+    "thumbnail_url": "/printables/daisy-wreath-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "hearts-pattern-coloring-page": {
+    "title": "Hearts Pattern",
+    "description": "A repeating hearts pattern coloring page, a relaxing all-over design to color in.",
+    "file_url": "/printables/hearts-pattern-coloring-page.pdf",
+    "thumbnail_url": "/printables/hearts-pattern-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "geometric-pattern-coloring-page": {
+    "title": "Geometric Pattern",
+    "description": "A geometric honeycomb pattern coloring page, a modern tessellation to color.",
+    "file_url": "/printables/geometric-pattern-coloring-page.pdf",
+    "thumbnail_url": "/printables/geometric-pattern-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "star-pattern-coloring-page": {
+    "title": "Star Pattern",
+    "description": "A repeating star pattern coloring page, a fun all-over design for kids and adults to color.",
+    "file_url": "/printables/star-pattern-coloring-page.pdf",
+    "thumbnail_url": "/printables/star-pattern-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "butterfly-coloring-page": {
+    "title": "Butterfly",
+    "description": "A detailed butterfly coloring page with patterned wings, eyespots, and a segmented body, an intricate symmetrical page to color.",
+    "file_url": "/printables/butterfly-coloring-page.pdf",
+    "thumbnail_url": "/printables/butterfly-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "owl-coloring-page": {
+    "title": "Owl",
+    "description": "A zentangle-style owl coloring page with feather rows, patterned wings, and big eyes, a detailed animal page to color.",
+    "file_url": "/printables/owl-coloring-page.pdf",
+    "thumbnail_url": "/printables/owl-coloring-page-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "botanical-branch-wall-art": {
+    "title": "Botanical Branch Wall Art, Free Printable",
+    "description": "Simple line-art botanical branches, an elegant minimalist print to frame.",
+    "file_url": "/printables/botanical-branch-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-branch-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "mountains-line-art-wall-art": {
+    "title": "Mountains Line Art Wall Art, Free Printable",
+    "description": "A minimalist mountain landscape line-art print, calm modern wall decor to frame.",
+    "file_url": "/printables/mountains-line-art-wall-art.pdf",
+    "thumbnail_url": "/printables/mountains-line-art-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-sun-moon-wall-art": {
+    "title": "Boho Sun Moon Wall Art, Free Printable",
+    "description": "A boho sun and moon-phase print in warm earthy tones, statement decor to frame.",
+    "file_url": "/printables/boho-sun-moon-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-sun-moon-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "mid-century-shapes-wall-art": {
+    "title": "Mid Century Shapes Wall Art, Free Printable",
+    "description": "A mid-century modern abstract shapes print in the house palette, framable art.",
+    "file_url": "/printables/mid-century-shapes-wall-art.pdf",
+    "thumbnail_url": "/printables/mid-century-shapes-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-rainbow-wall-art": {
+    "title": "Boho Rainbow Wall Art, Free Printable",
+    "description": "A boho rainbow printable wall art in earthy tones, cheerful decor for a nursery or kid's room.",
+    "file_url": "/printables/boho-rainbow-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-rainbow-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-arch-wall-art": {
+    "title": "Boho Arch Wall Art, Free Printable",
+    "description": "A boho nested-arch printable wall art in warm terracotta tones, minimalist modern decor to frame.",
+    "file_url": "/printables/boho-arch-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-arch-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "mid-century-sun-wall-art": {
+    "title": "Mid Century Sun Wall Art, Free Printable",
+    "description": "A mid-century modern sun and hills printable wall art in the house palette, framable retro art.",
+    "file_url": "/printables/mid-century-sun-wall-art.pdf",
+    "thumbnail_url": "/printables/mid-century-sun-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-moon-wall-art": {
+    "title": "Celestial Moon Wall Art, Free Printable",
+    "description": "A celestial moon and stars printable wall art on deep night-violet, dreamy decor for a bedroom.",
+    "file_url": "/printables/celestial-moon-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-moon-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "home-sweet-home-wall-art": {
+    "title": "Home Sweet Home Wall Art, Free Printable",
+    "description": "A classic Home Sweet Home printable wall art in elegant serif type, timeless entryway decor to frame.",
+    "file_url": "/printables/home-sweet-home-wall-art.pdf",
+    "thumbnail_url": "/printables/home-sweet-home-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "gather-quote-wall-art": {
+    "title": "Gather Quote Wall Art, Free Printable",
+    "description": "A warm Gather printable wall art, understated serif decor for the dining room or entryway.",
+    "file_url": "/printables/gather-quote-wall-art.pdf",
+    "thumbnail_url": "/printables/gather-quote-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "grateful-wall-art": {
+    "title": "Grateful Wall Art, Free Printable",
+    "description": "A simple Grateful printable wall art, cozy serif decor to print and frame.",
+    "file_url": "/printables/grateful-wall-art.pdf",
+    "thumbnail_url": "/printables/grateful-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "hello-sunshine-wall-art": {
+    "title": "Hello Sunshine Wall Art, Free Printable",
+    "description": "A cheerful Hello Sunshine printable wall art with a hand-drawn sun, bright decor for a kitchen or nursery.",
+    "file_url": "/printables/hello-sunshine-wall-art.pdf",
+    "thumbnail_url": "/printables/hello-sunshine-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "good-vibes-only-wall-art": {
+    "title": "Good Vibes Only Wall Art, Free Printable",
+    "description": "A breezy Good Vibes Only printable wall art, modern decor for a bedroom or dorm.",
+    "file_url": "/printables/good-vibes-only-wall-art.pdf",
+    "thumbnail_url": "/printables/good-vibes-only-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "but-first-coffee-wall-art": {
+    "title": "But First Coffee Wall Art, Free Printable",
+    "description": "A playful But First Coffee printable wall art for the kitchen, serif and script pairing to frame.",
+    "file_url": "/printables/but-first-coffee-wall-art.pdf",
+    "thumbnail_url": "/printables/but-first-coffee-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "wash-brush-floss-wall-art": {
+    "title": "Wash Brush Floss Wall Art, Free Printable",
+    "description": "A tidy Wash Brush Floss printable wall art set for the bathroom, clean serif decor to frame.",
+    "file_url": "/printables/wash-brush-floss-wall-art.pdf",
+    "thumbnail_url": "/printables/wash-brush-floss-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "you-are-so-loved-wall-art": {
+    "title": "You Are So Loved Wall Art, Free Printable",
+    "description": "A tender You Are So Loved printable wall art for the nursery, soft serif and script decor to frame.",
+    "file_url": "/printables/you-are-so-loved-wall-art.pdf",
+    "thumbnail_url": "/printables/you-are-so-loved-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "you-can-do-hard-things-wall-art": {
+    "title": "You Can Do Hard Things Wall Art, Free Printable",
+    "description": "A motivating You Can Do Hard Things printable wall art for an office or study, bold serif decor.",
+    "file_url": "/printables/you-can-do-hard-things-wall-art.pdf",
+    "thumbnail_url": "/printables/you-can-do-hard-things-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "make-it-happen-wall-art": {
+    "title": "Make It Happen Wall Art, Free Printable",
+    "description": "A punchy Make It Happen printable wall art for the desk, modern serif decor to frame.",
+    "file_url": "/printables/make-it-happen-wall-art.pdf",
+    "thumbnail_url": "/printables/make-it-happen-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "this-is-us-wall-art": {
+    "title": "This Is Us Wall Art, Free Printable",
+    "description": "A warm This Is Us printable wall art for the living room gallery wall, serif decor to frame.",
+    "file_url": "/printables/this-is-us-wall-art.pdf",
+    "thumbnail_url": "/printables/this-is-us-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "rise-and-shine-wall-art": {
+    "title": "Rise And Shine Wall Art, Free Printable",
+    "description": "A sunny Rise and Shine printable wall art for the bedroom, serif and a hand-drawn sun to frame.",
+    "file_url": "/printables/rise-and-shine-wall-art.pdf",
+    "thumbnail_url": "/printables/rise-and-shine-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "let-love-grow-wall-art": {
+    "title": "Let Love Grow Wall Art, Free Printable",
+    "description": "A sweet Let Love Grow printable wall art with a botanical accent, decor for a bedroom or nursery.",
+    "file_url": "/printables/let-love-grow-wall-art.pdf",
+    "thumbnail_url": "/printables/let-love-grow-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "adventure-awaits-wall-art": {
+    "title": "Adventure Awaits Wall Art, Free Printable",
+    "description": "An inspiring Adventure Awaits printable wall art for a kid's room or office, serif decor to frame.",
+    "file_url": "/printables/adventure-awaits-wall-art.pdf",
+    "thumbnail_url": "/printables/adventure-awaits-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "be-still-wall-art": {
+    "title": "Be Still Wall Art, Free Printable",
+    "description": "A calming Be Still printable wall art, minimalist serif decor for a bedroom or reading nook.",
+    "file_url": "/printables/be-still-wall-art.pdf",
+    "thumbnail_url": "/printables/be-still-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
   }
 }

@@ -1,4 +1,4 @@
-# Paper Posy, Phase 1 Content Bank Plan
+# Barrio Vibe, Phase 1 Content Bank Plan
 
 **95 posts** across the 3 no-artwork pillars, served by **27 printables** (26 new to build + 1 done).
 Pins: 3 per post in `docs/pinterest-pins.md`. Publishing: 6/day @ 30-min via the drip-publisher.

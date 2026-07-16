@@ -1,6 +1,6 @@
 {
-  "site": "paper-posy",
-  "phase": "1 + seasonal",
+  "site": "barrio-vibe",
+  "phase": "1 + seasonal + 2",
   "generated_note": "Phase 1 = no-artwork pillars (Home Org, Meal Planning, Kids). Each post embeds its printable via {{printable:<slug>}} twice and links to 2 same-category posts. Pins live in docs/pinterest-pins.md.",
   "printables": [
     {
@@ -288,7 +288,7 @@
       "title": "Printable Christmas Gift Tags, Free Printable",
       "category": "kids-printables",
       "status": "new",
-      "spec": "sheet of cut-out fill-in gift tags (To/From) in the Paper Posy palette, typography only, no illustration"
+      "spec": "sheet of cut-out fill-in gift tags (To/From) in the Barrio Vibe palette, typography only, no illustration"
     },
     {
       "slug": "advent-activity-calendar",
@@ -359,6 +359,357 @@
       "category": "printable-wall-art",
       "status": "new",
       "spec": "printable vision-board template: goal frames, prompts, and cut-out label cards; typography only"
+    },
+    {
+      "slug": "mandala-coloring-page",
+      "title": "Mandala",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "An intricate original mandala coloring page for adults and older kids, clean line art to print and color."
+    },
+    {
+      "slug": "rosette-mandala-coloring-page",
+      "title": "Rosette Mandala",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "An intricate original rosette mandala coloring page for adults and older kids, clean line art to print and color."
+    },
+    {
+      "slug": "geometric-mandala-coloring-page",
+      "title": "Geometric Mandala",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "An intricate original geometric mandala coloring page for adults and older kids, clean line art to print and color."
+    },
+    {
+      "slug": "lace-mandala-coloring-page",
+      "title": "Lace Mandala",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "An intricate original lace mandala coloring page for adults and older kids, clean line art to print and color."
+    },
+    {
+      "slug": "sunburst-mandala-coloring-page",
+      "title": "Sunburst Mandala",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "An intricate original sunburst mandala coloring page for adults and older kids, clean line art to print and color."
+    },
+    {
+      "slug": "kaleidoscope-mandala-coloring-page",
+      "title": "Kaleidoscope Mandala",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "An intricate original kaleidoscope mandala coloring page for adults and older kids, clean line art to print and color."
+    },
+    {
+      "slug": "floral-mandala-coloring-page",
+      "title": "Floral Mandala",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A calming floral mandala coloring page of layered daisies and petals, original line art to color."
+    },
+    {
+      "slug": "flower-bouquet-coloring-page",
+      "title": "Flower Bouquet",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A cheerful flower-bouquet-in-a-jar coloring page, an easy, satisfying page for all ages to color."
+    },
+    {
+      "slug": "rose-coloring-page",
+      "title": "Rose",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A detailed layered rose coloring page with cupped petals and leaves, an intricate floral to color."
+    },
+    {
+      "slug": "peony-coloring-page",
+      "title": "Peony",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A lush layered peony coloring page of petals radiating from the center, a highly detailed floral to color."
+    },
+    {
+      "slug": "daisy-wreath-coloring-page",
+      "title": "Daisy Wreath",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A pretty daisy-wreath coloring page, a wreath of simple flowers and leaves to color."
+    },
+    {
+      "slug": "hearts-pattern-coloring-page",
+      "title": "Hearts Pattern",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A repeating hearts pattern coloring page, a relaxing all-over design to color in."
+    },
+    {
+      "slug": "geometric-pattern-coloring-page",
+      "title": "Geometric Pattern",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A geometric honeycomb pattern coloring page, a modern tessellation to color."
+    },
+    {
+      "slug": "star-pattern-coloring-page",
+      "title": "Star Pattern",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A repeating star pattern coloring page, a fun all-over design for kids and adults to color."
+    },
+    {
+      "slug": "butterfly-coloring-page",
+      "title": "Butterfly",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A detailed butterfly coloring page with patterned wings, eyespots, and a segmented body, an intricate symmetrical page to color."
+    },
+    {
+      "slug": "owl-coloring-page",
+      "title": "Owl",
+      "category": "coloring-pages",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A zentangle-style owl coloring page with feather rows, patterned wings, and big eyes, a detailed animal page to color."
+    },
+    {
+      "slug": "botanical-branch-wall-art",
+      "title": "Botanical Branch Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "Simple line-art botanical branches, an elegant minimalist print to frame."
+    },
+    {
+      "slug": "mountains-line-art-wall-art",
+      "title": "Mountains Line Art Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A minimalist mountain landscape line-art print, calm modern wall decor to frame."
+    },
+    {
+      "slug": "boho-sun-moon-wall-art",
+      "title": "Boho Sun Moon Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A boho sun and moon-phase print in warm earthy tones, statement decor to frame."
+    },
+    {
+      "slug": "mid-century-shapes-wall-art",
+      "title": "Mid Century Shapes Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A mid-century modern abstract shapes print in the house palette, framable art."
+    },
+    {
+      "slug": "boho-rainbow-wall-art",
+      "title": "Boho Rainbow Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A boho rainbow printable wall art in earthy tones, cheerful decor for a nursery or kid's room."
+    },
+    {
+      "slug": "boho-arch-wall-art",
+      "title": "Boho Arch Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A boho nested-arch printable wall art in warm terracotta tones, minimalist modern decor to frame."
+    },
+    {
+      "slug": "mid-century-sun-wall-art",
+      "title": "Mid Century Sun Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A mid-century modern sun and hills printable wall art in the house palette, framable retro art."
+    },
+    {
+      "slug": "celestial-moon-wall-art",
+      "title": "Celestial Moon Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A celestial moon and stars printable wall art on deep night-violet, dreamy decor for a bedroom."
+    },
+    {
+      "slug": "home-sweet-home-wall-art",
+      "title": "Home Sweet Home Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A classic Home Sweet Home printable wall art in elegant serif type, timeless entryway decor to frame."
+    },
+    {
+      "slug": "gather-quote-wall-art",
+      "title": "Gather Quote Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A warm Gather printable wall art, understated serif decor for the dining room or entryway."
+    },
+    {
+      "slug": "grateful-wall-art",
+      "title": "Grateful Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A simple Grateful printable wall art, cozy serif decor to print and frame."
+    },
+    {
+      "slug": "hello-sunshine-wall-art",
+      "title": "Hello Sunshine Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A cheerful Hello Sunshine printable wall art with a hand-drawn sun, bright decor for a kitchen or nursery."
+    },
+    {
+      "slug": "good-vibes-only-wall-art",
+      "title": "Good Vibes Only Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A breezy Good Vibes Only printable wall art, modern decor for a bedroom or dorm."
+    },
+    {
+      "slug": "but-first-coffee-wall-art",
+      "title": "But First Coffee Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A playful But First Coffee printable wall art for the kitchen, serif and script pairing to frame."
+    },
+    {
+      "slug": "wash-brush-floss-wall-art",
+      "title": "Wash Brush Floss Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A tidy Wash Brush Floss printable wall art set for the bathroom, clean serif decor to frame."
+    },
+    {
+      "slug": "you-are-so-loved-wall-art",
+      "title": "You Are So Loved Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A tender You Are So Loved printable wall art for the nursery, soft serif and script decor to frame."
+    },
+    {
+      "slug": "you-can-do-hard-things-wall-art",
+      "title": "You Can Do Hard Things Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A motivating You Can Do Hard Things printable wall art for an office or study, bold serif decor."
+    },
+    {
+      "slug": "make-it-happen-wall-art",
+      "title": "Make It Happen Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A punchy Make It Happen printable wall art for the desk, modern serif decor to frame."
+    },
+    {
+      "slug": "this-is-us-wall-art",
+      "title": "This Is Us Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A warm This Is Us printable wall art for the living room gallery wall, serif decor to frame."
+    },
+    {
+      "slug": "rise-and-shine-wall-art",
+      "title": "Rise And Shine Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A sunny Rise and Shine printable wall art for the bedroom, serif and a hand-drawn sun to frame."
+    },
+    {
+      "slug": "let-love-grow-wall-art",
+      "title": "Let Love Grow Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A sweet Let Love Grow printable wall art with a botanical accent, decor for a bedroom or nursery."
+    },
+    {
+      "slug": "adventure-awaits-wall-art",
+      "title": "Adventure Awaits Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "An inspiring Adventure Awaits printable wall art for a kid's room or office, serif decor to frame."
+    },
+    {
+      "slug": "be-still-wall-art",
+      "title": "Be Still Wall Art — Free Printable",
+      "category": "printable-wall-art",
+      "status": "art",
+      "spec": "",
+      "phase": 2,
+      "description": "A calming Be Still printable wall art, minimalist serif decor for a bedroom or reading nook."
     }
   ],
   "posts": [
@@ -1329,6 +1680,789 @@
       "category": "meal-planning",
       "printable": "weekly-meal-planner",
       "printable_status": "existing"
+    },
+    {
+      "slug": "printable-wall-art-for-bedroom",
+      "title": "Free Printable Wall Art for the Bedroom",
+      "keyword": "printable wall art for bedroom",
+      "category": "printable-wall-art",
+      "printable": "botanical-branch-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "nursery-wall-art-printable",
+      "title": "Free Nursery Wall Art to Print and Frame",
+      "keyword": "nursery wall art printable",
+      "category": "printable-wall-art",
+      "printable": "you-are-so-loved-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-wall-art-for-bathroom",
+      "title": "Free Printable Bathroom Wall Art",
+      "keyword": "printable wall art for bathroom",
+      "category": "printable-wall-art",
+      "printable": "wash-brush-floss-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-kitchen-wall-art",
+      "title": "Free Printable Kitchen Wall Art",
+      "keyword": "printable kitchen wall art",
+      "category": "printable-wall-art",
+      "printable": "but-first-coffee-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-wall-art-for-living-room",
+      "title": "Free Printable Wall Art for the Living Room",
+      "keyword": "printable art for living room",
+      "category": "printable-wall-art",
+      "printable": "this-is-us-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-quotes-for-office-wall",
+      "title": "Free Printable Office Wall Art & Quotes",
+      "keyword": "printable quotes for office wall",
+      "category": "printable-wall-art",
+      "printable": "you-can-do-hard-things-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-wall-art-for-kids-room",
+      "title": "Free Printable Wall Art for a Kids Room",
+      "keyword": "printable wall art for kids room",
+      "category": "printable-wall-art",
+      "printable": "boho-rainbow-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-dorm-room-wall-art",
+      "title": "Free Printable Dorm Room Wall Art",
+      "keyword": "printable dorm room wall art",
+      "category": "printable-wall-art",
+      "printable": "good-vibes-only-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-entryway-wall-art",
+      "title": "Free Printable Entryway Wall Art",
+      "keyword": "printable entryway wall art",
+      "category": "printable-wall-art",
+      "printable": "home-sweet-home-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-dining-room-wall-art",
+      "title": "Free Printable Dining Room Wall Art",
+      "keyword": "printable dining room wall art",
+      "category": "printable-wall-art",
+      "printable": "gather-quote-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "boho-wall-art-printable",
+      "title": "Free Boho Printable Wall Art to Frame",
+      "keyword": "boho wall art",
+      "category": "printable-wall-art",
+      "printable": "boho-sun-moon-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "minimalist-wall-art-printable",
+      "title": "Free Minimalist Printable Wall Art",
+      "keyword": "minimalist wall art",
+      "category": "printable-wall-art",
+      "printable": "mountains-line-art-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "botanical-wall-art-printable",
+      "title": "Free Botanical Printable Wall Art",
+      "keyword": "botanical wall art",
+      "category": "printable-wall-art",
+      "printable": "botanical-branch-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "abstract-wall-art-printable",
+      "title": "Free Abstract Printable Wall Art",
+      "keyword": "abstract wall art",
+      "category": "printable-wall-art",
+      "printable": "mid-century-shapes-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "line-art-wall-art-printable",
+      "title": "Free Line Art Printable Wall Art",
+      "keyword": "line art wall art",
+      "category": "printable-wall-art",
+      "printable": "botanical-branch-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "black-and-white-wall-art-printable",
+      "title": "Free Black and White Printable Wall Art",
+      "keyword": "black and white wall art",
+      "category": "printable-wall-art",
+      "printable": "mountains-line-art-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "mid-century-modern-wall-art-printable",
+      "title": "Free Mid-Century Modern Printable Wall Art",
+      "keyword": "mid century modern wall art",
+      "category": "printable-wall-art",
+      "printable": "mid-century-shapes-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "celestial-wall-art-printable",
+      "title": "Free Celestial Printable Wall Art",
+      "keyword": "celestial wall art",
+      "category": "printable-wall-art",
+      "printable": "celestial-moon-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "boho-arch-wall-art-printable",
+      "title": "Free Boho Arch Printable Wall Art",
+      "keyword": "boho arch wall art",
+      "category": "printable-wall-art",
+      "printable": "boho-arch-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "rainbow-wall-art-printable",
+      "title": "Free Rainbow Printable Wall Art",
+      "keyword": "rainbow wall art",
+      "category": "printable-wall-art",
+      "printable": "boho-rainbow-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "mountain-wall-art-printable",
+      "title": "Free Mountain Printable Wall Art",
+      "keyword": "mountain wall art",
+      "category": "printable-wall-art",
+      "printable": "mountains-line-art-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "sun-and-moon-wall-art-printable",
+      "title": "Free Sun and Moon Printable Wall Art",
+      "keyword": "sun and moon wall art",
+      "category": "printable-wall-art",
+      "printable": "boho-sun-moon-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "neutral-wall-art-printable",
+      "title": "Free Neutral Printable Wall Art",
+      "keyword": "neutral wall art",
+      "category": "printable-wall-art",
+      "printable": "mid-century-sun-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "earthy-wall-art-printable",
+      "title": "Free Earthy Boho Printable Wall Art",
+      "keyword": "earthy wall art",
+      "category": "printable-wall-art",
+      "printable": "boho-arch-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-art-prints",
+      "title": "Free Printable Art Prints for Every Room",
+      "keyword": "printable art prints",
+      "category": "printable-wall-art",
+      "printable": "botanical-branch-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-posters",
+      "title": "Free Printable Posters to Frame at Home",
+      "keyword": "printable posters",
+      "category": "printable-wall-art",
+      "printable": "mountains-line-art-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-quotes-to-frame",
+      "title": "Free Printable Quotes to Frame",
+      "keyword": "printable quotes to frame",
+      "category": "printable-wall-art",
+      "printable": "home-sweet-home-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "home-sweet-home-printable",
+      "title": "Free Home Sweet Home Printable Wall Art",
+      "keyword": "home sweet home printable",
+      "category": "printable-wall-art",
+      "printable": "home-sweet-home-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "gather-printable-wall-art",
+      "title": "Free Gather Printable Wall Art",
+      "keyword": "gather printable",
+      "category": "printable-wall-art",
+      "printable": "gather-quote-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "grateful-printable-wall-art",
+      "title": "Free Grateful Printable Wall Art",
+      "keyword": "grateful printable",
+      "category": "printable-wall-art",
+      "printable": "grateful-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "hello-sunshine-printable-wall-art",
+      "title": "Free Hello Sunshine Printable Wall Art",
+      "keyword": "hello sunshine printable",
+      "category": "printable-wall-art",
+      "printable": "hello-sunshine-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "but-first-coffee-printable",
+      "title": "Free But First Coffee Printable Wall Art",
+      "keyword": "but first coffee printable",
+      "category": "printable-wall-art",
+      "printable": "but-first-coffee-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "you-are-so-loved-printable",
+      "title": "Free You Are So Loved Nursery Printable",
+      "keyword": "you are so loved printable",
+      "category": "printable-wall-art",
+      "printable": "you-are-so-loved-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "make-it-happen-printable",
+      "title": "Free Make It Happen Office Printable",
+      "keyword": "make it happen printable",
+      "category": "printable-wall-art",
+      "printable": "make-it-happen-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "rise-and-shine-printable",
+      "title": "Free Rise and Shine Printable Wall Art",
+      "keyword": "rise and shine printable",
+      "category": "printable-wall-art",
+      "printable": "rise-and-shine-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "let-love-grow-printable",
+      "title": "Free Let Love Grow Printable Wall Art",
+      "keyword": "let love grow printable",
+      "category": "printable-wall-art",
+      "printable": "let-love-grow-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "adventure-awaits-printable",
+      "title": "Free Adventure Awaits Printable Wall Art",
+      "keyword": "adventure awaits printable",
+      "category": "printable-wall-art",
+      "printable": "adventure-awaits-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "be-still-printable-wall-art",
+      "title": "Free Be Still Printable Wall Art",
+      "keyword": "be still printable",
+      "category": "printable-wall-art",
+      "printable": "be-still-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "affirmation-wall-art-printable",
+      "title": "Free Affirmation Printable Wall Art Set",
+      "keyword": "affirmation wall art",
+      "category": "printable-wall-art",
+      "printable": "good-vibes-only-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "inspirational-quotes-wall-art-printable",
+      "title": "Free Inspirational Quotes Printable Wall Art",
+      "keyword": "inspirational quotes wall art",
+      "category": "printable-wall-art",
+      "printable": "you-can-do-hard-things-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "family-wall-art-printable",
+      "title": "Free Family Printable Wall Art",
+      "keyword": "family wall art printable",
+      "category": "printable-wall-art",
+      "printable": "this-is-us-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "motivational-wall-art-printable",
+      "title": "Free Motivational Printable Wall Art",
+      "keyword": "motivational wall art",
+      "category": "printable-wall-art",
+      "printable": "make-it-happen-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "bathroom-quotes-printable",
+      "title": "Free Bathroom Quotes Printable Wall Art",
+      "keyword": "bathroom quotes printable",
+      "category": "printable-wall-art",
+      "printable": "wash-brush-floss-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "kitchen-quotes-printable",
+      "title": "Free Kitchen Quotes Printable Wall Art",
+      "keyword": "kitchen quotes printable",
+      "category": "printable-wall-art",
+      "printable": "but-first-coffee-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "scandinavian-wall-art-printable",
+      "title": "Free Scandinavian Printable Wall Art",
+      "keyword": "scandinavian wall art",
+      "category": "printable-wall-art",
+      "printable": "mountains-line-art-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "retro-wall-art-printable",
+      "title": "Free Retro Printable Wall Art",
+      "keyword": "retro wall art",
+      "category": "printable-wall-art",
+      "printable": "mid-century-sun-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "nursery-quotes-printable",
+      "title": "Free Nursery Quotes Printable Wall Art",
+      "keyword": "nursery quotes printable",
+      "category": "printable-wall-art",
+      "printable": "let-love-grow-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "boho-nursery-wall-art-printable",
+      "title": "Free Boho Nursery Printable Wall Art",
+      "keyword": "boho nursery wall art",
+      "category": "printable-wall-art",
+      "printable": "boho-rainbow-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "office-wall-art-printable",
+      "title": "Free Printable Office Wall Art Set",
+      "keyword": "office wall art printable",
+      "category": "printable-wall-art",
+      "printable": "make-it-happen-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "living-room-wall-art-printable",
+      "title": "Free Printable Living Room Wall Art",
+      "keyword": "living room wall art printable",
+      "category": "printable-wall-art",
+      "printable": "mid-century-shapes-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "bedroom-quotes-printable",
+      "title": "Free Bedroom Quotes Printable Wall Art",
+      "keyword": "bedroom quotes printable",
+      "category": "printable-wall-art",
+      "printable": "be-still-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "sunset-wall-art-printable",
+      "title": "Free Sunset Printable Wall Art",
+      "keyword": "sunset wall art",
+      "category": "printable-wall-art",
+      "printable": "mid-century-sun-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "moon-phases-wall-art-printable",
+      "title": "Free Moon Phases Printable Wall Art",
+      "keyword": "moon phases wall art",
+      "category": "printable-wall-art",
+      "printable": "boho-sun-moon-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "good-vibes-only-printable",
+      "title": "Free Good Vibes Only Printable Wall Art",
+      "keyword": "good vibes only printable",
+      "category": "printable-wall-art",
+      "printable": "good-vibes-only-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "let-it-be-printable-wall-art",
+      "title": "Free Be Still Bedroom Printable Wall Art",
+      "keyword": "be still bedroom printable",
+      "category": "printable-wall-art",
+      "printable": "be-still-wall-art",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "mandala-coloring-pages-printable",
+      "title": "Free Printable Mandala Coloring Pages",
+      "keyword": "mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "mandala-coloring-pages-for-adults",
+      "title": "Mandala Coloring Pages for Adults (Free Printable)",
+      "keyword": "mandala coloring pages for adults",
+      "category": "coloring-pages",
+      "printable": "lace-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "easy-mandala-coloring-pages-printable",
+      "title": "Free Easy Mandala Coloring Pages",
+      "keyword": "easy mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "geometric-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "flower-mandala-coloring-pages-printable",
+      "title": "Free Flower Mandala Coloring Pages",
+      "keyword": "flower mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "floral-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "geometric-mandala-coloring-pages-printable",
+      "title": "Free Geometric Mandala Coloring Pages",
+      "keyword": "geometric mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "geometric-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "kaleidoscope-coloring-pages-printable",
+      "title": "Free Kaleidoscope Coloring Pages",
+      "keyword": "kaleidoscope coloring pages",
+      "category": "coloring-pages",
+      "printable": "kaleidoscope-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "intricate-mandala-coloring-pages",
+      "title": "Free Intricate Mandala Coloring Pages",
+      "keyword": "intricate mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "lace-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "simple-mandala-coloring-pages",
+      "title": "Free Simple Mandala Coloring Pages",
+      "keyword": "simple mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "sunburst-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "flower-coloring-pages-printable",
+      "title": "Free Printable Flower Coloring Pages",
+      "keyword": "flower coloring pages",
+      "category": "coloring-pages",
+      "printable": "floral-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "flower-coloring-pages-for-adults",
+      "title": "Flower Coloring Pages for Adults (Free Printable)",
+      "keyword": "flower coloring pages for adults",
+      "category": "coloring-pages",
+      "printable": "peony-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "rose-coloring-pages-printable",
+      "title": "Free Printable Rose Coloring Pages",
+      "keyword": "rose coloring pages",
+      "category": "coloring-pages",
+      "printable": "rose-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "peony-coloring-pages-printable",
+      "title": "Free Printable Peony Coloring Pages",
+      "keyword": "peony coloring pages",
+      "category": "coloring-pages",
+      "printable": "peony-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "botanical-coloring-pages-printable",
+      "title": "Free Printable Botanical Coloring Pages",
+      "keyword": "botanical coloring pages",
+      "category": "coloring-pages",
+      "printable": "daisy-wreath-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "floral-coloring-pages-for-adults",
+      "title": "Floral Coloring Pages for Adults (Free Printable)",
+      "keyword": "floral coloring pages for adults",
+      "category": "coloring-pages",
+      "printable": "floral-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "daisy-coloring-pages-printable",
+      "title": "Free Printable Daisy Coloring Pages",
+      "keyword": "daisy coloring pages",
+      "category": "coloring-pages",
+      "printable": "daisy-wreath-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "spring-flower-coloring-pages",
+      "title": "Free Printable Spring Flower Coloring Pages",
+      "keyword": "spring flower coloring pages",
+      "category": "coloring-pages",
+      "printable": "flower-bouquet-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "animal-coloring-pages-printable",
+      "title": "Free Printable Animal Coloring Pages",
+      "keyword": "animal coloring pages",
+      "category": "coloring-pages",
+      "printable": "butterfly-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "animal-coloring-pages-for-adults",
+      "title": "Animal Coloring Pages for Adults (Free Printable)",
+      "keyword": "animal coloring pages for adults",
+      "category": "coloring-pages",
+      "printable": "owl-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "butterfly-coloring-pages-printable",
+      "title": "Free Printable Butterfly Coloring Pages",
+      "keyword": "butterfly coloring pages",
+      "category": "coloring-pages",
+      "printable": "butterfly-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "owl-coloring-pages-printable",
+      "title": "Free Printable Owl Coloring Pages",
+      "keyword": "owl coloring pages",
+      "category": "coloring-pages",
+      "printable": "owl-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "animal-mandala-coloring-pages-printable",
+      "title": "Free Animal Mandala Coloring Pages",
+      "keyword": "animal mandala coloring pages",
+      "category": "coloring-pages",
+      "printable": "owl-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "zentangle-coloring-pages-printable",
+      "title": "Free Printable Zentangle Coloring Pages",
+      "keyword": "zentangle coloring pages",
+      "category": "coloring-pages",
+      "printable": "owl-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "geometric-coloring-pages-printable",
+      "title": "Free Printable Geometric Coloring Pages",
+      "keyword": "geometric coloring pages",
+      "category": "coloring-pages",
+      "printable": "geometric-pattern-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "pattern-coloring-pages-printable",
+      "title": "Free Printable Pattern Coloring Pages",
+      "keyword": "pattern coloring pages",
+      "category": "coloring-pages",
+      "printable": "star-pattern-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "heart-coloring-pages-printable",
+      "title": "Free Printable Heart Coloring Pages",
+      "keyword": "heart coloring pages",
+      "category": "coloring-pages",
+      "printable": "hearts-pattern-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "adult-coloring-pages-printable",
+      "title": "Free Adult Coloring Pages to Print",
+      "keyword": "adult coloring pages printable",
+      "category": "coloring-pages",
+      "printable": "lace-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "free-printable-coloring-pages",
+      "title": "Free Printable Coloring Pages for Adults",
+      "keyword": "free printable coloring pages",
+      "category": "coloring-pages",
+      "printable": "mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "cute-coloring-pages-printable",
+      "title": "Free Printable Cute Coloring Pages",
+      "keyword": "cute coloring pages",
+      "category": "coloring-pages",
+      "printable": "daisy-wreath-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "printable-coloring-book",
+      "title": "Free Printable Coloring Book Pages",
+      "keyword": "printable coloring book",
+      "category": "coloring-pages",
+      "printable": "floral-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "stress-relief-coloring-pages",
+      "title": "Free Printable Stress Relief Coloring Pages",
+      "keyword": "stress relief coloring pages",
+      "category": "coloring-pages",
+      "printable": "lace-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "coloring-pages-to-print",
+      "title": "Free Coloring Pages to Print at Home",
+      "keyword": "coloring pages to print",
+      "category": "coloring-pages",
+      "printable": "rosette-mandala-coloring-page",
+      "printable_status": "art",
+      "phase": 2
+    },
+    {
+      "slug": "nature-coloring-pages-printable",
+      "title": "Free Printable Nature Coloring Pages",
+      "keyword": "nature coloring pages",
+      "category": "coloring-pages",
+      "printable": "daisy-wreath-coloring-page",
+      "printable_status": "art",
+      "phase": 2
     }
   ],
   "publish_order": [
@@ -1452,6 +2586,182 @@
     "fridge-organization-on-a-budget-printable",
     "small-fridge-organization-printable",
     "small-space-storage-ideas-printable",
-    "linen-closet-organization-printable"
+    "linen-closet-organization-printable",
+    "printable-wall-art-for-bedroom",
+    "nursery-wall-art-printable",
+    "printable-wall-art-for-bathroom",
+    "printable-kitchen-wall-art",
+    "printable-wall-art-for-living-room",
+    "printable-quotes-for-office-wall",
+    "printable-wall-art-for-kids-room",
+    "printable-dorm-room-wall-art",
+    "printable-entryway-wall-art",
+    "printable-dining-room-wall-art",
+    "boho-wall-art-printable",
+    "minimalist-wall-art-printable",
+    "botanical-wall-art-printable",
+    "abstract-wall-art-printable",
+    "line-art-wall-art-printable",
+    "black-and-white-wall-art-printable",
+    "mid-century-modern-wall-art-printable",
+    "celestial-wall-art-printable",
+    "boho-arch-wall-art-printable",
+    "rainbow-wall-art-printable",
+    "mountain-wall-art-printable",
+    "sun-and-moon-wall-art-printable",
+    "neutral-wall-art-printable",
+    "earthy-wall-art-printable",
+    "printable-art-prints",
+    "printable-posters",
+    "printable-quotes-to-frame",
+    "home-sweet-home-printable",
+    "gather-printable-wall-art",
+    "grateful-printable-wall-art",
+    "hello-sunshine-printable-wall-art",
+    "but-first-coffee-printable",
+    "you-are-so-loved-printable",
+    "make-it-happen-printable",
+    "rise-and-shine-printable",
+    "let-love-grow-printable",
+    "adventure-awaits-printable",
+    "be-still-printable-wall-art",
+    "affirmation-wall-art-printable",
+    "inspirational-quotes-wall-art-printable",
+    "family-wall-art-printable",
+    "motivational-wall-art-printable",
+    "bathroom-quotes-printable",
+    "kitchen-quotes-printable",
+    "scandinavian-wall-art-printable",
+    "retro-wall-art-printable",
+    "nursery-quotes-printable",
+    "boho-nursery-wall-art-printable",
+    "office-wall-art-printable",
+    "living-room-wall-art-printable",
+    "bedroom-quotes-printable",
+    "sunset-wall-art-printable",
+    "moon-phases-wall-art-printable",
+    "good-vibes-only-printable",
+    "let-it-be-printable-wall-art",
+    "mandala-coloring-pages-printable",
+    "mandala-coloring-pages-for-adults",
+    "easy-mandala-coloring-pages-printable",
+    "flower-mandala-coloring-pages-printable",
+    "geometric-mandala-coloring-pages-printable",
+    "kaleidoscope-coloring-pages-printable",
+    "intricate-mandala-coloring-pages",
+    "simple-mandala-coloring-pages",
+    "flower-coloring-pages-printable",
+    "flower-coloring-pages-for-adults",
+    "rose-coloring-pages-printable",
+    "peony-coloring-pages-printable",
+    "botanical-coloring-pages-printable",
+    "floral-coloring-pages-for-adults",
+    "daisy-coloring-pages-printable",
+    "spring-flower-coloring-pages",
+    "animal-coloring-pages-printable",
+    "animal-coloring-pages-for-adults",
+    "butterfly-coloring-pages-printable",
+    "owl-coloring-pages-printable",
+    "animal-mandala-coloring-pages-printable",
+    "zentangle-coloring-pages-printable",
+    "geometric-coloring-pages-printable",
+    "pattern-coloring-pages-printable",
+    "heart-coloring-pages-printable",
+    "adult-coloring-pages-printable",
+    "free-printable-coloring-pages",
+    "cute-coloring-pages-printable",
+    "printable-coloring-book",
+    "stress-relief-coloring-pages",
+    "coloring-pages-to-print",
+    "nature-coloring-pages-printable"
+  ],
+  "publish_order_p2": [
+    "printable-wall-art-for-bedroom",
+    "nursery-wall-art-printable",
+    "printable-wall-art-for-bathroom",
+    "printable-kitchen-wall-art",
+    "printable-wall-art-for-living-room",
+    "printable-quotes-for-office-wall",
+    "printable-wall-art-for-kids-room",
+    "printable-dorm-room-wall-art",
+    "printable-entryway-wall-art",
+    "printable-dining-room-wall-art",
+    "boho-wall-art-printable",
+    "minimalist-wall-art-printable",
+    "botanical-wall-art-printable",
+    "abstract-wall-art-printable",
+    "line-art-wall-art-printable",
+    "black-and-white-wall-art-printable",
+    "mid-century-modern-wall-art-printable",
+    "celestial-wall-art-printable",
+    "boho-arch-wall-art-printable",
+    "rainbow-wall-art-printable",
+    "mountain-wall-art-printable",
+    "sun-and-moon-wall-art-printable",
+    "neutral-wall-art-printable",
+    "earthy-wall-art-printable",
+    "printable-art-prints",
+    "printable-posters",
+    "printable-quotes-to-frame",
+    "home-sweet-home-printable",
+    "gather-printable-wall-art",
+    "grateful-printable-wall-art",
+    "hello-sunshine-printable-wall-art",
+    "but-first-coffee-printable",
+    "you-are-so-loved-printable",
+    "make-it-happen-printable",
+    "rise-and-shine-printable",
+    "let-love-grow-printable",
+    "adventure-awaits-printable",
+    "be-still-printable-wall-art",
+    "affirmation-wall-art-printable",
+    "inspirational-quotes-wall-art-printable",
+    "family-wall-art-printable",
+    "motivational-wall-art-printable",
+    "bathroom-quotes-printable",
+    "kitchen-quotes-printable",
+    "scandinavian-wall-art-printable",
+    "retro-wall-art-printable",
+    "nursery-quotes-printable",
+    "boho-nursery-wall-art-printable",
+    "office-wall-art-printable",
+    "living-room-wall-art-printable",
+    "bedroom-quotes-printable",
+    "sunset-wall-art-printable",
+    "moon-phases-wall-art-printable",
+    "good-vibes-only-printable",
+    "let-it-be-printable-wall-art",
+    "mandala-coloring-pages-printable",
+    "mandala-coloring-pages-for-adults",
+    "easy-mandala-coloring-pages-printable",
+    "flower-mandala-coloring-pages-printable",
+    "geometric-mandala-coloring-pages-printable",
+    "kaleidoscope-coloring-pages-printable",
+    "intricate-mandala-coloring-pages",
+    "simple-mandala-coloring-pages",
+    "flower-coloring-pages-printable",
+    "flower-coloring-pages-for-adults",
+    "rose-coloring-pages-printable",
+    "peony-coloring-pages-printable",
+    "botanical-coloring-pages-printable",
+    "floral-coloring-pages-for-adults",
+    "daisy-coloring-pages-printable",
+    "spring-flower-coloring-pages",
+    "animal-coloring-pages-printable",
+    "animal-coloring-pages-for-adults",
+    "butterfly-coloring-pages-printable",
+    "owl-coloring-pages-printable",
+    "animal-mandala-coloring-pages-printable",
+    "zentangle-coloring-pages-printable",
+    "geometric-coloring-pages-printable",
+    "pattern-coloring-pages-printable",
+    "heart-coloring-pages-printable",
+    "adult-coloring-pages-printable",
+    "free-printable-coloring-pages",
+    "cute-coloring-pages-printable",
+    "printable-coloring-book",
+    "stress-relief-coloring-pages",
+    "coloring-pages-to-print",
+    "nature-coloring-pages-printable"
   ]
 }

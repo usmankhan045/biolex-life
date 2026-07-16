@@ -1,16 +1,16 @@
 export const siteConfig = {
-  slug: "paper-posy",
+  slug: "barrio-vibe",
   // Canonical host. MUST match the host the deployment actually serves with a
   // 200 (Vercel redirects the apex → www), so canonical tags, sitemap <loc>,
   // og:url and robots Host/Sitemap all agree with production.
-  domain: "www.paperposy.com",
+  domain: "www.barriovibe.com",
   // Known site_id for this tenant. Used as a resilient fallback if the runtime
   // `sites` table lookup is unavailable (e.g. build-time prerender). See
   // getCurrentSiteId() in lib/supabase.ts.
   //
   // Set to the real UUID returned when the site's `sites` row was seeded.
   siteId: "5a5babff-6213-4f05-b8cb-986aaa2d0b80",
-  name: "Paper Posy",
+  name: "Barrio Vibe",
   tagline: "Print it. Frame it. Done.",
   niche: "Free printables for the home",
 
@@ -31,9 +31,9 @@ export const siteConfig = {
     // Relative URL to the author's on-site profile page (author archive).
     url: "/author/marlowe-hart",
     shortBio:
-      "Marlowe designs and tests every printable in the Paper Posy library, from wall art to weekly meal planners, so each one prints clean on a home printer.",
+      "Marlowe designs and tests every printable in the Barrio Vibe library, from wall art to weekly meal planners, so each one prints clean on a home printer.",
     longBio:
-      "Marlowe Hart started Paper Posy after years of hunting for printables that actually looked good on the wall and lined up correctly on the page. Everything here is designed in-house, print-tested on plain letter paper, and paired with a short guide on how to frame it, style it, or fill it in. No stock photos, no filler, just files you can download and print today.",
+      "Marlowe Hart started Barrio Vibe after years of hunting for printables that actually looked good on the wall and lined up correctly on the page. Everything here is designed in-house, print-tested on plain letter paper, and paired with a short guide on how to frame it, style it, or fill it in. No stock photos, no filler, just files you can download and print today.",
   },
 
   // ── FEATURE FLAGS ────────────────────────────────────────────────────────
@@ -48,17 +48,17 @@ export const siteConfig = {
   // Surfaced in the legal pages, footer, and about page. Set these per site so
   // the boilerplate legal copy carries the right brand, domain, and emails.
   contact: {
-    email: "hello@paperposy.com",       // general / terms contact
-    privacyEmail: "privacy@paperposy.com", // privacy + data requests
+    email: "hello@barriovibe.com",       // general / terms contact
+    privacyEmail: "privacy@barriovibe.com", // privacy + data requests
   },
   legal: {
     lastUpdated: "July 14, 2026", // shown at the top of each legal page
     // One-line disclaimer in the footer bottom bar. Swap for your niche.
     disclaimer:
-      "Paper Posy printables are free for personal, non-commercial use. Print as many copies as you need.",
+      "Barrio Vibe printables are free for personal, non-commercial use. Print as many copies as you need.",
   },
   brand: {
-    monogram: "PP",   // 2-letter mark used in avatar / quote blocks
+    monogram: "BV",   // 2-letter mark used in avatar / quote blocks
     foundedYear: 2026, // used in the footer copyright line
   },
 
