@@ -10,6 +10,16 @@ const PERSON_ID = `${BASE_URL}/about#person`;
 const LOGO_URL = `${BASE_URL}/logo.png`;
 const OG_DEFAULT = `${BASE_URL}/og-default.jpg`;
 
+// Actual topical entities the brand/author cover, a clearer knowsAbout signal
+// for entity/topic resolution than restating the one-line niche description.
+const KNOWS_ABOUT = [
+  "Printable wall art",
+  "Coloring pages",
+  "Home organization printables",
+  "Kids and preschool printables",
+  "Meal planning printables",
+];
+
 export function websiteSchema() {
   return {
     "@context": "https://schema.org",
@@ -47,7 +57,7 @@ export function organizationSchema() {
     image: OG_DEFAULT,
     founder: { "@id": PERSON_ID },
     email: siteConfig.contact.email,
-    knowsAbout: [siteConfig.niche],
+    knowsAbout: KNOWS_ABOUT,
     publishingPrinciples: `${BASE_URL}/editorial-policy`,
     // Only emit sameAs when we actually have verifiable profiles. An empty array
     // is a dead entity-resolution signal; fall back to the founder's profiles so
@@ -74,7 +84,7 @@ export function personSchema() {
     jobTitle: siteConfig.author.role,
     description: siteConfig.author.shortBio,
     worksFor: { "@id": ORG_ID },
-    knowsAbout: [siteConfig.niche],
+    knowsAbout: KNOWS_ABOUT,
     ...(siteConfig.author.sameAs.length > 0 && {
       sameAs: [...siteConfig.author.sameAs],
     }),

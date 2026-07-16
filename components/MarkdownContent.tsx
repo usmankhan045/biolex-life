@@ -1,6 +1,7 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { PrintableCallout } from "@/components/ui";
+import { getPrintableBySlug } from "@/lib/queries";
 import type { ComponentPropsWithoutRef } from "react";
 
 function expandShortcodes(content: string): string {
@@ -10,13 +11,28 @@ function expandShortcodes(content: string): string {
   );
 }
 
-function InlinePrintable({ slug }: { slug: string }) {
+// Async server component: render the REAL printable (title, description,
+// thumbnail) referenced by the shortcode instead of hardcoded boilerplate that
+// repeated identically across every post. Falls back to a generic callout if
+// the slug can't be resolved, so the CTA always renders.
+async function InlinePrintable({ slug }: { slug: string }) {
+  let printable = null;
+  try {
+    printable = await getPrintableBySlug(slug);
+  } catch {
+    // DB unavailable, fall through to the generic callout.
+  }
   return (
     <div className="my-8">
       <PrintableCallout
-        title="Free Printable Worksheet"
-        description="Download this free worksheet to put the concepts from this guide into practice."
+        title={printable?.title ?? "Free Printable"}
+        description={
+          printable?.description ??
+          "Download this free printable to put this guide into practice, no sign-up required."
+        }
         href={`/free-printables/${slug}`}
+        badge="Free Printable"
+        thumbnailUrl={printable?.thumbnail_url}
       />
     </div>
   );

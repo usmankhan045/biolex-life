@@ -1,8 +1,9 @@
+import Image from "next/image";
 import { Tag } from "./Tag";
 import { cn } from "@/lib/utils";
 import { HTMLAttributes } from "react";
 
-// The dashed border references the "cut here" line on physical printable sheets, 
+// The dashed border references the "cut here" line on physical printable sheets,
 // the dotted perforation that separates the document from the margin.
 
 interface PrintableCalloutProps extends HTMLAttributes<HTMLDivElement> {
@@ -10,6 +11,9 @@ interface PrintableCalloutProps extends HTMLAttributes<HTMLDivElement> {
   description: string;
   href?: string;
   badge?: string;
+  // Real printable preview. When set, replaces the generic ruled-paper glyph
+  // with an actual thumbnail (a multi-modal signal + a stronger visual CTA).
+  thumbnailUrl?: string | null;
 }
 
 export function PrintableCallout({
@@ -17,6 +21,7 @@ export function PrintableCallout({
   description,
   href = "/free-printables",
   badge = "Free Download",
+  thumbnailUrl,
   className,
   ...props
 }: PrintableCalloutProps) {
@@ -31,19 +36,32 @@ export function PrintableCallout({
       )}
       {...props}
     >
-      {/* Printable icon, a ruled-paper glyph */}
-      <div
-        className="shrink-0 w-14 h-16 rounded-lg bg-background border-2 border-text/15 flex flex-col justify-center items-center gap-1.5 px-2"
-        aria-hidden
-      >
-        {[0, 1, 2, 3].map((i) => (
-          <span
-            key={i}
-            className="block h-px bg-muted/40 rounded-full"
-            style={{ width: i === 0 ? "60%" : "100%" }}
+      {thumbnailUrl ? (
+        // Real printable preview thumbnail (portrait 3:4).
+        <div className="relative shrink-0 w-14 h-[4.5rem] rounded-lg overflow-hidden border-2 border-text/15 bg-background">
+          <Image
+            src={thumbnailUrl}
+            alt={`Preview of ${title}`}
+            fill
+            sizes="56px"
+            className="object-cover"
           />
-        ))}
-      </div>
+        </div>
+      ) : (
+        /* Printable icon, a ruled-paper glyph */
+        <div
+          className="shrink-0 w-14 h-16 rounded-lg bg-background border-2 border-text/15 flex flex-col justify-center items-center gap-1.5 px-2"
+          aria-hidden
+        >
+          {[0, 1, 2, 3].map((i) => (
+            <span
+              key={i}
+              className="block h-px bg-muted/40 rounded-full"
+              style={{ width: i === 0 ? "60%" : "100%" }}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Text */}
       <div className="flex-1 min-w-0">
