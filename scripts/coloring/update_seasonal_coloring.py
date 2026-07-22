@@ -32,25 +32,15 @@ def spiderweb(rings=9, spokes=16):
     return ("".join(g), "-410 -410 820 820", None)
 
 # distinct, detailed recipes (motif types: petal star diam scal dots flow circ bloom)
+# Only star + snowflake stay geometric here (they already read as star / snowflake).
+# christmas / ornament / new-year use REAL themed motifs via gen_seasonal_v2.py, and
+# halloween / spiderweb use gen_halloween.py — both called at the end of this script.
+# Do NOT add generic geometric recipes for those five here; they must stay themed.
 R = {
- "christmas-mandala-coloring-page": ("Christmas Mandala",
-    [("flow",336,30,12,8),("dots",300,5,24),("scal",286,-12,24),
-     ("petal",206,288,28,True,True,18),("dots",190,7,18),("scal",172,10,24),
-     ("flow",140,26,9,6),("circ",64),("bloom",56,12,14)]),
- "christmas-ornament-mandala-coloring-page": ("Ornament Mandala",
-    [("scal",372,-12,40),("dots",352,5,40),("diam",280,360,20,20),("dots",262,6,20),
-     ("petal",180,262,24,True,True,20),("scal",164,10,30),("diam",96,160,16,20),
-     ("petal",30,92,16,False,True,16),("circ",26),("bloom",24,10,10)]),
  "star-mandala-coloring-page": ("Star Mandala",
     [("star",300,374,40,8),("dots",286,6,16),("petal",210,286,30,True,True,16),
      ("star",150,208,30,16),("dots",134,6,16),("petal",40,120,20,False,True,12),
      ("star",10,36,10,8),("circ",8)]),
- "halloween-mandala-coloring-page": ("Halloween Mandala",
-    [("star",310,374,34,20),("dots",296,5,20),("diam",220,300,22,10),("star",150,214,28,10),
-     ("dots",134,6,20),("diam",70,140,18,10),("star",10,60,16,10),("circ",8)]),
- "new-year-mandala-coloring-page": ("New Year Mandala",
-    [("petal",316,372,16,True,False,32),("dots",305,5,32),("flow",250,26,16,6),("scal",214,-10,32),
-     ("petal",120,206,24,True,True,18),("dots",104,7,18),("flow",70,24,8,6),("circ",30),("bloom",26,12,10)]),
  "snowflake-mandala-coloring-page": ("Snowflake Mandala",
     [("star",300,372,26,12),("dots",286,5,12),("diam",210,296,22,12),("star",140,208,28,6),
      ("dots",124,6,12),("diam",56,132,18,6),("star",6,50,14,6),("circ",8)]),
@@ -63,6 +53,9 @@ OUT = "public/printables"
 for slug, (title, rings) in R.items():
     art = mandala_recipe(rings)
     open(f"{OUT}/{slug}.html","w").write(coloring_page(title, EYE.get(slug,"Barrio Vibe · Free Coloring Page"), art))
-# spiderweb distinct
-open(f"{OUT}/spiderweb-mandala-coloring-page.html","w").write(coloring_page("Spiderweb", EYE["spiderweb-mandala-coloring-page"], spiderweb()))
-print("regenerated 7 seasonal coloring pages (all distinct)")
+# Themed pages: real motifs instead of generic geometry.
+import gen_halloween      # jack-o'-lanterns, bats, candy corn, spider + web
+import gen_seasonal_v2    # holly, ornaments, trees, fireworks, midnight clock
+gen_halloween.main()
+gen_seasonal_v2.main()
+print("regenerated seasonal coloring pages (star/snowflake geometric + real Halloween/Christmas/New-Year motifs)")
