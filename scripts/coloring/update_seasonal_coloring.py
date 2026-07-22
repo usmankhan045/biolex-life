@@ -56,6 +56,11 @@ for slug, (title, rings) in R.items():
 # Themed pages: real motifs instead of generic geometry.
 import gen_halloween      # jack-o'-lanterns, bats, candy corn, spider + web
 import gen_seasonal_v2    # holly, ornaments, trees, fireworks, midnight clock
+import gen_zentangle      # dense HERO zentangle pages (highest quality; wins last)
 gen_halloween.main()
 gen_seasonal_v2.main()
-print("regenerated seasonal coloring pages (star/snowflake geometric + real Halloween/Christmas/New-Year motifs)")
+# gen_zentangle upgrades a subset to dense, pin-quality hero art. It runs LAST so
+# its slugs override the simpler versions above. Currently: ornament, snowflake,
+# halloween mandala. More slugs move here as their hero art is built.
+gen_zentangle.build_real()
+print("regenerated seasonal coloring pages (zentangle heroes + themed motifs)")
