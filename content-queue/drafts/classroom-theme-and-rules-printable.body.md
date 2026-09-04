@@ -36,6 +36,4 @@ Teach the rules the same way you teach any lesson: introduce them, model them, p
 
 Print on cardstock and laminate everything you plan to reuse, and store each set flat in a labeled folder so it is ready next August. The upfront work of building a coordinated rules-and-signs set pays off only if the pieces survive a full year of little hands and a summer in a closet. Run your posters and labels through a laminator, or slip them into self-sealing laminating pouches, which hold up far better than a bare sheet and let you write on cards with a dry-erase marker for flexible groups or seating. Punch holes and use rings for sign sets you rotate, and keep a master digital copy so you can reprint a single damaged card instead of the whole batch. A reusable classroom rules printable turns a one-time setup into a system you tweak, not rebuild, every year. Store by theme, and your future self starts the year calm instead of scrambling.
 
-{{printable:classroom-labels}}
-
 Get the words right, wrap them in one consistent look, and put them where the behavior happens, that is the whole formula. Print the set, laminate what you'll reuse, and walk into day one with a room that already knows the rules.

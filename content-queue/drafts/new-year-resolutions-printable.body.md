@@ -37,8 +37,6 @@ Check in weekly and do a deeper review once a month. A quick weekly glance at yo
 
 A resolution is the intention; a goal is the measurable version of it with a target and a plan. "Get organized this year" is a resolution, a direction. "Declutter one room a month using a checklist" is a goal, specific, scheduled, and trackable. Resolutions set the theme; goals make it happen. The trick is to pair them: let each broad resolution point to one or two concrete goals you can actually schedule, track, and check off as the weeks go by. If organization is your theme, our [New Year goals printable](/blog/new-year-goals-printable) breaks big intentions into quarterly milestones and monthly focus areas, and our [New Year home reset checklist](/blog/new-year-home-reset-checklist-printable) turns "get the house in order" into a room-by-room fresh start you can finish in a weekend. Together they carry a January wish all the way to a real, repeatable result, which is exactly what a resolutions worksheet is built to do.
 
-{{printable:new-year-goals-planner}}
-
 Print it, fill it in, and put it somewhere you'll actually see it every day, the fridge, your planner, the inside of a cabinet door. Then give it two minutes a week and a slightly longer look once a month. That is the entire system: a specific list you can see, and a simple habit of returning to it often enough to catch the drift before it turns into another abandoned January. Resolutions don't stick because you tried harder in January, they stick because you kept looking at them all year long. Make this the year the list finally makes it past February.
 
 

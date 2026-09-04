@@ -44,6 +44,4 @@ Start with an odd number of frames, three or five, and one clear anchor piece, t
 
 A printable gives you the same finished look for a fraction of the cost and none of the wait. A store-bought mountain canvas or framed poster can run thirty to eighty dollars plus shipping, and you are locked into whatever single size arrives. A free printable lets you print exactly the dimensions your frame needs, reprint instantly if a sheet smudges or your style shifts, and test the piece on your wall before investing in framing. You control the paper, the scale, and even the ink color. The only thing you trade away is the two-week delivery, and you swap it for a fifteen-minute afternoon. For a wall you might restyle next season, that flexibility is worth far more than a permanent canvas you have to live with. Download the mountain design, print it today, and if you decide to refresh the room later, a brand-new print costs nothing but a sheet of paper.
 
-{{printable:mountains-line-art-wall-art}}
-
 Grab the file, print it on the nicest paper you have on hand, and give that blank wall the calm, finished look it has been missing.

@@ -42,6 +42,4 @@ The best seasonal bulletin board ideas plan for this from the start: choose a fi
 
 Anchor your board to the same palette and font as your labels and signs, and it stops competing with the room and starts anchoring it. Pull the headline, name tags, and any labels from the same coordinated printable set you used for your bins and shelves, so every surface speaks one visual language. Repeat your single accent color in the border and one small motif, a star, a leaf, a shape, that already appears elsewhere in the room. A board that echoes your decor makes the whole wall feel curated; a board in random clip-art colors fights everything around it. If you are still choosing an overall look, our guide to [classroom decor on a budget](/blog/classroom-decor-printable) walks through picking one palette and applying it everywhere for a few dollars. And to keep your signage on-theme, this set of [classroom rules and theme signs](/blog/classroom-theme-and-rules-printable) drops straight into the same colors. Coordinate once, and the board practically designs itself.
 
-{{printable:classroom-labels}}
-
 Pick one theme, pull your pieces from a single coordinated set, and build the frame so you can reuse it. A welcoming, pulled-together bulletin board is made one printable at a time, not one expensive kit at a time.

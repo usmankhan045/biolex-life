@@ -43,8 +43,6 @@ For the statement piece, a warm [sunset wall art print](/blog/sunset-wall-art-pr
 
 Frame retro prints in simple, low-profile frames and hang the center of the arrangement at eye level, about 57 to 60 inches from the floor. The frame should stay quiet so the bold retro color does the talking; skip ornate gold or heavy borders that fight the graphic style. For a single print above a sofa or bed, keep the bottom of the frame six to ten inches above the furniture so the two read as a pair rather than drifting apart. If you are nervous about nail holes, removable strips hold lightweight paper prints securely and come off cleanly, which makes this a genuinely renter-friendly project. Once it is up, live with it for a few days before deciding it is final, then reprint anything you want in a fresh color. Because the file is yours to keep, your wall can evolve with the seasons for the cost of a sheet of paper.
 
-{{printable:mid-century-sun-wall-art}}
-
 Keep the file saved, print on nice paper, and let one warm retro print turn that blank wall into the most collected corner in the house. Good decor is not about spending more; it is about choosing pieces that finally feel like home.
 
 

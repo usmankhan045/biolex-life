@@ -36,6 +36,4 @@ Treat the "you are so loved" print as the text anchor and build a small cluster 
 
 Start by downloading the file, then print it at your chosen size on matte cardstock, and be sure to select "actual size" or "100%" in your printer settings so the art is not accidentally scaled down with a white border. If you are going larger than letter size, upload the file to a print shop's website and pick an engineering or poster print on cardstock instead of trying to tile it at home. Once it is printed, trim to your frame's dimensions with a paper cutter, or a ruler and craft knife, for clean straight edges, then slide it behind the mat or glass. Wipe the inside of the glass before you close the frame so there are no smudges trapped against the print. Hang the piece 57 to 60 inches from the floor to center it at eye level, or a little higher above a crib so it clears the rail safely. The whole process takes about fifteen minutes from download to hung, and because it is a printable, you can redo any single step, or reprint the entire thing, for the cost of one more sheet of paper.
 
-{{printable:you-are-so-loved-wall-art}}
-
 Download the you are so loved printable, print it on good paper, and finish that last bare wall this afternoon. The sweetest detail in the nursery turns out to be the easiest one you have left, and it costs about the price of a sheet of cardstock.

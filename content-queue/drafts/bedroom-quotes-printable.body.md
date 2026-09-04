@@ -34,5 +34,3 @@ Keep the framing simple and consistent, and the whole wall looks curated instead
 ## Is a printable really as good as buying bedroom wall art?
 
 For quote art, a printable is genuinely as good as a purchased print, and often better, because the value of typographic wall art lives in the design and the paper, both of which you fully control at home. A boutique print charges you for shipping, packaging, and markup on what is, at its core, ink on nice paper. Print the same design yourself on heavy matte stock behind a clean frame and mat, and no guest could tell the difference from across the room. The printable also wins on flexibility: you can resize it for a different wall, print a fresh copy the day it fades, and change your bedroom's whole mood for the cost of a sheet of paper instead of a new order. Start with one calming phrase above the bed, and let the room tell you whether it wants a second. Download the bedroom quotes printable below, frame it tonight, and finally finish that wall.
-
-{{printable:be-still-wall-art}}

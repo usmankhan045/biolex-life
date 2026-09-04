@@ -45,8 +45,6 @@ For coordinating pieces, our [free mid-century modern printable wall art](/blog/
 
 Yes, printable sunset wall art is worth it whenever you value flexibility and budget over owning a physical original. A free printable costs you paper and ink, prints in any size you need, and can be reprinted the moment a frame breaks or you want a fresh copy, which a $60 boutique print cannot match. You also get to test a piece on the wall before you commit, so you never overpay for something that turns out wrong for the room. The trade-off is that you do the printing and framing yourself, which takes a few minutes and a trip to no store at all. For most home walls, that trade is easy. You end up with warm, framed art that looks nearly identical to the expensive version, at a fraction of the cost, and with the freedom to change your mind next season without spending a dime.
 
-{{printable:mid-century-sun-wall-art}}
-
 Print it, slide it into a frame you already own, and let that warm horizon fill the wall that has been empty for too long. Start with one piece over the sofa or the bed, live with it for a week, and add a second only if the wall asks for it. That is the quiet advantage of printing your own art: you can move slowly, change your mind, and reprint any size for pennies. Good art does not have to be expensive; sometimes it just has to be the right shade of gold, in the right spot, on a wall you finally stopped avoiding.
 
 

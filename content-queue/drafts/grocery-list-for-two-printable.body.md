@@ -54,6 +54,4 @@ Pair your list with a short meal plan so every item already has a job before it 
 
 Cook once and eat twice wherever you can, portioning the second serving into tomorrow's lunch the moment dinner is done, so it feels like a gift instead of a chore. Keep one loose "use-it-up" night each week to clear the fridge before the next shop, which quietly erases most of your waste. A grocery list for two works best not as a shopping tool on its own but as the last step of a small plan: the plan decides, the list remembers, and your bill and your trash both shrink. If you want to go deeper on that, our [family grocery list on a budget](/blog/family-grocery-list-on-a-budget-printable) guide covers it step by step. There is a full breakdown of this in our [grocery shopping list](/blog/grocery-shopping-list-printable) post.
 
-{{printable:grocery-list-template}}
-
 Print it, keep it on the fridge, and let a five-minute plan do the deciding. Shopping for two gets easier the moment the list, not the store, is the thing that sets the size.

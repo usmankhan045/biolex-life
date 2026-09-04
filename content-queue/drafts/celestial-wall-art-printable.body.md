@@ -35,8 +35,6 @@ Hang it where you want the room to feel calm, which is why bedrooms are the most
 
 Repeat one element across every piece, and even mismatched prints become a set. The easiest element to repeat is the frame: identical frames in one finish will unify prints of different subjects instantly. The second is palette, keep all the prints within the same two or three colors, like navy, cream, and gold, so nothing jumps out. Third is spacing: lay everything on the floor first, keep even gaps of 2 to 3 inches, and trace paper templates on the wall with painter's tape before you put in a single nail. That test run saves you from crooked, over-nailed walls. Start with the free printable set below, mix a large moon with a couple of smaller star prints, frame them the same way, and you have a designer-looking celestial gallery wall for the cost of paper and frames. Print extras too, swapping a piece seasonally keeps the wall feeling fresh without buying anything new.
 
-{{printable:celestial-moon-wall-art}}
-
 Print the set, frame it consistently, and hang it where you will see it most. A calm, celestial wall is really just a few good prints, matching frames, and a little even spacing away, and it costs a small fraction of anything you would ever order online.
 
 

@@ -34,6 +34,4 @@ Yes, grateful wall art is one of the easiest ways to bring warmth into your home
 
 Hang the print somewhere you pass every day and let it act as a small, silent cue to name one thing you are thankful for. A gratitude reminder works best where your eyes already land: above the coffee maker, beside the front door, or on your nightstand so it is the first and last thing you see. Some families build a simple ritual around it, at dinner each person shares one good thing from the day, with the framed word as the anchor that starts the conversation. You can also rotate the print with a companion piece every so often so the message stays fresh and your eyes keep catching it instead of tuning it out. If one word inspires you to build a small gratitude corner, pair it with our free [Gather printable wall art](/blog/gather-printable-wall-art) for a warm, cohesive vignette on a shelf or side table. Small, visible reminders like these are what quietly turn gratitude from a nice idea into an everyday habit that actually sticks.
 
-{{printable:grateful-wall-art}}
-
 Print it, frame it, and let one small word set the tone for your whole home. Gratitude looks good on every wall, and this one costs you nothing but a sheet of paper.

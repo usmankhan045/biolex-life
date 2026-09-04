@@ -41,6 +41,4 @@ Each of the eight phases marks a stage in the moon's roughly 29.5-day cycle, and
 
 Print the full set, frame them in order, and you have a piece of moon phases wall art that means something every time you walk past it.
 
-{{printable:boho-sun-moon-wall-art}}
-
 Hang it this weekend, step back, and that wall you have been avoiding for months finally does something for the room. All it took was good paper, a frame, and a few minutes.

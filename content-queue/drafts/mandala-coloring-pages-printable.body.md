@@ -36,6 +36,4 @@ Finished mandalas are worth far more than a spot in the recycling bin, and a few
 
 {{printable:coloring-pumpkin}}
 
-{{printable:mandala-coloring-page}}
-
 Print a page tonight, choose a few colors you love, and give yourself twenty quiet minutes. The calm is in the coloring, not in the finishing.

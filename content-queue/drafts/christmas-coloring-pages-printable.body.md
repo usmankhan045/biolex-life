@@ -35,8 +35,6 @@ Finished coloring pages are free holiday decor and heartfelt little gifts, so th
 
 Coloring gives children a calm, focused outlet exactly when the holiday season overwhelms them, and it buys parents a genuine stretch of quiet in the middle of the chaos. The stretch of December between school ending and the big day is long, overstimulating, and full of waiting, waiting for guests, for dinner, for the event that keeps getting talked about. A stack of Christmas coloring pages meets that restlessness with something quiet and hands-on. The repetitive motion of filling in shapes is regulating for kids who are wound up, and it builds fine-motor control and pencil grip along the way without feeling like a lesson. It also travels well: a few folded sheets and a pouch of crayons keep small hands busy on a long car ride to relatives or at a restaurant table while you wait for the meal. For you, it is fifteen or twenty minutes to finish a task with everyone settled at the table instead of underfoot. Keep a printed stack in a kitchen drawer through the whole month so the answer to a restless afternoon is always within arm's reach, no store trip, no screen, no cost.
 
-{{printable:coloring-flower-bouquet}}
-
-{{printable:christmas-mandala-coloring-page}}
+{{printable:coloring-christmas-mandala}}
 
 Print a few, spread out the crayons, and let the table go quiet for a while. A good coloring page asks nothing of you but a sheet of paper, and gives back a calmer afternoon.

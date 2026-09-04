@@ -46,9 +46,7 @@ The best-looking flower mandalas come from a little planning before you touch a 
 
 A soft pink-and-green combination feels classically floral, but a bold sunset palette of coral, gold, and plum is just as lovely, and a cool scheme of blues and purples turns the same bloom serene. Color the same petal shape in each ring the same shade to let the underlying pattern shine, then save a metallic or white gel pen for tiny highlights at the very end. And do not feel you have to finish in one sitting. Mandalas are forgiving, and setting one aside to return to later is part of the calm they offer.
 
-{{printable:floral-mandala-coloring-page}}
-
 Keep a page or two printed and within reach, and let the pattern do the quiet work of settling your mind. Whether you hand one to a restless kid, sit down with it yourself after the dishes are done, or set out a bowl of colored pencils for guests, these flower mandala coloring pages ask nothing of you but a few unhurried minutes and a handful of colors. A calmer afternoon, it turns out, is often just one sheet of paper away.
 
 
-{{printable:botanical-05-wall-art}}
+{{printable:coloring-flower-bouquet}}

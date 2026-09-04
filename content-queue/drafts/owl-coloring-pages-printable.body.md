@@ -38,5 +38,3 @@ Yes, owl coloring pages are genuinely good for adult stress relief, and the deta
 {{printable:coloring-butterfly}}
 
 Print your favorite owl, grab whatever pencils are closest, and give yourself permission to color one feather at a time.
-
-{{printable:owl-coloring-page}}

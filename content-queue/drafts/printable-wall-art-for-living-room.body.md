@@ -35,6 +35,4 @@ Lay the whole arrangement on the floor first, then trace each frame onto paper a
 
 For living-room-size art, a local print shop or online print service gives you the sharpest, most color-accurate result, especially above 11x14. Home printing is perfect for smaller prints (up to 8x10 or 8.5x11) and for testing a design on the wall before you commit to a large copy. When you send a file out, ask for matte photo paper or heavyweight card stock and request "print at 100 percent, do not scale" so the proportions stay true. A warehouse or drugstore photo counter handles standard poster sizes cheaply, often same day. Whichever route you choose, download the highest-resolution file available and keep it, so you can reprint if a frame breaks or you want a fresh copy next season. That is the quiet luxury of printable art for living room walls: the file is yours to reuse, so your space can change as often as you like, for free.
 
-{{printable:this-is-us-wall-art}}
-
 Download it, print it at the size that fits your wall, and frame it up. That blank space over the sofa has been waiting long enough.

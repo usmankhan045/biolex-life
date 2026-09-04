@@ -39,6 +39,4 @@ Repeat something, color, frame, or subject, so the pieces read as a deliberate s
 
 {{printable:black-white-04-wall-art}}
 
-{{printable:mountains-line-art-wall-art}}
-
 Print one piece this week, hang it at eye level, and let the empty space around it do the work. A calm, put-together room is built one simple frame at a time.

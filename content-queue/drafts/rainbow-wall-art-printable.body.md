@@ -37,6 +37,4 @@ Hang rainbow wall art at the child's eye level or centered over a piece of furni
 
 {{printable:celestial-05-wall-art}}
 
-{{printable:boho-rainbow-wall-art}}
-
 Save the file, print it on nice paper, and drop it into a frame you already own. The blank wall you keep scrolling past can be finished tonight, for the price of a sheet of cardstock.

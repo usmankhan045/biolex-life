@@ -43,6 +43,4 @@ Good pantry organization is a habit, not an event, and it comes down to three sm
 
 The most budget-friendly way to organize a pantry starts with sorting and labeling, both free, before you spend a cent on bins. Empty and declutter first; you'll often free up so much space that you need far fewer containers than expected. Shop your own home for bins: shoeboxes, baskets, and jars you already have work fine while you learn your zones. Dollar stores carry clear bins, can risers, and lazy Susans for a fraction of boutique prices, and printable labels give you that cohesive, expensive look for nothing. Decant into mismatched jars now and upgrade to a matching set later, if ever. If you want more quick, low-cost wins throughout the kitchen, these [kitchen organizing hacks](/blog/kitchen-organizing-hacks-printable) stretch the same dollar further. The point is that an organized pantry is built on a system, not a shopping spree, the labels and zones do the heavy lifting, and those cost almost nothing.
 
-{{printable:pantry-and-kitchen-labels}}
-
 Print the labels, zone one shelf at a time, and let the marked spots do the remembering. A pantry you can see is a pantry you can actually use, and it stays that way on two minutes a week.

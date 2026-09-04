@@ -34,5 +34,3 @@ If your dining area opens into the living space, echo the colors you used there 
 ## How do you print dining room wall art so it looks crisp and frame-ready?
 
 Print at the file's full resolution on quality paper, and the result rivals a store-bought print. For frames up to 11x14, a home inkjet on matte photo paper or heavy cardstock gives sharp, frame-ready results; for anything 16x20 or larger, upload the file to a local print shop or an online poster service so the image stays crisp when scaled. Always set your printer to "actual size" or 100 percent rather than "fit to page," which quietly shrinks the design and adds uneven white borders. Choose matte over glossy for word art and quotes, since matte reads better behind glass and avoids glare across a dining table lit by an overhead fixture. Print a quick draft on plain paper first to check the size in your frame before committing good stock. Once it looks right, the "gather" design below is ready to download, and if you want a coordinating piece, our free [Gather printable wall art](/blog/gather-printable-wall-art) offers another layout in the same warm style.
-
-{{printable:gather-quote-wall-art}}

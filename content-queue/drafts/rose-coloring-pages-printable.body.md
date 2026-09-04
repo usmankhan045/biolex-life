@@ -36,8 +36,6 @@ Print on the right paper first: for colored pencils, standard letter printer pap
 
 Absolutely, rose coloring pages work beautifully for children as well as adults, and coloring together makes for an easy, screen-free activity you can share at the kitchen table. For younger kids, the larger single-bloom pages are ideal because the petal spaces are big enough for small hands and washable markers or chunky crayons. Older children who want more of a challenge can take on the detailed bouquet and wreath designs, which help them practice staying inside finer lines and mixing colors. Coloring supports fine motor skills, color recognition, and patience, all while feeling like play rather than a lesson. There is no need to hover or correct: let them color a blue rose or a rainbow one if that is what makes them happy. Print a stack, spread out the pencils, and let everyone pick a page. When you find a favorite, just reprint it as many times as you like.
 
-{{printable:rose-coloring-page}}
-
 Download the pages, print what you love, and let the color do the rest. There is no skill to master and nothing to buy, just outlines waiting for whatever palette you feel like today. A quiet page and a handful of pencils is one of the simplest ways to give yourself twenty unhurried minutes that belong entirely to you.
 
 

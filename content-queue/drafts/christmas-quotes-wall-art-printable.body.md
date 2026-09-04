@@ -52,6 +52,4 @@ Above the mantel, lean a larger quote against the wall instead of hanging it, so
 
 Yes, and reusing them is exactly what makes free printables such a good deal. Because the quotes are timeless rather than dated to one specific year, a single print survives many Decembers. To keep a piece frame-ready, take it out in January, slide it into a sheet protector or a large zip bag, and store it flat in a bin with the rest of your holiday décor so it never curls or creases. Your frames go back to everyday art for eleven months and return to Christmas duty on demand, no reprinting, no new spend. Keep a "print now" folder on your desktop and you can replace a warped or coffee-stained sheet in seconds. And when the tree comes down, a [word of the year printable to frame](/blog/word-of-the-year-printable) is a natural next piece, carrying that same cozy, intentional feeling into the new year.
 
-{{printable:joy-wall-art}}
-
 Print the set tonight, slide the pieces into frames you already own, and your walls can feel like Christmas before the evening is over, no craft store, no shipping, no extra spend.

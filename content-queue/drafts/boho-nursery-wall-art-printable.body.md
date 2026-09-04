@@ -39,8 +39,6 @@ A warm, muted palette anchored in cream and terracotta works best, with sage gre
 
 Repeat the art's colors and textures elsewhere in the room so the prints feel woven in, not stuck on. Pull one or two shades from your wall art into the soft goods, a terracotta throw over the rocker, a sage crib sheet, a mustard cushion, so the eye travels naturally between the walls and the room. Add texture the boho way with natural materials: a jute or wool rug, a rattan basket for blankets, a small wood shelf, and a trailing faux plant or a bit of macrame near the frames. Keep surfaces uncluttered so the art stays the focus, and let a little negative space breathe rather than filling every inch. If you want the same relaxed look in an older child's space down the line, the ideas in our [printable wall art for a kids room](/blog/printable-wall-art-for-kids-room) guide scale up beautifully. Style the room around the prints, and a handful of free downloads can carry the entire aesthetic from newborn days onward.
 
-{{printable:boho-rainbow-wall-art}}
-
 Print the set on nice paper, slot the pieces into a few warm frames, and the walls above that crib finally feel as finished as the rest of the room. A beautiful boho nursery does not require a big budget, just a coordinated palette, a printer, and a quiet weekend afternoon. Start with the boho rainbow above, frame it this week, and let the wall grow one gentle, gathered print at a time. This pairs well with our [scandinavian wall art](/blog/scandinavian-wall-art-printable) guide.
 
 {{printable:nursery-06-wall-art}}

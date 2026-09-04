@@ -38,6 +38,4 @@ If you want a bigger bank of projects to slot into those themed weeks, our round
 
 Adjust the amount of prep and independence, not the whole project, most preschool crafts for summer scale up or down with tiny tweaks. For a two- or three-year-old, pre-cut the shapes, offer one color at a time, and expect gluing and sticking rather than precise painting; the process matters far more than the result. For a four- or five-year-old, hand over the scissors, add a sorting or counting step, and let them plan their own color choices to stretch the challenge. On rainy or brutally hot days, pivot to low-mess indoor options: sticker mosaics, contact-paper collages that need no glue, playdough, or tissue-paper suncatchers taped to the window. Keep a small "rainy day" pouch of no-mess supplies ready so a scrapped outdoor plan doesn't scrap the whole afternoon. Print the planner, fill in a few themed weeks, and you'll have a calm, hands-busy answer ready for whatever the summer throws at you.
 
-{{printable:preschool-crafts-planner}}
-
 Tape the finished crafts to the fridge, keep the planner where you'll see it, and let a simple theme decide the day. A summer full of proud little makers is built one ten-minute craft at a time.

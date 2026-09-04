@@ -36,8 +36,6 @@ For the sharpest result, print on plain white letter paper at 100 percent scale 
 
 Yes, pattern pages work beautifully for children because the repeating shapes are approachable and the large sections are easy for small hands to fill. A geometric grid or a row of stars gives kids clear boundaries to color inside, which builds fine-motor control and color recognition without the frustration of tiny, detailed artwork. The same sheet that relaxes you can keep a child busy at the kitchen table, which makes patterns a genuine family activity: print two copies of the same design and see how differently you each fill it in. For older kids who want more of a challenge, hand them a denser zentangle-style page. If your household leans toward intricate, doodle-heavy designs, our [free printable zentangle coloring pages](/blog/zentangle-coloring-pages-printable) scale up the detail while keeping that same calming, repetitive feel that makes patterns so easy to love.
 
-{{printable:star-pattern-coloring-page}}
-
 Keep a small stack printed and within reach, and let the pattern do the work. Try leaving a page and a cup of pens on the coffee table or the kitchen counter, somewhere you already sit, so a few minutes of coloring becomes as easy to reach for as your phone. Some evenings you will fill in three shapes and set it down; other nights you will color the whole sheet without noticing the time pass. Both count. A few quiet minutes with a good page and any pen you have on hand is one of the simplest resets there is, no skill, no sign-up, and no mess to clean up after.
 
 

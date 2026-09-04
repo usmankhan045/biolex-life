@@ -38,6 +38,4 @@ Attach coloring to a moment you already pause, and it sticks. The easiest way to
 
 {{printable:coloring-owl}}
 
-{{printable:sunburst-mandala-coloring-page}}
-
 Keep a page and your pencils within reach, pick two colors you love, and let the pattern quiet your mind for a few minutes. A calmer evening is built one simple mandala at a time.

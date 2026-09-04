@@ -35,6 +35,4 @@ In a tight closet, stack a slim set of drawers directly beneath the hanging rod 
 
 Do a two-minute reset whenever you put laundry away, and the system holds indefinitely. The reason organized closets drift back into chaos isn't a flawed layout, it's the small daily shortcuts, the shirt tossed on top instead of folded in, that quietly pile up. Folding straight into the right drawer as you unload the dryer stops that build-up before it starts. Once each season, do a slightly bigger pass: pull anything you didn't wear, refold what's slumped over, and rotate off-season pieces into the harder-to-reach drawers. If a drawer keeps overflowing, that's your signal the category is too big and needs thinning, not a bigger drawer. Starting from scratch or resetting a closet that's gotten away from you? Our full [closet organization guide](/blog/closet-organization-printable) walks the whole space step by step. Keep the printable plan on the closet door as your map, and your closet organizers with drawers will keep earning their keep instead of quietly refilling with chaos.
 
-{{printable:closet-organization-plan}}
-
 Print the plan, assign each drawer its one job, and let the layout make the decisions so you don't have to every morning. A closet that stays organized isn't about willpower, it's about a system quiet enough to run on autopilot.

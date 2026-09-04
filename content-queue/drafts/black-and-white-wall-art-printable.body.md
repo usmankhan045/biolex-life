@@ -43,8 +43,6 @@ Mix subjects freely, because the shared monochrome palette holds everything toge
 
 Keep black and white art from feeling cold by adding warmth through texture and surroundings rather than color. Choose off-white or soft cream paper instead of stark bright white, and lean toward warm charcoal and gray tones over pure jet black wherever the design allows. The frame does a lot of the heavy lifting here: natural oak, walnut, or a woven texture nearby (a basket, a wood shelf) instantly warms a monochrome print. Surround the art with a few organic elements, a trailing plant, a linen runner, a small wood tray, so the wall feels lived-in rather than clinical. A set of matching frames in a warm wood tone, the kind sold in affordable multipacks at any home store, keeps a gallery wall cohesive and cozy at the same time. And resist stranding one lonely print on a huge wall. Give it a companion or a shelf beneath it. In monochrome, warmth comes from what surrounds the art, not from the art itself.
 
-{{printable:mountains-line-art-wall-art}}
-
 Pick a size, print it on good paper, and let the contrast do the decorating for you. Start with one print in one frame, hang it, and see how much calmer the room already feels before you build out the rest. A wall you actually love is a few clicks and one frame away, not a weekend project and not a splurge. There is a full breakdown of this in our [neutral wall art](/blog/neutral-wall-art-printable) post. We cover the details over in [printable wall art for bathroom](/blog/printable-wall-art-for-bathroom).
 
 {{printable:black-white-06-wall-art}}

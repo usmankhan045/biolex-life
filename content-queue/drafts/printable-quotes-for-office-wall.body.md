@@ -31,8 +31,6 @@ Print office quote wall art on heavyweight matte paper at the highest quality se
 
 Ready to print? Download the free file below, send it to your printer or a photo counter, and you can have framed office wall art up before your next coffee break.
 
-{{printable:you-can-do-hard-things-wall-art}}
-
 ## How do you arrange quote prints into a gallery wall above your desk?
 
 Arrange quote prints by laying them out on the floor first, then hanging from the center outward, so the composition feels balanced before a single nail goes in. A small desk gallery usually looks best with an odd number of pieces, three or five, mixing one word-based quote print with a simple line-art or botanical print to give the eye a rest between phrases. Keep a consistent gap of about two inches between frames so the grouping reads as one unit. Hang the center of the arrangement at eye level from your seated position, not standing, since this is a wall you view sitting down. Trace each frame on paper and tape the templates up first to test placement without extra holes. If you rent or work in a cubicle, removable mounting strips hold lightweight frames securely and peel off cleanly later. A mix of quotes and calm imagery keeps the wall motivating without feeling like a pep-rally poster.

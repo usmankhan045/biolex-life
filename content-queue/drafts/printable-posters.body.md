@@ -44,6 +44,4 @@ Across every room, the rule of thumb holds: hang art so its center sits around 5
 
 The frame does more for a printable than the print itself, so put your money there. A set of simple matching frames, especially thin-profile ones with a wide white mat, instantly elevates even a basic print and ties a whole wall together for a fraction of custom framing. The mat is the single biggest upgrade, that border of negative space around the image is exactly what makes a print read as gallery art instead of a page taped to the wall. Beyond framing, mind three things. Use quality matte paper, which hides glare and fingerprints far better than glossy. Print at full resolution and never enlarge a small file past its intended size, which pixelates it. And trim cleanly with a paper trimmer or a ruler and craft knife rather than scissors, so the edges stay straight inside the mat. Finally, keep colors consistent across a set by printing every piece on the same paper in one session. Those small, almost invisible choices are the whole difference between homemade and high-end. Guests will assume you paid a framer, and only you will know the whole wall cost less than a single store-bought print.
 
-{{printable:mountains-line-art-wall-art}}
-
 Download a print, pick your frame, and fill that empty wall this weekend, no shipping, no splurge, no waiting.

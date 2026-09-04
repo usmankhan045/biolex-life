@@ -56,6 +56,4 @@ Rotating five or six of these covers most weeks without repetition ever feeling 
 
 Plan a short weekly reset and never aim for perfect. Pick one calm window, Sunday afternoon works for most people, to glance at the week ahead, choose your dinners, and write out the grocery list in one sitting, before decision fatigue sets in. Just as important: build in slack. When Tuesday goes sideways, do not scrap the plan; slide that dinner to the leftover night and keep going. A meal plan is a guide, not a test you can fail, and cooking four of five planned dinners is a genuine win, not a shortfall. Keep the printable somewhere you actually look, check off meals as you go, and jot notes about what worked so next week's plan gets easier to make. The households that eat well consistently are not more disciplined, they just decided ahead of time, on a single sheet, so the tired version of themselves did not have to.
 
-{{printable:weekly-meal-planner}}
-
 Fill in one week, stick it on the fridge, and let the plan carry you past Wednesday. Eating well is far less about willpower than about deciding once, calmly, before the week begins, and letting a simple printed sheet remember the plan so you do not have to. You will find more on this in [lunch meal planning](/blog/lunch-meal-planning-printable).

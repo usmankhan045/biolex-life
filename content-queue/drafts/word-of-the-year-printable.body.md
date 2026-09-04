@@ -58,6 +58,4 @@ And give yourself grace. Some months the word will feel far away, and returning 
 
 {{printable:word-of-the-year-wall-art}}
 
-{{printable:word-of-the-year}}
-
 Choose your word, frame it, and put it where you'll meet its eyes every morning. A whole year of intention starts with a single page.

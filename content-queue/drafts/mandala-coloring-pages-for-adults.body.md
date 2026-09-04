@@ -35,5 +35,3 @@ Start with a lower-detail mandala and work your way up as your confidence and pa
 If you are brand new, our [simple mandala coloring pages](/blog/simple-mandala-coloring-pages) are the gentlest on-ramp, with big open sections you can finish in a single sitting. Once those feel easy and you want the deep, absorbing kind of session that makes an hour disappear, move up to our [intricate mandala coloring pages](/blog/intricate-mandala-coloring-pages) and let the detail pull you in. The lace mandala below sits right in the sweet spot for adults, detailed enough to hold your attention, open enough that you never lose your place.
 
 {{printable:coloring-snowflake}}
-
-{{printable:lace-mandala-coloring-page}}

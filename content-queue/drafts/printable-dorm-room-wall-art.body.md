@@ -36,6 +36,4 @@ Decorate a dorm on a budget by leaning on free printable art as your main wall t
 
 Keep dorm art cohesive by committing to one color palette and one or two design styles for the whole year, then swapping individual prints within that framework instead of starting over. When every piece shares a common thread, a limited palette or a consistent line-art style, you can rotate a print out for a fresh one and the wall still looks curated. Store the prints you are not using flat in a folder so they stay crisp for the next swap. Because printable art is free to reprint, seasonal refreshes cost nothing: a boho sun for warm months, a snowy line drawing for finals week in December. Keep your removable strips and frames reusable so changing a print takes five minutes, not a whole redecorating session. This flexibility is exactly why printable dorm room wall art beats a permanent poster, your walls grow with you through the whole year.
 
-{{printable:good-vibes-only-wall-art}}
-
 Download the set, print what fits your wall, and let a blank dorm room start feeling like home this weekend.

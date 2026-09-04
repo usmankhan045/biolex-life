@@ -38,6 +38,4 @@ Finished peony pages have far more uses than the recycling bin, and displaying t
 
 {{printable:coloring-animal-mandala}}
 
-{{printable:peony-coloring-page}}
-
 Print a few, keep your pencils close, and let the petals give you an easy, beautiful reason to slow down for a little while.

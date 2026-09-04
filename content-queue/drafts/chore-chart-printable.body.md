@@ -36,6 +36,4 @@ Consistency comes from routine, not willpower, anchor chores to something that a
 
 Revisit the chart every few months and raise the bar as your kids get older, the chart should grow with the child, not stay frozen at what they could handle a year ago. Kids quietly get bored of the same tasks and just as quietly become capable of harder ones, so a chart that never changes slowly stops working. Every season or so, retire a chore they've mastered, hand over one that used to be yours, and let older kids help choose their own tasks, because ownership climbs the moment they have a say. Watch for the tell that a job has gone fully automatic and no longer needs the chart's prompt, that's your cue to level it up. If you're not sure what's reasonable at each stage, our guide to [age-appropriate chores for kids](/blog/chore-chart-by-age-printable) breaks it down year by year. Reprint a fresh chart whenever roles shift, and let the new version reset everyone's expectations at the same time.
 
-{{printable:chore-chart}}
-
 Put the chart somewhere everyone passes, let it do the reminding, and give the new routine a couple of weeks to settle in before you judge it. The nagging fades, not because your kids suddenly love chores, but because the responsibility finally lives somewhere other than your head.

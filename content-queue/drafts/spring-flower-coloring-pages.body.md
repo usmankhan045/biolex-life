@@ -38,6 +38,4 @@ Finished pages do not have to head straight for the recycling bin, a few small i
 
 {{printable:coloring-christmas-mandala}}
 
-{{printable:flower-bouquet-coloring-page}}
-
 Print a stack, set out the crayons, and let the afternoon slow down. A pile of spring flower coloring pages is one of the simplest ways to buy a quiet hour at home.

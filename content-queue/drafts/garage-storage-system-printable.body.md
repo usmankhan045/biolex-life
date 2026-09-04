@@ -37,6 +37,4 @@ Keep a garage organized by giving every item a labeled home and doing a ten-minu
 
 Start by clearing the floor and sorting everything into four staging piles: keep, donate, relocate, and trash. Do not try to organize and purge at the same time, pull it all out onto the driveway first so you can see what you actually have, then make fast decisions. Handle it in one focused weekend or a few evenings: empty the space, sort into piles, get rid of the donate and trash loads immediately so they cannot creep back, and only then install your wall systems and shelving. Work zone by zone rather than perfecting the whole garage at once, and finish each zone before starting the next so you always have a done section keeping you motivated. A written plan keeps you from stalling halfway. Map your zones, list your storage needs, and sketch where each one goes on the free printable below, then work the plan one corner at a time.
 
-{{printable:garage-zone-plan}}
-
 Pin the plan up where you can see it, tackle one zone at a time, and give the car its spot back. A garage you can actually walk through is built one labeled bin at a time.

@@ -39,6 +39,4 @@ A few simple containers turn a decluttered kitchen into one that stays that way,
 
 A full kitchen declutter takes most people three to five hours, but you should almost never do it in one sitting, spreading it across zones is what makes it stick. Block twenty minutes a day for a week and finish one or two zones each session, or set aside a single weekend morning and work zone by zone with breaks. The maintenance is easier than the reset: adopt a "one in, one out" rule so a new gadget means an old one leaves, and run a five-minute nightly counter reset. Once a season, do a quick pass through the fridge and pantry to catch expired items before they pile up. Decluttering isn't a one-time event you finish forever, it's a light rhythm that keeps the room from creeping back to chaos. Keep the checklist handy and re-run it whenever a drawer starts fighting you again.
 
-{{printable:decluttering-checklist}}
-
 Print the checklist, start with a single drawer, and let the zones carry you through the rest. A calm, functional kitchen isn't about owning less for its own sake, it's about giving every remaining thing a home so cooking, eating, and living happen without the friction of clutter in the way.

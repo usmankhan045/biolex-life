@@ -37,8 +37,6 @@ To make a geometric page pop, choose your color scheme before you start rather t
 
 Turn coloring into a habit by attaching it to a moment you already have, after dinner, during a show, or as a wind-down before bed, so you never have to decide when to begin. Keep a small kit and a few printed pages within arm's reach, because friction is what quietly kills a new habit; pencils buried in a drawer three rooms away guarantee you skip it. Set a low bar: ten unhurried minutes counts, and you never have to finish a page in one sitting. Structured designs are especially forgiving to pause and resume, because the pattern holds your place for you. Rotate your sheets so it stays fresh. Our [free printable pattern coloring pages](/blog/pattern-coloring-pages-printable) give you a whole menu of repeating designs to work through, and when you want something more intricate for a slow evening, these [adult coloring pages](/blog/adult-coloring-pages-printable) reward patient, layered shading. Print a small stack, keep them where you will see them, and let the rhythm do the relaxing for you.
 
-{{printable:coloring-zentangle}}
+{{printable:coloring-geometric}}
 
 Pick one pattern, grab your pens, and give yourself full permission to color at your own unhurried pace. Start with the free geometric page below and let a busy evening finally slow down.
-
-{{printable:geometric-pattern-coloring-page}}

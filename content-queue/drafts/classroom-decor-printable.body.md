@@ -34,6 +34,4 @@ Durability comes down to three habits: laminate anything kids will touch, mount 
 
 Anchor your bulletin board to the same palette and font as your labels and signs, and it instantly becomes the centerpiece rather than a competing project. Use your accent color for the border, print headers from your coordinated set, and repeat one shape or motif that already appears elsewhere in the room. A board that matches your decor pulls the whole wall together; a board in random clip-art colors fights everything around it. Keep it functional too, a welcome board in August can convert to a student-work showcase or a word wall later, so you decorate the frame once and swap the middle all year. If you want a starting layout, these [back-to-school bulletin board ideas](/blog/bulletin-board-ideas-printable) map out arrangements you can fill with the same printable headers and accents you are already using. Coordinated borders, matching titles, and one repeated color are all it takes to make a free board look designed.
 
-{{printable:classroom-labels}}
-
 Print one coordinated set, laminate what kids touch, and let a single palette do the heavy lifting. A calm, put-together classroom is built one free printable at a time, not one expensive kit at a time. There is a full breakdown of this in our [preschool classroom decor](/blog/preschool-classroom-decor-printable) post.

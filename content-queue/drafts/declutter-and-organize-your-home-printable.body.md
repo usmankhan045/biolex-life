@@ -49,6 +49,4 @@ Keep it decluttered by controlling what comes in and doing a short daily reset. 
 
 Because you've already given everything a home, the nightly reset is fast; there's no deciding, only returning. Maintenance is far lighter than the first big declutter, you're protecting the system you built, not rebuilding it. Get the whole family in on the returning habit, since a home only stays organized when everyone knows where things belong. Keep the checklist handy and run it whenever a room starts to slip.
 
-{{printable:decluttering-checklist}}
-
 A clutter-free home isn't the reward for one heroic weekend; it's the result of a good order and a few small habits repeated. Print it, work one zone at a time, and let the plan carry you from cluttered to calm, one finished space at a time.

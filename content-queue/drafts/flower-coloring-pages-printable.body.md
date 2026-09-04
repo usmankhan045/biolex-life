@@ -41,8 +41,6 @@ Take your time with it. The point is the calm of the process, not racing to fill
 
 A finished flower page can become far more than fridge art. Once the color is dry, a well-colored botanical print looks genuinely lovely in a simple frame. Group three together for a small gallery wall in a hallway, a nursery, or above a desk. Kids' pages make heartfelt, no-cost greeting cards. Fold a colored bloom in half, write a note inside, and you have a birthday or thank-you card with real personality behind it. You can also trim a favorite design into a bookmark, a gift tag, or a place card for a spring table setting. Because the pages are free to reprint, there is zero pressure to get any one of them perfect. Color the same design three different ways and keep only the one you love. Older kids can color a whole set to decorate for a birthday or a seasonal table, turning a quiet afternoon into homemade decorations that cost nothing. On a rainy afternoon, a rotating stack of flower pages gives everyone at the table something calm to do at the same time. Print a few, keep colored pencils in a jar nearby, and the activity is always ready the moment you need it.
 
-{{printable:floral-mandala-coloring-page}}
-
 Keep a small stack printed and within easy reach, and a calm, screen-free afternoon is never more than one page away. Print a fresh copy whenever the mood strikes, because there is always another bloom waiting to be colored in. There is a full breakdown of this in our [spring flower coloring pages](/blog/spring-flower-coloring-pages) post.
 
-{{printable:botanical-04-wall-art}}
+{{printable:coloring-flower-bouquet}}

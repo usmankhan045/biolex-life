@@ -37,6 +37,4 @@ Labels turn a one-time cleanup into a system that survives a busy week, because 
 
 Maintenance beats any one-time overhaul, and in a room this small it takes only a couple of minutes a day. Do a 60-second reset each night, cap the bottles, put the daily few back on their tray, wipe the sink, and hang the towel, so clutter never gets a foothold to begin with. Once a month, pull the under-sink bins and toss anything expired, empty, or forgotten; small cabinets fill up shockingly fast, and a quick edit keeps your six zones from overflowing again. Whenever you buy something new, follow a one-in-one-out rule so the room never drifts back toward overwhelmed. If you want more room-specific tactics, our [bathroom organization ideas guide](/blog/bathroom-organization-ideas-printable) walks the whole room step by step, and these [under-the-sink organization tips](/blog/under-sink-organization-printable) tackle the cabinet that clutters fastest in most homes. Print the labels, assign your six zones, and let the system, not your memory, keep the smallest, busiest room in the house genuinely in order.
 
-{{printable:bathroom-organization-labels}}
-
 You do not need a bigger bathroom, you need a home for everything and a two-minute habit to keep it there. Pick one zone this weekend, label it, and let the rest fall into place from there.

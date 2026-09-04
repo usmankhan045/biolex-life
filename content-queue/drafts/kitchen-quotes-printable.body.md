@@ -35,6 +35,4 @@ Pull the frame color and the quote's tone from what's already in the room, and t
 
 Start with one anchor quote, then add two or three smaller pieces that share a color or theme, spacing every frame 2-3 inches apart so the group reads as one collection. The mistake that makes a kitchen gallery look scattered is too much air between frames, so keep them close and let them behave as a unit. Mix your quote print with a small botanical, a line drawing, or a second short phrase to add rhythm, and repeat one color, maybe the frame finish or an accent in the art, across every piece so the wall feels planned. Lay the arrangement on the counter first and rearrange until it feels balanced, then hang from the center outward. Odd numbers of frames tend to look more relaxed than perfectly even grids. Start with three prints you genuinely love and add more over time; a kitchen gallery is allowed to grow with you.
 
-{{printable:but-first-coffee-wall-art}}
-
 Print the quote that sounds like your mornings, frame it simply, and give that leftover wall a reason to exist. A kitchen that feels warm and finished was never about spending more. It was about hanging a few words you love, ready to print the moment the coffee's on.

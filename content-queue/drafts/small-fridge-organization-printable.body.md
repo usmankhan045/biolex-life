@@ -36,6 +36,4 @@ Empty, wipe, sort, and load, in that order, and it takes about thirty minutes. S
 
 Keep it going with a two-minute reset tied to a habit you already have, right before grocery day works best, because the fridge is at its emptiest. Pull the front bins forward, move older items to the front, wipe any spills, and note what to use up this week. Because everything already has a home, resetting is fast: you are straightening, not reorganizing. A few habits protect the system long-term. Put groceries away by bin, not by shelf, so nothing drifts, and keep the fridge organization bins grouped by zone the way you first set them up. Do not overfill, bins need a little slack to slide, and a jammed fridge blocks airflow. Once a season, take the bins to the sink for a proper wash; clear acrylic and a pack of extra clear bins from the storage aisle make swaps easy as your groceries change. A small fridge stays organized not because you clean it more, but because the structure makes the tidy choice the easy one.
 
-{{printable:fridge-organization-labels}}
-
 Print the labels, measure your shelves, and let fridge organization bins give every category a home. A small fridge does not need to feel cramped, it just needs a system that puts the food you have where you can actually see it.

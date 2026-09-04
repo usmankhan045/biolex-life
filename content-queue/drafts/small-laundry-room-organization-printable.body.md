@@ -37,6 +37,4 @@ A small laundry room stays organized because of a routine, not because of one bi
 
 The biggest mistake is treating the floor as storage, baskets, jugs, and hampers on the ground eat the little walking space you have and make the whole room read as cluttered. The fix is to get everything possible off the floor and onto the walls or into wheeled bins that tuck away. The second mistake is keeping oversized packaging: a warehouse-size detergent jug, the bulk box of dryer sheets, and three half-empty stain sprays swallow a small shelf, so decant into right-sized containers and store the backups elsewhere. Third is skipping labels, in a shared space, unlabeled bins get put back wrong until the system quietly collapses. And finally, don't over-buy storage furniture; a small room needs a few well-chosen pieces, not a wall of mismatched organizers. Clear the floor, shrink the packaging, label everything, and buy less than you think you need. Grab the free printable below to lock in the labels and routine in one go.
 
-{{printable:laundry-room-labels}}
-
 A small laundry room will never be spacious, but with a few vertical zones, right-sized supplies, and a routine that keeps loads moving, it can be one of the easiest rooms in your house to keep tidy. Print the labels, name your zones, and let the system do the remembering.

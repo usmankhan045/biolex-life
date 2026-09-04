@@ -42,8 +42,6 @@ A good rule of thumb: when you want to switch your brain off entirely, choose a 
 
 Attach coloring to something you already do, and it stops being one more thing to remember. The people who color regularly rarely rely on willpower. They pair it with an existing anchor: the first coffee of the morning, the half-hour after the kids are down, or the wind-down before bed instead of a screen. Keep a printed page and your pencils out where you will see them, because a page already on the table gets colored and one buried in a drawer does not. Set a low bar too. A single flower, or even one petal, counts as a win. Some pages will get finished in one sitting and others will sit half-done for a week, and both are completely fine, because this is a break, not a project with a deadline. Print a few at once so you always have a fresh page waiting. When the ritual is easy to start and impossible to fail, it quietly becomes the calmest part of your day.
 
-{{printable:coloring-floral-mandala}}
-
-{{printable:floral-mandala-coloring-page}}
+{{printable:coloring-botanical-wreath}}
 
 Print one, pour a drink you like, and let the flowers do the rest. Calm is only a few colored petals away.

@@ -43,6 +43,4 @@ Print one master copy and make it reusable rather than printing fresh pages ever
 
 Download the tracing worksheet below, print a copy, and slip it into a sleeve. That single sheet can carry your kindergartner through months of letter and number practice without another trip back to the printer.
 
-{{printable:handwriting-worksheet}}
-
 Free printable worksheets will not teach your child on their own, you will, in those unhurried minutes side by side at the table. But the right sheet removes every excuse not to start: nothing to buy, nothing to search for, nothing to lose. Keep the sessions short, keep them positive, and let your kindergartner set the pace. Fifteen calm minutes a day adds up to real, visible progress by the end of the year, one carefully traced letter at a time.

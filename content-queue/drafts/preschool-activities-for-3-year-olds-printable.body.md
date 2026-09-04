@@ -36,6 +36,4 @@ You almost never need to buy anything, the best preschool setup uses kitchen and
 
 Refusal is normal, a three-year-old is testing independence, not rejecting you, so the fix is usually offering control, not more convincing. Start by giving a small choice: "Do you want the blue bin or the red bin?" A choice between two options you're happy with sidesteps the power struggle while letting them feel in charge. If they still say no, try sitting down and starting the activity yourself without inviting them; curiosity often pulls them in within a minute. Lower the bar, too, a task that's slightly too hard reads as "no fun," so simplify it on the spot. And accept that some days the answer is genuinely no, and free play or a walk outside is a perfectly good plan B. Never force it into a battle; forcing teaches them that activities mean conflict. Keep it light, keep it optional, and keep offering, consistency, not pressure, is what builds the habit of play.
 
-{{printable:preschool-activities-planner}}
-
 Keep the planner somewhere you'll see it, rotate a few activities at a time, and let the routine decide so you don't have to. A calmer afternoon isn't about doing more, it's about having a short, ready list of small things that little hands love.

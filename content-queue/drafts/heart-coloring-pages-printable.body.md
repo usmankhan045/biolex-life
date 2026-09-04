@@ -45,6 +45,4 @@ Print heart coloring pages any time you need a quick, screen-free activity that 
 
 {{printable:coloring-owl}}
 
-{{printable:hearts-pattern-coloring-page}}
-
 Keep the file saved somewhere easy to reach, print a copy whenever you need a quiet moment, and let the coloring do the rest. Sometimes the simplest activity is exactly the one you needed.

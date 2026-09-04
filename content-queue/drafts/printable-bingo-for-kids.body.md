@@ -36,6 +36,4 @@ Activity bingo and a scavenger hunt overlap, but they scratch different itches. 
 
 Small tweaks keep one printable working for months instead of a single afternoon. Rotate a handful of squares between rounds, change the win condition, one line today, full blackout tomorrow, and theme the card to the day: rainy-day bingo, backyard bingo, road-trip bingo, or quiet-time bingo before bed. To make the sheet truly reusable, slip it into a sheet protector or a set of dry-erase pockets so kids can mark and wipe it endlessly with a washable marker; it is a couple of dollars that turns a single print into a forever game and saves your printer ink. Keep the finished cards in a labeled folder so you always have a ready option the moment a screen-free block appears out of nowhere. Offer a small non-screen reward, choosing the next bedtime book, an extra ten minutes outside, a sticker, so the game itself, not the tablet, becomes the thing they ask for. You can even let the kids help write a few squares of their own, which makes them far more invested in actually playing. Print a fresh copy anytime, and the whole game resets like new.
 
-{{printable:kids-scavenger-hunt}}
-
 Keep a stack printed and ready, hand it over the next time the "I'm bored" chorus starts, and let the card do the entertaining. A quiet, screen-free twenty minutes is only one printout away.

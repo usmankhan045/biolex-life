@@ -41,5 +41,3 @@ The best part of a printable coloring book is that it is never really finished, 
 {{printable:coloring-geometric}}
 
 Download a design below, print a few copies, and let a coloring book you built yourself become the one you actually finish.
-
-{{printable:floral-mandala-coloring-page}}

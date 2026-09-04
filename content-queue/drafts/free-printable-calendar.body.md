@@ -42,6 +42,4 @@ The calendars that actually last are the ones you make effortless to use and imp
 
 Print the undated calendar when you want flexibility, and a dated one only when you want zero setup. A dated calendar saves you the two minutes of writing in numbers, but it locks you into one specific month and year, wastes a page every time you skip, and forces you to find or download a new file each season. The undated version costs you a couple of minutes per month and gives you a design you can reuse forever, for the next month, the next kid, or an entirely different purpose like a habit tracker, a meal-plan grid, or a content calendar. For most homes, undated wins, because real life rarely starts neatly on the first. You can begin mid-month, print exactly the number of copies you need, and never pay again. And if this month has already gotten away from you, the best time to start is not next January, it is simply the next blank square. Write in today's date, add tomorrow's, and you are already back on track without waiting for a fresh start that never quite arrives.
 
-{{printable:printable-calendar}}
-
 Print the free printable calendar, put it where you will actually see it, and fill in the squares one at a time. An organized month is not built from a perfect system, it is built from a page you keep coming back to.

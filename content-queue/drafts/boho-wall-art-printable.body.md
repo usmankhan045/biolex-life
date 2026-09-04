@@ -45,8 +45,6 @@ The frames do more for the finished look than almost anything else, so it is wor
 
 Match boho wall art to your room by pulling one or two colors from what you already own, a rug, a throw, a favorite plant pot, and repeating those tones in the prints you choose. Boho style is built on warm neutrals (cream, sand, terracotta, sage, and rust), so art in that family blends with almost any existing decor without looking matchy or forced. Hang your arrangement at eye level, with the center of the grouping around 57-60 inches from the floor, so the wall feels anchored to the room instead of floating too high. Layer in texture nearby, a woven basket, a trailing pothos, a small wood shelf, to echo that gathered, collected feeling. If a wall still looks a little bare, add one more small print rather than swapping in a bigger one, because boho decor grows by gentle accumulation. Grab the boho sun and moon print again below and start with a single frame today.
 
-{{printable:boho-sun-moon-wall-art}}
-
 The blank wall does not have to stay blank, and it does not have to cost a fortune. Print one boho piece this weekend, frame it, and let the wall grow from there, one warm, gathered print at a time. Add a second print next payday, a third the month after, and before long you will have the collected, layered gallery wall you kept pinning, built entirely from free files and a few simple frames. Start with the single sun and moon print, and let the rest follow. This pairs well with our [hello sunshine printable wall art](/blog/hello-sunshine-printable-wall-art) guide. For the longer version, see [let it be printable wall art](/blog/let-it-be-printable-wall-art).
 
 {{printable:boho-04-wall-art}}

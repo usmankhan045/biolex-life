@@ -34,5 +34,3 @@ Print wall art on the heaviest paper your printer allows, at the highest quality
 ## Can you use the Let Love Grow printable as a gift or event decor?
 
 Yes, the Let Love Grow printable makes an easy, heartfelt gift and doubles as event decor because the phrase suits so many milestones: a baby shower, a wedding, a housewarming, an anniversary, or Mother's Day. Print it at 8x10, slip it into an inexpensive frame, and you have a personal, put-together present for under ten dollars total. For events, print a few copies to prop on a gift table, a dessert bar, or a garden-party welcome sign; the botanical branch fits floral and greenery themes without any extra styling. Because the file is reusable, you can gift the framed version and still keep a copy for your own wall. Pair it with a small potted plant or a packet of seeds for a "watch our love grow" theme that guests remember. Print it, frame it, and let a wall that has stayed blank for months finally feel finished this weekend.
-
-{{printable:let-love-grow-wall-art}}

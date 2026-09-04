@@ -53,6 +53,4 @@ Coloring together also turns these pages into a low-cost, rainy-day activity tha
 
 {{printable:coloring-christmas-mandala}}
 
-{{printable:kaleidoscope-mandala-coloring-page}}
-
 Keep the printable somewhere easy to reach, pick a palette before you start, and let the symmetry do the deciding. A few unhurried minutes of coloring is one of the simplest ways to reset a busy day.

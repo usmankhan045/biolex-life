@@ -34,8 +34,6 @@ Trace each frame on paper, tape the templates up first, and adjust before commit
 
 Reprint on a schedule instead of chasing permanence, because the whole advantage of free printable wall art for a kids room is that refreshing it costs almost nothing. Print on slightly heavier paper (matte presentation or cardstock at 32lb or higher) so colors look richer and the sheet does not curl inside the frame. Keep the original PDF saved in a folder so you can reprint a faded or sticky-fingered piece in minutes. As your child's tastes shift, swap the art seasonally or yearly while keeping the same frames and layout, which means a whole new look for the price of paper and ink. Treat the prints as refreshable, not precious, and the room always feels current with almost no effort or expense.
 
-{{printable:boho-rainbow-wall-art}}
-
 Bare walls do not need a big budget or a two-week wait. Download, print, frame with a couple of lightweight acrylics, and hang at your child's eye level, and the room finally looks as put-together as the rest of your home. If you are filling a kid's wall, our [adventure awaits printable](/blog/adventure-awaits-printable) works in the same palette.
 
 {{printable:nursery-05-wall-art}}

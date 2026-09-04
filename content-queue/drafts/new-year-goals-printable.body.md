@@ -35,8 +35,6 @@ Keep goals visible by putting them somewhere you physically see every day and bu
 
 When you fall off track, resume, don't restart, and don't scrap the goal. Falling off is normal; a missed month or a rough season isn't failure, it's just data telling you to adjust. The people who reach their goals aren't the ones who never slip; they're the ones who pick the plan back up without the guilt spiral that makes you abandon it entirely. Sit down with your printable, look honestly at what stalled, and shrink the next step until it feels almost too easy, momentum matters more than intensity right now. If a goal no longer fits your life, it's fine to rewrite it or let it go; a plan is a tool, not a contract. Mid-year is the perfect moment for a reset, because you still have months left. Reprint a fresh sheet, fill it in with where you are today, and start the next month clean.
 
-{{printable:new-year-goals-planner}}
-
 Print the new year goals printable, fill it in, and put it where you'll see it every day. A meaningful year isn't built from one motivated January morning, it's built from a plan you keep looking at, one small step at a time. There is a full breakdown of this in our [new year mandala coloring page](/blog/new-year-mandala-coloring-page-printable) post. We cover the details over in [new year meal prep reset](/blog/new-year-meal-prep-reset-printable).
 
 {{printable:new-year-goals-wall-art}}

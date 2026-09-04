@@ -35,9 +35,7 @@ Color the same shape in every wedge before moving to the next shape, not one wed
 
 You can download free printable geometric mandala coloring pages right here, no email sign-up and no watermark, ready to print at home on standard letter-size paper. The printable below gives you a clean, high-resolution geometric mandala designed to print sharp on any home printer, with bold enough lines for colored pencils and enough detail to stay absorbing for a good while. Print as many copies as you want, one to experiment with a bright complementary scheme, another for a quiet monochrome evening. It works for adults winding down, kids practicing patience, or a shared activity on a slow afternoon. Slip a copy into a sheet protector if you want to reuse the design with washable markers, or print fresh each time to keep a small gallery of finished pages. Keep a few in a folder so a calm, screen-free break is always one print away.
 
-{{printable:geometric-mandala-coloring-page}}
-
 Pick your palette, start at the center, and let the symmetry do the rest. There is no wrong way to fill these shapes, only your way, and part of the calm comes from knowing the pattern will look balanced no matter which colors you reach for. Keep a small stack printed and ready, and the next time your mind is racing you will have a five-minute reset waiting on the desk instead of a search to run. A finished geometric mandala is proof that a few quiet minutes, done one clean shape at a time, add up to something genuinely lovely.
 
 
-{{printable:coloring-animal-mandala}}
+{{printable:coloring-geometric}}

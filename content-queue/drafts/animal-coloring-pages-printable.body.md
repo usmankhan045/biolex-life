@@ -38,6 +38,4 @@ Animal coloring pages stretch well past a single sit-down activity with a little
 
 {{printable:coloring-butterfly}}
 
-{{printable:butterfly-coloring-page}}
-
 Print a stack, set out the crayons, and let your kids pick their favorite animal. The best coloring page is the one that is already on the table when a quiet moment arrives.

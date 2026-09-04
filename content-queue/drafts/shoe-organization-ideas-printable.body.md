@@ -36,6 +36,4 @@ Keeping shoes organized comes down to two habits: one home per pair, and a quick
 
 Always declutter before you buy a single bin, because organizing shoes you never wear just wastes the storage you paid for. Pull every pair out into one spot, seeing the full collection at once is what makes the excess obvious. Then sort fast into three groups: keep, donate, and toss. Toss anything broken, painfully uncomfortable, or worn past repair; no bin rescues a shoe that hurts. Donate the pairs in good shape that you have not worn in a year, including the "someday" heels and the impulse buys still stiff with newness. Be honest about duplicates, you do not need four pairs of black flats. What remains is your real collection, and now you can size your storage to it instead of to an aspirational number. For a deeper closet purge that goes beyond shoes, pair this with our [closet organization guide](/blog/closet-organization-printable) and clear the whole space in one pass.
 
-{{printable:closet-organization-plan}}
-
 Print the plan, map out your zones, and give every pair a home. A closet you can actually see into starts with one honest sort and one shelf at a time.

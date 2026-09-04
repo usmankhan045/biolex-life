@@ -43,6 +43,4 @@ Finished daisy pages can become far more than fridge art, which makes them a sat
 
 However you plan to use them, the best daisy page is simply the one you actually print. Grab the free wreath below, keep a copy or two ready to go on the shelf, and let the petals fill a calm ten minutes for you or your kids whenever the day calls for it. No email, no fuss, just a cheerful flower waiting for color.
 
-{{printable:coloring-snowflake}}
-
-{{printable:daisy-wreath-coloring-page}}
+{{printable:coloring-daisy}}

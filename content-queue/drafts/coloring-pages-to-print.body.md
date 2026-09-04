@@ -43,8 +43,6 @@ Yes, coloring is one of the simplest ways to quiet a busy mind, which is why adu
 
 To keep printed coloring pages from becoming clutter, gather them into one simple binder or folder so your next page is always ready to go. Print a small batch at once, five to ten pages across a few styles, slip them into a two-pocket folder or a binder with sheet protectors, and you have a homemade coloring book that costs almost nothing. Sheet protectors let younger kids color the same page again with dry-erase crayons, stretching one print into many quiet sittings. Finished pages you love can be framed, taped to the fridge, or mailed to a grandparent, so no single sheet has to feel precious. Store your caddy of pens right alongside the folder so the whole kit lives in one spot. When you keep a small stash printed and ready, coloring becomes the easy default for a restless afternoon instead of one more thing you have to hunt down and set up from scratch.
 
-{{printable:coloring-daisy}}
-
-{{printable:rosette-mandala-coloring-page}}
+{{printable:coloring-butterfly}}
 
 Keep a few pages printed and a cup of pens nearby, and coloring stops being a search and starts being the calm, screen-free break you actually reach for. Print one now and color it tonight.

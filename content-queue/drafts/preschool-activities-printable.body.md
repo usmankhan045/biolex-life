@@ -36,6 +36,4 @@ You need far less than the craft aisle suggests, most great preschool activities
 
 Keep at-home preschool activities feeling like play, not school, by following your child's lead and letting go of the finished product. Preschoolers learn through exploration, so it's fine if the sorting game becomes a dumping game or the "letter craft" turns into gluing everything into a pile, the process is the point, not a Pinterest-worthy result. Skip the worksheets and quizzing; instead, narrate what you see ("you stacked five blocks!") and ask open questions ("what do you think happens next?"). Follow their interest, too: if your child is obsessed with trucks, count trucks, sort trucks, paint trucks. Motivation soars when the activity connects to what they already love. And give yourself the same grace you'd give them, a day that only had one activity and a lot of free play was still a good day. Use the planner as a gentle guide, not a checklist you can fail.
 
-{{printable:preschool-activities-planner}}
-
 Keep the preschool activities printable somewhere you'll see it, fill in a couple of ideas each week, and let the rhythm take the pressure off. Meaningful, playful days with your preschooler are built one simple activity at a time.

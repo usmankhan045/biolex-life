@@ -36,9 +36,9 @@ Botanical prints earn their keep in the rooms where you most want calm: bedrooms
 
 Choose one unifying thread, then vary everything else, and the wall will look designed rather than crowded. The easiest thread is color: keep every print in the same green-and-cream family so the eye reads them as a set even when the subjects differ, a branch, a single leaf, a pressed fern. Matching frames do the same job if you would rather mix the imagery more freely. Lay the whole arrangement on the floor first, aiming for even spacing of about two inches between frames, and balance one large print with two smaller ones so no corner feels heavy. Start with three to five pieces; you can always add more later. Because these are printable, experimenting costs almost nothing, print a layout, live with it for a day, and reprint anything that is not quite working. When you finally land on a combination you love, it becomes the quiet, green backdrop the whole room was missing.
 
-{{printable:botanical-branch-wall-art}}
-
 Blank walls do not need a big budget or a bold decision, just a printer, a few simple frames, and art you can reprint the moment your taste changes. Start with one botanical print this weekend, and let the wall come together from there.
+
+{{printable:botanical-01-wall-art}}
 
 {{printable:botanical-07-wall-art}}
 

@@ -36,8 +36,6 @@ The most reliable way to arrange a mid-century modern gallery wall is to work in
 
 Mid-century, abstract, and minimalist wall art overlap, but each leans a different direction, and knowing the difference helps you pick the right set. Mid-century modern is the most characterful of the three: warm retro colors and recognizable period shapes like suns, arches, and starbursts. Abstract art is broader and more expressive, using shape and color freely without a specific era in mind, so it can feel modern, bold, or playful depending on the palette you choose. Minimalist art strips things down further to a few lines or a single form on a mostly empty background, prizing calm over character. The styles actually mix beautifully, since a mid-century print, a soft abstract, and a minimalist line drawing can share one wall as long as the colors agree. If you love the freeform side, our [free abstract printable wall art](/blog/abstract-wall-art-printable) pairs perfectly, and for a warmer vintage spin, our [retro printable wall art](/blog/retro-wall-art-printable) is worth a look too.
 
-{{printable:mid-century-shapes-wall-art}}
-
 You do not need a gallery budget to give a room the warm, retro character you have been picturing. Download the printable, choose your favorite shapes, print them on the nicest paper you have, and frame them tonight. Start with one print or build a whole gallery wall; either way, your blank wall is about fifteen minutes away from finished.
 
 {{printable:mid-century-abstract-wall-art}}

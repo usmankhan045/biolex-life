@@ -44,9 +44,9 @@ Keep the frame quiet and let the warm tones carry the wall. A set of thin-profil
 
 Choose one unifying thread, then vary everything else, and the wall will look designed rather than crowded. The easiest thread is the palette: keep every print inside the same warm earthy family (terracotta, clay, sand, a touch of sage) so the eye reads them as a set even when the shapes differ, an arch here, a sun there, a simple hill. Matching frames do the same job if you would rather mix the imagery more freely. Lay the whole arrangement on the floor first, aim for even spacing of about two inches between frames, and balance one large print with two smaller ones so no corner feels heavy. Start with three to five pieces and add more later. Because these are printable, experimenting costs almost nothing: print a layout, live with it a day, and reprint anything that is not quite working. To soften all that warmth with a little greenery, weave in a leaf print or two from our [botanical wall art printables](/blog/botanical-wall-art-printable).
 
-{{printable:boho-arch-wall-art}}
-
 A blank wall does not need a big budget or a permanent decision, just a printer, a few simple frames, and warm earthy prints you can swap the moment your taste shifts. Print one arch this weekend, and let the room warm up from there.
+
+{{printable:botanical-05-wall-art}}
 
 {{printable:botanical-08-wall-art}}
 

@@ -36,6 +36,4 @@ Separate baseline chores from paid work, and use rewards for motivation rather t
 
 Expect to reset it, and treat drift as normal rather than failure. Almost every chore chart weekly family plan works beautifully for two weeks and then fades, kids test whether you will actually enforce it, and life throws off the routine. Plan a standing weekly reset, ideally Sunday: review what got done, rotate the jobs nobody wants, and print or wipe clean a fresh chart for the week ahead. To make reuse effortless, slip a single printed copy into a dry-erase pocket sleeve and let kids check off tasks with a washable marker, so one printout lasts for months and the fresh-start feeling arrives every week. Revisit assignments each season, because a child who could barely carry laundry in spring can load the dishwasher by fall. When enthusiasm dips, shrink the chart rather than abandoning it, even two reliable chores per kid beat an ambitious plan that collapses. The families who succeed are not stricter; they simply expect the wobble and rebuild without guilt.
 
-{{printable:chore-chart}}
-
 Print it, put it where everyone gathers, and let the chart do the reminding so you do not have to. A calmer, more even household is built one checked-off box at a time.

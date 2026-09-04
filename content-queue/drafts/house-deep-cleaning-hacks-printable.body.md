@@ -37,6 +37,4 @@ Follow the loop once and the house is done without a single backtrack.
 
 The forgotten spots are the ones that hold the most hidden grime, so add them to your list before you call a deep clean finished. Baseboards, door frames, and light switches collect a gray film of dust and fingerprints that a quick wipe erases instantly. The tops of doors, the range hood, ceiling-fan blades, and the fridge coils behind or beneath the unit rarely get touched, yet they shed dust and hurt efficiency. Reach under furniture and appliances, wash the trash-can interior, and run washable throw rugs and pet beds through the laundry. Descale the coffee maker, wipe the dishwasher gasket, vacuum the mattress and under the couch cushions, and disinfect the remote controls and cabinet pulls everyone handles daily. A printable checklist is what keeps these from slipping through, you tick each one off room by room so nothing gets skipped. Our full [room-by-room deep cleaning checklist](/blog/deep-cleaning-checklist-printable) captures every one of these easy-to-miss spots.
 
-{{printable:deep-cleaning-checklist}}
-
 Print the checklist, tape it to a cabinet, and let the order and the soak-first hacks carry you through. A whole-house deep clean is far less exhausting when you stop scrubbing and start letting the work do itself.

@@ -35,5 +35,3 @@ Keep the design clean and the placement intentional, and "good vibes only" reads
 ## Can a good vibes only printable work as a gift or dorm decor?
 
 Yes, a good vibes only printable is one of the easiest, most budget-friendly gifts and dorm pieces you can make, because you can print it on demand, frame it in what you already own, and personalize the presentation for pennies. For a gift, print the design on nice cardstock, slip it into an inexpensive frame, and you have a thoughtful, ready-to-hang present for a housewarming, a graduation, or a friend starting fresh somewhere new. For dorms and first apartments, it is close to perfect: no shipping to wait on, nothing pricey to lose at move-out, and adhesive strips mean zero damage deposits at risk. Print a couple of copies so you have a spare, and lean the extra on a shelf or clip it to a board. If you are decorating a whole small space on a tight budget, our [free printable dorm room wall art](/blog/printable-dorm-room-wall-art) guide walks through building a cheerful, cohesive wall around exactly this kind of piece.
-
-{{printable:good-vibes-only-wall-art}}

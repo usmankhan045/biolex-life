@@ -43,6 +43,4 @@ Set up the space so your preschooler can craft mostly on their own and cleanup t
 
 Crafting builds the exact skills preschoolers need for kindergarten, disguised as play. Cutting, gluing, pinching pom-poms, and threading beads all strengthen the small hand muscles and grip that a child will later use to hold a pencil and write. Choosing colors and arranging pieces develops planning, decision-making, and early creativity, while following a few simple steps builds focus and the ability to see a task through. Open-ended, process-focused crafts also grow confidence, because there's no wrong way to do them, a child learns their ideas are worth making. To lean into the hand-strength benefits specifically, layer in a few targeted [fine motor activities for little hands](/blog/fine-motor-activities-printable) alongside your weekly crafts. So the next time craft time looks like chaos, remember: those glue-covered fingers are doing real developmental work. Keep it light, keep it frequent, and let the planner take the pressure off.
 
-{{printable:preschool-crafts-planner}}
-
 Pick five favorites, stock one bin, and fill in the planner on Sunday, that's the entire system. Craft time stops being a project you dread and becomes fifteen easy minutes you both look forward to.

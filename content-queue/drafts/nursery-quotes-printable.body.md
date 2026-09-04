@@ -35,8 +35,6 @@ Match nursery printables to your room by pulling one or two colors straight from
 
 Yes, a framed nursery quote printable makes a thoughtful, low-cost baby shower gift that feels far more personal than another pack of onesies. Print the design on nice cardstock, add a simple frame, and you have a keepsake the parents can hang the same day, often for under fifteen dollars all in. Choose a phrase that matches the family's style, or one that nods to the baby's name meaning or a line from a favorite lullaby. Because printables are reusable, you can make a coordinated set, one for the nursery and a smaller match for the grandparents' house. They also travel well, mail a printed sheet flat in a rigid envelope, or send the file so a long-distance friend can print it themselves. For a shower, pair the framed print with a small nursery basket, and you have a gift that looks curated without the curated price.
 
-{{printable:let-love-grow-wall-art}}
-
 Download your free nursery quotes printable, print it on good cardstock, and give those blank walls the soft, hopeful feeling you pictured, all before the baby arrives. Beautiful nursery decor really can start with a single sheet of paper. The [let love grow printable](/blog/let-love-grow-printable) hangs beautifully alongside these.
 
 {{printable:nursery-quotes-wall-art}}

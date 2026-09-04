@@ -36,6 +36,4 @@ In a small laundry room, the answer is to build up and onto the door instead of 
 
 The rooms that stay organized are the ones where putting things back is easier than not. That's what labels buy you: when every container has a named home, returning it takes no thought, and the system survives busy weeks and other family members. Do a 60-second reset at the end of each laundry day, wipe the machine tops, return the stain caddy to its shelf, toss empties, and drop orphan socks in their basket. Restock your decanted detergent from the bulk jug before it runs dry so wash day never stalls. Once a month, glance over the zones and pull anything that's crept in from other rooms. A laundry room organizer isn't a one-time project you finish; it's a light rhythm you maintain in under a minute a day. Print the labels, stick them on, and let the named homes keep the room in line long after the initial sort.
 
-{{printable:laundry-room-labels}}
-
 Print the labels, decant your supplies, and give the drying rack a hook, then let the zones do the deciding. A laundry room that runs itself is built one labeled container at a time.

@@ -43,6 +43,4 @@ Watch estate sales, community swap groups, and the clearance shelf for frames in
 
 Build a gallery wall by laying everything out on the floor before a single nail goes into the wall. Gather your framed quote prints plus a few non-word pieces (a botanical line drawing, a small photo) so the words do not all compete, then arrange them on the floor until the spacing feels balanced, usually 2-3 inches between frames. Trace each frame onto scrap paper, tape the templates to the wall, and step back before you commit to holes. Hang the anchor piece first, typically your largest quote, at eye level, then work outward. Keep one element consistent, the frame color, the mat, or the type style, so a mix of sizes still reads as one collection. Snap a photo of your floor layout so you can copy it exactly. Because printable quotes to frame cost nothing to reprint, you can swap a word seasonally without redoing the whole wall, which keeps it feeling fresh all year.
 
-{{printable:home-sweet-home-wall-art}}
-
 Print the words that speak to you, drop them into frames you already own, and let the right phrase quietly finish the room. You do not need a decorator or a big budget to love your walls. Beautiful, personal spaces are built one free print at a time.

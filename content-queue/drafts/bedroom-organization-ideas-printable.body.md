@@ -37,6 +37,4 @@ The storage that helps most is whatever makes returning an item faster than drop
 
 Keep a bedroom organized with a short daily reset and one weekly touch-up, so small messes never compound into another full reorganization. The daily habit is a 60-second nightly sweep: put stray clothes in the hamper or away, clear the nightstand to its tray, and set out tomorrow's essentials. That single minute is what keeps the surfaces you just cleared from filling back up. Once a week, spend ten minutes on a reset, change the sheets, empty the "landing" basket, and return anything that drifted in from other rooms. Tie both habits to something you already do, like brushing your teeth, so they happen without willpower. If clutter is your real struggle, pairing this with a broader system like a room-by-room declutter keeps the whole home from feeding your bedroom. Long-term order is not about a perfect room; it is about a fast, repeatable return trip that you actually do.
 
-{{printable:bedroom-organization-plan}}
-
 Pin the plan inside your closet door, work one zone at a time, and let the nightly reset do the maintaining. A calm, organized bedroom is built one small return trip at a time.

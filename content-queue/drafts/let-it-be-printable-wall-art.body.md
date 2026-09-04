@@ -35,8 +35,6 @@ Keep the palette tight and let the words breathe, because a calm bedroom is abou
 
 Look past the wall above the bed, because the small, overlooked spots are what make a restful room feel finished. A 5x7 Be Still print propped on the nightstand softens the hard edge of a lamp and a book stack, and it is the first gentle thing you see when you reach to turn off the light. A vertical print in a slim frame fills the narrow strip of wall beside a door or closet that usually sits empty. A reading nook, a bathroom shelf, or a quiet corner of a home office all welcome the same steadying two words. Because these are files, you can print a copy for more than one room at no extra cost, and reprint any sheet that creases in about two minutes. If you love a soft, message-led look, pair it with a few [bedroom quotes printable](/blog/bedroom-quotes-printable) designs for a layered, collected set that keeps every corner feeling intentional.
 
-{{printable:be-still-wall-art}}
-
 Download the file, print it on your favorite matte cardstock, and drop it into a frame you already own, for a calm, finished bedroom wall without the store price. Print as many copies as your rooms need, and let two quiet words do the settling in for you. You will find more on this in [be still printable wall art](/blog/be-still-printable-wall-art).
 
 {{printable:let-it-be-wall-art}}

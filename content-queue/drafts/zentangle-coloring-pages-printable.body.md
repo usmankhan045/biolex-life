@@ -35,6 +35,6 @@ Coloring dense, repetitive patterns is calming because the small, predictable ta
 
 You can find free printable zentangle coloring pages right here, no email and no payment required, alongside a growing library of detailed designs for adults and older kids. The best free pages share a few traits worth looking for: clean, high-contrast line art that prints sharp on a home printer, standard letter size so nothing gets cut off, and enough detail to stay interesting without turning into a strain. To get the most out of them, print a few at once and keep them with your pens somewhere easy to reach, the entryway drawer, a basket by the couch, so a ten-minute break is always within arm's reach. If you find you love the intricate, all-over style, browse our [intricate mandala coloring pages](/blog/intricate-mandala-coloring-pages) next for more of the same absorbing detail. Grab the printable below, print as many copies as you like, and keep one at the table for the next quiet moment.
 
-{{printable:coloring-pumpkin}}
+{{printable:coloring-zentangle-abstract}}
 
-{{printable:owl-coloring-page}}
+{{printable:coloring-pumpkin}}

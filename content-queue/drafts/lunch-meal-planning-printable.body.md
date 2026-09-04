@@ -36,6 +36,4 @@ Plan family lunches by building around a shared base and letting each person cus
 
 A good lunch meal planning printable has three things: a five-day grid to assign each day's lunch, a prep-ahead checklist for what to batch on your planning day, and a running grocery list for the missing ingredients. The grid removes the daily decision; the prep list turns your plan into a single hour of action; the grocery column makes sure you actually buy what the week needs. Add a small "backups" box for no-cook emergency lunches, and a spot to note leftovers you can repurpose so nothing gets wasted. That structure is the whole point of meal planning lunch on paper instead of in your head: your future self never has to reconstruct the plan. Fill it out on your planning day, stick it on the fridge next to your dinner plan, and the whole week's midday meals are decided before Monday arrives. Print a fresh copy each week, or slip one into a sheet protector and reuse it with a dry-erase marker, either way, the plan does the deciding so your 11:30 self doesn't have to.
 
-{{printable:weekly-meal-planner}}
-
 Keep the printable somewhere you'll see it, plan once on your quiet day, and let the rotation carry you through the rest of the week. Lunch stops being a daily scramble the moment it becomes a single decision you only have to make once.

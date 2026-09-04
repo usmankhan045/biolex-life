@@ -36,9 +36,7 @@ You need surprisingly little: plain paper, a printer, and something to color wit
 
 Make a coloring book by printing several themed pages, stacking them in an order that flows from simple to detailed, and binding them with nothing fancier than a stapler or a three-hole punch and ribbon. Start by choosing a loose theme, cute animals, garden flowers, or a mix, so the finished book feels intentional. Print 8 to 12 pages, put the easiest ones first so a child gets an early win, and slide a slightly heavier sheet on the front as a cover your kid can decorate and title themselves. Staple the left edge, or punch holes and tie it with ribbon for something giftable. Keep a master folder of your favorite pages on your computer so you can reprint any that get well-loved. A homemade book makes an easy rainy-day gift, party favor, or road-trip kit, and it costs almost nothing beyond paper and ink. For a birthday, print a themed set that matches the party, animals, flowers, or the child's current favorite, and tuck a book into each goody bag with a few crayons. For a road trip, clip the pages to a small clipboard so there is a firm surface in the car. The beauty of printing your own is that you are never stuck with a store book where half the pages are ignored: you choose only the ones that will actually get colored. Grab the daisy wreath page below to start your collection.
 
-{{printable:daisy-wreath-coloring-page}}
-
 Save a few favorites to a folder, keep paper and pencils where you can reach them, and the next quiet-time request takes thirty seconds to answer instead of twenty minutes of scrolling. Cute, calm, and printed at home is the whole point.
 
 
-{{printable:coloring-christmas-mandala}}
+{{printable:coloring-daisy}}

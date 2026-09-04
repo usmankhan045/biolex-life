@@ -38,6 +38,4 @@ Stick to a cleaning schedule through a chaotic week by treating it as a flexible
 
 Working moms keep weekends free by front-loading the week, when each weekday quietly handles one zone, there is simply nothing left to catch up on by Saturday. The all-day weekend clean exists only when the whole week's work has been postponed to it, so the fix is upstream: run the daily reset and one focus zone Monday through Friday, and the weekend collapses to a light Saturday tidy and a short Sunday reset. Use Sunday to close the past week and set up the next, a 10-minute whole-home tidy, restock anything low, glance at the week ahead, and reset the schedule with a fresh copy on the fridge. Fill in the little summary boxes at the bottom to track laundry loads and rate the week; it is a small, satisfying way to see that the system is working. Print it, put it where you will see it, and let the plan do the deciding.
 
-{{printable:weekly-cleaning-schedule}}
-
 Keep the schedule visible, check off what you can, and forgive the days you cannot. A calm, consistently tidy home is built in 15-minute pieces, not in the weekend you deserve to keep for yourself.

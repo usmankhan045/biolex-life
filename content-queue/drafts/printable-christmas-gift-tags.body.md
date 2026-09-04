@@ -35,6 +35,4 @@ Printable gift tags do far more than name presents. Use them as place cards at t
 
 Corral your wrapping supplies in one spot so December stops feeling like a scavenger hunt. Keep your printed gift tags, tape, scissors, ribbon, and a couple of pens together in a single clear stackable bin you can pull out and put away in one motion, seeing everything at a glance is what keeps a wrapping session moving. Store cut tags in a small envelope inside that bin so they stay flat and easy to grab. If you print extra tags now, you will not be hunting for them again next year. It also helps to keep a running gift list nearby so you can check off who has been wrapped and tagged; our [free printable home labels](/blog/free-printable-labels) are handy for marking bins, shelves, and storage boxes once the season winds down. Restock the bin in early December and again at the halfway point so you never run out of tape mid-wrap. A little organization up front means the actual wrapping stays the calm, cozy part of the holidays.
 
-{{printable:christmas-gift-tags}}
-
 Print a sheet, cut what you need, and let every gift under the tree finally have a name. A few quiet minutes of tagging tonight saves the "whose is this?" scramble on Christmas morning, and makes the whole pile look like you planned it all along.

@@ -35,6 +35,4 @@ There is genuinely no wrong way to do this. Pick one of these approaches, mix tw
 
 These free easy mandala coloring pages are yours to print as many times as you like, at home or from any library or office printer, with no sign-up required. Use them for a screen-free wind-down before bed, a quiet activity during a child's rest time, or a shared craft on a slow, rainy afternoon. Teachers and homeschoolers reach for them as calm-down corner pages and early-finisher activities, and they travel well for waiting rooms, long car trips, and restaurant tables too. Finished pages also make sweet, personal decor, so you can tape one to the fridge, frame a favorite, or turn a small stack into homemade greeting cards. Because the designs stay simple, they double as a gentle warm-up before you tackle more detailed patterns. When you are ready for something with a little more challenge, our [free printable mandala coloring pages](/blog/mandala-coloring-pages-printable) collection steps up the detail while keeping that same soothing rhythm. Print a few today, keep them somewhere handy, and color whenever you need a quiet reset.
 
-{{printable:coloring-pumpkin}}
-
-{{printable:geometric-mandala-coloring-page}}
+{{printable:coloring-animal-mandala}}

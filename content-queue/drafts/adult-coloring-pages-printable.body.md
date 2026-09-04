@@ -38,8 +38,6 @@ Start at the center and work your way outward, choosing your whole palette befor
 
 Download the PDF, open it, and print at "actual size" or 100 percent scale on letter-size paper, and you are done. The most common mistake is leaving your printer set to "fit to page," which can shrink the design and leave uneven white borders, so check that scaling is set to 100 percent first. Black-and-white or grayscale mode saves color ink and is all a line-art page needs. Standard 20-pound copy paper is perfectly fine; if you plan to use markers, slide a blank sheet behind the page to catch any bleed. No printer at home? Save the PDF to a flash drive or your phone and print it at a library or copy shop for a few cents a page. Because these pages are free with no sign-up, print as many copies as you like, one to keep pristine and a few to experiment with different palettes.
 
-{{printable:lace-mandala-coloring-page}}
-
 Keep a few printed pages tucked in a drawer so calm is always one pencil away. You do not need a perfect result or a free afternoon, just twenty quiet minutes and a page that finally respects your time. We cover the details over in [coloring pages to print](/blog/coloring-pages-to-print). We cover the details over in [cute coloring pages](/blog/cute-coloring-pages-printable).
 
-{{printable:coloring-floral-mandala}}
+{{printable:coloring-botanical-wreath}}

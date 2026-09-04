@@ -37,6 +37,4 @@ Match every new item with something that leaves, the one-in-one-out rule is what
 
 Declutter first, buying storage before you edit your belongings just organizes clutter you shouldn't be keeping. In a small space, storage products are a tool, not a cure; a bin full of things you never touch still costs you the same precious square footage. Before you spend a dollar, pull everything out of the problem zone, sort ruthlessly into keep, donate, and toss, and only then measure for containers around what actually remains. You'll almost always need less storage than you assumed, and what you do buy will genuinely fit. If choosing containers feels overwhelming, our [room-by-room guide to the best bins and baskets for organizing](/blog/home-organization-bins-and-baskets-printable) helps you pick the right size for what's left, and our [free printable linen-closet organization plan](/blog/linen-closet-organization-printable) shows the zone-by-zone method applied to one of the tightest storage spots in the house. Edit first, contain second, that order is what finally makes small-space storage hold.
 
-{{printable:small-space-storage-plan}}
-
 Keep the plan somewhere you'll see it, work one zone at a time, and let the vertical and hidden space do the heavy lifting. A small home that finally feels roomy is built one recovered corner at a time.

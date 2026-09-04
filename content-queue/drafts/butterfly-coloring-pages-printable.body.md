@@ -35,8 +35,6 @@ Finished butterfly pages are surprisingly useful beyond the coloring itself, whi
 
 For the cleanest result, open the PDF and print at "actual size" or 100 percent scale, rather than "fit to page," which can shrink the design and leave uneven white borders. Set your printer to the highest quality it offers if you want crisp, dark outlines, though a standard draft setting is perfectly fine for everyday coloring with kids. Plain letter paper works for crayons and colored pencils, but if you are using markers or watercolor, step up to a heavier cardstock or mixed-media sheet so the color stays vivid and does not soak through. Black-and-white printing saves ink and is all you need, since the whole point is to add the color yourself. If your printer offers a "grayscale" or "black cartridge only" option, choose it so a low color cartridge never stops you mid-afternoon. Check the print preview once to confirm the whole butterfly fits inside the printable margins before you commit a sheet. Print a few copies at once so a fresh page is always ready for the next restless afternoon. Save the file somewhere easy to find, and a calming activity is only ever one click and one sheet away.
 
-{{printable:butterfly-coloring-page}}
-
 Keep a small stack printed and tucked in a drawer, and you will always have a quiet, screen-free activity ready, whether it is for a bored six-year-old or for the ten calm minutes you have been meaning to give yourself. There is a full breakdown of this in our [peony coloring pages](/blog/peony-coloring-pages-printable) post. We cover the details over in [printable coloring book](/blog/printable-coloring-book).
 
-{{printable:coloring-animal-mandala}}
+{{printable:coloring-butterfly}}

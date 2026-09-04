@@ -37,8 +37,6 @@ Yes, coloring detailed designs like flowers has been linked to lower reported an
 
 Print flower coloring pages on the heaviest paper your printer handles, and choose "actual size" so nothing gets cropped. For colored pencils, standard 24 lb printer paper is perfectly fine. If you plan to use markers or gel pens, step up to 65 to 110 lb cardstock so the color will not bleed or ghost through to the next page. In your print settings, select highest quality and grayscale, then set scaling to 100 percent or "actual size" rather than "fit to page," which can shrink the design and thin out the fine lines. Run off a few extra copies at once so a fresh page is always waiting, and keep a couple blank to try the same flower twice with different palettes. If you love this peony, our full [floral coloring pages for adults](/blog/floral-coloring-pages-for-adults) library has more botanical designs in the same detailed style, ready to print at home.
 
-{{printable:peony-coloring-page}}
-
 Keep a printed page and your pencils somewhere easy to reach, and let yourself color just one flower when the day gets loud. Ten quiet minutes and a finished petal are a surprisingly good way to reset. There is a full breakdown of this in our [spring flower coloring pages](/blog/spring-flower-coloring-pages) post.
 
 {{printable:coloring-botanical-wreath}}

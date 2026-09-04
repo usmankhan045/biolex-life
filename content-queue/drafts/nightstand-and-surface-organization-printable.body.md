@@ -49,6 +49,4 @@ Keeping bedroom surfaces clutter-free long-term comes down to maintaining system
 
 It also helps to treat the bedroom as the room you reset first, not last, so it stops being the household's dumping ground. If you're tackling the whole space, our [bedroom organization ideas and full room plan](/blog/bedroom-organization-ideas-printable) walk through every zone, and these [bedroom organization hacks](/blog/bedroom-organization-hacks-printable) add quick wins for small rooms. Print the plan, keep it on the dresser, and let the system hold the room together for you.
 
-{{printable:bedroom-organization-plan}}
-
 A calm bedroom starts with clear surfaces. Clear them once, give every item a real home, and a two-minute nightly reset will keep them that way.

@@ -34,6 +34,4 @@ Keep counters clear by treating flat surfaces as prime real estate that only ear
 
 Keep a kitchen organized by building tiny maintenance habits, because even the best kitchen organizing hacks fall apart without a little upkeep and clear labels that survive other people. Do a two-minute reset each night, clear the counters, run the dishwasher, and put strays back in their zone, so you never wake up to yesterday's mess. Once a season, pull everything from one cabinet or the pantry, wipe it down, toss expired food, and re-sort; this catches drift before it becomes chaos. The one purchase genuinely worth making is a set of clear stackable bins and a simple label maker, because a labeled home for every item is what stops the pile from rebuilding. When the pantry and cabinets are labeled, everyone in the house knows where things belong. For the full container-and-label walkthrough, our guide on [how to organize a pantry with printable labels](/blog/pantry-organization-labels-printable) pairs perfectly with the sheet below.
 
-{{printable:pantry-and-kitchen-labels}}
-
 Print the labels, decant your staples, and put everything back in its zone. A kitchen that stays organized isn't the one with the most gadgets, it's the one where every item has a labeled home you'll actually use.

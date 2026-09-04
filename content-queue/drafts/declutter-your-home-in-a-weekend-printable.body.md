@@ -35,6 +35,4 @@ Once you've cleared the "no" pile, give every keeper a defined home so the room 
 
 Protect your weekend's work with a few tiny daily habits, because a cleared home stays clear only if less comes in than goes out. Adopt a loose one-in-one-out rule: when a new shirt, mug, or toy arrives, one leaves. Do a five-minute nightly reset, walk each main room and return stray items to the homes you just created. Keep a donate box in the closet year-round so offloading is a two-second drop, not a future project. And put a recurring 20-minute "clutter sweep" on the calendar every couple of weeks to catch drift before it snowballs. If maintaining the whole house feels like a lot at first, our guide on [how to declutter and organize your whole home](/blog/declutter-and-organize-your-home-printable) pairs these habits with room-by-room systems that make the routine nearly automatic. The weekend does the heavy lifting; these small, repeatable moves are what keep you from ever needing another one.
 
-{{printable:decluttering-checklist}}
-
 Keep the printable somewhere you'll see it, clear one zone at a time, and let the plan decide so you don't have to. A calmer, clearer home is built in a single focused weekend, and kept in five minutes a day.

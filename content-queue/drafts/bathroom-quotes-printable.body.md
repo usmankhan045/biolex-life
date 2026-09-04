@@ -35,6 +35,4 @@ Hang bathroom wall art at eye level on the largest uninterrupted wall, most ofte
 
 Build a cohesive set by choosing two or three printables that share one font, one color palette, and one frame style. A matched pair, say a Wash, Brush, Floss print next to a simple Breathe, reads as an intentional collection rather than random decor, and it still costs only paper and a couple of frames. Keep the palette tight: crisp black-and-white for a modern look, or soft sage and warm cream for a spa feel, and repeat the exact same frame on every piece so the eye reads them as one unit. Odd numbers (a single piece or a row of three) usually look more balanced than even ones in a small space, though a symmetrical pair centered over the toilet is a classic exception. Print them all in one session on the same paper so the tones match perfectly. The easiest way to start is to download one design, hang it this weekend, and add a second piece whenever the wall is ready for it.
 
-{{printable:wash-brush-floss-wall-art}}
-
 A finished bathroom really can be this simple: pick a phrase you love, print it tonight, frame it, and hang it before the weekend is over. Your smallest room might just become the one that finally feels done.

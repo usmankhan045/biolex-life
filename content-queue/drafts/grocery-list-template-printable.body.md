@@ -46,6 +46,4 @@ Set the budget before you shop and track it on the list as you go, so the total 
 
 Keep the list where the cooking happens and make adding to it effortless, because a list only saves money if it's in your hand at the store. Print a stack and clip one to the fridge at the start of each week, or slide a single copy into a sheet protector and check items off with a dry-erase marker to reuse it indefinitely. The key habit is capturing items the moment you notice them, when you use the last of the ketchup, it goes on the list right then, not later from memory. A phone photo of the finished sheet is your backup if you leave the paper on the counter. Treat the template as a living document that fills up all week rather than something you scramble to write minutes before leaving. When adding to the list is frictionless and the list travels with you, forgotten items and second trips simply stop happening.
 
-{{printable:grocery-list-template}}
-
 Print it, keep it on the fridge, and let the plan fill the cart instead of the store. None of this asks for more willpower or a stricter budget, it just moves the decisions out of the store and back to your kitchen table, where they're easy to make well. A shorter receipt, fewer mid-week runs, and a fridge full of food you'll actually cook is built one organized list at a time.

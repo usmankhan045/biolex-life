@@ -43,9 +43,9 @@ Neutral wall art pairs best with the wood tones and metals already in your room,
 
 Add texture and contrast, not color, and a neutral room reads as layered rather than flat. Because the palette is quiet, the interest has to come from other places: pair a smooth line-art print with a chunky woven throw, a jute rug, or a ceramic vase so the eye has something to travel across. Vary the tones within your neutrals, too, a warm cream beside a deeper clay or charcoal creates a depth that an all-beige wall never will. One piece with a little more contrast, like a black-and-white line drawing or a mid-century sun in warm ochre, gives the grouping a focal point so it does not disappear into the wall. Greenery helps as well: a single trailing plant or a few dried stems beside the art adds life without adding a competing color. If you want warmer, grounded tones, our guide to [earthy wall art](/blog/earthy-wall-art-printable) shows how to build that palette, and these [mid-century modern wall art](/blog/mid-century-modern-wall-art-printable) prints bring just enough retro shape to keep neutral from feeling plain.
 
-{{printable:mid-century-sun-wall-art}}
-
 Pick a print, match it to a standard frame, and fill that wall this weekend. Neutral wall art is the low-risk way to finish a room: it costs the price of paper, works with what you already own, and never locks you into a color you will second-guess in a year. No splurge, no commitment, just a wall that finally feels finished.
+
+{{printable:botanical-04-wall-art}}
 
 
 {{printable:botanical-06-wall-art}}

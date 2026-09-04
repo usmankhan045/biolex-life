@@ -41,5 +41,3 @@ If your preschooler avoids or struggles with fine motor tasks, start easier and 
 The biggest thing to remember is that none of this needs to feel like school. Every button fastened, every strip of paper snipped, and every pom-pom pinched into a cup is a rep for the same muscles your child will lean on all through kindergarten, and it counts just as much when it happens during play as it would at a desk. Rotate a few activities, keep sessions short and cheerful, and trust that steady practice adds up quietly over the weeks.
 
 For more low-prep ideas that grow with your child, our [fine motor activities for toddlers printable](/blog/fine-motor-activities-for-toddlers-printable) covers the earlier building blocks, and these [20 preschool activities to do at home](/blog/preschool-activities-at-home-printable) fold hand-strengthening play into a fuller day of learning. Print the checklist below, stick it on the fridge, and tick off a new activity each day, a small, visible way to see how far those little hands have come.
-
-{{printable:fine-motor-activities-checklist}}

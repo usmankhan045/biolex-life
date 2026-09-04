@@ -55,6 +55,4 @@ Put your christmas planning checklist somewhere everyone can see it and check th
 
 When a task slips, move it to the next open day rather than abandoning the whole plan. It also helps to schedule a quick five-minute check-in each weekend of December: glance at the countdown, move anything that slipped, and pick the two or three things that truly need to happen next. That tiny habit keeps the whole plan honest without asking you to think about the holidays every waking minute. And protect a little unscheduled time on purpose, because the point of getting organized isn't to cram in more, it's to clear enough breathing room to actually enjoy the season you're working so hard to create.
 
-{{printable:christmas-planning-checklist}}
-
 Print the christmas planning checklist, pin it to the fridge, and let the plan carry the mental load so you don't have to. A calm, well-planned Christmas is built one checked box at a time.

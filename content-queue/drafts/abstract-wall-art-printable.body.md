@@ -36,8 +36,6 @@ Abstract art earns its keep in the spots your eye lands first: above the sofa, o
 
 Pull one or two colors from something already in the room, a rug, a throw pillow, the sofa fabric, and choose abstract prints that quietly echo them. This one trick makes downloaded art look custom-picked for your space instead of grabbed at random. Beyond color, match the art's style to your furniture: clean geometric shapes and arches suit modern and mid-century rooms, while loose, painterly forms warm up traditional or boho spaces. Pay attention to the print's dominant temperature too, warm terracottas and creams cozy a room up, while cool blues and greys feel crisp and calm. If your furniture leans retro, a coordinated look like [mid-century modern wall art](/blog/mid-century-modern-wall-art-printable) can tie a whole room together with almost no effort. And genuinely, don't overthink it: abstract art has no correct way up and no hidden meaning to get wrong, so trust the pieces that simply make you pause and look twice. That gut reaction is almost always the right one, and it costs nothing to test on your wall.
 
-{{printable:mid-century-shapes-wall-art}}
-
 Print the size your wall is asking for, frame it simply, and let that long-blank space finally do something for the room. Beautiful abstract wall art was never really about the budget. It was about having a design you love, ready to print the moment you are. If you want to go deeper on that, our [be still printable wall art](/blog/be-still-printable-wall-art) guide covers it step by step. Our [celestial wall art](/blog/celestial-wall-art-printable) guide picks up where this leaves off.
 
 {{printable:abstract-line-art-wall-art}}

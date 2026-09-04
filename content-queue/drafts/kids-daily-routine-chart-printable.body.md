@@ -44,6 +44,4 @@ Revisit the chart every few months, because a routine that fits a three-year-old
 
 It also helps to review the chart together on a calm afternoon rather than mid-meltdown. Ask which steps feel easy now and which still cause friction, then adjust one thing at a time. Kids follow a plan they helped build far more willingly than one handed down, and that small sense of ownership is what carries a routine into the tween years.
 
-{{printable:chore-chart}}
-
 Post the chart where your child will see it, keep the sequence the same, and let it carry the reminders you have been carrying alone. Calmer mornings aren't about a stricter parent, they're about a plan the whole family can see.

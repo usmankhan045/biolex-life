@@ -39,6 +39,4 @@ Pull one color from the print and echo it two or three times around the room. Bo
 
 {{printable:boho-01-wall-art}}
 
-{{printable:boho-arch-wall-art}}
-
 Pick your sizes, borrow a color for the rest of the room, and let the arches do the warming. A finished, gathered-looking wall is closer than one more sold-out shop tab, it is one print away.

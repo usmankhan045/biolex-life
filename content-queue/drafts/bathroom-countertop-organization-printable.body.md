@@ -32,8 +32,6 @@ Divide the counter into zones by routine so each item lives near where it's actu
 
 Label each zone so items always return to the same spot. For the door and shelves behind the counter, our [bathroom cabinet organization plan](/blog/bathroom-cabinet-organization-printable) extends these same zones into the storage you can't see, so backstock and tools stay just as sorted.
 
-{{printable:bathroom-organization-labels}}
-
 ## How do you keep a bathroom counter clean and clutter-free every day?
 
 Build a ten-second reset into a habit you already have, a quick wipe and a re-sort every night after you brush your teeth, while you're already standing there. The system you built only holds if items go back to their labeled zones instead of piling up, so the daily reset is less about cleaning and more about returning. Keep a small pack of disposable wipes or a microfiber cloth within reach so wiping the surface takes no setup. Once a week, do a slightly longer pass: lift the trays, wipe underneath, toss anything empty, and top up backstock from under the sink. Once a month, re-check the counter against the daily-use test and demote anything that's crept back on. Because you cleared, grouped, and labeled at the start, maintenance stays fast, the counter resets to tidy in seconds instead of requiring another full overhaul. This pairs well with our [bathroom quotes](/blog/bathroom-quotes-printable) guide.

@@ -38,6 +38,4 @@ Print intricate mandala coloring pages at full size (100%, or "actual size," nev
 
 {{printable:coloring-daisy}}
 
-{{printable:lace-mandala-coloring-page}}
-
 Keep a printed stack tucked in a drawer, sharpen your pencils, and let the pattern do the rest. Ten unhurried minutes with an intricate mandala is one of the easiest ways to reset a frazzled evening.

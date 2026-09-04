@@ -40,6 +40,4 @@ You need both, but they're really two halves of the same five-minute routine, th
 
 Grab the free printable meal planner below, print it once, and put it somewhere you'll actually see it.
 
-{{printable:weekly-meal-planner}}
-
 Let the plan answer the five o'clock question so you don't have to. You don't need to be a naturally organized person or a confident cook to pull this off, you just need the deciding done in advance, where it's calm and quiet instead of hungry and rushed. A calmer week of dinners, and a lighter grocery bill, is built one quick planning session at a time.

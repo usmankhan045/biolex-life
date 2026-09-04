@@ -36,8 +36,6 @@ To print at home, download the PDF, open it in any free reader, and print at 100
 
 Yes, and that shared appeal is one of the best reasons to keep these pages on hand. Because leaves, flowers, and animals read clearly at any skill level, one theme works across ages; you just vary the complexity. Hand a preschooler a single large daisy with thick outlines while an older child or adult takes on a detailed wreath or landscape at the same table. Coloring together turns a quiet activity into a low-key way to sit near each other without screens, which is rare and easy. It also sidesteps the usual sibling squabbles, since everyone is working on their own page at their own pace, and there is no winner, no timer, and nothing to lose. For a family session, print a small variety, one simple page, one medium, one intricate, so everyone has something matched to their patience that day. If flowers are the household favorite, our [printable flower coloring pages](/blog/flower-coloring-pages-printable) run from beginner blooms to detailed bouquets. Keep a folder of printed pages ready, and you always have a calm, no-prep activity for a rainy afternoon or a restless evening.
 
-{{printable:coloring-floral-mandala}}
-
-{{printable:daisy-wreath-coloring-page}}
+{{printable:coloring-botanical-wreath}}
 
 Print a page tonight, pick up whatever colors you already own, and give yourself ten quiet minutes. These pages ask nothing of you except that you enjoy them.

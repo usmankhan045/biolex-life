@@ -35,8 +35,6 @@ The frame does most of the work, so spend your effort there rather than on the p
 
 Yes, that's the quiet advantage of printable wall art over store-bought signs. When the holidays wrap up, slide the prints out of their frames and store them flat in a folder or a large envelope with your other decorations, and they'll be ready to rehang next December with zero cost. If a print gets bent or faded, you simply reprint the file, the download doesn't expire. Even better, the frames you bought aren't seasonal at all. In January, swap the Christmas print for a fresh piece and the same frames carry a completely different look; a framable [Word of the Year printable](/blog/word-of-the-year-printable) is a natural next step that turns holiday decor into year-round, meaningful wall art. That reusability is what makes downloadable art such a good deal: one small investment in frames, refreshed with free files, decorates your walls season after season.
 
-{{printable:merry-and-bright-wall-art}}
-
 Download the set, print it on your favorite stock, and drop it into frames you already own, festive, framed-quality walls without the store price. Print as many copies as your home needs, and let the season fill in the blank spaces for you.
 
 

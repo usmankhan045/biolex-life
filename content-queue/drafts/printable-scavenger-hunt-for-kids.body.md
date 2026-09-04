@@ -37,8 +37,6 @@ Beyond the standard find-it list, a printable scavenger hunt flexes into a dozen
 
 Print it once, protect it, and rotate the challenge, that's how a single sheet lasts for months. Slip the hunt into a sheet protector or laminated pouch and pair it with a dry-erase marker so kids check off finds and wipe clean for the next round; you get infinite reuse from one page and never scramble for a fresh printout mid-tantrum. Keep a couple of copies in predictable places, one in the kitchen drawer, one in the car, one in the diaper or activity bag, so the "I'm bored" emergency always has an answer within reach. Change the mission rather than the paper: hunt for colors one day, letters the next, textures after that, using the same list as a canvas. And save it for the moments it earns its keep, the pre-dinner witching hour, a rainy Saturday, a long wait at a restaurant. One thoughtful print, kept handy, quietly buys you back hundreds of small pockets of calm across the year.
 
-{{printable:kids-scavenger-hunt}}
-
 If you want to keep the momentum going after the hunt winds down, line up one calm follow-on activity, coloring, building, or a simple craft, so the quiet doesn't collapse the moment the last item is checked off. A hunt is a fantastic reset, but it works best as the opening act rather than the whole show.
 
 Print it, tuck a copy where the next boredom emergency will strike, and let the mission do the entertaining. Sometimes the difference between a chaotic afternoon and a calm one is a single sheet of paper and a pencil.

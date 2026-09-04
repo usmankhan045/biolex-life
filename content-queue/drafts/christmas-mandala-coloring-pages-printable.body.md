@@ -46,9 +46,7 @@ The best-looking mandalas come from a little planning before you touch a single 
 
 A classic combination is red, green, and gold, but an all-blues-and-silvers snowflake mandala is just as pretty and stretches nicely into January. Color the same shape in each ring the same shade to let the underlying pattern shine, then save a metallic pen for tiny accents at the very end. And do not feel you have to finish in one sitting, mandalas are forgiving, and setting one aside to return to later is part of the calm they offer. Print a few copies so everyone at the table has their own.
 
-{{printable:star-mandala-coloring-page}}
-
 Keep a small stack printed and within reach this December, and let the pattern do the work of settling the room. Whether you hand a page to a restless kid, sit down with one yourself after the dishes are done, or set out a bowl of pencils for holiday guests, these christmas mandala coloring pages ask nothing of you but a few quiet minutes. A calmer holiday afternoon is often just one sheet of paper and a handful of colored pencils away.
 
 
-{{printable:coloring-owl}}
+{{printable:coloring-christmas-mandala}}

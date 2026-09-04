@@ -36,6 +36,4 @@ Keep a set of non-negotiable staples permanently on your grocery shopping list s
 
 Stick to your grocery list by treating it as the plan, not a suggestion, shop it top to bottom and resist adding anything that isn't on it. Eat before you go, because hungry shopping is how half the impulse buys end up in the cart. Keep your phone in your pocket and your eyes on the list so you move through each section with purpose. If something tempts you off-plan, give it the twenty-four-hour rule: if you still want it next trip, add it to next week's list. Shop the perimeter first for fresh items, then move through the center aisles only for what you've actually written down. A printed list you can physically check off beats a note buried in your phone, crossing items out gives you a clear finish line and keeps you from circling back. Print a fresh copy each week, and shopping becomes a quick, calm loop instead of a wander. If you'd rather not reprint, slip one copy into a sheet protector and check items off with a dry-erase marker, same structure, no paper wasted.
 
-{{printable:grocery-list-template}}
-
 Keep your list on the fridge, add to it through the week as you run low, and let it do the deciding at the store. A calmer, cheaper shopping trip is really just a better list, filled in once, followed once, done.

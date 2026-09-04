@@ -44,8 +44,6 @@ Batch the printing, sleeve the reusables, and your only day-of job is refilling 
 
 Would-you-rather and team challenges work best for older kids and mixed-age groups because they run on imagination and banter rather than a single skill level. Younger kids can win a mummy-wrap race on luck and silliness, while tweens light up over "would you rather trick-or-treat in a haunted house alone or eat only candy corn for a year?" No one is too cool for a funny debate. Read prompts aloud to the whole room, or hand the sheet to an older child to emcee, giving a tween a job is often the difference between an eye-roll and enthusiasm. Balance the loud games with a calm one like guess-the-jar so overstimulated little ones have a landing spot between rounds. Team games help too: pairing a big kid with a little one for a mummy wrap means the older child feels trusted and the younger one is never left out. Print a mix and you cover every age in the room from one download, no separate kids' table required.
 
-{{printable:halloween-party-games}}
-
 Print your stack the night before, set out the pencils, and let the games carry the party through its trickiest stretch. When one game starts to fizzle, you simply move to the next station instead of scrambling to invent something on the spot, the plan does the deciding, so you get to actually enjoy the party you are hosting.
 
 A little paper and twenty minutes of prep is all it takes to turn two chaotic hours into the part everyone remembers. Keep the printed bundle in a folder with your decorations, and next October the whole thing is ready to reprint and run again. You will find more on this in [halloween party checklist](/blog/halloween-party-checklist-printable).

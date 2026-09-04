@@ -41,8 +41,6 @@ Start by laying every print on the floor and arranging them there before a singl
 
 Print at the highest quality setting your printer offers, on matte paper, at 100 percent scale (never "fit to page," which can shrink and blur the lines). In your print dialog, choose Best or High quality, select the correct paper type so the printer lays down the right amount of ink, and turn off any auto-scaling so the artwork prints at its true size. Because line art is pure black on a light background, even a basic home inkjet or laser printer produces sharp, frame-ready results, this is the most printer-friendly art there is. If you want a large statement size or the deepest blacks, save the PDF to a USB drive or upload it to a copy shop or online print service, where wide-format matte printing costs just a few dollars. Let the ink dry fully before framing so the lines do not smudge, then frame and hang. If a print ever fades or a page jams, you simply run it again, which is a freedom you never get with a single purchased poster.
 
-{{printable:botanical-branch-wall-art}}
-
 Keep the file saved so you can reprint anytime a frame opens up or a room needs a refresh. Start with one print on one wall this week, and let the empty spaces fill in from there. A finished, gallery-worthy wall is built one free print at a time, no justifying the cost required.
 
 {{printable:black-white-08-wall-art}}

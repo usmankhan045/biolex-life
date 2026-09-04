@@ -35,6 +35,4 @@ Keep the palette tight and the spacing generous, because a calm bedroom gallery 
 
 Look past the wall above the bed, because the small, overlooked spots are what make a bedroom feel finished. A 5×7 propped on the nightstand softens the hard edge of a lamp and a book stack. A vertical print in a slim frame fills the narrow strip of wall beside the door or closet that usually sits empty. In a reading nook or beside a dresser mirror, a small trio adds a layered, collected look. Because these are files, you can refresh them with the seasons at no cost: swap a botanical branch for something cozier in winter, then print the original again come spring. Store extras flat in a folder so a creased sheet is a two-minute reprint, not a repurchase. One small investment in frames, refreshed with free downloads, keeps every corner of the room looking intentional year after year.
 
-{{printable:botanical-branch-wall-art}}
-
 Download the set, print it on your favorite matte stock, and drop it into frames you already own, for calm, finished bedroom walls without the store price. Print as many copies as your room needs, and let the quiet artwork do the settling in for you.

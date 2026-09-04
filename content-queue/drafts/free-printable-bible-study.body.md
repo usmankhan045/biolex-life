@@ -37,6 +37,4 @@ Yes, this worksheet adapts easily for family devotions or a simple kids' Bible s
 
 A devotional hands you someone else's reflection; a Bible study worksheet helps you find your own. With a devotional you read a prewritten thought and a verse or two, comforting, but passive, and easy to forget by lunch. A reading plan gives you a schedule of what to read but no method for what to do with it, which is why so many people stall out in Leviticus. The worksheet fills that gap: it is the *how*, not the *what* or the *when*. Pair it with any reading plan and it becomes the place you slow down and engage the passage yourself, instead of consuming someone else's take. That shift, from reading *about* the Bible to studying it directly, is where a quiet time stops feeling like a box to check and starts changing how you think. Print a page for tomorrow's passage and try it once; the difference is immediate.
 
-{{printable:bible-study-printable}}
-
 Keep a stack of the free printable Bible study pages ready, study one passage at a time, and let the questions do the guiding. A faith that sticks is built one honest, ten-minute page at a time.

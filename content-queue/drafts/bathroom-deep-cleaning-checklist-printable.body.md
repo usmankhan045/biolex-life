@@ -34,5 +34,3 @@ The right small kit turns a two-hour chore into a forty-minute one. You don't ne
 ## How often should you deep clean a bathroom?
 
 Most bathrooms need a deep clean every one to two weeks, with a quick daily wipe in between. A bathroom used by a whole family, or one with poor ventilation, collects grime faster and leans toward the weekly end; a rarely used guest bath can go a month. The trick with deep cleaning bathrooms is separating maintenance from the deep work: a thirty-second daily swipe of the sink and a squeegee of the shower door after each use keep soap scum and water spots from ever building up, which keeps your bi-weekly deep clean fast. Between deep cleans, spot-treat problems as you notice them, mildew on caulk, a ring starting in the bowl, rather than waiting. If you fold the bathroom into a broader whole-home routine, like our [room-by-room deep cleaning checklist](/blog/deep-cleaning-checklist-printable), the recurring version fits neatly onto a schedule so it never piles up again. Print the checklist below, keep it under the sink, and work through it top to bottom.
-
-{{printable:deep-cleaning-checklist}}

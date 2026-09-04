@@ -35,8 +35,6 @@ Print on the heaviest paper your printer comfortably handles, 32 lb text, or eve
 
 Turn it into a ritual by giving it a regular time and a small, cozy setup, then putting the finished pages to work instead of tucking them in a drawer. Pick a recurring moment that's already quiet (after the kids are down, Sunday morning with coffee, the half hour before bed) and keep your pencils and a few printed sheets in a basket nearby so there's zero setup friction when the mood strikes. Light a candle, put on soft music, and let this be the one holiday task with no deadline attached to it. When a page is finished, let it earn its keep: frame an ornament mandala as seasonal wall art, glue one to cardstock for a handmade gift tag or card front, or spread a few across the table so kids and grown-ups can color side by side for a screen-free evening together. For simpler sheets the whole family can share, our [free Christmas coloring pages](/blog/christmas-coloring-pages-printable) collection has an option for every age at the table.
 
-{{printable:christmas-ornament-mandala-coloring-page}}
-
 Print a few, pour something warm, and give yourself the ten quiet minutes the season keeps promising you. Some evenings the most festive thing you can do is simply sit still with a page and your favorite pens, no deadline, no list, just one small area of color at a time until it's done. For the longer version, see [peony coloring pages](/blog/peony-coloring-pages-printable). This pairs well with our [printable coloring book](/blog/printable-coloring-book) guide.
 
-{{printable:coloring-geometric}}
+{{printable:coloring-christmas-mandala}}

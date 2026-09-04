@@ -38,5 +38,3 @@ Lay out a nursery gallery wall on the floor first, then trace each frame onto pa
 {{printable:nursery-04-wall-art}}
 
 {{printable:nursery-02-wall-art}}
-
-{{printable:you-are-so-loved-wall-art}}

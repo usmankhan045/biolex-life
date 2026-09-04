@@ -35,6 +35,4 @@ Hang the center of your arrangement at about 57 inches from the floor, standard 
 
 Framing bathroom printables cheaply comes down to standard sizes and simple hardware. Because you are printing 5x7, 8x10, and 11x14, you can use inexpensive off-the-shelf frames from any craft or dollar store, with no custom framing required. Look for slim frames with a glass or acrylic front, which conveniently double as your moisture barrier. For hanging on tile or a small wall where you would rather not drill, a pack of removable adhesive picture-hanging strips holds a lightweight frame securely and peels off cleanly later, which is ideal for renters. Print at home on matte photo paper, trim to size, and you have finished art for the cost of paper and a frame. The same approach works in every room, so once you have a system down you can carry it straight to your [bedroom walls](/blog/printable-wall-art-for-bedroom) or brighten up your [kitchen](/blog/printable-kitchen-wall-art) with a matching set. Start with the bathroom, the smallest wall and the easiest win in the house.
 
-{{printable:wash-brush-floss-wall-art}}
-
 Pick your words, print on the best paper you have, and slip each one into a simple framed set. A bathroom that finally feels finished is only a sheet of paper and an afternoon away.

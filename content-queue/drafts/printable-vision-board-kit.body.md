@@ -45,6 +45,4 @@ A few inexpensive supplies turn a printout into something you're proud to displa
 
 Build a quick review into a routine you already have, and refresh the board when the season changes. A vision board loses its power the moment it becomes wallpaper, something you stop actually seeing. To keep it alive, glance at it during an anchor moment you repeat daily, like your morning coffee, and ask one small question: what's one thing today that moves me toward this? Once a quarter, take five minutes to check in, cross off what you've done, add new goals, and swap images that no longer fit. This tiny ritual turns a static poster into a living plan and gives you a satisfying record of how far you've come. Print a fresh copy whenever your goals shift or a new year begins, so the board always reflects who you're becoming rather than who you were last January. Consistency, not perfection, is what makes it work.
 
-{{printable:vision-board-kit}}
-
 Keep it somewhere you can't miss it, check in with it often, and let the picture of the year you want quietly pull you forward. You don't need more willpower or a perfect plan, just a clear, visible reminder of where you're headed and a little consistency. Big goals are reached one visible, everyday reminder at a time.

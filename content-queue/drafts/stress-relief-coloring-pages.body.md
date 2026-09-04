@@ -36,8 +36,6 @@ Almost nothing, which is part of the appeal. All you truly need is a printed pag
 
 Aim for a short session whenever you feel your stress climbing, which for many people means most evenings. You do not need a long block of time; even 10 to 15 minutes before bed can noticeably ease a tense evening and help you shift out of go-go-go mode. Treating it as a small daily ritual, same chair, same time, works better than saving it for a rare free afternoon that never quite arrives. Anchor it to something you already do, like the hour after dinner or right before you read, so it happens without a decision. On a harder day, a longer 30-minute session gives the calm more time to settle in, but even a few colored sections between tasks can reset a frazzled afternoon. Keep a printed page and pencils within arm's reach so there is zero friction between the impulse and the calm. If you want a bigger stack of designs to rotate through, our [free adult coloring pages](/blog/adult-coloring-pages-printable) collection gives you plenty to keep the ritual fresh. Print a new page, sit down, and let your mind go quiet.
 
-{{printable:lace-mandala-coloring-page}}
-
 Keep a page somewhere you will see it, color a little whenever the noise gets loud, and let the slow, repetitive motion do the settling. A calmer evening is only one printed sheet and a handful of colored pencils away.
 
 

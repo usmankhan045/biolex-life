@@ -44,8 +44,8 @@ Turn finished snowflake pages into free winter décor instead of tossing them in
 
 You can also slide favorites into a folder to build a keepsake winter art collection year over year. When you're ready for more seasonal printables, our [free Christmas coloring pages](/blog/christmas-coloring-pages-printable) keep the same cozy, screen-free momentum going all December.
 
-{{printable:coloring-daisy}}
+{{printable:coloring-snowflake-crystal}}
 
-{{printable:snowflake-mandala-coloring-page}}
+{{printable:coloring-daisy}}
 
 Print a stack, keep them somewhere easy to grab, and let the snowflakes handle the next round of "I'm bored." Screen-free winter afternoons are just a sheet of paper away.

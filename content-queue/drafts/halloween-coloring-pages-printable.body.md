@@ -51,8 +51,6 @@ Absolutely, Halloween coloring pages are not just for kids. Intricate mandala an
 
 The same ritual works all year, not just in October. Once the pumpkins are packed away, you can roll the habit right into the holidays with our [free Christmas coloring pages](/blog/christmas-coloring-pages-printable). Keep a folder of seasonal printables saved on your desktop and a tin of colored pencils in a drawer, and you will always have a low-effort way to decompress after a long day, or to hand a restless child when you need ten quiet minutes. A single downloaded page can slow down a whole afternoon.
 
-{{printable:halloween-mandala-coloring-page}}
-
 Print a few copies, spread out the crayons, and let the spooky season slow down for twenty minutes. The best Halloween activity is often the simplest one, a sharp black outline, a handful of colors, and a kitchen table.
 
 

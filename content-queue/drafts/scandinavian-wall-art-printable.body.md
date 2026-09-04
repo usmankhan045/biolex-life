@@ -35,8 +35,6 @@ Hang it anywhere you want a room to feel calmer and more finished, but the highe
 
 Print on the heaviest matte paper your printer allows, then trim and frame it, and free Scandinavian wall art becomes indistinguishable from a store-bought print. Download the file, set your printer to its highest quality setting, and choose "actual size" or "100%" so the proportions stay true. Matte finish is the secret; glossy paper reflects light and reads cheap, while a heavyweight matte or lightly textured cardstock gives that soft, gallery feel the Nordic look depends on. For framing, inexpensive light-wood or black frames with a pre-cut white mat do most of the styling work, and a set of matching frames keeps the whole wall cohesive. If you want a truly polished finish, a pack of acid-free matte photo paper costs little and resists yellowing far better than standard printer stock. Print in a few sizes to fill different spaces, and reprint any time a piece fades or you redecorate.
 
-{{printable:mountains-line-art-wall-art}}
-
 Keep your palette quiet, your frames consistent, and your spacing even, and a blank wall turns into the calm, collected focal point you have been picturing. A finished room is only a print and a frame away.
 
 

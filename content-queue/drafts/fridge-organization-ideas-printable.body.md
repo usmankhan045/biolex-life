@@ -51,6 +51,4 @@ If you want the same low-effort system extended to a tiny kitchen, our guide to 
 
 Do a quick edit weekly and a full reset monthly to keep your fridge organizer ideas working long-term. The weekly edit is fast: toss anything expired, wipe the shelf where the inevitable spill happened, and move soon-to-expire food to the "eat first" zone before you restock. The monthly reset is the deeper one, pull everything out, wash the shelves and bins with warm soapy water, check expiration dates across the board, and re-sort each item back into its labeled zone. This is also the moment to notice patterns: if the leftovers bin is always overflowing, you are cooking too much; if greens keep dying, your crisper humidity is wrong. A clean, zoned fridge is not a once-a-year deep-clean project, it is a fifteen-minute rhythm that rides along with your grocery routine. If you want to fold this into a broader budget-friendly refresh, these [fridge organization ideas on a dollar-store budget](/blog/fridge-organization-on-a-budget-printable) show how far a few labels and bins really go.
 
-{{printable:fridge-organization-labels}}
-
 Print the labels, zone your shelves once, and let the map do the deciding every time you unload groceries. A fridge you can actually see into is a fridge that wastes less food, costs less at the store, and stops eating your time one drawer at a time.

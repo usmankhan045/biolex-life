@@ -37,6 +37,4 @@ Keep it going by lowering the bar early and building in permission to skip. The 
 
 Choose a fill-in blank calendar if you want control over the activities, and a pre-filled dated one if you want zero decisions to make. A fill-in blank version gives you 25 empty numbered boxes to write your own family's traditions, which is perfect when you have specific events, dietary needs, or a tight budget to work around. A pre-filled version does the thinking for you, every day already has an easy, low-cost idea, so you just print and go. Many parents happily use both: they start with the pre-filled list of ideas, then cross out anything that doesn't fit their week and pencil in their own family favorites instead. However you fill it, print it early, the first of December sneaks up fast. Pair it with a simple activity for the big-anticipation days, like a [printable holiday scavenger hunt](/blog/printable-scavenger-hunt-for-kids), and the whole month runs on one cheerful sheet of paper.
 
-{{printable:advent-activity-calendar}}
-
 Print it, hang it somewhere everyone will see, and let one small activity carry each December day. Check off a box, take the pressure off yourself, and remember that a missed day never ruins the countdown. The magic was never in the little drawers or the chocolate, it's in showing up, together, twenty-five ordinary days in a row.
