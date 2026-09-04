@@ -174,7 +174,7 @@ h1{{font-family:'Playfair Display',serif;font-size:26pt;font-weight:700;margin:4
 <div class="page"><div class="frame"></div><div class="frame2"></div>
 <div class="head"><div class="eyebrow">{eyebrow}</div><h1>{title}</h1><div class="sub">Color it your way, pencils, markers, or paint</div></div>
 <div class="art"><svg viewBox="{vb}" xmlns="http://www.w3.org/2000/svg">{body}</svg></div>
-<div class="foot"><span class="l">Free printable, print as many as you like</span><span class="r">barriovibe.com</span></div>
+<div class="foot"><span class="l">Free printable, print as many as you like</span><span class="r">biolexlife.com</span></div>
 </div></body></html>'''
 
 def wallart_page(tag, desc, inner, bg="#FBF8F2", framed=True):
@@ -184,12 +184,12 @@ def wallart_page(tag, desc, inner, bg="#FBF8F2", framed=True):
 .page{{width:8.5in;height:11in;position:relative;overflow:hidden;background:{bg}}}
 .script{{font-family:'Pinyon Script',cursive}}.cormo{{font-family:'Cormorant Garamond',serif}}
 .foot{{position:absolute;bottom:0.28in;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-size:9pt;letter-spacing:3px;text-transform:uppercase;color:#B0A090}}
-</style></head><body><div class="page">{frame}{inner}<div class="foot">Barrio Vibe · Free Printable</div></div></body></html>'''
+</style></head><body><div class="page">{frame}{inner}<div class="foot">Biolex · Free Printable</div></div></body></html>'''
     return (html, desc)
 
 # ---------- emit ----------
-COLORING={"floral-mandala-coloring-page":("Floral Mandala","Barrio Vibe · Free Coloring Page",floral_mandala()),
-          "butterfly-coloring-page":("Butterfly","Barrio Vibe · Free Coloring Page",butterfly())}
+COLORING={"floral-mandala-coloring-page":("Floral Mandala","Biolex · Free Coloring Page",floral_mandala()),
+          "butterfly-coloring-page":("Butterfly","Biolex · Free Coloring Page",butterfly())}
 WALLART={"botanical-branch-wall-art":botanical_branch(),"abstract-line-art-wall-art":abstract_lineart(),
          "boho-sun-moon-wall-art":boho_sunmoon(),"mid-century-abstract-wall-art":midcentury()}
 

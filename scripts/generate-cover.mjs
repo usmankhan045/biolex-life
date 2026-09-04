@@ -97,14 +97,14 @@ function coverHtml({ title, eyebrow, badge }) {
   </svg>
   <div class="top">
     <span class="eyebrow">${esc(eyebrow)}</span>
-    <span class="brand"><span class="mono">BV</span>Barrio Vibe</span>
+    <span class="brand"><span class="mono">BL</span>Biolex</span>
   </div>
   <div class="mid">
     <h1>${esc(title)}</h1>
     ${badge ? `<span class="badge"><span class="dot"></span>${esc(badge)}</span>` : ""}
   </div>
   <div class="bottom">
-    <span class="site">barriovibe.com</span>
+    <span class="site">biolexlife.com</span>
     <span>Print it. Frame it. Done.</span>
   </div>
 </body></html>`;

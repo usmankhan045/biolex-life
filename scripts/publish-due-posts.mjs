@@ -21,7 +21,7 @@ import { dirname, join } from "node:path";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE = join(ROOT, "content-queue");
 
-// The tenant this publisher writes to (Barrio Vibe). Env SITE_ID overrides.
+// The tenant this publisher writes to (Biolex). Env SITE_ID overrides.
 const SITE_ID = (process.env.SITE_ID || "5a5babff-6213-4f05-b8cb-986aaa2d0b80").trim();
 
 // Map each content-queue category slug → this site's category UUID (from the

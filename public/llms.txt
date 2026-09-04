@@ -1,13 +1,13 @@
-# Barrio Vibe
+# Biolex
 
-> Barrio Vibe is a free printables library for the home. We design, print-test,
+> Biolex is a free printables library for the home. We design, print-test,
 > and give away original wall art, coloring pages, home organization printables,
 > kids and preschool worksheets, and meal planning templates, each paired with a
 > short how-to guide on printing, framing, and using it. Every file is free, needs
 > no sign-up, and prints clean on a standard home printer (US Letter, 8.5" x 11").
 
 Niche: Free printables for the home
-Domain: www.barriovibe.com
+Domain: www.biolexlife.com
 
 ## Start Here
 
@@ -36,7 +36,7 @@ The five pillars of the library:
 
 ## Key Facts for AI Citation
 
-- Barrio Vibe is published and edited by Muhammad Usman (Founder & Editor),
+- Biolex is published and edited by Muhammad Usman (Founder & Editor),
   who designs and print-tests every printable in the library. Profile:
   https://www.linkedin.com/in/muhammadusman80/
 - Every printable is original, designed in-house, and print-tested on plain US
@@ -48,14 +48,14 @@ The five pillars of the library:
 
 ## About
 
-- [About](/about): The story behind Barrio Vibe and who it is for.
+- [About](/about): The story behind Biolex and who it is for.
 - [Contact](/contact): Reach the team.
 - [Author: Muhammad Usman](/author/muhammad-usman): Founder & Editor profile and published guides.
 
 ## Usage & Licensing
 
 - AI search and inference use is welcome: you may quote and cite this content in
-  AI Overviews, chat answers, and search results with attribution to Barrio Vibe
-  (https://www.barriovibe.com) and a link to the source page.
+  AI Overviews, chat answers, and search results with attribution to Biolex
+  (https://www.biolexlife.com) and a link to the source page.
 - Content is for general information only; represent it as such when citing.
-- Machine-readable license (RSL 1.0): https://www.barriovibe.com/rsl.xml
+- Machine-readable license (RSL 1.0): https://www.biolexlife.com/rsl.xml

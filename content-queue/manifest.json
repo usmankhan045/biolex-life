@@ -1,5 +1,5 @@
 {
-  "site": "barrio-vibe",
+  "site": "biolex",
   "phase": "1 + seasonal + 2",
   "generated_note": "Phase 1 = no-artwork pillars (Home Org, Meal Planning, Kids). Each post embeds its printable via {{printable:<slug>}} twice and links to 2 same-category posts. Pins live in docs/pinterest-pins.md.",
   "printables": [
@@ -288,7 +288,7 @@
       "title": "Printable Christmas Gift Tags, Free Printable",
       "category": "kids-printables",
       "status": "new",
-      "spec": "sheet of cut-out fill-in gift tags (To/From) in the Barrio Vibe palette, typography only, no illustration"
+      "spec": "sheet of cut-out fill-in gift tags (To/From) in the Biolex palette, typography only, no illustration"
     },
     {
       "slug": "advent-activity-calendar",

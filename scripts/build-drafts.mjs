@@ -53,7 +53,7 @@ async function buildOne(slug) {
   };
   await mkdir(ARTICLES, { recursive: true });
   // House rules: never ship em/en dashes (an AI tell), and always use the
-  // current brand (Barrio Vibe). Both are auto-corrected on build.
+  // current brand (Biolex). Both are auto-corrected on build.
   await writeFile(join(ARTICLES, `${slug}.json`), JSON.stringify(cleanBrand(cleanValue(article)), null, 2) + "\n");
   return { slug, words: wc, faqs: article.faq_items.length };
 }

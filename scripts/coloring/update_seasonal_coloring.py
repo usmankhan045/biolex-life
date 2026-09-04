@@ -45,14 +45,14 @@ R = {
     [("star",300,372,26,12),("dots",286,5,12),("diam",210,296,22,12),("star",140,208,28,6),
      ("dots",124,6,12),("diam",56,132,18,6),("star",6,50,14,6),("circ",8)]),
 }
-EYE = {"halloween-mandala-coloring-page":"Barrio Vibe · Halloween Coloring Page",
-       "spiderweb-mandala-coloring-page":"Barrio Vibe · Halloween Coloring Page",
-       "snowflake-mandala-coloring-page":"Barrio Vibe · Winter Coloring Page"}
+EYE = {"halloween-mandala-coloring-page":"Biolex · Halloween Coloring Page",
+       "spiderweb-mandala-coloring-page":"Biolex · Halloween Coloring Page",
+       "snowflake-mandala-coloring-page":"Biolex · Winter Coloring Page"}
 
 OUT = "public/printables"
 for slug, (title, rings) in R.items():
     art = mandala_recipe(rings)
-    open(f"{OUT}/{slug}.html","w").write(coloring_page(title, EYE.get(slug,"Barrio Vibe · Free Coloring Page"), art))
+    open(f"{OUT}/{slug}.html","w").write(coloring_page(title, EYE.get(slug,"Biolex · Free Coloring Page"), art))
 # Themed pages: real motifs instead of generic geometry.
 import gen_halloween      # jack-o'-lanterns, bats, candy corn, spider + web
 import gen_seasonal_v2    # holly, ornaments, trees, fireworks, midnight clock

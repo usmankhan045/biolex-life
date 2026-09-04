@@ -80,7 +80,7 @@ async function main() {
 
   // Full site URL for pin links, read from lib/site.config.ts (single source of truth).
   const cfg = await readFile(join(ROOT, "lib", "site.config.ts"), "utf8");
-  const domain = (cfg.match(/domain:\s*["']([^"']+)["']/) || [])[1] || "www.barriovibe.com";
+  const domain = (cfg.match(/domain:\s*["']([^"']+)["']/) || [])[1] || "www.biolexlife.com";
   const siteUrl = `https://${domain.replace(/^https?:\/\//, "").replace(/\/+$/, "")}`;
 
   // Phase 1 + seasonal = publish_order minus any phase-2 slugs

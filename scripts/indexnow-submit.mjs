@@ -2,7 +2,7 @@
 // Submits all live URLs to IndexNow (Bing, Yandex, Naver, etc.) for fast
 // discovery/indexing. Key file is hosted at /<KEY>.txt in public/. Run after a
 // publish batch. Env: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY.
-const HOST = "www.barriovibe.com";
+const HOST = "www.biolexlife.com";
 const KEY = "8e0f08cab3c95c0f7422368a8ce4b6a6";
 const BASE_URL = `https://${HOST}`;
 const SITE_ID = (process.env.SITE_ID || "5a5babff-6213-4f05-b8cb-986aaa2d0b80").trim();

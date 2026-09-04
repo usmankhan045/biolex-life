@@ -163,13 +163,13 @@ def new_year_mandala():
 
 PAGES = [
     ("christmas-mandala-coloring-page", "Christmas Mandala",
-     "Barrio Vibe · Christmas Coloring Page", christmas_mandala,
+     "Biolex · Christmas Coloring Page", christmas_mandala,
      "A Christmas mandala coloring page of holly, ornaments, and little trees around a poinsettia center. Original holiday line art to print and color."),
     ("christmas-ornament-mandala-coloring-page", "Ornament Mandala",
-     "Barrio Vibe · Christmas Coloring Page", christmas_ornament_mandala,
+     "Biolex · Christmas Coloring Page", christmas_ornament_mandala,
      "An intricate ornament mandala coloring page for adults: three rings of decorated baubles around a central bloom. Original line art to color."),
     ("new-year-mandala-coloring-page", "New Year Mandala",
-     "Barrio Vibe · New Year Coloring Page", new_year_mandala,
+     "Biolex · New Year Coloring Page", new_year_mandala,
      "A New Year mandala coloring page of fireworks and stars circling a clock at midnight. Original line art to print and color."),
 ]
 

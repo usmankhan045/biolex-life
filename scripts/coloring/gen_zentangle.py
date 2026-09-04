@@ -454,34 +454,34 @@ def _wreath_bauble(bauble_fn, R, count):
 
 # key -> (title in PDF, eyebrow, builder)
 HEROES = {
-    "pumpkin": ("Halloween Pumpkin", "Barrio Vibe · Halloween Coloring Page", pumpkin_hero),
-    "ornament": ("Christmas Ornament", "Barrio Vibe · Christmas Coloring Page", ornament_hero),
-    "snowflake": ("Snowflake", "Barrio Vibe · Winter Coloring Page", snowflake_hero),
-    "halloween-mandala": ("Halloween Mandala", "Barrio Vibe · Halloween Coloring Page", halloween_mandala_hero),
-    "spiderweb": ("Spiderweb Mandala", "Barrio Vibe · Halloween Coloring Page", spiderweb_hero),
-    "christmas-mandala": ("Christmas Mandala", "Barrio Vibe · Christmas Coloring Page", christmas_mandala_hero),
-    "newyear": ("New Year Mandala", "Barrio Vibe · New Year Coloring Page", newyear_hero),
+    "pumpkin": ("Halloween Pumpkin", "Biolex · Halloween Coloring Page", pumpkin_hero),
+    "ornament": ("Christmas Ornament", "Biolex · Christmas Coloring Page", ornament_hero),
+    "snowflake": ("Snowflake", "Biolex · Winter Coloring Page", snowflake_hero),
+    "halloween-mandala": ("Halloween Mandala", "Biolex · Halloween Coloring Page", halloween_mandala_hero),
+    "spiderweb": ("Spiderweb Mandala", "Biolex · Halloween Coloring Page", spiderweb_hero),
+    "christmas-mandala": ("Christmas Mandala", "Biolex · Christmas Coloring Page", christmas_mandala_hero),
+    "newyear": ("New Year Mandala", "Biolex · New Year Coloring Page", newyear_hero),
 }
 
 # slug -> (key, PDF title, eyebrow, site description)
 REAL = {
     "christmas-ornament-mandala-coloring-page": (
-        "ornament", "Ornament Mandala", "Barrio Vibe · Christmas Coloring Page",
+        "ornament", "Ornament Mandala", "Biolex · Christmas Coloring Page",
         "An intricate ornament mandala coloring page: a bauble of concentric patterned bands around a central rosette, with holly and berries. Detailed line art to print and color."),
     "snowflake-mandala-coloring-page": (
-        "snowflake", "Snowflake Mandala", "Barrio Vibe · Winter Coloring Page",
+        "snowflake", "Snowflake Mandala", "Biolex · Winter Coloring Page",
         "A detailed snowflake mandala coloring page with six branching crystal arms and a patterned center. Intricate winter line art to print and color."),
     "halloween-mandala-coloring-page": (
-        "halloween-mandala", "Halloween Mandala", "Barrio Vibe · Halloween Coloring Page",
+        "halloween-mandala", "Halloween Mandala", "Biolex · Halloween Coloring Page",
         "A detailed Halloween mandala coloring page: pattern-filled petals ringed with bats and jack-o'-lanterns around a spider-web center. Intricate line art to print and color."),
     "spiderweb-mandala-coloring-page": (
-        "spiderweb", "Spiderweb Mandala", "Barrio Vibe · Halloween Coloring Page",
+        "spiderweb", "Spiderweb Mandala", "Biolex · Halloween Coloring Page",
         "A detailed spiderweb mandala coloring page with a full sagged web, dew drops, a bat ring, and a spider at the center. Intricate Halloween line art to print and color."),
     "christmas-mandala-coloring-page": (
-        "christmas-mandala", "Christmas Mandala", "Barrio Vibe · Christmas Coloring Page",
+        "christmas-mandala", "Christmas Mandala", "Biolex · Christmas Coloring Page",
         "A detailed Christmas mandala coloring page: a patterned poinsettia center ringed with holly, ornaments, and pattern-filled petals. Intricate holiday line art to print and color."),
     "new-year-mandala-coloring-page": (
-        "newyear", "New Year Mandala", "Barrio Vibe · New Year Coloring Page",
+        "newyear", "New Year Mandala", "Biolex · New Year Coloring Page",
         "A detailed New Year mandala coloring page of fireworks and stars around a midnight clock, with pattern-filled petals. Intricate line art to print and color."),
 }
 

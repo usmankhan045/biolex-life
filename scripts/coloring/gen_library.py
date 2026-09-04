@@ -279,7 +279,7 @@ def celestial_stars():
 
 # ============ build everything ============
 def emit_coloring(slug, title, art, desc):
-    open(f"{OUT}/{slug}.html", "w").write(coloring_page(title, "Barrio Vibe · Free Coloring Page", art))
+    open(f"{OUT}/{slug}.html", "w").write(coloring_page(title, "Biolex · Free Coloring Page", art))
     open(f"{OUT}/{slug}.meta.json", "w").write(json.dumps({"description": desc, "orientation": "portrait"}))
     CATALOG.append((slug, "coloring-pages", title, desc, "coloring"))
 

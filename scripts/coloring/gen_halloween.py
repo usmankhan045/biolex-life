@@ -248,10 +248,10 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     pages = [
         ("halloween-mandala-coloring-page", "Halloween Mandala",
-         "Barrio Vibe · Halloween Coloring Page", halloween_mandala(),
+         "Biolex · Halloween Coloring Page", halloween_mandala(),
          "A Halloween mandala coloring page ringed with jack-o'-lanterns, bats, and candy corn around a spider-web center. Original line art to print and color."),
         ("spiderweb-mandala-coloring-page", "Spiderweb Mandala",
-         "Barrio Vibe · Halloween Coloring Page", spiderweb_mandala(),
+         "Biolex · Halloween Coloring Page", spiderweb_mandala(),
          "A spiderweb mandala coloring page with a full web, a dangling spider, and a border of little bats. Original Halloween line art to color."),
     ]
     for slug, title, eyebrow, art, desc in pages:

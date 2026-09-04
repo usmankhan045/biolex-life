@@ -106,7 +106,7 @@ def joy():
  </div>
  <div class="cormo" style="margin-top:0.14in;font-size:13pt;letter-spacing:6px;text-transform:uppercase;color:#8A7A6A">Merry Christmas</div>
  </div>
- <div class="foot">Barrio Vibe · Free Printable</div>'''
+ <div class="foot">Biolex · Free Printable</div>'''
  return page(inner)
 
 def merry():
@@ -118,7 +118,7 @@ def merry():
  <span class="script" style="font-size:64pt;color:#C4826E;margin:-6px 0 -8px">&amp; Bright</span>
  </div>
  <div class="cormo" style="font-size:11pt;letter-spacing:6px;text-transform:uppercase;color:#7A9E7E">Season's Greetings</div>
- </div><div class="foot">Barrio Vibe · Free Printable</div>'''
+ </div><div class="foot">Biolex · Free Printable</div>'''
  return page(inner)
 
 def snow():
@@ -130,7 +130,7 @@ def snow():
  <span class="cormo" style="font-style:italic;font-size:22pt;color:#6B8FAE">oh, the weather outside</span>
  <span class="serif" style="font-weight:700;font-size:70pt;color:#2D3A46;line-height:0.95">Let It<br>Snow</span>
  <span class="cormo" style="margin-top:8px;font-size:12pt;letter-spacing:6px;text-transform:uppercase;color:#8AA6C0">Let It Snow, Let It Snow</span>
- </div><div class="foot" style="color:#8AA6C0">Barrio Vibe · Free Printable</div>'''
+ </div><div class="foot" style="color:#8AA6C0">Biolex · Free Printable</div>'''
  return page(inner, bg="#FAFBFC")
 
 def gather():
@@ -146,7 +146,7 @@ def gather():
  <span class="script" style="font-size:82pt;color:#B04A2E;line-height:0.85;margin-top:2px">gather</span>
  </div>
  </div>
- </div><div class="foot" style="color:#B98F76">Barrio Vibe · Free Printable</div>'''
+ </div><div class="foot" style="color:#B98F76">Biolex · Free Printable</div>'''
  return page(inner, bg="#FBF3EC")
 
 def believe():
@@ -163,7 +163,7 @@ def believe():
  <span class="cormo" style="font-style:italic;font-size:22pt;color:#C9F24E">this season, simply</span>
  <span class="serif" style="font-weight:900;font-size:78pt;line-height:0.95">Believe</span>
  <span class="cormo" style="margin-top:6px;font-size:12pt;letter-spacing:7px;text-transform:uppercase;color:#B7A8E0">Hope · Wonder · Joy</span>
- </div><div class="foot" style="color:#8B7CBE">Barrio Vibe · Free Printable</div>'''
+ </div><div class="foot" style="color:#8B7CBE">Biolex · Free Printable</div>'''
  return page(inner, bg="#241B3A")
 
 def newchapter():
@@ -176,7 +176,7 @@ def newchapter():
  <span class="cormo" style="font-size:13pt;letter-spacing:8px;text-transform:uppercase;color:#8A7A6A">here's to a</span>
  <span class="serif" style="font-weight:900;font-size:58pt;color:#2D2D2D;line-height:0.95;margin:8px 0">New<br>Chapter</span>
  <span class="script" style="font-size:44pt;color:#C4826E">twenty · twenty-seven</span>
- </div><div class="foot">Barrio Vibe · Free Printable</div>'''
+ </div><div class="foot">Biolex · Free Printable</div>'''
  return page(inner, bg="#FBF7EE")
 
 DESIGNS={

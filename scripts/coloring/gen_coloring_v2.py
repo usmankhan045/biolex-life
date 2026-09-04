@@ -102,6 +102,6 @@ PIECES={
 if __name__=="__main__":
     OUT="public/printables"
     for slug,(title,art,desc) in PIECES.items():
-        open(f"{OUT}/{slug}.html","w").write(coloring_page(title,"Barrio Vibe · Free Coloring Page",art))
+        open(f"{OUT}/{slug}.html","w").write(coloring_page(title,"Biolex · Free Coloring Page",art))
         import json; open(f"{OUT}/{slug}.meta.json","w").write(json.dumps({"description":desc,"orientation":"portrait"}))
     print("wrote",len(PIECES),"upgraded coloring pages")

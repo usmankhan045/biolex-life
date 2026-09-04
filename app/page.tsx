@@ -130,7 +130,7 @@ function LibraryPanel() {
         className="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-accent"
       />
 
-      <p className="relative stamp text-white/70 mb-4">The Barrio Vibe library</p>
+      <p className="relative stamp text-white/70 mb-4">The Biolex library</p>
       <h2 className="relative font-display text-2xl sm:text-[1.7rem] font-extrabold leading-[1.08]">
         Five shelves.
         <br />
