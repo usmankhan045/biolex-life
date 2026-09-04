@@ -46,4 +46,4 @@ Deep clean your whole house once every three to four months, quarterly, with lig
 
 {{printable:deep-cleaning-checklist}}
 
-Print it, tackle one room at a time, and check off each task as you go. A whole-house deep clean was never one impossible job, it's just a series of small, finished rooms, and the checklist is what keeps them adding up until the whole house is done.
+Print it, tackle one room at a time, and check off each task as you go. A whole-house deep clean was never one impossible job, it's just a series of small, finished rooms, and the checklist is what keeps them adding up until the whole house is done. We cover the details over in [house deep cleaning hacks](/blog/house-deep-cleaning-hacks-printable).

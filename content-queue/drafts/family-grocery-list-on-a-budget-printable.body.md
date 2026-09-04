@@ -37,4 +37,4 @@ Use both, a meal plan decides what you will eat, and the grocery list turns that
 
 {{printable:grocery-list-template}}
 
-Keep your family grocery list somewhere everyone can add to it during the week, set your ceiling before you shop, and let the plan, not the aisle, decide what goes in the cart. A budget that works is built one organized trip at a time.
+Keep your family grocery list somewhere everyone can add to it during the week, set your ceiling before you shop, and let the plan, not the aisle, decide what goes in the cart. A budget that works is built one organized trip at a time. Our [free printable crafts list](/blog/free-printable-crafts-list) guide picks up where this leaves off. This pairs well with our [grocery list for two](/blog/grocery-list-for-two-printable) guide.

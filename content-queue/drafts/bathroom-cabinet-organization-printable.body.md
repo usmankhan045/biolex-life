@@ -45,4 +45,4 @@ Decluttering is removing what you don't need; organizing is giving what's left a
 
 {{printable:bathroom-organization-labels}}
 
-Start with one shelf, work in order, and label as you go, you don't have to do the whole cabinet in one sitting for the system to take hold. A calm, functional bathroom cabinet isn't about owning less stuff or spending more on organizers, it's about giving everything you keep a clear place to live, so the space works for you every single morning instead of against you.
+Start with one shelf, work in order, and label as you go, you don't have to do the whole cabinet in one sitting for the system to take hold. A calm, functional bathroom cabinet isn't about owning less stuff or spending more on organizers, it's about giving everything you keep a clear place to live, so the space works for you every single morning instead of against you. If you want to go deeper on that, our [bathroom organization hacks](/blog/bathroom-organization-hacks-printable) guide covers it step by step. We cover the details over in [bathroom quotes](/blog/bathroom-quotes-printable).

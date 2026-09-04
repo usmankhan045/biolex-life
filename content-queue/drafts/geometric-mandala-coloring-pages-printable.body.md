@@ -38,3 +38,6 @@ You can download free printable geometric mandala coloring pages right here, no 
 {{printable:geometric-mandala-coloring-page}}
 
 Pick your palette, start at the center, and let the symmetry do the rest. There is no wrong way to fill these shapes, only your way, and part of the calm comes from knowing the pattern will look balanced no matter which colors you reach for. Keep a small stack printed and ready, and the next time your mind is racing you will have a five-minute reset waiting on the desk instead of a search to run. A finished geometric mandala is proof that a few quiet minutes, done one clean shape at a time, add up to something genuinely lovely.
+
+
+{{printable:coloring-animal-mandala}}

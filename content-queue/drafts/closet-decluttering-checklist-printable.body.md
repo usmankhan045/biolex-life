@@ -40,4 +40,4 @@ Do a full closet declutter twice a year, ideally at the spring and fall wardrobe
 
 {{printable:decluttering-checklist}}
 
-You do not need a free weekend or a perfect system to declutter closet chaos, you need three hours, four piles, and a page that decides for you. Print the checklist, clear one section at a time, and get the go pile out of the house before the day ends. When the timer stops, so do you, and tomorrow morning you open a closet that finally shows you what you own. That is the whole payoff: not a magazine closet, just a calm one you can actually get dressed in.
+You do not need a free weekend or a perfect system to declutter closet chaos, you need three hours, four piles, and a page that decides for you. Print the checklist, clear one section at a time, and get the go pile out of the house before the day ends. When the timer stops, so do you, and tomorrow morning you open a closet that finally shows you what you own. That is the whole payoff: not a magazine closet, just a calm one you can actually get dressed in. Our [kitchen decluttering checklist](/blog/kitchen-decluttering-checklist-printable) guide picks up where this leaves off.

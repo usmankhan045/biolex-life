@@ -37,4 +37,4 @@ Pair it with other quiet pieces and repeat a single color so the grouping reads 
 
 {{printable:be-still-wall-art}}
 
-Download the print, choose the size your wall is quietly asking for, and frame it with a little room to breathe. The calm corner you keep promising yourself was never really far away. It was only ever one quiet print, ready the moment you are.
+Download the print, choose the size your wall is quietly asking for, and frame it with a little room to breathe. The calm corner you keep promising yourself was never really far away. It was only ever one quiet print, ready the moment you are. You will find more on this in [let it be printable wall art](/blog/let-it-be-printable-wall-art). You will find more on this in [neutral wall art](/blog/neutral-wall-art-printable).

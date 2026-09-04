@@ -39,3 +39,8 @@ Choose one unifying thread, then vary everything else, and the wall will look de
 {{printable:botanical-branch-wall-art}}
 
 Blank walls do not need a big budget or a bold decision, just a printer, a few simple frames, and art you can reprint the moment your taste changes. Start with one botanical print this weekend, and let the wall come together from there.
+
+{{printable:botanical-07-wall-art}}
+
+
+{{printable:botanical-02-wall-art}}

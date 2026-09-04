@@ -58,4 +58,4 @@ Plan a short weekly reset and never aim for perfect. Pick one calm window, Sunda
 
 {{printable:weekly-meal-planner}}
 
-Fill in one week, stick it on the fridge, and let the plan carry you past Wednesday. Eating well is far less about willpower than about deciding once, calmly, before the week begins, and letting a simple printed sheet remember the plan so you do not have to.
+Fill in one week, stick it on the fridge, and let the plan carry you past Wednesday. Eating well is far less about willpower than about deciding once, calmly, before the week begins, and letting a simple printed sheet remember the plan so you do not have to. You will find more on this in [lunch meal planning](/blog/lunch-meal-planning-printable).

@@ -49,3 +49,6 @@ A soft pink-and-green combination feels classically floral, but a bold sunset pa
 {{printable:floral-mandala-coloring-page}}
 
 Keep a page or two printed and within reach, and let the pattern do the quiet work of settling your mind. Whether you hand one to a restless kid, sit down with it yourself after the dishes are done, or set out a bowl of colored pencils for guests, these flower mandala coloring pages ask nothing of you but a few unhurried minutes and a handful of colors. A calmer afternoon, it turns out, is often just one sheet of paper away.
+
+
+{{printable:botanical-05-wall-art}}

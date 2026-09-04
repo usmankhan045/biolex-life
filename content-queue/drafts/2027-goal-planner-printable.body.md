@@ -39,4 +39,4 @@ Review your goals once a month, on a set date, so the plan stays alive instead o
 
 {{printable:new-year-goals-planner}}
 
-Print it, fill in your two or three goals, and put it somewhere you will see it every single day, the fridge, the inside of a cabinet, the corner of your desk. A year you actually plan is a year you actually finish, one small checked box at a time.
+Print it, fill in your two or three goals, and put it somewhere you will see it every single day, the fridge, the inside of a cabinet, the corner of your desk. A year you actually plan is a year you actually finish, one small checked box at a time. For the longer version, see [meal planner printable free](/blog/meal-planner-printable-free).

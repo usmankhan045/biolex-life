@@ -36,4 +36,4 @@ Personalize it by pulling the details and colors that are already true to your h
 
 {{printable:this-is-us-wall-art}}
 
-Print the size your wall is asking for, frame it simply, and let that long-blank space finally say something about the people who live there. Beautiful family wall art was never really about the budget. It was about having your own story, ready to print the moment you want it on the wall.
+Print the size your wall is asking for, frame it simply, and let that long-blank space finally say something about the people who live there. Beautiful family wall art was never really about the budget. It was about having your own story, ready to print the moment you want it on the wall. Our [let love grow printable](/blog/let-love-grow-printable) is a soft match for a family gallery wall.

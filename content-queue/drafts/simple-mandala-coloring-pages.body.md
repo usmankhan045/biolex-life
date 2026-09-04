@@ -36,6 +36,8 @@ Pick two or three colors you love, then let the mandala's symmetry do the rest. 
 
 Attach coloring to a moment you already pause, and it sticks. The easiest way to make simple mandala coloring pages a real habit is to anchor them to an existing cue, ten minutes after dinner, during a child's quiet time, or with your morning coffee before the day speeds up. Keep a printed page and your pencils out where you will see them, because a visible page is a started page. Set a low bar: color one ring, not the whole sheet, and let yourself stop whenever you like. The point is the calm, not a finished masterpiece, so a partly colored mandala is still a win. Print a small stack at once so you never lose momentum hunting for the next one, and slip a favorite into a sheet protector to color again and again with dry-erase markers. It also travels well: tuck a page and a few pencils into your bag for waiting rooms, long car rides, or the ten quiet minutes before a meeting starts. A few unhurried minutes most days does far more for your stress than one marathon session once a month, and it is a habit the whole family can share.
 
+{{printable:coloring-owl}}
+
 {{printable:sunburst-mandala-coloring-page}}
 
 Keep a page and your pencils within reach, pick two colors you love, and let the pattern quiet your mind for a few minutes. A calmer evening is built one simple mandala at a time.

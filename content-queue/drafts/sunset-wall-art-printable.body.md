@@ -48,3 +48,6 @@ Yes, printable sunset wall art is worth it whenever you value flexibility and bu
 {{printable:mid-century-sun-wall-art}}
 
 Print it, slide it into a frame you already own, and let that warm horizon fill the wall that has been empty for too long. Start with one piece over the sofa or the bed, live with it for a week, and add a second only if the wall asks for it. That is the quiet advantage of printing your own art: you can move slowly, change your mind, and reprint any size for pennies. Good art does not have to be expensive; sometimes it just has to be the right shade of gold, in the right spot, on a wall you finally stopped avoiding.
+
+
+{{printable:celestial-08-wall-art}}

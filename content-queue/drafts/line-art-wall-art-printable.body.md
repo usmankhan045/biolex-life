@@ -44,3 +44,8 @@ Print at the highest quality setting your printer offers, on matte paper, at 100
 {{printable:botanical-branch-wall-art}}
 
 Keep the file saved so you can reprint anytime a frame opens up or a room needs a refresh. Start with one print on one wall this week, and let the empty spaces fill in from there. A finished, gallery-worthy wall is built one free print at a time, no justifying the cost required.
+
+{{printable:black-white-08-wall-art}}
+
+
+{{printable:black-white-03-wall-art}}

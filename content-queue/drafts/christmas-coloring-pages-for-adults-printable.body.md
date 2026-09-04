@@ -37,4 +37,6 @@ Turn it into a ritual by giving it a regular time and a small, cozy setup, then 
 
 {{printable:christmas-ornament-mandala-coloring-page}}
 
-Print a few, pour something warm, and give yourself the ten quiet minutes the season keeps promising you. Some evenings the most festive thing you can do is simply sit still with a page and your favorite pens, no deadline, no list, just one small area of color at a time until it's done.
+Print a few, pour something warm, and give yourself the ten quiet minutes the season keeps promising you. Some evenings the most festive thing you can do is simply sit still with a page and your favorite pens, no deadline, no list, just one small area of color at a time until it's done. For the longer version, see [peony coloring pages](/blog/peony-coloring-pages-printable). This pairs well with our [printable coloring book](/blog/printable-coloring-book) guide.
+
+{{printable:coloring-geometric}}

@@ -33,6 +33,10 @@ Frame printable nursery art affordably by reusing frames you own or buying plain
 
 ## How do you arrange a nursery gallery wall?
 
-Lay out a nursery gallery wall on the floor first, then trace each frame onto paper and tape the templates to the wall before you touch a nail. This one step prevents the crooked, hole-riddled wall that comes from eyeballing it. Start with your largest piece slightly off-center, then build outward with smaller prints, keeping a consistent 2 to 3 inch gap between frames so the group reads as one arrangement. Mix a phrase print, a piece of simple art, and one photo or textured element for visual rhythm. Above a crib, hang everything securely and avoid glass frames directly over the mattress; use lightweight frames or command strips for anything close, and keep cords and hooks out of reach. A gallery wall can start with just three prints and grow, so begin with what you have and add as you go. Print your anchor piece below and build the wall around it.
+Lay out a nursery gallery wall on the floor first, then trace each frame onto paper and tape the templates to the wall before you touch a nail. This one step prevents the crooked, hole-riddled wall that comes from eyeballing it. Start with your largest piece slightly off-center, then build outward with smaller prints, keeping a consistent 2 to 3 inch gap between frames so the group reads as one arrangement. Mix a phrase print, a piece of simple art, and one photo or textured element for visual rhythm. Above a crib, hang everything securely and avoid glass frames directly over the mattress; use lightweight frames or command strips for anything close, and keep cords and hooks out of reach. A gallery wall can start with just three prints and grow, so begin with what you have and add as you go. Print your anchor piece below and build the wall around it. The [adventure awaits printable](/blog/adventure-awaits-printable) is another easy one for that wall.
+
+{{printable:nursery-04-wall-art}}
+
+{{printable:nursery-02-wall-art}}
 
 {{printable:you-are-so-loved-wall-art}}

@@ -48,4 +48,4 @@ Would-you-rather and team challenges work best for older kids and mixed-age grou
 
 Print your stack the night before, set out the pencils, and let the games carry the party through its trickiest stretch. When one game starts to fizzle, you simply move to the next station instead of scrambling to invent something on the spot, the plan does the deciding, so you get to actually enjoy the party you are hosting.
 
-A little paper and twenty minutes of prep is all it takes to turn two chaotic hours into the part everyone remembers. Keep the printed bundle in a folder with your decorations, and next October the whole thing is ready to reprint and run again.
+A little paper and twenty minutes of prep is all it takes to turn two chaotic hours into the part everyone remembers. Keep the printed bundle in a folder with your decorations, and next October the whole thing is ready to reprint and run again. You will find more on this in [halloween party checklist](/blog/halloween-party-checklist-printable).

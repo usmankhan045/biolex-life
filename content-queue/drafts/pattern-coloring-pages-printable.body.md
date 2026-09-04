@@ -39,3 +39,6 @@ Yes, pattern pages work beautifully for children because the repeating shapes ar
 {{printable:star-pattern-coloring-page}}
 
 Keep a small stack printed and within reach, and let the pattern do the work. Try leaving a page and a cup of pens on the coffee table or the kitchen counter, somewhere you already sit, so a few minutes of coloring becomes as easy to reach for as your phone. Some evenings you will fill in three shapes and set it down; other nights you will color the whole sheet without noticing the time pass. Both count. A few quiet minutes with a good page and any pen you have on hand is one of the simplest resets there is, no skill, no sign-up, and no mess to clean up after.
+
+
+{{printable:coloring-zentangle}}

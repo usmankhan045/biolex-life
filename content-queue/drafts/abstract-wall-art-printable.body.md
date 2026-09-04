@@ -38,4 +38,8 @@ Pull one or two colors from something already in the room, a rug, a throw pillow
 
 {{printable:mid-century-shapes-wall-art}}
 
-Print the size your wall is asking for, frame it simply, and let that long-blank space finally do something for the room. Beautiful abstract wall art was never really about the budget. It was about having a design you love, ready to print the moment you are.
+Print the size your wall is asking for, frame it simply, and let that long-blank space finally do something for the room. Beautiful abstract wall art was never really about the budget. It was about having a design you love, ready to print the moment you are. If you want to go deeper on that, our [be still printable wall art](/blog/be-still-printable-wall-art) guide covers it step by step. Our [celestial wall art](/blog/celestial-wall-art-printable) guide picks up where this leaves off.
+
+{{printable:abstract-line-art-wall-art}}
+
+{{printable:black-white-01-wall-art}}

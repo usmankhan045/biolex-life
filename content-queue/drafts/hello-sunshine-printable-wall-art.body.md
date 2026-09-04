@@ -38,3 +38,6 @@ Pull one or two colors from something already in the room, a rug, a curtain, a t
 {{printable:hello-sunshine-wall-art}}
 
 Print the size your wall is asking for, frame it simply, and let that flat little corner finally do something warm for the room. A bright, welcoming home was never really about the budget. It was about having a design you love, ready to print the moment you are.
+
+
+{{printable:celestial-02-wall-art}}

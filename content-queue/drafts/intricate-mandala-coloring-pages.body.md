@@ -36,6 +36,8 @@ Start at the center and choose your palette there first, because the middle sets
 
 Print intricate mandala coloring pages at full size (100%, or "actual size," never "fit to page") on the heaviest paper your printer will take, and the fine lines stay sharp instead of blurring together. Set the printer to its best or high-quality mode, which lays down more detail on the thin lacework, and choose grayscale or black-only ink so the outlines come out dark and even. Standard copy paper works in a pinch, but 32 lb paper or a light cardstock resists marker bleed and stands up to layered pencil far better, which really matters when a design has this many small sections. If you plan to use markers or gel pens, slip a scrap sheet behind the page to catch any bleed-through onto the table. Always print one copy to test before you run several. For more ready-to-print options that hold their detail well, browse our [mandala coloring pages for adults](/blog/mandala-coloring-pages-for-adults), then grab this lace design below and start whenever you have ten quiet minutes.
 
+{{printable:coloring-daisy}}
+
 {{printable:lace-mandala-coloring-page}}
 
 Keep a printed stack tucked in a drawer, sharpen your pencils, and let the pattern do the rest. Ten unhurried minutes with an intricate mandala is one of the easiest ways to reset a frazzled evening.

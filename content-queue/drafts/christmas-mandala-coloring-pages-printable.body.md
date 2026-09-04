@@ -49,3 +49,6 @@ A classic combination is red, green, and gold, but an all-blues-and-silvers snow
 {{printable:star-mandala-coloring-page}}
 
 Keep a small stack printed and within reach this December, and let the pattern do the work of settling the room. Whether you hand a page to a restless kid, sit down with one yourself after the dishes are done, or set out a bowl of pencils for holiday guests, these christmas mandala coloring pages ask nothing of you but a few quiet minutes. A calmer holiday afternoon is often just one sheet of paper and a handful of colored pencils away.
+
+
+{{printable:coloring-owl}}

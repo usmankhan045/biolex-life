@@ -38,6 +38,8 @@ Print at 100 percent scale on the highest quality setting your printer offers, a
 
 The best part of a printable coloring book is that it is never really finished, and it never runs out. When you color the last floral you loved, you simply print it again, or pick a new mandala and add it to the folder. There is no wrong way to build it and no page you have to ration, so the whole thing stays light and low-pressure, exactly the way coloring is supposed to feel. Start with one design that catches your eye, print a handful of copies, and keep them somewhere easy to reach. The next time you want to put down your phone and slow down for ten quiet minutes, the page will already be waiting for you.
 
+{{printable:coloring-geometric}}
+
 Download a design below, print a few copies, and let a coloring book you built yourself become the one you actually finish.
 
 {{printable:floral-mandala-coloring-page}}

@@ -39,3 +39,6 @@ Aim for a short session whenever you feel your stress climbing, which for many p
 {{printable:lace-mandala-coloring-page}}
 
 Keep a page somewhere you will see it, color a little whenever the noise gets loud, and let the slow, repetitive motion do the settling. A calmer evening is only one printed sheet and a handful of colored pencils away.
+
+
+{{printable:coloring-snowflake}}

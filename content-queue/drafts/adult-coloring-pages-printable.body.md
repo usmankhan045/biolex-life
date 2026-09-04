@@ -40,4 +40,6 @@ Download the PDF, open it, and print at "actual size" or 100 percent scale on le
 
 {{printable:lace-mandala-coloring-page}}
 
-Keep a few printed pages tucked in a drawer so calm is always one pencil away. You do not need a perfect result or a free afternoon, just twenty quiet minutes and a page that finally respects your time.
+Keep a few printed pages tucked in a drawer so calm is always one pencil away. You do not need a perfect result or a free afternoon, just twenty quiet minutes and a page that finally respects your time. We cover the details over in [coloring pages to print](/blog/coloring-pages-to-print). We cover the details over in [cute coloring pages](/blog/cute-coloring-pages-printable).
+
+{{printable:coloring-floral-mandala}}

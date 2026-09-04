@@ -52,7 +52,7 @@ Good storage is what makes all of this actually work. A set of clear airtight co
 
 Pair your list with a short meal plan so every item already has a job before it reaches the cart. Sketch four or five dinners for the week, not seven, leaving room for leftovers and one takeout night, then write your grocery list straight from those meals. Deliberately overlap ingredients: if Monday uses half a bunch of cilantro, give Wednesday a reason to finish the rest.
 
-Cook once and eat twice wherever you can, portioning the second serving into tomorrow's lunch the moment dinner is done, so it feels like a gift instead of a chore. Keep one loose "use-it-up" night each week to clear the fridge before the next shop, which quietly erases most of your waste. A grocery list for two works best not as a shopping tool on its own but as the last step of a small plan: the plan decides, the list remembers, and your bill and your trash both shrink.
+Cook once and eat twice wherever you can, portioning the second serving into tomorrow's lunch the moment dinner is done, so it feels like a gift instead of a chore. Keep one loose "use-it-up" night each week to clear the fridge before the next shop, which quietly erases most of your waste. A grocery list for two works best not as a shopping tool on its own but as the last step of a small plan: the plan decides, the list remembers, and your bill and your trash both shrink. If you want to go deeper on that, our [family grocery list on a budget](/blog/family-grocery-list-on-a-budget-printable) guide covers it step by step. There is a full breakdown of this in our [grocery shopping list](/blog/grocery-shopping-list-printable) post.
 
 {{printable:grocery-list-template}}
 

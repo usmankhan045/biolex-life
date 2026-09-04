@@ -38,3 +38,6 @@ Repeat one element across every piece, and even mismatched prints become a set. 
 {{printable:celestial-moon-wall-art}}
 
 Print the set, frame it consistently, and hang it where you will see it most. A calm, celestial wall is really just a few good prints, matching frames, and a little even spacing away, and it costs a small fraction of anything you would ever order online.
+
+
+{{printable:celestial-01-wall-art}}

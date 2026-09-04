@@ -47,3 +47,8 @@ Choose one unifying thread, then vary everything else, and the wall will look de
 {{printable:boho-arch-wall-art}}
 
 A blank wall does not need a big budget or a permanent decision, just a printer, a few simple frames, and warm earthy prints you can swap the moment your taste shifts. Print one arch this weekend, and let the room warm up from there.
+
+{{printable:botanical-08-wall-art}}
+
+
+{{printable:botanical-03-wall-art}}

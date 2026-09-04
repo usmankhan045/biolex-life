@@ -38,3 +38,6 @@ Print on the heaviest matte paper your printer allows, then trim and frame it, a
 {{printable:mountains-line-art-wall-art}}
 
 Keep your palette quiet, your frames consistent, and your spacing even, and a blank wall turns into the calm, collected focal point you have been picturing. A finished room is only a print and a frame away.
+
+
+{{printable:black-white-05-wall-art}}

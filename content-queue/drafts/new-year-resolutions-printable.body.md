@@ -40,3 +40,6 @@ A resolution is the intention; a goal is the measurable version of it with a tar
 {{printable:new-year-goals-planner}}
 
 Print it, fill it in, and put it somewhere you'll actually see it every day, the fridge, your planner, the inside of a cabinet door. Then give it two minutes a week and a slightly longer look once a month. That is the entire system: a specific list you can see, and a simple habit of returning to it often enough to catch the drift before it turns into another abandoned January. Resolutions don't stick because you tried harder in January, they stick because you kept looking at them all year long. Make this the year the list finally makes it past February.
+
+
+{{printable:new-chapter-wall-art}}

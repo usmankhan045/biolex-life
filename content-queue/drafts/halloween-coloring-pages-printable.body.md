@@ -54,3 +54,6 @@ The same ritual works all year, not just in October. Once the pumpkins are packe
 {{printable:halloween-mandala-coloring-page}}
 
 Print a few copies, spread out the crayons, and let the spooky season slow down for twenty minutes. The best Halloween activity is often the simplest one, a sharp black outline, a handful of colors, and a kitchen table.
+
+
+{{printable:coloring-flower-bouquet}}

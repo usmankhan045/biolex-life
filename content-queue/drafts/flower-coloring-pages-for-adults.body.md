@@ -39,4 +39,6 @@ Print flower coloring pages on the heaviest paper your printer handles, and choo
 
 {{printable:peony-coloring-page}}
 
-Keep a printed page and your pencils somewhere easy to reach, and let yourself color just one flower when the day gets loud. Ten quiet minutes and a finished petal are a surprisingly good way to reset.
+Keep a printed page and your pencils somewhere easy to reach, and let yourself color just one flower when the day gets loud. Ten quiet minutes and a finished petal are a surprisingly good way to reset. There is a full breakdown of this in our [spring flower coloring pages](/blog/spring-flower-coloring-pages) post.
+
+{{printable:coloring-botanical-wreath}}

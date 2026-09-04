@@ -42,4 +42,6 @@ None of this requires any artistic skill or a steady hand you were born with, ju
 
 Finished pages don't have to disappear into a drawer, they make genuinely charming seasonal decor. Frame a favorite in a simple black frame for instant Halloween wall art, or clip several across the mantel with mini pegs for a handmade garland that cost you nothing but an evening. Because you print these yourself, you can make as many as you like: color one, hang it, print another, and rotate them all season. They're also a lovely, low-key activity for a grown-up Halloween gathering, set out a stack of pages and a jar of markers and let guests unwind between conversations. If you're coloring alongside the family, pair the intricate adult designs with these simpler [free Halloween coloring pages](/blog/halloween-coloring-pages-printable) so kids and adults can happily share the same table. And once the season turns, the same calming ritual carries straight into December with these [Christmas coloring pages for adults](/blog/christmas-coloring-pages-for-adults-printable). For tonight, though, print the spiderweb mandala below, pour something warm, and give yourself a quiet, screen-free hour.
 
+{{printable:coloring-geometric}}
+
 {{printable:spiderweb-mandala-coloring-page}}

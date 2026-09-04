@@ -36,6 +36,8 @@ Coloring peonies helps you unwind because the repetitive, low-stakes motion of f
 
 Finished peony pages have far more uses than the recycling bin, and displaying them turns a quiet hobby into something you actually enjoy seeing around the house. Frame a favorite in a simple 8.5 x 11 frame for instant wall art, or clip a few to a string with mini clothespins for a soft gallery in a craft nook or bedroom. Because peonies read as elegant rather than childish, colored pages make lovely handmade cards, bookmarks, gift tags, or framed gifts for a friend who needs a lift. You can also slip completed sheets into a binder to build your own coloring portfolio and watch your blending improve over time. For kids' rooms or a classroom, a colored peony makes a cheerful, personal decoration. Print as many copies as you like and experiment with different palettes on each, one blush, one coral, one moody burgundy, so no two ever look the same.
 
+{{printable:coloring-animal-mandala}}
+
 {{printable:peony-coloring-page}}
 
 Print a few, keep your pencils close, and let the petals give you an easy, beautiful reason to slow down for a little while.

@@ -56,6 +56,8 @@ Attach the word to things you already do, so it shows up without effort, living 
 
 And give yourself grace. Some months the word will feel far away, and returning to it *is* the practice, not a sign you've failed. Print a fresh copy whenever the old one fades into the wallpaper of your day; a clean sheet renews your attention. One word, seen daily and lived gently, will shape your year far more than any resolution list ever could.
 
+{{printable:word-of-the-year-wall-art}}
+
 {{printable:word-of-the-year}}
 
 Choose your word, frame it, and put it where you'll meet its eyes every morning. A whole year of intention starts with a single page.

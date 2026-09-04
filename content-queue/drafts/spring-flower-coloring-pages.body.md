@@ -36,6 +36,8 @@ Coloring turns into a real routine when you anchor it to a time that already exi
 
 Finished pages do not have to head straight for the recycling bin, a few small ideas give kids a reason to color carefully and turn the results into cheerful spring decor. Tape a row of completed bouquets along a hallway or the fridge for an instant seasonal gallery that costs nothing and brightens the whole kitchen. Slip a favorite into a dollar-store frame for a windowsill, or trim the flowers out and glue them onto folded cardstock to make handmade cards for grandparents, teachers, or a spring birthday. Younger kids love mailing their artwork, and older ones enjoy signing a real gallery wall. You can also punch a hole in the corner of each finished sheet and collect them on a ring as a growing spring coloring book. Giving the pages a destination makes the whole activity feel purposeful, and it keeps the printer earning its keep all season long.
 
+{{printable:coloring-christmas-mandala}}
+
 {{printable:flower-bouquet-coloring-page}}
 
 Print a stack, set out the crayons, and let the afternoon slow down. A pile of spring flower coloring pages is one of the simplest ways to buy a quiet hour at home.

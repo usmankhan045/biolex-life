@@ -47,4 +47,8 @@ Match boho wall art to your room by pulling one or two colors from what you alre
 
 {{printable:boho-sun-moon-wall-art}}
 
-The blank wall does not have to stay blank, and it does not have to cost a fortune. Print one boho piece this weekend, frame it, and let the wall grow from there, one warm, gathered print at a time. Add a second print next payday, a third the month after, and before long you will have the collected, layered gallery wall you kept pinning, built entirely from free files and a few simple frames. Start with the single sun and moon print, and let the rest follow.
+The blank wall does not have to stay blank, and it does not have to cost a fortune. Print one boho piece this weekend, frame it, and let the wall grow from there, one warm, gathered print at a time. Add a second print next payday, a third the month after, and before long you will have the collected, layered gallery wall you kept pinning, built entirely from free files and a few simple frames. Start with the single sun and moon print, and let the rest follow. This pairs well with our [hello sunshine printable wall art](/blog/hello-sunshine-printable-wall-art) guide. For the longer version, see [let it be printable wall art](/blog/let-it-be-printable-wall-art).
+
+{{printable:boho-04-wall-art}}
+
+{{printable:boho-03-wall-art}}

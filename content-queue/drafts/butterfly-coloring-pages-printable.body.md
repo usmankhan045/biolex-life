@@ -37,4 +37,6 @@ For the cleanest result, open the PDF and print at "actual size" or 100 percent 
 
 {{printable:butterfly-coloring-page}}
 
-Keep a small stack printed and tucked in a drawer, and you will always have a quiet, screen-free activity ready, whether it is for a bored six-year-old or for the ten calm minutes you have been meaning to give yourself.
+Keep a small stack printed and tucked in a drawer, and you will always have a quiet, screen-free activity ready, whether it is for a bored six-year-old or for the ten calm minutes you have been meaning to give yourself. There is a full breakdown of this in our [peony coloring pages](/blog/peony-coloring-pages-printable) post. We cover the details over in [printable coloring book](/blog/printable-coloring-book).
+
+{{printable:coloring-animal-mandala}}

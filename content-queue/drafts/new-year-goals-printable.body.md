@@ -37,4 +37,6 @@ When you fall off track, resume, don't restart, and don't scrap the goal. Fallin
 
 {{printable:new-year-goals-planner}}
 
-Print the new year goals printable, fill it in, and put it where you'll see it every day. A meaningful year isn't built from one motivated January morning, it's built from a plan you keep looking at, one small step at a time.
+Print the new year goals printable, fill it in, and put it where you'll see it every day. A meaningful year isn't built from one motivated January morning, it's built from a plan you keep looking at, one small step at a time. There is a full breakdown of this in our [new year mandala coloring page](/blog/new-year-mandala-coloring-page-printable) post. We cover the details over in [new year meal prep reset](/blog/new-year-meal-prep-reset-printable).
+
+{{printable:new-year-goals-wall-art}}

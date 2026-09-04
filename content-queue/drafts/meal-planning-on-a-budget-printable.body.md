@@ -47,4 +47,4 @@ Here is the whole method boiled down to four steps you can run every week:
 
 {{printable:weekly-meal-planner}}
 
-Start with next week: shop your kitchen first, pick five or six dinners that share ingredients, and let one sheet on the fridge do the deciding for you. Track it for a month and you will have your own repeatable routine, one that bends with real life instead of falling apart the first hectic week, and one your grocery total will notice. Meal planning on a budget was never about eating less. It is about wasting less, and that is a change you can start this Sunday.
+Start with next week: shop your kitchen first, pick five or six dinners that share ingredients, and let one sheet on the fridge do the deciding for you. Track it for a month and you will have your own repeatable routine, one that bends with real life instead of falling apart the first hectic week, and one your grocery total will notice. Meal planning on a budget was never about eating less. It is about wasting less, and that is a change you can start this Sunday. For the longer version, see [lunch meal planning](/blog/lunch-meal-planning-printable).

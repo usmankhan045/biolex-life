@@ -37,4 +37,6 @@ Look past the wall above the bed, because the small, overlooked spots are what m
 
 {{printable:be-still-wall-art}}
 
-Download the file, print it on your favorite matte cardstock, and drop it into a frame you already own, for a calm, finished bedroom wall without the store price. Print as many copies as your rooms need, and let two quiet words do the settling in for you.
+Download the file, print it on your favorite matte cardstock, and drop it into a frame you already own, for a calm, finished bedroom wall without the store price. Print as many copies as your rooms need, and let two quiet words do the settling in for you. You will find more on this in [be still printable wall art](/blog/be-still-printable-wall-art).
+
+{{printable:let-it-be-wall-art}}

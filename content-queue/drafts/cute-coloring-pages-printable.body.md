@@ -39,3 +39,6 @@ Make a coloring book by printing several themed pages, stacking them in an order
 {{printable:daisy-wreath-coloring-page}}
 
 Save a few favorites to a folder, keep paper and pencils where you can reach them, and the next quiet-time request takes thirty seconds to answer instead of twenty minutes of scrolling. Cute, calm, and printed at home is the whole point.
+
+
+{{printable:coloring-christmas-mandala}}

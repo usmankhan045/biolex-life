@@ -43,6 +43,8 @@ Shade in the same direction within each shape, leave a thin highlight where ligh
 
 Print heart coloring pages any time you need a quick, screen-free activity that suits almost anyone in the room, but they truly shine around a handful of moments. Valentine's Day is the obvious one: they double as a craft, a card base, or a party-table activity that keeps small hands busy while you set out snacks. They are just as useful on a rainy afternoon, a long car-trip rest stop, or a waiting room where a folded sheet and three pencils buy you fifteen calm minutes. Adults reach for them at the end of a hard day, when the goal is not productivity but a gentle way to decompress before bed. Teachers use them as early-finisher work and mindfulness breaks. Because the file is free and reprintable, you can run off a fresh copy whenever the mood strikes, one for each child, or a stack for a classroom, without ever paying or signing up.
 
+{{printable:coloring-owl}}
+
 {{printable:hearts-pattern-coloring-page}}
 
 Keep the file saved somewhere easy to reach, print a copy whenever you need a quiet moment, and let the coloring do the rest. Sometimes the simplest activity is exactly the one you needed.

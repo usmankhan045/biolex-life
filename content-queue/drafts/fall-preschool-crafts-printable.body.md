@@ -39,4 +39,4 @@ Crafts do far more than fill an afternoon, they build the exact skills preschool
 
 {{printable:preschool-crafts-planner}}
 
-Keep the planner where you actually plan the week, pick a couple of crafts, and let the season do the theming for you. The best craft time isn't the most impressive one, it's the one that actually happens.
+Keep the planner where you actually plan the week, pick a couple of crafts, and let the season do the theming for you. The best craft time isn't the most impressive one, it's the one that actually happens. This pairs well with our [free printable crafts list](/blog/free-printable-crafts-list) guide.

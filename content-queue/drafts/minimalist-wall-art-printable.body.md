@@ -35,6 +35,10 @@ Keep the palette tight and let the frame do the elevating: a thin matte-black or
 
 Repeat something, color, frame, or subject, so the pieces read as a deliberate set instead of a random pile. The fastest route to a collected look is choosing two or three prints that share one line-art style and one palette, then framing them identically so nothing draws the eye for the wrong reason. Odd numbers tend to feel more natural than perfectly even ones, so a trio across a wall or a pair flanking a mirror usually beats a stiff grid of four. Keep the spacing consistent, about 2 to 3 inches between frames, so the group reads as a single composition rather than scattered dots. Resist the urge to fill every inch; minimalist arrangements depend on the empty wall around them to actually work. Start with one well-placed piece, live with it for a week, then add. Because these are free printables, you can experiment with zero risk, reprint, reframe, or reposition until the wall feels right. The goal was never a wall that shouts. It is a wall that quietly makes the whole room feel finished.
 
+{{printable:black-white-07-wall-art}}
+
+{{printable:black-white-04-wall-art}}
+
 {{printable:mountains-line-art-wall-art}}
 
 Print one piece this week, hang it at eye level, and let the empty space around it do the work. A calm, put-together room is built one simple frame at a time.

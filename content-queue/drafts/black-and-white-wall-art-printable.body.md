@@ -45,4 +45,8 @@ Keep black and white art from feeling cold by adding warmth through texture and 
 
 {{printable:mountains-line-art-wall-art}}
 
-Pick a size, print it on good paper, and let the contrast do the decorating for you. Start with one print in one frame, hang it, and see how much calmer the room already feels before you build out the rest. A wall you actually love is a few clicks and one frame away, not a weekend project and not a splurge.
+Pick a size, print it on good paper, and let the contrast do the decorating for you. Start with one print in one frame, hang it, and see how much calmer the room already feels before you build out the rest. A wall you actually love is a few clicks and one frame away, not a weekend project and not a splurge. There is a full breakdown of this in our [neutral wall art](/blog/neutral-wall-art-printable) post. We cover the details over in [printable wall art for bathroom](/blog/printable-wall-art-for-bathroom).
+
+{{printable:black-white-06-wall-art}}
+
+{{printable:black-white-02-wall-art}}

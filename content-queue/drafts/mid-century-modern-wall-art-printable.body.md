@@ -39,3 +39,8 @@ Mid-century, abstract, and minimalist wall art overlap, but each leans a differe
 {{printable:mid-century-shapes-wall-art}}
 
 You do not need a gallery budget to give a room the warm, retro character you have been picturing. Download the printable, choose your favorite shapes, print them on the nicest paper you have, and frame them tonight. Start with one print or build a whole gallery wall; either way, your blank wall is about fifteen minutes away from finished.
+
+{{printable:mid-century-abstract-wall-art}}
+
+
+{{printable:celestial-03-wall-art}}

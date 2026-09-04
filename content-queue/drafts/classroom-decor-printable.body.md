@@ -36,4 +36,4 @@ Anchor your bulletin board to the same palette and font as your labels and signs
 
 {{printable:classroom-labels}}
 
-Print one coordinated set, laminate what kids touch, and let a single palette do the heavy lifting. A calm, put-together classroom is built one free printable at a time, not one expensive kit at a time.
+Print one coordinated set, laminate what kids touch, and let a single palette do the heavy lifting. A calm, put-together classroom is built one free printable at a time, not one expensive kit at a time. There is a full breakdown of this in our [preschool classroom decor](/blog/preschool-classroom-decor-printable) post.

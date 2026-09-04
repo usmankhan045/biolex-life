@@ -35,6 +35,8 @@ Start with the rainbow as your anchor and build outward with two to four smaller
 
 Hang rainbow wall art at the child's eye level or centered over a piece of furniture, not at adult eye level, which leaves it floating awkwardly high on the wall. Over a crib, center the art so its bottom edge sits about eight to ten inches above the rail, close enough to feel connected to the crib but high enough to stay out of curious hands. Above a dresser or changing table, treat the furniture as the anchor and center the frame, or the whole gallery grouping, on it rather than on the wall as a whole. For safety, avoid hanging anything heavy or glass-framed directly over the spot where the baby sleeps. Use lightweight frames or shatter-resistant acrylic instead, and secure everything firmly to the wall. For a fuller, layered look that grows along with a boho nursery, our [free boho nursery printable wall art](/blog/boho-nursery-wall-art-printable) coordinates with the same soft, earthy palette so the pieces feel like a collection. Print it, frame it, and the wall you have been meaning to finish is finally, quietly done.
 
+{{printable:celestial-05-wall-art}}
+
 {{printable:boho-rainbow-wall-art}}
 
 Save the file, print it on nice paper, and drop it into a frame you already own. The blank wall you keep scrolling past can be finished tonight, for the price of a sheet of cardstock.

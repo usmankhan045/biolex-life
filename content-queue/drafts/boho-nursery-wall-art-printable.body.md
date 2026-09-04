@@ -41,4 +41,10 @@ Repeat the art's colors and textures elsewhere in the room so the prints feel wo
 
 {{printable:boho-rainbow-wall-art}}
 
-Print the set on nice paper, slot the pieces into a few warm frames, and the walls above that crib finally feel as finished as the rest of the room. A beautiful boho nursery does not require a big budget, just a coordinated palette, a printer, and a quiet weekend afternoon. Start with the boho rainbow above, frame it this week, and let the wall grow one gentle, gathered print at a time.
+Print the set on nice paper, slot the pieces into a few warm frames, and the walls above that crib finally feel as finished as the rest of the room. A beautiful boho nursery does not require a big budget, just a coordinated palette, a printer, and a quiet weekend afternoon. Start with the boho rainbow above, frame it this week, and let the wall grow one gentle, gathered print at a time. This pairs well with our [scandinavian wall art](/blog/scandinavian-wall-art-printable) guide.
+
+{{printable:nursery-06-wall-art}}
+
+{{printable:boho-06-wall-art}}
+
+{{printable:boho-02-wall-art}}

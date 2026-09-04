@@ -43,4 +43,6 @@ A finished flower page can become far more than fridge art. Once the color is dr
 
 {{printable:floral-mandala-coloring-page}}
 
-Keep a small stack printed and within easy reach, and a calm, screen-free afternoon is never more than one page away. Print a fresh copy whenever the mood strikes, because there is always another bloom waiting to be colored in.
+Keep a small stack printed and within easy reach, and a calm, screen-free afternoon is never more than one page away. Print a fresh copy whenever the mood strikes, because there is always another bloom waiting to be colored in. There is a full breakdown of this in our [spring flower coloring pages](/blog/spring-flower-coloring-pages) post.
+
+{{printable:botanical-04-wall-art}}

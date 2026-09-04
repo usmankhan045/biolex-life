@@ -35,6 +35,8 @@ Owl coloring pages do far more than fill a quiet afternoon; a finished page can 
 
 Yes, owl coloring pages are genuinely good for adult stress relief, and the detailed, repetitive nature of all those feathers is a big reason why. Coloring intricate, patterned designs occupies your hands and narrows your attention to a small, low-stakes task, which quiets the mental churn the same way many people describe meditation, knitting, or gardening. Owls suit this especially well because their layered feathers and optional mandala or zentangle backgrounds give you long, gentle stretches of repetitive coloring: no decisions, no deadlines, just one section after another. There is no goal beyond the page in front of you, and that total lack of pressure is exactly the point. Even ten or fifteen minutes with a detailed owl at the end of a hard day can meaningfully take the edge off feeling wound up. Keep a page and a few pencils somewhere easy to reach, and it quietly becomes a screen-free way to decompress that costs nothing to start.
 
+{{printable:coloring-butterfly}}
+
 Print your favorite owl, grab whatever pencils are closest, and give yourself permission to color one feather at a time.
 
 {{printable:owl-coloring-page}}

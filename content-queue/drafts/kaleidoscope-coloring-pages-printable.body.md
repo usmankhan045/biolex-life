@@ -51,6 +51,8 @@ Yes, kaleidoscope coloring pages work beautifully for kids, as long as you match
 
 Coloring together also turns these pages into a low-cost, rainy-day activity that keeps a wide age range busy at one table. Print the same design a few times so everyone has their own copy, then compare how different each version looks once the colors go on, it is a small, screen-free lesson in how much palette changes a pattern. The activity builds focus and fine-motor control, and it gives you a genuinely quiet shared moment that asks for no batteries and almost no cleanup. Keep a folder of printed pages ready by the crayons, and a calm afternoon is only ever one print away.
 
+{{printable:coloring-christmas-mandala}}
+
 {{printable:kaleidoscope-mandala-coloring-page}}
 
 Keep the printable somewhere easy to reach, pick a palette before you start, and let the symmetry do the deciding. A few unhurried minutes of coloring is one of the simplest ways to reset a busy day.

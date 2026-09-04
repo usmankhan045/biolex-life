@@ -33,7 +33,11 @@ Treat the arches as a family and repeat one element, shape, color, or frame, so 
 
 ## How do you match boho arch art with the rest of your decor?
 
-Pull one color from the print and echo it two or three times around the room. Boho arch art is easy to style because its earthy palette already borrows from natural materials: a terracotta throw, a woven basket, a jute rug, or a trailing pothos makes the print feel like it belongs rather than tacked on. Keep textures warm and organic, rattan, linen, clay, aged wood, and let the walls stay mostly neutral so the arches breathe. If you love this look, our guide to [free boho printable wall art](/blog/boho-wall-art-printable) rounds up more designs in the same family, and the [earthy printable wall art collection](/blog/earthy-wall-art-printable) leans into the exact terracotta-and-clay tones that make an arch print glow. Mix a few together for a gallery-quality wall, just paper and ink.
+Pull one color from the print and echo it two or three times around the room. Boho arch art is easy to style because its earthy palette already borrows from natural materials: a terracotta throw, a woven basket, a jute rug, or a trailing pothos makes the print feel like it belongs rather than tacked on. Keep textures warm and organic, rattan, linen, clay, aged wood, and let the walls stay mostly neutral so the arches breathe. If you love this look, our guide to [free boho printable wall art](/blog/boho-wall-art-printable) rounds up more designs in the same family, and the [earthy printable wall art collection](/blog/earthy-wall-art-printable) leans into the exact terracotta-and-clay tones that make an arch print glow. Mix a few together for a gallery-quality wall, just paper and ink. We walk through this in more detail in [printable wall art for bathroom](/blog/printable-wall-art-for-bathroom). There is a full breakdown of this in our [scandinavian wall art](/blog/scandinavian-wall-art-printable) post.
+
+{{printable:boho-05-wall-art}}
+
+{{printable:boho-01-wall-art}}
 
 {{printable:boho-arch-wall-art}}
 

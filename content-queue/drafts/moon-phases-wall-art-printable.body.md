@@ -37,6 +37,8 @@ Each of the eight phases marks a stage in the moon's roughly 29.5-day cycle, and
 | Last Quarter | Left half lit | Releasing, forgiveness |
 | Waning Crescent | Thin sliver on the left | Rest, reflection, surrender |
 
+{{printable:celestial-04-wall-art}}
+
 Print the full set, frame them in order, and you have a piece of moon phases wall art that means something every time you walk past it.
 
 {{printable:boho-sun-moon-wall-art}}

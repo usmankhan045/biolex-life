@@ -36,4 +36,6 @@ Attach it to something you already do. The coloring sessions that last are the o
 
 {{printable:mandala-coloring-page}}
 
-There is no perfect first page and no rule about finishing fast. Print the one that catches your eye, pour a drink you like, and give yourself the twenty quiet minutes you keep meaning to take. You do not need a new hobby, a shopping list, or the right supplies to begin, just a printer, a pen, and a few minutes that belong to you. These free printable coloring pages are free for a reason, so print one, color it however you want, leave it half-finished if you feel like it, and print another whenever you need to slow the week down.
+There is no perfect first page and no rule about finishing fast. Print the one that catches your eye, pour a drink you like, and give yourself the twenty quiet minutes you keep meaning to take. You do not need a new hobby, a shopping list, or the right supplies to begin, just a printer, a pen, and a few minutes that belong to you. These free printable coloring pages are free for a reason, so print one, color it however you want, leave it half-finished if you feel like it, and print another whenever you need to slow the week down. If you want to go deeper on that, our [animal coloring pages for adults](/blog/animal-coloring-pages-for-adults) guide covers it step by step. You will find more on this in [animal mandala coloring pages](/blog/animal-mandala-coloring-pages-printable).
+
+{{printable:coloring-butterfly}}

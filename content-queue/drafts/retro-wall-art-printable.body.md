@@ -46,3 +46,6 @@ Frame retro prints in simple, low-profile frames and hang the center of the arra
 {{printable:mid-century-sun-wall-art}}
 
 Keep the file saved, print on nice paper, and let one warm retro print turn that blank wall into the most collected corner in the house. Good decor is not about spending more; it is about choosing pieces that finally feel like home.
+
+
+{{printable:celestial-06-wall-art}}

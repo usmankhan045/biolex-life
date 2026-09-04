@@ -37,4 +37,6 @@ Yes, a framed nursery quote printable makes a thoughtful, low-cost baby shower g
 
 {{printable:let-love-grow-wall-art}}
 
-Download your free nursery quotes printable, print it on good cardstock, and give those blank walls the soft, hopeful feeling you pictured, all before the baby arrives. Beautiful nursery decor really can start with a single sheet of paper.
+Download your free nursery quotes printable, print it on good cardstock, and give those blank walls the soft, hopeful feeling you pictured, all before the baby arrives. Beautiful nursery decor really can start with a single sheet of paper. The [let love grow printable](/blog/let-love-grow-printable) hangs beautifully alongside these.
+
+{{printable:nursery-quotes-wall-art}}

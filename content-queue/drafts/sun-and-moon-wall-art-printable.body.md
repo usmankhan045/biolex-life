@@ -53,4 +53,6 @@ Yes, this sun and moon wall art is completely free to download and print for per
 
 Personal use covers everything you would actually want to do with it: hang it in your own home, frame it as a gift, or print a few copies for different rooms. The only thing to skip is reselling the file or the finished prints. Beyond that, print as many as you like, in whatever palette-friendly paper suits your space, and swap it out whenever the mood strikes. Download it below, frame it, and finally fill that wall you have been staring at.
 
+{{printable:celestial-07-wall-art}}
+
 {{printable:boho-sun-moon-wall-art}}

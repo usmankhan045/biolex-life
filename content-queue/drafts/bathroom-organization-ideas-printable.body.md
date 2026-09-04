@@ -37,4 +37,4 @@ Declutter your bathroom first by pulling everything out and tossing what's expir
 
 {{printable:bathroom-organization-labels}}
 
-Print the labels, set your zones, and let the system do the remembering for you. An organized bathroom isn't about owning less or scrubbing more, it's about giving every item one obvious home and making it effortless to put back. These bathroom organizer ideas work just as well in a rental half-bath as in a primary suite: zone it, contain it, label it, and the pile stops coming back.
+Print the labels, set your zones, and let the system do the remembering for you. An organized bathroom isn't about owning less or scrubbing more, it's about giving every item one obvious home and making it effortless to put back. These bathroom organizer ideas work just as well in a rental half-bath as in a primary suite: zone it, contain it, label it, and the pile stops coming back. This pairs well with our [bathroom organization hacks](/blog/bathroom-organization-hacks-printable) guide. We walk through this in more detail in [garage organization before and after](/blog/garage-organization-before-and-after-printable).

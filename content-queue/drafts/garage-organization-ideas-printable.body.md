@@ -39,4 +39,4 @@ Plan a garage makeover by mapping your zones on paper first, then tackling one z
 
 {{printable:garage-zone-plan}}
 
-Keep the zone plan somewhere you will see it, tape a copy inside the door, work through one section at a time, and let the map decide where everything belongs. The order takes the pressure off, you never have to figure out the whole garage at once, only the zone in front of you. A garage you can finally park in is built one cleared zone at a time, no lost weekend required.
+Keep the zone plan somewhere you will see it, tape a copy inside the door, work through one section at a time, and let the map decide where everything belongs. The order takes the pressure off, you never have to figure out the whole garage at once, only the zone in front of you. A garage you can finally park in is built one cleared zone at a time, no lost weekend required. If you want to go deeper on that, our [garage organization before and after](/blog/garage-organization-before-and-after-printable) guide covers it step by step.

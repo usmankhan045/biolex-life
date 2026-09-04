@@ -46,3 +46,6 @@ Add texture and contrast, not color, and a neutral room reads as layered rather 
 {{printable:mid-century-sun-wall-art}}
 
 Pick a print, match it to a standard frame, and fill that wall this weekend. Neutral wall art is the low-risk way to finish a room: it costs the price of paper, works with what you already own, and never locks you into a color you will second-guess in a year. No splurge, no commitment, just a wall that finally feels finished.
+
+
+{{printable:botanical-06-wall-art}}

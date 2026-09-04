@@ -36,4 +36,8 @@ Reprint on a schedule instead of chasing permanence, because the whole advantage
 
 {{printable:boho-rainbow-wall-art}}
 
-Bare walls do not need a big budget or a two-week wait. Download, print, frame with a couple of lightweight acrylics, and hang at your child's eye level, and the room finally looks as put-together as the rest of your home.
+Bare walls do not need a big budget or a two-week wait. Download, print, frame with a couple of lightweight acrylics, and hang at your child's eye level, and the room finally looks as put-together as the rest of your home. If you are filling a kid's wall, our [adventure awaits printable](/blog/adventure-awaits-printable) works in the same palette.
+
+{{printable:nursery-05-wall-art}}
+
+{{printable:nursery-03-wall-art}}

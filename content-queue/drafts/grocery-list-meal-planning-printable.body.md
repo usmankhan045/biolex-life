@@ -39,4 +39,4 @@ Attach it to a fixed time and keep the process short. The households that stick 
 
 {{printable:grocery-list-template}}
 
-Keep the plan and the list together, build them in one short sitting, and let the two do the deciding for you. Print a copy, stick it on the fridge, and check off items as you shop so nothing slips through. A calmer, cheaper week of dinners, with fewer trips, less waste, and no more staring into the fridge at six o'clock wondering what to make, is really just one organized page away.
+Keep the plan and the list together, build them in one short sitting, and let the two do the deciding for you. Print a copy, stick it on the fridge, and check off items as you shop so nothing slips through. A calmer, cheaper week of dinners, with fewer trips, less waste, and no more staring into the fridge at six o'clock wondering what to make, is really just one organized page away. You will find more on this in [grocery list for two](/blog/grocery-list-for-two-printable). For the longer version, see [grocery shopping list](/blog/grocery-shopping-list-printable).

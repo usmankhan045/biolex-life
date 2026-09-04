@@ -45,4 +45,6 @@ After the headline, stack the date, time, address, RSVP line, and registry so th
 
 Once invitations are mailed, shift to the three things guests will remember: food, games, and favors. Build a simple menu around finger foods and one signature drink so you are not cooking all morning, and set out favors near the door so they are handed off as guests leave. Games are what turn a room of relatives and coworkers into an actual party, baby bingo, a guess-the-baby-food tasting, and a wishes-for-baby card station are low-prep and always land. You can pull a ready-to-print game card from our [free printable activity bingo](/blog/printable-bingo-for-kids) and adapt the squares for a shower in a couple of minutes. Keep a running checklist for the RSVP count, chairs, plates, and a gift-log sheet so someone can note who gave what for thank-you cards later. With the invitations handled early, the last week is decoration and prep, not panic. Print your baby shower invitations printable, put the stamps on, and let the plan carry the rest.
 
+{{printable:nursery-01-wall-art}}
+
 {{printable:party-invitations-template}}
