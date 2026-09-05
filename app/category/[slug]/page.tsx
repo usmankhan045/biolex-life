@@ -6,6 +6,7 @@ import {
   getCategories,
   getCategoryBySlug,
   getPublishedPosts,
+  getPublishedPostCount,
 } from "@/lib/queries";
 import {
   Container,
@@ -15,12 +16,19 @@ import {
   CardBody,
 } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema, collectionPageSchema } from "@/lib/schema";
+import {
+  breadcrumbSchema,
+  collectionPageSchema,
+  itemListSchema,
+} from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site.config";
+import { categoryIntros } from "@/content/category-intros";
 import { cn } from "@/lib/utils";
 
 export const revalidate = 3600;
+
+const POSTS_PER_PAGE = 24;
 
 export async function generateStaticParams() {
   try {
@@ -33,25 +41,47 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const { page: pageParam } = await searchParams;
+  const currentPage = Math.max(
+    1,
+    parseInt(typeof pageParam === "string" ? pageParam : "1", 10) || 1
+  );
   try {
     const category = await getCategoryBySlug(slug);
     if (!category) return {};
-    const title = `${category.name}: Blog`;
+    // These archives are printable collections, not blog sections. Leading with
+    // "Free ... Printables" matches how the query is actually typed and stops
+    // spending a 60-char budget on the word "Blog".
+    // Only append "Printables" when the category name does not already carry
+    // the noun, so we get "Free Printable Wall Art" rather than the stuttering
+    // "Free Printable Wall Art Printables".
+    const baseTitle = /printable|pages/i.test(category.name)
+      ? `Free ${category.name}`
+      : `Free ${category.name} Printables`;
+    const title =
+      currentPage > 1 ? `${baseTitle}, page ${currentPage}` : baseTitle;
     const description =
       category.description ??
       `Browse all ${category.name} articles on ${siteConfig.name}.`;
+    // Page 2+ canonicalizes to itself so its post links keep discovery value.
+    const canonical =
+      currentPage > 1
+        ? `/category/${slug}?page=${currentPage}`
+        : `/category/${slug}`;
     return {
       title,
       description,
-      alternates: { canonical: `/category/${slug}` },
+      alternates: { canonical },
       openGraph: {
         title,
         description,
-        url: `/category/${slug}`,
+        url: canonical,
         type: "website",
         images: ogImages(),
       },
@@ -64,13 +94,21 @@ export async function generateMetadata({
 
 export default async function CategoryArchivePage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const { slug } = await params;
+  const { page: pageParam } = await searchParams;
+  const currentPage = Math.max(
+    1,
+    parseInt(typeof pageParam === "string" ? pageParam : "1", 10) || 1
+  );
 
   let category: Awaited<ReturnType<typeof getCategoryBySlug>>;
   let posts: Awaited<ReturnType<typeof getPublishedPosts>> = [];
+  let total = 0;
 
   try {
     category = await getCategoryBySlug(slug);
@@ -80,10 +118,25 @@ export default async function CategoryArchivePage({
   if (!category) notFound();
 
   try {
-    posts = await getPublishedPosts({ categoryId: category.id, limit: 50 });
+    // Paginated, not capped. A fixed `limit` with no pagination silently
+    // stranded every post past the cap in the largest categories, leaving them
+    // reachable only through the blog pagination chain.
+    [posts, total] = await Promise.all([
+      getPublishedPosts({
+        categoryId: category.id,
+        limit: POSTS_PER_PAGE,
+        offset: (currentPage - 1) * POSTS_PER_PAGE,
+      }),
+      getPublishedPostCount({ categoryId: category.id }),
+    ]);
   } catch {
     // DB error, show empty state
   }
+
+  const totalPages = Math.max(1, Math.ceil(total / POSTS_PER_PAGE));
+  const hasPrev = currentPage > 1;
+  const hasNext = currentPage < totalPages;
+  const intro = categoryIntros[category.slug];
 
   return (
     <main className="flex-1">
@@ -101,6 +154,21 @@ export default async function CategoryArchivePage({
               `Browse all ${category.name} articles on ${siteConfig.name}.`,
             slug: `category/${category.slug}`,
           }),
+          ...(posts.length
+            ? [
+                itemListSchema({
+                  id:
+                    currentPage > 1
+                      ? `/category/${category.slug}?page=${currentPage}`
+                      : `/category/${category.slug}`,
+                  startPosition: (currentPage - 1) * POSTS_PER_PAGE + 1,
+                  items: posts.map((p) => ({
+                    url: `/blog/${p.slug}`,
+                    name: p.title,
+                  })),
+                }),
+              ]
+            : []),
         ]}
       />
       {/* ── Header ─────────────────────────────────────────────────────────── */}
@@ -134,6 +202,36 @@ export default async function CategoryArchivePage({
               {category.description}
             </p>
           )}
+          {/* Long-form intro, only on page 1: these archives are the best
+              matched URL for the category head term, and a one-line
+              description above a grid is thin for a page meant to rank. */}
+          {intro && currentPage === 1 && (
+            <div className="mt-6 max-w-2xl">
+              {intro.paragraphs.map((para) => (
+                <p
+                  key={para.slice(0, 40)}
+                  className="text-base text-muted leading-relaxed mb-4"
+                >
+                  {para}
+                </p>
+              ))}
+              {intro.highlights && intro.highlights.length > 0 && (
+                <ul className="flex flex-col gap-2 text-sm text-text/80 mt-5">
+                  {intro.highlights.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
+                      <span
+                        className="shrink-0 text-success font-bold text-xs mt-0.5"
+                        aria-hidden
+                      >
+                        ✓
+                      </span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
         </Container>
       </section>
 
@@ -158,7 +256,13 @@ export default async function CategoryArchivePage({
           ) : (
             <>
               <p className="text-xs font-mono text-muted/60 uppercase tracking-wide mb-6">
-                {posts.length} {posts.length === 1 ? "post" : "posts"}
+                {total} {total === 1 ? "post" : "posts"}
+                {totalPages > 1 && (
+                  <>
+                    <span className="mx-1.5 text-muted/40" aria-hidden>·</span>
+                    Page {currentPage} of {totalPages}
+                  </>
+                )}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {posts.map((post) => (
@@ -222,6 +326,35 @@ export default async function CategoryArchivePage({
                   </Link>
                 ))}
               </div>
+
+              {/* Pagination, keeps every post in the category crawlable */}
+              {totalPages > 1 && (
+                <div className="mt-10 pt-8 border-t border-black/[0.07] flex items-center justify-between">
+                  {hasPrev ? (
+                    <Link
+                      href={`/category/${category.slug}?page=${currentPage - 1}`}
+                      className="text-sm font-medium text-primary hover:underline underline-offset-4"
+                    >
+                      ← Previous
+                    </Link>
+                  ) : (
+                    <span />
+                  )}
+                  <p className="text-xs font-mono text-muted uppercase tracking-wide text-center">
+                    Page {currentPage} of {totalPages}
+                  </p>
+                  {hasNext ? (
+                    <Link
+                      href={`/category/${category.slug}?page=${currentPage + 1}`}
+                      className="text-sm font-medium text-primary hover:underline underline-offset-4"
+                    >
+                      Next →
+                    </Link>
+                  ) : (
+                    <span />
+                  )}
+                </div>
+              )}
 
               <div className="mt-12 pt-8 border-t border-black/[0.07]">
                 <Link

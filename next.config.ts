@@ -86,6 +86,15 @@ const nextConfig: NextConfig = {
         destination: "/author/muhammad-usman",
         permanent: true,
       },
+      // Cannibalization merge: these two targeted the same intent with
+      // near-identical H2 coverage (best art, size over sofa, colors, gallery
+      // wall, printing and framing). Consolidated into the longer, more
+      // complete post so one URL carries the signal instead of two competing.
+      {
+        source: "/blog/printable-wall-art-for-living-room",
+        destination: "/blog/living-room-wall-art-printable",
+        permanent: true,
+      },
     ];
   },
 };

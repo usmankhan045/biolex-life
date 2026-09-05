@@ -11,33 +11,64 @@ import {
   SectionDivider,
 } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { blogSchema, breadcrumbSchema } from "@/lib/schema";
+import { blogSchema, breadcrumbSchema, itemListSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
-
-export const metadata: Metadata = {
-  title: "Blog",
-  description:
-    "Practical printable guides: how to print wall art sharp, frame it, use planners and organizers, and get the most from every free download.",
-  alternates: { canonical: "/blog" },
-  openGraph: {
-    title: "Blog",
-    description:
-      "Practical printable guides: how to print wall art sharp, frame it, use planners and organizers, and get the most from every free download.",
-    url: "/blog",
-    type: "website",
-    images: ogImages(),
-  },
-  twitter: twitterImages(),
-};
-
-export const revalidate = 3600;
-
-const POSTS_PER_PAGE = 12;
 
 type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
+
+const BLOG_DESCRIPTION =
+  "Practical printable guides: how to print wall art sharp, frame it, use planners and organizers, and get the most from every free download.";
+
+// Metadata must be generated per request, not exported statically: a static
+// object cannot vary by searchParams, so every `?page=N` variant would inherit
+// the page-1 canonical and Google would discount the whole pagination chain
+// (and with it the only crawl path to posts past each category's cap).
+export async function generateMetadata({
+  searchParams,
+}: Props): Promise<Metadata> {
+  const { page: pageParam, q: qParam } = await searchParams;
+  const search = (typeof qParam === "string" ? qParam : "").trim();
+  const currentPage = Math.max(
+    1,
+    parseInt(typeof pageParam === "string" ? pageParam : "1", 10) || 1
+  );
+
+  // Search results are a user-specific view, not a landing page: keep them out
+  // of the index but let crawlers follow through to the posts themselves.
+  if (search) {
+    return {
+      title: `Search: ${search}`,
+      description: BLOG_DESCRIPTION,
+      robots: { index: false, follow: true },
+      alternates: { canonical: "/blog" },
+    };
+  }
+
+  // Page 2+ canonicalizes to itself so its links keep their discovery value.
+  const canonical = currentPage > 1 ? `/blog?page=${currentPage}` : "/blog";
+  const title = currentPage > 1 ? `Blog, page ${currentPage}` : "Blog";
+
+  return {
+    title,
+    description: BLOG_DESCRIPTION,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description: BLOG_DESCRIPTION,
+      url: canonical,
+      type: "website",
+      images: ogImages(),
+    },
+    twitter: twitterImages(),
+  };
+}
+
+export const revalidate = 3600;
+
+const POSTS_PER_PAGE = 12;
 
 export default async function BlogIndexPage({ searchParams }: Props) {
   const { page: pageParam, q: qParam } = await searchParams;
@@ -68,6 +99,7 @@ export default async function BlogIndexPage({ searchParams }: Props) {
   const totalPages = Math.max(1, Math.ceil(total / POSTS_PER_PAGE));
   const hasPrev = currentPage > 1;
   const hasNext = currentPage < totalPages;
+  const canonicalPath = currentPage > 1 ? `/blog?page=${currentPage}` : "/blog";
 
   return (
     <main className="flex-1">
@@ -77,6 +109,20 @@ export default async function BlogIndexPage({ searchParams }: Props) {
           { name: "Home", slug: "/" },
           { name: "Blog", slug: "/blog" },
         ]),
+        // Declare what this page actually indexes, with positions continuing
+        // across pages so pagination reads as one ordered list.
+        ...(posts.length
+          ? [
+              itemListSchema({
+                id: search ? "/blog" : canonicalPath,
+                startPosition: search ? 1 : offset + 1,
+                items: posts.map((p) => ({
+                  url: `/blog/${p.slug}`,
+                  name: p.title,
+                })),
+              }),
+            ]
+          : []),
       ]} />
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <section
@@ -183,11 +229,7 @@ export default async function BlogIndexPage({ searchParams }: Props) {
                       )}
                       <CardTitle
                         as="h2"
-                        className={cn(
-                          post.featured_image_url
-                            ? "sr-only"
-                            : "text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
-                        )}
+                        className="text-base leading-snug mb-2 line-clamp-3 group-hover:text-primary transition-colors"
                       >
                         {post.title}
                       </CardTitle>

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   description: `How ${siteConfig.name} collects, uses, and protects your information.`,
   alternates: { canonical: "/privacy-policy" },
   openGraph: { url: "/privacy-policy", type: "website" },
-  robots: { index: false },
 };
 
 export default function PrivacyPolicyPage() {

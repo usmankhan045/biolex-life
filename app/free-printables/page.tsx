@@ -10,7 +10,11 @@ import {
   SectionDivider,
 } from "@/components/ui";
 import { JsonLd } from "@/components/JsonLd";
-import { collectionPageSchema, breadcrumbSchema } from "@/lib/schema";
+import {
+  collectionPageSchema,
+  breadcrumbSchema,
+  itemListSchema,
+} from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 
@@ -153,6 +157,17 @@ export default async function FreePrintablesPage() {
           { name: "Home", slug: "/" },
           { name: "Free Printables", slug: "/free-printables" },
         ]),
+        ...(printables.length
+          ? [
+              itemListSchema({
+                id: "/free-printables",
+                items: printables.map((p) => ({
+                  url: `/free-printables/${p.slug}`,
+                  name: p.title,
+                })),
+              }),
+            ]
+          : []),
       ]} />
       {/* ── Header ─────────────────────────────────────────────────────────── */}
       <section
@@ -201,6 +216,9 @@ export default async function FreePrintablesPage() {
       </section>
 
       {/* ── Audience links ─────────────────────────────────────────────────── */}
+      {/* Guarded: with no audienceSegments configured this rendered a heading
+          and a promise of navigation with zero links behind it. */}
+      {siteConfig.audienceSegments.length > 0 && (
       <section className="py-12 sm:py-14 bg-primary/[0.03]" aria-labelledby="audience-cta-heading">
         <Container width="narrow">
           <SectionDivider variant="titled" label="Find your path" spacing="sm" />
@@ -231,6 +249,7 @@ export default async function FreePrintablesPage() {
           </div>
         </Container>
       </section>
+      )}
 
     </main>
   );

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   description: `Terms and conditions governing your use of ${siteConfig.name}.`,
   alternates: { canonical: "/terms-of-use" },
   openGraph: { url: "/terms-of-use", type: "website" },
-  robots: { index: false },
 };
 
 export default function TermsOfUsePage() {

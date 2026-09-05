@@ -111,11 +111,19 @@ export function articleSchema(post: Post) {
     url,
     // Always emit an ABSOLUTE image URL, fall back to the branded OG default
     // when a post has no featured image (Discover/rich-result eligibility).
-    image: post.featured_image_url
-      ? post.featured_image_url.startsWith("http")
-        ? post.featured_image_url
-        : `${BASE_URL}${post.featured_image_url}`
-      : OG_DEFAULT,
+    // ImageObject with explicit dimensions rather than a bare URL: Article
+    // image rich results want the size, and covers render at a fixed 16/9.
+    image: {
+      "@type": "ImageObject",
+      url: post.featured_image_url
+        ? post.featured_image_url.startsWith("http")
+          ? post.featured_image_url
+          : `${BASE_URL}${post.featured_image_url}`
+        : OG_DEFAULT,
+      // Verified: all 208 covers and og-default.jpg are exactly 1200x630.
+      width: 1200,
+      height: 630,
+    },
     datePublished: post.published_at ?? post.created_at,
     dateModified: post.updated_at,
     author: { "@id": PERSON_ID },
@@ -225,6 +233,74 @@ export function digitalDocumentSchema(printable: {
     ...(thumbUrl && { thumbnailUrl: thumbUrl }),
     isPartOf: { "@id": `${BASE_URL}/#website` },
     publisher: { "@id": ORG_ID },
+  };
+}
+
+/**
+ * Product + zero-price Offer for a printable. The DigitalDocument node above
+ * describes the file; this one makes the page eligible for the free-download
+ * merchant/product treatment. price "0.00" is literally true here, every
+ * printable is free with a real self-serve download.
+ *
+ * Deliberately no aggregateRating/review: we have no real ratings, and
+ * inventing them would be fabricated markup.
+ */
+export function productOfferSchema(printable: {
+  slug: string;
+  title: string;
+  description: string | null;
+  thumbnail_url?: string | null;
+  categories?: { slug: string; name: string } | null;
+}) {
+  const url = `${BASE_URL}/free-printables/${printable.slug}`;
+  const thumb = printable.thumbnail_url
+    ? printable.thumbnail_url.startsWith("http")
+      ? printable.thumbnail_url
+      : `${BASE_URL}${printable.thumbnail_url}`
+    : OG_DEFAULT;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${url}#product`,
+    name: printable.title,
+    ...(printable.description && { description: printable.description }),
+    image: thumb,
+    ...(printable.categories?.name && { category: printable.categories.name }),
+    brand: { "@id": ORG_ID },
+    offers: {
+      "@type": "Offer",
+      url,
+      price: "0.00",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
+      seller: { "@id": ORG_ID },
+    },
+  };
+}
+
+/**
+ * ItemList for listing pages (/blog, /free-printables, category archives), so
+ * the page declares what it actually indexes. Lightweight url-only form, the
+ * full entity for each item is declared on its own page.
+ */
+export function itemListSchema(params: {
+  id: string;
+  items: { url: string; name?: string }[];
+  startPosition?: number;
+}) {
+  const start = params.startPosition ?? 1;
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${BASE_URL}${params.id}#itemlist`,
+    numberOfItems: params.items.length,
+    itemListElement: params.items.map((item, i) => ({
+      "@type": "ListItem",
+      position: start + i,
+      url: `${BASE_URL}${item.url}`,
+      ...(item.name && { name: item.name }),
+    })),
   };
 }
 

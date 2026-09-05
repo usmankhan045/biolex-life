@@ -60,7 +60,9 @@ export default async function AuthorPage({
 
   let posts: Post[] = [];
   try {
-    posts = await getPublishedPosts({ limit: 100 });
+    // No cap short of the full archive: this page claims to list everything the
+    // author has written, and it is the only depth-1 link to many posts.
+    posts = await getPublishedPosts({ limit: 1000 });
   } catch {
     // non-critical
   }

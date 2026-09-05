@@ -46,10 +46,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let printableRoutes: MetadataRoute.Sitemap = [];
 
   try {
-    const posts = await getPublishedPosts({ limit: 1000 });
+    const POST_LIMIT = 5000;
+    const posts = await getPublishedPosts({ limit: POST_LIMIT });
+    if (posts.length === POST_LIMIT) {
+      // Silent truncation would drop real URLs from the sitemap with no error.
+      console.error(
+        `[sitemap] hit the ${POST_LIMIT}-post cap, sitemap may be truncated: paginate getPublishedPosts`
+      );
+    }
     postRoutes = posts.map((post) => ({
       url: `${BASE_URL}/blog/${post.slug}`,
-      lastModified: post.updated_at,
+      // Prefer a real edit timestamp, but ignore an `updated_at` that is not
+      // actually later than publication (a bulk touch sets every row to the
+      // same instant, and Google discounts lastmod it sees as uncorrelated
+      // with genuine changes).
+      lastModified:
+        post.published_at && post.updated_at > post.published_at
+          ? post.updated_at
+          : (post.published_at ?? post.updated_at),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     }));

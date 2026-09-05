@@ -9,7 +9,7 @@ import { aboutPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: `About ${siteConfig.name}: Free Printables, Designed and Print-Tested`,
   description: `The story behind ${siteConfig.name}: who we are, who this site is for, and why we built it.`,
   alternates: { canonical: "/about" },
   openGraph: { url: "/about", type: "website", images: ogImages() },
@@ -51,9 +51,7 @@ export default async function AboutPage() {
             id="about-hero-heading"
             className="font-display text-4xl sm:text-5xl font-extrabold text-text leading-[1.02] mb-5"
           >
-            Print it. Frame it.
-            <br className="hidden sm:block" />
-            {" "}Done.
+            About {siteConfig.name}
           </h1>
           <p className="text-lg text-muted leading-relaxed">{intro}</p>
         </Container>

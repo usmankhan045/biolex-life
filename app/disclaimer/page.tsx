@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   description: `General disclaimer, affiliate disclosure, and results disclaimer for ${siteConfig.name}.`,
   alternates: { canonical: "/disclaimer" },
   openGraph: { url: "/disclaimer", type: "website" },
-  robots: { index: false },
 };
 
 export default function DisclaimerPage() {

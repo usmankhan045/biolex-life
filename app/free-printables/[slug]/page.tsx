@@ -20,7 +20,11 @@ import {
 } from "@/components/ui";
 import { PrintableIframePreview } from "@/components/PrintableIframePreview";
 import { JsonLd } from "@/components/JsonLd";
-import { digitalDocumentSchema, breadcrumbSchema } from "@/lib/schema";
+import {
+  digitalDocumentSchema,
+  productOfferSchema,
+  breadcrumbSchema,
+} from "@/lib/schema";
 import { ogImages } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 
@@ -28,6 +32,14 @@ import { cn } from "@/lib/utils";
 // wrong companion (the ideal companion is the guide that embeds the printable).
 // Add entries as "<printable-slug>": "<post-slug>" when auto-matching misses.
 const COMPANION_OVERRIDES: Record<string, string> = {};
+
+// Stable per-slug offset so the "related" backfill varies across pages instead
+// of every page falling back to the same few printables.
+function hashSlug(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
+  return h;
+}
 
 export const revalidate = 3600;
 
@@ -175,10 +187,30 @@ export default async function PrintableDetailPage({
   }
   if (!printable) notFound();
 
+  // Related printables, same category first. Taking the first 3 of the global
+  // list made every one of these pages recommend the same 3 files, so ~270
+  // internal links all pointed at 3 arbitrary printables and left the rest with
+  // only the listing page linking to them.
   let related: Printable[] = [];
   try {
-    const all = await getPrintables();
-    related = all.filter((p) => p.slug !== slug).slice(0, 3);
+    const categoryId = printable.category_id;
+    const sameCategory = categoryId
+      ? (await getPrintables(categoryId)).filter((p) => p.slug !== slug)
+      : [];
+    related = sameCategory.slice(0, 3);
+    if (related.length < 3) {
+      // Backfill from the wider library, offset by this printable's position so
+      // the filler differs page to page instead of repeating the same 3 items.
+      const all = await getPrintables();
+      const pool = all.filter(
+        (p) => p.slug !== slug && !related.some((r) => r.slug === p.slug)
+      );
+      const start = pool.length
+        ? Math.abs(hashSlug(slug)) % pool.length
+        : 0;
+      const rotated = [...pool.slice(start), ...pool.slice(0, start)];
+      related = [...related, ...rotated].slice(0, 3);
+    }
   } catch {
     // non-critical
   }
@@ -201,14 +233,21 @@ export default async function PrintableDetailPage({
       (printable.categories
         ? recent.find((p) => p.categories?.slug === printable.categories!.slug)
         : undefined) ??
-      recent[0] ??
-      null;
+      // Last resort: rotate by slug rather than always taking the newest post,
+      // which made most printables point at the same single article.
+      (recent.length
+        ? recent[Math.abs(hashSlug(slug)) % recent.length]
+        : null);
   } catch {
     // non-critical
   }
 
   const schemas = [
     digitalDocumentSchema(printable),
+    // Product + price 0.00 Offer alongside the DigitalDocument: the document
+    // node describes the file, the product node carries the free-download
+    // offer signal that search engines actually surface.
+    productOfferSchema(printable),
     breadcrumbSchema([
       { name: "Home", slug: "/" },
       { name: "Free Printables", slug: "/free-printables" },
@@ -309,8 +348,14 @@ export default async function PrintableDetailPage({
                 {[
                   "Free to download and print",
                   "No purchase or credit card required",
-                  "Designed to be simple and genuinely useful",
-                  "Works for beginners and everyone else",
+                  // Concrete, checkable specs beat vague reassurance: every PDF
+                  // in the library is US Letter at 100% scale.
+                  `US Letter, 8.5 x 11 in, ${
+                    printable.orientation === "landscape"
+                      ? "landscape"
+                      : "portrait"
+                  }`,
+                  "Print at 100% scale (not Fit to Page) for true sizing",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2">
                     <span className="shrink-0 text-success font-bold text-xs mt-0.5">✓</span>
