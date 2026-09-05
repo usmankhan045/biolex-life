@@ -30,12 +30,23 @@ def build(png: Path, slug: str, kind: str) -> None:
     if pdf.exists() and pdf.stat().st_mtime > png.stat().st_mtime:
         print(f"  skip   {slug}")
         return
-    b64 = base64.b64encode(png.read_bytes()).decode()
+    # Embed as high-quality JPEG rather than the raw 300 DPI PNG: visually identical
+    # in print, but roughly a quarter of the bytes, which keeps the repo and the
+    # visitor's download small. 4:4:4 subsampling preserves crisp line art.
+    from PIL import Image
+    import io
+    im = Image.open(png).convert("RGB")
+    buf = io.BytesIO()
+    im.save(buf, "JPEG", quality=92, subsampling=0, optimize=True)
+    b64 = base64.b64encode(buf.getvalue()).decode()
     # Wall art trims to 8x10; coloring pages sit slightly larger with a safe margin.
-    dims = 'width="8in" height="10in"' if kind == "wall-art" else 'width="7.5in" height="9.375in"'
+    # Sizes must be CSS, not HTML width/height attributes: browsers and WeasyPrint
+    # read bare attributes as pixels, which blows the art far past the page.
+    dims = ('style="width:8in;height:10in;object-fit:contain"' if kind == "wall-art"
+            else 'style="width:7.5in;height:9.375in;object-fit:contain"')
     html = (f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head>'
             f'<body><div class="page">'
-            f'<img src="data:image/png;base64,{b64}" {dims}>'
+            f'<img src="data:image/jpeg;base64,{b64}" {dims}>'
             f'<div class="foot">{FOOT}</div></div></body></html>')
     src = OUT / f"{slug}.html"
     src.write_text(html)

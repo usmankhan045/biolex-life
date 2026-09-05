@@ -217,7 +217,7 @@
   },
   "christmas-mandala-coloring-page": {
     "title": "Christmas Mandala Coloring Page, Free Printable",
-    "description": "A detailed Christmas mandala coloring page: a patterned poinsettia center ringed with holly, ornaments, and pattern-filled petals. Intricate holiday line art to print and color.",
+    "description": "A festive mandala of poinsettia, holly, and ornaments, a calm holiday coloring page.",
     "file_url": "/printables/christmas-mandala-coloring-page.pdf",
     "thumbnail_url": "/printables/christmas-mandala-coloring-page-preview.png",
     "orientation": "portrait",
@@ -233,7 +233,7 @@
   },
   "snowflake-mandala-coloring-page": {
     "title": "Snowflake Mandala Coloring Page, Free Printable",
-    "description": "A detailed snowflake mandala coloring page with six branching crystal arms and a patterned center. Intricate winter line art to print and color.",
+    "description": "A large crystalline snowflake surrounded by smaller flakes, a wintry page to color.",
     "file_url": "/printables/snowflake-mandala-coloring-page.pdf",
     "thumbnail_url": "/printables/snowflake-mandala-coloring-page-preview.png",
     "orientation": "portrait",
@@ -457,7 +457,7 @@
   },
   "floral-mandala-coloring-page": {
     "title": "Floral Mandala",
-    "description": "A calming floral mandala coloring page of layered daisies and petals, original line art to color.",
+    "description": "A symmetrical flower mandala with layered petals, a relaxing page to color in.",
     "file_url": "/printables/floral-mandala-coloring-page.pdf",
     "thumbnail_url": "/printables/floral-mandala-coloring-page-preview.png",
     "orientation": "portrait",
@@ -465,7 +465,7 @@
   },
   "flower-bouquet-coloring-page": {
     "title": "Flower Bouquet",
-    "description": "A cheerful flower-bouquet-in-a-jar coloring page, an easy, satisfying page for all ages to color.",
+    "description": "A tied bouquet of roses, tulips, and garden blooms waiting to be colored.",
     "file_url": "/printables/flower-bouquet-coloring-page.pdf",
     "thumbnail_url": "/printables/flower-bouquet-coloring-page-preview.png",
     "orientation": "portrait",
@@ -489,7 +489,7 @@
   },
   "daisy-wreath-coloring-page": {
     "title": "Daisy Wreath",
-    "description": "A pretty daisy-wreath coloring page, a wreath of simple flowers and leaves to color.",
+    "description": "Big open daisies in full bloom, bold outlines that suit younger colorists and adults alike.",
     "file_url": "/printables/daisy-wreath-coloring-page.pdf",
     "thumbnail_url": "/printables/daisy-wreath-coloring-page-preview.png",
     "orientation": "portrait",
@@ -505,7 +505,7 @@
   },
   "geometric-pattern-coloring-page": {
     "title": "Geometric Pattern",
-    "description": "A geometric honeycomb pattern coloring page, a modern tessellation to color.",
+    "description": "An all-over tessellation of triangles and hexagons, a modern pattern to color.",
     "file_url": "/printables/geometric-pattern-coloring-page.pdf",
     "thumbnail_url": "/printables/geometric-pattern-coloring-page-preview.png",
     "orientation": "portrait",
@@ -521,7 +521,7 @@
   },
   "butterfly-coloring-page": {
     "title": "Butterfly",
-    "description": "A detailed butterfly coloring page with patterned wings, eyespots, and a segmented body, an intricate symmetrical page to color.",
+    "description": "An ornate butterfly framed by blossoms, a satisfying mix of fine detail and open areas to color.",
     "file_url": "/printables/butterfly-coloring-page.pdf",
     "thumbnail_url": "/printables/butterfly-coloring-page-preview.png",
     "orientation": "portrait",
@@ -529,7 +529,7 @@
   },
   "owl-coloring-page": {
     "title": "Owl",
-    "description": "A zentangle-style owl coloring page with feather rows, patterned wings, and big eyes, a detailed animal page to color.",
+    "description": "A patterned owl perched on a branch beneath the moon, a charming coloring page for all ages.",
     "file_url": "/printables/owl-coloring-page.pdf",
     "thumbnail_url": "/printables/owl-coloring-page-preview.png",
     "orientation": "portrait",
@@ -716,6 +716,390 @@
     "description": "A calming Be Still printable wall art, minimalist serif decor for a bedroom or reading nook.",
     "file_url": "/printables/be-still-wall-art.pdf",
     "thumbnail_url": "/printables/be-still-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "abstract-line-art-wall-art": {
+    "title": "Mountains Are Calling Line Art, Free Printable",
+    "description": "A minimal mountain line art print with a soft terracotta sun and a quiet caption, calm decor for a hallway or desk.",
+    "file_url": "/printables/abstract-line-art-wall-art.pdf",
+    "thumbnail_url": "/printables/abstract-line-art-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-01-wall-art": {
+    "title": "Single Leaf Line Art, Free Printable",
+    "description": "A single botanical branch drawn in one continuous black line, simple decor that suits any room.",
+    "file_url": "/printables/black-white-01-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-01-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-02-wall-art": {
+    "title": "Mountain Range Line Art, Free Printable",
+    "description": "A finely sketched mountain range under a thin sun arc, understated black and white wall art.",
+    "file_url": "/printables/black-white-02-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-02-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-03-wall-art": {
+    "title": "Sunburst Line Art, Free Printable",
+    "description": "A radiating sunburst with a solid black centre, a graphic focal point for a gallery wall.",
+    "file_url": "/printables/black-white-03-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-03-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-04-wall-art": {
+    "title": "Portrait Line Art, Free Printable",
+    "description": "An expressive ink portrait in loose brush strokes, modern black and white art for a bedroom or studio.",
+    "file_url": "/printables/black-white-04-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-04-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-05-wall-art": {
+    "title": "Abstract Shapes, Free Printable",
+    "description": "A balanced arrangement of a black circle, soft taupe curve, and thin square outline in a mid-century mood.",
+    "file_url": "/printables/black-white-05-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-05-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-06-wall-art": {
+    "title": "Triple Arch Line Art, Free Printable",
+    "description": "Three slim outlined arches in clean black line, quiet geometric decor for a modern space.",
+    "file_url": "/printables/black-white-06-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-06-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-07-wall-art": {
+    "title": "Female Form Line Art, Free Printable",
+    "description": "A single-line female figure drawn with one flowing contour, elegant minimalist art.",
+    "file_url": "/printables/black-white-07-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-07-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "black-white-08-wall-art": {
+    "title": "Moon Phases, Free Printable",
+    "description": "The lunar phases rendered in soft gold and grey, a celestial strip for a calm wall.",
+    "file_url": "/printables/black-white-08-wall-art.pdf",
+    "thumbnail_url": "/printables/black-white-08-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-01-wall-art": {
+    "title": "Boho Arch with Olive Branch, Free Printable",
+    "description": "A layered terracotta arch framing an olive branch, warm boho decor for a living room.",
+    "file_url": "/printables/boho-01-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-01-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-02-wall-art": {
+    "title": "Terracotta Brush Strokes, Free Printable",
+    "description": "Two broad brush sweeps in rust and sage on cream, painterly abstract art for a warm room.",
+    "file_url": "/printables/boho-02-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-02-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-03-wall-art": {
+    "title": "Woman with Leaves, Free Printable",
+    "description": "A line-drawn profile framed by sage leaves and a clay circle, soft boho decor.",
+    "file_url": "/printables/boho-03-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-03-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-04-wall-art": {
+    "title": "Potted Plant in Arch, Free Printable",
+    "description": "A leafy plant in a terracotta pot set inside a warm arch, cosy botanical decor.",
+    "file_url": "/printables/boho-04-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-04-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-05-wall-art": {
+    "title": "Boho Rainbow with Leaves, Free Printable",
+    "description": "A stacked rainbow in rust and clay tones with a small leaf sprig at its base.",
+    "file_url": "/printables/boho-05-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-05-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "boho-06-wall-art": {
+    "title": "Sun Over Hills, Free Printable",
+    "description": "A bold sun rising over rolling sage and ochre hills, retro-boho landscape art.",
+    "file_url": "/printables/boho-06-wall-art.pdf",
+    "thumbnail_url": "/printables/boho-06-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-01-wall-art": {
+    "title": "Seated Figure Line Art, Free Printable",
+    "description": "A reclining female form drawn in one unbroken line, calm minimal decor.",
+    "file_url": "/printables/botanical-01-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-01-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-02-wall-art": {
+    "title": "Fern Frond Botanical, Free Printable",
+    "description": "A detailed green fern frond in botanical-study style, fresh decor for a bathroom or hallway.",
+    "file_url": "/printables/botanical-02-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-02-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-03-wall-art": {
+    "title": "Monstera Leaf, Free Printable",
+    "description": "A large glossy monstera leaf in deep green, a bold plant print for a bright room.",
+    "file_url": "/printables/botanical-03-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-03-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-04-wall-art": {
+    "title": "Olive Branches, Free Printable",
+    "description": "Two crossed olive branches with ripe fruit, a mediterranean touch for a kitchen wall.",
+    "file_url": "/printables/botanical-04-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-04-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-05-wall-art": {
+    "title": "Pampas Grass, Free Printable",
+    "description": "Soft blush pampas plumes on cream, a gentle neutral print for a bedroom.",
+    "file_url": "/printables/botanical-05-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-05-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-06-wall-art": {
+    "title": "Pressed Wildflowers, Free Printable",
+    "description": "Delicate pressed-flower stems in blush and sage, a dainty botanical study.",
+    "file_url": "/printables/botanical-06-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-06-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-07-wall-art": {
+    "title": "Trailing Pothos Vine, Free Printable",
+    "description": "A cascading pothos vine in fresh green, ideal above a shelf or desk.",
+    "file_url": "/printables/botanical-07-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-07-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "botanical-08-wall-art": {
+    "title": "Wildflower Bouquet, Free Printable",
+    "description": "A loose garden bouquet in blush, cream, and sage, a soft floral centrepiece print.",
+    "file_url": "/printables/botanical-08-wall-art.pdf",
+    "thumbnail_url": "/printables/botanical-08-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-01-wall-art": {
+    "title": "Sleeping Bunny, Free Printable",
+    "description": "A softly painted bunny curled up asleep, a tender print for a nursery or kids room.",
+    "file_url": "/printables/celestial-01-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-01-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-02-wall-art": {
+    "title": "Wavy Colour Bands, Free Printable",
+    "description": "Flowing bands of sage, clay, and cream, a calm abstract landscape in retro tones.",
+    "file_url": "/printables/celestial-02-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-02-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-03-wall-art": {
+    "title": "Mid Century Blocks, Free Printable",
+    "description": "Rectangles and circles in rust, olive, and sand, a confident mid-century composition.",
+    "file_url": "/printables/celestial-03-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-03-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-04-wall-art": {
+    "title": "Overlapping Circles, Free Printable",
+    "description": "Translucent circles layered in clay and sage, a soft geometric study.",
+    "file_url": "/printables/celestial-04-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-04-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-05-wall-art": {
+    "title": "Sun and Moon Faces, Free Printable",
+    "description": "A sun and crescent moon nestled together with gentle painted faces, celestial folk art.",
+    "file_url": "/printables/celestial-05-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-05-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-06-wall-art": {
+    "title": "Organic Shapes, Free Printable",
+    "description": "Rounded abstract forms in rust, olive, and sand overlapping on cream.",
+    "file_url": "/printables/celestial-06-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-06-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-07-wall-art": {
+    "title": "Night Sky Arch, Free Printable",
+    "description": "A terracotta arch opening onto a starry night sky and crescent moon.",
+    "file_url": "/printables/celestial-07-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-07-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "celestial-08-wall-art": {
+    "title": "Constellation Map, Free Printable",
+    "description": "Gold constellations scattered across warm cream, a quiet celestial chart.",
+    "file_url": "/printables/celestial-08-wall-art.pdf",
+    "thumbnail_url": "/printables/celestial-08-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "coloring-animal-mandala": {
+    "title": "Elephant Mandala Coloring Page, Free Printable",
+    "description": "An intricate elephant portrait built from mandala patterning, a detailed coloring page for adults.",
+    "file_url": "/printables/coloring-animal-mandala.pdf",
+    "thumbnail_url": "/printables/coloring-animal-mandala-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "coloring-botanical-wreath": {
+    "title": "Botanical Wreath Coloring Page, Free Printable",
+    "description": "A circular wreath of flowers, leaves, and berries to color, with plenty of open space.",
+    "file_url": "/printables/coloring-botanical-wreath.pdf",
+    "thumbnail_url": "/printables/coloring-botanical-wreath-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "coloring-pumpkin": {
+    "title": "Pumpkin Patch Coloring Page, Free Printable",
+    "description": "A cluster of curling pumpkins and vines, an autumn coloring page for the season.",
+    "file_url": "/printables/coloring-pumpkin.pdf",
+    "thumbnail_url": "/printables/coloring-pumpkin-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "coloring-snowflake-crystal": {
+    "title": "Crystal Snowflake Coloring Page, Free Printable",
+    "description": "An intricate six-point snowflake with fine crystal detail, a calm winter coloring page.",
+    "file_url": "/printables/coloring-snowflake-crystal.pdf",
+    "thumbnail_url": "/printables/coloring-snowflake-crystal-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "coloring-zentangle": {
+    "title": "Zentangle Coloring Page, Free Printable",
+    "description": "Flowing sections filled with leaves, waves, and dots, a meditative pattern to color.",
+    "file_url": "/printables/coloring-zentangle.pdf",
+    "thumbnail_url": "/printables/coloring-zentangle-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "coloring-zentangle-abstract": {
+    "title": "Abstract Zentangle Coloring Page, Free Printable",
+    "description": "An abstract patchwork of doodle textures and patterns, endlessly absorbing to color.",
+    "file_url": "/printables/coloring-zentangle-abstract.pdf",
+    "thumbnail_url": "/printables/coloring-zentangle-abstract-preview.png",
+    "orientation": "portrait",
+    "category": "coloring-pages"
+  },
+  "let-it-be-wall-art": {
+    "title": "Let It Be Wall Art, Free Printable",
+    "description": "A calm Let It Be quote print in a classic serif with a sage underline, quiet decor for any room.",
+    "file_url": "/printables/let-it-be-wall-art.pdf",
+    "thumbnail_url": "/printables/let-it-be-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "mid-century-abstract-wall-art": {
+    "title": "Mid Century Abstract, Free Printable",
+    "description": "Simple circles and half-domes in green, clay, and violet, a playful mid-century composition.",
+    "file_url": "/printables/mid-century-abstract-wall-art.pdf",
+    "thumbnail_url": "/printables/mid-century-abstract-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "new-year-goals-wall-art": {
+    "title": "This Year I Will, Free Printable",
+    "description": "A This Year I Will goal sheet with ruled lines and a small starburst, a fill-in print for the new year.",
+    "file_url": "/printables/new-year-goals-wall-art.pdf",
+    "thumbnail_url": "/printables/new-year-goals-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "nursery-01-wall-art": {
+    "title": "Sleeping Moon, Free Printable",
+    "description": "A softly painted crescent moon asleep among gold stars, a dreamy nursery print.",
+    "file_url": "/printables/nursery-01-wall-art.pdf",
+    "thumbnail_url": "/printables/nursery-01-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "nursery-02-wall-art": {
+    "title": "Pastel Rainbow with Clouds, Free Printable",
+    "description": "A gentle pastel rainbow resting on fluffy clouds, cheerful decor for a nursery.",
+    "file_url": "/printables/nursery-02-wall-art.pdf",
+    "thumbnail_url": "/printables/nursery-02-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "nursery-03-wall-art": {
+    "title": "Teddy Bear, Free Printable",
+    "description": "A cuddly teddy bear sitting contentedly, a warm print for a baby room.",
+    "file_url": "/printables/nursery-03-wall-art.pdf",
+    "thumbnail_url": "/printables/nursery-03-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "nursery-04-wall-art": {
+    "title": "Hot Air Balloons, Free Printable",
+    "description": "Three pastel hot air balloons drifting through soft clouds, sweet nursery decor.",
+    "file_url": "/printables/nursery-04-wall-art.pdf",
+    "thumbnail_url": "/printables/nursery-04-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "nursery-05-wall-art": {
+    "title": "Baby Elephant, Free Printable",
+    "description": "A little elephant with its trunk raised beside green sprigs, a gentle nursery print.",
+    "file_url": "/printables/nursery-05-wall-art.pdf",
+    "thumbnail_url": "/printables/nursery-05-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "nursery-06-wall-art": {
+    "title": "Eucalyptus Sprig, Free Printable",
+    "description": "A single eucalyptus stem in soft sage, calm greenery for a nursery or bathroom.",
+    "file_url": "/printables/nursery-06-wall-art.pdf",
+    "thumbnail_url": "/printables/nursery-06-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "nursery-quotes-wall-art": {
+    "title": "You Are My Sunshine, Free Printable",
+    "description": "A You Are My Sunshine print with a smiling sun and clouds in warm script, a nursery favourite.",
+    "file_url": "/printables/nursery-quotes-wall-art.pdf",
+    "thumbnail_url": "/printables/nursery-quotes-wall-art-preview.png",
+    "orientation": "portrait",
+    "category": "printable-wall-art"
+  },
+  "word-of-the-year-wall-art": {
+    "title": "My Word of the Year, Free Printable",
+    "description": "A minimal My Word of the Year sheet with a framed box to fill in, a simple intention-setting print.",
+    "file_url": "/printables/word-of-the-year-wall-art.pdf",
+    "thumbnail_url": "/printables/word-of-the-year-wall-art-preview.png",
     "orientation": "portrait",
     "category": "printable-wall-art"
   }
