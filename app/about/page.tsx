@@ -9,7 +9,7 @@ import { aboutPageSchema, breadcrumbSchema } from "@/lib/schema";
 import { ogImages, twitterImages } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-  title: `About ${siteConfig.name}: Free Printables, Designed and Print-Tested`,
+  title: "About: Free Printables, Designed and Print-Tested",
   description: `The story behind ${siteConfig.name}: who we are, who this site is for, and why we built it.`,
   alternates: { canonical: "/about" },
   openGraph: { url: "/about", type: "website", images: ogImages() },
